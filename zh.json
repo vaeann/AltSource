@@ -350,5 +350,37 @@
   "com.kianuni.Camlo": {
     "subtitle": "动态锁屏壁纸工坊",
     "description": "零门槛的锁屏与滑动变身壁纸工坊，基于原生 Core Animation 包。内置实时试穿、陀螺仪 3D 视差、昼夜双生壁纸、AI 主体抠图遮挡时钟，以及视频与实况照片转动态壁纸。"
+  },
+  "com.rileytestut.Delta": {
+    "subtitle": "全能复古游戏模拟器",
+    "description": "GBA4iOS 的后继者，一个应用内支持 GBA、Nintendo DS、SNES、N64、Genesis 等多款主机的游戏模拟，支持即时存档、金手指、外接手柄与云同步。"
+  },
+  "com.rileytestut.Clip": {
+    "subtitle": "剪贴板历史管理器",
+    "description": "轻量的剪贴板管理器，可在后台持续记录复制过的内容，随时取回之前复制过的文字、链接与图片。"
+  },
+  "com.utmapp.UTM-SE": {
+    "subtitle": "免 JIT 的虚拟机",
+    "description": "UTM 的无 JIT 版本，在所有 iOS 设备上都能运行，速度比完整版慢一些，但不需要开启 JIT 也不需要连接电脑。可运行 Windows、Android 等系统。"
+  },
+  "me.oatmealdome.dolphinios-njb": {
+    "subtitle": "GameCube 与 Wii 模拟器",
+    "description": "Dolphin 模拟器的 iOS 移植版，可在 iPhone 与 iPad 上运行 GameCube 与 Wii 游戏，支持提高分辨率等画质增强。这是非越狱可用的稳定版本。"
+  },
+  "com.aether.ps4ios": {
+    "subtitle": "PS4 模拟器",
+    "description": "面向 iOS 与 iPadOS 的 PlayStation 4 模拟器，包含独立应用与模拟器内核，可直接在设备上启动 PS4 游戏。"
+  },
+  "com.utsuro.app": {
+    "subtitle": "Xbox One 模拟器（早期测试）",
+    "description": "在 iOS 与 iPadOS 上运行 Xbox One 游戏。目前处于 alpha 阶段：Minecraft Xbox One 版、火箭联盟与索尼克狂欢已验证可启动，其余游戏兼容性差异较大，需要自备游戏文件。"
+  },
+  "com.leviidev.podium": {
+    "subtitle": "iPod Touch 模拟器",
+    "description": "在 iPhone 上模拟经典 iPod Touch 的界面与操作手感，目前以 iOS 6.1.6 的 iPod Touch 第四代为基准，也可以尝试其他系统版本与机型。"
+  },
+  "com.henge.app": {
+    "subtitle": "在 iPhone 上跑 macOS",
+    "description": "自带模拟器，可在 iPhone 与 iPad 上运行 macOS：自动下载 Apple 的恢复镜像并直接在设备上安装，不需要借助 Mac。Safari 等系统应用可正常使用。"
   }
 }
