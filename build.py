@@ -78,6 +78,10 @@ def norm_versions(app):
             "sha256": v.get("sha256"),
         }
         out.append({k: val for k, val in item.items() if val not in (None, "")})
+    # LiveContainer 读的是老键名 buildNumber，AltStore 读 buildVersion，两个都写才都能显示
+    for v in out:
+        if "buildVersion" in v and "buildNumber" not in v:
+            v["buildNumber"] = v["buildVersion"]
     if not out and app.get("downloadURL") and app.get("version"):
         item = {
             "version": str(app["version"]),
