@@ -2,6 +2,10 @@
 keep_versions = 3
 # 名称或 bundle id 里带 Beta 的条目直接跳过，避免把测试版当成正式版
 exclude_beta = true
+# 是否收录官方仓库的「预发布版」（v2.2.0-pre.1 这类）。
+# 开：作者发了 pre 版就能第一时间拿到（tag 里的后缀不影响真实版本号）
+# 关：只收 GitHub 标记为正式版的 Release
+include_prerelease = true
 
 # 源信息
 [source]
