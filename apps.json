@@ -403,13 +403,19 @@
       "versions": [
         {
           "version": "0.0.2",
-          "buildVersion": "2",
-          "date": "2026-11-10",
-          "localizedDescription": "🧪 预发布 ios-0.0.2（2026-11-10）\n\nChanges since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\nRequirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\nUpdate LiveContainer first\r\n\r\nIf you",
+          "date": "2026-11-10T13:03:24Z",
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
-          "minOSVersion": "17.4",
-          "buildNumber": "2"
+          "localizedDescription": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside ",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "0.0.1",
+          "date": "2026-11-08T22:11:15Z",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.1/ARMSX3-0.0.1.ipa",
+          "size": 40816535,
+          "localizedDescription": "ARMSX3 for iOS is a PlayStation 3 emulator for iPhone and iPad. It runs the same RPCS3-based core as the ARMSX3 Android app, with an app built for iOS around it, and draws through Vulkan on MoltenVK. This is the first build I'm sharing with everyone. Treat it as a beta: some games already play well, many don't yet, and you will run into crashes I haven't seen. When you do, a report helps a lot, and the end of this post explains how to send one.\r\n\r\n## Contents\r\n\r\n- [What you need](#what-you-need)\r\n- [Installing](#installing)\r\n- [Setting up JIT](#setting-up-jit)\r\n- [Your games](#your-games)\r\n- [",
+          "minOSVersion": "17.4"
         }
       ],
       "appPermissions": {
@@ -1141,6 +1147,14 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.2.0",
+          "date": "2026-11-17T09:54:31Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0-pre.1/HGhubX_2.2.0-pre.1_ios.ipa",
+          "size": 3851530,
+          "localizedDescription": "## HGhubX 2.2.0-pre.1（预发布）\r\n\r\n预发布版本，包含结构整理与一轮体验改进，因为有些无法实机测试，还有很多Bug，欢迎试用反馈；不作为正式版本推送。\r\n\r\n### 新增\r\n\r\n- **Android TV 版**并入全量构建：独立安装包（com.hghubx.tv），Leanback 桌面入口、\r\n  横屏显示、遥控器方向键/确认/返回导航、TV banner 与 overscan 安全边距设置。\r\n- 移动端长按操作提示新增「双击暂停播放」说明（手势本身早已支持）。\r\n\r\n### 改进\r\n\r\n- **冷启动更快**：已同意协议的用户在启动动画期间就开始选线、加载首屏并请求播放，\r\n  动画结束时内容已就绪；首次使用的协议流程不变，默认静音不变。\r\n- 自动选线默认开启（核实原有行为即如此，未改动）。\r\n- 界面文案清理：设置页分组副标题、「清理缓存」行内说明等复述式文字移除\r\n  （清理范围说明保留在确认弹窗里）；「HGhubX 热榜」改名「排行榜」。\r\n- 播放页移除重复的「不感兴趣」按钮，统一为长按视频打开偏好菜单。\r\n\r\n### 修复\r\n\r\n- 竖屏视频在手机上不再被裁切铺满，按原始比例完整显示；横屏视频的\r\n  「铺满 / 适应」切换保留（#142）。\r\n- 安卓播放诊断日志复制失败：导出裁剪到 256KiB（保留环境信息与最近事件），\r\n  不再",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "2.1.2",
           "date": "2026-11-15T16:56:37Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
@@ -1154,14 +1168,6 @@
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.1/HGhubX_2.1.1_ios.ipa",
           "size": 3849882,
           "localizedDescription": "## HGhubX 2.1.1\r\n\r\n### 更新点\r\n\r\n- **线路选择**：合并重复的“推荐镜像”和“镜像线路”区域为一个镜像列表，当前线路置顶。\r\n- **启动体验**：统一各平台启动背景，减少启动首帧闪烁。\r\n- **搜索**：热门题材使用真实标签数据，并可直接打开对应片单。\r\n\r\n### 修复点\r\n\r\n- 修复播放恢复、代理切换后的恢复队列及媒体分片缓存隔离问题。\r\n- 修复专题分页、收藏同步空状态和搜索框焦点处理。\r\n- 补齐 iOS 原生媒体传输的 Range 响应，改善视频探测与播放兼容性。\r\n- 修复帖子详情热度和清理观看历史前的确认交互。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* fix: 2026-11-15 修复轮次合并 by @zxsos in https://github.com/zxsos/HGhubX/pull/131\r\n* fix: 修复播放恢复、缓存与收藏状态回归 by @zxsos in https://github.",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.1.0",
-          "date": "2026-11-15T08:37:59Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.0/HGhubX_2.1.0_ios.ipa",
-          "size": 3819956,
-          "localizedDescription": "## HGhubX 2.1.0\r\n\r\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\r\n\r\n### 更新点\r\n\r\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\r\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\r\n- **启动体验**：新增开屏动画和首次使用协议。\r\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\r\n- **界面**：更新了 UI，自己体验。\r\n\r\n### 修复点\r\n\r\n- 修复游客模式保存观看进度、收藏等数据时回滚设置的问题，包括自动恢复静音，以及音量、启动静音、优先高清、滑动切集和搜索历史被旧快照覆盖。\r\n- 修复评论区出现 HTML 标签和脚本片段、长评论和长昵称换行异常的问题；手机播放页面显示评论数量，评论面板读取当前剧集的数量。\r\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\r\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\r\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\r\n- 修复账号、线路切换后的迟到请求污染当",
           "minOSVersion": "15.0"
         }
       ],
@@ -2780,14 +2786,34 @@
       "category": "other",
       "versions": [
         {
-          "version": "1.18.3",
-          "buildVersion": "249",
-          "date": "2026-11-07T18:10:18Z",
-          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyri",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-          "size": 21467556,
-          "minOSVersion": "14.0",
-          "buildNumber": "249"
+          "version": "1.18.4",
+          "date": "2026-11-16T00:47:36Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.3/VeneraNext-ios-1.18.4-rc.3%2B252.ipa",
+          "size": 21546869,
+          "buildVersion": "252",
+          "buildNumber": "252",
+          "localizedDescription": "### 预发布与测试\n\n- 发布第三个 `1.18.4-rc.3+252` 候选版，交付 RC2 反馈中的当前页调光保存、大收藏列表重复工作及搜索焦点下 Esc 退出修复（#180、#167、#152），同时提供更准确的阅读慢帧时间用于继续定位分页卡顿（#178）。\n- Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从本次标签重新构建。稳定更新渠道仍为 `v1.18.3`，候选版从 Release 页面下载；鸿蒙继续提供 ARM64／API 26 未签名测试版 HAP，保留 `signed: false` 和 `runtime_verified: false`。\n- 升级前导出并另存应用数据备份，保留原漫画文件，沿用原包名和签名身份覆盖安装。安装包公开并核验后，逐项邀请 #180、#167、#152、#178 提出者测试；调光、收藏交互和 Android 120 Hz 体感仍以原设备反馈验收。\n- #168、#169、#170 已依据 RC2 的实际反馈关闭；#139 已收到特定 JPEG 的失败样例，#129 的本地导入封面残留继续调查，本版不将这些原设备症状声明为已解决。#163、#81、#123 继续暂缓。\n\n### 阅读器反馈修复与诊断\n\n- 修复夜间调光保存完成后当前页回退到进入该页时旧亮度的问题：调光遮罩与底栏同",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.18.4",
+          "date": "2026-11-15T05:44:54Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.2/VeneraNext-ios-1.18.4-rc.2%2B251.ipa",
+          "size": 21538422,
+          "buildVersion": "251",
+          "buildNumber": "251",
+          "localizedDescription": "### 预发布与测试\n\n- 发布第二个 `1.18.4-rc.2+251` 候选版，集中交付 Cloudflare 验证异常、设置与调光面板跳动、大收藏列表和阅读加载期间重复工作的修复；包含菜单锁、可选白边裁剪、收藏交互改进、鸿蒙桌面名称修复及测试／CI 整理。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从本次标签提交重新构建。\n- 稳定更新渠道保持 `v1.18.3`，候选版需从 Release 页面手动下载；AltStore 与 Winget 不推进至 RC。保留原包名和签名身份，升级前导出并另存完整应用数据备份，保留原漫画文件；覆盖安装保留原数据，无需清库、卸载或重新导入。\n- 本版供实际设备测试。Android 120 Hz 下的收藏／阅读流畅性、原 Windows 站点的 Cloudflare 验证仍待提出者复测，构建及组件回归不代表真机帧率或原站点交互已经验收。鸿蒙 HAP 仍为 ARM64／API 26 未签名 Beta，须沿用原签名密钥自行签装，保留 `signed: false` 和 `runtime_verified: false`。\n- 完整安装包公开并核验后，分别邀请 #165、#167、#168、#169、#170、#178 及本版首次交付或追加改进的 #139、#152、#157、#162 提出",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.18.4",
+          "date": "2026-11-11T08:23:33Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.1/VeneraNext-ios-1.18.4-rc.1%2B250.ipa",
+          "size": 21503180,
+          "buildVersion": "250",
+          "buildNumber": "250",
+          "localizedDescription": "### 预发布与测试\n\n- 发布首个 `1.18.4-rc.1+250` 候选版，交付本轮收藏管理、关键词屏蔽和共用界面修复；Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从同一标签提交重新构建。稳定更新渠道仍为 `v1.18.3`，候选版需从 Release 页面手动下载，AltStore 与 Winget 不推进至 RC。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件；覆盖安装保留原数据，无需清库或重新导入。鸿蒙 HAP 仍为 ARM64／API 26 未签名 Beta，须沿用原签名身份／密钥自行签装。本版供实际设备测试，尚未完成维护者真机验收。\n- 公开并核验安装包后，邀请 #115、#152、#155、#158、#159 的报告者测试各自涉及的改动。#159 的长期外部存储需求仍未实现；构建成功或暂未收到回复不作为问题已解决的依据。\n\n### 鸿蒙能力与界面修复\n\n- 鸿蒙原生 HAP 的存储设置明确说明当前使用应用内漫画库、外部目录仅复制导入，禁用尚未实现的存储迁移入口；存储恢复及失败重试仍可用，恢复完成后不会重新启用迁移（#159）。长期外部目录支持保留为后续需求，不把临时授权或沙箱副本当作持久漫画位置。\n- 鸿蒙禁止开启未接入平台认证的应用锁，导入的已开启锁仍可由用户关闭并持久保存。漫画详情的分享入口改",
+          "minOSVersion": "14.0"
         }
       ],
       "screenshots": [
@@ -2879,10 +2905,26 @@
       "versions": [
         {
           "version": "0.9.16",
+          "date": "2026-11-17T10:59:50Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.16-test2/WQFiles.ipa",
+          "size": 2078726,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query.\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.16 test build 2 (103)\n\n**Diagnostic test build for [#65](https://github.com/kolbicz/WQFiles/issues/65), not an update.** AltStore, SideStore and the update check keep offering 0.9.16. Only install it if you run WQ Files inside **LiveContainer** and every folder is refused.",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.9.16",
+          "date": "2026-11-17T01:23:31Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.16-test1/WQFiles.ipa",
+          "size": 2078592,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query.\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.16 test build (102)\n\n**Test build for [#65](https://github.com/kolbicz/WQFiles/issues/65), not an update.** AltStore, SideStore and the update check keep offering 0.9.16. Only install it if you run WQ Files inside **LiveContainer** and every folder is refused.\n\n- **LiveCon",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.9.16",
           "date": "2026-11-16T22:54:40Z",
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.16\n\n## New\n\n- **Invert Selection** in the Cache Cleaner's Select menu. Select All and Invert are greyed out when no row can ",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.16/WQFiles.ipa",
           "size": 2078252,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.16\n\n## New\n\n- **Invert Selection** in the Cache Cleaner's Select menu. Select All and Invert are greyed out when no row can ",
           "minOSVersion": "26.0"
         }
       ],
