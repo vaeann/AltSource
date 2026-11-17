@@ -115,24 +115,34 @@ def main():
 
     src = cfg["source"]
     keep = int(cfg.get("keep_versions", 3))
+    exclude_beta = bool(cfg.get("exclude_beta", False))
     os.makedirs(CACHE, exist_ok=True)
 
     # ---------- 1. 抓取 ----------
-    collected = []  # (优先级, app)
+    collected = []  # (tier, 上游序号, 来源名, app)
+
+    def collect(data, tier, prio, label):
+        n = 0
+        for a in data.get("apps", []):
+            if not a.get("bundleIdentifier"):
+                continue
+            if exclude_beta and re.search(r"beta", a.get("name") or "", re.I):
+                continue
+            collected.append((tier, prio, label, a))
+            n += 1
+        return n
+
     for prio, up in enumerate(cfg.get("upstream", [])):
         label = up["label"]
+        tier = int(up.get("tier", 1))
         # 本地源：先用 add_app.py + altgen 生成到 apps/xxx/apps.json，再在这里引用
         if up.get("path"):
             p = os.path.join(ROOT, up["path"])
             try:
                 data = json.load(open(p, encoding="utf-8"))
-                print(f"· 读本地 {label}：{len(data.get('apps', []))} 个应用")
+                print(f"· 读本地 {label}：{collect(data, tier, prio, label)} 个应用")
             except Exception as e:
                 print(f"! 本地文件读不了 {label}：{e}")
-                continue
-            for a in data.get("apps", []):
-                if a.get("bundleIdentifier"):
-                    collected.append((prio, label, a))
             continue
 
         url = up["url"]
@@ -147,53 +157,87 @@ def main():
             try:
                 data = fetch(url)
                 json.dump(data, open(cache_file, "w", encoding="utf-8"), ensure_ascii=False)
-                print(f"· 抓取 {label}：{len(data.get('apps', []))} 个应用")
+                print(f"· 抓取 {label}：{collect(data, tier, prio, label)} 个应用")
             except Exception as e:
                 print(f"! {label} 抓取失败，尝试用缓存：{e}")
                 data = json.load(open(cache_file, encoding="utf-8")) if os.path.exists(cache_file) else None
+                if data:
+                    collect(data, tier, prio, label)
         else:
-            print(f"· 读缓存 {label}：{len(data.get('apps', []))} 个应用")
-        if not data:
-            continue
-        for a in data.get("apps", []):
-            if a.get("bundleIdentifier"):
-                collected.append((prio, label, a))
+            print(f"· 读缓存 {label}：{collect(data, tier, prio, label)} 个应用")
 
     raw_total = len(collected)
 
     # ---------- 2. 去重 ----------
+    BETA_RE = re.compile(r"(beta|alpha|nightly|\bbc\d*\b|\d+b\d*$)", re.I)
+
+    def is_beta(item):
+        # 版本号带预发布标记，或 bundle id 本身就是 beta 通道
+        if re.search(r"beta|nightly", item[3]["bundleIdentifier"], re.I):
+            return True
+        vs = item[3].get("versions") or []
+        return bool(vs) and bool(BETA_RE.search(str(vs[0].get("version", ""))))
+
+    def newest(item):
+        vs = item[3].get("versions") or []
+        return max((str(v.get("date") or "") for v in vs), default="")
+
     def better(cur, new):
-        """版本多者优先；版本数相同则上游排序靠前者优先。"""
-        if len(new[2].get("versions") or []) != len(cur[2].get("versions") or []):
-            return len(new[2].get("versions") or []) > len(cur[2].get("versions") or [])
-        return new[0] < cur[0]
+        """正式版优先 > 发布日期新的优先 > 官方源优先 > 版本多者优先 > 上游排序靠前。"""
+        if is_beta(cur) != is_beta(new):
+            return not is_beta(new)
+        dc, dn = newest(cur), newest(new)
+        if bool(dc) != bool(dn):
+            return bool(dn)
+        if dc and dn and dc != dn:
+            return dn > dc
+        if cur[0] != new[0]:
+            return new[0] < cur[0]
+        if len(new[3].get("versions") or []) != len(cur[3].get("versions") or []):
+            return len(new[3].get("versions") or []) > len(cur[3].get("versions") or [])
+        return new[1] < cur[1]
 
     by_id = {}
     for item in collected:
-        bid = item[2]["bundleIdentifier"]
+        bid = item[3]["bundleIdentifier"]
         if bid not in by_id or better(by_id[bid], item):
             by_id[bid] = item
 
     by_name = {}
     dropped = []
+
+    def better_name(cur, new):
+        """同名但 bundle id 不同 = 不同分支。优先版本更全的那个，再比日期。"""
+        if is_beta(cur) != is_beta(new):
+            return not is_beta(new)
+        if len(new[3].get("versions") or []) != len(cur[3].get("versions") or []):
+            return len(new[3].get("versions") or []) > len(cur[3].get("versions") or [])
+        dc, dn = newest(cur), newest(new)
+        if dc and dn and dc != dn:
+            return dn > dc
+        return new[0] < cur[0]
+
     for bid, item in by_id.items():
-        nk = name_key(item[2].get("name"))
-        if nk not in by_name or better(by_name[nk], item):
+        nk = name_key(item[3].get("name"))
+        if nk not in by_name or better_name(by_name[nk], item):
             if nk in by_name:
-                dropped.append((by_name[nk][2].get("name"), by_name[nk][2]["bundleIdentifier"],
-                                item[2]["bundleIdentifier"]))
+                dropped.append((by_name[nk][3].get("name"), by_name[nk][3]["bundleIdentifier"],
+                                item[3]["bundleIdentifier"]))
             by_name[nk] = item
         else:
-            dropped.append((item[2].get("name"), bid, by_name[nk][2]["bundleIdentifier"]))
+            dropped.append((item[3].get("name"), bid, by_name[nk][3]["bundleIdentifier"]))
 
     # ---------- 3. 整理 ----------
     apps = []
     missing_zh = []
-    for nk, (prio, label, a) in by_name.items():
+    official_n = 0
+    for nk, (tier, prio, label, a) in by_name.items():
         bid = a["bundleIdentifier"]
         versions = norm_versions(a)
         if not versions:
             continue
+        if tier == 0:
+            official_n += 1
         versions.sort(key=sort_key, reverse=True)
         versions = versions[:keep]
 
@@ -243,6 +287,7 @@ def main():
     print(f"上游条目   {raw_total}")
     print(f"按 id 去重 {len(by_id)}")
     print(f"按名去重   {len(apps)}")
+    print(f"官方源覆盖 {official_n} 个 / 聚合源补 {len(apps) - official_n} 个")
     if dropped:
         print(f"丢弃同名   {len(dropped)} 组")
         for n, old_id, new_id in dropped[:8]:
