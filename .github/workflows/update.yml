@@ -38,6 +38,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python sync_repo.py
 
+      - name: 提交前校验（防止坏数据覆盖好数据）
+        run: python guard.py
+
       - name: 提交变更
         run: |
           set -euo pipefail
