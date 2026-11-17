@@ -30,7 +30,9 @@
           "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
           "size": 5753848,
           "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "25",
+          "buildNumber": "25"
         },
         {
           "version": "3.2.5",
@@ -424,21 +426,27 @@
           "date": "2026-11-14T03:22:21Z",
           "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.1.0/Apollo-Reborn-4.1.0-GLASS-NOEXTENSIONS.ipa",
           "size": 119160349,
-          "localizedDescription": "### Features\n\n- Add a **Subreddit Switcher** choice of **Classic** or **Modern** under Interface → Display & Navigation: Classic brings back Apollo's original Favorites popup for title taps and Posts tab holds, and Modern keeps the search sheet (#1604: @IllIIllIllIllII)\n  - Classic is the default on regular iPhones, so updating from 4.0.x brings the popup back; Modern is the default on iPhone Duo\n  - Modern now opens with the keyboard up and starts loading your pick right away, and on the iPhone Duo holding the Posts tab opens the switcher from the side rail and when unfolded\n- Add **Jump Butt"
+          "localizedDescription": "### Features\n\n- Add a **Subreddit Switcher** choice of **Classic** or **Modern** under Interface → Display & Navigation: Classic brings back Apollo's original Favorites popup for title taps and Posts tab holds, and Modern keeps the search sheet (#1604: @IllIIllIllIllII)\n  - Classic is the default on regular iPhones, so updating from 4.0.x brings the popup back; Modern is the default on iPhone Duo\n  - Modern now opens with the keyboard up and starts loading your pick right away, and on the iPhone Duo holding the Posts tab opens the switcher from the side rail and when unfolded\n- Add **Jump Butt",
+          "buildVersion": "304",
+          "buildNumber": "304"
         },
         {
           "version": "4.0.1",
           "date": "2026-10-30T01:24:25Z",
           "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.0.1/Apollo-Reborn-4.0.1-GLASS-NOEXTENSIONS.ipa",
           "size": 118945807,
-          "localizedDescription": "### Performance\n\n- Send fewer Reddit requests on **API-Key-Free** accounts by not repeating link preview lookups for sites that block previews and by briefly reusing the Inbox's reply lookups, so ordinary reading reaches Reddit's rate limit later (#1579: @icpryde)\n  - New replies, and anything you post or edit, still refresh right away\n\n### Fixes\n\n- Fix **multi-photo posts** showing a reddit.com link and 0 photos since Reddit began marking their photos as failed, so the gallery, feed carousel, media viewer, Save All and Gallery View show them again (#1589: @icpryde)\n  - Covers galleries posted"
+          "localizedDescription": "### Performance\n\n- Send fewer Reddit requests on **API-Key-Free** accounts by not repeating link preview lookups for sites that block previews and by briefly reusing the Inbox's reply lookups, so ordinary reading reaches Reddit's rate limit later (#1579: @icpryde)\n  - New replies, and anything you post or edit, still refresh right away\n\n### Fixes\n\n- Fix **multi-photo posts** showing a reddit.com link and 0 photos since Reddit began marking their photos as failed, so the gallery, feed carousel, media viewer, Save All and Gallery View show them again (#1589: @icpryde)\n  - Covers galleries posted",
+          "buildVersion": "303",
+          "buildNumber": "303"
         },
         {
           "version": "4.0.0",
           "date": "2026-10-25T17:15:04Z",
           "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.0.0/Apollo-Reborn-4.0.0-GLASS-NOEXTENSIONS.ipa",
           "size": 118896090,
-          "localizedDescription": "### Features\r\n\r\n- Add **iPhone Duo** support with layouts that adapt to the closed display, open portrait, open landscape and partially folded positions, using the existing Apollo Reborn builds (#1245: @IllIIllIllIllII)\r\n  - Browse a feed beside its comments, choose Original or Focused content widths, and open the subreddit list in a Standard or Liquid Glass panel\r\n  - Inbox, Account and Settings gain sidebar/detail layouts in open landscape, while Search can keep results beside the page you open\r\n  - Pixel Pals is unavailable on Duo; regular iPhones keep it\r\n- Add an optional **iPad Layout (B"
+          "localizedDescription": "### Features\r\n\r\n- Add **iPhone Duo** support with layouts that adapt to the closed display, open portrait, open landscape and partially folded positions, using the existing Apollo Reborn builds (#1245: @IllIIllIllIllII)\r\n  - Browse a feed beside its comments, choose Original or Focused content widths, and open the subreddit list in a Standard or Liquid Glass panel\r\n  - Inbox, Account and Settings gain sidebar/detail layouts in open landscape, while Search can keep results beside the page you open\r\n  - Pixel Pals is unavailable on Duo; regular iPhones keep it\r\n- Add an optional **iPad Layout (B",
+          "buildVersion": "302",
+          "buildNumber": "302"
         }
       ],
       "appPermissions": {
@@ -539,7 +547,9 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
           "localizedDescription": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside ",
-          "minOSVersion": "17.4"
+          "minOSVersion": "17.4",
+          "buildVersion": "2",
+          "buildNumber": "2"
         },
         {
           "version": "0.0.1",
@@ -612,7 +622,9 @@
           "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.2/AvPlay-2.2.2.ipa",
           "size": 23878716,
           "localizedDescription": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 AVDB无法解析线路问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
-          "minOSVersion": "15.3"
+          "minOSVersion": "15.3",
+          "buildVersion": "2020201",
+          "buildNumber": "2020201"
         },
         {
           "version": "2.2.0",
@@ -652,7 +664,9 @@
           "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.665/BCD.ipa",
           "size": 222775641,
           "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n## Red Dead Redemption 2\n\n- **No processor time lost on exceptions.** RDR2 asks Windows for the time tens of thousands of times a second, and every one of those calls used to take an exception that BCD caught and answered: about 20,000 a second through the tick count, and up to about 18,000 more through timer calls in the game's own process, which Rockstar's launcher starts. Both now run as plain calls, so a performance co",
-          "minOSVersion": "18.0"
+          "minOSVersion": "18.0",
+          "buildVersion": "665",
+          "buildNumber": "665"
         },
         {
           "version": "0.1.659",
@@ -689,9 +703,9 @@
       "developerName": "deretame",
       "subtitle": "插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#CE2BBB",
-      "category": "other",
+      "category": "books",
       "versions": [
         {
           "version": "3.0.38",
@@ -699,7 +713,9 @@
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
           "size": 27173399,
           "localizedDescription": "## 📝 更新日志\r\n## [v3.0.38]\r\n\r\n### 功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with [daiwenwen3](https://github.com/daiwenwen3)\r\n\r\n### 修复\r\n\r\n- 修复导入漫画时失败的问题\r\n\r\n### 优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n\r\n### 杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.38.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/windows-installer-v3.0.38.exe) |\r\n| **macOS** | [Breeze-",
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildVersion": "2225",
+          "buildNumber": "2225"
         },
         {
           "version": "3.0.37",
@@ -718,10 +734,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
-      ]
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     },
     {
       "name": "Camlo · 开幕",
@@ -747,7 +763,9 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.0/Camlo_v1.3.0_Bilingual.ipa",
           "size": 9528701,
           "localizedDescription": "## What's New in Camlo v1.3.0\n\n### 📱 Native iPhone Duo Dual-Screen Canvas (Inner + Outer)\n- Compiles unified WallpaperKit `<wallpapers>` `ParameterizedCA` packages embedding both the **Outer Cover** (`466×678` pt) and **Inner Unfolded Landscape** (`951×669` pt) canvases with `requiresLandscapeScaling = true`, scaled gyro parallax, and synchronized `Sleep / Locked / Unlock` transitions.\n- Auto-detects **iPhone Duo (`iPhone19,4`)** and switches Slide-to-Morph Studio & Video Studio to dual-screen mode by default (with manual toggle available on every iPhone).\n- Interactive **Outer / Inner live pr",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "23",
+          "buildNumber": "23"
         }
       ],
       "appPermissions": {
@@ -815,6 +833,54 @@
         "https://user-images.githubusercontent.com/705880/277759409-f8bd1286-ce84-4914-96b5-0c611e678918.PNG",
         "https://user-images.githubusercontent.com/705880/277759432-15a62f4f-8fe8-4a76-b6ec-31631a5eaf0c.PNG"
       ]
+    },
+    {
+      "name": "Cloudn",
+      "bundleIdentifier": "com.mengangs.Cloudn",
+      "developerName": "mengangs",
+      "subtitle": "链接解析与网盘下载器",
+      "localizedDescription": "粘贴一个链接就能解析并高速下载：支持夸克、百度、115、阿里云盘、Google 云端硬盘、OneDrive、PikPak、天翼云盘、Dropbox、蓝奏云、城通以及自建 WebDAV 等网盘，也支持抖音、哔哩哔哩、YouTube、X 等平台的短视频、网页内嵌视频、GitHub 文件与磁力链接。多连接分片并发、断点续传，锁屏或切到后台由系统接着下载，进度显示在锁屏与灵动岛。提取码、口令、带文案的整段分享文字都能直接粘贴识别。开源免费、无广告，所有解析都在手机本地完成，登录凭证只存系统钥匙串。",
+      "iconURL": "https://raw.githubusercontent.com/mengangs/Cloudn/main/docs/assets/icon-light.png",
+      "tintColor": "#BB832A",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.4.2",
+          "date": "2026-11-14T07:41:19Z",
+          "downloadURL": "https://github.com/mengangs/Cloudn/releases/download/v1.4.2/Cloudn-v1.4.2.ipa",
+          "size": 9034290,
+          "localizedDescription": "# Cloudn 1.4.2\n\n这一版新增 SideStore / AltStore 侧载软件源支持，修复 Instagram 网页登录点「完成」卡住的问题，并带来多项稳定性、解析与性能优化。\n\n## 新增与改进\n\n- **SideStore / AltStore 软件源**：新增 [altstore.json](https://raw.githubusercontent.com/mengangs/Cloudn/main/altstore.json) 订阅源并在发版时自动更新；在「设置 › 更新 › 添加侧载软件源」中可一键添加到 SideStore / AltStore 或复制源地址。\n- **Instagram 网页登录修复**：支持从 `sessionid` 提取用户 ID 并补全 `ds_user_id`，实时合并页面 `document.cookie`，放宽非登录页重定向时的校验误判，并在未检测到登录态或校验失败时弹出明确提示。\n- **并发与稳定性优化**：加强下载与解析任务防重入保护、完善各网盘/视频解析器与分享扩展边界处理，提升列表滚动、实时活动与无障碍体验。\n\n## 安装\n\n推荐通过 SideStore / AltStore 订阅本仓库软件源直接接收更新；也可下载下方附件里的 `Cloudn-v1.4.2.ipa` 自行签名后安装（需要 iOS 17 及以上）。",
+          "minOSVersion": "17.0",
+          "buildVersion": "15",
+          "buildNumber": "15"
+        },
+        {
+          "version": "1.4.1",
+          "date": "2026-10-24T03:52:30Z",
+          "downloadURL": "https://github.com/mengangs/Cloudn/releases/download/v1.4.1/Cloudn-v1.4.1.ipa",
+          "size": 8979537,
+          "localizedDescription": "# Cloudn 1.4.1\n\n这一版提升解析速度，并让网页嗅探更快找到视频。\n\n## 解析更快\n\n- **抖音**：网页验证与分享页两条路线同时进行，谁先拿到结果用谁。以前要等网页验证失败（最长 40 秒）才换分享页。\n- **抖音、Facebook、小黑盒、快手主页**：输入框认出这类链接时提前做好准备，点「解析」后少等一次启动。\n- **哔哩哔哩**：登录后字幕与视频流同时获取；抖音探测画质改为同时进行。\n- **重复解析秒开**：10 分钟内再次解析同一链接（从「最近」点开、返回再进）直接用上次的结果。解析失败不保留，登录或切换账号后会重新解析。\n\n## 网页嗅探\n\n- 打开网页的同时检查页面源码，源码里直接写着的视频、音频地址不用等播放就先列出来；找不到时和以前一样，播放后自动抓取。\n\n## 诊断\n\n- 诊断日志会记录每次解析各步骤的用时（只记平台和秒数，不记链接）。遇到解析慢，可在「设置」导出日志反馈。\n\n## 安装\n\n下载下方附件里的 `Cloudn-v1.4.1.ipa`，自行签名后安装（需要 iOS 17 及以上）；已安装的用户可在「设置 › 检查更新」里获取。",
+          "minOSVersion": "17.0",
+          "buildVersion": "14",
+          "buildNumber": "14"
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-10-24T03:00:25Z",
+          "downloadURL": "https://github.com/mengangs/Cloudn/releases/download/v1.4.0/Cloudn-v1.4.0.ipa",
+          "size": 8947906,
+          "localizedDescription": "# Cloudn 1.4.0\n\n这一版主要打磨界面和使用体验，解析、下载、登录的功能本身没有变化。\n\n## 新增\n\n- **iPad 侧栏**（iOS 18 及以上）：三个标签页可以展开成侧栏；iPhone 与 iOS 17 保持原样。\n- **拖放**：把链接、文字或 .torrent 文件拖进 Cloudn 即可解析，多个链接走批量解析。\n- **保存更直接**：下载完成的任务行尾直接是「保存」（图片、视频存相册，其他文件存到「文件」）；预览页顶栏加「保存到相册」。\n- **转存时新建文件夹**：选保存位置时右上角可以直接新建文件夹（平台支持时）。\n- **失败筛选**：下载页有失败任务时多一个「失败」筛选。\n\n## 改进\n\n- **首次使用**：解析页空状态加使用引导，输入框旁加粘贴按钮，一键粘贴并解析；「我的」页说明不登录也能用、登录后能多做什么。\n- **直链失效自动换链**：HTTP 403 / 404 / 410 / 412 这类直链失效的任务，点重试会重新获取直链再继续；网络错误仍按原地址重试。\n- **出错时给出下一步**：视频需要登录时首选「去登录」；分享已失效时给「复制链接」「用浏览器打开」；未登录不能下载的网盘主按钮改为「登录后下载」，点按就地登录；GitHub 需要 Token 时直接给填写入口。\n- **网页嗅探**：结果里最长的一条标「推荐」，每行可直",
+          "minOSVersion": "17.0",
+          "buildVersion": "13",
+          "buildNumber": "13"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "用于把下载的图片和视频保存到相册"
+        }
+      }
     },
     {
       "name": "Delta",
@@ -1053,7 +1119,9 @@
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
           "size": 18858405,
           "localizedDescription": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Fa",
-          "minOSVersion": "27.0"
+          "minOSVersion": "27.0",
+          "buildVersion": "163",
+          "buildNumber": "163"
         },
         {
           "version": "2.8.1",
@@ -1061,7 +1129,9 @@
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
           "size": 7352364,
           "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "158",
+          "buildNumber": "158"
         },
         {
           "version": "2.7.10",
@@ -1069,7 +1139,9 @@
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
           "size": 7231227,
           "localizedDescription": "1. Fixed reading page scroll functionality.",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "156",
+          "buildNumber": "156"
         }
       ],
       "appPermissions": {
@@ -1306,7 +1378,9 @@
           "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
           "size": 8761298,
           "localizedDescription": "## What's new?\nThe first release of Henge: macOS on your iPhone and iPad, installed right on the device with no Mac needed.\n\n## Confirmed Working\nmacOS Sequoia 15.6.1 - installs and boots on an iPhone 17 Pro, lock screen in about 15 seconds\nSafari\nDiscord - install, log in, send messages\nClipboard and file sharing between the iPhone and macOS\n\niPad support is new and hasn't run on a real iPad yet.\n\n## Installation\nSideload Henge.ipa with SideStore or AltStore, or install Henge.tipa with TrollStore or TrollStore Lite. Enable JIT, open the Install tab and install macOS. Needs iOS 17 or later, an",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "1",
+          "buildNumber": "1"
         }
       ],
       "appPermissions": {
@@ -1369,36 +1443,36 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghubx.app",
+      "bundleIdentifier": "com.hghub.huangguo",
       "developerName": "zxsos",
-      "subtitle": "沉浸式竖屏播放",
-      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v2.1.2/app-icon.png",
-      "tintColor": "#B92746",
+      "subtitle": "沉浸竖屏播放客户端",
+      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
+      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
+      "tintColor": "#31B98B",
       "category": "entertainment",
       "versions": [
-        {
-          "version": "2.2.0",
-          "date": "2026-11-17T09:54:31Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0-pre.1/HGhubX_2.2.0-pre.1_ios.ipa",
-          "size": 3851530,
-          "localizedDescription": "## HGhubX 2.2.0-pre.1（预发布）\r\n\r\n预发布版本，包含结构整理与一轮体验改进，因为有些无法实机测试，还有很多Bug，欢迎试用反馈；不作为正式版本推送。\r\n\r\n### 新增\r\n\r\n- **Android TV 版**并入全量构建：独立安装包（com.hghubx.tv），Leanback 桌面入口、\r\n  横屏显示、遥控器方向键/确认/返回导航、TV banner 与 overscan 安全边距设置。\r\n- 移动端长按操作提示新增「双击暂停播放」说明（手势本身早已支持）。\r\n\r\n### 改进\r\n\r\n- **冷启动更快**：已同意协议的用户在启动动画期间就开始选线、加载首屏并请求播放，\r\n  动画结束时内容已就绪；首次使用的协议流程不变，默认静音不变。\r\n- 自动选线默认开启（核实原有行为即如此，未改动）。\r\n- 界面文案清理：设置页分组副标题、「清理缓存」行内说明等复述式文字移除\r\n  （清理范围说明保留在确认弹窗里）；「HGhubX 热榜」改名「排行榜」。\r\n- 播放页移除重复的「不感兴趣」按钮，统一为长按视频打开偏好菜单。\r\n\r\n### 修复\r\n\r\n- 竖屏视频在手机上不再被裁切铺满，按原始比例完整显示；横屏视频的\r\n  「铺满 / 适应」切换保留（#142）。\r\n- 安卓播放诊断日志复制失败：导出裁剪到 256KiB（保留环境信息与最近事件），\r\n  不再",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.2.0",
-          "date": "2026-11-17T15:00:16Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0-pre.2/HGhubX_2.2.0-pre.2_ios.ipa",
-          "size": 3858120,
-          "localizedDescription": "## HGhubX 2.2.0-pre.2（预发布）\n\n在 pre.1 基础上修复三组反馈：切线掉登录（#145）、播放器手势与全屏控件（#146）、\nTV 货架排版。欢迎试用反馈；不作为正式版本推送。\n\n### 新增\n\n- **长按加速可换挡**：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，\n  来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位，不再固定 2x（#146）。\n- 设置 → 播放新增「全屏无操作自动隐藏控件」：关 / 3秒 / 5秒 / 10秒（默认 3 秒，\n  暂停时不隐藏）（#146）。\n\n### 改进\n\n- 加速提示弱化：去掉高亮底色，改半透明黑底白字；锁定提示并入顶部倍速胶囊\n  （「上滑后松手锁定 / 松手锁定」），移除画面中部误导性的拖放目标提示（#146）。\n- 全屏右上角「退出全屏 / 锁定控制」两键显式 44×44 并留出 12px 间距，不再贴死（#146）。\n- 专题列表卡片去掉可选简介，封面 + 数量 + 单行标题统一高度对齐；\n  专题详情页的可展开简介保留。\n\n### 修复\n\n- **切换线路不再掉登录**（#145）：固定线路与发布页确认的镜像之间手动/自动切线、\n  重启后均保留会话（实测同账号库跨线可用）；自定义线路仍会清空会话，token 不外带。\n  `.ai` 只是导航站（接",
-          "minOSVersion": "15.0"
-        },
         {
           "version": "2.1.2",
           "date": "2026-11-15T16:56:37Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
           "size": 3852817,
           "localizedDescription": "## HGhubX 2.1.2\n\n### 更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n\n### 修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.1.1",
+          "date": "2026-11-15T15:26:37Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.1/HGhubX_2.1.1_ios.ipa",
+          "size": 3849882,
+          "localizedDescription": "## HGhubX 2.1.1\r\n\r\n### 更新点\r\n\r\n- **线路选择**：合并重复的“推荐镜像”和“镜像线路”区域为一个镜像列表，当前线路置顶。\r\n- **启动体验**：统一各平台启动背景，减少启动首帧闪烁。\r\n- **搜索**：热门题材使用真实标签数据，并可直接打开对应片单。\r\n\r\n### 修复点\r\n\r\n- 修复播放恢复、代理切换后的恢复队列及媒体分片缓存隔离问题。\r\n- 修复专题分页、收藏同步空状态和搜索框焦点处理。\r\n- 补齐 iOS 原生媒体传输的 Range 响应，改善视频探测与播放兼容性。\r\n- 修复帖子详情热度和清理观看历史前的确认交互。\r\n\r\n### 构建产物\r\n\r\n- Linux amd64：`.deb`\r\n- Android：arm64、arm、x86_64 分 ABI  `.apk`\r\n- Windows：x64 安装包 `.exe` 和便携版 `.zip`\r\n- macOS：Universal `.dmg`\r\n- iOS：未签名 `.ipa`\r\n\r\n\r\n## What's Changed\r\n* fix: 2026-11-15 修复轮次合并 by @zxsos in https://github.com/zxsos/HGhubX/pull/131\r\n* fix: 修复播放恢复、缓存与收藏状态回归 by @zxsos in https://github.",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.1.0",
+          "date": "2026-11-15T08:37:59Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.0/HGhubX_2.1.0_ios.ipa",
+          "size": 3819956,
+          "localizedDescription": "## HGhubX 2.1.0\r\n\r\nHGhubX 2.1 新增标签屏蔽，完善账号同步，并优化播放和加载体验。\r\n\r\n### 更新点\r\n\r\n- **内容偏好**：新增按标签屏蔽，可在设置或视频“不感兴趣”中添加规则；首页自动跳过命中内容，列表支持临时展开，收藏和历史保留记录。\r\n- **播放手势**：手机端支持左下长按减速、右上长按加速，中心小方块长按“不感兴趣”；首次进入播放器显示区域提示，视频详情支持点击标签跳转。\r\n- **启动体验**：新增开屏动画和首次使用协议。\r\n- **性能**：优化页面按需加载、下一条视频和下一集预取，精简无效代码与重复请求。\r\n- **界面**：更新了 UI，自己体验。\r\n\r\n### 修复点\r\n\r\n- 修复游客模式保存观看进度、收藏等数据时回滚设置的问题，包括自动恢复静音，以及音量、启动静音、优先高清、滑动切集和搜索历史被旧快照覆盖。\r\n- 修复评论区出现 HTML 标签和脚本片段、长评论和长昵称换行异常的问题；手机播放页面显示评论数量，评论面板读取当前剧集的数量。\r\n- 修复首页刷视频后进入全屏跳到其他视频的问题。\r\n- 修复手机端吃瓜视频控制按钮隐藏的问题，调整小屏控制栏，并补充全屏失败时的屏幕内全屏模式。\r\n- 修复收藏和观看历史只显示首批内容、账号数据未完整回填的问题，完善关注列表分页和失败重试。\r\n- 修复账号、线路切换后的迟到请求污染当",
           "minOSVersion": "15.0"
         }
       ],
@@ -1423,7 +1497,9 @@
           "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.4/Husk.ipa",
           "size": 142303569,
           "localizedDescription": "## What's new?\n\n3.4 is a compatibility release. About 97% of the 472 F-Droid apps we test now run, up from 85%. On the 169 Play Store apps we test, about 90% run, not counting apps with anti-tamper or fraud protection, which Husk doesn't try to bypass. All of these numbers are from testing on a Mac.\n\n### More Android apps\n- Microsoft Word opens (Excel and PowerPoint share its libraries)\n- Slack, Gmail, Teams, Deezer, Flipboard and Picsart get past the crashes that stopped them\n- More engines and frameworks start: React Native's new architecture, Qt 6 / QML, and apps using JavaScriptCore\n- libG",
-          "minOSVersion": "15.5"
+          "minOSVersion": "15.5",
+          "buildVersion": "149",
+          "buildNumber": "149"
         },
         {
           "version": "3.3",
@@ -1431,7 +1507,9 @@
           "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.3/Husk.ipa",
           "size": 142239082,
           "localizedDescription": "## Play without JIT\nMore games convert and sign their libraries on the device. One library that cannot convert no longer stops the rest. Certificates from SideStore, AltStore, or a `.p12` import more reliably, and converted libraries are signed again after this update.\n\n## More Android apps\nJava apps pick up missing platform classes from AOSP when `framework.jar` is bundled. Jobs and boot receivers actually start, and Wi-Fi, location, and settings answer as a running phone would.\n\n## Importing files\nThe in-app file picker for Android apps can be used more than once in a session.\n\n## 32-bit ARM",
-          "minOSVersion": "15.5"
+          "minOSVersion": "15.5",
+          "buildVersion": "148",
+          "buildNumber": "148"
         },
         {
           "version": "3.2.1",
@@ -1479,7 +1557,9 @@
           "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.6/iDeck-0.1.3-alpha.6-build145.ipa",
           "size": 173835258,
           "localizedDescription": "# Steam64 setup, one step at a time\n\n**Experimental prerelease · Build145 · Known issue: Steam can freeze after the third game exit. This update improves setup; it does not fix that stability issue.**\n\n## What’s new\n\n- **Install Steam64 in the launcher:** downloads the matched Steam/browser packages from Valve over HTTPS, verifies sizes/SHA-256 and installs with rollback. Cancel/retry, Verify/Repair and Return to previous environment are available.\n- **Four clear actions:** Install Steam → Connect LocalDevVPN → Pair this device → Enable JIT. Runtime preparation is automatic, signing/address ch",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "145",
+          "buildNumber": "145"
         },
         {
           "version": "0.1.3",
@@ -1487,7 +1567,9 @@
           "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.5/iDeck-0.1.3-alpha.5-build143.ipa",
           "size": 166398909,
           "localizedDescription": "# iDeck v0.1.3-alpha.5 · Build 143\n\n**Experimental checkpoint — known issue: Steam can freeze after the third game exit.**\n\n## What changed\n\n- Smoother Steam home/library browsing reported on the test iPhone after reducing periodic diagnostics and pausing hidden log parsing.\n- Steam menu now uses the existing window instead of starting a second Steam client and potentially blocking the control helper.\n- Improved consistency when reopening the selected Steam64 runtime and its separate saved-login environment.\n- VM maintenance and safety guards stay enabled. Experimental GPU-auto and V8 JIT are ",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "145",
+          "buildNumber": "145"
         },
         {
           "version": "0.1.3",
@@ -1495,7 +1577,9 @@
           "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.4/iDeck-0.1.3-alpha.4-build99.ipa",
           "size": 166772750,
           "localizedDescription": "## One button closer to your Steam library · Build 99\n\n**Download & Install Steam — directly inside iDeck.** After preparing the local\nruntime, download the complete pinned Windows Steam client and CEF/browser files\nfrom Valve's HTTPS CDN. No computer or manual ZIP transfer is needed for acquiring\nSteam files. JIT/signing setup may still require a computer on older OS versions.\n\n### What's new\n\n- Full 19-package Steam/CEF download with real byte progress, SHA-256 and complete\n  6,233-file verification; not just the Dock component bootstrap.\n- Cancel, Retry and verified-package caching. Safe st",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "145",
+          "buildNumber": "145"
         }
       ],
       "screenshots": [
@@ -1565,7 +1649,9 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.3/iPadn-2.1.3-lite-unsigned.ipa",
           "size": 49310532,
           "localizedDescription": "## iPadn 2.1.3\n\n本次为修复与体验优化更新，解决关键词搜索时的并发闪退问题，隔离顶部提示动画重绘，并改进 iOS 27 本机配对引导与灵动岛交接体验。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复关键词搜索闪退与并发竞争**：移除搜索前并发嵌套任务组与超时竞争探测，改为在搜索结果返回后按商店地区顺序核验候选已下架应用（最多 15 项），并在新搜索、取消搜索或关闭开关时显式取消旧核验任务。\n- **隔离全局提示动画并优化切换账号响应**：将顶部提示与撤销横幅拆分为独立视图，避免横幅弹簧动画触发整个标签页层级重绘；切换账号时先让提示横幅开始渲染，再触发地区同步、重新搜索与已购刷新。\n- **优化 iOS 27 本机配对引导与灵动岛提醒**：点按「打开设置」跳转到系统设置时主动释放后台音频并推送第 1 步灵动岛横幅指引，补充锁屏密码验证提示与 11 种语言文案，后台等待状态更新支持按代数及时取消，避免旧状态阻塞新提醒。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.3-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.3-lite-unsigned.ipa`：精简版，不含扩展，只需 1 ",
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildVersion": "33",
+          "buildNumber": "33"
         },
         {
           "version": "2.1.2",
@@ -1573,7 +1659,9 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.2/iPadn-2.1.2-lite-unsigned.ipa",
           "size": 49328014,
           "localizedDescription": "## iPadn 2.1.2\n\n本次更新优化了下载与按钮交互动画、侧滑反馈、历史版本校准及原生配对灵动岛提醒，新增直接替换翻译与已下架应用关键词优先搜索，并提升原生安装稳定性。安装包未签名，请用自己的工具签名后安装。\n\n### 新增与优化\n\n- **搜索优先显示已下架应用**：关键词搜索结合内置应用别名目录及本机已购、收藏、下载记录做相关度分级匹配，并核验候选应用的下架状态，将已确认下架且匹配关键词的应用优先排在结果前排；可在「账号 › 设置 › 下载 › 搜索时优先显示已下架应用」随时关闭恢复原排序（默认开启）。\n- **下载操作与按钮形变动效**：下载、已购、搜索与详情页的操作按钮、云朵按钮与黑白进度环统一居中对齐，点按后以按钮中心平滑形变为加载/下载环；进度环底轨与前景进度弧统一为相同线宽，状态过渡更连贯。\n- **侧滑动画与 5 秒撤销**：下载卡片侧滑垃圾桶与分享图标显露后由原生 Core Animation 播放完整动画（开启「减少动态效果」时显示静态完整图标）；下载卡片侧滑删除不再弹确认窗，改为 5 秒倒计时与撤销（连续删除可合并撤销），长按「删除任务及文件」与批量删除仍保留确认，搜索记录删除不再显示倒计时或撤销。\n- **底部标签栏与同步骨架屏微光**：底部标签栏改为自适应动态矢量图标并统一描边粗细，优化搜索图标视觉重量与账号页切换动画；加载骨架屏改为全屏同相位的单",
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildVersion": "32",
+          "buildNumber": "32"
         },
         {
           "version": "2.1.1",
@@ -1581,7 +1669,9 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.1/iPadn-2.1.1-lite-unsigned.ipa",
           "size": 48708836,
           "localizedDescription": "## iPadn 2.1.1\n\n本次为修复与布局优化更新，包含 iOS 16 安装设置崩溃修复和历史版本日期范围筛选排版改进。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复 iOS 16 打开安装设置时崩溃**：对安装帮助链接的中文片段进行显式编码，并避免无效 URL 的强制解包。感谢 #86 的贡献。\n- **完善商店链接容错**：应用详情无法构造有效 App Store 链接时，不再强制解包或显示不可用的查看/分享入口。\n- **优化历史版本日期筛选面板**：将起止日期、查询/取消/清除按钮与状态提示集中展示，统一日期控件对齐和布局间距，并适配无障碍大字体。保留原有日期查询、取消与清除行为。详见 #87。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.1-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.1-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs",
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildVersion": "31",
+          "buildNumber": "31"
         }
       ],
       "appPermissions": {
@@ -1984,7 +2074,9 @@
           "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa",
           "size": 77017813,
           "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-iOS-JIT-128.9934-English.zip)\n\n- Fixed visual issues in select games, including green video frames in **The Last of Us Remastered** and title-screen flicker in **God of War III Remastered**.\n- Updated per-game settings and presets, including a presentation setting for **God of War III Remastered**.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/INSTALLAT",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "128.9934",
+          "buildNumber": "128.9934"
         },
         {
           "version": "128.9921",
@@ -2399,7 +2491,9 @@
           "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.9/Nekularity.ipa",
           "size": 29963615,
           "localizedDescription": "**Full Changelog**: https://github.com/laincat/Nekularity/compare/v0.4.8...v0.4.9",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "31",
+          "buildNumber": "31"
         },
         {
           "version": "0.4.8",
@@ -2629,7 +2723,9 @@
           "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
           "size": 31706166,
           "localizedDescription": "# 5.1.1 (2026-11-15)\r\n**更新说明**\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-          "minOSVersion": "15.1"
+          "minOSVersion": "15.1",
+          "buildVersion": "46206",
+          "buildNumber": "46206"
         },
         {
           "version": "5.0.7",
@@ -2669,7 +2765,9 @@
           "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa",
           "size": 12107911,
           "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n\n## 下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- `PicaX-unsigned.ipa`：iOS 未签名 IPA\n- `PicaX-with-watch-unsigned.ipa`：iOS + Watch 未签名 IPA\n- `PicaX-WatchApp-unsigned.zip`：Watch App 未签名 ZIP\n- `PicaX.dmg`：macOS 未签名 DMG\n\n## 安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n\n## 版本信息\n\n- 版本：`v1.2.5`\n- Commit：`04a9f1b93158605a6f92f250e09e079bb6c9f2fa`\n- 构建编号：`64`\n\n## 更新内容\n\n- 修改了搜索页UI\n- 增加了阅读器内放大后的跨页支持\n\n---\n\n由 GitHub Actions 自动发布。",
-          "minOSVersion": "15.2"
+          "minOSVersion": "15.2",
+          "buildVersion": "2610161",
+          "buildNumber": "2610161"
         },
         {
           "version": "1.2.4",
@@ -3170,7 +3268,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.22/Stats-v0.3.15-iOS.ipa",
           "size": 2800963,
           "localizedDescription": "Stats iPhone 0.3.15 keeps Paired Macs in Mac Connection Settings.\n\n## What's Changed\n\n- Removed the duplicate Paired Macs entry from Dashboard Settings.\n- Paired Macs remains available from Mac Connection Settings.\n\n## Download\n\n- **iPhone app · 0.3.15 (build 18):** `Stats-v0.3.15-iOS.ipa` (iOS 17+, arm64; unsigned for SideStore and AltStore).\n- **SHA-256:** `d44cfd7d0c87186e1ca42e12cf89106b8b2f8e24ed391f0c58bbfe3520120276`\n- Mac Companion 0.3.13 remains compatible.\n\n**Full Changelog:** https://github.com/ishtiaq156/stats/compare/v0.3.21...v0.3.22",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "18",
+          "buildNumber": "18"
         },
         {
           "version": "0.3.14",
@@ -3178,7 +3278,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.21/Stats-v0.3.14-iOS.ipa",
           "size": 2803090,
           "localizedDescription": "Stats iPhone 0.3.14 refines activity charts and metric settings.\n\n## What's Changed\n\n- The chart tooltip and crosshair disappear when you lift your finger after scrubbing.\n- CPU, RAM, and Network each have a Settings page for the chart history window. The duration control no longer appears on the metric page.\n- Disk Settings opens as a full navigation page, with chart history alongside the existing disk controls.\n- Removed the repeated Mac name and connection row from CPU, RAM, Disk, and Network pages.\n\n## Download\n\n- **iPhone app · 0.3.14 (build 17):** `Stats-v0.3.14-iOS.ipa` (iOS 17+, arm64;",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "17",
+          "buildNumber": "17"
         },
         {
           "version": "0.3.13",
@@ -3186,7 +3288,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.20/Stats-v0.3.13-iOS.ipa",
           "size": 2816351,
           "localizedDescription": "Stats iPhone 0.3.13 adds interactive activity charts.\n\n## What's Changed\n\n- Drag across CPU, memory, disk, and network history to inspect a reading with its time and measured value.\n- Choose a 1, 2, 3, 5, or 10 minute history window separately for each metric. The default is 3 minutes.\n- Disk and network charts explain that their two directions use independent visual scales.\n\n## Download\n\n- **iPhone app · 0.3.13 (build 16):** `Stats-v0.3.13-iOS.ipa` (iOS 17+, arm64; unsigned for SideStore and AltStore).\n- **SHA-256:** `9a264f83412a4124f7c83d15be878ea359dcd940d51333e73ce1eca811c002b8`\n- Mac Com",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "16",
+          "buildNumber": "16"
         }
       ],
       "appPermissions": {
@@ -3279,7 +3383,9 @@
           "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
           "size": 9347637,
           "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f27690434563245",
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
         },
         {
           "version": "1.4.14",
@@ -3287,7 +3393,9 @@
           "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.14/TiebaPure-v1.4.14-unsigned.ipa",
           "size": 3787516,
           "localizedDescription": "## 修改内容\n\n- 新增帖子本地保存：支持完整楼层和楼中楼离线阅读、媒体下载、搜索、回复更新、存储管理及备份导入导出。\n- 新增内置与自定义阅读字体，并完善首页重复点击刷新。\n- 自动检测账号登录失效，提示后清理当前登录态，同时避免旧请求或网络中断误触发退出。\n- 修复 iOS 16 嵌套搜索布局递归卡死、文字选择与导航手势冲突，并将媒体、字体、语音和存储文件 I/O 移出主线程。\n- 加固本地帖子并发写入、媒体事务崩溃恢复、备份校验与字体目录一致性。\n\n## 验证\n\n- GitHub Actions ci-ok 全部通过，包含单元测试、iOS 16 兼容检查、iPhone/iPad UI 测试和 Release 构建。\n- App 与扩展均为 1.4.14 (58)、arm64、最低 iOS 16.4；IPA 压缩结构正常且未签名。\n- 发帖和回帖夹具 UI 测试通过；本次未改动认证写入路径，因此未重复进行真实账号写入测试。",
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
         },
         {
           "version": "1.4.13",
@@ -3295,7 +3403,9 @@
           "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.13/TiebaPure-v1.4.13-unsigned.ipa",
           "size": 3509096,
           "localizedDescription": "## 修改内容\n\n- 修复多图帖子首图放大后停留在低清过渡图的问题，并增加受内存与帧数限制的 GIF 动画显示。\n- 修复回复倒序分页只作用于当前已加载页面的问题，并完善楼中楼进入动画、下拉/右滑退出和阅读位置恢复。\n- 修复 iOS 18 长按选择帖子文字时可能出现的布局卡死。\n- 修复登录账号发帖、回帖时 TBS 刷新失败的问题；恢复签名登录校验，并保留发送结果不明确时不自动重试的保护。\n\n## 验证\n\n- GitHub Actions `ci-ok` 全部通过。\n- 本地发布请求与身份夹具测试 48 项通过。\n- 真实账号发帖和回帖均验证成功。",
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
         }
       ]
     },
@@ -3501,7 +3611,9 @@
           "downloadURL": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa",
           "size": 15740079,
           "localizedDescription": "# Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 **此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。**\r\n\r\n> 🎉 **图片内嵌文字翻译功能已上线。**：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 **上色功能优化**：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> **骁龙8gen2及以上可以流畅使用在线实时上色阅读。** 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，**建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型**，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 **超分功能可正常使用**\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unb",
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildVersion": "215",
+          "buildNumber": "215"
         },
         {
           "version": "2.1.4",
@@ -3831,7 +3943,9 @@
           "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.4/rich4-1.2.4-unsigned.ipa",
           "size": 1445804612,
           "localizedDescription": "## 谢谢大家\n谢谢每一位在玩、在报 bug、在评论区出主意的朋友，是大家的支持让这个重制版一路更新到现在。\n\n这个重制版一开始只是我用公司给的无限 token，自己做着自己玩的；没想到承蒙大家喜爱，被大家无私地越传越广。**这个游戏属于每一位喜欢大富翁4的玩家：永远不收任何费用，也不做任何商业用途，大家尽管拿去玩就好。**\n\n**1.3 的新地图正在制作中**，工作量比较大，下一个版本要隔比较长的一段时间才会发布。这段时间里，1.2.4 就是大家的主力版本：\n\n- **遇到 bug 或小问题**：可以直接在 [Issues](https://github.com/iam567/rich4-renew-app/issues) 提交，也可以在 B 站 UP 主 **TrustBox**、**阿姆西_MC** 发布的大富翁4 重制版视频下面留言。各个评论区我都会看，能修的一定会修。\n- **在线更新很慢或失败**：这个我暂时没办法解决。在国内提供下载需要办理备案，我个人没办法申请，所以国内的朋友在线更新时请先开代理；或者直接下载这个页面的安装包覆盖安装，效果一样，存档也会保留。\n\n再次感谢大家，我们 1.3 见！\n\n> **1.2.4 是 1.2 之后几个小版本的合集，这次最大的新功能是「排行榜」。** 已经装了 1.2.x 的玩家，在游戏里在线更新就能升到 1.2.4，不用重新下载；",
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildVersion": "55",
+          "buildNumber": "55"
         },
         {
           "version": "1.2.0",
@@ -3861,7 +3975,7 @@
       "developerName": "Xanerix",
       "subtitle": "多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [

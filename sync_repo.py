@@ -164,11 +164,18 @@ def main():
         if nd and (not od or nd >= od):
             # 保留原有的最低系统版本要求（release 里没有这个信息）
             old_min = {v.get("version"): v.get("minOSVersion") for v in app.get("versions") or []}
+            old_build = {v.get("version"): v.get("buildVersion") for v in app.get("versions") or []}
             fallback_min = old.get("minOSVersion")
             for v in vers:
                 mv = old_min.get(v["version"]) or fallback_min
                 if mv:
                     v["minOSVersion"] = mv
+                # 官方源里手工登记过构建号、而 tag 里提取不到时，沿用它
+                if not v.get("buildVersion"):
+                    bv = old_build.get(v["version"])
+                    if bv:
+                        v["buildVersion"] = bv
+                        v["buildNumber"] = bv
             app["versions"] = vers
             updated.append((app["name"], old.get("version"), vers[0]["version"], nd[:10]))
         else:

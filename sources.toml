@@ -136,6 +136,11 @@ label = "Mornye 官方"
 url = "https://raw.githubusercontent.com/mornyeapp/Mornye/main/apps.json"
 tier = 0
 
+[[upstream]]
+label = "Cloudn 官方"
+url = "https://raw.githubusercontent.com/mengangs/Cloudn/main/altstore.json"
+tier = 0
+
 # ==========================================================
 # 手工补充：没有官方源、直接按仓库手工登记的应用
 # 文件在 manual/extra.json，加新应用就往里面加一个对象
