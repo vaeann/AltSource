@@ -1,6 +1,8 @@
 # 我的软件源
 
-把多个上游软件源**去重合并**成一个自己的 AltStore 源。共 **87 个应用**，全部中文简介，自动同步上游更新。
+把多个上游软件源**去重合并**成一个自己的 AltStore 源。共 **94 个应用**，全部中文简介，自动同步上游更新。
+
+其中 **24 个应用直接用各自项目的官方源数据**，其余用聚合源补齐。
 
 ## 订阅地址
 
@@ -18,16 +20,11 @@ https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/app
 
 ## 它合并了哪些源
 
-| 上游 | 应用数 |
-|---|---|
-| INSAV 官方 | 1 |
-| WQ Files 官方 | 1 |
-| Camlo 官方 | 1 |
-| Laincat 工具箱 | 26 |
-| JiPengLin 精选 | 3 |
-| AltGallery | 71 |
+**官方源（23 个，优先级最高）**：AltStore、SideStore、UTM、DolphiniOS、Aidoku、EhPanda、Apollo、Feather、Husk、iPadn、One、INSAV、OpenParsec、Opaline、RewindBox、Stats、BCD、VeneraX、WQ Files、Camlo、Erosion-CN、RushHours、Mornye。
 
-原始 103 条 → 按 bundle id 去重 88 → 按名称去重 **87**（TiebaPure 有两个分支，保留版本更全的那个）。
+**聚合源（3 个，只用来补齐）**：Laincat 工具箱、JiPengLin 精选、AltGallery。
+
+原始 133 条 → 按 bundle id 去重 99 → 按名称去重 **94**。
 
 ## 目录说明
 
@@ -59,6 +56,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/app
 [[upstream]]
 label = "某个源"
 url = "https://raw.githubusercontent.com/xxx/yyy/main/apps.json"
+tier = 0    # 0 = 官方源，1 = 聚合源（不写默认 1）
 ```
 
 ## 加一个新 App（只有 GitHub 仓库地址、没有现成源）
@@ -87,7 +85,10 @@ path = "apps/<名字>/apps.json"
 | 环节 | 规则 |
 |---|---|
 | 去重 | 先按 bundle id，再按名称（忽略空格、连字符、大小写） |
-| 保留谁 | 版本数多的优先；版本数相同则 `sources.toml` 里排序靠前的优先 |
+| 选正式版 | 版本号带 beta / alpha / nightly 的条目降权，能不用就不用 |
+| 选新旧 | 比较最新版本的发布日期，新的优先（官方源更新滞后时不会被旧数据顶掉） |
+| 官方优先 | 日期相同或缺失时，官方源压过聚合源 |
+| 同名不同 id | 视为分支，保留版本更全的那个（如 TiebaPure） |
 | 版本数量 | 每个应用最多留 3 个最新版本（改 `keep_versions` 可调） |
 | 中文简介 | 优先用 `zh.json`；没收录的用原文兜底，构建日志会列出来 |
 | 主题色 | 按 bundle id 哈希生成，同一个应用每次颜色固定，互不重复 |
