@@ -69,24 +69,46 @@ tier = 0    # 0 = 官方源，1 = 聚合源（不写默认 1）
 
 ## 加一个新 App（只有 GitHub 仓库地址、没有现成源）
 
+**方式一：手工登记（最省事）**
+
+在 `manual/extra.json` 的 `apps` 数组里加一个对象，填好 `bundleIdentifier`、`name`、`iconURL`，版本先填一条最新的：
+
+```json
+{
+  "name": "应用名",
+  "bundleIdentifier": "com.xxx.yyy",
+  "developerName": "作者",
+  "subtitle": "一句话简介",
+  "localizedDescription": "详细说明",
+  "iconURL": "https://raw.githubusercontent.com/owner/repo/main/icon.png",
+  "category": "utilities",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-17T00:00:00Z",
+      "downloadURL": "https://github.com/owner/repo/releases/download/v1.0.0/app.ipa",
+      "size": 12345678
+    }
+  ]
+}
+```
+
+然后在 `zh.json` 里补一条中文简介（key 就是 bundle id）。之后 `sync_repo.py` 会自动去它的仓库补齐历史版本并持续跟进更新。
+
+**方式二：自动读 bundle id（不确定包名时用）**
+
 ```bash
 python add_app.py owner/repo --name 应用名
 ```
 
-它会下载那个仓库最新的 IPA，**解开读真实的 bundle id**（手工抄必错），生成 `apps/<名字>/config.toml`。然后：
+它会下载那个仓库最新的 IPA，解开读真实的 bundle id（手工抄容易错），生成 `apps/<名字>/config.toml`。再：
 
 ```bash
 pip install altgen
 python -m altgen -c apps/<名字>/config.toml
 ```
 
-再在 `sources.toml` 里用本地路径引用它：
-
-```toml
-[[upstream]]
-label = "应用名"
-path = "apps/<名字>/apps.json"
-```
+最后在 `sources.toml` 里用 `path` 引用生成的文件。
 
 ## 处理规则
 

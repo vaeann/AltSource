@@ -159,7 +159,8 @@ def main():
             continue
         old = (app.get("versions") or [{}])[0]
         od, nd = str(old.get("date") or ""), str(vers[0].get("date") or "")
-        if nd and (not od or nd > od):
+        # 日期相同也刷新一次：手工登记的条目只有一条，靠这次补齐历史版本
+        if nd and (not od or nd >= od):
             # 保留原有的最低系统版本要求（release 里没有这个信息）
             old_min = {v.get("version"): v.get("minOSVersion") for v in app.get("versions") or []}
             fallback_min = old.get("minOSVersion")

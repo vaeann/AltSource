@@ -1,0 +1,27 @@
+{
+  "name": "手工补充源",
+  "identifier": "com.vaeann.manual",
+  "apps": [
+    {
+      "name": "3106",
+      "bundleIdentifier": "com.qingtang.3106",
+      "developerName": "QuinnTang74",
+      "subtitle": "免越狱的 iOS 容器管理工具",
+      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，可浏览与管理应用数据、替换任意文件、编辑 MobileGestalt 参数、清理缓存、备份与迁移应用存档，还能制作 .tendies 壁纸与拨号键主题。",
+      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "3.2.6",
+          "buildVersion": "25",
+          "date": "2026-11-17T02:55:19Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
+          "size": 5753848,
+          "minOSVersion": "17.0",
+          "localizedDescription": "iOS 27 写入失败专项修复：授权链四处单点加固、失败码诊断透传（文件页横幅 + 设置页沙盒诊断 + 一键导出）、写入遇权限拒绝自动清理。"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
