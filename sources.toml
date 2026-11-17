@@ -1,3 +1,8 @@
+# 每个应用保留几个历史版本
+keep_versions = 3
+# 名称或 bundle id 里带 Beta 的条目直接跳过，避免把测试版当成正式版
+exclude_beta = true
+
 # 源信息
 [source]
 name = "我的软件源"
@@ -8,30 +13,140 @@ icon_url = "https://github.com/vaeann.png?size=256"
 website = "https://github.com/vaeann"
 tint_color = "#6B4EFF"
 
-# 每个应用保留几个历史版本
-keep_versions = 3
+# ==========================================================
+# 官方源：优先级 0。同一个应用只要官方源有数据，就用官方的
+# ==========================================================
 
-# 上游源，顺序越靠前，去重时越优先（版本数相同时）
+[[upstream]]
+label = "AltStore 官方"
+url = "https://apps.altstore.io"
+tier = 0
+
+[[upstream]]
+label = "SideStore 官方"
+url = "https://apps.sidestore.io"
+tier = 0
+
+[[upstream]]
+label = "UTM 官方"
+url = "https://alt.getutm.app"
+tier = 0
+
+[[upstream]]
+label = "DolphiniOS 官方"
+url = "https://altstore.oatmealdome.me"
+tier = 0
+
+[[upstream]]
+label = "Aidoku 官方"
+url = "https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json"
+tier = 0
+
+[[upstream]]
+label = "EhPanda 官方"
+url = "https://raw.githubusercontent.com/EhPanda-Team/EhPanda/main/AltStore.json"
+tier = 0
+
+[[upstream]]
+label = "Apollo 官方"
+url = "https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/main/apps.json"
+tier = 0
+
+[[upstream]]
+label = "Feather 官方"
+url = "https://raw.githubusercontent.com/claration/feather/main/app-repo.json"
+tier = 0
+
+[[upstream]]
+label = "Husk 官方"
+url = "https://raw.githubusercontent.com/Leviidev/Husk/main/altsource.json"
+tier = 0
+
+[[upstream]]
+label = "iPadn 官方"
+url = "https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json"
+tier = 0
+
+[[upstream]]
+label = "One 官方"
+url = "https://raw.githubusercontent.com/ios151/One-releases/main/altsource.json"
+tier = 0
+
 [[upstream]]
 label = "INSAV 官方"
 url = "https://raw.githubusercontent.com/ios151/Insav-releases/main/altsource.json"
+tier = 0
+
+[[upstream]]
+label = "OpenParsec 官方"
+url = "https://raw.githubusercontent.com/NearFrame/OpenParsec/main/altstore.json"
+tier = 0
+
+[[upstream]]
+label = "Opaline 官方"
+url = "https://verback2308.github.io/Opaline/apps.json"
+tier = 0
+
+[[upstream]]
+label = "RewindBox 官方"
+url = "https://raw.githubusercontent.com/TarbleFR/RewindBox/main/source.json"
+tier = 0
+
+[[upstream]]
+label = "Stats 官方"
+url = "https://raw.githubusercontent.com/ishtiaq156/stats/main/source.json"
+tier = 0
+
+[[upstream]]
+label = "BCD 官方"
+url = "https://thebcd69.github.io/bcd-games/source.json"
+tier = 0
+
+[[upstream]]
+label = "VeneraX 官方"
+url = "https://raw.githubusercontent.com/Kyosee/VeneraX/master/altstore-source-beta.json"
+tier = 0
 
 [[upstream]]
 label = "WQ Files 官方"
 url = "https://raw.githubusercontent.com/kolbicz/WQFiles/main/source.json"
+tier = 0
 
 [[upstream]]
 label = "Camlo 官方"
 url = "https://raw.githubusercontent.com/Kianuni/Camlo/main/apps.json"
+tier = 0
+
+[[upstream]]
+label = "Erosion-CN 官方"
+url = "https://raw.githubusercontent.com/Kianuni/Erosion-CN/main/apps.json"
+tier = 0
+
+[[upstream]]
+label = "RushHours 官方"
+url = "https://raw.githubusercontent.com/ekomlenovic/rush_hour_ios_android/main/android-source.json"
+tier = 0
+
+[[upstream]]
+label = "Mornye 官方"
+url = "https://raw.githubusercontent.com/mornyeapp/Mornye/main/apps.json"
+tier = 0
+
+# ==========================================================
+# 聚合源：优先级 1，只用来补官方源没覆盖到的应用
+# ==========================================================
 
 [[upstream]]
 label = "Laincat 工具箱"
 url = "https://raw.githubusercontent.com/laincat/AltStore/main/apps.json"
+tier = 1
 
 [[upstream]]
 label = "JiPengLin 精选"
 url = "https://JiPengLin.github.io/custom-sidestore-repo/apps.json"
+tier = 1
 
 [[upstream]]
 label = "AltGallery"
 url = "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/all-apps.json"
+tier = 1
