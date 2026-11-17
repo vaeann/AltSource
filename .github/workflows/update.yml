@@ -43,4 +43,13 @@ jobs:
             exit 0
           fi
           git commit -m "chore: 同步上游最新版本 [skip ci]"
-          git push
+          for i in 1 2 3; do
+            if git push; then
+              echo "推送成功"
+              exit 0
+            fi
+            echo "推送冲突，拉取后重试（第 $i 次）"
+            git pull --rebase origin main || true
+          done
+          echo "推送失败"
+          exit 1
