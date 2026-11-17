@@ -29,7 +29,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 REPO_PAT = re.compile(r"github\.com/([^/]+)/([^/]+)/releases")
 # 版本号的形态：必须带点，避免把 20261114 这种日期戳当成版本
 SEMVER = re.compile(r"(?<![\d.])(\d+\.\d+(?:\.\d+)*)(?![\d.])")
-BUILD = re.compile(r"[+](\d{1,6})(?![\d])")
+# 构建号：+123 这种加号形式，或者 -22 / _7 这种结尾数字（tag 里常见 v1.7.1-22）
+BUILD = re.compile(r"[+](\d{1,6})(?![\d])|[-_](\d{1,3})$")
 
 
 def get_token():
@@ -69,7 +70,7 @@ def pick_build(asset_name, tag):
     for src in (asset_name, tag):
         m = BUILD.search(src or "")
         if m:
-            return m.group(1)
+            return m.group(1) or m.group(2)
     return None
 
 
