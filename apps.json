@@ -31,7 +31,8 @@
           "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
           "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
           "size": 14753154,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "4"
         }
       ],
       "appPermissions": {
@@ -56,7 +57,8 @@
           "localizedDescription": "What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n💳 Wallet Card Discovery & Bank Identification\n• Universal Wallet Log Parser: Ported the proven WalletScanParser from AirCard macOS. Captures cards from Dashboard loading (...): for SOO+, passIDs[InSession], passIDs[global], and modern J",
           "downloadURL": "https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
           "size": 4638147,
-          "minOSVersion": "18.0"
+          "minOSVersion": "18.0",
+          "buildNumber": "1.3.2"
         }
       ],
       "appPermissions": {
@@ -109,7 +111,8 @@
           "localizedDescription": "新增\r\n\r\n- Windows 新增 AnimeJaNai 实时超分：播放器底栏一键开关，可与 Anime4K、DLSS 叠加；支持 TensorRT / DirectML 后端自动选择，提供质量、均衡、性能三档与原版、Sharp1 两种模型，附细节锐化、亮度、对比度、饱和度、伽马调节及原画/超分同帧对比。\r\n- AnimeJaNai 可选 RIFE 补帧：支持 2×、3×、4× 倍率，提供完整（原分辨率处理）与快速（最高 540p 处理）两种方案。\r\n- 新增“画质设置”面板，整合 AnimeJaNai 与 DLSS 全部选项；播放器内长按增强按钮或进入“实验室”页面均可打开，运行状态、安装进度与诊断信息集中展示。\r\n- Windows 播放器底栏常显 Anime4K / AnimeJaNai / DLSS 开关，点按切换、长按进入画质设置，无需先在实验室开启。\r\n- 评论区改版：正文按 Markdown / BBCode 渲染，评论中的时间点自动识别为跳转链接，点击可seek到对应进度或指定集数；表情贴图正常显示，加载时改用骨架占位。\r\n优化\r\n\r\n- 更新优化内置源规则\r\n- DLSS 与 AnimeJaNai 运行库改由组织维护的 media-kit fork 统一打包，应用内不再捆绑原生桥接代码，减小安装体积。\r\n- 充分优化日志系统\r\n- 优化了一些小细节\r\n使用说明\r",
           "downloadURL": "https://github.com/AniBakaBaka/AniBaka/releases/download/5.2.4%2B1101/baka-5.2.4%2B1101-ios-unsigned.ipa",
           "size": 23708307,
-          "minOSVersion": "13.0"
+          "minOSVersion": "13.0",
+          "buildNumber": "1101"
         }
       ],
       "appPermissions": {
@@ -134,7 +137,8 @@
           "localizedDescription": "- 修复内存泄漏的问题",
           "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
           "size": 41226765,
-          "minOSVersion": "12.0"
+          "minOSVersion": "12.0",
+          "buildNumber": "1"
         }
       ],
       "appPermissions": {
@@ -159,7 +163,8 @@
           "localizedDescription": "🔄 更新内容\n2.6.8 更新\n新增\n\n- 壁纸页面支持关键词筛选、支持收藏壁纸集合(登录后)、我的页面右上角打开收藏集合\n- 重构视频资源下载模块，下载功能完全和播放页解耦不在需要等待内容解析完成后才能看到下载菜单，可以在番剧详情剧集弹窗和播放页剧集区域进入下载页面\n- 排行榜页面加载动画替换成骨架屏\n- 壁纸页面加载动画替换成骨架屏\n- 播放页的番剧详情信息展示方式从原来的内嵌路由替换成抽屉方式展示\n-  Linux 支持 Nix 安装(详情在仓库README下载项查看) #128 (@yebei199)\n优化\n\n- 优化更新信息页面布局\n- 优化大屏设置侧边栏效果(开启磨砂玻璃ui)\n- 优化推荐、排行榜页面开始磨砂玻璃时的页面顶部状态效果\n- 离开社区页面10秒后取消实时数据更新订阅减小服务器压力\n- 优化animeflow服务器网络请求延迟(可能有用)\n修复\n\n- 修复部分数据源线路名称文字ui溢出问题\n- 修复宽屏设备打开壁纸详情页时切换tabview时的异常问题\n- 修复在切换视频播放源时没有自动保持播放进度问题\n- 修复 Linux 客户端窗口问题 #129 (@lyndon0na)\n\n---\n📦 下载\n- 每个设备的安装包后缀: 苹果手机(.ipa)、 安卓手机(.apk)、windows电脑(.zip或.exe)、mac电脑(.dmg)、linux电脑(.tar",
           "downloadURL": "https://github.com/openAnimeFlow/AnimeFlow/releases/download/v2.6.8/AnimeFlow-ios-2.6.8.ipa",
           "size": 29518672,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "2.6.8"
         }
       ],
       "appPermissions": {
@@ -184,7 +189,8 @@
           "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Andr",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
           "size": 48615547,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "6.4.99"
         },
         {
           "version": "6.4.0",
@@ -193,7 +199,8 @@
           "localizedDescription": "🧪 预发布 6.4.0-beta02（2026-10-22）\n\n- 修复一系列播放相关 bug\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复部分网络环境下数据源因页面链接使用 HTTP 而无法加载的问题 (#3633 by @wdw89)\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复进入或切换页面时自动聚焦输入框、滑块等控件，导致页面意外滚动的问题 (#3650 by @NihilDigit)\r\n\r\nFull Changelog: https://github.com/open-ani/animeko/compare/v6.4.0-beta01...v6.4.0-beta02\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step r",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0-beta02/ani-6.4.0-beta02.ipa",
           "size": 48605296,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "6.4.32"
         }
       ],
       "appPermissions": {
@@ -269,7 +276,8 @@
           "localizedDescription": "🧪 预发布 nightly-20261114（2026-11-14）\n\nAutomated nightly build for community testing (unsigned).\n\nEvery download is named ARMSX2-nightly-DATE-COMMIT-PLATFORM, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-hand",
           "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261114/ARMSX2-nightly-20261114-6d9511e29e-iOS-arm64.ipa",
           "size": 40717380,
-          "minOSVersion": "17.4"
+          "minOSVersion": "17.4",
+          "buildNumber": "260"
         }
       ],
       "appPermissions": {
@@ -294,7 +302,8 @@
           "localizedDescription": "🧪 预发布 ios-0.0.2（2026-11-10）\n\nChanges since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\nRequirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\nUpdate LiveContainer first\r\n\r\nIf you",
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
-          "minOSVersion": "17.4"
+          "minOSVersion": "17.4",
+          "buildNumber": "2"
         }
       ],
       "appPermissions": {
@@ -344,7 +353,8 @@
           "localizedDescription": "【最新更新】\r\n- 修复 黄果短剧无法播放的问题\r\n- 修复 AVDB无法解析线路问题\r\n- 修复 部分影片加入“想看、看过、清单”后不显示问题\r\n- 优化 视频播放器进度拖动效果\r\n- 优化 账号注册登录流程\r\n- 修复 macOS窗口拖动漂移问题\r\n- 修复 已知问题\r\n\r\n【近期更新】\r\n- 新增 黄果AI短剧\r\n- 新增 影片预览\r\n\r\n⚠️ iOS Bundle ID 又改了，iOS用户建议使用云备份",
           "downloadURL": "https://github.com/anonymousjav/AvPlayRelease/releases/download/v2.2.2/AvPlay-2.2.2.ipa",
           "size": 23878716,
-          "minOSVersion": "15.3"
+          "minOSVersion": "15.3",
+          "buildNumber": "2020201"
         }
       ],
       "appPermissions": {
@@ -395,7 +405,8 @@
           "localizedDescription": "📝 更新日志\r\n[v3.0.38]\r\n功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with daiwenwen3\r\n修复\r\n\r\n- 修复导入漫画时失败的问题\r\n优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| Windows | windows-installer-v3.0.38.exe |\r\n| macOS | Breeze-macOS-v3.0.38.dmg |\r\n| Android | app-arm64-v8a-release-v3.0.38.apk |\r\n| iOS | Breeze-iOS-v3.0.38.ipa |\r\n| Linux | breeze-v3.0.38.flatpak |\r\n| Linux (DEB) | breeze_3.0.38_amd64-v3.0.3",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
           "size": 27173399,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "2225"
         }
       ],
       "appPermissions": {
@@ -421,7 +432,8 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.0/Camlo_v1.3.0_Bilingual.ipa",
           "size": 9528701,
           "minOSVersion": "26.0",
-          "sha256": "ec9e5855ecfdc9e846e615ce2ae33b5a10aae22af9a08cba6e40bed8d022cfbc"
+          "sha256": "ec9e5855ecfdc9e846e615ce2ae33b5a10aae22af9a08cba6e40bed8d022cfbc",
+          "buildNumber": "23"
         }
       ],
       "appPermissions": {
@@ -550,7 +562,8 @@
           "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
           "size": 7352364,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "158"
         }
       ],
       "appPermissions": {
@@ -650,7 +663,8 @@
           "localizedDescription": "English | 简体中文\n\nBuild 11140102.\nAdded\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\nChanged\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
           "size": 6774794,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "11140102"
         }
       ],
       "appPermissions": {
@@ -698,7 +712,8 @@
           "localizedDescription": "What's Changed\n* ci: 添加前端 PR 检查流水线 by @zxsos in https://github.com/zxsos/HGhub/pull/49\n* fix(clipboard): 分享与链接复制兜底改用原生剪贴板 by @zxsos in https://github.com/zxsos/HGhub/pull/42\n* fix(player): 切换短剧时先清空相关推荐 by @zxsos in https://github.com/zxsos/HGhub/pull/46\n* fix(search): 新关键词不再被进行中的请求吞掉 by @zxsos in https://github.com/zxsos/HGhub/pull/43\n* fix(home): 首页翻页失败后退避，避免反复弹错误提示 by @zxsos in https://github.com/zxsos/HGhub/pull/44\n* fix(line): 切换线路后重拉加载失败的首页与分类数据 by @zxsos in https://github.com/zxsos/HGhub/pull/45\n* fix(search): 就地搜索框对齐全局搜索，频道页搜索按钮归位 by @zxsos in https://github.com/zxsos/HGhub/pull/47\n* fi",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v1.2.19/HGhub_1.2.19_ios.ipa",
           "size": 3521136,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "1.2.19"
         }
       ],
       "appPermissions": {
@@ -747,7 +762,8 @@
           "localizedDescription": "# Steam64 setup, one step at a time\n\n**Experimental prerelease · Build145 · Known issue: Steam can freeze after the third game exit. This update improves setup; it does not fix that stability issue.**\n\n## What’s new\n\n- **Install Steam64 in the launcher:** downloads the matched Steam/browser packages from Valve over HTTPS, verifies sizes/SHA-256 and installs with rollback. Cancel/retry, Verify/Repair and Return to previous environment are available.\n- **Four clear actions:** Install Steam → Connect LocalDevVPN → Pair this device → Enable JIT. Runtime preparation is automatic, signing/address ch",
           "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.6/iDeck-0.1.3-alpha.6-build145.ipa",
           "size": 173835258,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "145"
         }
       ],
       "screenshots": [
@@ -772,7 +788,8 @@
           "localizedDescription": "• 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n• 其余功能同 1.3.0 (5)",
           "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
           "size": 1634598,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "6"
         },
         {
           "version": "1.3.0",
@@ -781,7 +798,8 @@
           "localizedDescription": "• 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n• 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n• 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n• 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n• 其余功能同 1.2.0 (4)",
           "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
           "size": 1630941,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "5"
         },
         {
           "version": "1.2.0",
@@ -790,7 +808,8 @@
           "localizedDescription": "• 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n• 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n• 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n• 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n• 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n• 界面上的说明文字更简短\n• 其余功能同 1.0.0 (3)",
           "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
           "size": 1523510,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "4"
         }
       ],
       "appPermissions": {
@@ -890,7 +909,8 @@
           "localizedDescription": "- 适配 flutter 3.50",
           "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
           "size": 30341213,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "20404"
         }
       ],
       "appPermissions": {
@@ -1072,7 +1092,8 @@
           "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-iOS-JIT-128.9934-English.zip)\n\n- Fixed visual issues in select games, including green video frames in **The Last of Us Remastered** and title-screen flicker in **God of War III Remastered**.\n- Updated per-game settings and presets, including a presentation setting for **God of War III Remastered**.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/INSTALLAT",
           "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa",
           "size": 77017813,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "128.9934"
         }
       ],
       "screenshots": [
@@ -1324,7 +1345,8 @@
           "localizedDescription": "Full Changelog: https://github.com/laincat/Nekularity/compare/v0.4.8...v0.4.9",
           "downloadURL": "https://github.com/laincat/Nekularity/releases/download/v0.4.9/Nekularity.ipa",
           "size": 29963615,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "31"
         }
       ],
       "appPermissions": {
@@ -1349,7 +1371,8 @@
           "localizedDescription": "1.7.1 (build 22)\n\n- 修复：开着系统「旋转锁定」时，视频全屏只显示半截画面\n- 改进：竖屏视频进全屏不再被强制转成横屏，全屏画面上多了「横 / 竖」小按钮，点一下就能切换\n- 新增：搜索结果里同一个合集的多期折成一行「共 N 期」，点开展开\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
           "downloadURL": "https://github.com/ios151/One-releases/releases/download/v1.7.1-22/One-unsigned.ipa",
           "size": 1692085,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "22"
         }
       ],
       "appPermissions": {
@@ -1468,7 +1491,8 @@
           "localizedDescription": "5.1.1 (2026-11-15)\r\n更新说明\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n安装&更新\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\nFull Changelog: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
           "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
           "size": 31706166,
-          "minOSVersion": "15.1"
+          "minOSVersion": "15.1",
+          "buildNumber": "46206"
         }
       ],
       "appPermissions": {
@@ -1493,7 +1517,8 @@
           "localizedDescription": "这是由 GitHub Actions 自动构建的发行版本。\n下载说明\n\n请在下方 Assets 中下载对应平台的构建产物。\n\n- PicaX-unsigned.ipa：iOS 未签名 IPA\n- PicaX-with-watch-unsigned.ipa：iOS + Watch 未签名 IPA\n- PicaX-WatchApp-unsigned.zip：Watch App 未签名 ZIP\n- PicaX.dmg：macOS 未签名 DMG\n安装说明\n\n这些产物均为未签名构建，不能像 App Store 应用一样直接安装。\n\niOS 版本通常需要自行签名后安装。\nWatch 版本通常需要自行通过XCode编译安装到Apple Watch。\nmacOS 版本如遇到系统安全拦截，需要在系统设置中手动允许打开，或自行重新签名。\n版本信息\n\n- 版本：v1.2.5\n- Commit：04a9f1b93158605a6f92f250e09e079bb6c9f2fa\n- 构建编号：64\n更新内容\n\n- 修改了搜索页UI\n- 增加了阅读器内放大后的跨页支持\n\n---\n\n由 GitHub Actions 自动发布。",
           "downloadURL": "https://github.com/youshen2/PicaX/releases/download/v1.2.5/PicaX-unsigned.ipa",
           "size": 12107911,
-          "minOSVersion": "15.2"
+          "minOSVersion": "15.2",
+          "buildNumber": "2610161"
         }
       ],
       "appPermissions": {
@@ -1518,7 +1543,8 @@
           "localizedDescription": "支持管理粉丝勋章\r\n支持进入直播间自动佩戴对应粉丝牌，默认关\r\n动态支持查看全文 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/3420#issuecomment-6716986635\r\n支持更新已缓存视频的合集信息\r\n支持缓存/更新视频字幕、分段信息、音量均衡信息\r\n支持桌面端推荐 #3463 by @liaolon\r\n直播画中画、媒体通知添加刷新、弹幕显示按钮\r\n直播支持上报心跳、观看直播增加亲密度 #2073\r\n楼中楼评论支持线程式显示、保存评论链 #3351 by @My-Responsitories\r\n\r\n修复 bug\r\n修复音视频音频焦点问题 #2702\r\n修复部分视频评论显示不全 #3504\r\n修复私信失效卡片显示 #3481 by @HChaZZY\r\n修复动态详情页刷新指示器 #3477 by @PYH0809\r\n修复 iOS 登录验证码验证 #3484 by @ngbyspy\r\n修复 iOS 直播全屏底部边距 #3499 by @freejool\r\n修复 #3553 by @Tobiichi-Origuchi\r\n修复乐播旧控制地址导致的投屏失败 #3507 by @TG-Twilight\r\n修复 niri 退出画中画导致鼠标操作异常 #3471 by @Tobiichi-Origuchi\r\n修复播放器音量超过 1",
           "downloadURL": "https://gh-proxy.com/https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.1/PiliPlus_ios_2.2.1%2B5655.ipa",
           "size": 25053075,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "5655"
         },
         {
           "version": "2.2.0",
@@ -1527,7 +1553,8 @@
           "localizedDescription": "更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa",
           "downloadURL": "https://gh-proxy.com/https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
           "size": 24933082,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "5598"
         },
         {
           "version": "2.2.0",
@@ -1536,7 +1563,8 @@
           "localizedDescription": "修复 bug\r\n修复无法播放 drm 番剧 #3449\r\n修复匿名账号搜索被风控 #3411\r\n修复安卓(vivo)音量调节 #3442 by @numb747\r\n修复 Linux MPRIS 未设置 DesktopEntry 与 Identity #3438 by @Infinifar",
           "downloadURL": "https://gh-proxy.com/https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.1/PiliPlus_ios_2.2.0%2B5590.ipa",
           "size": 24914746,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "5590"
         }
       ],
       "screenshots": [
@@ -1860,7 +1888,8 @@
           "localizedDescription": "🧪 预发布 nightly（2026-11-14）\n\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n* Simplify screen streaming and recording\n* Share one atomic file write\n* Fix mDNS browsing and name conflict handling\n* Simplify the JavaScriptC",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
           "size": 48174010,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "83"
         }
       ],
       "appPermissions": {
@@ -1885,7 +1914,8 @@
           "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f27690434563245",
           "downloadURL": "https://gh-proxy.com/https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
           "size": 9347637,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "1"
         },
         {
           "version": "1.4.14",
@@ -1894,7 +1924,8 @@
           "localizedDescription": "## 修改内容\n\n- 新增帖子本地保存：支持完整楼层和楼中楼离线阅读、媒体下载、搜索、回复更新、存储管理及备份导入导出。\n- 新增内置与自定义阅读字体，并完善首页重复点击刷新。\n- 自动检测账号登录失效，提示后清理当前登录态，同时避免旧请求或网络中断误触发退出。\n- 修复 iOS 16 嵌套搜索布局递归卡死、文字选择与导航手势冲突，并将媒体、字体、语音和存储文件 I/O 移出主线程。\n- 加固本地帖子并发写入、媒体事务崩溃恢复、备份校验与字体目录一致性。\n\n## 验证\n\n- GitHub Actions ci-ok 全部通过，包含单元测试、iOS 16 兼容检查、iPhone/iPad UI 测试和 Release 构建。\n- App 与扩展均为 1.4.14 (58)、arm64、最低 iOS 16.4；IPA 压缩结构正常且未签名。\n- 发帖和回帖夹具 UI 测试通过；本次未改动认证写入路径，因此未重复进行真实账号写入测试。",
           "downloadURL": "https://gh-proxy.com/https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.14/TiebaPure-v1.4.14-unsigned.ipa",
           "size": 3787516,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "1"
         },
         {
           "version": "1.4.13",
@@ -1903,7 +1934,8 @@
           "localizedDescription": "## 修改内容\n\n- 修复多图帖子首图放大后停留在低清过渡图的问题，并增加受内存与帧数限制的 GIF 动画显示。\n- 修复回复倒序分页只作用于当前已加载页面的问题，并完善楼中楼进入动画、下拉/右滑退出和阅读位置恢复。\n- 修复 iOS 18 长按选择帖子文字时可能出现的布局卡死。\n- 修复登录账号发帖、回帖时 TBS 刷新失败的问题；恢复签名登录校验，并保留发送结果不明确时不自动重试的保护。\n\n## 验证\n\n- GitHub Actions `ci-ok` 全部通过。\n- 本地发布请求与身份夹具测试 48 项通过。\n- 真实账号发帖和回帖均验证成功。",
           "downloadURL": "https://gh-proxy.com/https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.13/TiebaPure-v1.4.13-unsigned.ipa",
           "size": 3509096,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "1"
         }
       ]
     },
@@ -1973,7 +2005,8 @@
           "localizedDescription": "Venera Prime 2.8.1\n本次更新\n\n- 网络请求取消时闪退 #55（@fanhua2006）：修复请求超时或取消后，延迟返回的网络回调触发原生库 abort 的问题；同时处理无效请求方法、缺失上传流、自定义 DNS 异常等相似错误路径。已复现并消除与反馈相同的原生崩溃堆栈，仍请在原设备、不挂 VPN 的启动场景复查。\n- 非默认目录刷新与恢复 #53（@lzx377z）：补齐 Android 授权目录的属性查询和文本读写。“设置 → 应用 → 刷新本地库”与“导入 → 恢复本地下载”可读取漫画元数据，不再因缺少 stat/readAsString 实现抛出 UnimplementedError；未知修改时间不会覆盖已有漫画的创建时间。\n- 通用 SAF 存储目录 #54（@GalahadVi）：保留 DocumentsProvider 的完整目录标识，按真实文档 ID 读写、创建和扫描，不再假定所有授权目录都是系统本地存储。兼容旧目录配置；服务暂时离线时保留用户所选目录，写入失败如实报告，兼容仅支持 wt 的 Provider。下载、阅读、导出与目录迁移共用修正后的文件访问链路。\n- 阅读图片刷新与长按 #49（@sakana155）：刷新时清除实际图片缓存，防止此前的下载晚返回后覆盖刷新结果；长按缩放等待控制器就绪，退出阅读器后取消延迟手势。JM 偶发纯黑图本身仍未",
           "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
           "size": 16730617,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "281"
         }
       ],
       "appPermissions": {
@@ -1998,7 +2031,8 @@
           "localizedDescription": "Venera-SSR v2.1.5\r\n\r\n标准版基于 main 分支构建，翻译版（含 OCR 等模型）基于 feature/translation-embed 分支构建。\r\n\r\n> 🎉 此版本添加了带推理模型V4版超分功能，此功能效果速度远超基础超分功能，V4版Real-ESRGAN模式仅供测试。\r\n\r\n> 🎉 图片内嵌文字翻译功能已上线。：三种翻译模式：谷歌免费API翻译（国内网络不能直接用），大模型API接入翻译，下载翻译模型翻译。\r\n> 两种使用方式：推荐下载漫画后翻译\r\n\r\n> 🎉 上色功能优化：现在大部分设备可以使用AI 上色功能了，但可能存在以下问题：\r\n> 骁龙8gen2及以上可以流畅使用在线实时上色阅读。 性能更低的机型可以先尝试，刚打开功能的第一张可能卡住，可以先看后面的图片。The first image when you first open this feature might get stuck; please check the subsequent images first.\r\n> - 上色处理较慢，建议下载漫画后使用,或者调低颜色强度，推荐使用int8版本模型，\r\n> - 部分模型参数量较低，上色效果待优化\r\n\r\n> 🎉 超分功能可正常使用\r\n> - 黑白漫画超分效果劣化已修复，添加边缘感知 Unblur\"（按 Sobel 梯度保护细线），\r\n\r\n>",
           "downloadURL": "https://github.com/Kiastr/Venera-SSR/releases/download/v2.1.5/Venera-SSR-v2.1.5-ios.ipa",
           "size": 15740079,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "215"
         }
       ],
       "appPermissions": {
@@ -2023,7 +2057,8 @@
           "localizedDescription": "正式版与升级\n\n- 发布正式版 1.18.3+249，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、harmonyos-manifest.json、harmonyos-SHA256SUMS 和中英文安装指南。应用源码与平台适配统一在 main；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 VeneraNext (HarmonyOS Beta)，包名为 com.github.cyrilpeng.veneranext.har",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
           "size": 21467556,
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "buildNumber": "249"
         }
       ],
       "appPermissions": {
@@ -2048,7 +2083,8 @@
           "localizedDescription": "> Language / 语言: English · 简体中文\nWhat's Changed\nAdded\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and sideloaded (#338).\n- Long-press the app icon to jump to Favorites, Following, History or Search on Android, iOS and HarmonyOS; on Android and iOS, open the app once afte",
           "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
           "size": 39423677,
-          "minOSVersion": "15.1"
+          "minOSVersion": "15.1",
+          "buildNumber": "258"
         }
       ],
       "appPermissions": {
@@ -2098,7 +2134,8 @@
           "localizedDescription": "Works inside LiveContainer again. Cache Cleaner: Clean is ready after a scan, plus Invert Selection. Wi-Fi uploads stop with sharing.",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.16/WQFiles.ipa",
           "size": 2078252,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "101"
         },
         {
           "version": "0.9.15",
@@ -2107,7 +2144,8 @@
           "localizedDescription": "Recognizes iOS 27.3 beta 2+, where Apple patched worse_query. The access cache repairs itself when another app in the App Group broke it.",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.15/WQFiles.ipa",
           "size": 2076710,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "100"
         },
         {
           "version": "0.9.14",
@@ -2116,7 +2154,8 @@
           "localizedDescription": "Show Folder Sizes, empty folder hints, Colored Cards with a pickable color, themed tiles; WQ Files is back in the Files app; fixes wrong app names on iOS 26.5 and the Crash Logs note.",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.14/WQFiles.ipa",
           "size": 2071017,
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildNumber": "99"
         }
       ],
       "appPermissions": {
@@ -2193,7 +2232,8 @@
           "localizedDescription": "### Latest Release, ENJOY!!\r\n> [!NOTE]\r\n> - 📺Full 4KHDR support.\r\n> - 📦Downloads working partially. depending on hardware codecs. \r\n> - 🫧 Liquid Glass and iPhone Duo support.\r\n> - 🆕 `YTLowContrastMode` tweak, enabled by default.\r\n> \r\n> - - -\r\n> #### Extra Tweaks:\r\n> - `YouPip` `YTweaks` `YouSpeed` `YouMute` `YouLoop` `YTABConfig` `YouQuality` `YouChooseQuality`  `YouGetCaption` `YTLowContrastMode` \r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in YouTube (Safari Extension)`\r\n\r\n> [!WARNING]\r\n> - 21.34.3+ builds require iOS 17+ now.",
           "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa3/YouProExtra_21.46.3_1.3.4.ipa",
           "size": 134342431,
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildNumber": "21.46.3"
         }
       ],
       "screenshots": [
@@ -2218,7 +2258,8 @@
           "localizedDescription": "谢谢大家\n谢谢每一位在玩、在报 bug、在评论区出主意的朋友，是大家的支持让这个重制版一路更新到现在。\n\n这个重制版一开始只是我用公司给的无限 token，自己做着自己玩的；没想到承蒙大家喜爱，被大家无私地越传越广。这个游戏属于每一位喜欢大富翁4的玩家：永远不收任何费用，也不做任何商业用途，大家尽管拿去玩就好。\n\n1.3 的新地图正在制作中，工作量比较大，下一个版本要隔比较长的一段时间才会发布。这段时间里，1.2.4 就是大家的主力版本：\n\n- 遇到 bug 或小问题：可以直接在 Issues 提交，也可以在 B 站 UP 主 TrustBox、阿姆西_MC 发布的大富翁4 重制版视频下面留言。各个评论区我都会看，能修的一定会修。\n- 在线更新很慢或失败：这个我暂时没办法解决。在国内提供下载需要办理备案，我个人没办法申请，所以国内的朋友在线更新时请先开代理；或者直接下载这个页面的安装包覆盖安装，效果一样，存档也会保留。\n\n再次感谢大家，我们 1.3 见！\n\n> 1.2.4 是 1.2 之后几个小版本的合集，这次最大的新功能是「排行榜」。 已经装了 1.2.x 的玩家，在游戏里在线更新就能升到 1.2.4，不用重新下载；新玩家、或者在线更新一直不成功的，直接下载下面的安装包覆盖安装就行，存档、设置都会保留（保险起见，可以先在「游戏设置 → 存档备份」导出一份）。\nv1.2.4 更新内",
           "downloadURL": "https://github.com/iam567/rich4-renew-app/releases/download/v1.2.4/rich4-1.2.4-unsigned.ipa",
           "size": 1445804612,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildNumber": "55"
         }
       ],
       "appPermissions": {
@@ -2243,7 +2284,8 @@
           "localizedDescription": "更新内容：\nJS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 %LOCALAPPDATA%\\<包名>，便携版为 userdata\\cache），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装包，默认安装到当前用户，无需",
           "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v1.0.11-111/zhenguojian-1.0.11%2B111-ios-unsigned.ipa",
           "size": 30898911,
-          "minOSVersion": "15.1"
+          "minOSVersion": "15.1",
+          "buildNumber": "111"
         }
       ],
       "appPermissions": {
@@ -2267,7 +2309,8 @@
           "date": "2026-11-06",
           "downloadURL": "https://gh-proxy.com/https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa",
           "size": 14833319,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "1"
         }
       ],
       "appPermissions": {
