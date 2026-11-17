@@ -9,6 +9,7 @@ on:
       - 'sources.toml'
       - 'zh.json'
       - 'build.py'
+      - 'sync_repo.py'
 
 permissions:
   contents: write
@@ -29,8 +30,13 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: 合并所有上游源
+      - name: 合并上游源（拿到元数据基线）
         run: python build.py --refresh
+
+      - name: 用各项目官方仓库覆盖版本数据
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python sync_repo.py
 
       - name: 提交变更
         run: |
