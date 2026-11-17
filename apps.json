@@ -689,9 +689,9 @@
       "developerName": "deretame",
       "subtitle": "插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
       "tintColor": "#CE2BBB",
-      "category": "books",
+      "category": "other",
       "versions": [
         {
           "version": "3.0.38",
@@ -718,10 +718,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
+      ]
     },
     {
       "name": "Camlo · 开幕",
@@ -1369,12 +1369,12 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghub.huangguo",
+      "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
-      "subtitle": "沉浸竖屏播放客户端",
-      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
-      "tintColor": "#31B98B",
+      "subtitle": "沉浸式竖屏播放",
+      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
+      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v2.1.2/app-icon.png",
+      "tintColor": "#B92746",
       "category": "entertainment",
       "versions": [
         {
@@ -3861,7 +3861,7 @@
       "developerName": "Xanerix",
       "subtitle": "多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
