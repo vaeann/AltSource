@@ -73,12 +73,15 @@ def pick_build(asset_name, tag):
     return None
 
 
-def releases_to_versions(repo, keep):
+def releases_to_versions(repo, keep, include_pre=False):
     """把仓库的 release 列表转成 versions 数组（最新在前）"""
     rels = gh(f"/repos/{repo}/releases?per_page=15")
     out = []
     for r in rels:
         if r.get("draft"):
+            continue
+        # 预发布版（如 v2.2.0-pre.1）默认不收：版本号带后缀，和安装包里的真实版本对不上
+        if r.get("prerelease") and not include_pre:
             continue
         ipas = [a for a in r.get("assets", []) if a["name"].lower().endswith(".ipa")]
         if not ipas:
@@ -111,9 +114,12 @@ def main():
     dry = "--dry-run" in sys.argv
     cfg_path = os.path.join(ROOT, "sources.toml")
     keep = 3
+    include_pre = False
     try:
         import tomllib
-        keep = int(tomllib.load(open(cfg_path, "rb")).get("keep_versions", 3))
+        cfg = tomllib.load(open(cfg_path, "rb"))
+        keep = int(cfg.get("keep_versions", 3))
+        include_pre = bool(cfg.get("include_prerelease", False))
     except Exception:
         pass
 
@@ -137,7 +143,7 @@ def main():
     def work(item):
         app, repo = item
         try:
-            return repo, releases_to_versions(repo, keep), None
+            return repo, releases_to_versions(repo, keep, include_pre), None
         except Exception as e:
             return repo, None, str(e)[:60]
 
