@@ -703,9 +703,9 @@
       "developerName": "deretame",
       "subtitle": "插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
       "tintColor": "#CE2BBB",
-      "category": "books",
+      "category": "other",
       "versions": [
         {
           "version": "3.0.38",
@@ -713,9 +713,7 @@
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
           "size": 27173399,
           "localizedDescription": "## 📝 更新日志\r\n## [v3.0.38]\r\n\r\n### 功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with [daiwenwen3](https://github.com/daiwenwen3)\r\n\r\n### 修复\r\n\r\n- 修复导入漫画时失败的问题\r\n\r\n### 优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n\r\n### 杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.38.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/windows-installer-v3.0.38.exe) |\r\n| **macOS** | [Breeze-",
-          "minOSVersion": "15.0",
-          "buildVersion": "2225",
-          "buildNumber": "2225"
+          "minOSVersion": "15.0"
         },
         {
           "version": "3.0.37",
@@ -734,10 +732,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
+      ]
     },
     {
       "name": "Camlo · 开幕",
@@ -755,7 +753,9 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.1/Camlo_v1.3.1_Bilingual.ipa",
           "size": 9534904,
           "localizedDescription": "## What's New in Camlo v1.3.1 (Build 24)\n\n### 1. 10 Original 「次元 3D (Anime 3D)」 Cloud Wallpapers (`ParameterizedCA` + Apple Vision Clock Depth)\n- Official zero-bloat Cloud Gallery (`wallpapers/`) expanded from 60 to **70 packs** (**395+ total** across Official + Community channels), while keeping `Camlo_v1.3.1_Bilingual.ipa` ultra-slim at **~9.5 MB (`9.1 MiB`)**.\n- All 10 new 100%-original Anime packs (`18961`–`18970`) are natively compiled as single-screen **`ParameterizedCA` (`Marble` / `wantsDeviceMotion = true`)** bundles with **real hardware 120Hz 3D Gyroscope Parallax**, **Apple Vision f",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "24",
+          "buildNumber": "24"
         },
         {
           "version": "1.3.0",
@@ -1228,7 +1228,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
           "size": 6857330,
           "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "29",
+          "buildNumber": "29"
         },
         {
           "version": "1.0.3",
@@ -1236,7 +1238,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
           "size": 6832062,
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` o",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "28",
+          "buildNumber": "28"
         },
         {
           "version": "1.0.2",
@@ -1244,7 +1248,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.2/Erosion_v1.0.2_Bilingual.ipa",
           "size": 6791366,
           "localizedDescription": "## Erosion-CN v1.0.2 (Build 27)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Per-App Splash Ad Cache Blocker (`chmod`) / 开屏广告缓存精准锁死 (`AdCacheBlockerView`)**\n   - Added **「开屏广告缓存精准锁死 / Splash Ad Cache Blocker」** quick entries under **Tweaks → App Saves & Cleanup** (`功能修改 → 应用存档与空间清理`) and **File Browser ",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "27",
+          "buildNumber": "27"
         }
       ],
       "appPermissions": {
@@ -1443,12 +1449,12 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghub.huangguo",
+      "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
-      "subtitle": "沉浸竖屏播放客户端",
-      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
-      "tintColor": "#31B98B",
+      "subtitle": "沉浸式竖屏播放",
+      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
+      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v2.1.2/app-icon.png",
+      "tintColor": "#B92746",
       "category": "entertainment",
       "versions": [
         {
@@ -1457,7 +1463,9 @@
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.1.2/HGhubX_2.1.2_ios.ipa",
           "size": 3852817,
           "localizedDescription": "## HGhubX 2.1.2\n\n### 更新点\n\n- 标签详情同时展示短剧和吃瓜帖子，并分别分页；标签热度会明确标注，不再与内容数量混淆。\n- 横屏视频按当前播放源的媒体尺寸识别，尺寸确认前使用完整画面适配。\n\n### 修复点\n\n- 修复社区标签只查询短剧接口，导致官网存在帖子但应用显示空列表的问题。\n- 修复切集、切源时媒体尺寸报告竞态导致首页横屏视频被裁切或未显示横屏控制的问题。\n\n\n**Full Changelog**: https://github.com/zxsos/HGhubX/compare/v2.1.1...v2.1.2",
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildVersion": "2.1.2",
+          "buildNumber": "2.1.2"
         },
         {
           "version": "2.1.1",
@@ -3975,7 +3983,7 @@
       "developerName": "Xanerix",
       "subtitle": "多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
