@@ -36,8 +36,8 @@
     "description": "基于 RPCS3 的 PlayStation 3 模拟器移植版，需要 A14 或更新芯片、iOS 17.4 以上。运行游戏还需要开启 JIT，并自备 PS3 系统软件与游戏镜像。重签时请保留原始 entitlements，当成完全未签名包处理会丢权限并闪退。"
   },
   "com.javdb.avplay2": {
-    "subtitle": "成人影视播放器",
-    "description": "面向成年用户的影音播放应用，提供上游发布的未签名安装包，上游仓库只发安装包不提供源码。请自行确认所在地法律法规与年龄限制。"
+    "subtitle": "你懂的播放器",
+    "description": "你懂的。上游只发布安装包，不提供源码，包是未签名的，需要自行签名后安装。"
   },
   "com.zephyr.breeze": {
     "subtitle": "插件式多源漫画阅读器",
