@@ -72,21 +72,12 @@ def trim_to_width(s, limit):
 
 
 def fit_subtitle(day, base, size):
-    """拼副标题：日期 + 简介 + 体积，三样都保，简介按剩余宽度截断。
-
-    为什么不像之前那样舍体积：LiveContainer 点条目直接进安装，没有详情页，
-    体积一旦省掉就再也看不到了。简介被截断反而还好 —— 应用名已经说明是什么。
-
-    可用宽度约 210pt（iPhone 390pt 减图标 60 + 间距 12 + 安装按钮 70 + 边距 32）。
-    """
+    """拼第三行：体积 + 简介（日期已经挪到第二行的构建号位置了）"""
     LIMIT = 210
-    head = f"{day} · " if day else ""
-    tail = f" · {size}" if size else ""
-    avail = LIMIT - text_width(head) - text_width(tail)
+    head = f"{size} · " if size else ""
+    avail = LIMIT - text_width(head)
     body = trim_to_width(base, avail)
-    if not body:
-        return (head + tail.lstrip(" ·")) if (head or tail) else base
-    return head + body + tail
+    return head + body if body else (size or base)
 
 
 def size_text(n):
@@ -122,8 +113,18 @@ def main():
         base = (zh.get(bid) or {}).get("subtitle") or PREFIX.sub("", a.get("subtitle") or "")
         base = TAIL_SIZE.sub("", base)
 
-        # 名字保持干净（只有 216pt 宽，约 13 个中文字，加日期会被截）
+        # 名字保持干净（只有 210pt 宽，约 13 个中文字，加日期会被截）
         a["name"] = NAME_TAIL.sub("", a.get("name") or "")
+
+        # 把「月-日」塞进构建号的位置：第二行会渲染成
+        #   2.2.0 (11-17) • com.xxx.yyy
+        # 这样第三行就腾出来放「体积 + 简介」。
+        # 代价：真实构建号被替换掉（LiveContainer 只显示不比对这个字段；
+        # AltStore / SideStore 会比对，那两个客户端用这个源时构建号是不准的）。
+        if day and vs:
+            vs[0]["buildVersion"] = day
+            vs[0]["buildNumber"] = day
+
         a["subtitle"] = fit_subtitle(day, base, s)
 
     # 先按名字排一遍（稳定排序作兜底），再按日期倒序，同一天内保持名称顺序

@@ -28,19 +28,19 @@ https://raw.githubusercontent.com/vaeann/AltSource/main/apps-2.json
 https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
-显示的排版是这样：
+三行的实际效果：
 
 ```
-UTM                   11-17 · iOS 虚拟机 · 143.7M
-Camlo · 开幕          11-16 · 动态锁屏壁纸工坊 · 9.1M
-Erosion-CN            11-17 · MobileGestalt 工具… · 6.4M
+Erosion-CN                          ← 应用名（客户端 16pt 粗体）
+1.0.1 (11-17) • com.jbdotparty…     ← 版本 + 日期 + 包名（12pt，包名被截断）
+6.4M · MobileGestalt 工具箱中文版     ← 体积 + 简介（11pt 灰色，完整显示）
 ```
 
-日期、体积、简介三样都在，简介按剩余宽度自动截断（应用名已经说明是什么，简介只是补充）。
+日期放进了「构建号」那个括号里 —— 这是唯一能塞进第二行的位置，因为第二行是客户端拼死的 `版本 (构建号) • 包名`，包名本身去不掉。
 
-为什么这么设计：LiveContainer 的列表卡片高度固定 88pt，三行都是单行（`lineLimit(1)`）。扣掉图标 60pt 和右边的「安装」按钮 70pt 后，副标题那行实际只有约 **210pt** 宽 —— 差不多 19 个中文字。日期（`11-17` ≈ 30pt）和体积（`6.4M` ≈ 39pt）先占掉 90pt，剩下的留给简介。
+代价：包名太长会被截断（反正没人看），真实构建号被日期替换（**LiveContainer 不受影响，它只显示不比对；AltStore / SideStore 会比对构建号，用那两个客户端时构建号是不准的**）。
 
-字体和颜色在源里改不了（那是客户端写死的：名字 16pt 粗体、副标题 11pt 灰色），所以日期只能放在副标题行才会是「小灰字」的效果。
+字体和颜色在源里改不了（客户端写死：名字 16pt 粗体、副标题 11pt 灰色）。
 
 ## 数据从哪来
 
