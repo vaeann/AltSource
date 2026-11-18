@@ -7,21 +7,21 @@
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
-    "com.hghub.huangguo",
+    "com.hghubx.app",
+    "com.utmapp.UTM",
+    "com.utmapp.UTM-SE",
     "com.ishtiaqsyed.StatsForIOS",
-    "app.local.iPadn",
-    "cz.kolbi.wqfiles",
-    "com.kianuni.Camlo"
+    "app.local.iPadn"
   ],
   "apps": [
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghub.huangguo",
+      "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
-      "subtitle": "11-18 14:02 · 沉浸竖屏播放客户端",
-      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
-      "tintColor": "#31B98B",
+      "subtitle": "11-18 14:02 · 沉浸式竖屏播放",
+      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
+      "iconURL": "https://github.com/zxsos.png?size=460",
+      "tintColor": "#B92746",
       "category": "entertainment",
       "versions": [
         {
@@ -30,7 +30,9 @@
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.0/HGhubX_2.2.0_ios.ipa",
           "size": 3886166,
           "localizedDescription": "## HGhubX 2.2.0\n\n架构重构 + Android TV / 车机老内核兼容 + 开屏与播放体验全面升级的正式版本。包含 pre.1 / pre.2 及后续全仓审计与性能打磨的全部内容。\n\n### 新增\n\n- **Android TV 独立版**（`com.hghubx.tv`）：Leanback 桌面入口与横屏 Banner、遥控器方向键 / 确认 / 返回 / 媒体键导航、本地 IndexedDB 片库与拼音/标题搜索索引、overscan 安全边距设置。\n- **老 WebView 与车机大屏兼容**（#138）：前端构建降级至 `chrome66 / safari14.1`（含 CSS `dvh / color-mix / cascade-layers` 回退、经典 `iife` Worker、ES5 启动看门狗与运行时 API 垫片）；Android 标准版原生层桥接系统状态栏与车机常驻底栏安全区（`--native-sat/sab/sal/sar`），`quick` 与正式构建均覆盖 32 位 `arm` 与 64 位 `arm64`。\n- **长按加速可换挡**（#146）：右上长按 2x 起，按住左右滑每 80px 换一档（2x → 3x → 4x → 6x，来回滑可升可降，每档震动反馈）；上滑后松手锁定当前档位。\n- 设置 → 播放新增「全屏无操作自动",
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "buildVersion": "2.2.0",
+          "buildNumber": "2.2.0"
         },
         {
           "version": "2.1.2",
@@ -55,6 +57,46 @@
       }
     },
     {
+      "name": "UTM",
+      "bundleIdentifier": "com.utmapp.UTM",
+      "developerName": "osy",
+      "subtitle": "11-18 12:15 · iOS 虚拟机",
+      "localizedDescription": "功能完整的 iOS 虚拟机宿主，可以在 iPhone 与 iPad 上运行 Windows、Android 等系统。这个版本需要 AltJIT 配合；不想折腾 JIT 可以改用 UTM SE。",
+      "iconURL": "https://alt.getutm.app/icon.png",
+      "tintColor": "#D82B42",
+      "category": "other",
+      "versions": [
+        {
+          "version": "5.0.9",
+          "date": "2026-11-18T04:15:59Z",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-1/UTM.ipa",
+          "size": 150730034,
+          "minOSVersion": "14.0"
+        }
+      ]
+    },
+    {
+      "name": "UTM SE",
+      "bundleIdentifier": "com.utmapp.UTM-SE",
+      "developerName": "osy",
+      "subtitle": "11-18 12:15 · 免 JIT 的虚拟机",
+      "localizedDescription": "UTM 的无 JIT 版本，在所有 iOS 设备上都能运行，速度比完整版慢一些，但不需要开启 JIT 也不需要连接电脑。可运行 Windows、Android 等系统。",
+      "iconURL": "https://alt.getutm.app/icon.png",
+      "tintColor": "#2CB34C",
+      "category": "other",
+      "versions": [
+        {
+          "version": "5.0.9",
+          "date": "2026-11-18T04:15:59Z",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-1/UTM-SE.ipa",
+          "size": 237418774,
+          "minOSVersion": "14.0"
+        }
+      ]
+    },
+    {
       "name": "Stats",
       "bundleIdentifier": "com.ishtiaqsyed.StatsForIOS",
       "developerName": "Ishtiaq Ul Haq Syed",
@@ -70,7 +112,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.27/Stats-v0.3.18-iOS.ipa",
           "size": 2881745,
           "localizedDescription": "Stats for iPhone 0.3.18 adds interactive one-minute CPU and memory charts to the dashboard.\n\n## What's changed\n\n- Drag across either mini chart to see the sample's time and percentage. Light haptics follow the in-app setting.\n- The CPU chart adjusts its percentage scale to make small changes easier to see. The memory chart shows usage, with memory pressure shown separately.\n- The Mac card keeps the last update time and opens About This Mac when tapped. The dashboard refreshes automatically.\n\n## Download\n\n**Stats for iPhone 0.3.18 (build 21)** requires iOS 17 or later. The arm64 IPA is unsigned",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "21",
+          "buildNumber": "21"
         },
         {
           "version": "0.3.17",
@@ -78,7 +122,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.26/Stats-v0.3.17-iOS.ipa",
           "size": 2861581,
           "localizedDescription": "Stats for iPhone 0.3.17 makes the Mac device card more compact and adds a manual refresh.\n\n## What's changed\n\n- See more live metrics sooner with the shorter Mac card. The card keeps the device render, Mac name, chip, connection status, and alerts.\n- Tap the Mac card to open About This Mac. It is still available in Dashboard Settings.\n- Tap the refresh icon to request a new snapshot, recent history, and updated Mac details.\n\n## Download\n\n**Stats for iPhone 0.3.17 (build 20)** requires iOS 17 or later. The arm64 IPA is unsigned for AltStore, SideStore, and LiveContainer.\n\n**SHA-256** f9b77cb1a4",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "20",
+          "buildNumber": "20"
         },
         {
           "version": "0.3.16",
@@ -86,7 +132,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.25/Stats-v0.3.16-iOS.ipa",
           "size": 2847721,
           "localizedDescription": "Stats for iPhone 0.3.16 introduces a redesigned dashboard for your paired Mac.\n\n## What's changed\n\n- See your Mac's model, connection status, last update, and low-storage or memory-pressure warnings at a glance.\n- Follow one-minute CPU and memory trends, with temperatures and memory pressure when available.\n- Check remaining disk space, download and upload rates, and measured network latency from the overview.\n- Open any card for its detailed metrics. The dashboard supports light mode, dark mode, and larger text.\n\n## Download\n\n**Stats for iPhone 0.3.16 (build 19)** requires iOS 17 or later. Th",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "19",
+          "buildNumber": "19"
         }
       ],
       "appPermissions": {
@@ -113,7 +161,9 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
           "size": 50502422,
           "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐",
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildVersion": "34",
+          "buildNumber": "34"
         },
         {
           "version": "2.1.3",
@@ -207,7 +257,9 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.2/Camlo_v1.3.2_Bilingual.ipa",
           "size": 9540236,
           "localizedDescription": "## Camlo v1.3.2 (Build 25)\n\n### 修复 iPhone Duo（折叠屏）所有壁纸缩小为 1/3 与展开内屏偏移问题 (#4)\n- **彻底修复缩放比例 (`retinaMultiplier: 3 → 1`)**：在 `WallpaperKit` `<wallpapers>` 多屏描述中，由于 Camlo 以逻辑点坐标（外屏 `466×678`、内屏 `951×669`）编译底层 Core Animation 图层树，将其 `retinaMultiplier` 设为 `3` 会导致系统 `WKParameterizedCAPackageLoader` 将绘制尺寸再除以 `3`，从而把壁纸缩小为约 `1/3`（实测 `951×669` px）；现已修正为 `retinaMultiplier = 1` 并保留完整物理像素资源。\n- **修复展开内屏居中偏移 (`BACKGROUND_INNER` / `FLOATING_INNER` position 对齐)**：在折叠屏展开状态下，`WKParameterizedCAWallpaperRepresentedView` 会将 `BACKGROUND_INNER` / `FLOATING_INNER` 直接挂入外屏 `__capRootLayer__` 的 `hostingLayer`（中心点 `233 339`",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "25",
+          "buildNumber": "25"
         },
         {
           "version": "1.3.1",
@@ -215,7 +267,9 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.1/Camlo_v1.3.1_Bilingual.ipa",
           "size": 9534904,
           "localizedDescription": "## What's New in Camlo v1.3.1 (Build 24)\n\n### 1. 10 Original 「次元 3D (Anime 3D)」 Cloud Wallpapers (`ParameterizedCA` + Apple Vision Clock Depth)\n- Official zero-bloat Cloud Gallery (`wallpapers/`) expanded from 60 to **70 packs** (**395+ total** across Official + Community channels), while keeping `Camlo_v1.3.1_Bilingual.ipa` ultra-slim at **~9.5 MB (`9.1 MiB`)**.\n- All 10 new 100%-original Anime packs (`18961`–`18970`) are natively compiled as single-screen **`ParameterizedCA` (`Marble` / `wantsDeviceMotion = true`)** bundles with **real hardware 120Hz 3D Gyroscope Parallax**, **Apple Vision f",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "24",
+          "buildNumber": "24"
         },
         {
           "version": "1.3.0",
@@ -253,7 +307,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.5/Erosion_v1.0.5_Bilingual.ipa",
           "size": 6875541,
           "localizedDescription": "## Erosion-CN v1.0.5 (Build 30)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Fixed Unresponsive \"Clean Selected\" in Container Cache Cleaner (`CacheCleanerView`) / 修复容器缓存「一键清理已选」不生效** *(Thanks to [@KindLin99](https://github.com/KindLin99) for reporting [#53](https://github.com/Kianuni/Erosion-CN/issues/53)",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "30",
+          "buildNumber": "30"
         },
         {
           "version": "1.0.4",
@@ -261,7 +317,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
           "size": 6857330,
           "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "29",
+          "buildNumber": "29"
         },
         {
           "version": "1.0.3",
@@ -269,7 +327,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
           "size": 6832062,
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` o",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "28",
+          "buildNumber": "28"
         }
       ],
       "appPermissions": {
@@ -285,7 +345,7 @@
       "developerName": "ARMSX2",
       "subtitle": "11-18 06:24 · PS3 模拟器 iOS 移植",
       "localizedDescription": "基于 RPCS3 的 PlayStation 3 模拟器移植版，需要 A14 或更新芯片、iOS 17.4 以上。运行游戏还需要开启 JIT，并自备 PS3 系统软件与游戏镜像。重签时请保留原始 entitlements，当成完全未签名包处理会丢权限并闪退。",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.2/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.3/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#2F4DC5",
       "category": "games",
       "versions": [
@@ -295,7 +355,9 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
           "size": 46182129,
           "localizedDescription": "## XMB mode\r\n\r\n**The PS3's own menu.** ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs",
-          "minOSVersion": "17.4"
+          "minOSVersion": "17.4",
+          "buildVersion": "5",
+          "buildNumber": "5"
         },
         {
           "version": "0.0.2",
@@ -303,9 +365,7 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
           "localizedDescription": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside ",
-          "minOSVersion": "17.4",
-          "buildVersion": "2",
-          "buildNumber": "2"
+          "minOSVersion": "17.4"
         },
         {
           "version": "0.0.1",
@@ -482,78 +542,6 @@
       ]
     },
     {
-      "name": "UTM",
-      "bundleIdentifier": "com.utmapp.UTM",
-      "developerName": "osy",
-      "subtitle": "11-17 03:46 · iOS 虚拟机",
-      "localizedDescription": "功能完整的 iOS 虚拟机宿主，可以在 iPhone 与 iPad 上运行 Windows、Android 等系统。这个版本需要 AltJIT 配合；不想折腾 JIT 可以改用 UTM SE。",
-      "iconURL": "https://alt.getutm.app/icon.png",
-      "tintColor": "#D82B42",
-      "category": "other",
-      "versions": [
-        {
-          "version": "5.0.9",
-          "date": "2026-11-16T19:46:15Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
-          "size": 150730281,
-          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.0.8",
-          "date": "2026-10-17T02:44:56Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
-          "size": 150556668,
-          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.0.7",
-          "date": "2026-10-16T06:25:45Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.7/UTM-HV.ipa",
-          "size": 150507448,
-          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
-          "minOSVersion": "14.0"
-        }
-      ]
-    },
-    {
-      "name": "UTM SE",
-      "bundleIdentifier": "com.utmapp.UTM-SE",
-      "developerName": "osy",
-      "subtitle": "11-17 03:46 · 免 JIT 的虚拟机",
-      "localizedDescription": "UTM 的无 JIT 版本，在所有 iOS 设备上都能运行，速度比完整版慢一些，但不需要开启 JIT 也不需要连接电脑。可运行 Windows、Android 等系统。",
-      "iconURL": "https://alt.getutm.app/icon.png",
-      "tintColor": "#2CB34C",
-      "category": "other",
-      "versions": [
-        {
-          "version": "5.0.9",
-          "date": "2026-11-16T19:46:15Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
-          "size": 150730281,
-          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.0.8",
-          "date": "2026-10-17T02:44:56Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
-          "size": 150556668,
-          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "5.0.7",
-          "date": "2026-10-16T06:25:45Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.7/UTM-HV.ipa",
-          "size": 150507448,
-          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
-          "minOSVersion": "14.0"
-        }
-      ]
-    },
-    {
       "name": "YouProEXTRA",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "alibusut",
@@ -585,7 +573,7 @@
       "developerName": "Xanerix",
       "subtitle": "11-17 00:33 · 多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
@@ -1002,9 +990,9 @@
       "developerName": "deretame",
       "subtitle": "11-15 17:03 · 插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
       "tintColor": "#CE2BBB",
-      "category": "books",
+      "category": "other",
       "versions": [
         {
           "version": "3.0.38",
@@ -1012,9 +1000,7 @@
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
           "size": 27173399,
           "localizedDescription": "## 📝 更新日志\r\n## [v3.0.38]\r\n\r\n### 功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with [daiwenwen3](https://github.com/daiwenwen3)\r\n\r\n### 修复\r\n\r\n- 修复导入漫画时失败的问题\r\n\r\n### 优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n\r\n### 杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.38.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/windows-installer-v3.0.38.exe) |\r\n| **macOS** | [Breeze-",
-          "minOSVersion": "15.0",
-          "buildVersion": "2225",
-          "buildNumber": "2225"
+          "minOSVersion": "15.0"
         },
         {
           "version": "3.0.37",
@@ -1033,10 +1019,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
+      ]
     },
     {
       "name": "PicaComic",
