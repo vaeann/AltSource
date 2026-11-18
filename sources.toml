@@ -7,6 +7,28 @@ exclude_beta = true
 # 关：只收 GitHub 标记为正式版的 Release
 include_prerelease = true
 
+# 不收录的应用（按 bundle id）。想恢复某个应用，把对应行删掉再重跑即可
+exclude = [
+  # A 档：长期停更或功能完全重复
+  "me.oatmealdome.dolphinios-njb",   # DolphiniOS：稳定版停在 2022 年
+  "com.rileytestut.Clip",            # Clip：1.4 年没更新，系统自带够用
+  "com.github.kiastr.venera-ssr",    # Venera-SSR：Venera 系已有 4 个，它最弱
+  "com.miguel.psx3ios",              # PSX3IOS：PS3 已有 ARMSX3
+  "com.laincat.nekularity",          # Nekularity：Venera 内核，纯重复
+  # B 档：同类里重复度高的
+  "com.armsx2.ios.nightly",          # ARMSX2 Nightly：和 ARMSX2 同仓库
+  "moye.PicaX",                      # PicaX：漫画类已足够多
+  "software.iridium",                # Iridium：Windows 运行时已有 4 个
+  "app.fathom.emulator",             # Fathom：x86 模拟器，UTM/Orchard 可覆盖
+  "com.leviidev.podium",             # Podium：iPod Touch 模拟器，玩票性质
+  "com.silverphase.editor",          # Silverphase：胶片模拟，很小众
+  "com.rushhours.app",               # Rush Hours：小游戏
+  "org.moviepilot.app",              # MoviePilot：已有 MoviePilotLite
+  # 上面几个应用在上游还有 beta 通道的独立条目，稳定版删掉后会顶上来，一并排除
+  "com.rileytestut.Clip.Beta",
+  "me.oatmealdome.DolphiniOS-njb-patreon-beta",
+]
+
 # 源信息
 [source]
 name = "我的软件源"

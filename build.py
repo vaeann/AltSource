@@ -116,6 +116,7 @@ def main():
     src = cfg["source"]
     keep = int(cfg.get("keep_versions", 3))
     exclude_beta = bool(cfg.get("exclude_beta", False))
+    excluded = set(cfg.get("exclude") or [])
     os.makedirs(CACHE, exist_ok=True)
 
     # ---------- 1. 抓取 ----------
@@ -124,7 +125,8 @@ def main():
     def collect(data, tier, prio, label):
         n = 0
         for a in data.get("apps", []):
-            if not a.get("bundleIdentifier"):
+            bid = a.get("bundleIdentifier")
+            if not bid or bid in excluded:
                 continue
             if exclude_beta and re.search(r"beta", a.get("name") or "", re.I):
                 continue
