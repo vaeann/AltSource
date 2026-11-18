@@ -2,7 +2,8 @@ name: 更新软件源
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    # 避开整点：GitHub 在整点负载高时会把 scheduled run 直接丢掉
+    - cron: '23 */6 * * *'
   workflow_dispatch:
   push:
     paths:
