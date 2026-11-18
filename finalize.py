@@ -24,11 +24,13 @@ except Exception:
     pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-PREFIX = re.compile(r"^\d{2,4}-\d{2}(?:-\d{2})? · ")
+# 兼容两种旧前缀：带时间的和不带时间的，都能剥掉
+PREFIX = re.compile(r"^\d{2,4}-\d{2}(?:-\d{2})?(?: \d{2}:\d{2})? · ")
+CN = datetime.timezone(datetime.timedelta(hours=8))
 
 
 def date_prefix(iso):
-    """今年内显示 MM-DD，跨年显示 YY-MM-DD，一眼能看出新旧。"""
+    """统一转成北京时间显示：今年内 MM-DD HH:MM，跨年 YY-MM-DD HH:MM。"""
     if not iso:
         return ""
     try:
@@ -37,8 +39,9 @@ def date_prefix(iso):
         return ""
     if d.tzinfo is None:
         d = d.replace(tzinfo=datetime.timezone.utc)
-    now = datetime.datetime.now(datetime.timezone.utc)
-    return d.strftime("%m-%d") if d.year == now.year else d.strftime("%y-%m-%d")
+    d = d.astimezone(CN)
+    now = datetime.datetime.now(CN)
+    return d.strftime("%m-%d %H:%M") if d.year == now.year else d.strftime("%y-%m-%d %H:%M")
 
 
 def main():

@@ -24,6 +24,10 @@ exclude = [
   "com.silverphase.editor",          # Silverphase：胶片模拟，很小众
   "com.rushhours.app",               # Rush Hours：小游戏
   "org.moviepilot.app",              # MoviePilot：已有 MoviePilotLite
+  # 2026-11-18 老板点名删除
+  "com.rileytestut.AltStore",        # AltStore：需要 AltServer 配合，源里已有 SideStore
+  "com.rileytestut.AltStore.Beta",   # 上面那条的 beta 通道，防止顶位
+  "com.kdt.livecontainer",           # LiveContainer+SideStore：已经在用，不需要装在容器里
   # 上面几个应用在上游还有 beta 通道的独立条目，稳定版删掉后会顶上来，一并排除
   "com.rileytestut.Clip.Beta",
   "me.oatmealdome.DolphiniOS-njb-patreon-beta",
