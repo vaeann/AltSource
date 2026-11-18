@@ -30,10 +30,13 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 PREFIX = re.compile(r"^\d{2,4}-\d{2}(?:-\d{2})?(?: \d{2}:\d{2})?(?: · [\d.]+[KMG])? · ")
 # 应用名尾部可能残留上一轮加的日期，重新生成前先剥掉
 NAME_TAIL = re.compile(r" \d{2,4}-\d{2}(?:-\d{2})?$")
+# 副标题尾部可能残留上一轮加的体积
+TAIL_SIZE = re.compile(r" · [\d.]+[KMG]$")
 CN = datetime.timezone(datetime.timedelta(hours=8))
 
 
 def date_prefix(iso):
+    """简报只留日期：带时分太占位置（整行可用宽度只有 216pt）"""
     if not iso:
         return ""
     try:
@@ -44,7 +47,25 @@ def date_prefix(iso):
         d = d.replace(tzinfo=datetime.timezone.utc)
     d = d.astimezone(CN)
     now = datetime.datetime.now(CN)
-    return d.strftime("%m-%d %H:%M") if d.year == now.year else d.strftime("%y-%m-%d %H:%M")
+    return d.strftime("%m-%d") if d.year == now.year else d.strftime("%y-%m-%d")
+
+
+def text_width(s):
+    """估算渲染宽度（pt）：中文 11pt/字，英文数字 6pt/字"""
+    return sum(11 if ord(c) > 0x2E80 else 6 for c in s)
+
+
+def fit_subtitle(day, base, size):
+    """按优先级拼副标题：日期 > 简介 > 体积，超宽就先舍体积、再舍日期。
+
+    可用宽度约 216pt（iPhone 390pt 减图标 60 + 间距 12 + 安装按钮 70 + 边距 32）。
+    """
+    LIMIT = 210
+    for parts in ((day, base, size), (day, base), (base,)):
+        cand = " · ".join(x for x in parts if x)
+        if text_width(cand) <= LIMIT:
+            return cand
+    return " · ".join(x for x in (day, base) if x)
 
 
 def size_text(n):
@@ -75,15 +96,14 @@ def main():
     for a in apps:
         vs = a.get("versions") or []
         bid = a.get("bundleIdentifier", "")
-        stamp = date_prefix(vs[0].get("date") if vs else "")   # 11-18 14:02
-        day = stamp.split(" ")[0] if stamp else ""              # 11-18
+        day = date_prefix(vs[0].get("date") if vs else "")   # 11-18
         s = size_text(vs[0].get("size") if vs else None)
         base = (zh.get(bid) or {}).get("subtitle") or PREFIX.sub("", a.get("subtitle") or "")
+        base = TAIL_SIZE.sub("", base)
 
-        # 日期放应用名后面（名字行更宽，能容纳 5 字符），体积放简介前面
-        name = NAME_TAIL.sub("", a.get("name") or "")
-        a["name"] = f"{name} {day}" if day else name
-        a["subtitle"] = " · ".join(x for x in (s, base) if x)
+        # 名字保持干净（只有 216pt 宽，约 13 个中文字，加日期会被截）
+        a["name"] = NAME_TAIL.sub("", a.get("name") or "")
+        a["subtitle"] = fit_subtitle(day, base, s)
 
     # 先按名字排一遍（稳定排序作兜底），再按日期倒序，同一天内保持名称顺序
     apps.sort(key=lambda x: (x.get("name") or "").casefold())
@@ -93,9 +113,10 @@ def main():
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(doc, f, ensure_ascii=False, indent=2)
 
-    print(f"✓ 已把日期加到名字后、体积加到简介前：{len(apps)} 个应用")
-    for a in apps[:5]:
-        print(f"   {a['name'][:36]:<38}{a['subtitle'][:34]}")
+    print(f"✓ 按宽度自适应拼副标题：{len(apps)} 个应用")
+    for a in apps[:8]:
+        tag = "" if text_width(a["subtitle"]) <= 210 else "  ← 仍超宽"
+        print(f"   {a['name'][:18]:<20}{a['subtitle'][:46]}{tag}")
 
 
 if __name__ == "__main__":

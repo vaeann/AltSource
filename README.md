@@ -28,14 +28,16 @@ https://raw.githubusercontent.com/vaeann/AltSource/main/apps-2.json
 https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
-显示的排版是这样的：
+显示的排版是按宽度自适应的：
 
 ```
-Erosion-CN 11-17       ← 应用名后面跟最近发版日期
-6.4M · MobileGestalt 工具箱中文版   ← 简介前面跟包体积
+UTM                   11-17 · iOS 虚拟机 · 143.7M
+Erosion-CN            11-17 · MobileGestalt 工具箱中文版
 ```
 
-因为 LiveContainer 的列表只显示三行（名称 / 版本·包名 / 副标题），日期和体积它都只解析不渲染，只能借用名字行和副标题行。日期只放「月-日」，跨年显示「年-月-日」。
+日期一定显示，简介一定显示，**体积能放下就加、放不下自动省略**。
+
+为什么这么设计：LiveContainer 的列表卡片高度固定 88pt，三行都是单行（`lineLimit(1)`）。扣掉图标和右边的「安装」按钮后，副标题那行实际只有约 **216pt** 宽 —— 差不多 19 个中文字。日期（`11-17` ≈ 30pt）和体积（`6.4M` ≈ 39pt）加起来要占 90pt，简介就没地方了。所以体积做了自适应，简介长的应用优先保简介。
 
 ## 数据从哪来
 
