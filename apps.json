@@ -1,7 +1,7 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 82 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 85 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -9,9 +9,9 @@
   "featuredApps": [
     "com.github.pacalini.picaComic",
     "org.animeko.animeko",
+    "com.hentaipark.hentaiPark",
     "com.wqguard.app",
-    "com.linkpass.kazumi",
-    "ani.baka"
+    "com.linkpass.kazumi"
   ],
   "apps": [
     {
@@ -100,6 +100,42 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/subject-details.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/episode.png"
       ]
+    },
+    {
+      "name": "HentaiPark",
+      "bundleIdentifier": "com.hentaipark.hentaiPark",
+      "developerName": "drdon1234",
+      "subtitle": "17.1M · 成人内容聚合客户端（18+）",
+      "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
+      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.14.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#38AFD0",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "0.15.1",
+          "date": "2026-11-18T14:11:23Z",
+          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
+          "size": 17937496,
+          "localizedDescription": "## 中文\n\n### 新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n\n### 改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n\n### 修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n\n### 插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\n\n## English\n\n### New\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- ",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-18",
+          "buildNumber": "11-18"
+        },
+        {
+          "version": "0.14.8",
+          "date": "2026-11-17T10:43:21Z",
+          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
+          "size": 17908200,
+          "localizedDescription": "## 中文\n\n### 新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n\n### 改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n\n### 注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\n\n## English\n\n### New\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\n\n### Improvements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\n\n### Notes\n- Keep iOS in the foreground ",
+          "minOSVersion": "15.0",
+          "buildVersion": "80",
+          "buildNumber": "80"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     },
     {
       "name": "WQGuard",
@@ -244,7 +280,9 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
           "size": 50502422,
           "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐",
-          "minOSVersion": "16.0"
+          "minOSVersion": "16.0",
+          "buildVersion": "34",
+          "buildNumber": "34"
         },
         {
           "version": "2.1.3",
@@ -351,12 +389,12 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghub.huangguo",
+      "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
-      "subtitle": "3.7M · 沉浸竖屏播放客户端",
-      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
-      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
-      "tintColor": "#31B98B",
+      "subtitle": "3.7M · 沉浸式竖屏播放",
+      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
+      "iconURL": "https://github.com/zxsos.png?size=460",
+      "tintColor": "#B92746",
       "category": "entertainment",
       "versions": [
         {
@@ -417,7 +455,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.26/Stats-v0.3.17-iOS.ipa",
           "size": 2861581,
           "localizedDescription": "Stats for iPhone 0.3.17 makes the Mac device card more compact and adds a manual refresh.\n\n## What's changed\n\n- See more live metrics sooner with the shorter Mac card. The card keeps the device render, Mac name, chip, connection status, and alerts.\n- Tap the Mac card to open About This Mac. It is still available in Dashboard Settings.\n- Tap the refresh icon to request a new snapshot, recent history, and updated Mac details.\n\n## Download\n\n**Stats for iPhone 0.3.17 (build 20)** requires iOS 17 or later. The arm64 IPA is unsigned for AltStore, SideStore, and LiveContainer.\n\n**SHA-256** f9b77cb1a4",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "20",
+          "buildNumber": "20"
         },
         {
           "version": "0.3.16",
@@ -425,7 +465,9 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.25/Stats-v0.3.16-iOS.ipa",
           "size": 2847721,
           "localizedDescription": "Stats for iPhone 0.3.16 introduces a redesigned dashboard for your paired Mac.\n\n## What's changed\n\n- See your Mac's model, connection status, last update, and low-storage or memory-pressure warnings at a glance.\n- Follow one-minute CPU and memory trends, with temperatures and memory pressure when available.\n- Check remaining disk space, download and upload rates, and measured network latency from the overview.\n- Open any card for its detailed metrics. The dashboard supports light mode, dark mode, and larger text.\n\n## Download\n\n**Stats for iPhone 0.3.16 (build 19)** requires iOS 17 or later. Th",
-          "minOSVersion": "17.0"
+          "minOSVersion": "17.0",
+          "buildVersion": "19",
+          "buildNumber": "19"
         }
       ],
       "appPermissions": {
@@ -503,7 +545,9 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.1/Camlo_v1.3.1_Bilingual.ipa",
           "size": 9534904,
           "localizedDescription": "## What's New in Camlo v1.3.1 (Build 24)\n\n### 1. 10 Original 「次元 3D (Anime 3D)」 Cloud Wallpapers (`ParameterizedCA` + Apple Vision Clock Depth)\n- Official zero-bloat Cloud Gallery (`wallpapers/`) expanded from 60 to **70 packs** (**395+ total** across Official + Community channels), while keeping `Camlo_v1.3.1_Bilingual.ipa` ultra-slim at **~9.5 MB (`9.1 MiB`)**.\n- All 10 new 100%-original Anime packs (`18961`–`18970`) are natively compiled as single-screen **`ParameterizedCA` (`Marble` / `wantsDeviceMotion = true`)** bundles with **real hardware 120Hz 3D Gyroscope Parallax**, **Apple Vision f",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "24",
+          "buildNumber": "24"
         },
         {
           "version": "1.3.0",
@@ -551,7 +595,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
           "size": 6857330,
           "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "29",
+          "buildNumber": "29"
         },
         {
           "version": "1.0.3",
@@ -559,7 +605,9 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
           "size": 6832062,
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` o",
-          "minOSVersion": "26.0"
+          "minOSVersion": "26.0",
+          "buildVersion": "28",
+          "buildNumber": "28"
         }
       ],
       "appPermissions": {
@@ -575,7 +623,7 @@
       "developerName": "ARMSX2",
       "subtitle": "44.0M · PS3 模拟器 iOS 移植",
       "localizedDescription": "基于 RPCS3 的 PlayStation 3 模拟器移植版，需要 A14 或更新芯片、iOS 17.4 以上。运行游戏还需要开启 JIT，并自备 PS3 系统软件与游戏镜像。重签时请保留原始 entitlements，当成完全未签名包处理会丢权限并闪退。",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.2/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.3/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#2F4DC5",
       "category": "games",
       "versions": [
@@ -595,9 +643,7 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
           "localizedDescription": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside ",
-          "minOSVersion": "17.4",
-          "buildVersion": "2",
-          "buildNumber": "2"
+          "minOSVersion": "17.4"
         },
         {
           "version": "0.0.1",
@@ -833,7 +879,7 @@
       "developerName": "Xanerix",
       "subtitle": "32.3M · 多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
@@ -866,6 +912,48 @@
           "buildNumber": "111",
           "localizedDescription": "更新内容：\n\n### JS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n\n### 更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 `%LOCALAPPDATA%\\<包名>`，便携版为 `userdata\\cache`），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装",
           "minOSVersion": "15.1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "GestaltEdit",
+      "bundleIdentifier": "me.ssus.gestaltedit",
+      "developerName": "frs0n",
+      "subtitle": "6.9M · iOS 27 MobileGestalt 编辑器",
+      "localizedDescription": "直接在 iPhone / iPad 上编辑 com.apple.MobileGestalt.plist：能力预设（Siri AI、灵动岛、显示与 iPad 功能等）、完整字段编辑器，以及带修改前后对比的自动备份与恢复。\n\n要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit",
+      "iconURL": "https://raw.githubusercontent.com/frs0n/GestaltEdit/v2.3.1/GestaltEdit/PlacardIcon.png",
+      "tintColor": "#2643D3",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "2.3.1",
+          "date": "2026-11-16T16:03:54Z",
+          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
+          "size": 7261456,
+          "localizedDescription": "## What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\n\n## Download and signing\n\n`GestaltEdit-v2.3.1-unsigned.ipa` is a local Release build, version **2.3.1 (14)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Wat",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-17",
+          "buildNumber": "11-17"
+        },
+        {
+          "version": "2.3",
+          "date": "2026-11-16T15:07:32Z",
+          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3/GestaltEdit-v2.3-unsigned.ipa",
+          "size": 7287092,
+          "localizedDescription": "## What’s new\n\n- Reorganized MG presets and added two-stage Siri AI setup for iOS 27, including recovery of the original device identity after model setup.\n- Added backup change details and clearer restore confirmation.\n- Simplified the expandable device selector and updated the connection status color.\n- Added an unsupported-system message for watchOS 26.\n\n## Download and signing\n\n`GestaltEdit-v2.3-unsigned.ipa` is a local Release build, version **2.3 (13)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-si",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "2.2.1",
+          "date": "2026-11-15T16:16:21Z",
+          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.2.1/GestaltEdit-v2.2.1-unsigned.ipa",
+          "size": 7218552,
+          "localizedDescription": "## What's new\n\n- Apple Watch now automatically requests a NeoSpring interface restart after Apply, field saves, and backup restores, once writing and readback verification have succeeded.\n- Removed the separate Restart Watch Interface button.\n- If the restart request cannot be confirmed, the successful MG save remains recorded and is not retried automatically.\n\n## Download and signing\n\n`GestaltEdit-v2.2.1-unsigned.ipa` is a local Release build, version **2.2.1 (12)**. It contains both the iPhone app and the Watch helper.\n\nBoth apps have **ad-hoc placeholder signatures with their App Group enti",
+          "minOSVersion": "26.0"
         }
       ],
       "appPermissions": {
@@ -1190,9 +1278,9 @@
       "developerName": "deretame",
       "subtitle": "25.9M · 插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
       "tintColor": "#CE2BBB",
-      "category": "books",
+      "category": "other",
       "versions": [
         {
           "version": "3.0.38",
@@ -1221,10 +1309,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
+      ]
     },
     {
       "name": "Mangayomi",
@@ -1382,6 +1470,48 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/bangumi.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/dynamic.png"
       ]
+    },
+    {
+      "name": "Placard",
+      "bundleIdentifier": "me.ssus.placard",
+      "developerName": "frs0n",
+      "subtitle": "6.4M · PosterBoard 壁纸管理（iOS 2…",
+      "localizedDescription": "在 iOS 上浏览、创建、安装和管理 PosterBoard 壁纸：社区壁纸、导入 .tendies 包、用最长 12 秒的片段做视频壁纸，以及查看和删除已安装的壁纸。界面含简体中文。\n\n要求 iOS 26.0 及以上；壁纸写入依赖 App Group 与 worse_query 相关权限，上游是未签名包，普通自签可能拿不到这些权限。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/frs0n/placard",
+      "iconURL": "https://raw.githubusercontent.com/frs0n/placard/v2.0.3/docs/images/app-icon.png",
+      "tintColor": "#B53077",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "2.0.3",
+          "date": "2026-11-14T07:47:09Z",
+          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
+          "size": 6699817,
+          "localizedDescription": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-14",
+          "buildNumber": "11-14"
+        },
+        {
+          "version": "2.0.2",
+          "date": "2026-11-13T15:59:56Z",
+          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.2/placard-v2.0.2-unsigned.ipa",
+          "size": 6695549,
+          "localizedDescription": "- 加快首次打开 Library 时的壁纸容器定位，找到目标后立即停止扫描。\n- 合并重复扫描，减少权限请求和签名信息读取。\n\n本地编译的未签名 Release IPA。",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "2.0.1",
+          "date": "2026-11-13T15:35:54Z",
+          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.1/placard-v2.0.1-unsigned.ipa",
+          "size": 6697410,
+          "localizedDescription": "- 改进壁纸容器定位与缓存失效后的重新检测。\n- 兼容多 App Group 签名，保留并恢复原有缓存目录。\n- 自动识别壁纸存储版本，改善读取、安装和删除的兼容性。\n\n本地编译的未签名 Release IPA。",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     },
     {
       "name": "Cloudn",
@@ -2059,137 +2189,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/home.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/settings.png"
-      ]
-    },
-    {
-      "name": "Venera Prime",
-      "bundleIdentifier": "com.github.wgh136.venera.prime",
-      "developerName": "venera-app",
-      "subtitle": "16.0M · Venera 次世代重写版",
-      "localizedDescription": "原版 Venera 的重写版本，Flutter 与 Rust 构建。支持本地漫画与网络图源、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看，中文标签翻译来自 EhTagTranslation 项目。",
-      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.8.1/assets/app_icon.png",
-      "tintColor": "#84C52F",
-      "category": "books",
-      "versions": [
-        {
-          "version": "2.8.1",
-          "date": "2026-11-10T18:00:24Z",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
-          "size": 16730617,
-          "buildVersion": "11-11",
-          "buildNumber": "11-11",
-          "localizedDescription": "# Venera Prime 2.8.1\n\n## 本次更新\n\n- **网络请求取消时闪退 #55**（@fanhua2006）：修复请求超时或取消后，延迟返回的网络回调触发原生库 abort 的问题；同时处理无效请求方法、缺失上传流、自定义 DNS 异常等相似错误路径。已复现并消除与反馈相同的原生崩溃堆栈，仍请在原设备、不挂 VPN 的启动场景复查。\n- **非默认目录刷新与恢复 #53**（@lzx377z）：补齐 Android 授权目录的属性查询和文本读写。“设置 → 应用 → 刷新本地库”与“导入 → 恢复本地下载”可读取漫画元数据，不再因缺少 stat/readAsString 实现抛出 UnimplementedError；未知修改时间不会覆盖已有漫画的创建时间。\n- **通用 SAF 存储目录 #54**（@GalahadVi）：保留 DocumentsProvider 的完整目录标识，按真实文档 ID 读写、创建和扫描，不再假定所有授权目录都是系统本地存储。兼容旧目录配置；服务暂时离线时保留用户所选目录，写入失败如实报告，兼容仅支持 wt 的 Provider。下载、阅读、导出与目录迁移共用修正后的文件访问链路。\n- **阅读图片刷新与长按 #49**（@sakana155）：刷新时清除实际图片缓存，防止此前的下载晚返回后覆盖刷新结果；长按缩放等待控制器就绪，退出阅",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "2.8.0",
-          "date": "2026-11-06T17:18:11Z",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
-          "size": 16717141,
-          "buildVersion": "280",
-          "buildNumber": "280",
-          "localizedDescription": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "2.7.2",
-          "date": "2026-11-04T16:17:55Z",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-          "size": 16716650,
-          "buildVersion": "272",
-          "buildNumber": "272",
-          "localizedDescription": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系",
-          "minOSVersion": "14.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
-    {
-      "name": "StikDebug",
-      "bundleIdentifier": "com.stik.stikdebug",
-      "developerName": "StikDebug",
-      "subtitle": "16.1M · 设备内调试器与 JIT 工具",
-      "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.png",
-      "tintColor": "#58D32B",
-      "category": "other",
-      "versions": [
-        {
-          "version": "3.2.2",
-          "date": "2026-11-08T22:05:57Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
-          "size": 16924687,
-          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
-          "minOSVersion": "17.4",
-          "buildVersion": "11-09",
-          "buildNumber": "11-09"
-        },
-        {
-          "version": "3.2.1",
-          "date": "2026-11-07T05:15:03Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
-          "size": 16924629,
-          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "3.2.0",
-          "date": "2026-10-30T03:02:00Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
-          "size": 16818331,
-          "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n*",
-          "minOSVersion": "17.4"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.png"
-      ]
-    },
-    {
-      "name": "LSX4",
-      "bundleIdentifier": "com.llayerlinux.LSX4RuntimeProbe",
-      "developerName": "lpfoj",
-      "subtitle": "73.4M · PS4 与 PS5 模拟器",
-      "localizedDescription": "面向 Android 与 iOS 的开源 PlayStation 4 / 5 模拟器。当前 iOS 构建支持 PS4 游戏，需要 iOS 26 以上并开启 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/icon.png",
-      "tintColor": "#D27736",
-      "category": "other",
-      "versions": [
-        {
-          "version": "128.9934",
-          "date": "2026-11-08T00:33:06Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa",
-          "size": 77017813,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-iOS-JIT-128.9934-English.zip)\n\n- Fixed visual issues in select games, including green video frames in **The Last of Us Remastered** and title-screen flicker in **God of War III Remastered**.\n- Updated per-game settings and presets, including a presentation setting for **God of War III Remastered**.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/INSTALLAT",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-08",
-          "buildNumber": "11-08"
-        },
-        {
-          "version": "128.9921",
-          "date": "2026-11-07T19:01:52Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa",
-          "size": 77015899,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-iOS-JIT-128.9921-English.zip)\n\n- Added **Cinematic**, an additional way to browse your game library with a horizontal row and full-screen artwork for the selected game.\n- Major performance optimizations and presets for demanding games, including **God of War III Remastered** and **The Last of Us Remastered**.\n- Improved upscaling, including a **720p output option** for The Last of Us Remastere",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "128.9775",
-          "date": "2026-11-02T21:44:50Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa",
-          "size": 76905447,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-iOS-JIT-128.9775-English.zip)\n\n- Optimizations for Bloodborne and The Last of Us.\n- Added FSR upscaling.\n- Other minor improvements.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/INSTALLATION.txt)\n\niOS 26+ · JIT. Update using the same Apple Account and bundle ID. Keep **Remove App Extensions OFF** in Sideloadly.",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/settings.png"
       ]
     }
   ],
