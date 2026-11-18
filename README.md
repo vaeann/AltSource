@@ -28,7 +28,14 @@ https://raw.githubusercontent.com/vaeann/AltSource/main/apps-2.json
 https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
-副标题的格式是 `时间 · 体积 · 简介`，例如 `11-18 14:02 · 6.4M · MobileGestalt 工具箱`。因为 LiveContainer 的列表只显示三行，日期和体积只能塞进副标题才看得见。
+显示的排版是这样的：
+
+```
+Erosion-CN 11-17       ← 应用名后面跟最近发版日期
+6.4M · MobileGestalt 工具箱中文版   ← 简介前面跟包体积
+```
+
+因为 LiveContainer 的列表只显示三行（名称 / 版本·包名 / 副标题），日期和体积它都只解析不渲染，只能借用名字行和副标题行。日期只放「月-日」，跨年显示「年-月-日」。
 
 ## 数据从哪来
 

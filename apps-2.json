@@ -15,10 +15,10 @@
   ],
   "apps": [
     {
-      "name": "AniBaka",
+      "name": "AniBaka 11-05",
       "bundleIdentifier": "ani.baka",
       "developerName": "AniBakaBaka",
-      "subtitle": "11-05 12:35 · 22.6M · 开源跨平台动画播放器",
+      "subtitle": "22.6M · 开源跨平台动画播放器",
       "localizedDescription": "开源跨平台动画播放应用，这里提供的是上游发布的未签名 iOS 构建，需要自备证书签名后安装。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/icon.png",
       "tintColor": "#3D90CB",
@@ -42,10 +42,10 @@
       ]
     },
     {
-      "name": "Husk",
+      "name": "Husk 11-05",
       "bundleIdentifier": "com.husk.app",
       "developerName": "Leviidev",
-      "subtitle": "11-05 11:33 · 135.7M · 在 iOS 上跑安卓应用",
+      "subtitle": "135.7M · 在 iOS 上跑安卓应用",
       "localizedDescription": "把 APK 拖进来点一下，就能在 QEMU 虚拟机上全屏运行安卓应用，显示与音频均有硬件加速。运行需要 JIT 并在运行时挂上调试器。",
       "iconURL": "https://raw.githubusercontent.com/Leviidev/Husk/main/src/app/Husk/Assets.xcassets/AppIcon.appiconset/Icon-Default.png",
       "tintColor": "#5ECC3C",
@@ -102,10 +102,10 @@
       ]
     },
     {
-      "name": "One",
+      "name": "One 11-05",
       "bundleIdentifier": "com.ios151.one",
       "developerName": "ios151",
-      "subtitle": "11-05 00:15 · 1.6M · 「ONE·一个」第三方客户端",
+      "subtitle": "1.6M · 「ONE·一个」第三方客户端",
       "localizedDescription": "「ONE·一个」的第三方原生客户端，SwiftUI 编写，iOS 16 以上。涵盖图文、影视点播、阅读、电台、写真与漫画，支持系统播放器与外部播放器、下载到「文件」App、收藏与搜索。",
       "iconURL": "https://raw.githubusercontent.com/ios151/One-releases/main/icon.png",
       "tintColor": "#33D587",
@@ -150,10 +150,10 @@
       }
     },
     {
-      "name": "Madeira",
+      "name": "Madeira 11-04",
       "bundleIdentifier": "com.willfaust.madeora",
       "developerName": "Will Faust",
-      "subtitle": "11-04 11:29 · 177.8M · 沙盒内跑 Windows 游戏",
+      "subtitle": "177.8M · 沙盒内跑 Windows 游戏",
       "localizedDescription": "在单个受沙盒限制的 iOS 应用里运行未经修改的 x86-64 Windows 游戏：FEX-Emu 负责指令翻译，Wine 11.4 for ARM64EC 提供 Windows 环境，DXMT 负责 Direct3D 转换。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/icon.png",
       "tintColor": "#CE3830",
@@ -175,10 +175,10 @@
       ]
     },
     {
-      "name": "Playport",
+      "name": "Playport 11-02",
       "bundleIdentifier": "dev.playport.app",
       "developerName": "playportdev",
-      "subtitle": "11-02 18:13 · 394.2M · 未越狱跑 Windows 游戏",
+      "subtitle": "394.2M · 未越狱跑 Windows 游戏",
       "localizedDescription": "在未越狱的 iPhone 上运行 64 位与 32 位 Windows 游戏：从库里挑一个装到手机，接上手柄就能玩，游戏跑在手机自己的 CPU 与 GPU 上，不需要 PC 也不需要云。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/icon.png",
       "tintColor": "#C94135",
@@ -200,10 +200,10 @@
       ]
     },
     {
-      "name": "ManicEMU",
+      "name": "ManicEMU 11-02",
       "bundleIdentifier": "com.aoshuang.manicemu",
       "developerName": "Manic EMU Development Team",
-      "subtitle": "11-02 16:03 · 279.7M · 全能复古模拟器",
+      "subtitle": "279.7M · 全能复古模拟器",
       "localizedDescription": "把主机、街机、电脑与手机 Java 游戏整合到一个应用里，支持即时存档、金手指、自定义皮肤与 RetroAchievements 成就。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/icon.png",
       "tintColor": "#31B965",
@@ -225,10 +225,10 @@
       ]
     },
     {
-      "name": "Utsuro",
+      "name": "Utsuro 11-02",
       "bundleIdentifier": "com.utsuro.app",
       "developerName": "Leviidev",
-      "subtitle": "11-02 02:28 · 5.2M · Xbox One 模拟器（早期测试）",
+      "subtitle": "5.2M · Xbox One 模拟器（早期测试）",
       "localizedDescription": "在 iOS 与 iPadOS 上运行 Xbox One 游戏。目前处于 alpha 阶段：Minecraft Xbox One 版、火箭联盟与索尼克狂欢已验证可启动，其余游戏兼容性差异较大，需要自备游戏文件。",
       "iconURL": "https://raw.githubusercontent.com/Leviidev/Utsuro/main/ios/Utsuro/Assets.xcassets/AppIcon.appiconset/icon.png",
       "tintColor": "#2C9CBE",
@@ -253,10 +253,10 @@
       ]
     },
     {
-      "name": "MeloX",
+      "name": "MeloX 10-30",
       "bundleIdentifier": "moye.MeloX",
       "developerName": "youshen2",
-      "subtitle": "10-30 21:43 · 29.0M · 网易云第三方客户端",
+      "subtitle": "29.0M · 网易云第三方客户端",
       "localizedDescription": "面向 iPhone、iPad 与 Apple Watch 的原生网易云音乐客户端，SwiftUI 构建，参考 Apple Music 的液态玻璃设计，支持逐字歌词、文字 PV 歌词与全屏天际歌词。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/icon.png",
       "tintColor": "#28D6D0",
@@ -279,10 +279,10 @@
       ]
     },
     {
-      "name": "LinuxRunner",
+      "name": "LinuxRunner 10-27",
       "bundleIdentifier": "dev.linuxrunner.app",
       "developerName": "Leminos",
-      "subtitle": "10-27 15:30 · 14.0M · 免越狱跑 Linux 应用",
+      "subtitle": "14.0M · 免越狱跑 Linux 应用",
       "localizedDescription": "在 iOS 上运行 ARM64 Linux 程序与桌面环境，不需要越狱、虚拟机或 JIT。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/icon.png",
       "tintColor": "#D94C30",
@@ -304,10 +304,10 @@
       ]
     },
     {
-      "name": "Animeko",
+      "name": "Animeko 10-24",
       "bundleIdentifier": "org.animeko.animeko",
       "developerName": "open-ani",
-      "subtitle": "10-24 12:52 · 46.4M · 找番追番看番一体",
+      "subtitle": "46.4M · 找番追番看番一体",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 下载与弹幕云过滤。基于 Kotlin 与 Compose Multiplatform 实现。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/icon.png",
       "tintColor": "#7CD533",
@@ -329,10 +329,10 @@
       ]
     },
     {
-      "name": "Delta",
+      "name": "Delta 10-22",
       "bundleIdentifier": "com.rileytestut.Delta",
       "developerName": "Riley Testut",
-      "subtitle": "10-22 21:00 · 197.8M · 全能复古游戏模拟器",
+      "subtitle": "197.8M · 全能复古游戏模拟器",
       "localizedDescription": "GBA4iOS 的后继者，一个应用内支持 GBA、Nintendo DS、SNES、N64、Genesis 等多款主机的游戏模拟，支持即时存档、金手指、外接手柄与云同步。",
       "iconURL": "https://cdn.altstore.io/file/altstore/images/delta/Delta4.png",
       "tintColor": "#A1D435",
@@ -407,10 +407,10 @@
       ]
     },
     {
-      "name": "Roam Control",
+      "name": "Roam Control 10-21",
       "bundleIdentifier": "com.sean.roamcontrol",
       "developerName": "seanhowarthdev",
-      "subtitle": "10-21 03:33 · 4.4M · 定位固定与路线模拟",
+      "subtitle": "4.4M · 定位固定与路线模拟",
       "localizedDescription": "在一张地图上设定固定的上报位置、预览并模拟 Apple 地图步行路线、保存收藏与历史。需要 iOS 27 或更新版本，并配合 LocalDevVPN 会话使用。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/icon.png",
       "tintColor": "#9D2EC6",
@@ -432,10 +432,10 @@
       ]
     },
     {
-      "name": "Asspp",
+      "name": "Asspp 10-20",
       "bundleIdentifier": "wiki.qaq.Asspp",
       "developerName": "Lakr233",
-      "subtitle": "10-20 11:08 · 15.7M · 多账号跨区 App Store",
+      "subtitle": "15.7M · 多账号跨区 App Store",
       "localizedDescription": "在一个应用里管理多个 Apple ID 的不同区服商店，可即时切换、浏览并下载各区的官方 IPA，保留可搜索的历史版本库，全程不用登出设备。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/icon.png",
       "tintColor": "#C3A430",
@@ -457,10 +457,10 @@
       ]
     },
     {
-      "name": "Pixiv-SwiftUI",
+      "name": "Pixiv-SwiftUI 10-19",
       "bundleIdentifier": "org.eu.eslzzyl.Pixiv-SwiftUI",
       "developerName": "Eslzzyl",
-      "subtitle": "10-19 22:07 · 9.9M · Pixiv 第三方客户端",
+      "subtitle": "9.9M · Pixiv 第三方客户端",
       "localizedDescription": "SwiftUI 开发的 Pixiv 第三方客户端，支持 iOS、iPadOS 与 macOS。提供插画、漫画与小说的推荐、排行榜、搜索与收藏，内置评论、批量下载、数据导入导出与主题自定义。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/icon.png",
       "tintColor": "#9B25CA",
@@ -482,10 +482,10 @@
       ]
     },
     {
-      "name": "Musly",
+      "name": "Musly 10-19",
       "bundleIdentifier": "com.dddevid.musly",
       "developerName": "dddevid",
-      "subtitle": "10-19 02:19 · 13.7M · 自建音乐库播放器",
+      "subtitle": "13.7M · 自建音乐库播放器",
       "localizedDescription": "免费的 Navidrome 客户端兼 Subsonic 播放器，界面参考 Apple Music。可串流自己搭在 Navidrome、Subsonic 或 Airsonic 上的音乐库。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/icon.png",
       "tintColor": "#A630C3",
@@ -507,10 +507,10 @@
       ]
     },
     {
-      "name": "LightNovelShelf",
+      "name": "LightNovelShelf 10-18",
       "bundleIdentifier": "app.lightnovel.shelf",
       "developerName": "LightNovelShelf",
-      "subtitle": "10-18 18:47 · 11.4M · 轻书架官方客户端",
+      "subtitle": "11.4M · 轻书架官方客户端",
       "localizedDescription": "轻书架的官方 Flutter 客户端，面向 iOS、iPadOS 与 Android，支持书架管理、在线阅读、翻页动画、双页阅读与自动更新。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/icon.png",
       "tintColor": "#43C133",
@@ -531,10 +531,10 @@
       ]
     },
     {
-      "name": "Aidoku",
+      "name": "Aidoku 10-17",
       "bundleIdentifier": "app.aidoku.Aidoku",
       "developerName": "Skitty",
-      "subtitle": "10-17 06:25 · 14.1M · 开源漫画阅读器",
+      "subtitle": "14.1M · 开源漫画阅读器",
       "localizedDescription": "开源漫画阅读器，通过扩展机制添加在线漫画源，支持书架追踪、离线下载与本地文件阅读。GPL-3.0 开源，可在设置里安装社区扩展源。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/icon.png",
       "tintColor": "#BFCB38",
@@ -556,10 +556,10 @@
       ]
     },
     {
-      "name": "PureLive",
+      "name": "PureLive 10-10",
       "bundleIdentifier": "com.mystyle.purelive.liu",
       "developerName": "liuchuancong",
-      "subtitle": "10-10 12:32 · 63.8M · 多平台直播聚合",
+      "subtitle": "63.8M · 多平台直播聚合",
       "localizedDescription": "基于 Flutter 的开源直播聚合播放器，支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、Twitch 等平台，并可自定义 M3U 与 M3U8 直播源。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/icon.png",
       "tintColor": "#BF2B6B",
@@ -581,10 +581,10 @@
       ]
     },
     {
-      "name": "TiebaPure",
+      "name": "TiebaPure 10-10",
       "bundleIdentifier": "com.infinityf4p.TiebaPure",
       "developerName": "infinityf4p",
-      "subtitle": "10-10 08:00 · 8.9M · 原生贴吧客户端",
+      "subtitle": "8.9M · 原生贴吧客户端",
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。这里是国内镜像加速版。",
       "iconURL": "https://cdn.jsdelivr.net/gh/bebound/AltGallery@master/apps/TiebaPure/icon.png",
       "tintColor": "#5533C6",
@@ -623,10 +623,10 @@
       ]
     },
     {
-      "name": "AniCh",
+      "name": "AniCh 10-05",
       "bundleIdentifier": "app.anich",
       "developerName": "Sle2p",
-      "subtitle": "10-05 11:15 · 39.3M · 多平台动漫弹幕播放器",
+      "subtitle": "39.3M · 多平台动漫弹幕播放器",
       "localizedDescription": "多平台动漫应用，支持多番剧源切换、实时超分辨率、弹幕过滤、追番管理与离线缓存。安装包来自上游发布，需自行签名。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/icon.png",
       "tintColor": "#8633C1",
@@ -648,10 +648,10 @@
       ]
     },
     {
-      "name": "AirCard-iOS",
+      "name": "AirCard-iOS 10-04",
       "bundleIdentifier": "com.mak5er.aircard",
       "developerName": "Mak5er",
-      "subtitle": "10-04 20:22 · 4.4M · 钱包卡片与锁屏密码美化",
+      "subtitle": "4.4M · 钱包卡片与锁屏密码美化",
       "localizedDescription": "Apple Wallet 卡片样式与锁屏密码主题定制工具，可自行设计卡片外观与密码键盘主题。部分功能依赖较新的 iOS 版本，实际可安装版本以安装包元数据为准。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/icon.png",
       "tintColor": "#B18E2F",
@@ -673,10 +673,10 @@
       ]
     },
     {
-      "name": "Orchard",
+      "name": "Orchard 09-26",
       "bundleIdentifier": "com.makr.orchard",
       "developerName": "MakrSas",
-      "subtitle": "09-26 00:12 · 17.6M · 在 iPhone 上跑 macOS",
+      "subtitle": "17.6M · 在 iPhone 上跑 macOS",
       "localizedDescription": "通过 Apple 自家的 AVPBooter、iBoot 与 XNU 链路，在 QEMU 的 apple-vm 机器上启动真正的 arm64 macOS Ventura 客户机，GPU 由 reims-vgpu 经 Metal 绘制。需要 JIT 与特定签名工具。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orchard/icon.png",
       "tintColor": "#CC28AB",
@@ -696,10 +696,10 @@
       ]
     },
     {
-      "name": "SceneBox",
+      "name": "SceneBox 09-23",
       "bundleIdentifier": "app.scenebox.SceneBox",
       "developerName": "donbytyqi",
-      "subtitle": "09-23 23:44 · 29.2M · 种子流媒体播放器",
+      "subtitle": "29.2M · 种子流媒体播放器",
       "localizedDescription": "SwiftUI 编写的种子流媒体客户端，覆盖 iOS、iPadOS、tvOS 与 Mac。视频流来自兼容 Stremio 的插件，由内置 libtorrent 引擎喂给 VLC 播放。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/icon.png",
       "tintColor": "#2A6BC0",
@@ -721,10 +721,10 @@
       ]
     },
     {
-      "name": "SideStore",
+      "name": "SideStore 09-15",
       "bundleIdentifier": "com.SideStore.SideStore",
       "developerName": "SideStore Team",
-      "subtitle": "09-15 19:12 · 26.5M · 无需电脑的替代商店",
+      "subtitle": "26.5M · 无需电脑的替代商店",
       "localizedDescription": "社区维护的替代应用商店，无需越狱也无需电脑：用你自己的 Apple ID 重签并安装 IPA，并在后台自动刷新签名。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/icon.png",
       "tintColor": "#C9263E",
@@ -746,10 +746,10 @@
       ]
     },
     {
-      "name": "AetherPS4",
+      "name": "AetherPS4 09-12",
       "bundleIdentifier": "com.aether.ps4ios",
       "developerName": "Leviidev",
-      "subtitle": "09-12 10:48 · 32.6M · PS4 模拟器",
+      "subtitle": "32.6M · PS4 模拟器",
       "localizedDescription": "面向 iOS 与 iPadOS 的 PlayStation 4 模拟器，包含独立应用与模拟器内核，可直接在设备上启动 PS4 游戏。",
       "iconURL": "https://raw.githubusercontent.com/Leviidev/AetherPS4/main/AetherPS4-iOS/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#7430D3",
@@ -782,10 +782,10 @@
       ]
     },
     {
-      "name": "Opaline",
+      "name": "Opaline 09-10",
       "bundleIdentifier": "com.verback.YTLite",
       "developerName": "verback2308",
-      "subtitle": "09-10 10:02 · 6.4M · 轻量 YouTube 客户端",
+      "subtitle": "6.4M · 轻量 YouTube 客户端",
       "localizedDescription": "轻量 YouTube 客户端，支持 SponsorBlock 跳过赞助片段、恢复踩数显示，最高 1080p 播放。无广告、无追踪、无额外依赖。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/icon.png",
       "tintColor": "#C53458",
@@ -807,10 +807,10 @@
       ]
     },
     {
-      "name": "DLiPA",
+      "name": "DLiPA 08-03",
       "bundleIdentifier": "com.ahmedbafkir.dlipa",
       "developerName": "Ahmed Bafkir",
-      "subtitle": "08-03 16:46 · 522K · 从 App Store 下载 IPA",
+      "subtitle": "522K · 从 App Store 下载 IPA",
       "localizedDescription": "受 ipatool 启发的 iOS 应用。用你自己的 Apple ID 登录，搜索 App Store、把任意应用下载成 IPA（含旧版本），并直接安装或分享，无需越狱。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/icon.png",
       "tintColor": "#2AC04D",
@@ -832,10 +832,10 @@
       ]
     },
     {
-      "name": "iTorrent",
+      "name": "iTorrent 07-19",
       "bundleIdentifier": "com.xitrix.iTorrent2",
       "developerName": "XITRIX",
-      "subtitle": "07-19 17:59 · 23.2M · iOS 种子下载器",
+      "subtitle": "23.2M · iOS 种子下载器",
       "localizedDescription": "iOS 上的种子客户端，支持「文件」App、后台下载、实时活动与灵动岛进度条、外接硬盘下载、顺序下载等。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/icon.png",
       "tintColor": "#315DD7",
@@ -857,10 +857,10 @@
       ]
     },
     {
-      "name": "Feather",
+      "name": "Feather 07-05",
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "Samara",
-      "subtitle": "07-05 10:11 · 12.0M · 设备内签名安装器",
+      "subtitle": "12.0M · 设备内签名安装器",
       "localizedDescription": "免费的设备内应用管理与安装器。用 Apple 开发者证书在未越狱系统上签名安装 IPA，并内置应用管理功能。",
       "iconURL": "https://github.com/khcrysalis/Feather/blob/v1.x/iOS/Resources/Icons/Main/Mac@3x.png?raw=true",
       "tintColor": "#5DD033",
@@ -875,10 +875,10 @@
       ]
     },
     {
-      "name": "DukeX",
+      "name": "DukeX 06-30",
       "bundleIdentifier": "com.mafty.dukex",
       "developerName": "Manic EMU Development Team",
-      "subtitle": "06-30 20:21 · 19.4M · Xbox 模拟器前端",
+      "subtitle": "19.4M · Xbox 模拟器前端",
       "localizedDescription": "面向 iOS 的 xemu 实验性前端，把 xemu 内核嵌进原生 Swift 外壳，通过 MoltenVK 与原生 Metal 呈现 Vulkan 渲染。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/icon.png",
       "tintColor": "#D42FB3",
@@ -900,10 +900,10 @@
       ]
     },
     {
-      "name": "KMusic",
+      "name": "KMusic 03-12",
       "bundleIdentifier": "com.macxk.KMusic",
       "developerName": "Mac-XK",
-      "subtitle": "03-12 16:39 · 3.7M · 歌一刀 · 多源音乐聚合播放器",
+      "subtitle": "3.7M · 歌一刀 · 多源音乐聚合播放器",
       "localizedDescription": "歌一刀（KMusic）是 SwiftUI 开发的多源音乐聚合播放器，支持 iOS 与 macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等音源，支持 LRC 歌词同步、全局搜索、后台播放，还能用 JS 脚本导入自定义音源。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/icon.png",
       "tintColor": "#2B55D3",

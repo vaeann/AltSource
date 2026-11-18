@@ -28,6 +28,8 @@ except Exception:
 ROOT = os.path.dirname(os.path.abspath(__file__))
 # 兼容各种旧前缀：带日期、带时间、带体积的都能剥干净
 PREFIX = re.compile(r"^\d{2,4}-\d{2}(?:-\d{2})?(?: \d{2}:\d{2})?(?: · [\d.]+[KMG])? · ")
+# 应用名尾部可能残留上一轮加的日期，重新生成前先剥掉
+NAME_TAIL = re.compile(r" \d{2,4}-\d{2}(?:-\d{2})?$")
 CN = datetime.timezone(datetime.timedelta(hours=8))
 
 
@@ -73,10 +75,15 @@ def main():
     for a in apps:
         vs = a.get("versions") or []
         bid = a.get("bundleIdentifier", "")
-        p = date_prefix(vs[0].get("date") if vs else "")
+        stamp = date_prefix(vs[0].get("date") if vs else "")   # 11-18 14:02
+        day = stamp.split(" ")[0] if stamp else ""              # 11-18
         s = size_text(vs[0].get("size") if vs else None)
         base = (zh.get(bid) or {}).get("subtitle") or PREFIX.sub("", a.get("subtitle") or "")
-        a["subtitle"] = " · ".join(x for x in (p, s, base) if x)
+
+        # 日期放应用名后面（名字行更宽，能容纳 5 字符），体积放简介前面
+        name = NAME_TAIL.sub("", a.get("name") or "")
+        a["name"] = f"{name} {day}" if day else name
+        a["subtitle"] = " · ".join(x for x in (s, base) if x)
 
     # 先按名字排一遍（稳定排序作兜底），再按日期倒序，同一天内保持名称顺序
     apps.sort(key=lambda x: (x.get("name") or "").casefold())
@@ -86,9 +93,9 @@ def main():
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(doc, f, ensure_ascii=False, indent=2)
 
-    print(f"✓ 已加「时间 · 体积」前缀并排序：{len(apps)} 个应用")
+    print(f"✓ 已把日期加到名字后、体积加到简介前：{len(apps)} 个应用")
     for a in apps[:5]:
-        print(f"   {a['subtitle'][:48]}")
+        print(f"   {a['name'][:36]:<38}{a['subtitle'][:34]}")
 
 
 if __name__ == "__main__":
