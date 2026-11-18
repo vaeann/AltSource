@@ -55,17 +55,38 @@ def text_width(s):
     return sum(11 if ord(c) > 0x2E80 else 6 for c in s)
 
 
-def fit_subtitle(day, base, size):
-    """按优先级拼副标题：日期 > 简介 > 体积，超宽就先舍体积、再舍日期。
+def trim_to_width(s, limit):
+    """把文字按渲染宽度截断，超出的用省略号收尾"""
+    if limit <= 0:
+        return ""
+    if text_width(s) <= limit:
+        return s
+    out, w = "", 0
+    for c in s:
+        cw = 11 if ord(c) > 0x2E80 else 6
+        if w + cw > limit - 11:
+            break
+        out += c
+        w += cw
+    return (out.rstrip(" ·,") + "…") if out else ""
 
-    可用宽度约 216pt（iPhone 390pt 减图标 60 + 间距 12 + 安装按钮 70 + 边距 32）。
+
+def fit_subtitle(day, base, size):
+    """拼副标题：日期 + 简介 + 体积，三样都保，简介按剩余宽度截断。
+
+    为什么不像之前那样舍体积：LiveContainer 点条目直接进安装，没有详情页，
+    体积一旦省掉就再也看不到了。简介被截断反而还好 —— 应用名已经说明是什么。
+
+    可用宽度约 210pt（iPhone 390pt 减图标 60 + 间距 12 + 安装按钮 70 + 边距 32）。
     """
     LIMIT = 210
-    for parts in ((day, base, size), (day, base), (base,)):
-        cand = " · ".join(x for x in parts if x)
-        if text_width(cand) <= LIMIT:
-            return cand
-    return " · ".join(x for x in (day, base) if x)
+    head = f"{day} · " if day else ""
+    tail = f" · {size}" if size else ""
+    avail = LIMIT - text_width(head) - text_width(tail)
+    body = trim_to_width(base, avail)
+    if not body:
+        return (head + tail.lstrip(" ·")) if (head or tail) else base
+    return head + body + tail
 
 
 def size_text(n):
