@@ -42,6 +42,9 @@ jobs:
       - name: 副标题加更新日期并按更新时间排序
         run: python finalize.py
 
+      - name: 拆成主源与备用源
+        run: python split.py
+
       - name: 提交前校验（防止坏数据覆盖好数据）
         run: python guard.py
 
@@ -50,7 +53,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps.json _incoming
+          git add apps.json apps-extra.json _incoming
           if git diff --cached --quiet; then
             echo "上游没有变化，跳过提交"
             exit 0

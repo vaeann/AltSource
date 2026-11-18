@@ -1,22 +1,32 @@
 # 我的软件源
 
-把多个上游软件源**去重合并**成一个自己的 AltStore 源。共 **94 个应用**，全部中文简介，自动同步上游更新。
+把多个上游软件源**去重合并**成自己的 AltStore 源，版本数据直接从各项目的官方 GitHub 仓库拉。共 **81 个应用**，全部中文简介。
 
-其中 **24 个应用直接用各自项目的官方源数据**，其余用聚合源补齐。
+因为 LiveContainer 的源列表最多只显示 50 个，所以拆成两个源：
 
 ## 订阅地址
+
+**主源**（50 个，最近 90 天内更新过的，按更新时间倒序）
 
 ```
 https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
+**备用源**（31 个，更新较慢或停更的，能装能用）
+
+```
+https://raw.githubusercontent.com/vaeann/AltSource/main/apps-extra.json
+```
+
 支持 **LiveContainer / Feather / SideStore / AltStore**。
 
-国内直连不稳时用镜像（下载慢一点但能通）：
+国内直连不稳时，在前面加镜像前缀（下载慢一点但能通）：
 
 ```
 https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
+
+两个源的分工是自动维护的：某个应用发了新版就留在主源，超过 90 天没更新会自动沉到备用源；主源最多 50 个，超出的往备用源挤。
 
 ## 数据从哪来
 
