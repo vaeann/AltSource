@@ -78,6 +78,7 @@ def releases_to_versions(repo, keep, include_pre=False):
     """把仓库的 release 列表转成 versions 数组（最新在前）"""
     rels = gh(f"/repos/{repo}/releases?per_page=15")
     out = []
+    seen_ver = set()
     for r in rels:
         if r.get("draft"):
             continue
@@ -91,6 +92,11 @@ def releases_to_versions(repo, keep, include_pre=False):
         ver = pick_version(r.get("tag_name"), asset["name"])
         if not ver:
             continue
+        # 同一个版本号只留最新的一条：有的项目反复重发同一个版本做微调，
+        # 收进来会变成 3 个一模一样的版本号，用户根本分不清
+        if ver in seen_ver:
+            continue
+        seen_ver.add(ver)
         item = {
             "version": ver,
             "date": (r.get("published_at") or r.get("created_at") or "")[:19] + "Z"

@@ -21,6 +21,25 @@
           "localizedDescription": "iOS 27 写入失败专项修复：授权链四处单点加固、失败码诊断透传（文件页横幅 + 设置页沙盒诊断 + 一键导出）、写入遇权限拒绝自动清理。"
         }
       ]
+    },
+    {
+      "name": "i短剧",
+      "bundleIdentifier": "com.local.STV",
+      "developerName": "my-name-is-alan",
+      "subtitle": "多源短剧与视频聚合播放器",
+      "localizedDescription": "免费开源的 iOS 聚合播放器，支持短剧、视频、漫画与 Telegram 频道浏览，通过 QuickJS 插件沙箱接入各类内容源。",
+      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.5",
+          "buildVersion": "14",
+          "date": "2026-11-17T17:50:23Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.5b14-rank-cf-ui/STV-1.5b14-unsigned.ipa",
+          "size": 42404919,
+          "minOSVersion": "17.0"
+        }
+      ]
     }
   ],
   "news": []

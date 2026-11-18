@@ -1,104 +1,19 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 84 个，按更新频率分成 2 个源，这里是第 2 个（34 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 82 个，按更新频率分成 2 个源，这里是第 2 个（32 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.stik.stikdebug",
-    "com.llayerlinux.LSX4RuntimeProbe",
     "com.suwayomi.tachideskSorayomi",
     "org.zhaohe.MiniWatts",
-    "com.huamu013.ZhihuMinusMinus"
+    "com.huamu013.ZhihuMinusMinus",
+    "com.kuschqin.madeira.steamui",
+    "com.husk.app"
   ],
   "apps": [
-    {
-      "name": "StikDebug",
-      "bundleIdentifier": "com.stik.stikdebug",
-      "developerName": "StikDebug",
-      "subtitle": "16.1M · 设备内调试器与 JIT 工具",
-      "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.png",
-      "tintColor": "#58D32B",
-      "category": "other",
-      "versions": [
-        {
-          "version": "3.2.2",
-          "date": "2026-11-08T22:05:57Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
-          "size": 16924687,
-          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
-          "minOSVersion": "17.4",
-          "buildVersion": "11-09",
-          "buildNumber": "11-09"
-        },
-        {
-          "version": "3.2.1",
-          "date": "2026-11-07T05:15:03Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
-          "size": 16924629,
-          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "3.2.0",
-          "date": "2026-10-30T03:02:00Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
-          "size": 16818331,
-          "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n*",
-          "minOSVersion": "17.4"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.png"
-      ]
-    },
-    {
-      "name": "LSX4",
-      "bundleIdentifier": "com.llayerlinux.LSX4RuntimeProbe",
-      "developerName": "lpfoj",
-      "subtitle": "73.4M · PS4 与 PS5 模拟器",
-      "localizedDescription": "面向 Android 与 iOS 的开源 PlayStation 4 / 5 模拟器。当前 iOS 构建支持 PS4 游戏，需要 iOS 26 以上并开启 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/icon.png",
-      "tintColor": "#D27736",
-      "category": "other",
-      "versions": [
-        {
-          "version": "128.9934",
-          "date": "2026-11-08T00:33:06Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa",
-          "size": 77017813,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-iOS-JIT-128.9934-English.zip)\n\n- Fixed visual issues in select games, including green video frames in **The Last of Us Remastered** and title-screen flicker in **God of War III Remastered**.\n- Updated per-game settings and presets, including a presentation setting for **God of War III Remastered**.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/INSTALLAT",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-08",
-          "buildNumber": "11-08"
-        },
-        {
-          "version": "128.9921",
-          "date": "2026-11-07T19:01:52Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa",
-          "size": 77015899,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-iOS-JIT-128.9921-English.zip)\n\n- Added **Cinematic**, an additional way to browse your game library with a horizontal row and full-screen artwork for the selected game.\n- Major performance optimizations and presets for demanding games, including **God of War III Remastered** and **The Last of Us Remastered**.\n- Improved upscaling, including a **720p output option** for The Last of Us Remastere",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "128.9775",
-          "date": "2026-11-02T21:44:50Z",
-          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa",
-          "size": 76905447,
-          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-iOS-JIT-128.9775-English.zip)\n\n- Optimizations for Bloodborne and The Last of Us.\n- Added FSR upscaling.\n- Other minor improvements.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/INSTALLATION.txt)\n\niOS 26+ · JIT. Update using the same Apple Account and bundle ID. Keep **Remove App Extensions OFF** in Sideloadly.",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/settings.png"
-      ]
-    },
     {
       "name": "Tsumiru",
       "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
@@ -247,26 +162,6 @@
           "minOSVersion": "26.0",
           "buildVersion": "11-06",
           "buildNumber": "11-06"
-        },
-        {
-          "version": "0.1.3",
-          "date": "2026-11-03T04:50:18Z",
-          "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.5/iDeck-0.1.3-alpha.5-build143.ipa",
-          "size": 166398909,
-          "localizedDescription": "# iDeck v0.1.3-alpha.5 · Build 143\n\n**Experimental checkpoint — known issue: Steam can freeze after the third game exit.**\n\n## What changed\n\n- Smoother Steam home/library browsing reported on the test iPhone after reducing periodic diagnostics and pausing hidden log parsing.\n- Steam menu now uses the existing window instead of starting a second Steam client and potentially blocking the control helper.\n- Improved consistency when reopening the selected Steam64 runtime and its separate saved-login environment.\n- VM maintenance and safety guards stay enabled. Experimental GPU-auto and V8 JIT are ",
-          "minOSVersion": "26.0",
-          "buildVersion": "145",
-          "buildNumber": "145"
-        },
-        {
-          "version": "0.1.3",
-          "date": "2026-10-29T04:58:56Z",
-          "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.4/iDeck-0.1.3-alpha.4-build99.ipa",
-          "size": 166772750,
-          "localizedDescription": "## One button closer to your Steam library · Build 99\n\n**Download & Install Steam — directly inside iDeck.** After preparing the local\nruntime, download the complete pinned Windows Steam client and CEF/browser files\nfrom Valve's HTTPS CDN. No computer or manual ZIP transfer is needed for acquiring\nSteam files. JIT/signing setup may still require a computer on older OS versions.\n\n### What's new\n\n- Full 19-package Steam/CEF download with real byte progress, SHA-256 and complete\n  6,233-file verification; not just the Dock component bootstrap.\n- Cancel, Retry and verified-package caching. Safe st",
-          "minOSVersion": "26.0",
-          "buildVersion": "145",
-          "buildNumber": "145"
         }
       ],
       "screenshots": [
@@ -530,14 +425,6 @@
           "minOSVersion": "17.4",
           "buildVersion": "11-02",
           "buildNumber": "11-02"
-        },
-        {
-          "version": "0.1.0",
-          "date": "2026-10-22T12:54:28Z",
-          "downloadURL": "https://github.com/Leviidev/Utsuro/releases/download/0.1.0-alpha/Utsuro-alpha.ipa",
-          "size": 5327283,
-          "localizedDescription": "## Games Running\n- Minecraft: Xbox One Edition\n- Rocket League\n- Sonic Mania\n## Info\nThis is an alpha release, bugs may occur.\n\nDiscord:  https://discord.gg/xApMHWAzkh",
-          "minOSVersion": "17.4"
         }
       ]
     },
@@ -890,19 +777,19 @@
           "minOSVersion": "15.0"
         },
         {
-          "version": "0.9",
-          "date": "2026-09-03T20:17:08Z",
-          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9/Aidoku.ipa",
-          "size": 14731108,
-          "localizedDescription": "- OCR dictionary support (iOS 18+): import Yomitan-compatible dictionaries in the app and look up words while reading.\r\n- Suwayomi built-in source: read and track from a Suwayomi instance, just like Komga and Kavita.\r\n- Auto scroll for webtoon reader: enable and press the play button to scroll without touching your device.\r\n- Fixed CloudFlare handling: CloudFlare issues that caused external sources to break should be resolved.\r\n- Overall performance improvements: the library loads much faster (@Amqx), and the webtoon reader was improved.\r\n- Source stability fixes and disable option: the issue ",
-          "minOSVersion": "15.0"
-        },
-        {
           "version": "0.8.4",
           "date": "2026-07-03T05:27:41Z",
           "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.4/Aidoku.ipa",
           "size": 10136987,
           "localizedDescription": "- Fixes for iOS 27: fixed settings pages freezing the app, along with other minor visual issues.\r\n- Improved backup restore time: restores should now take seconds instead of minutes. (@Amqx)\r\n- Failed download page retrying: less chance of missing pages in downloaded chapters from sources with aggressive rate limits. (@pxseu)\r\n- New chapter notifications (experimental): when Aidoku refreshes in the background, notification(s) of new chapters should be sent if enabled. (@Zareix)\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more comp",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.8.3",
+          "date": "2026-05-18T19:02:38Z",
+          "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.8.3/Aidoku.ipa",
+          "size": 9287296,
+          "localizedDescription": "- New migration flow: view series details and optionally copy data instead of completely migrating.\r\n- Kavita API key login: in addition to OIDC and basic auth, use an API key if it works better for you.\r\n- Continuous with gaps reading mode: like the Webtoon mode, but with gaps between pages.\r\n- Fixed tracker search bar: should show again on iOS 26.4+.\r\n- Improved double page reader: new page offset setting and double page handling fixes.\r\n- Various other bug fixes and small features: see [the website](<https://aidoku.app/release-notes/>) for a more complete list.",
           "minOSVersion": "15.0"
         }
       ],
@@ -1190,7 +1077,8 @@
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/news.png"
       ]
     },
     {
@@ -1214,19 +1102,19 @@
           "buildNumber": "09-12"
         },
         {
-          "version": "1.2",
-          "date": "2026-09-09T00:03:27Z",
-          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.2-beta.3/AetherPS4-iOS.ipa",
-          "size": 34200816,
-          "localizedDescription": "## What's new?\r\n- Worked on GTA V support (doesn't boot yet)\r\n- Fixed memory complications\r\n\r\n**Join the discord**: https://discord.gg/xApMHWAzkh\r\n\r\n**Full Changelog**: https://github.com/Leviidev/AetherPS4/compare/v1.2-beta.2...v1.2-beta.3",
+          "version": "1.0.1",
+          "date": "2026-08-30T03:12:11Z",
+          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.1_release/AetherPS4-iOS.ipa",
+          "size": 33931355,
+          "localizedDescription": "This release contains many new updates improving the user experience! Here's what we added\r\n\r\n## Minor updates\r\n- New app logo\r\n- Setup Screen (lets you know if jit is attached and if memory entitlement is working\r\n- Search for games\r\n## Major updates\r\n- Improved boot time\r\n- Added support for many games with unimplemented functions\r\n   - This does NOT guarantee your game will load. All this did was add unadded functions to the app, meaning if an app had an unadded function it would crash, now hopefully adding support for more games.\r\n- Stopped using imgui for aetherps4 loading (using swift no",
           "minOSVersion": "17.4"
         },
         {
-          "version": "1.2",
-          "date": "2026-09-04T00:51:39Z",
-          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.2-beta.2/AetherPS4-iOS.ipa",
-          "size": 34331205,
-          "localizedDescription": "## What's new?\r\n- Reworked Settings Tab\r\n- Added customization / personalization\r\n- You can now change the PS4 user name / profile picture\r\n- Fixed memory bugs, added patches, and other PS4 optimization.\r\n- Bumped app ver. to 1.2\r\n## Info\r\nVersion 1.2 is planned to be released very soon. Once I can get Rocket League running, I will release v1.2, then I will work on v1.3, which will contain many more features (ofc), but also I hope to get Bloodborne or GTA V running! I will keep all beta's public until version release, where then I will keep the IPA's somewhere else (haven't decided yet)",
+          "version": "1.0.0",
+          "date": "2026-08-22T01:40:34Z",
+          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.0/AetherPS4-iOS.ipa",
+          "size": 30207728,
+          "localizedDescription": "Hey everyone! I present to you AetherPS4 v1.0.0!\r\n\r\n## Requirements\r\nHere's what you'll need to get the app working\r\n- StikDebug\r\n- Preferred Sideloading tool\r\n- iOS/iPadOS (26+)\r\n## Setup\r\nFirst, meet all requirements. Then, sideload the app onto your preferred device. Open ```StikDebug``` and hold click onto the application, you will see a context menu and you must press ```Assign Script```. When the menu shows up press ```universal.js```, this is required or it will NOT work. Then, open the app. Import your .pkg file of the game (must be .pkg, extracted will not work as of right now). When ",
           "minOSVersion": "17.4"
         }
       ]

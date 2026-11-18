@@ -390,5 +390,9 @@
   "com.mengangs.Cloudn": {
     "subtitle": "链接解析与网盘下载器",
     "description": "粘贴一个链接就能解析并高速下载：支持夸克、百度、115、阿里云盘、Google 云端硬盘、OneDrive、PikPak、天翼云盘、Dropbox、蓝奏云、城通以及自建 WebDAV 等网盘，也支持抖音、哔哩哔哩、YouTube、X 等平台的短视频、网页内嵌视频、GitHub 文件与磁力链接。多连接分片并发、断点续传，锁屏或切到后台由系统接着下载，进度显示在锁屏与灵动岛。提取码、口令、带文案的整段分享文字都能直接粘贴识别。开源免费、无广告，所有解析都在手机本地完成，登录凭证只存系统钥匙串。"
+  },
+  "com.local.STV": {
+    "subtitle": "多源短剧与视频聚合播放器",
+    "description": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。"
   }
 }

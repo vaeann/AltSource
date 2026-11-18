@@ -1,19 +1,63 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 84 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 82 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
+    "com.github.pacalini.picaComic",
     "org.animeko.animeko",
-    "com.hentaipark.hentaiPark",
     "com.wqguard.app",
     "com.linkpass.kazumi",
     "ani.baka"
   ],
   "apps": [
+    {
+      "name": "PicaComic",
+      "bundleIdentifier": "com.github.pacalini.picaComic",
+      "developerName": "ccbkv",
+      "subtitle": "30.2M · Flutter 多源漫画阅读器",
+      "localizedDescription": "多源漫画阅读器，内置 picacg、E-Hentai、JM、hitomi、nhentai 等图源，支持在线阅读、离线下载、本地与网络收藏、阅读历史，以及 WebDAV 数据同步。",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "tintColor": "#D63128",
+      "category": "books",
+      "versions": [
+        {
+          "version": "5.1.2",
+          "date": "2026-11-18T18:18:36Z",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
+          "size": 31711081,
+          "localizedDescription": "# 5.1.2 (2026-11-18)\r\n**更新说明**\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
+          "minOSVersion": "15.1",
+          "buildVersion": "11-19",
+          "buildNumber": "11-19"
+        },
+        {
+          "version": "5.1.1",
+          "date": "2026-11-15T05:45:19Z",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
+          "size": 31706166,
+          "localizedDescription": "# 5.1.1 (2026-11-15)\r\n**更新说明**\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
+          "minOSVersion": "15.1",
+          "buildVersion": "46206",
+          "buildNumber": "46206"
+        },
+        {
+          "version": "5.0.7",
+          "date": "2026-11-10T17:50:10Z",
+          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa",
+          "size": 31853008,
+          "localizedDescription": "# 5.0.7 (2026-11-10)\r\n**更新说明**\r\n- 修复下载页排序模式- 优化app无响应,优化导致卡死的bug\r\n- 修改翻页，现改为翻页到下一章，翻回去会从上一章尾页开始\r\n- 修复eh订阅\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.6...5.0.7",
+          "minOSVersion": "15.1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
     {
       "name": "Animeko",
       "bundleIdentifier": "org.animeko.animeko",
@@ -43,11 +87,11 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "6.4.0",
-          "date": "2026-10-22T07:55:11Z",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0-beta02/ani-6.4.0-beta02.ipa",
-          "size": 48605296,
-          "localizedDescription": "- 修复一系列播放相关 bug\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复部分网络环境下数据源因页面链接使用 HTTP 而无法加载的问题 (#3633 by @wdw89)\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复进入或切换页面时自动聚焦输入框、滑块等控件，导致页面意外滚动的问题 (#3650 by @NihilDigit)\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.4.0-beta01...v6.4.0-beta02\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win",
+          "version": "6.3.0",
+          "date": "2026-10-13T06:34:15Z",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
+          "size": 46485035,
+          "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计",
           "minOSVersion": "14.0"
         }
       ],
@@ -56,42 +100,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/subject-details.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/episode.png"
       ]
-    },
-    {
-      "name": "HentaiPark",
-      "bundleIdentifier": "com.hentaipark.hentaiPark",
-      "developerName": "drdon1234",
-      "subtitle": "17.1M · 成人内容聚合客户端（18+）",
-      "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
-      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.14.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
-      "tintColor": "#38AFD0",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "0.15.1",
-          "date": "2026-11-18T14:11:23Z",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.1/HentaiPark-0.15.1-82-ios-arm64-unsigned.ipa",
-          "size": 17937496,
-          "localizedDescription": "## 中文\n\n### 新功能\n- 新增 Windows 桌面客户端，提供 x64 与 ARM64 安装包和便携包。\n- 站内搜索和栏目可分别记住筛选条件，并按日期范围查看作品。\n\n### 改进\n- Android 站内多语言搜索移入搜索栏，Web 结果页可直接调整筛选并保留关键词。\n- 改进移动端阅读和播放时的系统栏、屏幕方向恢复，以及 iOS 分享体验。\n\n### 修复\n- 修复 iOS 17 及以上版本内置网页的 HTTP 代理配置。\n- Android 下载多选可通过返回键退出，切换标签时清除勾选，并减少后台下载进度引起的界面刷新。\n- 修复移动端书库写入失败后影响后续保存，以及后台下载中断影响其他任务的问题。\n\n### 插件更新\n- E-Hentai 0.0.22：可拖动最低评分滑块，精确到 0.01 星。\n- itch.io 0.0.4、鲲 Galgame 0.0.11：itch.io 搜索支持作者和游戏类型筛选，鲲 Galgame 搜索支持资源平台和语言筛选。\n- 黄豆短剧 0.0.13、91短剧 0.0.13、黄果短剧 0.0.16：改进站点连接。\n\n## English\n\n### New\n- Add a Windows desktop client with installers and portable packages for x64 and ARM64.\n- ",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-18",
-          "buildNumber": "11-18"
-        },
-        {
-          "version": "0.14.8",
-          "date": "2026-11-17T10:43:21Z",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
-          "size": 17908200,
-          "localizedDescription": "## 中文\n\n### 新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n\n### 改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n\n### 注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\n\n## English\n\n### New\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\n\n### Improvements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\n\n### Notes\n- Keep iOS in the foreground ",
-          "minOSVersion": "15.0",
-          "buildVersion": "80",
-          "buildNumber": "80"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
     },
     {
       "name": "WQGuard",
@@ -236,9 +244,7 @@
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
           "size": 50502422,
           "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐",
-          "minOSVersion": "16.0",
-          "buildVersion": "34",
-          "buildNumber": "34"
+          "minOSVersion": "16.0"
         },
         {
           "version": "2.1.3",
@@ -288,18 +294,18 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "5.0.9",
-          "date": "2026-11-16T19:46:15Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
-          "size": 150730281,
-          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "5.0.8",
           "date": "2026-10-17T02:44:56Z",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
           "size": 150556668,
+          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.0.7",
+          "date": "2026-10-16T06:25:45Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.7/UTM-HV.ipa",
+          "size": 150507448,
           "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
           "minOSVersion": "14.0"
         }
@@ -326,18 +332,18 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "5.0.9",
-          "date": "2026-11-16T19:46:15Z",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
-          "size": 150730281,
-          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
-          "minOSVersion": "14.0"
-        },
-        {
           "version": "5.0.8",
           "date": "2026-10-17T02:44:56Z",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
           "size": 150556668,
+          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.0.7",
+          "date": "2026-10-16T06:25:45Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.7/UTM-HV.ipa",
+          "size": 150507448,
           "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
           "minOSVersion": "14.0"
         }
@@ -345,12 +351,12 @@
     },
     {
       "name": "HGhubX",
-      "bundleIdentifier": "com.hghubx.app",
+      "bundleIdentifier": "com.hghub.huangguo",
       "developerName": "zxsos",
-      "subtitle": "3.7M · 沉浸式竖屏播放",
-      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
-      "iconURL": "https://github.com/zxsos.png?size=460",
-      "tintColor": "#B92746",
+      "subtitle": "3.7M · 沉浸竖屏播放客户端",
+      "localizedDescription": "第三方客户端，Rust 与 Tauri 2 构建，采用 Fluent 设计语言，支持沉浸式竖屏播放。上游只提供未签名包，TrollStore 可直接导入。",
+      "iconURL": "https://raw.githubusercontent.com/zxsos/HGhubX/v1.2.19/app-icon.png",
+      "tintColor": "#31B98B",
       "category": "entertainment",
       "versions": [
         {
@@ -411,9 +417,7 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.26/Stats-v0.3.17-iOS.ipa",
           "size": 2861581,
           "localizedDescription": "Stats for iPhone 0.3.17 makes the Mac device card more compact and adds a manual refresh.\n\n## What's changed\n\n- See more live metrics sooner with the shorter Mac card. The card keeps the device render, Mac name, chip, connection status, and alerts.\n- Tap the Mac card to open About This Mac. It is still available in Dashboard Settings.\n- Tap the refresh icon to request a new snapshot, recent history, and updated Mac details.\n\n## Download\n\n**Stats for iPhone 0.3.17 (build 20)** requires iOS 17 or later. The arm64 IPA is unsigned for AltStore, SideStore, and LiveContainer.\n\n**SHA-256** f9b77cb1a4",
-          "minOSVersion": "17.0",
-          "buildVersion": "20",
-          "buildNumber": "20"
+          "minOSVersion": "17.0"
         },
         {
           "version": "0.3.16",
@@ -421,9 +425,7 @@
           "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.25/Stats-v0.3.16-iOS.ipa",
           "size": 2847721,
           "localizedDescription": "Stats for iPhone 0.3.16 introduces a redesigned dashboard for your paired Mac.\n\n## What's changed\n\n- See your Mac's model, connection status, last update, and low-storage or memory-pressure warnings at a glance.\n- Follow one-minute CPU and memory trends, with temperatures and memory pressure when available.\n- Check remaining disk space, download and upload rates, and measured network latency from the overview.\n- Open any card for its detailed metrics. The dashboard supports light mode, dark mode, and larger text.\n\n## Download\n\n**Stats for iPhone 0.3.16 (build 19)** requires iOS 17 or later. Th",
-          "minOSVersion": "17.0",
-          "buildVersion": "19",
-          "buildNumber": "19"
+          "minOSVersion": "17.0"
         }
       ],
       "appPermissions": {
@@ -455,19 +457,19 @@
           "buildNumber": "11-18"
         },
         {
-          "version": "0.9.18",
-          "date": "2026-11-17T15:21:21Z",
-          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.18/WQFiles.ipa",
-          "size": 2171189,
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.18\n\nYour own inspectors, your own cleaning targets, and Japanese.\n\n## New\n\n- **Custom inspectors** ([#45](https://github.com",
+          "version": "0.9.17",
+          "date": "2026-11-17T12:17:07Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.17/WQFiles.ipa",
+          "size": 2089006,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.17\n\n## Fixes\n\n- **LiveContainer** ([#65](https://github.com/kolbicz/WQFiles/issues/65)): in a few LiveContainer setups every",
           "minOSVersion": "26.0"
         },
         {
-          "version": "0.9.18",
-          "date": "2026-11-17T23:06:06Z",
-          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.18-debug3/WQFiles.ipa",
-          "size": 2174500,
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query.\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.18 debug build 3 (109)\n\n**Debug build for [#70](https://github.com/kolbicz/WQFiles/issues/70), not an update.** AltStore, SideStore and the update check keep offering 0.9.18. Only install it if you were asked to.\n\nSame as [debug build 2](https://github.com/kolbicz/WQFiles/",
+          "version": "0.9.16",
+          "date": "2026-11-16T22:54:40Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.16/WQFiles.ipa",
+          "size": 2078252,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.16\n\n## New\n\n- **Invert Selection** in the Cache Cleaner's Select menu. Select All and Invert are greyed out when no row can ",
           "minOSVersion": "26.0"
         }
       ],
@@ -501,9 +503,7 @@
           "downloadURL": "https://github.com/Kianuni/Camlo/releases/download/v1.3.1/Camlo_v1.3.1_Bilingual.ipa",
           "size": 9534904,
           "localizedDescription": "## What's New in Camlo v1.3.1 (Build 24)\n\n### 1. 10 Original 「次元 3D (Anime 3D)」 Cloud Wallpapers (`ParameterizedCA` + Apple Vision Clock Depth)\n- Official zero-bloat Cloud Gallery (`wallpapers/`) expanded from 60 to **70 packs** (**395+ total** across Official + Community channels), while keeping `Camlo_v1.3.1_Bilingual.ipa` ultra-slim at **~9.5 MB (`9.1 MiB`)**.\n- All 10 new 100%-original Anime packs (`18961`–`18970`) are natively compiled as single-screen **`ParameterizedCA` (`Marble` / `wantsDeviceMotion = true`)** bundles with **real hardware 120Hz 3D Gyroscope Parallax**, **Apple Vision f",
-          "minOSVersion": "26.0",
-          "buildVersion": "24",
-          "buildNumber": "24"
+          "minOSVersion": "26.0"
         },
         {
           "version": "1.3.0",
@@ -551,9 +551,7 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
           "size": 6857330,
           "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in",
-          "minOSVersion": "26.0",
-          "buildVersion": "29",
-          "buildNumber": "29"
+          "minOSVersion": "26.0"
         },
         {
           "version": "1.0.3",
@@ -561,9 +559,7 @@
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
           "size": 6832062,
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` o",
-          "minOSVersion": "26.0",
-          "buildVersion": "28",
-          "buildNumber": "28"
+          "minOSVersion": "26.0"
         }
       ],
       "appPermissions": {
@@ -579,7 +575,7 @@
       "developerName": "ARMSX2",
       "subtitle": "44.0M · PS3 模拟器 iOS 移植",
       "localizedDescription": "基于 RPCS3 的 PlayStation 3 模拟器移植版，需要 A14 或更新芯片、iOS 17.4 以上。运行游戏还需要开启 JIT，并自备 PS3 系统软件与游戏镜像。重签时请保留原始 entitlements，当成完全未签名包处理会丢权限并闪退。",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.3/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.2/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#2F4DC5",
       "category": "games",
       "versions": [
@@ -599,7 +595,9 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.2/ARMSX3-0.0.2.ipa",
           "size": 40900099,
           "localizedDescription": "Changes since 0.0.1. Thanks to everyone who sent problem reports, since most of these fixes came from them. This is a beta: the JIT changes ran on an iPhone, and everything else was tested on a Mac. Please send a report if something works worse than in 0.0.1.\r\n\r\n## Requirements and install\r\n\r\nARMSX3 for iOS needs an iPhone or iPad with an A14 chip or newer, on iOS 17.4 or later. It isn't on the App Store, so install the IPA with SideStore, AltStore or LiveContainer. JIT needs a pairing file for your device (see Pairing files below).\r\n\r\n## Update LiveContainer first\r\n\r\nIf you run ARMSX3 inside ",
-          "minOSVersion": "17.4"
+          "minOSVersion": "17.4",
+          "buildVersion": "2",
+          "buildNumber": "2"
         },
         {
           "version": "0.0.1",
@@ -614,6 +612,28 @@
         "entitlements": [],
         "privacy": {}
       }
+    },
+    {
+      "name": "i短剧",
+      "bundleIdentifier": "com.local.STV",
+      "developerName": "my-name-is-alan",
+      "subtitle": "40.4M · 多源短剧与视频聚合播放器",
+      "localizedDescription": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。",
+      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#8E2DB7",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.5",
+          "date": "2026-11-17T17:50:23Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.5b14-rank-cf-ui/STV-1.5b14-unsigned.ipa",
+          "size": 42404919,
+          "localizedDescription": "# i短剧 iOS 1.5 b14 / Android 1.5.14 — 排行榜、小说阅读及界面修正版\n\n本次预发布合并真实书源兼容、小说详情/阅读器、Android首页及双端播放器修复。b13仅打包未发布，本次使用全新b14标签，不移动旧标签。\n\n## 本次修复\n\n- 小说排行榜：修正Legado选择器/JS上下文、真实筛选控件和来源内筛选状态持久化；筛选后重建当前分类URL、重置分页，防止后台脚本覆盖新选择。\n- 使用用户提供的1335合集实测七猫→爽文→无敌天命→1694章目录→真实正文；验证相邻章预取、取消后不写入过期响应及离线前后章导航。\n- Android小说详情恢复封面、作者/来源/简介和底部操作；阅读器采用与现有iOS核心布局对应的原生分页、覆盖式菜单、设置、目录/全文缓存搜索、翻页手势、主题和连续滚动位置恢复。iOS既有阅读器生产视觉未改，增加离开时预取取消。\n- Android首页：修复长标题和字体指标挤压“查看详情”，保留紧凑白色按钮并提供至少48dp点击区域；元数据、分页圆点互不覆盖，适应窄屏/较大字体。\n- 双端播放器：视频实际渲染边界不随控制层展开/收起改变；收起后仅小标题和底边细进度，无大面积渐变。详情稀疏指标不再显示巨大单项卡，也不编造缺失数据。\n- 黄果Cloudflare：识别后显示“需要验证/去验证/重试”，通过可见WebView由用户手动操作",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-18",
+          "buildNumber": "11-18"
+        }
+      ]
     },
     {
       "name": "Open Screen Sharing",
@@ -813,7 +833,7 @@
       "developerName": "Xanerix",
       "subtitle": "32.3M · 多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.1-113/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v1.0.11-111/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
@@ -846,48 +866,6 @@
           "buildNumber": "111",
           "localizedDescription": "更新内容：\n\n### JS 迁移通知\n\n站源将改为可自行安装和卸载的 JS 模块，之后的版本不再内置站源。迁移期间不对用户数据做担保，数据可能在版本更新时丢失，请提前导出备份。\n\n### 更新内容\n\n- 封面、剧库和榜单缓存移到各平台专用的缓存目录（Windows 为 `%LOCALAPPDATA%\\<包名>`，便携版为 `userdata\\cache`），升级后自动迁移；Android 上系统「清除缓存」可释放这部分空间，设置、记录、下载和红果设备不受影响。\n- Windows 安装包卸载时总是删除缓存目录。\n- MissAV 的请求改用浏览器指纹，减少被站点要求浏览器验证而报 HTTP 403 的情况（开发快照，需在出现该报错的网络上实测）。\n\n版本 1.0.11+111。两个版本功能相同，区别只在站源范围，按需选择：\n\n- 红果鉴 hongguojian：仅红果站源\n- 小果影视 zhenguojian：全部站源\n\nAndroid：\n- *-arm64-v8a.apk：适用于较新的安卓设备\n- *-armeabi-v7a.apk：适用于较老的安卓设备，电视推荐使用此版本\n- *-x86_64.apk：适用于模拟器\n\niOS：\n- *-ios-unsigned.ipa：未签名 IPA，可用相关工具安装\n\nWindows：\n- *-windows-x64-setup.exe：安装",
           "minOSVersion": "15.1"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
-    {
-      "name": "GestaltEdit",
-      "bundleIdentifier": "me.ssus.gestaltedit",
-      "developerName": "frs0n",
-      "subtitle": "6.9M · iOS 27 MobileGestalt 编辑器",
-      "localizedDescription": "直接在 iPhone / iPad 上编辑 com.apple.MobileGestalt.plist：能力预设（Siri AI、灵动岛、显示与 iPad 功能等）、完整字段编辑器，以及带修改前后对比的自动备份与恢复。\n\n要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit",
-      "iconURL": "https://raw.githubusercontent.com/frs0n/GestaltEdit/v2.3.1/GestaltEdit/PlacardIcon.png",
-      "tintColor": "#2643D3",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "2.3.1",
-          "date": "2026-11-16T16:03:54Z",
-          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3.1/GestaltEdit-v2.3.1-unsigned.ipa",
-          "size": 7261456,
-          "localizedDescription": "## What’s new\n\n- Fixed the Watch setup sheet dismissing immediately on its first presentation.\n- Added a native unsupported-system screen on iOS / iPadOS 26 and blocked on-device MobileGestalt access on unsupported systems. On-device editing requires iOS / iPadOS 27 or later.\n\n## Download and signing\n\n`GestaltEdit-v2.3.1-unsigned.ipa` is a local Release build, version **2.3.1 (14)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-sign both with suitable App Group-enabled profiles and preserve the embedded Wat",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-17",
-          "buildNumber": "11-17"
-        },
-        {
-          "version": "2.3",
-          "date": "2026-11-16T15:07:32Z",
-          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.3/GestaltEdit-v2.3-unsigned.ipa",
-          "size": 7287092,
-          "localizedDescription": "## What’s new\n\n- Reorganized MG presets and added two-stage Siri AI setup for iOS 27, including recovery of the original device identity after model setup.\n- Added backup change details and clearer restore confirmation.\n- Simplified the expandable device selector and updated the connection status color.\n- Added an unsupported-system message for watchOS 26.\n\n## Download and signing\n\n`GestaltEdit-v2.3-unsigned.ipa` is a local Release build, version **2.3 (13)**, containing the iPhone app and Watch helper.\n\nBoth apps carry **ad-hoc placeholder signatures with their App Group entitlements**. Re-si",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "2.2.1",
-          "date": "2026-11-15T16:16:21Z",
-          "downloadURL": "https://github.com/frs0n/GestaltEdit/releases/download/v2.2.1/GestaltEdit-v2.2.1-unsigned.ipa",
-          "size": 7218552,
-          "localizedDescription": "## What's new\n\n- Apple Watch now automatically requests a NeoSpring interface restart after Apply, field saves, and backup restores, once writing and readback verification have succeeded.\n- Removed the separate Restart Watch Interface button.\n- If the restart request cannot be confirmed, the successful MG save remains recorded and is not retried automatically.\n\n## Download and signing\n\n`GestaltEdit-v2.2.1-unsigned.ipa` is a local Release build, version **2.2.1 (12)**. It contains both the iPhone app and the Watch helper.\n\nBoth apps have **ad-hoc placeholder signatures with their App Group enti",
-          "minOSVersion": "26.0"
         }
       ],
       "appPermissions": {
@@ -1042,23 +1020,23 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "1.18.4",
-          "date": "2026-11-15T05:44:54Z",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.2/VeneraNext-ios-1.18.4-rc.2%2B251.ipa",
-          "size": 21538422,
-          "buildVersion": "251",
-          "buildNumber": "251",
-          "localizedDescription": "### 预发布与测试\n\n- 发布第二个 `1.18.4-rc.2+251` 候选版，集中交付 Cloudflare 验证异常、设置与调光面板跳动、大收藏列表和阅读加载期间重复工作的修复；包含菜单锁、可选白边裁剪、收藏交互改进、鸿蒙桌面名称修复及测试／CI 整理。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从本次标签提交重新构建。\n- 稳定更新渠道保持 `v1.18.3`，候选版需从 Release 页面手动下载；AltStore 与 Winget 不推进至 RC。保留原包名和签名身份，升级前导出并另存完整应用数据备份，保留原漫画文件；覆盖安装保留原数据，无需清库、卸载或重新导入。\n- 本版供实际设备测试。Android 120 Hz 下的收藏／阅读流畅性、原 Windows 站点的 Cloudflare 验证仍待提出者复测，构建及组件回归不代表真机帧率或原站点交互已经验收。鸿蒙 HAP 仍为 ARM64／API 26 未签名 Beta，须沿用原签名密钥自行签装，保留 `signed: false` 和 `runtime_verified: false`。\n- 完整安装包公开并核验后，分别邀请 #165、#167、#168、#169、#170、#178 及本版首次交付或追加改进的 #139、#152、#157、#162 提出",
+          "version": "1.18.3",
+          "date": "2026-11-07T18:10:18Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+          "size": 21467556,
+          "buildVersion": "249",
+          "buildNumber": "249",
+          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyri",
           "minOSVersion": "14.0"
         },
         {
-          "version": "1.18.4",
-          "date": "2026-11-11T08:23:33Z",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4-rc.1/VeneraNext-ios-1.18.4-rc.1%2B250.ipa",
-          "size": 21503180,
-          "buildVersion": "250",
-          "buildNumber": "250",
-          "localizedDescription": "### 预发布与测试\n\n- 发布首个 `1.18.4-rc.1+250` 候选版，交付本轮收藏管理、关键词屏蔽和共用界面修复；Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙均从同一标签提交重新构建。稳定更新渠道仍为 `v1.18.3`，候选版需从 Release 页面手动下载，AltStore 与 Winget 不推进至 RC。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件；覆盖安装保留原数据，无需清库或重新导入。鸿蒙 HAP 仍为 ARM64／API 26 未签名 Beta，须沿用原签名身份／密钥自行签装。本版供实际设备测试，尚未完成维护者真机验收。\n- 公开并核验安装包后，邀请 #115、#152、#155、#158、#159 的报告者测试各自涉及的改动。#159 的长期外部存储需求仍未实现；构建成功或暂未收到回复不作为问题已解决的依据。\n\n### 鸿蒙能力与界面修复\n\n- 鸿蒙原生 HAP 的存储设置明确说明当前使用应用内漫画库、外部目录仅复制导入，禁用尚未实现的存储迁移入口；存储恢复及失败重试仍可用，恢复完成后不会重新启用迁移（#159）。长期外部目录支持保留为后续需求，不把临时授权或沙箱副本当作持久漫画位置。\n- 鸿蒙禁止开启未接入平台认证的应用锁，导入的已开启锁仍可由用户关闭并持久保存。漫画详情的分享入口改",
+          "version": "1.18.2",
+          "date": "2026-11-01T03:37:14Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+          "size": 21307925,
+          "buildVersion": "243",
+          "buildNumber": "243",
+          "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序",
           "minOSVersion": "14.0"
         }
       ],
@@ -1212,9 +1190,9 @@
       "developerName": "deretame",
       "subtitle": "25.9M · 插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/breeze-project-org/Breeze/v3.0.38/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#CE2BBB",
-      "category": "other",
+      "category": "books",
       "versions": [
         {
           "version": "3.0.38",
@@ -1241,48 +1219,6 @@
           "size": 26377539,
           "localizedDescription": "## 📝 更新日志\n## [v3.0.36]\n\n### 功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n\n### 优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.36.exe](https://github.com/deretame/Breeze/releases/download/v3.0.36/windows-installer-v3.0.36.exe) |\n| **macOS** | [Breeze-macOS-v3.0.36.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-macOS-v3.0.36.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.36.apk](https://github.com/deretame/Breeze/releases/download/v3.0.36/app-arm64-v8a-release-v3.0.36.apk) |\n| **iOS** ",
           "minOSVersion": "15.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
-      ]
-    },
-    {
-      "name": "PicaComic",
-      "bundleIdentifier": "com.github.pacalini.picaComic",
-      "developerName": "ccbkv",
-      "subtitle": "30.2M · Flutter 多源漫画阅读器",
-      "localizedDescription": "多源漫画阅读器，内置 picacg、E-Hentai、JM、hitomi、nhentai 等图源，支持在线阅读、离线下载、本地与网络收藏、阅读历史，以及 WebDAV 数据同步。",
-      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
-      "tintColor": "#D63128",
-      "category": "books",
-      "versions": [
-        {
-          "version": "5.1.1",
-          "date": "2026-11-15T05:45:19Z",
-          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
-          "size": 31706166,
-          "localizedDescription": "# 5.1.1 (2026-11-15)\r\n**更新说明**\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-          "minOSVersion": "15.1",
-          "buildVersion": "11-15",
-          "buildNumber": "11-15"
-        },
-        {
-          "version": "5.0.7",
-          "date": "2026-11-10T17:50:10Z",
-          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.7/PicaComic-5.0.7-app-ios-build_no_sign.ipa",
-          "size": 31853008,
-          "localizedDescription": "# 5.0.7 (2026-11-10)\r\n**更新说明**\r\n- 修复下载页排序模式- 优化app无响应,优化导致卡死的bug\r\n- 修改翻页，现改为翻页到下一章，翻回去会从上一章尾页开始\r\n- 修复eh订阅\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.6...5.0.7",
-          "minOSVersion": "15.1"
-        },
-        {
-          "version": "5.0.6",
-          "date": "2026-11-05T18:54:45Z",
-          "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.0.6/PicaComic-5.0.6-app-ios-build_no_sign.ipa",
-          "size": 31826074,
-          "localizedDescription": "# 5.0.6 (2026-11-05)\r\n**更新说明**\r\n- 增加ai图片翻译,在设置开启后在漫画阅读器对具体漫画开启\r\n- 优化app无响应\r\n- 绅士漫画几天前就修复了登陆\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.5...5.0.6",
-          "minOSVersion": "15.1"
         }
       ],
       "appPermissions": {
@@ -1431,13 +1367,13 @@
           "minOSVersion": "14.0"
         },
         {
-          "version": "2.2.0",
-          "date": "2026-11-02T12:28:28Z",
-          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.1/PiliPlus_ios_2.2.0%2B5590.ipa",
-          "size": 24914746,
-          "buildVersion": "5590",
-          "buildNumber": "5590",
-          "localizedDescription": "修复 bug\r\n修复无法播放 drm 番剧 #3449\r\n修复匿名账号搜索被风控 #3411\r\n修复安卓(vivo)音量调节 #3442 by @numb747\r\n修复 Linux MPRIS 未设置 DesktopEntry 与 Identity #3438 by @Infinifar",
+          "version": "2.1.6",
+          "date": "2026-10-10T13:07:12Z",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.6.2/PiliPlus_ios_2.1.6%2B5472.ipa",
+          "size": 24353925,
+          "buildVersion": "5472",
+          "buildNumber": "5472",
+          "localizedDescription": "专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08",
           "minOSVersion": "14.0"
         }
       ],
@@ -1446,48 +1382,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/bangumi.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/dynamic.png"
       ]
-    },
-    {
-      "name": "Placard",
-      "bundleIdentifier": "me.ssus.placard",
-      "developerName": "frs0n",
-      "subtitle": "6.4M · PosterBoard 壁纸管理（iOS 2…",
-      "localizedDescription": "在 iOS 上浏览、创建、安装和管理 PosterBoard 壁纸：社区壁纸、导入 .tendies 包、用最长 12 秒的片段做视频壁纸，以及查看和删除已安装的壁纸。界面含简体中文。\n\n要求 iOS 26.0 及以上；壁纸写入依赖 App Group 与 worse_query 相关权限，上游是未签名包，普通自签可能拿不到这些权限。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/frs0n/placard",
-      "iconURL": "https://raw.githubusercontent.com/frs0n/placard/v2.0.3/docs/images/app-icon.png",
-      "tintColor": "#B53077",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "2.0.3",
-          "date": "2026-11-14T07:47:09Z",
-          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.3/placard-v2.0.3-unsigned.ipa",
-          "size": 6699817,
-          "localizedDescription": "- 修复发布 IPA 未嵌入 App Group 权限声明的问题，便于重签工具识别所需权限。\n- 打包时验证实际签名和最终 IPA 中的 App Group 配置。\n\n本地编译，附带 ad-hoc 临时签名，仍需自行重签安装。",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-14",
-          "buildNumber": "11-14"
-        },
-        {
-          "version": "2.0.2",
-          "date": "2026-11-13T15:59:56Z",
-          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.2/placard-v2.0.2-unsigned.ipa",
-          "size": 6695549,
-          "localizedDescription": "- 加快首次打开 Library 时的壁纸容器定位，找到目标后立即停止扫描。\n- 合并重复扫描，减少权限请求和签名信息读取。\n\n本地编译的未签名 Release IPA。",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "2.0.1",
-          "date": "2026-11-13T15:35:54Z",
-          "downloadURL": "https://github.com/frs0n/placard/releases/download/v2.0.1/placard-v2.0.1-unsigned.ipa",
-          "size": 6697410,
-          "localizedDescription": "- 改进壁纸容器定位与缓存失效后的重新检测。\n- 兼容多 App Group 签名，保留并恢复原有缓存目录。\n- 自动识别壁纸存储版本，改善读取、安装和删除的兼容性。\n\n本地编译的未签名 Release IPA。",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
     },
     {
       "name": "Cloudn",
@@ -2212,6 +2106,91 @@
         "entitlements": [],
         "privacy": {}
       }
+    },
+    {
+      "name": "StikDebug",
+      "bundleIdentifier": "com.stik.stikdebug",
+      "developerName": "StikDebug",
+      "subtitle": "16.1M · 设备内调试器与 JIT 工具",
+      "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.png",
+      "tintColor": "#58D32B",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.2.2",
+          "date": "2026-11-08T22:05:57Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
+          "size": 16924687,
+          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
+          "minOSVersion": "17.4",
+          "buildVersion": "11-09",
+          "buildNumber": "11-09"
+        },
+        {
+          "version": "3.2.1",
+          "date": "2026-11-07T05:15:03Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
+          "size": 16924629,
+          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "3.2.0",
+          "date": "2026-10-30T03:02:00Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
+          "size": 16818331,
+          "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n*",
+          "minOSVersion": "17.4"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.png"
+      ]
+    },
+    {
+      "name": "LSX4",
+      "bundleIdentifier": "com.llayerlinux.LSX4RuntimeProbe",
+      "developerName": "lpfoj",
+      "subtitle": "73.4M · PS4 与 PS5 模拟器",
+      "localizedDescription": "面向 Android 与 iOS 的开源 PlayStation 4 / 5 模拟器。当前 iOS 构建支持 PS4 游戏，需要 iOS 26 以上并开启 JIT。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/icon.png",
+      "tintColor": "#D27736",
+      "category": "other",
+      "versions": [
+        {
+          "version": "128.9934",
+          "date": "2026-11-08T00:33:06Z",
+          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa",
+          "size": 77017813,
+          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-JIT-128.9934.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/LSX4-iOS-JIT-128.9934-English.zip)\n\n- Fixed visual issues in select games, including green video frames in **The Last of Us Remastered** and title-screen flicker in **God of War III Remastered**.\n- Updated per-game settings and presets, including a presentation setting for **God of War III Remastered**.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9934/INSTALLAT",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-08",
+          "buildNumber": "11-08"
+        },
+        {
+          "version": "128.9921",
+          "date": "2026-11-07T19:01:52Z",
+          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa",
+          "size": 77015899,
+          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-JIT-128.9921.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9921/LSX4-iOS-JIT-128.9921-English.zip)\n\n- Added **Cinematic**, an additional way to browse your game library with a horizontal row and full-screen artwork for the selected game.\n- Major performance optimizations and presets for demanding games, including **God of War III Remastered** and **The Last of Us Remastered**.\n- Improved upscaling, including a **720p output option** for The Last of Us Remastere",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "128.9775",
+          "date": "2026-11-02T21:44:50Z",
+          "downloadURL": "https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa",
+          "size": 76905447,
+          "localizedDescription": "[Download IPA](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-JIT-128.9775.ipa) · [IPA + English instructions](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/LSX4-iOS-JIT-128.9775-English.zip)\n\n- Optimizations for Bloodborne and The Last of Us.\n- Added FSR upscaling.\n- Other minor improvements.\n\n[Installation guide](https://github.com/lpfoj/lsx4/releases/download/ios-jit-128.9775/INSTALLATION.txt)\n\niOS 26+ · JIT. Update using the same Apple Account and bundle ID. Keep **Remove App Extensions OFF** in Sideloadly.",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/home.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/settings.png"
+      ]
     }
   ],
   "news": []
