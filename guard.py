@@ -7,13 +7,14 @@ guard.py — 提交前校验，防止坏数据把好数据覆盖掉
 把前一个任务刚提交的新数据打回去。这个脚本在提交前拿「仓库里现有的清单」
 和「刚生成的清单」对比，发现异常就中止。
 
-现在源分成两个文件（apps.json 主源 + apps-extra.json 备用源），
-所以按两边的应用总数来比。
+现在源按每 50 个切成多个分片（apps.json / apps-2.json / apps-3.json …），
+所以把所有分片的应用合计起来比。
 
 检查项:
     1. 应用总数骤减（少于现有的 95%）
     2. 大量应用的版本日期倒退（超过 3 个）
 """
+import glob
 import json
 import os
 import subprocess
@@ -25,7 +26,24 @@ except Exception:
     pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-FILES = ("apps.json", "apps-extra.json")
+
+
+def local_shards():
+    return sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, "apps*.json")))
+
+
+def git_shards():
+    try:
+        out = subprocess.run(
+            ["git", "ls-tree", "--name-only", "HEAD"],
+            cwd=ROOT, capture_output=True, text=True, timeout=60,
+        ).stdout
+        return [n for n in out.split() if n.startswith("apps") and n.endswith(".json")]
+    except Exception:
+        return []
+
+
+FILES = sorted(set(local_shards()) | set(git_shards()))
 
 
 def load_git(name):

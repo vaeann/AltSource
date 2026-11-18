@@ -2,21 +2,23 @@
 
 把多个上游软件源**去重合并**成自己的 AltStore 源，版本数据直接从各项目的官方 GitHub 仓库拉。共 **81 个应用**，全部中文简介。
 
-因为 LiveContainer 的源列表最多只显示 50 个，所以拆成两个源：
+因为 LiveContainer 的源列表最多只显示 50 个，所以按更新时间倒序，**每 50 个切一个源**。应用变多会自动多切一个，不用改配置。
 
 ## 订阅地址
 
-**主源**（50 个，最近 90 天内更新过的，按更新时间倒序）
+**热门应用源①**（50 个，最近更新的）
 
 ```
 https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
-**备用源**（31 个，更新较慢或停更的，能装能用）
+**热门应用源②**（31 个，次新的）
 
 ```
-https://raw.githubusercontent.com/vaeann/AltSource/main/apps-extra.json
+https://raw.githubusercontent.com/vaeann/AltSource/main/apps-2.json
 ```
+
+以后有第 3 批就是 `apps-3.json`，以此类推。
 
 支持 **LiveContainer / Feather / SideStore / AltStore**。
 
@@ -26,7 +28,7 @@ https://raw.githubusercontent.com/vaeann/AltSource/main/apps-extra.json
 https://gh-proxy.com/https://raw.githubusercontent.com/vaeann/AltSource/main/apps.json
 ```
 
-两个源的分工是自动维护的：某个应用发了新版就留在主源，超过 90 天没更新会自动沉到备用源；主源最多 50 个，超出的往备用源挤。
+副标题的格式是 `时间 · 体积 · 简介`，例如 `11-18 14:02 · 6.4M · MobileGestalt 工具箱`。因为 LiveContainer 的列表只显示三行，日期和体积只能塞进副标题才看得见。
 
 ## 数据从哪来
 

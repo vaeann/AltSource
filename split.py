@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-split.py — 把合并好的应用清单拆成两个订阅源
+split.py — 把应用清单切成若干个订阅源，每个最多 50 个
 
 起因：LiveContainer 的源列表最多只显示 50 个应用，超出的只能靠搜索。
-与其删应用，不如拆成两个源，各自都在 50 以内。
+所以按更新时间倒序，每 50 个切一片，每片一个订阅地址。
 
-分工规则（自动维护，不用人工干预）:
-    主源   = 最近 90 天内更新过的，按更新时间倒序，最多 50 个
-    备用源 = 其余（停更较久的，以及活跃应用超过 50 个时溢出的部分）
+输出文件:
+    apps.json      → 热门应用源①（最近更新的 50 个）
+    apps-2.json    → 热门应用源②
+    apps-3.json    → 热门应用源③
+    ...
 
+应用变多会自动多切一片，不用改配置；不再需要的分片会被删掉。
 放在 finalize.py 之后跑，因为依赖已经排好序的 apps 数组。
 """
-import datetime
+import glob
 import json
 import os
 import sys
@@ -23,71 +26,88 @@ except Exception:
     pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-CN = datetime.timezone(datetime.timedelta(hours=8))
-ACTIVE_DAYS = 90
-MAX_PRIMARY = 50
+PER_SOURCE = 50
+CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩"
 
 
-def parse(iso):
-    if not iso:
-        return None
-    try:
-        d = datetime.datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
-    except Exception:
-        return None
-    return d.replace(tzinfo=datetime.timezone.utc) if d.tzinfo is None else d
+def label(i):
+    return CIRCLED[i - 1] if i <= len(CIRCLED) else f"({i})"
+
+
+def list_shards():
+    """按序号列出分片文件：apps.json 是第 1 个，apps-2.json 是第 2 个……"""
+    out = []
+    first = os.path.join(ROOT, "apps.json")
+    if os.path.exists(first):
+        out.append((1, first))
+    for i in range(2, 100):
+        p = os.path.join(ROOT, f"apps-{i}.json")
+        if os.path.exists(p):
+            out.append((i, p))
+    return out
 
 
 def main():
-    path = os.path.join(ROOT, "apps.json")
-    doc = json.load(open(path, encoding="utf-8"))
-    apps = doc.get("apps") or []
-    now = datetime.datetime.now(datetime.timezone.utc)
-    cutoff = now - datetime.timedelta(days=ACTIVE_DAYS)
+    shards = list_shards()
+    if not shards:
+        sys.exit("找不到可用的应用清单，先跑 build.py")
 
-    active, dormant = [], []
-    for a in apps:
-        vs = a.get("versions") or []
-        t = parse(vs[0].get("date") if vs else "")
-        (active if (t and t >= cutoff) else dormant).append(a)
+    # 把上次切好的分片拼回完整清单（build.py 产出的 apps.json 是完整的，
+    # 但 split 跑过之后它就是第 1 片了，所以每次都要先拼回来）
+    apps, seen, base = [], set(), None
+    for idx, p in shards:
+        try:
+            d = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            continue
+        if base is None:
+            base = d
+        for a in d.get("apps") or []:
+            bid = a.get("bundleIdentifier")
+            if bid and bid not in seen:
+                seen.add(bid)
+                apps.append(a)
 
-    # apps 已按时间倒序，活跃的直接取前 50，溢出的归到备用源
-    primary = active[:MAX_PRIMARY]
-    extra = active[MAX_PRIMARY:] + dormant
+    if not apps:
+        sys.exit("分片里没有应用数据")
 
-    doc["apps"] = primary
-    doc["featuredApps"] = [a["bundleIdentifier"] for a in primary[:5]]
-    doc["subtitle"] = "持续更新的应用都在这里 · 自动同步上游"
-    with open(path, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(doc, f, ensure_ascii=False, indent=2)
+    apps.sort(key=lambda x: str((x.get("versions") or [{}])[0].get("date") or ""), reverse=True)
+    total = len(apps)
+    chunks = [apps[i:i + PER_SOURCE] for i in range(0, total, PER_SOURCE)]
 
-    extra_doc = {
-        "name": f"{doc.get('name', '我的软件源')} · 备用",
-        "subtitle": "更新较慢或停更的应用，能装能用",
-        "description": (
-            "主源里放不下、或者上游已经较少更新的应用都收在这里。\n\n"
-            "这些应用仍然可用，只是作者最近没发新版。想找就单独订阅这个源。"
-        ),
-        "identifier": (doc.get("identifier") or "com.vaeann.source") + ".extra",
-        "iconURL": doc.get("iconURL", ""),
-        "website": doc.get("website", ""),
-        "tintColor": "#8A8984",
-        "featuredApps": [a["bundleIdentifier"] for a in extra[:5]],
-        "apps": extra,
-        "news": [],
-    }
-    extra_doc = {k: v for k, v in extra_doc.items() if v not in ("", [], None)}
-    extra_doc["apps"] = extra
-    extra_doc["news"] = []
-    out_extra = os.path.join(ROOT, "apps-extra.json")
-    with open(out_extra, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(extra_doc, f, ensure_ascii=False, indent=2)
+    written = []
+    for idx, chunk in enumerate(chunks, 1):
+        fn = "apps.json" if idx == 1 else f"apps-{idx}.json"
+        doc = {
+            "name": f"热门应用源{label(idx)}",
+            "subtitle": f"第 {idx} 批 · 按更新时间排序 · 自动同步上游",
+            "description": (
+                f"精挑细选的 iOS 侧载应用合集，共 {total} 个，按更新频率分成 {len(chunks)} 个源，"
+                f"这里是第 {idx} 个（{len(chunk)} 个）。\n\n"
+                "版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。"
+            ),
+            "identifier": (base.get("identifier") or "com.vaeann.source") + ("" if idx == 1 else f".{idx}"),
+            "iconURL": base.get("iconURL", ""),
+            "website": base.get("website", ""),
+            "tintColor": "#6B4EFF" if idx == 1 else "#8A8984",
+            "featuredApps": [a["bundleIdentifier"] for a in chunk[:5]],
+            "apps": chunk,
+            "news": [],
+        }
+        doc = {k: v for k, v in doc.items() if v not in ("", [], None)}
+        doc["apps"] = chunk
+        doc["news"] = []
+        with open(os.path.join(ROOT, fn), "w", encoding="utf-8", newline="\n") as f:
+            json.dump(doc, f, ensure_ascii=False, indent=2)
+        written.append(fn)
+        print(f"  热门应用源{label(idx)}  {len(chunk):>3} 个  → {fn}")
 
-    print(f"主源   {len(primary):>3} 个（{ACTIVE_DAYS} 天内更新过）→ apps.json")
-    print(f"备用源 {len(extra):>3} 个（停更或溢出）→ apps-extra.json")
-    print(f"合计   {len(apps):>3} 个")
-    if len(primary) > MAX_PRIMARY:
-        print("! 主源超过上限，已自动往备用源挤")
+    for p in glob.glob(os.path.join(ROOT, "apps*.json")):
+        if os.path.basename(p) not in written:
+            os.remove(p)
+            print(f"  已删除多余分片 {os.path.basename(p)}")
+
+    print(f"\n合计 {total} 个应用，分 {len(chunks)} 个源")
 
 
 if __name__ == "__main__":
