@@ -7,20 +7,47 @@
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
+    "com.wqguard.app",
     "com.github.pacalini.picaComic",
     "org.animeko.animeko",
     "com.hentaipark.hentaiPark",
-    "com.wqguard.app",
     "com.linkpass.kazumi"
   ],
   "apps": [
+    {
+      "name": "WQGuard",
+      "bundleIdentifier": "com.wqguard.app",
+      "developerName": "Kianuni",
+      "subtitle": "2.3M · 沙盒逃逸检测",
+      "localizedDescription": "面向 iOS 26.2 以上与 27.x 的零依赖沙盒逃逸检测引擎，附带 Mach-O 静态二进制审计与固件 CVE 防护。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/icon.png",
+      "tintColor": "#264ED3",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.3.2",
+          "date": "2026-11-18T23:55:31Z",
+          "downloadURL": "https://github.com/Kianuni/WQGuard/releases/download/v1.3.2/WQGuard_v1.3.2.ipa",
+          "size": 2363193,
+          "localizedDescription": "## WQGuard v1.3.2 (Build 19)\n\n全面升级**密码学签名链与混合应用资源完整性验真**、**Mach-O/ZIP64 全链路防绕过解析**，并集成 **2026 最新漏洞特征库**、**ARM64 `svc #0x80` 直接系统调用扫描**与 **13 项固件 CVE 暴露雷达**。\n\n---\n\n### 中文更新说明\n\n- **密码学签名链与整包完整性验真（`CSBlobParser` / `ChannelClassifier`）**：\n  - 对声称 `cryptid != 0` 的二进制强制执行 **Apple Root CA (G1/G2/G3) SHA-256 锚定**、**CMS `SignerInfo` 公钥验签**、**`CodeDirectory` 逐页哈希校验**、**Slot 5 / Slot 7 双向封条校验**，以及 **Special Slot `-1` (`Info.plist`)** 与 **Special Slot `-3` (`_CodeSignature/CodeResources`)** 全包资源密封核验。\n  - 彻底拦截**移植正版苹果 CMS 签名链**、**伪造或剥离 `LC_CODE_SIGNATURE` 假冒 `cryptid = 1` 预侧载包**，以及**在正版 FairPlay 钱包内篡改 `mai",
+          "minOSVersion": "16.0",
+          "buildVersion": "11-19",
+          "buildNumber": "11-19"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/dashboard.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/firmware.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/ipa.jpeg"
+      ]
+    },
     {
       "name": "PicaComic",
       "bundleIdentifier": "com.github.pacalini.picaComic",
       "developerName": "ccbkv",
       "subtitle": "30.2M · Flutter 多源漫画阅读器",
       "localizedDescription": "多源漫画阅读器，内置 picacg、E-Hentai、JM、hitomi、nhentai 等图源，支持在线阅读、离线下载、本地与网络收藏、阅读历史，以及 WebDAV 数据同步。",
-      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#D63128",
       "category": "books",
       "versions": [
@@ -40,9 +67,7 @@
           "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.1/PicaComic-5.1.1-app-ios-build_no_sign.ipa",
           "size": 31706166,
           "localizedDescription": "# 5.1.1 (2026-11-15)\r\n**更新说明**\r\n- 与5.1.0无差別，但5.1.1修复了翻页\r\n- 修复导出所有数据\r\n- 修复特定 soc 开启ai翻译后闪退, \r\n- 修复hitomi本地收藏 \r\n- 修复ios 27\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.0.7...5.1.1",
-          "minOSVersion": "15.1",
-          "buildVersion": "46206",
-          "buildNumber": "46206"
+          "minOSVersion": "15.1"
         },
         {
           "version": "5.0.7",
@@ -107,7 +132,7 @@
       "developerName": "drdon1234",
       "subtitle": "17.1M · 成人内容聚合客户端（18+）",
       "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
-      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.14.8/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.15.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#38AFD0",
       "category": "entertainment",
       "versions": [
@@ -127,42 +152,13 @@
           "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.14.8/HentaiPark-0.14.8-80-ios-arm64-unsigned.ipa",
           "size": 17908200,
           "localizedDescription": "## 中文\n\n### 新功能\n- 恢复 iOS 客户端，使用当前的阅读、播放、收藏、翻译、酒馆与备份功能。\n- iOS 接入应用锁、相册保存、系统分享与通知，支持音声后台播放和锁屏播放控制。\n\n### 改进\n- iOS 网页播放器使用独立临时会话，HTML 游戏按作品隔离存档。\n\n### 注意事项\n- iOS 长时间下载与录制建议保持前台；HTML 在线游戏需要 iOS 17 及以上，暂不支持 Flash。\n\n## English\n\n### New\n- Restore the iOS client with current reading, playback, library, translation, Tavern and backup features.\n- Add app lock, photo saving, system sharing and notifications on iOS, with background audio and lock-screen playback controls.\n\n### Improvements\n- Isolate iOS web player sessions and keep separate storage for each HTML game.\n\n### Notes\n- Keep iOS in the foreground ",
-          "minOSVersion": "15.0",
-          "buildVersion": "80",
-          "buildNumber": "80"
+          "minOSVersion": "15.0"
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {}
       }
-    },
-    {
-      "name": "WQGuard",
-      "bundleIdentifier": "com.wqguard.app",
-      "developerName": "Kianuni",
-      "subtitle": "2.0M · 沙盒逃逸检测",
-      "localizedDescription": "面向 iOS 26.2 以上与 27.x 的零依赖沙盒逃逸检测引擎，附带 Mach-O 静态二进制审计与固件 CVE 防护。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/icon.png",
-      "tintColor": "#264ED3",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "date": "2026-11-18T13:12:04Z",
-          "downloadURL": "https://github.com/Kianuni/WQGuard/releases/download/v1.3.1/WQGuard_v1.3.1.ipa",
-          "size": 2142235,
-          "localizedDescription": "## WQGuard v1.3.1 (Build 18)\n\n新增 2026 最新 iOS 本地提权/隐私绕过漏洞特征库、ARM64 `svc #0x80` 直接系统调用指令级扫描与 13 项固件 CVE 暴露态势雷达正式版。\n\n---\n\n### 中文更新说明\n\n- **新增 ARM64 `svc #0x80` (`0xD4001001`) 直接系统调用指令级扫描 (`INSN_ARM64_SVC_0X80`)**：\n  - 在 Mach-O 静态分析引擎新增 4 字节对齐指令扫描，覆盖 `arm64` / `arm64e` / `arm64_32` 全切片、`__TEXT,__text` / `__stubs`、自定义可执行段（`VM_PROT_EXECUTE`）、无节头代码间隙及文件支撑节，直接识别绕过 `libsystem_kernel.dylib` 导入表向内核发起系统调用的隐蔽载荷（精准跳过 FairPlay `encryptedRange` 与非代码元数据段）。\n- **新增 `CVE-2026-65339`（`audiomxd` 麦克风静默 TCC 绕过）检测**：\n  - 支持无 App Group 声明的独立前置拦截，覆盖 `MediaExperience.framework` 私有框架、`CMSessionSetProperty` / `AudioSessionS",
-          "minOSVersion": "16.0",
-          "buildVersion": "11-18",
-          "buildNumber": "11-18"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/dashboard.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/firmware.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/ipa.jpeg"
-      ]
     },
     {
       "name": "Kazumi-Swift",
