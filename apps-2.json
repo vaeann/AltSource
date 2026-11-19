@@ -1,19 +1,61 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 85 个，按更新频率分成 2 个源，这里是第 2 个（35 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 88 个，按更新频率分成 2 个源，这里是第 2 个（38 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.neogamelab.neostation",
     "com.github.wgh136.venera.prime",
+    "ani.aayush262.dartotsu",
     "com.stik.stikdebug",
-    "com.llayerlinux.LSX4RuntimeProbe",
-    "com.suwayomi.tachideskSorayomi",
-    "org.zhaohe.MiniWatts"
+    "com.llayerlinux.LSX4RuntimeProbe"
   ],
   "apps": [
+    {
+      "name": "RewindBox",
+      "bundleIdentifier": "com.neogamelab.neostation",
+      "developerName": "TarbleFR",
+      "subtitle": "254.7M · 多内核游戏库",
+      "localizedDescription": "NeoStation 的 iOS 与 iPadOS 独立维护分支，提供手柄友好的主机式游戏库，内嵌 Libretro 内核、MeloNX、Dolphin、ARMSX2 与 RPCS3 运行时，支持 JIT 流程与自备固件。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/icon.png",
+      "tintColor": "#BC2957",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.0.11",
+          "date": "2026-11-10T19:41:55Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.11/RewindBox-0.0.11.ipa",
+          "size": 267033667,
+          "localizedDescription": "# RewindBox 0.0.11 — Build 721\r\n\r\nEverything since RewindBox 0.0.10 (Build 559), brought together in one update.\r\n\r\n## 🎮 PlayStation 3 — RPCS3\r\n\r\n- **Assassin’s Creed:** audio mixing corrections prevent audio periods from being discarded during waits.\r\n- Reduced redundant rendering interruptions and repeated graphics work, including changes to **Vulkan/MoltenVK**.\r\n- Improved texture caching to reuse more previously calculated results.\r\n- **Black Ops II:** corrections to SPU synchronization, memory reservations and waits involved in stalls.\r\n- **Black Ops II:** earlier submission of pending oc",
+          "minOSVersion": "18.0",
+          "buildVersion": "11-11",
+          "buildNumber": "11-11"
+        },
+        {
+          "version": "0.0.10",
+          "date": "2026-10-26T23:06:26Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.10/RewindBox-.0.0.10.ipa",
+          "size": 188063063,
+          "localizedDescription": "## RewindBox 0.0.10 — Build 559\r\n\r\nEverything since 0.0.9-fix.1 (Build 530).\r\n\r\n### Interface\r\n- Refined Liquid Glass interface: one-line main header, a new \"NeoStation\" style (solid accent pill, matte surfaces, no blur), a working Interface preview with Apply/Revert, and floating side-menu bubbles in Settings and Scraper.\r\n- New options in 12 languages: status bar items, accent colour, controller focus style, LB/RB glyphs and side-menu panel.\r\n- ROM folder changes saved in quick succession no longer fail.\r\n\r\n### Nintendo Switch (embedded MeloNX)\r\n- Backend threading is now on by default, as i",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.0.9",
+          "date": "2026-10-25T03:10:45Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.9-fix.1/RewindBox-Build530.ipa",
+          "size": 186305438,
+          "localizedDescription": "## RewindBox iOS — fix 0.0.9 (Build 530)\n\nThis hotfix addresses the identified MeloNX crash path on iOS: Vulkan returned ErrorFeatureNotPresent during direct host-memory buffer import after a Nintendo Switch game began rendering. The embedded engine now avoids that unsupported import on iOS and uses its existing GPU buffer/readback fallback.\n\n- Rebuilt and source-verified embedded MeloNX NativeAOT engine.\n- Existing RPCS3 Core and other supported embedded emulators retained.\n- Ad-hoc signed for re-signing with SideStore/AltStore.\n- Automated native/iOS-simulator and packaging checks passed.\n\nP",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/home.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/settings.png"
+      ]
+    },
     {
       "name": "Venera Prime",
       "bundleIdentifier": "com.github.wgh136.venera.prime",
@@ -59,6 +101,49 @@
         "entitlements": [],
         "privacy": {}
       }
+    },
+    {
+      "name": "Dartotsu",
+      "bundleIdentifier": "ani.aayush262.dartotsu",
+      "developerName": "aayush2622",
+      "subtitle": "82.8M · Multiplatform anime and m…",
+      "localizedDescription": "A Flutter rewrite of Dantotsu: track and manage your anime, manga and novel lists across AniList, MyAnimeList, Simkl, Kitsu, MangaBaka and MangaUpdates, on Android, iOS, Windows, Linux and macOS.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.png",
+      "tintColor": "#5E23BC",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.2.1",
+          "date": "2026-11-10T09:17:52Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.1/Dartotsu-iOS-v1.2.1.ipa",
+          "size": 86846398,
+          "localizedDescription": "### 🎉 New Features\n* [4ac32da0](https://github.com/aayush2622/Dartotsu/commit/4ac32da0): feat: editable keyboard shortcuts for the app, player and reader with a settings screen and per group switches\n* [51b1a2d7](https://github.com/aayush2622/Dartotsu/commit/51b1a2d7): feat: community lists, disable skips, hoster grouping, Simkl movies & series mode\n* [5d387f41](https://github.com/aayush2622/Dartotsu/commit/5d387f41): feat: add Anime-Planet service, private-aware list sync and prequel/sequel cards\n* [5a5a3731](https://github.com/aayush2622/Dartotsu/commit/5a5a3731): feat: finished videos move ",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-10",
+          "buildNumber": "11-10"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-10-31T20:23:41Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.0/Dartotsu-iOS-v1.2.0.ipa",
+          "size": 86452665,
+          "localizedDescription": "### 🎉 New Features\n* [b47c79f8](https://github.com/aayush2622/Dartotsu/commit/b47c79f8): feat: installing an extension manager lists the Java runtime, core and manager as steps, and the runtime is an addon\n* [5333f288](https://github.com/aayush2622/Dartotsu/commit/5333f288): feat: the image sheet shows the file size of the page or image\n* [8554063c](https://github.com/aayush2622/Dartotsu/commit/8554063c): feat: a clearance is only sent with the user agent that earned it, the source settings sheet shows why a Cloudflare check failed, and the extension installer sheet shows progress, errors and ",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.1.1",
+          "date": "2026-10-23T15:49:05Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.1.1/Dartotsu-iOS-v1.1.1.ipa",
+          "size": 82544015,
+          "localizedDescription": "### 🎉 New Features\n* [905936a4](https://github.com/aayush2622/Dartotsu/commit/905936a4): feat: long press a manga page to save, share or copy it, with a reader setting to turn it off\n* [08c68690](https://github.com/aayush2622/Dartotsu/commit/08c68690): feat: submit skip times to AniSkip from the player\n* [30b71504](https://github.com/aayush2622/Dartotsu/commit/30b71504): feat: remember the save progress choice for a single series\n* [bf439535](https://github.com/aayush2622/Dartotsu/commit/bf439535): feat: compact playback speed sheet and remember the last used speed\n* [2b636653](https://github.",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/anime.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/manga.webp"
+      ]
     },
     {
       "name": "StikDebug",
@@ -1167,6 +1252,49 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/home.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/search.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/profile.png"
+      ]
+    },
+    {
+      "name": "iRAM+",
+      "bundleIdentifier": "novadev.iram-plus",
+      "developerName": "NexSideloading",
+      "subtitle": "4.4M · Enable Increased Memory Li…",
+      "localizedDescription": "Grant sideloaded apps the Increased Memory Limit and Extended Virtual Addressing entitlements directly on device: sign in with the Apple Account that signed them, pick an app and add the entitlement, then reinstall it. Works only with apps signed by an Apple account, not with enterprise certificates.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.png",
+      "tintColor": "#39CA3E",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-09-18T23:43:28Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.1/iRAM-Plus.ipa",
+          "size": 4562979,
+          "localizedDescription": "Hey everyone,\r\nSorry for not working on or updating this app in a while, but this release fixes the -80045 sign in issue and other bugs!",
+          "minOSVersion": "16.0",
+          "buildVersion": "09-19",
+          "buildNumber": "09-19"
+        },
+        {
+          "version": "1.3.2",
+          "date": "2026-09-17T22:30:36Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.2-experimental-2fa-methods/iRAM-Plus.ipa",
+          "size": 4822443,
+          "localizedDescription": "This is a release [created automatically with GitHub Actions workflow](https://github.com/NexSideloading/iRAM-Plus/actions/runs/35281296012/attempts/1).",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-09-13T03:52:20Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.0/iRAM-Plus.ipa",
+          "size": 4556375,
+          "localizedDescription": "- **Fixed login**: Fix GSA authentication & login\r\n- **Dual Entitlements System**: Now supports both Increased Memory Limit and Extended Virtual Addressing with individual toggles\r\n- **Settings Restructuring**: New \"Entitlements\" and \"Options\" sections with improved organization\r\n- **Apple ID → Apple Account**: Renamed throughout the app with automatic credential migration\r\n- **Debug Mode**: New debug toggle that controls API responses, server response buttons, and debug logs\r\n- **Navigation Fixes**: Fixed login flow to properly navigate to app selection instead of skipping to add entitlements",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/start.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/app.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/settings.webp"
       ]
     },
     {
