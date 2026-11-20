@@ -7,13 +7,53 @@
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
+    "com.qingtang.3106",
     "com.jbdotparty.Erosion",
     "com.linkpass.kazumi",
     "com.hentaipark.hentaiPark",
-    "com.wqguard.app",
-    "com.hghubx.app"
+    "com.wqguard.app"
   ],
   "apps": [
+    {
+      "name": "3106",
+      "bundleIdentifier": "com.qingtang.3106",
+      "developerName": "QuinnTang74",
+      "subtitle": "5.7M · 免越狱的 iOS 容器管理工具",
+      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
+      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
+      "tintColor": "#D033AC",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "3.2.8",
+          "date": "2026-11-19T17:56:05Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.8/3106-3.2.8-unsigned.ipa",
+          "size": 5955049,
+          "localizedDescription": "# 3106 3.2.8 正式版\n\n- 版本：**3.2.8**\n- 构建：**33**\n- 日期：2026-11-20\n- 产物：`3106-3.2.8-unsigned.ipa`\n- SHA256：`18d652a41ebacd8569a27a4c1b5b5686df656301188202dd8848ea9edaca7918`\n\n本次版本集中修复“数据明明改了但 3106 不显示/不生效”这一类问题，并把 MobileGestalt 的能力位读取从字典扩展到二进制槽位。\n\n## 重点变化\n\n### 1. 沙箱访问缓存自愈\n\n`worse_query` 依赖 App Group 的 `Library/Caches` 交换。此前如果该目录被上一次中断的交换、旧版本或同组其它程序留下的软链占住，恢复逻辑会一直拒绝，交换无法开始，所有授权返回 `-4`（日志 `tried=[]`）。表现为文件浏览器全部“未识别容器”、清理器只统计到 3106 自身。\n\n现在：\n\n- 恢复失败会先做一次“挪开障碍物”的修复：删除 `Caches` 软链、把非目录/无法恢复的 `.wq-caches-preserved` 改名到 `.wq-caches-reset-<id>`、重建普通 `Caches`；**不删除任何用户数据**。\n- 授权失败码改为 `-5`，Swift 层按 60 秒节流自动修复并",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-20",
+          "buildNumber": "11-20"
+        },
+        {
+          "version": "3.2.7",
+          "date": "2026-11-19T04:39:06Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.7/3106-3.2.7-unsigned.ipa",
+          "size": 5880602,
+          "localizedDescription": "# 3.2.7 正式版 · Stable Release Notes\n\n发布日期：2026-11-19 ｜ build 26\n\n> 新包 SHA256：`ad902d3a581e36f1df375d0789faf048594bb542f5dbf1cafcdf28f3d0ed3e73`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## ⚠️ 支持边界（重要）\n\n**iOS 27.3 beta 2（24C5049d）及之后的所有 27.3 构建不可用**：Apple 在 27.3 beta 2 修补了 worse_query 依赖的路径，此为系统侧变更，应用无法绕过。**27.x 支持上限为 27.3 beta 1（`24C5037i`）**——27.0–27.2 全部可用，27.3 按 build 号精确放行 beta 1、拒绝 beta 2+，不再等待进一步测试。iOS 18.7.2+ 同理不可支持（内核链依赖的两个 CVE 已被 Apple 修补，属设计内不支持，应用内会直接展示原因）。\n\n## 中文\n\n### 新增\n\n- **韩语（第五语言）**：全量 1508 键，与 zh-Hans / English / Tiếng Việt 逐键对齐。\n- **Wi-Fi HTTP 互传**：本机起 LAN 内 HTTP 服务（端口 8080 起，占用顺延），浏览器/",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "3.2.6",
+          "date": "2026-11-17T02:55:19Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
+          "size": 5753848,
+          "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
+          "minOSVersion": "17.0",
+          "buildVersion": "25",
+          "buildNumber": "25"
+        }
+      ]
+    },
     {
       "name": "Erosion-CN",
       "bundleIdentifier": "com.jbdotparty.Erosion",
@@ -215,46 +255,6 @@
         "entitlements": [],
         "privacy": {}
       }
-    },
-    {
-      "name": "3106",
-      "bundleIdentifier": "com.qingtang.3106",
-      "developerName": "QuinnTang74",
-      "subtitle": "5.6M · 免越狱的 iOS 容器管理工具",
-      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
-      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
-      "tintColor": "#D033AC",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "3.2.7",
-          "date": "2026-11-19T04:39:06Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.7/3106-3.2.7-unsigned.ipa",
-          "size": 5880602,
-          "localizedDescription": "# 3.2.7 正式版 · Stable Release Notes\n\n发布日期：2026-11-19 ｜ build 26\n\n> 新包 SHA256：`ad902d3a581e36f1df375d0789faf048594bb542f5dbf1cafcdf28f3d0ed3e73`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## ⚠️ 支持边界（重要）\n\n**iOS 27.3 beta 2（24C5049d）及之后的所有 27.3 构建不可用**：Apple 在 27.3 beta 2 修补了 worse_query 依赖的路径，此为系统侧变更，应用无法绕过。**27.x 支持上限为 27.3 beta 1（`24C5037i`）**——27.0–27.2 全部可用，27.3 按 build 号精确放行 beta 1、拒绝 beta 2+，不再等待进一步测试。iOS 18.7.2+ 同理不可支持（内核链依赖的两个 CVE 已被 Apple 修补，属设计内不支持，应用内会直接展示原因）。\n\n## 中文\n\n### 新增\n\n- **韩语（第五语言）**：全量 1508 键，与 zh-Hans / English / Tiếng Việt 逐键对齐。\n- **Wi-Fi HTTP 互传**：本机起 LAN 内 HTTP 服务（端口 8080 起，占用顺延），浏览器/",
-          "minOSVersion": "17.0",
-          "buildVersion": "11-19",
-          "buildNumber": "11-19"
-        },
-        {
-          "version": "3.2.6",
-          "date": "2026-11-17T02:55:19Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
-          "size": 5753848,
-          "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
-          "minOSVersion": "17.0",
-          "buildVersion": "25",
-          "buildNumber": "25"
-        },
-        {
-          "version": "3.2.5",
-          "date": "2026-11-13T13:18:39Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.5/3106-3.2.5-unsigned.ipa",
-          "size": 5703636,
-          "localizedDescription": "# 3.2.5 正式版（同版本重发 rebuild） · Stable Release Notes\n\n发布日期：2026-11-13 ｜ **重发：2026-11-14** ｜ build 24 不变\n\n> 同版本号重发。新包 SHA256：`aa76f4e5f904fc0eb90a54d35f33c2df8e9ecb54059f526ff880f8dd0ba0fca8`（assets 内 SHA256SUMS.txt 同步刷新）。本次参考 GestaltX v1.1.1 release notes 的问题清单语义独立实现，未移植其代码。\n\n## 中文\n\n### 新增\n\n- **应用通知音替换**（GestaltX App Audio Library 思路，独立实现）：功能页新增「通知音替换」卡片；按应用维护通知音路径表（手动输入容器相对路径，未列出的应用同样可用）；替换前三段风险说明 + 全屏红色长按确认；替换走任意文件替换管线——原文件自动备份、替换记录持久化、记录左滑一键恢复；文件选择器以 `.data` 兜底，侧载包也能选中 `.caf/.m4a` 等音频；格式白名单 aiff/aif/caf/m4a/wav，单文件 ≤20MB；替换后列表立即刷新。\n\n### 修复\n\n- **字段 plist 导入不再整根覆盖**（GestaltX #138）：导入被当作补丁——以设备当前",
-          "minOSVersion": "17.0"
-        }
-      ]
     },
     {
       "name": "HermesEnabler",
