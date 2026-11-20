@@ -29,7 +29,13 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
 def local_shards():
-    return sorted(os.path.basename(p) for p in glob.glob(os.path.join(ROOT, "apps*.json")))
+    out = []
+    for p in glob.glob(os.path.join(ROOT, "apps*.json")):
+        n = os.path.basename(p)
+        if n == "apps-all.json":   # 完整版是其他分片的合集，算进去会让总数翻倍
+            continue
+        out.append(n)
+    return sorted(out)
 
 
 def git_shards():
@@ -38,7 +44,8 @@ def git_shards():
             ["git", "ls-tree", "--name-only", "HEAD"],
             cwd=ROOT, capture_output=True, text=True, timeout=60,
         ).stdout
-        return [n for n in out.split() if n.startswith("apps") and n.endswith(".json")]
+        return [n for n in out.split()
+                if n.startswith("apps") and n.endswith(".json") and n != "apps-all.json"]
     except Exception:
         return []
 

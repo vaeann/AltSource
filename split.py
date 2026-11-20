@@ -102,12 +102,38 @@ def main():
         written.append(fn)
         print(f"  热门应用源{label(idx)}  {len(chunk):>3} 个  → {fn}")
 
+    # 额外生成一个「完整版」：①②③…全部合在一起，给只想订阅一个地址的场景用
+    all_doc = {
+        "name": "热门软件合集",
+        "subtitle": f"全部 {total} 个应用都在这里 · 按更新时间排序",
+        "description": (
+            f"精挑细选的 iOS 侧载应用合集，{total} 个应用全在这一条源里，按更新时间倒序排列。\n\n"
+            f"注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。"
+            f"如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n"
+            "版本数据直接从各项目的官方 GitHub 仓库拉取。"
+        ),
+        "identifier": (base.get("identifier") or "com.vaeann.source") + ".all",
+        "iconURL": base.get("iconURL", ""),
+        "website": base.get("website", ""),
+        "tintColor": "#3D8B7D",
+        "featuredApps": [a["bundleIdentifier"] for a in apps[:5]],
+        "apps": apps,
+        "news": [],
+    }
+    all_doc = {k: v for k, v in all_doc.items() if v not in ("", [], None)}
+    all_doc["apps"] = apps
+    all_doc["news"] = []
+    with open(os.path.join(ROOT, "apps-all.json"), "w", encoding="utf-8", newline="\n") as f:
+        json.dump(all_doc, f, ensure_ascii=False, indent=2)
+    print(f"  热门应用源 · 完整版  {total:>3} 个  → apps-all.json")
+
+    keep_files = set(written) | {"apps-all.json"}
     for p in glob.glob(os.path.join(ROOT, "apps*.json")):
-        if os.path.basename(p) not in written:
+        if os.path.basename(p) not in keep_files:
             os.remove(p)
             print(f"  已删除多余分片 {os.path.basename(p)}")
 
-    print(f"\n合计 {total} 个应用，分 {len(chunks)} 个源")
+    print(f"\n合计 {total} 个应用，分 {len(chunks)} 个源 + 1 个完整版")
 
 
 if __name__ == "__main__":
