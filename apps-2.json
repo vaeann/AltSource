@@ -1,19 +1,128 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 91 个，按更新频率分成 2 个源，这里是第 2 个（41 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 92 个，按更新频率分成 2 个源，这里是第 2 个（42 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "app.ehpanda",
     "com.zhangfuhao.wqtoolkit",
     "com.henge.app",
     "com.neogamelab.neostation",
-    "com.github.wgh136.venera.prime",
-    "ani.aayush262.dartotsu"
+    "com.github.wgh136.venera.prime"
   ],
   "apps": [
+    {
+      "name": "EhPanda",
+      "bundleIdentifier": "app.ehpanda",
+      "developerName": "EhPanda Team",
+      "subtitle": "18.0M · E-Hentai 非官方客户端",
+      "localizedDescription": "使用 SwiftUI 与 TCA 架构开发的非官方 E-Hentai 客户端，界面接近原生体验，支持画廊浏览、搜索、收藏与下载。注意 2.8.x 起最低要求 iOS 26.0，2.7.x 要求 iOS 17.0。",
+      "iconURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/icon.png",
+      "tintColor": "#8228CC",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "3.0.0",
+          "date": "2026-11-12T18:13:21Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
+          "size": 18858405,
+          "localizedDescription": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Fa",
+          "minOSVersion": "27.0",
+          "buildVersion": "11-13",
+          "buildNumber": "11-13"
+        },
+        {
+          "version": "2.8.1",
+          "date": "2026-07-20T12:12:04Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
+          "size": 7352364,
+          "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
+          "minOSVersion": "26.0",
+          "buildVersion": "158",
+          "buildNumber": "158"
+        },
+        {
+          "version": "2.7.10",
+          "date": "2024-12-21T03:22:53Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
+          "size": 7231227,
+          "localizedDescription": "1. Fixed reading page scroll functionality.",
+          "minOSVersion": "17.0",
+          "buildVersion": "156",
+          "buildNumber": "156"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
+        }
+      },
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/01-home.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/02-detail.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/03-reading.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/04-comments.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/05-downloads.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/06-filters.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/07-more.png",
+            "width": 1260,
+            "height": 2730
+          }
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/01-home.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/02-reading.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/03-downloads.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/04-more.png",
+            "width": 2752,
+            "height": 2064
+          }
+        ]
+      }
+    },
     {
       "name": "WQToolkit",
       "bundleIdentifier": "com.zhangfuhao.wqtoolkit",
