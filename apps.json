@@ -8,10 +8,10 @@
   "tintColor": "#6B4EFF",
   "featuredApps": [
     "com.hghubx.app",
-    "com.local.STV",
-    "io.nekohasekai.screensharing",
+    "com.thebcd69.bcd",
+    "com.kodjodevf.mangayomi",
     "io.nekohasekai.swipt",
-    "app.local.iPadn"
+    "com.local.STV"
   ],
   "apps": [
     {
@@ -25,14 +25,22 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "2.2.5",
+          "date": "2026-11-20T18:49:08Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
+          "size": 3927965,
+          "localizedDescription": "# HGhubX v2.2.5\n\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **简体中文、繁体中文与英语界面切换（#190）**：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\n2. **播放器微光效果（#192）**：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\n3. **精简移动端长按倍速交互（#193）**：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\n\n## 修复\n1. **桌面端开启「上下划切集」滚轮切集失效（#195）**：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓」按钮同步遵循该开关。\n2. **清屏锁定后锁图标常驻遮挡画面（#",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-21",
+          "buildNumber": "11-21"
+        },
+        {
           "version": "2.2.4",
           "date": "2026-11-20T15:17:02Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.4/HGhubX_2.2.4_ios.ipa",
           "size": 3897090,
-          "localizedDescription": "# HGhubX v2.2.4\r\n\r\n聚焦播放交互细节打磨、搜索历史批量管理和桌面全屏体验优化，并完成 Android TV 子项目与标准版发版流程解耦；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n\r\n## 新增与优化\r\n1. **启动页偏好设置（#180 / #185）**：可在「设置」中选择应用启动后默认进入的页面。\r\n2. **搜索历史支持长按批量删除（#184）**：在搜索页与就地搜索面板长按历史词条即可进入多选批量删除。\r\n3. **清屏锁屏按钮对齐与状态提示（#187）**：对齐横屏与净屏模式下的锁屏/解锁锚点，并补齐锁定状态提示。\r\n4. **TV 子项目版本与 CI/CD 独立解耦（#189）**：标准版 `v*` 与 TV 版 `tv-v*` 拆分至各自工作流与独立版本号，后续互不阻塞发版。\r\n\r\n## 修复\r\n1. **桌面全屏定位与空闲隐藏（#180 / #183）**：修复桌面端全屏区域锚点偏移，播放空闲时自动隐藏悬浮控件与鼠标指针。\r\n2. **暂停时点击中央播放图标恢复播放（#182）**：暂停态点击画面中央播放图标直接恢复播放，不再被外层手势拦截。\r\n3. **移除横版视频上方重复控件（#177）**：去掉与底部操作栏重复的铺满与横屏悬浮按钮，减少画面遮挡。\r\n4. **全屏切集方向与提示去重（#176 / #",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-20",
-          "buildNumber": "11-20"
+          "localizedDescription": "# HGhubX v2.2.4\r\n\r\n聚焦播放交互细节打磨、搜索历史批量管理和桌面全屏体验优化，并完成 Android TV 子项目与标准版发版流程解耦；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n\r\n## 新增与优化\r\n1. **启动页偏好设置（#180 / #185）**：可在「设置」中选择应用启动后默认进入的页面 。\r\n2. **搜索历史支持长按批量删除（#184）**：在搜索页与就地搜索面板长按历史词条即可进入多选批量删除。\r\n3. **清屏锁屏按钮对齐与状态提示（#187）**：对齐横屏与净屏模式下的锁屏/解锁锚点，并补齐锁定状态提示。\r\n4. **TV 子项目版本与 CI/CD 独立解耦（#189）**：标准版 `v*` 与 TV 版 `tv-v*` 拆分至各自工作流与独立版本号，后续互不阻塞发版。\r\n\r\n## 修复\r\n1. **桌面全屏定位与空闲隐藏（#180 / #183）**：修复桌面端全屏区域锚点偏移，播放空闲时自动隐藏悬浮控件与鼠标指针。\r\n2. **暂停时点击中央播放图标恢复播放（#182）**：暂停态点击画面中央播放图标直接恢复播放，不再被外层手势拦截。\r\n3. **移除横版视频上方重复控件（#177）**：去掉与底部操作栏重复的铺满与横屏悬浮按钮，减少画面遮挡。\r",
+          "minOSVersion": "15.0"
         },
         {
           "version": "2.2.3",
@@ -40,16 +48,6 @@
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.3/HGhubX_2.2.3_ios.ipa",
           "size": 3895060,
           "localizedDescription": "# HGhubX v2.2.3\r\n\r\n本版重新安排手机播放控件，改善桌面子页的宽屏布局，并优化「我的」内容管理与吃瓜详情的稳定性。\r\n\r\n## **TV 端无任何改动**\r\n\r\n## 新增与优化\r\n\r\n1. **手机播放控件与全屏手势（#170）**：选集、静音、切集开关和全屏集中到屏幕底部；首页四个按钮使用更透明的底色，减少对画面的遮挡。横屏设置抽屉完整显示倍速选项；全屏支持上下滑切集并提示首尾边界，清屏时保留锁屏入口。\r\n2. **播放详情、标签与搜索（#170）**：「详情」和「选集」支持左右滑动切换，下拉关闭；点按标签查看同类，长按或右键可屏蔽。在栏目内打开的播放页可按当前内容类型搜索，首页底部的全局搜索不受影响。\r\n3. **收藏与观看历史管理（#168、#169）**：在「我的」中长按或右键卡片进入多选，可批量取消收藏或删除观看记录；列表接近底部时自动加载更多，网格列数保持不变。\r\n\r\n## 修复\r\n\r\n1. **吃瓜详情闪烁（#165）**：切换线路或代理时保留已展示的正文和滚动位置；阅读位置更新时复用未变的图片，短暂缓冲不再立即弹出加载动画。\r\n2. **桌面子页顶栏两侧断开（#171）**：「排行榜」「关注」等子页和页内搜索层的顶栏底色、分隔线铺满面板；标题、筛选项和正文仍按原宽度居中。\r\n3. **本人主页与批量操作**：本人主页隐藏「关注」入口；批量取消收藏期",
-          "minOSVersion": "15.0",
-          "buildVersion": "2.2.3",
-          "buildNumber": "2.2.3"
-        },
-        {
-          "version": "2.2.2",
-          "date": "2026-11-19T04:39:12Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.2/HGhubX_2.2.2_ios.ipa",
-          "size": 3891126,
-          "localizedDescription": "## HGhubX 2.2.2\n\n2.2.0 之后的体验修复版本：收藏续播与新集提醒、底部进度预览、TV 启动密码，以及冷启动登录保持与移动端布局 / 键盘修复。\n\n### 新增\n\n- **收藏进度、续播与新集提醒**（#154）：收藏卡片显示上次观看进度；看完一集且有后续时从下一集开头继续；返回收藏页后台刷新集数并保留现有卡片，未看新集显示「新更 N 集」角标。\n- **TV 启动密码**（#152）：设置 → 启动密码可开启 / 修改 / 关闭四位 PIN 或立即锁定；支持遥控器数字键与屏幕键盘，连续输入不再被步骤切换清空，连续输错 5 次进入 15 秒冷却。\n\n### 改进\n\n- **底部进度预览**（#152）：横拖画面或拖动进度条统一在底部预览时间，松手才提交跳转，不再把进度条叠在画面中央。\n- **连续切集**（#156、#157）：下一集加载期间仍可继续划；同类集数提示只更新同一张卡片，不堆叠。\n- TV 解锁页移除重复副标题与底部操作说明，仅保留标题、输入提示与错误反馈。\n\n### 修复\n\n- **冷启动与账号恢复**（#156）：启动动画期间按返回只跳过动画；镜像验证暂时失败不再显示登出；账号同步 401 时同账号静默重登，身份或会话代次不符时保留原会话并提示手动处理。\n- **移动端布局与登录键盘**（#157、#163）：窄屏全宽、平板 / 桌面限宽居中；横竖",
           "minOSVersion": "15.0"
         }
       ],
@@ -57,6 +55,122 @@
         "entitlements": [],
         "privacy": {}
       }
+    },
+    {
+      "name": "BCD",
+      "bundleIdentifier": "com.thebcd69.bcd",
+      "developerName": "thebcd69",
+      "subtitle": "214.2M · Windows 游戏启动器",
+      "localizedDescription": "面向手柄优化的快速启动器，在 iOS 与 iPadOS 上通过 Wine、FEX 与 Metal（DXMT）运行 Windows 游戏，内置 Steam 与 GOG 支持。",
+      "iconURL": "https://raw.githubusercontent.com/thebcd69/bcd-games/v0.1.686/app/Madeira/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#30CEAC",
+      "category": "games",
+      "versions": [
+        {
+          "version": "0.1.686",
+          "date": "2026-11-20T18:32:54Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.686/BCD.ipa",
+          "size": 224574618,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Everything new in this release is experimental and has been tried on only a few devices so far.** It may work great on yours, or it may not work at all. Either way, a log helps a lot.\n\n## Fixed: games crashed at start on iOS and iPadOS 26 and older\n\n- **0.1.682 crashed every game launch on iOS/iPadOS 26 and older.** It was the first release built with the iOS 27 SDK, and it used a system function that exists only from ",
+          "minOSVersion": "18.0",
+          "buildVersion": "11-21",
+          "buildNumber": "11-21"
+        },
+        {
+          "version": "0.1.682",
+          "date": "2026-11-20T06:41:53Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.682/BCD.ipa",
+          "size": 224532521,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Tried a game on an earlier build? Reset its settings first.** On the game's page: **Options › Recommended settings › Reset to Recommended**, then check that **Options › Auto-tune › Auto-tune this game** is on.\n\n## iPhone Duo is supported\n\n- **BCD fills both displays.** BCD is now built with the iOS 27 SDK, so installed directly it fills the whole inner display, open or half open, and the outer display when the phone is",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.1.665",
+          "date": "2026-11-15T15:07:37Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.665/BCD.ipa",
+          "size": 222775641,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n## Red Dead Redemption 2\n\n- **No processor time lost on exceptions.** RDR2 asks Windows for the time tens of thousands of times a second, and every one of those calls used to take an exception that BCD caught and answered: about 20,000 a second through the tick count, and up to about 18,000 more through timer calls in the game's own process, which Rockstar's launcher starts. Both now run as plain calls, so a performance co",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "get-task-allow"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "BCD uses the local network to pair with this device for JIT, without a computer, and, if you turn it on in Settings, to download Steam games from a PC on this network.",
+          "NSPhotoLibraryAddUsageDescription": "BCD saves the screenshots you take in a game to your photo library. It never reads your photos."
+        }
+      }
+    },
+    {
+      "name": "Mangayomi",
+      "bundleIdentifier": "com.kodjodevf.mangayomi",
+      "developerName": "Moustapha Kodjo Amadou",
+      "subtitle": "112.0M · 漫画小说动漫聚合",
+      "localizedDescription": "开源的 Flutter 应用，跨平台阅读漫画、看小说与追番，通过扩展添加内容源。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/icon.png",
+      "tintColor": "#7E2CBE",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.9.97",
+          "date": "2026-11-20T16:46:43Z",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.97/Mangayomi-v0.9.97-ios.ipa",
+          "size": 117415847,
+          "localizedDescription": "## What's Changed\n* fix(sync): one row over a limit no longer stops every sync by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1168\n* fix(app): keep open pages when the lock screen comes and goes by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1172\n* fix(library): the extension filter offers every extension again by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1173\n* fix(linux): a failed Discord connection no longer crashes the app by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1175\n* fix(sync-server): `pair` opens pairing again by @kodjodev",
+          "buildVersion": "11-21",
+          "buildNumber": "11-21"
+        },
+        {
+          "version": "0.9.96",
+          "date": "2026-11-14T17:16:59Z",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.96/Mangayomi-v0.9.96-ios.ipa",
+          "size": 117340839,
+          "localizedDescription": "## What's Changed\r\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\r\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\r\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\r\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\r\n* fix(migrate): search a few sources at a time and open the dialog at once b"
+        },
+        {
+          "version": "0.9.95",
+          "date": "2026-11-01T15:17:25Z",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa",
+          "size": 115450399,
+          "localizedDescription": "## Why 0.9.95 and not 1.0.0?\r\n\r\nThis release has almost everything planned for 1.0.0: a new design, a rebuilt player and hundreds of fixes. But so much has changed that it needs testing on more devices and libraries than we can cover ourselves.\r\n\r\nSo 0.9.95 is the last step before 1.0.0. The goal now is stability, not new features. If something breaks or looks wrong, please [open an issue](https://github.com/kodjodevf/mangayomi/issues) with your device and app version. 1.0.0 will come once this version has proven solid.\r\n\r\n## Highlights\r\n\r\n* **Shiori, a new design for the whole app:** every sc"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot1.jpg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot2.jpg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot3.jpg"
+      ]
+    },
+    {
+      "name": "Swipt",
+      "bundleIdentifier": "io.nekohasekai.swipt",
+      "developerName": "nekohasekai",
+      "subtitle": "46.0M · 用 JS 自动化操作设备",
+      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.png",
+      "tintColor": "#2ED5B7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-20T16:41:31Z",
+          "localizedDescription": "* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-",
+          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+          "size": 48182818,
+          "minOSVersion": "16.4",
+          "buildVersion": "11-21",
+          "buildNumber": "11-21"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.jpeg"
+      ]
     },
     {
       "name": "i短剧",
@@ -129,33 +243,6 @@
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
-      ]
-    },
-    {
-      "name": "Swipt",
-      "bundleIdentifier": "io.nekohasekai.swipt",
-      "developerName": "nekohasekai",
-      "subtitle": "45.9M · 用 JS 自动化操作设备",
-      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.png",
-      "tintColor": "#2ED5B7",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "date": "2026-11-20T13:38:53Z",
-          "localizedDescription": "* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type checking for the CLI and the dev tools\n* Add contexts to the CLI translations\n* Rework the swipt-driver interface and add API tokens to swipt driver\n* Fix the driver build tool ignoring unpack options for ZIP archives\n* Replace the hand-written ZIP code of the CLI with fflate\n*",
-          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48174335,
-          "minOSVersion": "16.4",
-          "buildVersion": "11-20",
-          "buildNumber": "11-20"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.jpeg"
       ]
     },
     {
@@ -394,55 +481,6 @@
         ],
         "privacy": {
           "NSPhotoLibraryUsageDescription": "用于选择锁屏变身图片、视频或实况照片制作动态壁纸。"
-        }
-      }
-    },
-    {
-      "name": "BCD",
-      "bundleIdentifier": "com.thebcd69.bcd",
-      "developerName": "thebcd69",
-      "subtitle": "214.1M · Windows 游戏启动器",
-      "localizedDescription": "面向手柄优化的快速启动器，在 iOS 与 iPadOS 上通过 Wine、FEX 与 Metal（DXMT）运行 Windows 游戏，内置 Steam 与 GOG 支持。",
-      "iconURL": "https://raw.githubusercontent.com/thebcd69/bcd-games/v0.1.682/app/Madeira/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#30CEAC",
-      "category": "games",
-      "versions": [
-        {
-          "version": "0.1.682",
-          "date": "2026-11-20T06:41:53Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.682/BCD.ipa",
-          "size": 224532521,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Tried a game on an earlier build? Reset its settings first.** On the game's page: **Options › Recommended settings › Reset to Recommended**, then check that **Options › Auto-tune › Auto-tune this game** is on.\n\n## iPhone Duo is supported\n\n- **BCD fills both displays.** BCD is now built with the iOS 27 SDK, so installed directly it fills the whole inner display, open or half open, and the outer display when the phone is",
-          "minOSVersion": "18.0",
-          "buildVersion": "11-20",
-          "buildNumber": "11-20"
-        },
-        {
-          "version": "0.1.665",
-          "date": "2026-11-15T15:07:37Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.665/BCD.ipa",
-          "size": 222775641,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n## Red Dead Redemption 2\n\n- **No processor time lost on exceptions.** RDR2 asks Windows for the time tens of thousands of times a second, and every one of those calls used to take an exception that BCD caught and answered: about 20,000 a second through the tick count, and up to about 18,000 more through timer calls in the game's own process, which Rockstar's launcher starts. Both now run as plain calls, so a performance co",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.1.659",
-          "date": "2026-11-14T07:55:11Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.659/BCD.ipa",
-          "size": 195294280,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\nThis build brings **The Last of Us Part I**, **frame generation** (with your own copy of Lossless Scaling, with Apple's MetalFX, and an Apple VideoToolbox experiment), **live upscaling**, BCD's built-in JIT helper inside LiveContainer, and a set of new controls, store and settings features. Everything new is off until you turn it on, except the fixes.\n\n## The Last of Us Part I\n\nThe Last of Us Part I now runs on BCD. It was",
-          "minOSVersion": "18.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.kernel.extended-virtual-addressing",
-          "com.apple.developer.kernel.increased-memory-limit",
-          "get-task-allow"
-        ],
-        "privacy": {
-          "NSLocalNetworkUsageDescription": "BCD uses the local network to pair with this device for JIT, without a computer, and, if you turn it on in Settings, to download Steam games from a PC on this network.",
-          "NSPhotoLibraryAddUsageDescription": "BCD saves the screenshots you take in a game to your photo library. It never reads your photos."
         }
       }
     },
@@ -1491,46 +1529,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
-      ]
-    },
-    {
-      "name": "Mangayomi",
-      "bundleIdentifier": "com.kodjodevf.mangayomi",
-      "developerName": "Moustapha Kodjo Amadou",
-      "subtitle": "111.9M · 漫画小说动漫聚合",
-      "localizedDescription": "开源的 Flutter 应用，跨平台阅读漫画、看小说与追番，通过扩展添加内容源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/icon.png",
-      "tintColor": "#7E2CBE",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.9.96",
-          "date": "2026-11-14T17:16:59Z",
-          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.96/Mangayomi-v0.9.96-ios.ipa",
-          "size": 117340839,
-          "localizedDescription": "## What's Changed\r\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\r\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\r\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\r\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\r\n* fix(migrate): search a few sources at a time and open the dialog at once b",
-          "buildVersion": "11-15",
-          "buildNumber": "11-15"
-        },
-        {
-          "version": "0.9.95",
-          "date": "2026-11-01T15:17:25Z",
-          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa",
-          "size": 115450399,
-          "localizedDescription": "## Why 0.9.95 and not 1.0.0?\r\n\r\nThis release has almost everything planned for 1.0.0: a new design, a rebuilt player and hundreds of fixes. But so much has changed that it needs testing on more devices and libraries than we can cover ourselves.\r\n\r\nSo 0.9.95 is the last step before 1.0.0. The goal now is stability, not new features. If something breaks or looks wrong, please [open an issue](https://github.com/kodjodevf/mangayomi/issues) with your device and app version. 1.0.0 will come once this version has proven solid.\r\n\r\n## Highlights\r\n\r\n* **Shiori, a new design for the whole app:** every sc"
-        },
-        {
-          "version": "0.9.9",
-          "date": "2026-10-12T15:52:14Z",
-          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.9/Mangayomi-v0.9.9-ios.ipa",
-          "size": 114603425,
-          "localizedDescription": "## What's Changed\n* fix(extension): enable mobile code copy by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1039\n* fix(reader): restore double-tap zoom toggle by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1037\n* feat(player): add hold-and-slide speed selector by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1038\n* fix(http): drop the quotes Linux wraps the saved user agent in by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1036\n* fix(security): show what deep links install and keep tokens out of sh… by @kodjodevf in https://git"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot1.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot2.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot3.jpg"
       ]
     },
     {
