@@ -1,19 +1,439 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 83 个，按更新频率分成 2 个源，这里是第 2 个（33 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 2 个（43 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.stik.stikdebug",
-    "com.llayerlinux.LSX4RuntimeProbe",
-    "com.suwayomi.tachideskSorayomi",
-    "org.zhaohe.MiniWatts",
-    "com.kuschqin.madeira.steamui"
+    "com.ios151.insav",
+    "app.ehpanda",
+    "com.zhangfuhao.wqtoolkit",
+    "com.henge.app",
+    "com.neogamelab.neostation"
   ],
   "apps": [
+    {
+      "name": "INSAV",
+      "bundleIdentifier": "com.ios151.insav",
+      "developerName": "ios151",
+      "subtitle": "1.6M · 四站点聚合的原生影视客户端",
+      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
+      "tintColor": "#91C930",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-13T05:33:07Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "size": 1634598,
+          "buildVersion": "11-13",
+          "buildNumber": "11-13",
+          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-10T18:39:00Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "size": 1630941,
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-09T20:55:27Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
+          "size": 1523510,
+          "buildVersion": "4",
+          "buildNumber": "4",
+          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "EhPanda",
+      "bundleIdentifier": "app.ehpanda",
+      "developerName": "EhPanda Team",
+      "subtitle": "18.0M · E-Hentai 非官方客户端",
+      "localizedDescription": "使用 SwiftUI 与 TCA 架构开发的非官方 E-Hentai 客户端，界面接近原生体验，支持画廊浏览、搜索、收藏与下载。注意 2.8.x 起最低要求 iOS 26.0，2.7.x 要求 iOS 17.0。",
+      "iconURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/icon.png",
+      "tintColor": "#8228CC",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "3.0.0",
+          "date": "2026-11-12T18:13:21Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
+          "size": 18858405,
+          "localizedDescription": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Fa",
+          "minOSVersion": "27.0",
+          "buildVersion": "11-13",
+          "buildNumber": "11-13"
+        },
+        {
+          "version": "2.8.1",
+          "date": "2026-07-20T12:12:04Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
+          "size": 7352364,
+          "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
+          "minOSVersion": "26.0",
+          "buildVersion": "158",
+          "buildNumber": "158"
+        },
+        {
+          "version": "2.7.10",
+          "date": "2024-12-21T03:22:53Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
+          "size": 7231227,
+          "localizedDescription": "1. Fixed reading page scroll functionality.",
+          "minOSVersion": "17.0",
+          "buildVersion": "156",
+          "buildNumber": "156"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
+        }
+      },
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/01-home.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/02-detail.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/03-reading.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/04-comments.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/05-downloads.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/06-filters.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/07-more.png",
+            "width": 1260,
+            "height": 2730
+          }
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/01-home.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/02-reading.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/03-downloads.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/04-more.png",
+            "width": 2752,
+            "height": 2064
+          }
+        ]
+      }
+    },
+    {
+      "name": "WQToolkit",
+      "bundleIdentifier": "com.zhangfuhao.wqtoolkit",
+      "developerName": "MchinaMd57764",
+      "subtitle": "4.6M · App 数据容器工具箱",
+      "localizedDescription": "基于 App Group 容器查询能力构建的工具箱，无需越狱即可浏览、清理与检查自己的应用数据容器。包含文件浏览器、缓存扫描、设备信息与 MobileGestalt 缓存面板。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/icon.png",
+      "tintColor": "#2F8CCF",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-11-11T22:59:56Z",
+          "downloadURL": "https://github.com/MchinaMd57764/WQToolkit/releases/download/v1.0/WQToolkit-unsigned.ipa",
+          "size": 4819436,
+          "localizedDescription": "iOS 27 only. Unsigned build - it contains no signing material, no profile and no team ID.\n\n**Assets**\n- `WQToolkit-unsigned.ipa` - 4.6 MB. Re-sign it with your own developer identity and an App Group entitlement before installing.\n- `WQToolkit_source.tar.gz` - source snapshot (Xcode project included).\n\nNo jailbreak, no Mac at runtime. The app only reaches its own containers and its own App Groups; cross-app access is out of scope.\n\nTested on iPhone 15 Pro Max, iOS 27.3.",
+          "minOSVersion": "27.0",
+          "buildVersion": "11-12",
+          "buildNumber": "11-12"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/files.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/settings.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/tweaks.jpeg"
+      ]
+    },
+    {
+      "name": "Henge",
+      "bundleIdentifier": "com.henge.app",
+      "developerName": "Leviidev",
+      "subtitle": "8.6M · 在 iPhone 上跑 macOS",
+      "localizedDescription": "自带模拟器，可在 iPhone 与 iPad 上运行 macOS：自动下载 Apple 的恢复镜像并直接在设备上安装，不需要借助 Mac。Safari 等系统应用可正常使用。",
+      "iconURL": "https://raw.githubusercontent.com/Leviidev/Henge/main/docs/icon.png",
+      "tintColor": "#9135D4",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.3",
+          "date": "2026-11-10T23:53:38Z",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.3/Henge.ipa",
+          "size": 9036911,
+          "localizedDescription": "## What's new?\n- macOS Sonoma 14.6.1 and Ventura 13.6 in the Install tab: smaller downloads (14.1 and 12.3 GB) for devices short on storage\n- Sonoma's and Ventura's graphics drivers work with Henge, including Sonoma's moving wallpaper and video, without green bands\n- A light theme: Settings › Appearance picks System, Light or Dark (the session stays dark while a Mac runs)\n- The screen is a Magic Trackpad 2 to the Mac: macOS's own gestures, tap and hold clicks, and optional volume-button clicks (#54)\n- macOS downloads go on after Henge is closed or killed, and a trash button deletes a downloade",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-11",
+          "buildNumber": "11-11"
+        },
+        {
+          "version": "0.2",
+          "date": "2026-11-07T21:49:27Z",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.2/Henge.ipa",
+          "size": 8880854,
+          "localizedDescription": "## What's new?\n- macOS 27 (Golden Gate) installs and runs, as well as macOS Sequoia\n- Choose your Mac's memory, anywhere from 1 to 16 GB\n- Put the Mac on an external display over USB-C, on iOS 27 and on iOS 17-26\n- A bit faster: guest memory lookups were reworked, and macOS 27's constant TLB flushes no longer wipe every app's entries\n- Settings > Performance: refresh rate (60 Hz, or 120 Hz with ProMotion), faster disk writes, quicker wake from idle, superblocks (experimental) and a 1 GB or 1.5 GB code cache (experimental)\n- Colours fixed: macOS no longer looks washed out, and the iPad's P3 scr",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.1",
+          "date": "2026-11-06T13:28:11Z",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
+          "size": 8761298,
+          "localizedDescription": "## What's new?\nThe first release of Henge: macOS on your iPhone and iPad, installed right on the device with no Mac needed.\n\n## Confirmed Working\nmacOS Sequoia 15.6.1 - installs and boots on an iPhone 17 Pro, lock screen in about 15 seconds\nSafari\nDiscord - install, log in, send messages\nClipboard and file sharing between the iPhone and macOS\n\niPad support is new and hasn't run on a real iPad yet.\n\n## Installation\nSideload Henge.ipa with SideStore or AltStore, or install Henge.tipa with TrollStore or TrollStore Lite. Enable JIT, open the Install tab and install macOS. Needs iOS 17 or later, an",
+          "minOSVersion": "17.0",
+          "buildVersion": "1",
+          "buildNumber": "1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "get-task-allow",
+          "dynamic-codesigning",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.developer.kernel.extended-virtual-addressing"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Henge uses the local network to pair with this iPhone for JIT, without a computer.",
+          "NSCameraUsageDescription": "Henge can use the volume buttons as the trackpad's mouse buttons. Receiving those presses needs the camera active; no video is recorded, saved or shown."
+        }
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Leviidev/Henge/main/Screenshots/macs.png",
+        "https://raw.githubusercontent.com/Leviidev/Henge/main/Screenshots/trackpad.png",
+        "https://raw.githubusercontent.com/Leviidev/Henge/main/Screenshots/install.png",
+        "https://raw.githubusercontent.com/Leviidev/Henge/main/Screenshots/ipad.jpg"
+      ]
+    },
+    {
+      "name": "RewindBox",
+      "bundleIdentifier": "com.neogamelab.neostation",
+      "developerName": "TarbleFR",
+      "subtitle": "254.7M · 多内核游戏库",
+      "localizedDescription": "NeoStation 的 iOS 与 iPadOS 独立维护分支，提供手柄友好的主机式游戏库，内嵌 Libretro 内核、MeloNX、Dolphin、ARMSX2 与 RPCS3 运行时，支持 JIT 流程与自备固件。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/icon.png",
+      "tintColor": "#BC2957",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.0.11",
+          "date": "2026-11-10T19:41:55Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.11/RewindBox-0.0.11.ipa",
+          "size": 267033667,
+          "localizedDescription": "# RewindBox 0.0.11 — Build 721\r\n\r\nEverything since RewindBox 0.0.10 (Build 559), brought together in one update.\r\n\r\n## 🎮 PlayStation 3 — RPCS3\r\n\r\n- **Assassin’s Creed:** audio mixing corrections prevent audio periods from being discarded during waits.\r\n- Reduced redundant rendering interruptions and repeated graphics work, including changes to **Vulkan/MoltenVK**.\r\n- Improved texture caching to reuse more previously calculated results.\r\n- **Black Ops II:** corrections to SPU synchronization, memory reservations and waits involved in stalls.\r\n- **Black Ops II:** earlier submission of pending oc",
+          "minOSVersion": "18.0",
+          "buildVersion": "11-11",
+          "buildNumber": "11-11"
+        },
+        {
+          "version": "0.0.10",
+          "date": "2026-10-26T23:06:26Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.10/RewindBox-.0.0.10.ipa",
+          "size": 188063063,
+          "localizedDescription": "## RewindBox 0.0.10 — Build 559\r\n\r\nEverything since 0.0.9-fix.1 (Build 530).\r\n\r\n### Interface\r\n- Refined Liquid Glass interface: one-line main header, a new \"NeoStation\" style (solid accent pill, matte surfaces, no blur), a working Interface preview with Apply/Revert, and floating side-menu bubbles in Settings and Scraper.\r\n- New options in 12 languages: status bar items, accent colour, controller focus style, LB/RB glyphs and side-menu panel.\r\n- ROM folder changes saved in quick succession no longer fail.\r\n\r\n### Nintendo Switch (embedded MeloNX)\r\n- Backend threading is now on by default, as i",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.0.9",
+          "date": "2026-10-25T03:10:45Z",
+          "downloadURL": "https://github.com/TarbleFR/RewindBox/releases/download/0.0.9-fix.1/RewindBox-Build530.ipa",
+          "size": 186305438,
+          "localizedDescription": "## RewindBox iOS — fix 0.0.9 (Build 530)\n\nThis hotfix addresses the identified MeloNX crash path on iOS: Vulkan returned ErrorFeatureNotPresent during direct host-memory buffer import after a Nintendo Switch game began rendering. The embedded engine now avoids that unsupported import on iOS and uses its existing GPU buffer/readback fallback.\n\n- Rebuilt and source-verified embedded MeloNX NativeAOT engine.\n- Existing RPCS3 Core and other supported embedded emulators retained.\n- Ad-hoc signed for re-signing with SideStore/AltStore.\n- Automated native/iOS-simulator and packaging checks passed.\n\nP",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/home.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/settings.png"
+      ]
+    },
+    {
+      "name": "Venera Prime",
+      "bundleIdentifier": "com.github.wgh136.venera.prime",
+      "developerName": "venera-app",
+      "subtitle": "16.0M · Venera 次世代重写版",
+      "localizedDescription": "原版 Venera 的重写版本，Flutter 与 Rust 构建。支持本地漫画与网络图源、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看，中文标签翻译来自 EhTagTranslation 项目。",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.8.1/assets/app_icon.png",
+      "tintColor": "#84C52F",
+      "category": "books",
+      "versions": [
+        {
+          "version": "2.8.1",
+          "date": "2026-11-10T18:00:24Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
+          "size": 16730617,
+          "buildVersion": "11-11",
+          "buildNumber": "11-11",
+          "localizedDescription": "# Venera Prime 2.8.1\n\n## 本次更新\n\n- **网络请求取消时闪退 #55**（@fanhua2006）：修复请求超时或取消后，延迟返回的网络回调触发原生库 abort 的问题；同时处理无效请求方法、缺失上传流、自定义 DNS 异常等相似错误路径。已复现并消除与反馈相同的原生崩溃堆栈，仍请在原设备、不挂 VPN 的启动场景复查。\n- **非默认目录刷新与恢复 #53**（@lzx377z）：补齐 Android 授权目录的属性查询和文本读写。“设置 → 应用 → 刷新本地库”与“导入 → 恢复本地下载”可读取漫画元数据，不再因缺少 stat/readAsString 实现抛出 UnimplementedError；未知修改时间不会覆盖已有漫画的创建时间。\n- **通用 SAF 存储目录 #54**（@GalahadVi）：保留 DocumentsProvider 的完整目录标识，按真实文档 ID 读写、创建和扫描，不再假定所有授权目录都是系统本地存储。兼容旧目录配置；服务暂时离线时保留用户所选目录，写入失败如实报告，兼容仅支持 wt 的 Provider。下载、阅读、导出与目录迁移共用修正后的文件访问链路。\n- **阅读图片刷新与长按 #49**（@sakana155）：刷新时清除实际图片缓存，防止此前的下载晚返回后覆盖刷新结果；长按缩放等待控制器就绪，退出阅",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.8.0",
+          "date": "2026-11-06T17:18:11Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+          "size": 16717141,
+          "buildVersion": "280",
+          "buildNumber": "280",
+          "localizedDescription": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.7.2",
+          "date": "2026-11-04T16:17:55Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
+          "size": 16716650,
+          "buildVersion": "272",
+          "buildNumber": "272",
+          "localizedDescription": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Dartotsu",
+      "bundleIdentifier": "ani.aayush262.dartotsu",
+      "developerName": "aayush2622",
+      "subtitle": "82.8M · Multiplatform anime and m…",
+      "localizedDescription": "A Flutter rewrite of Dantotsu: track and manage your anime, manga and novel lists across AniList, MyAnimeList, Simkl, Kitsu, MangaBaka and MangaUpdates, on Android, iOS, Windows, Linux and macOS.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.png",
+      "tintColor": "#5E23BC",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.2.1",
+          "date": "2026-11-10T09:17:52Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.1/Dartotsu-iOS-v1.2.1.ipa",
+          "size": 86846398,
+          "localizedDescription": "### 🎉 New Features\n* [4ac32da0](https://github.com/aayush2622/Dartotsu/commit/4ac32da0): feat: editable keyboard shortcuts for the app, player and reader with a settings screen and per group switches\n* [51b1a2d7](https://github.com/aayush2622/Dartotsu/commit/51b1a2d7): feat: community lists, disable skips, hoster grouping, Simkl movies & series mode\n* [5d387f41](https://github.com/aayush2622/Dartotsu/commit/5d387f41): feat: add Anime-Planet service, private-aware list sync and prequel/sequel cards\n* [5a5a3731](https://github.com/aayush2622/Dartotsu/commit/5a5a3731): feat: finished videos move ",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-10",
+          "buildNumber": "11-10"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-10-31T20:23:41Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.0/Dartotsu-iOS-v1.2.0.ipa",
+          "size": 86452665,
+          "localizedDescription": "### 🎉 New Features\n* [b47c79f8](https://github.com/aayush2622/Dartotsu/commit/b47c79f8): feat: installing an extension manager lists the Java runtime, core and manager as steps, and the runtime is an addon\n* [5333f288](https://github.com/aayush2622/Dartotsu/commit/5333f288): feat: the image sheet shows the file size of the page or image\n* [8554063c](https://github.com/aayush2622/Dartotsu/commit/8554063c): feat: a clearance is only sent with the user agent that earned it, the source settings sheet shows why a Cloudflare check failed, and the extension installer sheet shows progress, errors and ",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.1.1",
+          "date": "2026-10-23T15:49:05Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.1.1/Dartotsu-iOS-v1.1.1.ipa",
+          "size": 82544015,
+          "localizedDescription": "### 🎉 New Features\n* [905936a4](https://github.com/aayush2622/Dartotsu/commit/905936a4): feat: long press a manga page to save, share or copy it, with a reader setting to turn it off\n* [08c68690](https://github.com/aayush2622/Dartotsu/commit/08c68690): feat: submit skip times to AniSkip from the player\n* [30b71504](https://github.com/aayush2622/Dartotsu/commit/30b71504): feat: remember the save progress choice for a single series\n* [bf439535](https://github.com/aayush2622/Dartotsu/commit/bf439535): feat: compact playback speed sheet and remember the last used speed\n* [2b636653](https://github.",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/anime.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/manga.webp"
+      ]
+    },
+    {
+      "name": "MD3Music",
+      "bundleIdentifier": "com.md3music.md3music",
+      "developerName": "EPXiaohua",
+      "subtitle": "56.8M · 基于酷狗音乐 API 的 Materi…",
+      "localizedDescription": "基于酷狗音乐 API 的 Flutter 音乐播放器，内置嵌入式 Rust API 服务器，无需外部服务器即可使用。提供 MD3 与 Apple Music 风格播放页、逐字歌词与多种音频输出能力。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/icon.png",
+      "tintColor": "#BF256D",
+      "category": "other",
+      "versions": [
+        {
+          "version": "6.2.0",
+          "date": "2026-11-09T08:34:00Z",
+          "downloadURL": "https://github.com/EPXiaohua/MD3Music-iOS/releases/download/v6.2.0%2B53/MD3Music-3D-unsigned.ipa",
+          "size": 59561466,
+          "buildVersion": "11-09",
+          "buildNumber": "11-09",
+          "localizedDescription": "## 已知问题\n\n- **切歌无声 / 上一首残留问题仍存在**：本版已尝试根治（原生层播放/暂停去早退、切歌意图确立后立即静音旧源、挂起后死亡播放器自愈），真机实测概率性仍可复现——后续版本继续排查\n\n## 上游 6.2.0 移植\n\n- 版本号与上游对齐（6.2.0+53），全量同步上游 md3Music 6.2.0：播放链路重构（本地 API 服务器新增响度参数与预热、媒体会话收敛）、依赖更新（m3_expressive、ort_dart、image、sqflite_common_ffi 等）、桌面小组件服务调整与全部上游修复\n- just_audio 播放内核同步至上游版本，iOS fork 补丁（音频焦点中断转发、均衡器挂载、辅助播放器）全部保留并适配新接口\n\n## iOS 修复\n\n- **iOS 26 桌面小组件按钮全部无响应修复**：iOS 26 弃用了在 extension 中设置 `openAppWhenRun` 的行为（点击 intent 根本不执行）；按钮 intent 改为双 target 共享 + 新 `supportedModes` 属性。播放控制类按钮（播放/暂停、上下曲、FM 控制等）现走系统后台执行协议——**点组件直接切歌，不再跳转打开 app**\n- **短暂挂起回前台后播放不了修复**：挂起会触发系统媒体服务重置，播放器实例死亡但应用状态未更新",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "6.0.6",
+          "date": "2026-10-20T01:54:48Z",
+          "downloadURL": "https://github.com/EPXiaohua/MD3Music-iOS/releases/download/v6.0.6%2B50/MD3Music-3D-unsigned.ipa",
+          "size": 58237317,
+          "buildVersion": "50",
+          "buildNumber": "50",
+          "localizedDescription": "## 本版亮点\n\n- **iOS 开放文件系统**：开启文件共享（File Sharing）与原地打开——「文件」App 中出现 MD3Music 目录，可随时查看/管理此前「导入」功能拷入应用目录的音乐（本版起导入已由文件夹授权取代，旧导入文件仍会被正常扫描播放）\n- **iOS 本地音乐改为文件夹授权**：移除「导入」，改用系统「文件」App 授权文件夹——授权后书签持久化（冷启动自动恢复访问）、原位扫描原位播放不占双份空间；界面与 Android 同一套（曲目/专辑/艺术家/文件夹/收藏，扫描菜单、排除文件夹一致），未扫描时空状态按钮为「授权文件夹」，加号菜单「扫描音乐」与 Android 一致为纯重扫\n- **iOS 均衡器体验修复**：调节滑杆不再有「咔哒」噪声（系数改为逐样本平滑逼近，不复位滤波器状态）；修复调节后效果时有时无、需要反复调的问题（回归稳定的 activeBands 架构）\n- **iOS 画中画悬浮歌词修复**：背景不再闪烁、歌词不再有残影、边缘不再有黑色羽化/黑边（高斯模糊改为外扩渲染裁中心区，杜绝边缘污染与半透明带）\n\n## 其它\n\n- README 构建说明澄清：Rust 服务器为后期引入组件，Android 产物已入库、**iOS 产物（libkugou_server.a）未入库，本地构建 iOS 前必须先执行 `build_ios.sh` 交叉",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "6.0.5",
+          "date": "2026-10-17T00:55:32Z",
+          "downloadURL": "https://github.com/EPXiaohua/MD3Music-iOS/releases/download/v6.0.5%2B49/MD3Music-3D-unsigned.ipa",
+          "size": 58230397,
+          "buildVersion": "49",
+          "buildNumber": "49",
+          "localizedDescription": "## 本版亮点\n\n- **iOS 长按保存图片修复**：新增原生相册写入插件（PHPhotoLibrary，仅需「添加到相册」权限），保存至「MD3Music」相册并自动建簿；此前长按保存必然失败（channel 未注册）\n- **iOS 切歌无声 / 上一首残留修复**：切歌起播改走 AVPlayer `play()`（自动激活音频会话，直接设 rate 不会激活——中断结束后会话处于停用态就表现为「播放中、频谱动但无声」）；新源装载时无条件暂停旧音频，Dart 侧状态漂移也不再留下上一首的残留声\n- **iOS 自定义背景返回主界面消失修复**：iOS 路由过渡对齐 Android 的「页面自带背景」策略（Cupertino 动效 + 内嵌背景层），返回主界面后背景随页面自身渲染，不再依赖全局单层背景（A11 + Impeller 偶发渲染失效）\n- **iOS 音频导入彻底修复**：文件选择器去掉 `.audio` 伞类型，只放行白名单格式（mp3/flac/m4a/aac/ogg/opus/wav/aiff/ape/wma/aif），`.mid` 等冷门容器在**选择器里直接置灰不可选**；拷贝源头另有白名单兜底。此前「什么文件都能选进来、选了又不显示」的问题根治\n- **iOS 长按快捷方式补图标**：9 张模板图标（收藏/识曲/搜索/发现/本地音乐/私人FM/封面流/排",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/images/fm.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/images/comment.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/images/settings.webp"
+      ]
+    },
     {
       "name": "StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
@@ -55,6 +475,49 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.png",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.png"
+      ]
+    },
+    {
+      "name": "Simple Live",
+      "bundleIdentifier": "com.xycz.simple-live",
+      "developerName": "June6699",
+      "subtitle": "33.8M · 支持弹幕与 IPTV 的开源多平…",
+      "localizedDescription": "简简单单的看直播（Simple Live）是一款使用 Flutter 开发的开源多平台直播聚合播放器，支持虎牙、斗鱼、哔哩哔哩、抖音、快手等平台的直播与弹幕，并内置公开的 IPTV 直播源。支持关注、标签、历史与弹幕屏蔽词，配置可导入导出，并可通过房间服务、局域网或 WebDAV 同步。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.png",
+      "tintColor": "#C62490",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.13.3",
+          "date": "2026-11-08T13:17:59Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.3/ios_no_sign.ipa",
+          "size": 35414735,
+          "localizedDescription": "# Simple Live v1.13.3 更新速览\r\n\r\n发布日期：2026-10-25\r\n\r\n本版主题：发热优化、Windows 退出修复、桌面端快捷键中文输入法适配、B站弹幕缺失修复与虎牙 4K 断流调查结论。2026-11-01 追加全屏四角时钟（#160），2026-11-02 追加音量增强与音量手势修复（#161），2026-11-03 修复抖音部分房间登录墙导致进不去、关注页刷不出，2026-11-08 追加 iOS 系统画中画、取消关注不再触发全量刷新（#163）与 WebDAV 恢复 500 根因修复（#164）。\r\n\r\n经过19次构建，终于解决了，连media_kit都没解决的iOS PIP问题，在一个PR中，获得了思路，经过一些修复，与我们项目实现了兼容。\r\n\r\n在此，感谢各位提供日志的用户：@laobai95 等等多位用户（请在群内提供git用户名）。\r\n## 省电模式（新增，默认关闭）\r\n\r\n- 针对安卓端观看时发热严重的反馈，新增一键「省电模式」（设置 → 直播间设置 → 播放器，置于首位）：视频缩放降档（均衡 → bilinear、画质 → spline36）、弹幕限 60 帧、关闭弹幕描边、放宽安卓播放检测频率、多开上限 4 个且压至最低清晰度。\r\n- 默认关闭，关闭时所有行为与 v1.13.2 完全一致；打开后进入下一个直播间生效。全端开关一致可见",
+          "minOSVersion": "13.0",
+          "buildVersion": "11-08",
+          "buildNumber": "11-08"
+        },
+        {
+          "version": "1.13.2",
+          "date": "2026-10-20T10:21:52Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.2/ios_no_sign.ipa",
+          "size": 35118814,
+          "localizedDescription": "# Simple Live v1.13.2\r\n\r\n发布日期：2026-10-01（2026-10-20 重新构建，版本号不变）\r\n\r\n## 2026-10-22 追加改动\r\n\r\n### Windows 安装包 [Discussion #147](https://github.com/June6699/dart_simple_live/discussions/147)，[PR #148](https://github.com/June6699/dart_simple_live/pull/148)，感谢 @821869798 \r\n\r\n- Windows 端新增官方 Inno Setup 安装包 `SimpleLive-Windows-v1.13.2-Setup.exe`，与原有 zip 绿色版同时提供，按需选择。\r\n- 普通用户免管理员权限即可安装到当前用户目录；以管理员身份运行时安装到 Program Files。\r\n- 自动创建开始菜单快捷方式，桌面快捷方式为可选项；注册 App Paths，支持 `Win+R` 输入 `simplelive` 直接启动。\r\n- 在系统「已安装的应用」中可正常卸载，自动清理安装目录与注册表项。\r\n- 安装包采用 LZMA2 压缩（约 59.7 MB）；安装向导界面为英文。\r\n- 构建侧顺带修复两处问题，保证 Windows 包可持续构建：libmp",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.13.1",
+          "date": "2026-09-25T06:25:02Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.1/ios_no_sign.ipa",
+          "size": 35004780,
+          "localizedDescription": "### 紧急修复\r\n\r\n- 局域网设备同步新增\"同步斗鱼账号\"入口：上一版只做了斗鱼 Cookie 的接收端，发送端缺失，导致该功能实际不可用；本版补齐发送方法与页面入口。\r\n- 修复手机作为接收端缺少 `/sync/account/kuaishou` 路由的问题：此前手机之间互传或反向同步时快手 Cookie 无法接收。\r\n- 远程房间同步（SignalR）新增斗鱼、抖音、快手账号的发送与接收，与哔哩哔哩账号同步并列；配套同步服务器已支持对应事件中继。\r\n- 远程同步服务器默认地址切换为 `wss://june6699.top/sync`：原默认服务器 `sync.furry.mo.cn` 因 TLS 证书问题长期不可用，已迁移并退役；\"自定义地址\"与 Cloudflare Worker 备用线路不受影响。\r\n\r\n\r\n### 0.1、前言\r\n\r\n提前发布，祝大家双节快乐，因为一想到可以给很多宅男宅女们，提供假期更好的直播体验（尤其是斗鱼用户），我就充满了干劲，极致抽空完成更新，应该是最快的斗鱼断流修复分支吧？\r\n\r\n但是由于我一直没出现过斗鱼的这个断流问题，所以加了cookie之后是否能规避，仍需你们自己实测，猜测是斗鱼对于匿名用户的最高画质的限制，普遍出现在十分钟左右。\r\n\r\n### 0.2、文件大小优化\r\n\r\n- 全设备平台的安装包大小优化\r\n\r\n### 1、直播播放与账号\r",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/category.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/settings.webp"
       ]
     },
     {
@@ -1081,6 +1544,49 @@
       ]
     },
     {
+      "name": "iRAM+",
+      "bundleIdentifier": "novadev.iram-plus",
+      "developerName": "NexSideloading",
+      "subtitle": "4.4M · Enable Increased Memory Li…",
+      "localizedDescription": "Grant sideloaded apps the Increased Memory Limit and Extended Virtual Addressing entitlements directly on device: sign in with the Apple Account that signed them, pick an app and add the entitlement, then reinstall it. Works only with apps signed by an Apple account, not with enterprise certificates.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.png",
+      "tintColor": "#39CA3E",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-09-18T23:43:28Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.1/iRAM-Plus.ipa",
+          "size": 4562979,
+          "localizedDescription": "Hey everyone,\r\nSorry for not working on or updating this app in a while, but this release fixes the -80045 sign in issue and other bugs!",
+          "minOSVersion": "16.0",
+          "buildVersion": "09-19",
+          "buildNumber": "09-19"
+        },
+        {
+          "version": "1.3.2",
+          "date": "2026-09-17T22:30:36Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.2-experimental-2fa-methods/iRAM-Plus.ipa",
+          "size": 4822443,
+          "localizedDescription": "This is a release [created automatically with GitHub Actions workflow](https://github.com/NexSideloading/iRAM-Plus/actions/runs/35281296012/attempts/1).",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-09-13T03:52:20Z",
+          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.0/iRAM-Plus.ipa",
+          "size": 4556375,
+          "localizedDescription": "- **Fixed login**: Fix GSA authentication & login\r\n- **Dual Entitlements System**: Now supports both Increased Memory Limit and Extended Virtual Addressing with individual toggles\r\n- **Settings Restructuring**: New \"Entitlements\" and \"Options\" sections with improved organization\r\n- **Apple ID → Apple Account**: Renamed throughout the app with automatic credential migration\r\n- **Debug Mode**: New debug toggle that controls API responses, server response buttons, and debug logs\r\n- **Navigation Fixes**: Fixed login flow to properly navigate to app selection instead of skipping to add entitlements",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/start.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/app.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/settings.webp"
+      ]
+    },
+    {
       "name": "SideStore",
       "bundleIdentifier": "com.SideStore.SideStore",
       "developerName": "SideStore Team",
@@ -1119,8 +1625,7 @@
       ],
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/news.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.png"
       ]
     },
     {
