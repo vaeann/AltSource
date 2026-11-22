@@ -40,6 +40,24 @@
           "minOSVersion": "17.0"
         }
       ]
+    },
+    {
+      "name": "cilicili",
+      "bundleIdentifier": "cc.bili",
+      "developerName": "Rone89",
+      "subtitle": "哔哩哔哩第三方客户端",
+      "localizedDescription": "cilicili 是用 SwiftUI 写的 B 站第三方客户端，支持首页推荐、搜索、UP 主空间、动态流、视频详情与弹幕，可评论、点赞、投币、收藏、分享。播放基于 AVPlayer 的 HLS 链路，针对 iOS 26+ 的 HEVC 硬解做了优化。需要 iOS 26.1 及以上。",
+      "iconURL": "https://raw.githubusercontent.com/Rone89/cilicili/main/bili/Assets.xcassets/AppIcon.appiconset/cilicili-icon.png",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.1.7",
+          "date": "2026-11-21T02:38:11Z",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.7/bili-release-unsigned.ipa",
+          "size": 25017751,
+          "minOSVersion": "26.1"
+        }
+      ]
     }
   ],
   "news": []
