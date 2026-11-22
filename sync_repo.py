@@ -75,14 +75,17 @@ def pick_build(asset_name, tag):
 
 
 def releases_to_versions(repo, keep, include_pre=False):
-    """把仓库的 release 列表转成 versions 数组（最新在前）"""
+    """把仓库的 release 列表转成 versions 数组（最新在前）
+
+    正式版优先：有的项目会长期挂一个 test-pre / nightly 之类的标签，反复替换里面的
+    安装包。这种地址随时会失效（替换后旧文件名就 404 了），所以只有正式版不够时才用它。
+    """
     rels = gh(f"/repos/{repo}/releases?per_page=15")
-    out = []
+    stable, pre = [], []
     seen_ver = set()
     for r in rels:
         if r.get("draft"):
             continue
-        # 预发布版（如 v2.2.0-pre.1）默认不收：版本号带后缀，和安装包里的真实版本对不上
         if r.get("prerelease") and not include_pre:
             continue
         ipas = [a for a in r.get("assets", []) if a["name"].lower().endswith(".ipa")]
@@ -111,9 +114,12 @@ def releases_to_versions(repo, keep, include_pre=False):
         body = (r.get("body") or "").strip()
         if body:
             item["localizedDescription"] = body[:600]
-        out.append({k: v for k, v in item.items() if v not in (None, "")})
-        if len(out) >= keep:
-            break
+        (pre if r.get("prerelease") else stable).append({k: v for k, v in item.items() if v not in (None, "")})
+
+    out = stable[:keep]
+    if len(out) < keep and include_pre:
+        out += pre[: keep - len(out)]
+    out.sort(key=lambda x: str(x.get("date") or ""), reverse=True)
     return out
 
 
