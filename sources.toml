@@ -24,6 +24,8 @@ exclude = [
   "com.silverphase.editor",          # Silverphase：胶片模拟，很小众
   "com.rushhours.app",               # Rush Hours：小游戏
   "org.moviepilot.app",              # MoviePilot：已有 MoviePilotLite
+  # 2026-11-22：知乎作者改过包名，官方源里是 com.huamurui，旧包名 com.huamu013 排除
+  "com.huamu013.ZhihuMinusMinus",
   # 2026-11-18 老板点名删除
   "com.rileytestut.AltStore",        # AltStore：需要 AltServer 配合，源里已有 SideStore
   "com.rileytestut.AltStore.Beta",   # 上面那条的 beta 通道，防止顶位
@@ -165,6 +167,11 @@ tier = 0
 [[upstream]]
 label = "Cloudn 官方"
 url = "https://raw.githubusercontent.com/mengangs/Cloudn/main/altstore.json"
+tier = 0
+
+[[upstream]]
+label = "知乎-- 官方"
+url = "https://github.com/huamurui/zhihu-minus-minus/releases/latest/download/altstore-source.json"
 tier = 0
 
 # ==========================================================

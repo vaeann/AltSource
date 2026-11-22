@@ -398,5 +398,49 @@
   "cc.bili": {
     "subtitle": "哔哩哔哩第三方客户端",
     "description": "cilicili 是用 SwiftUI 写的 B 站第三方客户端，支持首页推荐、搜索、UP 主空间、动态流、视频详情与弹幕，可评论、点赞、投币、收藏、分享。播放基于 AVPlayer 的 HLS 链路，针对 iOS 26+ 的 HEVC 硬解做了优化；支持弹幕开关与样式设置、关键词过滤、图片大图预览。登录支持扫码和网页两种方式，登录态只存在本机钥匙串。注意：需要 iOS 26.1 及以上。"
+  },
+  "com.hghubx.app": {
+    "subtitle": "沉浸式竖屏播放客户端",
+    "description": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。"
+  },
+  "com.huamurui.ZhihuMinusMinus": {
+    "subtitle": "轻量无广告的第三方知乎客户端",
+    "description": "知乎--（zhihu-minus-minus）是一款轻量、简洁的第三方知乎客户端，去掉了广告与推荐干扰，只看问题和回答。用 React Native 开发，支持 iOS 与 Android，源码以 GPL 开源。"
+  },
+  "nl.jknaapen.fladder": {
+    "subtitle": "Jellyfin 媒体库客户端",
+    "description": "Fladder 是开源的 Jellyfin 客户端，连接你自建的 Jellyfin 服务器后可以浏览媒体库、看剧集与电影、管理播放进度。跨 iOS、Android 与桌面端，界面简洁，支持转码与字幕。"
+  },
+  "com.hentaipark.hentaiPark": {
+    "subtitle": "图集与视频聚合客户端",
+    "description": "跨平台内容聚合客户端，把图集、视频、音声、小说等资源集中到一处，支持聚合搜索、排行榜、订阅追更与离线下载。内容面向成年人，请自行确认所在地法律法规与年龄限制。"
+  },
+  "mumu.pduola.WQManager": {
+    "subtitle": "App 数据备份与缓存管理",
+    "description": "WQManager 是免越狱的应用数据管理工具，可以备份与还原应用的 Documents 与 Preferences、清理缓存、查看容器占用。基于沙盒漏洞实现，不需要越狱也不需要连接电脑。"
+  },
+  "me.ssus.gestaltedit": {
+    "subtitle": "MobileGestalt 参数编辑器",
+    "description": "GestaltEdit 是直接运行在 iPhone 与 iPad 上的 MobileGestalt 工具，可以查看和修改系统设备参数（如机型标识、功能开关），改前自动备份，支持一键恢复原厂值。"
+  },
+  "me.ssus.placard": {
+    "subtitle": "PosterBoard 壁纸管理器",
+    "description": "Placard 用来浏览、创建、安装和管理 iOS 的 PosterBoard 壁纸。可以导入现成的壁纸包，也能自己拼装图集与字体样式，直接应用到锁屏。"
+  },
+  "ani.aayush262.dartotsu": {
+    "subtitle": "动漫追踪与观看",
+    "description": "Dartotsu 是开源的动漫管理与观看客户端，通过 AniList 同步追番进度，支持在线观看、下载离线、记录已看集数与评分。跨 iOS、Android 与桌面端。"
+  },
+  "com.md3music.md3music": {
+    "subtitle": "Material 3 音乐播放器",
+    "description": "MD3Music 是用 Flutter 与 Rust 写的 Material 3 风格音乐播放器，界面参考 Apple Music。内置酷狗音乐接口，支持搜索、歌单、歌词与无损音质播放。"
+  },
+  "com.xycz.simple-live": {
+    "subtitle": "多平台直播聚合",
+    "description": "Simple Live 把多个直播平台的频道聚到一个 App 里，支持弹幕、画质切换、IPTV 源导入与自定义直播源。Flutter 开发，跨 iOS 与 Android。"
+  },
+  "novadev.iram-plus": {
+    "subtitle": "提升应用内存上限",
+    "description": "iRAM+ 用来给自己的侧载应用开启 Increased Memory Limit 权限，让原本受系统内存限制的应用能用更多内存，适合跑模拟器、虚拟机这类吃内存的工具。"
   }
 }

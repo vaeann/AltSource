@@ -1,65 +1,19 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 2 个（43 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 92 个，按更新频率分成 2 个源，这里是第 2 个（42 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.ios151.insav",
     "app.ehpanda",
     "com.zhangfuhao.wqtoolkit",
     "com.henge.app",
-    "com.neogamelab.neostation"
+    "com.neogamelab.neostation",
+    "com.github.wgh136.venera.prime"
   ],
   "apps": [
-    {
-      "name": "INSAV",
-      "bundleIdentifier": "com.ios151.insav",
-      "developerName": "ios151",
-      "subtitle": "1.6M · 四站点聚合的原生影视客户端",
-      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
-      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
-      "tintColor": "#91C930",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "date": "2026-11-13T05:33:07Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
-          "size": 1634598,
-          "buildVersion": "11-13",
-          "buildNumber": "11-13",
-          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-11-10T18:39:00Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-          "size": 1630941,
-          "buildVersion": "5",
-          "buildNumber": "5",
-          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-09T20:55:27Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
-          "size": 1523510,
-          "buildVersion": "4",
-          "buildNumber": "4",
-          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
     {
       "name": "EhPanda",
       "bundleIdentifier": "app.ehpanda",
@@ -346,8 +300,8 @@
       "name": "Dartotsu",
       "bundleIdentifier": "ani.aayush262.dartotsu",
       "developerName": "aayush2622",
-      "subtitle": "82.8M · Multiplatform anime and m…",
-      "localizedDescription": "A Flutter rewrite of Dantotsu: track and manage your anime, manga and novel lists across AniList, MyAnimeList, Simkl, Kitsu, MangaBaka and MangaUpdates, on Android, iOS, Windows, Linux and macOS.",
+      "subtitle": "82.8M · 动漫追踪与观看",
+      "localizedDescription": "Dartotsu 是开源的动漫管理与观看客户端，通过 AniList 同步追番进度，支持在线观看、下载离线、记录已看集数与评分。跨 iOS、Android 与桌面端。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.png",
       "tintColor": "#5E23BC",
       "category": "other",
@@ -389,8 +343,8 @@
       "name": "MD3Music",
       "bundleIdentifier": "com.md3music.md3music",
       "developerName": "EPXiaohua",
-      "subtitle": "56.8M · 基于酷狗音乐 API 的 Materi…",
-      "localizedDescription": "基于酷狗音乐 API 的 Flutter 音乐播放器，内置嵌入式 Rust API 服务器，无需外部服务器即可使用。提供 MD3 与 Apple Music 风格播放页、逐字歌词与多种音频输出能力。",
+      "subtitle": "56.8M · Material 3 音乐播放器",
+      "localizedDescription": "MD3Music 是用 Flutter 与 Rust 写的 Material 3 风格音乐播放器，界面参考 Apple Music。内置酷狗音乐接口，支持搜索、歌单、歌词与无损音质播放。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/icon.png",
       "tintColor": "#BF256D",
       "category": "other",
@@ -481,8 +435,8 @@
       "name": "Simple Live",
       "bundleIdentifier": "com.xycz.simple-live",
       "developerName": "June6699",
-      "subtitle": "33.8M · 支持弹幕与 IPTV 的开源多平…",
-      "localizedDescription": "简简单单的看直播（Simple Live）是一款使用 Flutter 开发的开源多平台直播聚合播放器，支持虎牙、斗鱼、哔哩哔哩、抖音、快手等平台的直播与弹幕，并内置公开的 IPTV 直播源。支持关注、标签、历史与弹幕屏蔽词，配置可导入导出，并可通过房间服务、局域网或 WebDAV 同步。",
+      "subtitle": "33.8M · 多平台直播聚合",
+      "localizedDescription": "Simple Live 把多个直播平台的频道聚到一个 App 里，支持弹幕、画质切换、IPTV 源导入与自定义直播源。Flutter 开发，跨 iOS 与 Android。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.png",
       "tintColor": "#C62490",
       "category": "other",
@@ -1547,8 +1501,8 @@
       "name": "iRAM+",
       "bundleIdentifier": "novadev.iram-plus",
       "developerName": "NexSideloading",
-      "subtitle": "4.4M · Enable Increased Memory Li…",
-      "localizedDescription": "Grant sideloaded apps the Increased Memory Limit and Extended Virtual Addressing entitlements directly on device: sign in with the Apple Account that signed them, pick an app and add the entitlement, then reinstall it. Works only with apps signed by an Apple account, not with enterprise certificates.",
+      "subtitle": "4.4M · 提升应用内存上限",
+      "localizedDescription": "iRAM+ 用来给自己的侧载应用开启 Increased Memory Limit 权限，让原本受系统内存限制的应用能用更多内存，适合跑模拟器、虚拟机这类吃内存的工具。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.png",
       "tintColor": "#39CA3E",
       "category": "other",

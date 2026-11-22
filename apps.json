@@ -1,7 +1,7 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 92 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -273,8 +273,8 @@
       "name": "HGhubX",
       "bundleIdentifier": "com.hghubx.app",
       "developerName": "zxsos",
-      "subtitle": "3.9M · 沉浸式竖屏播放",
-      "localizedDescription": "第三方客户端（Rust + Tauri 2），沉浸式竖屏播放，界面采用 Fluent 设计。上游仅提供未签名的 iOS 安装包，需自行用 Apple ID 签名安装（TrollStore 可直接导入）。\n\n上游协议为 PolyForm Noncommercial 1.0.0，仅限个人学习与非商业用途，禁止商业使用。项目主页：https://github.com/zxsos/HGhubX",
+      "subtitle": "3.9M · 沉浸式竖屏播放客户端",
+      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
       "iconURL": "https://github.com/zxsos.png?size=460",
       "tintColor": "#B92746",
       "category": "entertainment",
@@ -424,55 +424,12 @@
       ]
     },
     {
-      "name": "ZhihuMinusMinus",
-      "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
-      "developerName": "huamurui",
-      "subtitle": "14.2M · 轻量无广告知乎客户端",
-      "localizedDescription": "轻量的第三方知乎客户端，去掉广告干扰，支持浏览、搜索、收藏与创作。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ZhihuMinusMinus/icon.png",
-      "tintColor": "#C67D28",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.10.0",
-          "date": "2026-11-21T03:09:18Z",
-          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.10.0/zhihu-minus-minus-v0.10.0-unsigned.ipa",
-          "size": 14901422,
-          "localizedDescription": "### What's Changed\r\n\r\n* 下拉刷新不清空已加载列表内容 by @duofuwang in https://github.com/huamurui/zhihu-minus-minus/pull/193\r\n* fix: 个人主页分页拼接时按 id 去重 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/198\r\n* 完善划线评论、选区操作与富文本阅读 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/200\r\n* 稳定折叠回答卡片的滚动位置，直接展示同题问题详情 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/201\r\n* fix: 预览列表模式下点回答卡片不发起标题过渡 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/202\r\n* 为「我的」页添加随滚动收起的头像和模糊封面 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/205\r\n* ",
-          "minOSVersion": "16.4",
-          "buildVersion": "11-21",
-          "buildNumber": "11-21"
-        },
-        {
-          "version": "0.9.10",
-          "date": "2026-11-06T14:01:41Z",
-          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa",
-          "size": 14833319,
-          "localizedDescription": "### What's Changed\r\n* 统一首页导航与内容操作栏外观 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/187\r\n* 调整 Android 页面进入和返回转场 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/186\r\n* 优化文章与想法详情首屏和操作栏 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/188\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6296309837490493137-w\" src=\"https://github.com/user-attachments/assets/bbed6e50-bf62-4205-a4ef-65cc71fd9174\" />\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6298716015608665964-w\" src=\"https://github.com/user-attachments/assets/99226fd4-0af5-47",
-          "minOSVersion": "16.4"
-        },
-        {
-          "version": "0.9.9",
-          "date": "2026-11-05T12:55:17Z",
-          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.9/zhihu-minus-minus-v0.9.9-unsigned.ipa",
-          "size": 14830602,
-          "localizedDescription": "一些 ui 调整与问题修复。\r\n\r\n### What's Changed\r\n* fix(ios): 修复系统分享无响应及长图导出失败 by @Cheukfung in https://github.com/huamurui/zhihu-minus-minus/pull/177\r\n* 优化回答悬浮操作栏布局与液态玻璃交互 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/182\r\n* fix(images): 长图在正文和预览中保持清晰 (#147) by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/157\r\n* fix(iOS): 修复复杂行内公式字形重叠 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/180\r\n* fix(iOS): 改善液态玻璃控件的对比度与布局 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/181\r\n\r\n### New Contributors\r\n* @Cheukfung made their first contri",
-          "minOSVersion": "16.4"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ZhihuMinusMinus/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ZhihuMinusMinus/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ZhihuMinusMinus/images/hot.png"
-      ]
-    },
-    {
       "name": "知乎--",
       "bundleIdentifier": "com.huamurui.ZhihuMinusMinus",
       "developerName": "huamurui",
-      "subtitle": "14.2M · 轻量、无广告的第三方知乎客…",
-      "localizedDescription": "轻量、无广告的第三方知乎客户端，支持浏览、搜索、收藏和创作。",
-      "iconURL": "https://cdn.jsdelivr.net/gh/huamurui/zhihu-minus-minus@main/src/assets/images/icon.png",
+      "subtitle": "14.2M · 轻量无广告的第三方知乎客户端",
+      "localizedDescription": "知乎--（zhihu-minus-minus）是一款轻量、简洁的第三方知乎客户端，去掉了广告与推荐干扰，只看问题和回答。用 React Native 开发，支持 iOS 与 Android，源码以 GPL 开源。",
+      "iconURL": "https://raw.githubusercontent.com/huamurui/zhihu-minus-minus/94b538aaef0eab74184a5a0ce473c2a35e39569f/src/assets/images/icon.png",
       "tintColor": "#84D42F",
       "category": "social",
       "versions": [
@@ -556,8 +513,8 @@
       "name": "Fladder",
       "bundleIdentifier": "nl.jknaapen.fladder",
       "developerName": "DonutWare",
-      "subtitle": "35.1M · A cross-platform Jellyfin…",
-      "localizedDescription": "A cross-platform Jellyfin frontend built on top of Flutter, for iOS. Stream or sync media locally, switch between multiple servers and profiles, and download items with their progress kept in sync.",
+      "subtitle": "35.1M · Jellyfin 媒体库客户端",
+      "localizedDescription": "Fladder 是开源的 Jellyfin 客户端，连接你自建的 Jellyfin 服务器后可以浏览媒体库、看剧集与电影、管理播放进度。跨 iOS、Android 与桌面端，界面简洁，支持转码与字幕。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Fladder/icon.webp",
       "tintColor": "#4FBC2D",
       "category": "other",
@@ -943,8 +900,8 @@
       "name": "HentaiPark",
       "bundleIdentifier": "com.hentaipark.hentaiPark",
       "developerName": "drdon1234",
-      "subtitle": "17.2M · 成人内容聚合客户端（18+）",
-      "localizedDescription": "本子、里番、JAV、写真、视频、小说与游戏的聚合客户端，跨站检索，阅读、观看与收藏统一管理。仅限成年人在当地法律允许的范围内使用；内容来自第三方站点，本应用不托管原站内容。IPA 为未签名包，需自行签名安装；覆盖安装应保持 Bundle ID 与签名身份。\n\n开源协议：AGPL-3.0　·　项目主页：https://github.com/drdon1234/Hentai-Park",
+      "subtitle": "17.2M · 图集与视频聚合客户端",
+      "localizedDescription": "跨平台内容聚合客户端，把图集、视频、音声、小说等资源集中到一处，支持聚合搜索、排行榜、订阅追更与离线下载。内容面向成年人，请自行确认所在地法律法规与年龄限制。",
       "iconURL": "https://raw.githubusercontent.com/drdon1234/Hentai-Park/v0.15.4/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#38AFD0",
       "category": "entertainment",
@@ -1246,8 +1203,8 @@
       "name": "WQManager",
       "bundleIdentifier": "mumu.pduola.WQManager",
       "developerName": "hseons",
-      "subtitle": "930K · 无需越狱的 App 数据备份与缓…",
-      "localizedDescription": "一款面向 iOS 26+ 的开源 App 数据管理、备份与单应用缓存清理工具，无需越狱。可把某个 App 的数据目录打包成可校验的备份并写回原 App，也能只清理所选 App 的缓存与临时目录。所有数据都在本机处理，没有账号、没有统计、没有云端。",
+      "subtitle": "930K · App 数据备份与缓存管理",
+      "localizedDescription": "WQManager 是免越狱的应用数据管理工具，可以备份与还原应用的 Documents 与 Preferences、清理缓存、查看容器占用。基于沙盒漏洞实现，不需要越狱也不需要连接电脑。",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/icon.png",
       "tintColor": "#8FB927",
       "category": "other",
@@ -1570,8 +1527,8 @@
       "name": "GestaltEdit",
       "bundleIdentifier": "me.ssus.gestaltedit",
       "developerName": "frs0n",
-      "subtitle": "6.9M · iOS 27 MobileGestalt 编辑器",
-      "localizedDescription": "直接在 iPhone / iPad 上编辑 com.apple.MobileGestalt.plist：能力预设（Siri AI、灵动岛、显示与 iPad 功能等）、完整字段编辑器，以及带修改前后对比的自动备份与恢复。\n\n要求 iOS / iPadOS 27.0 及以上并开启开发者模式；需要能授予 MobileGestalt 权限的签名工具（如 iLoader），普通自签通常无法写入系统配置。\n\n开源协议：GPL-3.0-or-later　·　项目主页：https://github.com/frs0n/GestaltEdit",
+      "subtitle": "6.9M · MobileGestalt 参数编辑器",
+      "localizedDescription": "GestaltEdit 是直接运行在 iPhone 与 iPad 上的 MobileGestalt 工具，可以查看和修改系统设备参数（如机型标识、功能开关），改前自动备份，支持一键恢复原厂值。",
       "iconURL": "https://raw.githubusercontent.com/frs0n/GestaltEdit/v2.3.1/GestaltEdit/PlacardIcon.png",
       "tintColor": "#2643D3",
       "category": "utilities",
@@ -1883,8 +1840,8 @@
       "name": "Placard",
       "bundleIdentifier": "me.ssus.placard",
       "developerName": "frs0n",
-      "subtitle": "6.4M · PosterBoard 壁纸管理（iOS 2…",
-      "localizedDescription": "在 iOS 上浏览、创建、安装和管理 PosterBoard 壁纸：社区壁纸、导入 .tendies 包、用最长 12 秒的片段做视频壁纸，以及查看和删除已安装的壁纸。界面含简体中文。\n\n要求 iOS 26.0 及以上；壁纸写入依赖 App Group 与 worse_query 相关权限，上游是未签名包，普通自签可能拿不到这些权限。\n\n开源协议：GPL-3.0　·　项目主页：https://github.com/frs0n/placard",
+      "subtitle": "6.4M · PosterBoard 壁纸管理器",
+      "localizedDescription": "Placard 用来浏览、创建、安装和管理 iOS 的 PosterBoard 壁纸。可以导入现成的壁纸包，也能自己拼装图集与字体样式，直接应用到锁屏。",
       "iconURL": "https://raw.githubusercontent.com/frs0n/placard/v2.0.3/docs/images/app-icon.png",
       "tintColor": "#B53077",
       "category": "utilities",
@@ -2148,6 +2105,52 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
       ]
+    },
+    {
+      "name": "INSAV",
+      "bundleIdentifier": "com.ios151.insav",
+      "developerName": "ios151",
+      "subtitle": "1.6M · 四站点聚合的原生影视客户端",
+      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
+      "tintColor": "#91C930",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-13T05:33:07Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "size": 1634598,
+          "buildVersion": "11-13",
+          "buildNumber": "11-13",
+          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-10T18:39:00Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "size": 1630941,
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-09T20:55:27Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
+          "size": 1523510,
+          "buildVersion": "4",
+          "buildNumber": "4",
+          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     }
   ],
   "news": []
