@@ -1,19 +1,174 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 92 个，按更新频率分成 2 个源，这里是第 2 个（42 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 2 个（43 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.ios151.insav",
+    "app.ehpanda",
     "com.zhangfuhao.wqtoolkit",
     "com.henge.app",
-    "com.neogamelab.neostation",
-    "com.github.wgh136.venera.prime",
-    "ani.aayush262.dartotsu"
+    "com.neogamelab.neostation"
   ],
   "apps": [
+    {
+      "name": "INSAV",
+      "bundleIdentifier": "com.ios151.insav",
+      "developerName": "ios151",
+      "subtitle": "1.6M · 四站点聚合的原生影视客户端",
+      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
+      "tintColor": "#91C930",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-13T05:33:07Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "size": 1634598,
+          "buildVersion": "11-13",
+          "buildNumber": "11-13",
+          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-10T18:39:00Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "size": 1630941,
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-09T20:55:27Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
+          "size": 1523510,
+          "buildVersion": "4",
+          "buildNumber": "4",
+          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "EhPanda",
+      "bundleIdentifier": "app.ehpanda",
+      "developerName": "EhPanda Team",
+      "subtitle": "18.0M · E-Hentai 非官方客户端",
+      "localizedDescription": "使用 SwiftUI 与 TCA 架构开发的非官方 E-Hentai 客户端，界面接近原生体验，支持画廊浏览、搜索、收藏与下载。注意 2.8.x 起最低要求 iOS 26.0，2.7.x 要求 iOS 17.0。",
+      "iconURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/icon.png",
+      "tintColor": "#8228CC",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "3.0.0",
+          "date": "2026-11-12T18:13:21Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
+          "size": 18858405,
+          "localizedDescription": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Fa",
+          "minOSVersion": "27.0",
+          "buildVersion": "11-13",
+          "buildNumber": "11-13"
+        },
+        {
+          "version": "2.8.1",
+          "date": "2026-07-20T12:12:04Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
+          "size": 7352364,
+          "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
+          "minOSVersion": "26.0",
+          "buildVersion": "158",
+          "buildNumber": "158"
+        },
+        {
+          "version": "2.7.10",
+          "date": "2024-12-21T03:22:53Z",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
+          "size": 7231227,
+          "localizedDescription": "1. Fixed reading page scroll functionality.",
+          "minOSVersion": "17.0",
+          "buildVersion": "156",
+          "buildNumber": "156"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
+        }
+      },
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/01-home.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/02-detail.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/03-reading.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/04-comments.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/05-downloads.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/06-filters.png",
+            "width": 1260,
+            "height": 2730
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/07-more.png",
+            "width": 1260,
+            "height": 2730
+          }
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/01-home.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/02-reading.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/03-downloads.png",
+            "width": 2752,
+            "height": 2064
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/04-more.png",
+            "width": 2752,
+            "height": 2064
+          }
+        ]
+      }
+    },
     {
       "name": "WQToolkit",
       "bundleIdentifier": "com.zhangfuhao.wqtoolkit",
@@ -447,53 +602,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/list.jpg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/update.jpg"
-      ]
-    },
-    {
-      "name": "VeneraNext",
-      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
-      "developerName": "CyrilPeng",
-      "subtitle": "20.5M · Venera 分支，跨平台漫画",
-      "localizedDescription": "Venera 的 fork，Flutter 跨平台漫画阅读器，覆盖 iOS、Android、Windows、Linux 与 macOS。长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载与 WebDAV 多设备同步。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.png",
-      "tintColor": "#257ABF",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.18.3",
-          "date": "2026-11-07T18:10:18Z",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-          "size": 21467556,
-          "buildVersion": "11-08",
-          "buildNumber": "11-08",
-          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyri",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.18.2",
-          "date": "2026-11-01T03:37:14Z",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-          "size": 21307925,
-          "buildVersion": "243",
-          "buildNumber": "243",
-          "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "1.18.1",
-          "date": "2026-10-25T03:30:26Z",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
-          "size": 21194544,
-          "buildVersion": "236",
-          "buildNumber": "236",
-          "localizedDescription": "### 正式版说明\n\n- 发布补丁正式版 `1.18.1+236`，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n\n### 重点复测与已知限制\n\n- **#111 升级／恢复后启动**：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- **#119 Android 自定义存储目录**：已修复 SAF 选择器返回的 `android://` 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- **#115",
-          "minOSVersion": "14.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.jpg"
       ]
     },
     {

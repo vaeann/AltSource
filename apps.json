@@ -1,26 +1,300 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 92 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
-    "com.armsx3.ARMSX3",
-    "com.github.pacalini.picaComic",
     "com.local.STV",
-    "sb.moe.kumone-ios",
-    "com.hghubx.app"
+    "com.linkpass.kazumi",
+    "com.thebcd69.bcd",
+    "com.hghubx.app",
+    "com.github.cyrilpeng.veneranext"
   ],
   "apps": [
+    {
+      "name": "i短剧",
+      "bundleIdentifier": "com.local.STV",
+      "developerName": "my-name-is-alan",
+      "subtitle": "45.0M · 多源短剧与视频聚合播放器",
+      "localizedDescription": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。",
+      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#8E2DB7",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.6",
+          "date": "2026-11-23T06:30:13Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b29-next-drama-cache/STV-1.6b29-unsigned.ipa",
+          "size": 47197741,
+          "localizedDescription": "# i短剧 1.6b29 双端播完连刷推荐、进度条缩略图预览、站源缓存与 iOS 扫码修复\n\n### 双端新特性（合并 PR #25 并对齐 iOS）\n- **播完连刷推荐（iOS + Android）**：\n  - 3 级瀑布流推荐（同系列下一季 → 同分类/同标签热门 Top 8 → 通用热门），自动过滤已看与本次跳过的剧；\n  - 播完大结局弹出 3 秒倒计时推荐卡片，支持「立即播放」「换一部」「取消」，可在「更多」中随时开关；Android 大结局上滑亦可直接滑出下一部推荐。\n- **进度条拖动缩略图预览（Android 合并 PR #25，对齐 iOS）**：\n  - 横竖屏拖动进度条时拇指上方浮出对应画面缩略图 + 实时时间戳与相对偏移，自适应横/竖屏比例，HLS 自动优雅降级。\n\n### 体验修复\n- **Android 站源/插件内存缓存与下拉刷新**：从 CMS 站源、JS 插件或黄果点进详情再返回时直接复用缓存并保持选中分类与滚动位置，不再重复加载；列表顶部支持手动下拉刷新。\n- **iOS 红果短剧扫码后台恢复修复**：后台 `WKWebView` 保持可见不透明层防止切回后定时器被 WebKit 冻结，并在 WebView 内直查 `/api/pc/profile` + 监听 `scenePhase == .active` + 增加手动检查登录按钮，切回 A",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        }
+      ]
+    },
+    {
+      "name": "Kazumi-Swift",
+      "bundleIdentifier": "com.linkpass.kazumi",
+      "developerName": "LinkPass888",
+      "subtitle": "23.4M · 液态玻璃风追番客户端",
+      "localizedDescription": "基于自定义规则的番剧采集与在线观看客户端，原生 SwiftUI 实现，界面使用 iOS 26 的液态玻璃材质。内置 mpv 播放内核与 Anime4K 实时超分，支持弹弹play 弹幕、Bangumi 追番绑定、时间表、下载与 WebDAV 备份。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/icon.png",
+      "tintColor": "#CC3249",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.1.2",
+          "date": "2026-11-23T06:25:05Z",
+          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.1.2/Kazumi_ios_v3.1.2_no_sign.ipa",
+          "size": 24543702,
+          "localizedDescription": "### 新增\n\n- 更新提醒通知可附带番剧封面：只从本地图片缓存取图，没有缓存就不附，不会为此额外联网\n\n### 修复\n\n- 修复在 Bangumi 上改追番状态、打评分、发评论时经常失败的问题：原来把这些操作发到了已经停用的旧地址，现在改回官方接口\n- 修复同步到 Bangumi 失败时只弹一句「同步失败」、看不出为什么的问题，现在会写明具体原因；标记看过也会区分成功与失败，并显示是第几集\n- 修复滑到时间表底部后再大量过滤或换排序，列表卡在可视区外导致整页空白的问题\n\n### 优化\n\n- 时间表同一列内的排序更准：用于排序的时刻与卡片底部「HH:mm 更新」同源，手动添加的条目也会补上时刻\n- 详情页顶部提示条改为胶囊样式并接入安全区，出现和消失更顺滑\n- 缩略图未下载完时先复用已缓存的小图，不再显示空白；小尺寸请求也能直接命中已缓存的大图\n- 「我的」页最近观看卡片提前预取封面，滚动时不再闪白\n\n### 已知问题\n\n- 部分番剧的详情页侧滑退出无法打断，按钮悬空慢淡出。这是 SwiftUI 原生转场机制的限制，暂时没有优化计划",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "3.1.1",
+          "date": "2026-11-21T14:56:42Z",
+          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.1.1/Kazumi_ios_v3.1.1_no_sign.ipa",
+          "size": 24528156,
+          "localizedDescription": "### 新增\n\n- 封面展开成详情页时改用新的缩放转场：卡片按自身圆角连续变形，展开与收回与 Apple TV App 的转场观感一致；追番页的收藏状态角标改为独立响应，点它不会再连带打开详情页\n- 观看历史在宽屏（可用宽度 ≥ 700）改为两到三列网格，与时间表页的排布一致\n\n### 修复\n\n- 修复 iPhone Duo 展开时推荐页横向海报货架溢出到右侧竖栏下面的问题\n- 修复 Duo 从全屏播放退出后再展开，界面仍被钉在竖向无法跟随设备旋转的问题\n- 修复手机横屏等矮屏下追番页与更多列表的封面被撑得比竖屏大近一倍的问题，改为按更小的步长分列\n\n### 优化\n\n- 时间表在横屏按窗口左右安全区计算页宽，翻页后不再露出下一天的一角\n- 更多列表页的卡片标题对齐追番页：12pt 常规字重、两行、行距 3.6、与海报顶部留 6pt，字号变化时高度跟着缩放\n- 从详情页返回推荐页时不再重读磁盘缓存并覆写列表，避免整页与所有卡片重新排版\n- 更多列表去掉右下角回顶悬浮按钮，恢复普通滚动；底部留白相应收紧",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "3.1.0",
+          "date": "2026-11-20T09:01:33Z",
+          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.1.0/Kazumi_ios_v3.1.0_no_sign.ipa",
+          "size": 24518636,
+          "localizedDescription": "### 新增\n\n- 下载支持后台保活与断点续传：切出应用甚至被系统挂起后下载仍会继续，中断后能接着续传，不再从头来\n- 观看历史支持按番名或规则名搜索、多选批量删除；有详情页地址的记录可以直接跳回该条目\n- 「我的」页最近观看的番剧支持一秒续播：从记录直接进章节解析，缓存直链失效时会自动回退重新检索一次，不会卡死\n- 规则仓库支持在自定义仓库与内置仓库之间直接切换，切换即保存并清空旧缓存；规则商店增加「更新全部」，规则管理进入时自动静默刷新目录，规则管理入口显示可更新数量\n- 以图搜番会保留本次会话的图片与识别结果，进详情页或返回后不用重新选图和识别\n- 搜索历史选中关键词后直接回填当前搜索页，不再一层层套新页面\n- 详情页在有观看记录时主按钮直接「续播」，旁边新增紧凑的「换源」入口，两者垂直排列\n\n### 修复\n\n- 修复下载进度只存在内存里，强杀应用后重启显示旧进度的问题：进度现在会周期性落盘，退到后台立即持久化\n- 修复从播放页正常返回详情页时还会多弹一层选源面板的问题：现在只有起播失败后主动点「返回选源」才会重开，并且按番剧区分，不会跨页误弹\n- 修复弹幕请求重复发起、白白消耗配额的问题：同一集加载中或已加载完成时不再重复请求；拉取时机改到章节与目标集确认之后，与网页嗅探并行，既不拖慢首帧，也不会在没有播放源时白拉一次\n- 规则仓库切换的生效状态此前不持久化，重启后会回到第",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/01-recommend.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/02-detail.jpeg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/03-player.jpeg"
+      ]
+    },
+    {
+      "name": "BCD",
+      "bundleIdentifier": "com.thebcd69.bcd",
+      "developerName": "thebcd69",
+      "subtitle": "219.8M · Windows 游戏启动器",
+      "localizedDescription": "面向手柄优化的快速启动器，在 iOS 与 iPadOS 上通过 Wine、FEX 与 Metal（DXMT）运行 Windows 游戏，内置 Steam 与 GOG 支持。",
+      "iconURL": "https://raw.githubusercontent.com/thebcd69/bcd-games/v0.1.712/app/Madeira/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#30CEAC",
+      "category": "games",
+      "versions": [
+        {
+          "version": "0.1.712",
+          "date": "2026-11-23T04:06:46Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.712/BCD.ipa",
+          "size": 230491268,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Everything new in this release is experimental and has been tried on only a few devices so far.** It may work great on yours, or it may not work at all. Either way, a log helps a lot.\n\n> **Tried a game on an earlier build? Reset its settings first.** On the game's page: **Options › Recommended settings › Reset to Recommended**. The recommended list changed for 78 games in this release.\n\nThis build brings everything sin",
+          "minOSVersion": "18.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "0.1.686",
+          "date": "2026-11-20T18:32:54Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.686/BCD.ipa",
+          "size": 224574618,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Everything new in this release is experimental and has been tried on only a few devices so far.** It may work great on yours, or it may not work at all. Either way, a log helps a lot.\n\n## Fixed: games crashed at start on iOS and iPadOS 26 and older\n\n- **0.1.682 crashed every game launch on iOS/iPadOS 26 and older.** It was the first release built with the iOS 27 SDK, and it used a system function that exists only from ",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.1.682",
+          "date": "2026-11-20T06:41:53Z",
+          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.682/BCD.ipa",
+          "size": 224532521,
+          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Tried a game on an earlier build? Reset its settings first.** On the game's page: **Options › Recommended settings › Reset to Recommended**, then check that **Options › Auto-tune › Auto-tune this game** is on.\n\n## iPhone Duo is supported\n\n- **BCD fills both displays.** BCD is now built with the iOS 27 SDK, so installed directly it fills the whole inner display, open or half open, and the outer display when the phone is",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "get-task-allow"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "BCD uses the local network to pair with this device for JIT, without a computer, and, if you turn it on in Settings, to download Steam games from a PC on this network.",
+          "NSPhotoLibraryAddUsageDescription": "BCD saves the screenshots you take in a game to your photo library. It never reads your photos."
+        }
+      }
+    },
+    {
+      "name": "HGhubX",
+      "bundleIdentifier": "com.hghubx.app",
+      "developerName": "zxsos",
+      "subtitle": "3.8M · 沉浸式竖屏播放客户端",
+      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
+      "iconURL": "https://github.com/zxsos.png?size=460",
+      "tintColor": "#B92746",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "2.2.8",
+          "date": "2026-11-23T03:55:29Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
+          "size": 4004198,
+          "localizedDescription": "# HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）**：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 `/newest/` 与 `/recommend/` 服务端渲染页面（失败时按 `/api/videos?sort=new|hot` 回退），支持自动分页与切线重载。\n2. **「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）**：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. **搜索页左右滑动切 Tab 与底栏快捷复位（#230、#23",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "2.2.7",
+          "date": "2026-11-22T12:13:11Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
+          "size": 3992968,
+          "localizedDescription": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免",
+          "minOSVersion": "15.0",
+          "buildVersion": "2.2.7",
+          "buildNumber": "2.2.7"
+        },
+        {
+          "version": "2.2.6",
+          "date": "2026-11-21T17:01:54Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
+          "size": 3990783,
+          "localizedDescription": "# HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类与原创频道与官网排序同步（#202、#211）**：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. **海报左上角新增「原创」「热播」「新片」角标（#202、#211）**：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. **分页列表统一改为上滑自动加载（#202、#211）**：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. **多页面支持左右滑动切换标签栏（#208、#209）**：排行榜支持左右滑动切",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "VeneraNext",
+      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+      "developerName": "CyrilPeng",
+      "subtitle": "20.6M · Venera 分支，跨平台漫画",
+      "localizedDescription": "Venera 的 fork，Flutter 跨平台漫画阅读器，覆盖 iOS、Android、Windows、Linux 与 macOS。长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载与 WebDAV 多设备同步。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.png",
+      "tintColor": "#257ABF",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.18.4",
+          "date": "2026-11-23T03:27:29Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+          "size": 21589601,
+          "buildVersion": "11-23",
+          "buildNumber": "11-23",
+          "localizedDescription": "### 正式发布与验收\n\n- 发布 `1.18.4+253`，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.18.3",
+          "date": "2026-11-07T18:10:18Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+          "size": 21467556,
+          "buildVersion": "249",
+          "buildNumber": "249",
+          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyri",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.18.2",
+          "date": "2026-11-01T03:37:14Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+          "size": 21307925,
+          "buildVersion": "243",
+          "buildNumber": "243",
+          "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.jpg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.jpg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.jpg"
+      ]
+    },
+    {
+      "name": "YouProEXTRA",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "alibusut",
+      "subtitle": "120.4M · YouTube 增强版",
+      "localizedDescription": "YouTube 的 YouPro 修改版，包含去广告、后台播放、下载、iSponsorBlock、画中画，以及大量可自定义的选项。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/icon.png",
+      "tintColor": "#49CF34",
+      "category": "other",
+      "versions": [
+        {
+          "version": "21.33.6",
+          "buildVersion": "11-23",
+          "date": "2026-11-23T00:34:29Z",
+          "localizedDescription": "### iOS16+ Release, ENJOY!!\r\n> [!NOTE]\r\n> - 📺Full 4KHDR support.\r\n> - 📦Downloads working partially. depending on hardware codecs. \r\n> - 🆕 `YTLowContrastMode` tweak, enabled by default.\r\n> \r\n> - - -\r\n> #### Extra Tweaks:\r\n> - `YouPip` `YTweaks` `YouSpeed` `YouMute` `YouLoop` `YTABConfig` `YouQuality` `YouChooseQuality`  `YouGetCaption` `YTLowContrastMode` \r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in YouTube (Safari Extension)`\r\n\r\n> [!WARNING]\r\n> - 21.34.3+ builds require iOS 17+ now.",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa2/YouProExtra_21.33.6_1.3.4.ipa",
+          "size": 126259311,
+          "minOSVersion": "16.0",
+          "buildNumber": "11-23"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.jpg",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.jpg"
+      ]
+    },
+    {
+      "name": "iBuilder",
+      "bundleIdentifier": "dev.ibuilder.app",
+      "developerName": "Absenti",
+      "subtitle": "39.1M · Switch games, built on yo…",
+      "localizedDescription": "iBuilder turns a Switch game dump you own into a native iOS build on the iPhone itself: extract, rewrite, translate the shaders, sign and play. Experimental: results differ per game.\n\nNo game, firmware or key is included or downloaded. Use it only with your own games and the prod.keys of your own console. Not affiliated with Nintendo or Apple.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/icon.webp",
+      "tintColor": "#3530C9",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.7",
+          "date": "2026-11-22T19:54:57Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.7/GameApp-rust-20261122-195251-rust2353f307.ipa",
+          "size": 40973312,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **No rebuild after an app update** that does not change what a built game is made of (a new *framework id*: host, rewriter, assembler, signer, profiles, game tables). The first update to 0.1.7 still rebuilds each game once.\n- **Beach Buggy Racing 2**: shaders read from Vector Unit's `.apf` archives (0 → 496), and the game no longer quits at start (engine: the friends notification queue opens o",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "0.1.4",
+          "date": "2026-11-22T16:28:12Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.4/GameApp-rust-20261122-162610-rust7d81008a.ipa",
+          "size": 40938569,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New: iPhone 12 and later**\n- **GPUs without BC textures** (A14–A16, e.g. iPhone 12–15 non-Pro, A14–A16 iPads) now take the engine path ported from the community fork [mianmuhammadse/nxnative `no-bc`](https://github.com/mianmuhammadse/nxnative/tree/no-bc) (MIT): BC1–5 decoded on the GPU at upload, BC1/2/3 stored as ASTC 4x4 (a quarter of the memory), CPU only for BC6H/BC7/3D. Automatic. `DM_NO_BC_GPU=0",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.1.3",
+          "date": "2026-11-22T15:19:40Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.3/GameApp-rust-20261122-151758-rust7d81008a.ipa",
+          "size": 40921895,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **Choose which game's shaders are prepared**: the Build tab lists the games waiting for shader preparation with their progress. Per game: *Prepare this one now* (the current one pauses and keeps what it finished), *Pause / Resume*, *Skip / Queue again*. The order persists; a newly built game now goes to the end of the queue.\n\n**Fixes**\n- **Full IPA export rejected by on-device signers** (Flare",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/build.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/settings.webp"
+      ]
+    },
     {
       "name": "ARMSX3",
       "bundleIdentifier": "com.armsx3.ARMSX3",
       "developerName": "ARMSX2",
       "subtitle": "44.1M · PS3 模拟器 iOS 移植",
       "localizedDescription": "基于 RPCS3 的 PlayStation 3 模拟器移植版，需要 A14 或更新芯片、iOS 17.4 以上。运行游戏还需要开启 JIT，并自备 PS3 系统软件与游戏镜像。重签时请保留原始 entitlements，当成完全未签名包处理会丢权限并闪退。",
-      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.3/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/ARMSX2/ARMSX3/ios-0.0.4/ios/app/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
       "tintColor": "#2F4DC5",
       "category": "games",
       "versions": [
@@ -40,9 +314,7 @@
           "downloadURL": "https://github.com/ARMSX2/ARMSX3/releases/download/ios-0.0.3/ARMSX3-0.0.3.ipa",
           "size": 46182129,
           "localizedDescription": "## XMB mode\r\n\r\n**The PS3's own menu.** ARMSX3 can now look and work like the PS3's XMB: the wave and sparkles, the boot, every column with its rows and settings, music with the Waves, Valley and Gaia visualizers, a video player, a photo viewer with slideshows, the XMB keyboard, and the in-game XMB with save states, Change Disc and Turn Off System. The icons, words, font and sounds come from your installed firmware, and a PS3 theme brings its own. Turn it on with the wave button in the library bar or in the last step of setup. On an iPhone it holds the screen in landscape, and while a game runs",
-          "minOSVersion": "17.4",
-          "buildVersion": "5",
-          "buildNumber": "5"
+          "minOSVersion": "17.4"
         },
         {
           "version": "0.0.2",
@@ -64,7 +336,7 @@
       "developerName": "ccbkv",
       "subtitle": "30.4M · Flutter 多源漫画阅读器",
       "localizedDescription": "多源漫画阅读器，内置 picacg、E-Hentai、JM、hitomi、nhentai 等图源，支持在线阅读、离线下载、本地与网络收藏、阅读历史，以及 WebDAV 数据同步。",
-      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
+      "iconURL": "https://raw.githubusercontent.com/ccbkv/PicaComic/5.1.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png",
       "tintColor": "#D63128",
       "category": "books",
       "versions": [
@@ -84,9 +356,7 @@
           "downloadURL": "https://github.com/ccbkv/PicaComic/releases/download/5.1.2/PicaComic-5.1.2-app-ios-build_no_sign.ipa",
           "size": 31711081,
           "localizedDescription": "# 5.1.2 (2026-11-18)\r\n**更新说明**\r\n- !! 由于微软onnxruntime仓库目前突发 404,目前无linux版 !!\r\n- 在app 的设置→关于里有tg群 \r\n- 修复下载闪退\r\n- 修复导出导入,\r\n- 欢迎提issues\r\n- ios用livecontainer装的这app想用本地导入外部漫画，要在livecontainer里长按你装的app，点设置，下滑看见（旧方法) 修复文件导入，打开它，然后就可以了\r\n**安装&更新**\r\n1.  (Android) 安装时不会覆盖 4.2.81 及之前的版本。用户数据通用，请在设置中手动迁移。用户数据通用,请先备份\r\nIOS、MacOS 版本未经任何实机测试，Linux  版本未经任何测试，不受任何支持.\r\n**Full Changelog**: https://github.com/ccbkv/PicaComic/compare/5.1.1...5.1.2",
-          "minOSVersion": "15.1",
-          "buildVersion": "46207",
-          "buildNumber": "46207"
+          "minOSVersion": "15.1"
         },
         {
           "version": "5.1.1",
@@ -101,28 +371,6 @@
         "entitlements": [],
         "privacy": {}
       }
-    },
-    {
-      "name": "i短剧",
-      "bundleIdentifier": "com.local.STV",
-      "developerName": "my-name-is-alan",
-      "subtitle": "44.8M · 多源短剧与视频聚合播放器",
-      "localizedDescription": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。",
-      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#8E2DB7",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.6",
-          "date": "2026-11-22T16:00:08Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b25-auto-next-chrome/STV-1.6b25-unsigned.ipa",
-          "size": 46957140,
-          "localizedDescription": "# i短剧 1.6b25 自动连播体验与双端增强版\n\n- **自动播放下一集保持隐藏播控（iOS，#21）**：自动连播切换分集时不再弹出顶部/底部播控栏，仅保留轻量的「第 N 集」OSD 提示，手动滑集与选集交互不变。\n- 包含 `1.6b24` 全部双端增强：Android 画中画 / 更多设置面板 / CAS GPU 锐化 / Compose 性能优化 / 演员可点击，以及 iOS 同步的倍速记忆、定时关闭、MPVKit GPU 锐化与演员可点击。\n\nIPA 为未签名包，需要自行重签后安装。Android 包使用项目现有分发签名。\n\n---\n包内版本为 1.6 build 25。IPA 未签名（最低 iOS 18），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：4ac3bae241cf7314daa5bbf0ce8d27cc1225dfa6\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45039937906",
-          "minOSVersion": "17.0",
-          "buildVersion": "11-23",
-          "buildNumber": "11-23"
-        }
-      ]
     },
     {
       "name": "Kumone",
@@ -168,48 +416,6 @@
       ]
     },
     {
-      "name": "HGhubX",
-      "bundleIdentifier": "com.hghubx.app",
-      "developerName": "zxsos",
-      "subtitle": "3.8M · 沉浸式竖屏播放客户端",
-      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
-      "iconURL": "https://github.com/zxsos.png?size=460",
-      "tintColor": "#B92746",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "2.2.7",
-          "date": "2026-11-22T12:13:11Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-          "size": 3992968,
-          "localizedDescription": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-22",
-          "buildNumber": "11-22"
-        },
-        {
-          "version": "2.2.6",
-          "date": "2026-11-21T17:01:54Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-          "size": 3990783,
-          "localizedDescription": "# HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类与原创频道与官网排序同步（#202、#211）**：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. **海报左上角新增「原创」「热播」「新片」角标（#202、#211）**：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. **分页列表统一改为上滑自动加载（#202、#211）**：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. **多页面支持左右滑动切换标签栏（#208、#209）**：排行榜支持左右滑动切",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.2.5",
-          "date": "2026-11-20T18:49:08Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.5/HGhubX_2.2.5_ios.ipa",
-          "size": 3927965,
-          "localizedDescription": "# HGhubX v2.2.5\r\n\r\n聚焦多语言支持（简体中文、繁体中文、英语）、播放器微光效果与多端播放交互修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\r\n@makisekurisu-jp @zxsos\r\n## 新增与优化\r\n1. **简体中文、繁体中文与英语界面切换（#190）**：默认使用简体中文，可在「设置 → 外观 → 语言」中一键切换简体中文、繁體中文与 English，切换后立即生效并跨重启持久化；繁体中文与英语词典按需异步加载，首屏默认体积接近零增长。\r\n2. **播放器微光效果（#192）**：低分辨率实时采样当前播放画面颜色并柔和扩散至视频黑边区域；可在「设置 → 播放 → 微光效果」中随时开关（默认开启，关闭后不挂载采样层以节省电量）。\r\n3. **精简移动端长按倍速交互（#193）**：移除拖动至顶部胶囊锁定倍速的繁琐交互，长按右侧仅作临时加速、长按左侧临时 0.5x 减速、松手即恢复原倍速；持久倍速统一在全屏倍速按钮或「更多 → 播放设置」中调整。\r\n\r\n## 修复\r\n1. **桌面端开启「上下划切集」滚轮切集失效（#195）**：桌面端开启「上下划切集」后，鼠标滚轮或触控板纵向滑动原本直接触发列表原生滚动跳到下一部剧；现拦截播放区纵向滚轮并在当前剧内顺滑切集、弹出集数提示，底部控制栏「下一集 ↓ / 下一部 ↓",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
-    {
       "name": "Swipt",
       "bundleIdentifier": "io.nekohasekai.swipt",
       "developerName": "nekohasekai",
@@ -221,10 +427,10 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-22T11:49:50Z",
-          "localizedDescription": "* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong and unsourced claims in comments\n* Fix the inner display of iPhone Duo being ignored\n* Translate the CLI with i18next\n* Enable strict type ",
+          "date": "2026-11-22T15:13:53Z",
+          "localizedDescription": "* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong ",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48182886,
+          "size": 48185875,
           "minOSVersion": "16.4",
           "buildVersion": "11-22",
           "buildNumber": "11-22"
@@ -247,11 +453,11 @@
       "category": "other",
       "versions": [
         {
-          "version": "2.6.0-nightly.20261122.0919",
+          "version": "2.6.0-nightly.20261122.2300",
           "date": "2026-11-22T06:28:24Z",
-          "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64-4K-pages.AppImage on most distros, or the 16K one on Asahi Linux and other Apple Silicon kernels (run getconf PAGESIZE if unsure)\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst, a 4K-page build\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst, a 4K-page build (Roc",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-c9b6e89f34-iOS-arm64.ipa",
-          "size": 40934979,
+          "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
+          "size": 40930252,
           "minOSVersion": "17.0",
           "buildVersion": "11-22",
           "buildNumber": "11-22"
@@ -497,49 +703,6 @@
       }
     },
     {
-      "name": "Kazumi-Swift",
-      "bundleIdentifier": "com.linkpass.kazumi",
-      "developerName": "LinkPass888",
-      "subtitle": "23.4M · 液态玻璃风追番客户端",
-      "localizedDescription": "基于自定义规则的番剧采集与在线观看客户端，原生 SwiftUI 实现，界面使用 iOS 26 的液态玻璃材质。内置 mpv 播放内核与 Anime4K 实时超分，支持弹弹play 弹幕、Bangumi 追番绑定、时间表、下载与 WebDAV 备份。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/icon.png",
-      "tintColor": "#CC3249",
-      "category": "other",
-      "versions": [
-        {
-          "version": "3.1.1",
-          "date": "2026-11-21T14:56:42Z",
-          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.1.1/Kazumi_ios_v3.1.1_no_sign.ipa",
-          "size": 24528156,
-          "localizedDescription": "### 新增\n\n- 封面展开成详情页时改用新的缩放转场：卡片按自身圆角连续变形，展开与收回与 Apple TV App 的转场观感一致；追番页的收藏状态角标改为独立响应，点它不会再连带打开详情页\n- 观看历史在宽屏（可用宽度 ≥ 700）改为两到三列网格，与时间表页的排布一致\n\n### 修复\n\n- 修复 iPhone Duo 展开时推荐页横向海报货架溢出到右侧竖栏下面的问题\n- 修复 Duo 从全屏播放退出后再展开，界面仍被钉在竖向无法跟随设备旋转的问题\n- 修复手机横屏等矮屏下追番页与更多列表的封面被撑得比竖屏大近一倍的问题，改为按更小的步长分列\n\n### 优化\n\n- 时间表在横屏按窗口左右安全区计算页宽，翻页后不再露出下一天的一角\n- 更多列表页的卡片标题对齐追番页：12pt 常规字重、两行、行距 3.6、与海报顶部留 6pt，字号变化时高度跟着缩放\n- 从详情页返回推荐页时不再重读磁盘缓存并覆写列表，避免整页与所有卡片重新排版\n- 更多列表去掉右下角回顶悬浮按钮，恢复普通滚动；底部留白相应收紧",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-21",
-          "buildNumber": "11-21"
-        },
-        {
-          "version": "3.1.0",
-          "date": "2026-11-20T09:01:33Z",
-          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.1.0/Kazumi_ios_v3.1.0_no_sign.ipa",
-          "size": 24518636,
-          "localizedDescription": "### 新增\n\n- 下载支持后台保活与断点续传：切出应用甚至被系统挂起后下载仍会继续，中断后能接着续传，不再从头来\n- 观看历史支持按番名或规则名搜索、多选批量删除；有详情页地址的记录可以直接跳回该条目\n- 「我的」页最近观看的番剧支持一秒续播：从记录直接进章节解析，缓存直链失效时会自动回退重新检索一次，不会卡死\n- 规则仓库支持在自定义仓库与内置仓库之间直接切换，切换即保存并清空旧缓存；规则商店增加「更新全部」，规则管理进入时自动静默刷新目录，规则管理入口显示可更新数量\n- 以图搜番会保留本次会话的图片与识别结果，进详情页或返回后不用重新选图和识别\n- 搜索历史选中关键词后直接回填当前搜索页，不再一层层套新页面\n- 详情页在有观看记录时主按钮直接「续播」，旁边新增紧凑的「换源」入口，两者垂直排列\n\n### 修复\n\n- 修复下载进度只存在内存里，强杀应用后重启显示旧进度的问题：进度现在会周期性落盘，退到后台立即持久化\n- 修复从播放页正常返回详情页时还会多弹一层选源面板的问题：现在只有起播失败后主动点「返回选源」才会重开，并且按番剧区分，不会跨页误弹\n- 修复弹幕请求重复发起、白白消耗配额的问题：同一集加载中或已加载完成时不再重复请求；拉取时机改到章节与目标集确认之后，与网页嗅探并行，既不拖慢首帧，也不会在没有播放源时白拉一次\n- 规则仓库切换的生效状态此前不持久化，重启后会回到第",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "3.0.9",
-          "date": "2026-11-19T13:39:16Z",
-          "downloadURL": "https://github.com/LinkPass888/Kazumi-Swift/releases/download/v3.0.9/Kazumi_ios_v3.0.9_no_sign.ipa",
-          "size": 24435927,
-          "localizedDescription": "### 新增\n\n- 一起看（Syncplay）：按标准 Syncplay 协议与其他客户端同房间同步播放，播放、暂停、拖动进度会自动对齐，支持房间口令与 TLS，顶栏显示实时延迟，可查看房间成员。服务器地址、房间、昵称和口令会记住并纳入设置备份\n- 下载剧集时顺带保存该集弹幕，离线或飞行模式下播放也能直接显示；在本地已有弹幕文件时优先读本地，不再等网络\n\n### 修复\n\n- 修复应用覆盖安装或用侧载工具重签后，沙盒目录变化导致已下载剧集打不开、下载记录失效的问题（[#39](https://github.com/LinkPass888/Kazumi-Swift/issues/39)）：现在按相对路径重新定位本地文件，旧记录里的失效路径也能找回\n- 修复下载剧集后在线选集列表加载不出来的问题\n- 修复弹幕设置里点「关键词屏蔽」会中断播放并退回上一页的问题；屏蔽按字面量和 `/正则/` 实时生效\n- 修复播放时屏幕不按设定常亮、跟随系统锁定时间熄屏的问题\n- 修复规则镜像设置的键名不一致，导致每次冷启动被重置的问题\n- 补齐设置备份遗漏的弹幕样式、硬解与低内存策略、AniSkip、Syncplay 等设置，恢复后立即生效，不需要重启\n- 修复通过 `kazumi://` 规则链接打开应用时不会弹出导入框的问题\n\n### 优化\n\n- 从播放页正常返回详情页时不再多叠一层选源面板；只有起播",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/01-recommend.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/02-detail.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/03-player.jpeg"
-      ]
-    },
-    {
       "name": "Breeze",
       "bundleIdentifier": "com.zephyr.breeze",
       "developerName": "deretame",
@@ -710,55 +873,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Fladder/images/Library.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Fladder/images/Player.webp"
       ]
-    },
-    {
-      "name": "BCD",
-      "bundleIdentifier": "com.thebcd69.bcd",
-      "developerName": "thebcd69",
-      "subtitle": "214.2M · Windows 游戏启动器",
-      "localizedDescription": "面向手柄优化的快速启动器，在 iOS 与 iPadOS 上通过 Wine、FEX 与 Metal（DXMT）运行 Windows 游戏，内置 Steam 与 GOG 支持。",
-      "iconURL": "https://raw.githubusercontent.com/thebcd69/bcd-games/v0.1.686/app/Madeira/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#30CEAC",
-      "category": "games",
-      "versions": [
-        {
-          "version": "0.1.686",
-          "date": "2026-11-20T18:32:54Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.686/BCD.ipa",
-          "size": 224574618,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Everything new in this release is experimental and has been tried on only a few devices so far.** It may work great on yours, or it may not work at all. Either way, a log helps a lot.\n\n## Fixed: games crashed at start on iOS and iPadOS 26 and older\n\n- **0.1.682 crashed every game launch on iOS/iPadOS 26 and older.** It was the first release built with the iOS 27 SDK, and it used a system function that exists only from ",
-          "minOSVersion": "18.0",
-          "buildVersion": "11-21",
-          "buildNumber": "11-21"
-        },
-        {
-          "version": "0.1.682",
-          "date": "2026-11-20T06:41:53Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.682/BCD.ipa",
-          "size": 224532521,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n> **Tried a game on an earlier build? Reset its settings first.** On the game's page: **Options › Recommended settings › Reset to Recommended**, then check that **Options › Auto-tune › Auto-tune this game** is on.\n\n## iPhone Duo is supported\n\n- **BCD fills both displays.** BCD is now built with the iOS 27 SDK, so installed directly it fills the whole inner display, open or half open, and the outer display when the phone is",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.1.665",
-          "date": "2026-11-15T15:07:37Z",
-          "downloadURL": "https://github.com/thebcd69/bcd-games/releases/download/v0.1.665/BCD.ipa",
-          "size": 222775641,
-          "localizedDescription": "**BCD is in alpha:** an early stage of development, before beta. Many games run, many do not yet, and things can break between builds. When a game fails, please send a log.\n\n## Red Dead Redemption 2\n\n- **No processor time lost on exceptions.** RDR2 asks Windows for the time tens of thousands of times a second, and every one of those calls used to take an exception that BCD caught and answered: about 20,000 a second through the tick count, and up to about 18,000 more through timer calls in the game's own process, which Rockstar's launcher starts. Both now run as plain calls, so a performance co",
-          "minOSVersion": "18.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.kernel.extended-virtual-addressing",
-          "com.apple.developer.kernel.increased-memory-limit",
-          "get-task-allow"
-        ],
-        "privacy": {
-          "NSLocalNetworkUsageDescription": "BCD uses the local network to pair with this device for JIT, without a computer, and, if you turn it on in Settings, to download Steam games from a PC on this network.",
-          "NSPhotoLibraryAddUsageDescription": "BCD saves the screenshots you take in a game to your photo library. It never reads your photos."
-        }
-      }
     },
     {
       "name": "Mangayomi",
@@ -1545,50 +1659,6 @@
       ]
     },
     {
-      "name": "YouProEXTRA",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "alibusut",
-      "subtitle": "138.6M · YouTube 增强版",
-      "localizedDescription": "YouTube 的 YouPro 修改版，包含去广告、后台播放、下载、iSponsorBlock、画中画，以及大量可自定义的选项。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/icon.png",
-      "tintColor": "#49CF34",
-      "category": "other",
-      "versions": [
-        {
-          "version": "21.33.6",
-          "date": "2026-11-16T19:37:48Z",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa7/YouTubePlus_21.33.6_6.0.ipa",
-          "size": 145337679,
-          "localizedDescription": "### iOS16+ Release, ENJOY!!\r\n\r\n**Cracked by** [@Spy_G](https://t.me/spyg_vault)\r\n\r\n> [!NOTE]\r\n> - 🔑  No subscription required. \r\n> - ✅ New Downloads manager.\r\n> - 📺 Full 4KHDR support. \r\n> - 📝 [6.0 release notes](https://github.com/dayanch96/YTLite/releases/tag/v6.0) \r\n> - 🆕 `YTLowContrastMode` tweak, enabled by default.\r\n>\r\n> - - -\r\n> #### Extra Tweaks: \r\n> - `YouPip` `YTweaks` `YTABConfig` `YouQuality` `YouChooseQuality` `YouGetCaption` `YTHoldForSpeed` `YTNativeShare` `YTLowContrastMode` \r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in YouTube (Safari Extension)` `VolumeBoostYT`",
-          "minOSVersion": "16.0",
-          "buildVersion": "11-17",
-          "buildNumber": "11-17"
-        },
-        {
-          "version": "21.46.3",
-          "date": "2026-11-16T18:24:30Z",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa8/YouTubePlus_21.46.3_6.0.ipa",
-          "size": 153419164,
-          "localizedDescription": "### Latest Release, ENJOY!!\r\n\r\n**Cracked by** [@Spy_G](https://t.me/spyg_vault)\r\n\r\n> [!NOTE]\r\n> - 🔑 No subscription required. \r\n> - ✅ New Downloads manager.\r\n> - 📺 Full 4KHDR support.\r\n> - 📝 [6.0 release notes](https://github.com/dayanch96/YTLite/releases/tag/v6.0)\r\n> - 🫧  Liquid Glass and iPhone Duo support.\r\n> - 🆕 `YTLowContrastMode` tweak, enabled by default.\r\n>\r\n> - - -\r\n> #### Extra Tweaks: \r\n> - `YouPip` `YTweaks` `YTABConfig` `YouQuality` `YouChooseQuality` `YouGetCaption` `YTHoldForSpeed` `YTNativeShare`  `YTLowContrastMode` \r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in ",
-          "minOSVersion": "16.0",
-          "buildVersion": "21.46.3",
-          "buildNumber": "21.46.3"
-        },
-        {
-          "version": "20.21.6",
-          "date": "2026-11-03T15:59:20Z",
-          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa5/YouTubePlus_20.21.6_6.0.ipa",
-          "size": 124900791,
-          "localizedDescription": "### iOS15+ Release, ENJOY!!\r\n\r\n**Cracked by** [@Spy_G](https://t.me/spyg_vault)\r\n\r\n> [!NOTE]\r\n> - 🔑 No subscription required. \r\n> - ✅ New Downloads manager.\r\n> - 📺 Full 4KHDR support with YTUHD\r\n> - 📝 [6.0 release notes](https://github.com/dayanch96/YTLite/releases/tag/v6.0)\r\n>\r\n> - - -\r\n> #### Extra Tweaks: \r\n> - `YouPip` `YTUHD` `YTweaks` `YTABConfig` `YouQuality` `YouChooseQuality` `YouGetCaption` `YTHoldForSpeed` `YTNativeShare`\r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in YouTube (Safari Extension)`\r\n> - - -\r\n\r\n> [!WARNING]\r\n> - ⚠️ Shorts do not work. Hide Shorts from tab b",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.jpg"
-      ]
-    },
-    {
       "name": "GestaltEdit",
       "bundleIdentifier": "me.ssus.gestaltedit",
       "developerName": "frs0n",
@@ -2080,161 +2150,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
       ]
-    },
-    {
-      "name": "INSAV",
-      "bundleIdentifier": "com.ios151.insav",
-      "developerName": "ios151",
-      "subtitle": "1.6M · 四站点聚合的原生影视客户端",
-      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
-      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
-      "tintColor": "#91C930",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "date": "2026-11-13T05:33:07Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
-          "size": 1634598,
-          "buildVersion": "11-13",
-          "buildNumber": "11-13",
-          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-11-10T18:39:00Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-          "size": 1630941,
-          "buildVersion": "5",
-          "buildNumber": "5",
-          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-09T20:55:27Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
-          "size": 1523510,
-          "buildVersion": "4",
-          "buildNumber": "4",
-          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
-    {
-      "name": "EhPanda",
-      "bundleIdentifier": "app.ehpanda",
-      "developerName": "EhPanda Team",
-      "subtitle": "18.0M · E-Hentai 非官方客户端",
-      "localizedDescription": "使用 SwiftUI 与 TCA 架构开发的非官方 E-Hentai 客户端，界面接近原生体验，支持画廊浏览、搜索、收藏与下载。注意 2.8.x 起最低要求 iOS 26.0，2.7.x 要求 iOS 17.0。",
-      "iconURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/icon.png",
-      "tintColor": "#8228CC",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "3.0.0",
-          "date": "2026-11-12T18:13:21Z",
-          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-AltStore.ipa",
-          "size": 18858405,
-          "localizedDescription": "EhPanda 3.0 is rebuilt with a new look.\r\n\r\n- Download galleries to read offline, sort them into folders, and keep downloading in the background.\r\n- Jump to galleries around any date with Seek to Date.\r\n- Log in with your username and password again, even behind a Cloudflare check.\r\n- Report comments, see a warning before posting, and block users.\r\n- Larger text, VoiceOver and Voice Control now work across the app.\r\n- Every screen rotates with your device, so the Enables landscape setting is gone.\r\n- The Auto-Lock setting is gone. To lock EhPanda, touch and hold its icon, then choose Require Fa",
-          "minOSVersion": "27.0",
-          "buildVersion": "11-13",
-          "buildNumber": "11-13"
-        },
-        {
-          "version": "2.8.1",
-          "date": "2026-07-20T12:12:04Z",
-          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
-          "size": 7352364,
-          "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
-          "minOSVersion": "26.0",
-          "buildVersion": "158",
-          "buildNumber": "158"
-        },
-        {
-          "version": "2.7.10",
-          "date": "2024-12-21T03:22:53Z",
-          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
-          "size": 7231227,
-          "localizedDescription": "1. Fixed reading page scroll functionality.",
-          "minOSVersion": "17.0",
-          "buildVersion": "156",
-          "buildNumber": "156"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSPhotoLibraryAddUsageDescription": "We need this permission to save images to your photo library."
-        }
-      },
-      "screenshots": {
-        "iphone": [
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/01-home.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/02-detail.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/03-reading.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/04-comments.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/05-downloads.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/06-filters.png",
-            "width": 1260,
-            "height": 2730
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/iphone/07-more.png",
-            "width": 1260,
-            "height": 2730
-          }
-        ],
-        "ipad": [
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/01-home.png",
-            "width": 2752,
-            "height": 2064
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/02-reading.png",
-            "width": 2752,
-            "height": 2064
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/03-downloads.png",
-            "width": 2752,
-            "height": 2064
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/EhPanda-Team/ehpanda-assets/main/app-marketplace/ipad/04-more.png",
-            "width": 2752,
-            "height": 2064
-          }
-        ]
-      }
     }
   ],
   "news": []
