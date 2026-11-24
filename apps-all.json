@@ -1,53 +1,96 @@
 {
   "name": "热门软件合集",
   "subtitle": "热门应用都在这里 · 按更新时间排序",
-  "description": "精挑细选的 iOS 侧载应用合集，94 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
+  "description": "精挑细选的 iOS 侧载应用合集，102 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
   "identifier": "com.vaeann.source.all",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#3D8B7D",
   "featuredApps": [
+    "ani.aayush262.dartotsu",
     "com.thm.orcaios",
-    "io.nekohasekai.screensharing",
-    "com.hghubx.app",
-    "com.armsx2.ios",
-    "cc.bili"
+    "com.zarz.mornye",
+    "io.github.kyosee.venera",
+    "com.local.STV"
   ],
   "apps": [
+    {
+      "name": "Dartotsu",
+      "bundleIdentifier": "ani.aayush262.dartotsu",
+      "developerName": "aayush2622",
+      "subtitle": "84.8M · 动漫追踪与观看",
+      "localizedDescription": "Dartotsu 是开源的动漫管理与观看客户端，通过 AniList 同步追番进度，支持在线观看、下载离线、记录已看集数与评分。跨 iOS、Android 与桌面端。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.webp",
+      "tintColor": "#5E23BC",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.2.2",
+          "date": "2026-11-24T18:50:07Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.2/Dartotsu-iOS-v1.2.2.ipa",
+          "size": 88947089,
+          "localizedDescription": "### 🎉 New Features\n* [7a7659c7](https://github.com/aayush2622/Dartotsu/commit/7a7659c7): feat: custom download amount and bulk select in the episode and chapter list\n* [a06bdbd4](https://github.com/aayush2622/Dartotsu/commit/a06bdbd4): feat: animated SVGs play in a web view layer so SMIL, CSS animations and external images work\n* [f6933146](https://github.com/aayush2622/Dartotsu/commit/f6933146): feat(mangabaka): add recommended section to home layout (#193)\n* [9e8a9275](https://github.com/aayush2622/Dartotsu/commit/9e8a9275): feat: Simkl home rows split into anime and movies & series, restore",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-25",
+          "buildNumber": "11-25"
+        },
+        {
+          "version": "1.2.1",
+          "date": "2026-11-10T09:17:52Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.1/Dartotsu-iOS-v1.2.1.ipa",
+          "size": 86846398,
+          "localizedDescription": "### 🎉 New Features\n* [4ac32da0](https://github.com/aayush2622/Dartotsu/commit/4ac32da0): feat: editable keyboard shortcuts for the app, player and reader with a settings screen and per group switches\n* [51b1a2d7](https://github.com/aayush2622/Dartotsu/commit/51b1a2d7): feat: community lists, disable skips, hoster grouping, Simkl movies & series mode\n* [5d387f41](https://github.com/aayush2622/Dartotsu/commit/5d387f41): feat: add Anime-Planet service, private-aware list sync and prequel/sequel cards\n* [5a5a3731](https://github.com/aayush2622/Dartotsu/commit/5a5a3731): feat: finished videos move ",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-10-31T20:23:41Z",
+          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.0/Dartotsu-iOS-v1.2.0.ipa",
+          "size": 86452665,
+          "localizedDescription": "### 🎉 New Features\n* [b47c79f8](https://github.com/aayush2622/Dartotsu/commit/b47c79f8): feat: installing an extension manager lists the Java runtime, core and manager as steps, and the runtime is an addon\n* [5333f288](https://github.com/aayush2622/Dartotsu/commit/5333f288): feat: the image sheet shows the file size of the page or image\n* [8554063c](https://github.com/aayush2622/Dartotsu/commit/8554063c): feat: a clearance is only sent with the user agent that earned it, the source settings sheet shows why a Cloudflare check failed, and the extension installer sheet shows progress, errors and ",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/anime.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/manga.webp"
+      ]
+    },
     {
       "name": "Orca",
       "bundleIdentifier": "com.thm.orcaios",
       "developerName": "huami1314",
-      "subtitle": "14.2M · iPhone client for Orca, t…",
+      "subtitle": "14.3M · iPhone client for Orca, t…",
       "localizedDescription": "Community-maintained iPhone client for Orca, the agent development environment: pair with Orca on your Mac and chat with agents, follow their tool calls and run commands in an embedded Ghostty terminal, with Live Activities, Picture in Picture and push notifications when the app is closed. Requires iOS 26 and a Mac running Orca.",
       "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orca/icon.webp",
       "tintColor": "#CE6D30",
       "category": "other",
       "versions": [
         {
+          "version": "0.1.4",
+          "date": "2026-11-24T18:05:00Z",
+          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.4/Orca-iOS-v0.1.4-unsigned.ipa",
+          "size": 14994104,
+          "localizedDescription": "## What's Changed\n* feat(pip): refine the two-line agent status overlay by @fobole-openthedoor in https://github.com/huami1314/orca-ios/pull/4\n\n\n**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.3...v0.1.4",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-25",
+          "buildNumber": "11-25"
+        },
+        {
+          "version": "0.1.3",
+          "date": "2026-11-24T13:10:03Z",
+          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.3/Orca-iOS-v0.1.3-unsigned.ipa",
+          "size": 14908074,
+          "localizedDescription": "## What's Changed\n* fix(workspace): show parent and child worktrees by @fobole-openthedoor in https://github.com/huami1314/orca-ios/pull/2\n* feat(pip): scroll compact agent status one row at a time by @fobole-openthedoor in https://github.com/huami1314/orca-ios/pull/3\n\n\n**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.2...v0.1.3",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.1.2",
           "date": "2026-11-24T07:00:40Z",
           "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.2/Orca-iOS-v0.1.2-unsigned.ipa",
           "size": 14888486,
           "localizedDescription": "**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.1...v0.1.2",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-24",
-          "buildNumber": "11-24"
-        },
-        {
-          "version": "0.1.1",
-          "date": "2026-11-24T06:45:53Z",
-          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.1/Orca-iOS-v0.1.1-unsigned.ipa",
-          "size": 14887969,
-          "localizedDescription": "## What's Changed\n* feat(app): surface agent activity and terminal chats by @fobole-openthedoor in https://github.com/huami1314/orca-ios/pull/1\n\n## New Contributors\n* @fobole-openthedoor made their first contribution in https://github.com/huami1314/orca-ios/pull/1\n\n**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.0...v0.1.1",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.1.0",
-          "date": "2026-11-23T20:24:59Z",
-          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.0/Orca-iOS-v0.1.0-unsigned.ipa",
-          "size": 14691056,
-          "localizedDescription": "**Full Changelog**: https://github.com/huami1314/orca-ios/commits/v0.1.0",
           "minOSVersion": "26.0"
         }
       ],
@@ -58,12 +101,237 @@
       ]
     },
     {
+      "name": "Mornye",
+      "bundleIdentifier": "com.zarz.mornye",
+      "developerName": "zarzet",
+      "subtitle": "33.4M · 高解析音乐播放器",
+      "localizedDescription": "Flutter 与 Rust 编写的音乐应用，带全屏播放器、高解析与 bit-perfect 输出、逐字同步歌词，以及可安装的元数据与音源扩展。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/icon.webp",
+      "tintColor": "#2742C8",
+      "category": "other",
+      "versions": [
+        {
+          "version": "5.4.5",
+          "date": "2026-11-24T16:54:31Z",
+          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.4.5/Mornye-v5.4.5-ios-unsigned.ipa",
+          "size": 34972605,
+          "localizedDescription": "## What's New\n\n### Added\n\n- **Parametric Equalizer**: Switch between Graphic and Parametric modes with up to 20 custom filters (peak, low shelf, and high shelf; 20 Hz to 20 kHz, +/-24 dB, Q 0.1 to 20), exact numeric entry, and import/export of plain-text AutoEQ-style filter lists (`Preamp` and `Filter` lines). Supported on Desktop, iOS, and Android (via the new playback engine DSP).\n- **Personal Home & Dedicated Search Tab**: Home is now always your personal page in both Material and Mornye styles, while Search becomes its own tab/destination opening directly on the extension feed (*Search fee",
+          "minOSVersion": "16.0",
+          "buildVersion": "11-25",
+          "buildNumber": "11-25"
+        },
+        {
+          "version": "5.4.0",
+          "date": "2026-11-17T09:32:14Z",
+          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.4.0/Mornye-v5.4.0-ios-unsigned.ipa",
+          "size": 41067187,
+          "localizedDescription": "### New Features\n\n- **home**: Let Continue listening be left off Home\n- **motion**: Give Mornye Apple-style springs and Material a true fade through\n- **metadata**: Rebuild track details on the collection header for both styles\n- **downloads**: Save the album cover as folder.jpg in the album folder\n- **link**: Show Play together in the computer's Devices\n- **link**: Share a phone's storage access songs with other phones\n- **link**: Serve songs the app lends to the Link server\n- **link**: Add Share with other phones to the phone's Link page\n- **link**: Host Link on a phone while it is open or p",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "5.3.1",
+          "date": "2026-11-05T10:34:12Z",
+          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.3.1/Mornye-v5.3.1-ios-unsigned.ipa",
+          "size": 38671004,
+          "localizedDescription": "### New Features\n\n- **artist**: Give Mornye's album card Music's plus and note\n- **search**: Drop Mornye desktop's filter chips, as in Music\n- **artist**: Shuffle an artist's Library songs from the Mornye hero\n- **mornye**: Music's glass inspector, player actions and Home text\n- **home**: Make Mornye's Home Music's own, picks included\n- **home**: Recently Played and extension playlists for Mornye\n- **theme**: Move a stored red Mornye accent to blue once\n- **search**: Mornye Top Results and a compact desktop toolbar\n- **home**: Open Mornye Home with Top Picks banners\n- **mornye**: Pour menus, f",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/nowplaying.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/lyrics.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/devices.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/settings.webp"
+      ]
+    },
+    {
+      "name": "VeneraX",
+      "bundleIdentifier": "io.github.kyosee.venera",
+      "developerName": "Kyosee",
+      "subtitle": "38.4M · Venera 个人增强分支",
+      "localizedDescription": "原版 Venera 的个人维护增强分支，通过插件接入多种漫画图源，提供本地收藏与阅读进度同步。",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#D55A2E",
+      "category": "books",
+      "versions": [
+        {
+          "version": "3.0.2",
+          "date": "2026-11-24T14:57:44Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-ios-3.0.2%2B266.ipa",
+          "size": 40285175,
+          "buildVersion": "11-24",
+          "buildNumber": "11-24",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-3.0.2.apk) | [ARM64](https://github.com/Kyosee/VeneraX",
+          "minOSVersion": "15.1"
+        },
+        {
+          "version": "3.0.1",
+          "date": "2026-11-20T10:56:20Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+          "size": 39632748,
+          "buildVersion": "260",
+          "buildNumber": "260",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee",
+          "minOSVersion": "15.1"
+        },
+        {
+          "version": "3.0.0",
+          "date": "2026-11-15T10:37:41Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
+          "size": 39423677,
+          "buildVersion": "258",
+          "buildNumber": "258",
+          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and s",
+          "minOSVersion": "15.1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "i短剧",
+      "bundleIdentifier": "com.local.STV",
+      "developerName": "my-name-is-alan",
+      "subtitle": "45.2M · 多源短剧与视频聚合播放器",
+      "localizedDescription": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。",
+      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#8E2DB7",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.6",
+          "date": "2026-11-24T14:44:43Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b35/STV-1.6b35-unsigned.ipa",
+          "size": 47415206,
+          "localizedDescription": "i短剧 iOS 1.6b35 (v1.6b35)\n\n包内版本为 1.6 build 35。IPA 未签名（最低 iOS 18），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：9671bcabf704718c5129ef74ec5be196bf85bae2\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45413781576",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        }
+      ]
+    },
+    {
+      "name": "Swipt",
+      "bundleIdentifier": "io.nekohasekai.swipt",
+      "developerName": "nekohasekai",
+      "subtitle": "46.0M · 用 JS 自动化操作设备",
+      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
+      "tintColor": "#2ED5B7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24T11:27:59Z",
+          "localizedDescription": "* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API level 4\n* Unify internal/graphics with event-driven Darwin cancellation\n* Extract api.Publish and api.Device\n* Extract tailscale.Controller and rename login Wait to Complete\n* Extract internal/fault, internal/s",
+          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+          "size": 48245435,
+          "minOSVersion": "16.4",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
+      ]
+    },
+    {
+      "name": "HGhubX",
+      "bundleIdentifier": "com.hghubx.app",
+      "developerName": "zxsos",
+      "subtitle": "3.9M · 沉浸式竖屏播放客户端",
+      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
+      "iconURL": "https://github.com/zxsos.png?size=460",
+      "tintColor": "#B92746",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "2.2.10",
+          "date": "2026-11-24T10:16:05Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.10/HGhubX_2.2.10_ios.ipa",
+          "size": 4048150,
+          "localizedDescription": "# HGhubX v2.2.10\n\n紧急适配上游全新 `dx150-edge-v1` 四作用域加密网关修复全接口 503，并合入标签置顶、右半屏长按倍速胶囊、搜索页热门标签官网同步、网络切换静默恢复、完结剧集「全 N 集」与窄屏布局修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **标签页长按置顶与标签结果页标题栏置顶（#247、#252）**：在「分类 → 标签」顶部新增「置顶标签」板块，支持长按标签 600ms 切换置顶/取消（最多 24 个，横向拖动超过 10px 取消防误触）；进入任意标签结果页后，标题栏右侧新增图钉按钮一键置顶（已置顶朝下扎稳并高亮），状态保存在内容偏好 `pinnedTags` 并跨重启保留。\n2. **移动端右半屏长按倍速与顶部只读胶囊提示（#247、#251）**：长按手势取消对角线斜切与居中死区，改为直觉的左右半屏切分（右半屏 `2×` 倍速、左半屏 `0.5×` 慢放，起手延迟缩至 `260ms`，横滑 `68px` 换挡，松手即恢复不锁定）；长按激活期间在安全区顶部居中显示无 `backdrop-filter` 的只读倍速胶囊与挡位点，清屏模式下也有清晰视觉反馈。\n3. **搜索结果 / 分类 / 标签卡片完结剧集显示「全 N 集」（#248）**：已完结剧目在海报底部集数角标",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        },
+        {
+          "version": "2.2.9",
+          "date": "2026-11-24T00:07:31Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+          "size": 4009527,
+          "localizedDescription": "# HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）**：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. **分类频道与标签结果页指标排序（#244）**：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 `jsonOnly` 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n\n## 修复\n1. **Android 播放页画面闪烁与瓦片异常（#240、#242）**：针对 Android WebView（Skia/Viz）在硬件 `<video>` 上方叠加高",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.2.8",
+          "date": "2026-11-23T03:55:29Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
+          "size": 4004198,
+          "localizedDescription": "# HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）**：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 `/newest/` 与 `/recommend/` 服务端渲染页面（失败时按 `/api/videos?sort=new|hot` 回退），支持自动分页与切线重载。\n2. **「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）**：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. **搜索页左右滑动切 Tab 与底栏快捷复位（#230、#23",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "WrapPin",
+      "bundleIdentifier": "com.suversal.wrappin",
+      "developerName": "suversal",
+      "subtitle": "6.8M · 本机虚拟定位与步行路线测试工具",
+      "localizedDescription": "WrapPin 是 Sean Howarth 原项目 Roam Control 的非官方社区中文分支，可通过设备配对在 iPhone 上选择固定位置、模拟步行或驾车路线，并在停止时恢复真实位置。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/icon.webp",
+      "tintColor": "#2FB0CA",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.26",
+          "date": "2026-11-24T07:09:57Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
+          "size": 7161177,
+          "localizedDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Re",
+          "minOSVersion": "18.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        },
+        {
+          "version": "1.0.25",
+          "date": "2026-11-18T17:29:45Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.25/WrapPin-Standard-1.0.25-build93-unsigned.ipa",
+          "size": 7117623,
+          "localizedDescription": "优化自定义路线的地点搜索：\n\n- 国内输入和点击“搜索”统一使用联想候选；点击“搜索”收起键盘，保留原来的候选列表，不再换成另一批结果。\n- 点击具体地点直接加入路线并返回，无需再次选择。\n- 联想结果统一显示添加图标，防止重复点击添加。\n\n候选数量由地图服务决定，最多显示六条。坐标输入、海外搜索和首页搜索保留原有方式。\n\n**安装**\n\nStandard 标准版适合 SideStore 与外部设备隧道；Tunnel 隧道版需要匹配的 Packet Tunnel 签名权限。两版均为 iOS/iPadOS 18.0+ 未签名 IPA，沿用原签名身份覆盖安装同一版本类型即可。\n\n路线搜索、候选保留、取消、恢复与定位连续性回归及双版 Release 包体校验通过；真实地图服务返回结果和签名安装仍需手机验收。\n\n[详细说明](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.zh-CN.md) · [English](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.md)\n\nSHA-256：\n\n- Standard：`b86567e92cad582a4cfca54e3d90079",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "1.0.24",
+          "date": "2026-11-18T06:20:00Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.24/WrapPin-Standard-1.0.24-build88-unsigned.ipa",
+          "size": 7114190,
+          "localizedDescription": "新增自定义路线，在 Apple 地图不提供步行规划的地区也能模拟移动。\n\n- 搜索地点、输入坐标或地图点选起终点与途经点，支持长按排序、逐点删除和撤销。\n- 支持 GPX 导入及轨迹段选择。\n- 统一速度滑块：0.1–240 公里/小时，步长 0.1；支持暂停、继续、返程和停止恢复真实位置。\n- 优化首页与路线浮框的三档拖动、背景可读性、按钮边界和收起摘要；移除弹簧吸附，增加路线页当前位置按钮。\n\n自定义地点按顺序直线连接，不自动贴合道路。路线计算和 GPX 解析在本机完成，无需 Apple 步行规划；地图显示和地点搜索仍可能需要网络。\n\n**安装包选择**\n\n- **Standard 标准版**：适合 SideStore 等自签，配合外部设备隧道；免费账号请选择标准版。\n- **Tunnel 隧道版**：内置设备隧道，需要匹配的 Packet Tunnel 签名权限。\n\n两版均为 iOS/iPadOS 18.0+ 未签名 IPA。使用原签名身份覆盖升级同一版本类型，正常配对无需移除。\n\n**验证范围**\n\n路线、GPX、速度、选点搜索、恢复记录、定位连续性及双版 Release 归档和包体校验通过。此前测试包已通过 iOS 26 模拟器交互及双版 Debug 编译；本次正式包签名安装、iOS 18 交互和长时间后台运行仍待真机验收。\n\n[详细说明](https://github.",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/fixed-location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/walking-active.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/privacy.webp"
+      ]
+    },
+    {
       "name": "Open Screen Sharing",
       "bundleIdentifier": "io.nekohasekai.screensharing",
       "developerName": "nekohasekai",
       "subtitle": "11.2M · 远程桌面客户端",
       "localizedDescription": "免费开源的远程桌面客户端，针对 Mac 屏幕共享与公网环境做了优化，同时完整支持标准 VNC 与 RDP 协议。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.webp",
       "tintColor": "#822DD7",
       "category": "other",
       "versions": [
@@ -95,34 +363,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.webp"
       ]
-    },
-    {
-      "name": "HGhubX",
-      "bundleIdentifier": "com.hghubx.app",
-      "developerName": "zxsos",
-      "subtitle": "3.8M · 沉浸式竖屏播放客户端",
-      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
-      "iconURL": "https://github.com/zxsos.png?size=460",
-      "tintColor": "#B92746",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "2.2.9",
-          "buildVersion": "11-24",
-          "date": "2026-11-24",
-          "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-          "size": 4009527,
-          "minOSVersion": "15.0",
-          "buildNumber": "11-24"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
     },
     {
       "name": "ARMSX2",
@@ -130,7 +372,7 @@
       "developerName": "ARMSX2",
       "subtitle": "39.1M · PS2 模拟器",
       "localizedDescription": "基于 PCSX2 的开源 PlayStation 2 模拟器，带原生 ARM64 JIT 重编译器，可在手机、PC 与掌机上运行 PS2 游戏。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/icon.webp",
       "tintColor": "#712ED5",
       "category": "other",
       "versions": [
@@ -146,9 +388,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/game.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/list.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/game.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/settings.webp"
       ]
     },
     {
@@ -290,34 +532,12 @@
       ]
     },
     {
-      "name": "i短剧",
-      "bundleIdentifier": "com.local.STV",
-      "developerName": "my-name-is-alan",
-      "subtitle": "45.0M · 多源短剧与视频聚合播放器",
-      "localizedDescription": "i短剧 是一款免费开源的 iOS 聚合播放器，一个 App 里看短剧、视频、漫画，也能浏览 Telegram 频道内容。SwiftUI 编写，通过 QuickJS 插件沙箱接入各类内容源，播放内核为 AetherEngine（自带 FFmpeg、dav1d 等解码组件）。项目以 GPL-3.0 开源，作者明确禁止任何形式的付费分发与售卖。",
-      "iconURL": "https://raw.githubusercontent.com/my-name-is-alan/iDuanJu/main/STV/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#8E2DB7",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.6",
-          "date": "2026-11-23T08:14:21Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b30-player-hotfix/STV-1.6b30-unsigned.ipa",
-          "size": 47198163,
-          "localizedDescription": "# i短剧 1.6b30 播放器热修（Android 黑屏无声修复 + iOS 无感切集优化）\n\n### Android 热修\n- **修复部分机型播放红果黑屏无声**：\n  - 移除双并发 `ExoPlayer`（`standbyPlayer`）与第二个 `TextureView`，改为单 `ExoPlayer` + 后台异步首帧 `Bitmap` 无缝交接，彻底消除双硬解实例抢占解码器/音频焦点的问题；\n  - `EpisodeCache` 首帧抽取改为后台异步执行，不再阻塞起播；\n  - 仅在开启超分锐化或 SDR→HDR 时才挂载 `VideoFrameProcessor` GL 管线，默认播放走原生硬件直出，并恢复 `2s / 2.5s` 安全预缓存间隔。\n\n### iOS 体验优化\n- **切集无闪烁 & 去 Toast**：\n  - 切集时保持当前播控显隐状态不变，不再强制弹出/闪烁底部进度条与播控栏，也不再清空 `tech` / `videoSize`；\n  - 移除切集时的「第 X 集」Toast 弹窗；\n  - 首帧交接增加 `90ms` 渲染缓冲（`revealedIndex`），等 `MPVMetalLayer` 送显第 0 帧后再揭开首帧图，消除切集瞬间黑闪。\n\nIPA 为未签名包，需要自行重签后安装。Android 包使用项目现有分发签名。\n\n---\n包",
-          "minOSVersion": "17.0",
-          "buildVersion": "11-23",
-          "buildNumber": "11-23"
-        }
-      ]
-    },
-    {
       "name": "Kazumi-Swift",
       "bundleIdentifier": "com.linkpass.kazumi",
       "developerName": "LinkPass888",
       "subtitle": "23.4M · 液态玻璃风追番客户端",
       "localizedDescription": "基于自定义规则的番剧采集与在线观看客户端，原生 SwiftUI 实现，界面使用 iOS 26 的液态玻璃材质。内置 mpv 播放内核与 Anime4K 实时超分，支持弹弹play 弹幕、Bangumi 追番绑定、时间表、下载与 WebDAV 备份。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/icon.webp",
       "tintColor": "#CC3249",
       "category": "other",
       "versions": [
@@ -349,9 +569,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/01-recommend.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/02-detail.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/03-player.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/01-recommend.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/02-detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi-Swift/images/03-player.webp"
       ]
     },
     {
@@ -409,7 +629,7 @@
       "developerName": "CyrilPeng",
       "subtitle": "20.6M · Venera 分支，跨平台漫画",
       "localizedDescription": "Venera 的 fork，Flutter 跨平台漫画阅读器，覆盖 iOS、Android、Windows、Linux 与 macOS。长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载与 WebDAV 多设备同步。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.webp",
       "tintColor": "#257ABF",
       "category": "other",
       "versions": [
@@ -445,9 +665,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.webp"
       ]
     },
     {
@@ -456,7 +676,7 @@
       "developerName": "alibusut",
       "subtitle": "120.4M · YouTube 增强版",
       "localizedDescription": "YouTube 的 YouPro 修改版，包含去广告、后台播放、下载、iSponsorBlock、画中画，以及大量可自定义的选项。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/icon.webp",
       "tintColor": "#49CF34",
       "category": "other",
       "versions": [
@@ -472,8 +692,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.webp"
       ]
     },
     {
@@ -566,7 +786,7 @@
       "developerName": "missuo",
       "subtitle": "4.2M · 网易云第三方客户端",
       "localizedDescription": "原生网易云音乐客户端，直连官方接口，不经第三方服务器。支持扫码登录、灰色歌曲解锁、带翻译的同步歌词，以及随封面染色的沉浸式播放界面。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/icon.webp",
       "tintColor": "#C5A725",
       "category": "other",
       "versions": [
@@ -598,36 +818,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/search.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/featured.png"
-      ]
-    },
-    {
-      "name": "Swipt",
-      "bundleIdentifier": "io.nekohasekai.swipt",
-      "developerName": "nekohasekai",
-      "subtitle": "46.0M · 用 JS 自动化操作设备",
-      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.png",
-      "tintColor": "#2ED5B7",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "date": "2026-11-22T15:13:53Z",
-          "localizedDescription": "* Avoid redundant SpringBoard reads when dismissing setup alerts\n* Fix sideload setup stalling on permission alerts and reopening Settings\n* Discover vphone virtual machines without Launchpad\n* Request unicast mDNS responses in the CLI\n* Replace polling loops with event-driven notifications\n* Fix sideload setup opening Settings after the Always location alert\n* Stream discovered devices into the CLI device picker\n* Request Always location access for the background service\n* Fix pairing, language updates and container SQLite in the driver\n* Fix cellular data being detected on Wi-Fi\n* Fix wrong ",
-          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48185875,
-          "minOSVersion": "16.4",
-          "buildVersion": "11-22",
-          "buildNumber": "11-22"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kumone/images/featured.webp"
       ]
     },
     {
@@ -636,7 +829,7 @@
       "developerName": "Predidit",
       "subtitle": "29.0M · 自定义规则追番",
       "localizedDescription": "基于自定义规则的番剧采集应用，支持流媒体在线观看、弹幕与实时超分辨率。GPL-3.0 开源，需自行签名安装。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/icon.webp",
       "tintColor": "#37D42F",
       "category": "other",
       "versions": [
@@ -668,12 +861,12 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/timetable.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/details.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/selection.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/rules.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/rules_edit.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/timetable.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/details.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/selection.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/rules.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Kazumi/images/rules_edit.webp"
       ]
     },
     {
@@ -682,7 +875,7 @@
       "developerName": "openAnimeFlow",
       "subtitle": "28.4M · 带弹幕的跨平台追番",
       "localizedDescription": "跨平台追番应用，支持 Bangumi 收藏同步与弹幕播放，可离线缓存。AGPL-3.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/icon.webp",
       "tintColor": "#2D6EB7",
       "category": "other",
       "versions": [
@@ -714,9 +907,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/comment.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AnimeFlow/images/comment.webp"
       ]
     },
     {
@@ -725,7 +918,7 @@
       "developerName": "kolbicz",
       "subtitle": "2.1M · 文件浏览器与 App 数据管理器",
       "localizedDescription": "面向 iOS 26 与 27 的文件浏览器、应用数据管理器与缓存清理工具，基于 worse_query 沙盒技术实现，无需越狱也无需内核漏洞。可浏览每个应用的数据容器、App Group、扩展与守护进程目录。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/icon.webp",
       "tintColor": "#27D7D7",
       "category": "other",
       "versions": [
@@ -757,7 +950,7 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/images/home.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/images/home.webp"
       ]
     },
     {
@@ -812,7 +1005,7 @@
       "developerName": "deretame",
       "subtitle": "26.6M · 插件式多源漫画阅读器",
       "localizedDescription": "Flutter 构建的漫画阅读器，通过插件机制接入图源，已支持哔咔、禁漫、E-Hentai、nhentai、拷贝漫画、包子漫画等多个来源。MPL-2.0 开源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/icon.webp",
       "tintColor": "#CE2BBB",
       "category": "other",
       "versions": [
@@ -844,8 +1037,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Breeze/images/plugin.webp"
       ]
     },
     {
@@ -946,7 +1139,7 @@
       "developerName": "Moustapha Kodjo Amadou",
       "subtitle": "112.0M · 漫画小说动漫聚合",
       "localizedDescription": "开源的 Flutter 应用，跨平台阅读漫画、看小说与追番，通过扩展添加内容源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/icon.webp",
       "tintColor": "#7E2CBE",
       "category": "other",
       "versions": [
@@ -975,56 +1168,54 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot1.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot2.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot3.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot2.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot3.webp"
       ]
     },
     {
-      "name": "VeneraX",
-      "bundleIdentifier": "io.github.kyosee.venera",
-      "developerName": "Kyosee",
-      "subtitle": "37.8M · Venera 个人增强分支",
-      "localizedDescription": "原版 Venera 的个人维护增强分支，通过插件接入多种漫画图源，提供本地收藏与阅读进度同步。",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
-      "tintColor": "#D55A2E",
-      "category": "books",
+      "name": "GlobalRefresh",
+      "bundleIdentifier": "com.yoroin.globalrefresh",
+      "developerName": "Yoroin",
+      "subtitle": "7.5M · 基于 iOS 画中画的悬浮窗高刷…",
+      "localizedDescription": "基于 iOS 画中画的悬浮窗工具，可辅助解锁 ProMotion 120Hz 表现，支持自定义悬浮窗大小（可完全隐藏）、后台保活以及多悬浮窗共存。适配 iOS 15–27。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GlobalRefresh/icon.webp",
+      "tintColor": "#C9822A",
+      "category": "other",
       "versions": [
         {
-          "version": "3.0.1",
-          "date": "2026-11-20T10:56:20Z",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
-          "size": 39632748,
+          "version": "1.1.2",
+          "date": "2026-11-20T10:21:33Z",
+          "downloadURL": "https://github.com/Yoroin/GlobalRefresh-PiP/releases/download/v1.1.2/GlobalRefresh_1.1.2_2026112101_unsigned.ipa",
+          "size": 7878284,
+          "localizedDescription": "# 全局高刷 1.1.2（26.11.20）\n\n本版本提供正式版通用未签名 IPA，可通过牛蛙助手、AltStore、Sideloadly 等工具自行签名安装。\n\n构建号：`2026112101`\n\nIPA 文件：`GlobalRefresh_1.1.2_2026112101_unsigned.ipa`\n\nSHA-256：`776b590301dc70314323d8f5b0d3055d6d04e7b093b184d8c8d05eb363537e74`\n\n## 重新打包说明（26.11.21）\n\n构建号更新为 `2026112101`，恢复 iPhone 和 iPad 的图标文件索引，解决部分签名工具导入 IPA 后不显示应用图标的问题。主包 `Info.plist` 仍为 XML；程序、悬浮窗逻辑及图标资源均未改动。\n\n遇到签名工具内图标空白的用户，请下载新版附件后重新导入。已正常安装使用的用户无需仅为此重新安装。\n\n## 更新内容\n\n- \\* 修复 iOS 16 及以上悬浮窗关闭按钮偶尔重新出现的问题（即屏幕中间的水滴图标）\n- \\* 修复部分 iOS 15 设备无法启动悬浮窗的问题，恢复原生启动流程\n- 优化画中画并存，增加当前会话内的检查和有限补试；系统暂时挂起悬浮窗时，不再误判为关闭\n- 默认 VideoCall 与仅 PiP 保活组合的内容更新由 60fps 调整为 3",
+          "minOSVersion": "15.0",
           "buildVersion": "11-20",
-          "buildNumber": "11-20",
-          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee",
-          "minOSVersion": "15.1"
+          "buildNumber": "11-20"
         },
         {
-          "version": "3.0.0",
-          "date": "2026-11-15T10:37:41Z",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-          "size": 39423677,
-          "buildVersion": "258",
-          "buildNumber": "258",
-          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and s",
-          "minOSVersion": "15.1"
+          "version": "1.1.1",
+          "date": "2026-10-08T17:02:16Z",
+          "downloadURL": "https://github.com/Yoroin/GlobalRefresh-PiP/releases/download/v1.1.1/GlobalRefresh_1.1.1_2026100902_unsigned.ipa",
+          "size": 7763893,
+          "localizedDescription": "# 全局高刷 1.1.1（26.10.9）\n\n本版本提供正式版通用未签名 IPA，可通过牛蛙助手、AltStore、Sideloadly 等工具自行签名安装。\n\n构建号：`2026100902`\n\nIPA 文件：`GlobalRefresh_1.1.1_2026100902_unsigned.ipa`\n\nSHA-256：`b2f364ee9e059b091ae1cd84faa1b837276d233f56ed98b94aa4c34139bf4cf8`\n\n## 重新打包说明（26.10.9）\n\n构建号更新为 `2026100902`，修复部分签名工具无法导入 IPA 的问题：主包 `Info.plist` 改回 XML 格式。除构建号与打包格式外，程序代码及悬浮窗逻辑未变。\n\n此前下载 `2026100901` 且无法导入的用户，请重新下载下方 `2026100902` 附件后自行签名。已经成功安装的用户无需因本次重新打包再次安装。\n\n## 更新内容\n\n- \\* 优化默认悬浮窗VideoCall方案，修复部分锁60的游戏和B站弹幕卡顿的问题\n- \\* 新增悬浮窗共存保护，与其他画中画同时运行，避免被其他悬浮窗挤掉或打断\n- \\* 修复 悬浮窗未拖至侧面而导致的无法熄屏\n- 适配iPhone Duo\n- 优化一键0.1pt：未开启时点击可直接启动隐藏悬浮窗，已开启时则调整高度；首页、快",
+          "minOSVersion": "15.0"
         },
         {
-          "version": "2.3.12",
-          "date": "2026-11-08T08:15:56Z",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v2.3.12/VeneraX-ios-2.3.12%2B257.ipa",
-          "size": 39009856,
-          "buildVersion": "257",
-          "buildNumber": "257",
-          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v2.3.12/release-notes/v2.3.12.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v2.3.12/release-notes/v2.3.12.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a Multi-Select button to the local favorites toolbar for organizing comics in bulk.\n- Added Read and Continue reading actions to comic menus so you can start reading or resume your last position directly.\n- Added an Actions button to detailed comic lists on mobile for opening a comic's menu with a tap.\n\n### Changed\n- Improved compatibility with iOS 27 and iPhone Du",
-          "minOSVersion": "15.1"
+          "version": "1.1.0",
+          "date": "2026-08-29T02:38:02Z",
+          "downloadURL": "https://github.com/Yoroin/GlobalRefresh-PiP/releases/download/v1.1.0fix/GlobalRefresh_1.1.0fix_2026082901_unsigned.ipa",
+          "size": 7587004,
+          "localizedDescription": "# 全局高刷 1.1.0fix（26.8.29）\n\n这是 1.1.0fix 正式版通用未签名 IPA，可通过牛蛙助手、AltStore、Sideloadly 等工具自行签名安装。\n\n构建号为 `2026082901`。IPA 文件名为 `GlobalRefresh_1.1.0fix_2026082901_unsigned.ipa`，SHA-256 为 `e6f5b8cb9e310ef085dc05023e199e2d1dc9d75751767846394347db43a6c95e`。\n\n## 更新内容\n\n- 修复 iOS 15-iOS 18 悬浮窗被其他画中画应用挤掉后可能收不到通知的问题\n- 优化 上次关闭时间 显示逻辑\n\n## 来源与署名\n\n本项目基于 CaiWanFeng/PiP 修改开发，原作者为 CaiWanFeng。当前修改版由 Yoroin 继续维护。\n\n原项目：https://github.com/CaiWanFeng/PiP\n\n当前项目：https://github.com/Yoroin/GlobalRefresh-PiP\n\n## 自签说明\n\n该 IPA 未绑定个人证书，不包含 `embedded.mobileprovision` 和 `_CodeSignature`。用户需要使用自己的证书或 Apple ID 自行签名安装。",
+          "minOSVersion": "15.0"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GlobalRefresh/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GlobalRefresh/images/frame_rate.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GlobalRefresh/images/tutorial-step-1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GlobalRefresh/images/tutorial-step-2.webp"
+      ]
     },
     {
       "name": "WQGuard",
@@ -1032,7 +1223,7 @@
       "developerName": "Kianuni",
       "subtitle": "2.7M · 沙盒逃逸检测",
       "localizedDescription": "面向 iOS 26.2 以上与 27.x 的零依赖沙盒逃逸检测引擎，附带 Mach-O 静态二进制审计与固件 CVE 防护。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/icon.webp",
       "tintColor": "#264ED3",
       "category": "other",
       "versions": [
@@ -1064,9 +1255,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/dashboard.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/firmware.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/ipa.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/dashboard.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/firmware.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/ipa.webp"
       ]
     },
     {
@@ -1125,7 +1316,7 @@
       "developerName": "singleton-altman",
       "subtitle": "36.0M · MoviePilot 跨端客户端",
       "localizedDescription": "基于 MoviePilot 的 Flutter 跨端客户端，对接 MoviePilot v2 API，在手机上完成订阅、搜索、下载、整理与系统运维等常用操作。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/icon.webp",
       "tintColor": "#31D7AE",
       "category": "other",
       "versions": [
@@ -1161,9 +1352,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/recommend.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/explorer.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/recommend.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MoviePilotLite/images/explorer.webp"
       ]
     },
     {
@@ -1257,52 +1448,12 @@
       }
     },
     {
-      "name": "3106",
-      "bundleIdentifier": "com.qingtang.3106",
-      "developerName": "QuinnTang74",
-      "subtitle": "5.6M · 免越狱的 iOS 容器管理工具",
-      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
-      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
-      "tintColor": "#D033AC",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "3.2.7",
-          "date": "2026-11-19T04:39:06Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.7/3106-3.2.7-unsigned.ipa",
-          "size": 5880602,
-          "localizedDescription": "# 3.2.7 正式版 · Stable Release Notes\n\n发布日期：2026-11-19 ｜ build 26\n\n> 新包 SHA256：`ad902d3a581e36f1df375d0789faf048594bb542f5dbf1cafcdf28f3d0ed3e73`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## ⚠️ 支持边界（重要）\n\n**iOS 27.3 beta 2（24C5049d）及之后的所有 27.3 构建不可用**：Apple 在 27.3 beta 2 修补了 worse_query 依赖的路径，此为系统侧变更，应用无法绕过。**27.x 支持上限为 27.3 beta 1（`24C5037i`）**——27.0–27.2 全部可用，27.3 按 build 号精确放行 beta 1、拒绝 beta 2+，不再等待进一步测试。iOS 18.7.2+ 同理不可支持（内核链依赖的两个 CVE 已被 Apple 修补，属设计内不支持，应用内会直接展示原因）。\n\n## 中文\n\n### 新增\n\n- **韩语（第五语言）**：全量 1508 键，与 zh-Hans / English / Tiếng Việt 逐键对齐。\n- **Wi-Fi HTTP 互传**：本机起 LAN 内 HTTP 服务（端口 8080 起，占用顺延），浏览器/",
-          "minOSVersion": "17.0",
-          "buildVersion": "11-19",
-          "buildNumber": "11-19"
-        },
-        {
-          "version": "3.2.6",
-          "date": "2026-11-17T02:55:19Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
-          "size": 5753848,
-          "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
-          "minOSVersion": "17.0",
-          "buildVersion": "25",
-          "buildNumber": "25"
-        },
-        {
-          "version": "3.2.5",
-          "date": "2026-11-13T13:18:39Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.5/3106-3.2.5-unsigned.ipa",
-          "size": 5703636,
-          "localizedDescription": "# 3.2.5 正式版（同版本重发 rebuild） · Stable Release Notes\n\n发布日期：2026-11-13 ｜ **重发：2026-11-14** ｜ build 24 不变\n\n> 同版本号重发。新包 SHA256：`aa76f4e5f904fc0eb90a54d35f33c2df8e9ecb54059f526ff880f8dd0ba0fca8`（assets 内 SHA256SUMS.txt 同步刷新）。本次参考 GestaltX v1.1.1 release notes 的问题清单语义独立实现，未移植其代码。\n\n## 中文\n\n### 新增\n\n- **应用通知音替换**（GestaltX App Audio Library 思路，独立实现）：功能页新增「通知音替换」卡片；按应用维护通知音路径表（手动输入容器相对路径，未列出的应用同样可用）；替换前三段风险说明 + 全屏红色长按确认；替换走任意文件替换管线——原文件自动备份、替换记录持久化、记录左滑一键恢复；文件选择器以 `.data` 兜底，侧载包也能选中 `.caf/.m4a` 等音频；格式白名单 aiff/aif/caf/m4a/wav，单文件 ≤20MB；替换后列表立即刷新。\n\n### 修复\n\n- **字段 plist 导入不再整根覆盖**（GestaltX #138）：导入被当作补丁——以设备当前",
-          "minOSVersion": "17.0"
-        }
-      ]
-    },
-    {
       "name": "HermesEnabler",
       "bundleIdentifier": "com.example.HermesEnabler",
       "developerName": "pookjw",
       "subtitle": "942K · 解锁爱马仕与 Ultra 表盘",
       "localizedDescription": "在任意 Apple Watch 上解锁 Hermès 与 Ultra 表盘，并提供显示、传感器与 Siri 相关调整，附带自动备份。需要 watchOS 27.0 至 27.3 beta 1 以及付费开发者账号。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/HermesEnabler/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/HermesEnabler/icon.webp",
       "tintColor": "#5627CD",
       "category": "other",
       "versions": [
@@ -1334,7 +1485,48 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/HermesEnabler/images/watch.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/HermesEnabler/images/watch.webp"
+      ]
+    },
+    {
+      "name": "RyukSign",
+      "bundleIdentifier": "ryuk2.anoxclan.com",
+      "developerName": "faroukbmiled",
+      "subtitle": "21.0M · On-device iOS app signer…",
+      "localizedDescription": "RyukSign is an on-device app signer and installer for iOS, derived from Feather (by claration). Sign and install apps with a .p12 / .mobileprovision pair, manage tweaks (.dylib/.deb/.framework/.bundle/.appex), transfer files over HTTP/WebDAV, and track app updates — entirely on-device.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RyukSign/icon.webp",
+      "tintColor": "#D930B1",
+      "category": "other",
+      "versions": [
+        {
+          "version": "4.1.0",
+          "date": "2026-11-18T16:37:57Z",
+          "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.1.0/RyukSign.ipa",
+          "size": 22041701,
+          "localizedDescription": "## What's new in 4.1.0\n\n### New\n\n- Added Update All to Sources updates with search, a source picker for each app, and a choice to add, sign, or sign and install\n- Added long press actions to grouped updates, including Ignore Updates\n- Added a Versions to Delete option to Automatic Cleanup to also remove same or newer copies after installing\n- Added your Library's identifiers for the same app to the Identifier editor when signing\n\n### Improvements\n\n- Improved updates to keep the bundle identifier of your installed or signed copy, so they replace it instead of installing a second app\n\n### Fixes\n",
+          "minOSVersion": "16.0",
+          "buildVersion": "11-19",
+          "buildNumber": "11-19"
+        },
+        {
+          "version": "4.0.0",
+          "date": "2026-11-13T08:37:33Z",
+          "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.0.0/RyukSign.ipa",
+          "size": 21967290,
+          "localizedDescription": "## What's new in 4.0.0\r\n\r\n### New\r\n\r\n- Added iPhone Duo support with a full screen layout and landscape when unfolded\r\n- Added an Enable iPhone Duo Support signing experiment\r\n- Added update choices: tapping Update lists every source that has the app with its version and description, and you can pin a source to update from it automatically\r\n- Added Update, View in Sources and Reset Update Source to the Library app menu\r\n- Added an Update line under Library apps that have a newer version, can be turned off from the Library filter menu\r\n- Added an Updates filter to the Library\r\n- Added update op",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "3.0.1",
+          "date": "2026-09-10T00:22:04Z",
+          "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v3.0.1/RyukSign.ipa",
+          "size": 18082648,
+          "localizedDescription": "🚀 **Automated Release**\r\n\r\n**Build Date:** 2026-09-10 01:17:55\r\n**Commit:** 844466cee6f212291913ba5216f8f19a9c016dea\r\n\r\n## 📦 Changes\r\n- Improved iPad layout for Add Source and Premium screens\r\n- Fixed dylib detection and tweak injection on more apps\r\n- Fixed app icon resolution on localized apps\r\n- Fixed duplicate dylib and Web Manager upload entries\r\n- Fixed file pickers and navigation reliability\r\n- Fixed Clear Cache After Installing not freeing space\r\n- Fixed Delete After Installing during batch installs\r\n- Fixed Automatic Cleanup not running after app closure\r\n\r\n## 📥 Download\r\nDownload the",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RyukSign/images/main.webp"
       ]
     },
     {
@@ -1343,7 +1535,7 @@
       "developerName": "open-ani",
       "subtitle": "46.4M · 找番追番看番一体",
       "localizedDescription": "集找番、追番、看番于一体的弹幕追番平台，支持 Bangumi 云收藏同步、离线缓存、BitTorrent 下载与弹幕云过滤。基于 Kotlin 与 Compose Multiplatform 实现。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/icon.webp",
       "tintColor": "#7CD533",
       "category": "other",
       "versions": [
@@ -1375,9 +1567,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/subject-details.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/episode.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/subject-details.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Animeko/images/episode.webp"
       ]
     },
     {
@@ -1386,7 +1578,7 @@
       "developerName": "AniBakaBaka",
       "subtitle": "22.5M · 开源跨平台动画播放器",
       "localizedDescription": "开源跨平台动画播放应用，这里提供的是上游发布的未签名 iOS 构建，需要自备证书签名后安装。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/icon.webp",
       "tintColor": "#3D90CB",
       "category": "other",
       "versions": [
@@ -1422,9 +1614,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/player.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniBaka/images/player.webp"
       ]
     },
     {
@@ -1433,7 +1625,7 @@
       "developerName": "hseons",
       "subtitle": "930K · App 数据备份与缓存管理",
       "localizedDescription": "WQManager 是免越狱的应用数据管理工具，可以备份与还原应用的 Documents 与 Preferences、清理缓存、查看容器占用。基于沙盒漏洞实现，不需要越狱也不需要连接电脑。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/icon.webp",
       "tintColor": "#8FB927",
       "category": "other",
       "versions": [
@@ -1597,56 +1789,12 @@
       }
     },
     {
-      "name": "Mornye",
-      "bundleIdentifier": "com.zarz.mornye",
-      "developerName": "zarzet",
-      "subtitle": "39.2M · 高解析音乐播放器",
-      "localizedDescription": "Flutter 与 Rust 编写的音乐应用，带全屏播放器、高解析与 bit-perfect 输出、逐字同步歌词，以及可安装的元数据与音源扩展。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/icon.png",
-      "tintColor": "#2742C8",
-      "category": "other",
-      "versions": [
-        {
-          "version": "5.4.0",
-          "date": "2026-11-17T09:32:14Z",
-          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.4.0/Mornye-v5.4.0-ios-unsigned.ipa",
-          "size": 41067187,
-          "localizedDescription": "### New Features\n\n- **home**: Let Continue listening be left off Home\n- **motion**: Give Mornye Apple-style springs and Material a true fade through\n- **metadata**: Rebuild track details on the collection header for both styles\n- **downloads**: Save the album cover as folder.jpg in the album folder\n- **link**: Show Play together in the computer's Devices\n- **link**: Share a phone's storage access songs with other phones\n- **link**: Serve songs the app lends to the Link server\n- **link**: Add Share with other phones to the phone's Link page\n- **link**: Host Link on a phone while it is open or p",
-          "minOSVersion": "16.0",
-          "buildVersion": "11-17",
-          "buildNumber": "11-17"
-        },
-        {
-          "version": "5.3.1",
-          "date": "2026-11-05T10:34:12Z",
-          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.3.1/Mornye-v5.3.1-ios-unsigned.ipa",
-          "size": 38671004,
-          "localizedDescription": "### New Features\n\n- **artist**: Give Mornye's album card Music's plus and note\n- **search**: Drop Mornye desktop's filter chips, as in Music\n- **artist**: Shuffle an artist's Library songs from the Mornye hero\n- **mornye**: Music's glass inspector, player actions and Home text\n- **home**: Make Mornye's Home Music's own, picks included\n- **home**: Recently Played and extension playlists for Mornye\n- **theme**: Move a stored red Mornye accent to blue once\n- **search**: Mornye Top Results and a compact desktop toolbar\n- **home**: Open Mornye Home with Top Picks banners\n- **mornye**: Pour menus, f",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "5.3.0",
-          "date": "2026-11-01T09:44:21Z",
-          "downloadURL": "https://github.com/mornyeapp/Mornye/releases/download/v5.3.0/Mornye-v5.3.0-ios-unsigned.ipa",
-          "size": 37486511,
-          "localizedDescription": "### New Features\n\n- **whats-new**: Give Nearby devices its own page\n- **collections**: Reorder saved songs in place\n- **onboarding**: Ask for Nearby devices on Android 17\n- **linux**: Add optional unsecured extension storage\n- **onboarding**: Add a What's New tour for 5.3\n- **download**: Add FLAC quality caps and Opus 160 kbps\n- **link**: Add desktop device picker and file activity\n- **link**: Tell the desktop which audio files embed a picture\n- **android**: Serve cover files to media browsers read-only\n- **covers**: Show stored network covers in cover widgets\n- **covers**: Look up, adopt and ",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/nowplaying.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/lyrics.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/devices.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mornye/images/settings.png"
-      ]
-    },
-    {
       "name": "Doer",
       "bundleIdentifier": "com.naine.doer",
       "developerName": "moliango",
       "subtitle": "27.2M · Linux.do 原生客户端",
       "localizedDescription": "Linux.do 论坛的原生 iOS 客户端，UIKit 与 Swift 编写，主应用不使用 SwiftUI。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/icon.webp",
       "tintColor": "#D39326",
       "category": "other",
       "versions": [
@@ -1678,9 +1826,31 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/me.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/me.webp"
+      ]
+    },
+    {
+      "name": "3106",
+      "bundleIdentifier": "com.qingtang.3106",
+      "developerName": "QuinnTang74",
+      "subtitle": "5.5M · 免越狱的 iOS 容器管理工具",
+      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
+      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
+      "tintColor": "#D033AC",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "3.2.6",
+          "buildVersion": "11-17",
+          "date": "2026-11-17T02:55:19Z",
+          "localizedDescription": "iOS 27 写入失败专项修复：授权链四处单点加固、失败码诊断透传（文件页横幅 + 设置页沙盒诊断 + 一键导出）、写入遇权限拒绝自动清理。",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
+          "size": 5753848,
+          "minOSVersion": "17.0",
+          "buildNumber": "11-17"
+        }
       ]
     },
     {
@@ -1731,7 +1901,7 @@
       "developerName": "vrcm-team",
       "subtitle": "22.2M · VRChat 社交助手",
       "localizedDescription": "跨平台的 VRChat 伴侣应用，围绕社交关系与便利性设计：浏览社交圈、记录一起玩过的时间，从分享链接顺畅跳到世界、互动与线下聚会。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/icon.webp",
       "tintColor": "#3875CB",
       "category": "other",
       "versions": [
@@ -1763,9 +1933,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Friend-Network.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Gallery-Mobile.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Meetup-Card.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Friend-Network.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Gallery-Mobile.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Meetup-Card.webp"
       ]
     },
     {
@@ -1822,7 +1992,7 @@
       "developerName": "Leminos",
       "subtitle": "25.6M · 免越狱跑 Linux 应用",
       "localizedDescription": "在 iOS 上运行 ARM64 Linux 程序与桌面环境，不需要越狱、虚拟机或 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/icon.webp",
       "tintColor": "#D94C30",
       "category": "other",
       "versions": [
@@ -1854,9 +2024,46 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/terminal.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/terminal.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LinuxRunner/images/settings.webp"
+      ]
+    },
+    {
+      "name": "TwinDesk",
+      "bundleIdentifier": "com.twindesk.ios",
+      "developerName": "Inuka Asith",
+      "subtitle": "3.5M · Use your iPhone and your c…",
+      "localizedDescription": "TwinDesk turns your iPhone or iPad and your Mac, Windows PC or Linux computer into one desk: the computer's screen mirrored or used as a second display, files, clipboard, notifications, sound, camera and remote control, over Wi-Fi, USB or Bluetooth. It needs the TwinDesk desktop app on the computer.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/icon.webp",
+      "tintColor": "#B1BB2A",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.2.1",
+          "date": "2026-11-15T04:43:39Z",
+          "downloadURL": "https://github.com/InukaAsith/TwinDesk/releases/download/v3.2.1/TwinDesk.ipa",
+          "size": 3706522,
+          "localizedDescription": "## TwinDesk 3.2.1: TwinDesk pop-ups, a richer Messages, and Photos albums\r\n\r\n3.2.1 adds what's under **New in 3.2.1** below; everything after it is what 3.2 brought.\r\n\r\nhttps://twin-desk.vercel.app\r\n\r\n![TwinDesk 3.2](https://raw.githubusercontent.com/InukaAsith/TwinDesk/main/.github/assets/v32-banner.jpg)\r\n\r\nThe first release since 3.0. Your phone becomes a **Deck** of buttons for the computer, with a window space that arranges your windows. **TwinDesk Drive** keeps one folder the same on all your computers, with no cloud. **Multi-device is out of beta**, with every device's monitors on **one ",
+          "minOSVersion": "16.0",
+          "buildVersion": "11-15",
+          "buildNumber": "11-15"
+        },
+        {
+          "version": "3.0.0",
+          "date": "2026-11-09T18:13:14Z",
+          "downloadURL": "https://github.com/InukaAsith/TwinDesk/releases/download/v3.0.0/TwinDesk.ipa",
+          "size": 2732258,
+          "localizedDescription": "## TwinDesk 3.0: now on iPhone, iPad and any browser\r\n\r\nhttps://twin-desk.vercel.app\r\n\r\n![TwinDesk 3.0](https://raw.githubusercontent.com/InukaAsith/TwinDesk/main/.github/assets/v30-banner.jpg)\r\n\r\nThe biggest TwinDesk release so far, and the first new major version. TwinDesk now has **a native app for iPhone and iPad**, **TwinDesk Web** for any device with a browser (nothing to install), and **phones that pair with each other**: Android to Android, iPhone to iPhone, and Android to iPhone. The computers get a **Glass look**, **AirPlay on Windows and Linux**, **Tailscale**, and **five languages ",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-2.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-3.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-4.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-6.webp"
       ]
     },
     {
@@ -1865,7 +2072,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "23.9M · 哔哩哔哩第三方客户端",
       "localizedDescription": "PiliPlus 的 iOS 客户端，跟随上游 GitHub Releases 自动同步，这里是国内镜像加速版。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/icon.webp",
       "tintColor": "#92BA26",
       "category": "other",
       "versions": [
@@ -1901,9 +2108,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/bangumi.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/dynamic.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/bangumi.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PiliPlus/images/dynamic.webp"
       ]
     },
     {
@@ -1954,7 +2161,7 @@
       "developerName": "mengangs",
       "subtitle": "8.6M · 链接解析与网盘下载器",
       "localizedDescription": "粘贴一个链接就能解析并高速下载：支持夸克、百度、115、阿里云盘、Google 云端硬盘、OneDrive、PikPak、天翼云盘、Dropbox、蓝奏云、城通以及自建 WebDAV 等网盘，也支持抖音、哔哩哔哩、YouTube、X 等平台的短视频、网页内嵌视频、GitHub 文件与磁力链接。多连接分片并发、断点续传，锁屏或切到后台由系统接着下载，进度显示在锁屏与灵动岛。提取码、口令、带文案的整段分享文字都能直接粘贴识别。开源免费、无广告，所有解析都在手机本地完成，登录凭证只存系统钥匙串。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/icon.webp",
       "tintColor": "#BB832A",
       "category": "other",
       "versions": [
@@ -2066,7 +2273,7 @@
       "developerName": "huamidev",
       "subtitle": "6.5M · MobileGestalt 设备参数编辑器",
       "localizedDescription": "可修改设备区域码、应用设备预设、备份与还原配置，支持 7 种语言。需要 iOS 26.0 及以上。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GestaltX/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GestaltX/icon.webp",
       "tintColor": "#2888B8",
       "category": "other",
       "versions": [
@@ -2098,7 +2305,7 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GestaltX/images/home.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GestaltX/images/home.webp"
       ]
     },
     {
@@ -2149,7 +2356,7 @@
       "developerName": "hugeBlack",
       "subtitle": "4.2M · 开源 Parsec 客户端",
       "localizedDescription": "面向 iOS 与 iPadOS 的开源 Parsec 客户端，支持鼠标、键盘与触屏操作。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/icon.webp",
       "tintColor": "#872AC9",
       "category": "other",
       "versions": [
@@ -2173,7 +2380,7 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.webp"
       ]
     },
     {
@@ -2337,7 +2544,7 @@
       "developerName": "MchinaMd57764",
       "subtitle": "4.6M · App 数据容器工具箱",
       "localizedDescription": "基于 App Group 容器查询能力构建的工具箱，无需越狱即可浏览、清理与检查自己的应用数据容器。包含文件浏览器、缓存扫描、设备信息与 MobileGestalt 缓存面板。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/icon.webp",
       "tintColor": "#2F8CCF",
       "category": "other",
       "versions": [
@@ -2353,9 +2560,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/files.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/settings.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/tweaks.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/files.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/tweaks.webp"
       ]
     },
     {
@@ -2422,7 +2629,7 @@
       "developerName": "TarbleFR",
       "subtitle": "254.7M · 多内核游戏库",
       "localizedDescription": "NeoStation 的 iOS 与 iPadOS 独立维护分支，提供手柄友好的主机式游戏库，内嵌 Libretro 内核、MeloNX、Dolphin、ARMSX2 与 RPCS3 运行时，支持 JIT 流程与自备固件。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/icon.webp",
       "tintColor": "#BC2957",
       "category": "other",
       "versions": [
@@ -2454,8 +2661,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/RewindBox/images/settings.webp"
       ]
     },
     {
@@ -2505,55 +2712,12 @@
       }
     },
     {
-      "name": "Dartotsu",
-      "bundleIdentifier": "ani.aayush262.dartotsu",
-      "developerName": "aayush2622",
-      "subtitle": "82.8M · 动漫追踪与观看",
-      "localizedDescription": "Dartotsu 是开源的动漫管理与观看客户端，通过 AniList 同步追番进度，支持在线观看、下载离线、记录已看集数与评分。跨 iOS、Android 与桌面端。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/icon.png",
-      "tintColor": "#5E23BC",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.2.1",
-          "date": "2026-11-10T09:17:52Z",
-          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.1/Dartotsu-iOS-v1.2.1.ipa",
-          "size": 86846398,
-          "localizedDescription": "### 🎉 New Features\n* [4ac32da0](https://github.com/aayush2622/Dartotsu/commit/4ac32da0): feat: editable keyboard shortcuts for the app, player and reader with a settings screen and per group switches\n* [51b1a2d7](https://github.com/aayush2622/Dartotsu/commit/51b1a2d7): feat: community lists, disable skips, hoster grouping, Simkl movies & series mode\n* [5d387f41](https://github.com/aayush2622/Dartotsu/commit/5d387f41): feat: add Anime-Planet service, private-aware list sync and prequel/sequel cards\n* [5a5a3731](https://github.com/aayush2622/Dartotsu/commit/5a5a3731): feat: finished videos move ",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-10",
-          "buildNumber": "11-10"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-10-31T20:23:41Z",
-          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.2.0/Dartotsu-iOS-v1.2.0.ipa",
-          "size": 86452665,
-          "localizedDescription": "### 🎉 New Features\n* [b47c79f8](https://github.com/aayush2622/Dartotsu/commit/b47c79f8): feat: installing an extension manager lists the Java runtime, core and manager as steps, and the runtime is an addon\n* [5333f288](https://github.com/aayush2622/Dartotsu/commit/5333f288): feat: the image sheet shows the file size of the page or image\n* [8554063c](https://github.com/aayush2622/Dartotsu/commit/8554063c): feat: a clearance is only sent with the user agent that earned it, the source settings sheet shows why a Cloudflare check failed, and the extension installer sheet shows progress, errors and ",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.1.1",
-          "date": "2026-10-23T15:49:05Z",
-          "downloadURL": "https://github.com/aayush2622/Dartotsu/releases/download/v1.1.1/Dartotsu-iOS-v1.1.1.ipa",
-          "size": 82544015,
-          "localizedDescription": "### 🎉 New Features\n* [905936a4](https://github.com/aayush2622/Dartotsu/commit/905936a4): feat: long press a manga page to save, share or copy it, with a reader setting to turn it off\n* [08c68690](https://github.com/aayush2622/Dartotsu/commit/08c68690): feat: submit skip times to AniSkip from the player\n* [30b71504](https://github.com/aayush2622/Dartotsu/commit/30b71504): feat: remember the save progress choice for a single series\n* [bf439535](https://github.com/aayush2622/Dartotsu/commit/bf439535): feat: compact playback speed sheet and remember the last used speed\n* [2b636653](https://github.",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/anime.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dartotsu/images/manga.webp"
-      ]
-    },
-    {
       "name": "MD3Music",
       "bundleIdentifier": "com.md3music.md3music",
       "developerName": "EPXiaohua",
       "subtitle": "56.8M · Material 3 音乐播放器",
       "localizedDescription": "MD3Music 是用 Flutter 与 Rust 写的 Material 3 风格音乐播放器，界面参考 Apple Music。内置酷狗音乐接口，支持搜索、歌单、歌词与无损音质播放。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MD3Music-iOS/icon.webp",
       "tintColor": "#BF256D",
       "category": "other",
       "versions": [
@@ -2602,7 +2766,7 @@
       "developerName": "StikDebug",
       "subtitle": "16.1M · 设备内调试器与 JIT 工具",
       "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.webp",
       "tintColor": "#58D32B",
       "category": "other",
       "versions": [
@@ -2634,9 +2798,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.webp"
       ]
     },
     {
@@ -2645,7 +2809,7 @@
       "developerName": "June6699",
       "subtitle": "33.8M · 多平台直播聚合",
       "localizedDescription": "Simple Live 把多个直播平台的频道聚到一个 App 里，支持弹幕、画质切换、IPTV 源导入与自定义直播源。Flutter 开发，跨 iOS 与 Android。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.webp",
       "tintColor": "#C62490",
       "category": "other",
       "versions": [
@@ -2688,7 +2852,7 @@
       "developerName": "lpfoj",
       "subtitle": "73.4M · PS4 与 PS5 模拟器",
       "localizedDescription": "面向 Android 与 iOS 的开源 PlayStation 4 / 5 模拟器。当前 iOS 构建支持 PS4 游戏，需要 iOS 26 以上并开启 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/icon.webp",
       "tintColor": "#D27736",
       "category": "other",
       "versions": [
@@ -2720,8 +2884,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LSX4/images/settings.webp"
       ]
     },
     {
@@ -2730,7 +2894,7 @@
       "developerName": "Suwayomi",
       "subtitle": "16.5M · Suwayomi 漫画客户端",
       "localizedDescription": "Suwayomi-Server 的原生客户端，为长时间刷条漫优化：支持离线下载与本地目录、重做的连续滚动阅读器、隐身模式和 13 种语言。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/icon.webp",
       "tintColor": "#4EC529",
       "category": "other",
       "versions": [
@@ -2762,8 +2926,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/list.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/update.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/update.webp"
       ]
     },
     {
@@ -2772,7 +2936,7 @@
       "developerName": "ResistanceTo",
       "subtitle": "3.2M · 充电功率与温度监控",
       "localizedDescription": "基于 Apple 私有接口的电池与充电监控工具：显示充电器的实际瓦数、真正进入电池的部分、其余转成热量的比例，以及机身每一个温度传感器。全程不联网。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/icon.webp",
       "tintColor": "#C5349C",
       "category": "other",
       "versions": [
@@ -2804,10 +2968,10 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/power.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/thermal.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/adapter.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/history.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/power.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/thermal.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/adapter.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MiniWatts/images/history.webp"
       ]
     },
     {
@@ -2816,7 +2980,7 @@
       "developerName": "kuscholar",
       "subtitle": "165.8M · Steam 大屏与 3D 游戏",
       "localizedDescription": "通过 Madeira、Wine、FEX 与 Metal，在 iPhone 与 iPad 上跑 Valve Steam 客户端大屏模式与兼容的 Windows 游戏。实验性功能，需要 iOS 26 以上、JIT 以及自备 Steam 文件。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/icon.webp",
       "tintColor": "#D5A733",
       "category": "other",
       "versions": [
@@ -2832,8 +2996,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/configuration.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/steam-home.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/configuration.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/steam-home.webp"
       ]
     },
     {
@@ -2950,7 +3114,7 @@
       "developerName": "Will Faust",
       "subtitle": "177.8M · 沙盒内跑 Windows 游戏",
       "localizedDescription": "在单个受沙盒限制的 iOS 应用里运行未经修改的 x86-64 Windows 游戏：FEX-Emu 负责指令翻译，Wine 11.4 for ARM64EC 提供 Windows 环境，DXMT 负责 Direct3D 转换。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/icon.webp",
       "tintColor": "#CE3830",
       "category": "other",
       "versions": [
@@ -2982,9 +3146,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/introduction.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/main.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/settings.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/introduction.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/main.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Madeira/images/settings.webp"
       ]
     },
     {
@@ -2993,7 +3157,7 @@
       "developerName": "playportdev",
       "subtitle": "394.2M · 未越狱跑 Windows 游戏",
       "localizedDescription": "在未越狱的 iPhone 上运行 64 位与 32 位 Windows 游戏：从库里挑一个装到手机，接上手柄就能玩，游戏跑在手机自己的 CPU 与 GPU 上，不需要 PC 也不需要云。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/icon.webp",
       "tintColor": "#C94135",
       "category": "other",
       "versions": [
@@ -3025,9 +3189,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/library.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/game-page.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Playport/images/game-page.webp"
       ]
     },
     {
@@ -3036,7 +3200,7 @@
       "developerName": "Manic EMU Development Team",
       "subtitle": "279.7M · 全能复古模拟器",
       "localizedDescription": "把主机、街机、电脑与手机 Java 游戏整合到一个应用里，支持即时存档、金手指、自定义皮肤与 RetroAchievements 成就。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/icon.webp",
       "tintColor": "#31B965",
       "category": "other",
       "versions": [
@@ -3068,9 +3232,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/library.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/landscape.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/achievements.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/landscape.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ManicEMU/images/achievements.webp"
       ]
     },
     {
@@ -3101,7 +3265,7 @@
       "developerName": "youshen2",
       "subtitle": "29.0M · 网易云第三方客户端",
       "localizedDescription": "面向 iPhone、iPad 与 Apple Watch 的原生网易云音乐客户端，SwiftUI 构建，参考 Apple Music 的液态玻璃设计，支持逐字歌词、文字 PV 歌词与全屏天际歌词。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/icon.webp",
       "tintColor": "#28D6D0",
       "category": "other",
       "versions": [
@@ -3133,10 +3297,10 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/library.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/player.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/lyrics.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/MeloX/images/lyrics.webp"
       ]
     },
     {
@@ -3223,33 +3387,25 @@
       "developerName": "seanhowarthdev",
       "subtitle": "4.4M · 定位固定与路线模拟",
       "localizedDescription": "在一张地图上设定固定的上报位置、预览并模拟 Apple 地图步行路线、保存收藏与历史。需要 iOS 27 或更新版本，并配合 LocalDevVPN 会话使用。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/icon.webp",
       "tintColor": "#9D2EC6",
       "category": "other",
       "versions": [
         {
           "version": "0.9.9",
           "date": "2026-10-20T19:33:03Z",
+          "localizedDescription": "## Highlights\n\n### 🌍 Roam Control in 10 Languages\nChoose English, Hebrew, Arabic, Simplified Chinese, Traditional Chinese, Japanese, Vietnamese, French, German or Spanish, or use System Default to select from the supported languages based on your iPhone's language preferences. Switch languages immediately, with right-to-left layout support for Hebrew and Arabic.\n\n### 🗺️ Better Maps and Routes\nRefined map controls, route handling and coordinate compatibility, with clearer handling when a route cannot be created.\n\n### 🔄 Smarter Connection Recovery\nImproved connection and location-session recover",
           "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
           "size": 4627321,
-          "localizedDescription": "## Highlights\n\n### 🌍 Roam Control in 10 Languages\nChoose English, Hebrew, Arabic, Simplified Chinese, Traditional Chinese, Japanese, Vietnamese, French, German or Spanish, or use System Default to select from the supported languages based on your iPhone's language preferences. Switch languages immediately, with right-to-left layout support for Hebrew and Arabic.\n\n### 🗺️ Better Maps and Routes\nRefined map controls, route handling and coordinate compatibility, with clearer handling when a route cannot be created.\n\n### 🔄 Smarter Connection Recovery\nImproved connection and location-session recover",
           "minOSVersion": "27.0",
           "buildVersion": "10-21",
           "buildNumber": "10-21"
-        },
-        {
-          "version": "0.9.7",
-          "date": "2026-10-08T19:54:46Z",
-          "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.7/RoamControl-0.9.7-Build96.ipa",
-          "size": 4111825,
-          "localizedDescription": "## Stability and reliability improvements\n\nRoam Control 0.9.7 is a maintenance update focused on background location-session reliability and mobile-data connectivity.\n\n### What's improved\n\n- Improved native connection handling for LocalDevVPN.\n- Corrected network-interface selection when LocalDevVPN and a separate Personal VPN are active simultaneously.\n- Improved reliability in tested background and mobile-data scenarios.\n- Verified fixed locations, Walking, Driving, Cycling, Stop & Restore and LocalDevVPN reconnection.\n\nThese improvements were validated on the developer's iPhone. Compatibili",
-          "minOSVersion": "27.0"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/welcome.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/fixed-location.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/walking-preview.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/welcome.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/fixed-location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/walking-preview.webp"
       ]
     },
     {
@@ -3258,7 +3414,7 @@
       "developerName": "Lakr233",
       "subtitle": "15.7M · 多账号跨区 App Store",
       "localizedDescription": "在一个应用里管理多个 Apple ID 的不同区服商店，可即时切换、浏览并下载各区的官方 IPA，保留可搜索的历史版本库，全程不用登出设备。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/icon.webp",
       "tintColor": "#C3A430",
       "category": "other",
       "versions": [
@@ -3290,9 +3446,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/search.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/app.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/account.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/app.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Asspp/images/account.webp"
       ]
     },
     {
@@ -3301,7 +3457,7 @@
       "developerName": "Eslzzyl",
       "subtitle": "9.9M · Pixiv 第三方客户端",
       "localizedDescription": "SwiftUI 开发的 Pixiv 第三方客户端，支持 iOS、iPadOS 与 macOS。提供插画、漫画与小说的推荐、排行榜、搜索与收藏，内置评论、批量下载、数据导入导出与主题自定义。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/icon.webp",
       "tintColor": "#9B25CA",
       "category": "other",
       "versions": [
@@ -3333,9 +3489,36 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/recommend.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/search.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/recommend.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Pixiv-SwiftUI/images/search.webp"
+      ]
+    },
+    {
+      "name": "BiliSponsorBlock",
+      "bundleIdentifier": "tv.danmaku.bilianime",
+      "developerName": "lcmovie",
+      "subtitle": "266.9M · 官方哔哩哔哩 iOS App 的 S…",
+      "localizedDescription": "适用于官方哔哩哔哩 iOS App 的空降助手插件，通过注入 dylib 的方式提供 SponsorBlock 片段识别、提示与自动跳过功能。可分别为赞助、自我推广、互动提醒、片头片尾、离题等片段分类设置处理方式，并在播放器进度条上以分类颜色标记片段。借助 BilibiliSponsorBlock 项目获取空降片段数据。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/BiliSponsorBlock/icon.webp",
+      "tintColor": "#C29127",
+      "category": "other",
+      "versions": [
+        {
+          "version": "9.10.0",
+          "date": "2026-10-19T07:09:39Z",
+          "downloadURL": "https://github.com/lcmovie/BiliSponsorBlock-ios/releases/download/v2.0.0/bili-9.10.0-BiliSponsorBlock.V2.0.0.ipa",
+          "size": 279835183,
+          "localizedDescription": "## ✨ 主要更新\r\n\r\n### 片段跳过\r\n- 使用上游 BilibiliSponsorBlock 的片段数据。\r\n- 支持按分类设置总是跳过、每次播放跳过一次、手动跳过、仅显示或禁用。\r\n- 优化半屏、横屏全屏及竖屏播放器适配。\r\n- 优化手动拖动进度后的跳过恢复逻辑。\r\n- 自动跳过后显示提示，支持点击撤销。\r\n- 在进度条中显示片段标记，弹出控制条的标记随控制条显示和收起。\r\n\r\n### 片段提交\r\n- 新增参考 PiliPlus 交互设计的片段提交面板。\r\n- 支持添加多个片段、取当前播放时间、手动编辑时间、选择分类与动作、预览及确认提交。\r\n- 提交按钮随播放器控制菜单显示和收起，减少对视频画面的遮挡。\r\n\r\n### 设置与更新\r\n- 优化设置入口、字体、颜色、间距及开关布局。\r\n- 空降助手入口仅显示在主设置页面顶部。\r\n- 新增 GitHub 稳定发行版更新提醒，支持手动检查。\r\n- 保留跳过次数、节省时间统计及个人提交身份。\r\n- 项目链接统一显示为“本项目地址”和“上游地址”。\r\n\r\n## 📦 安装方式\r\n\r\n1. 下载 `BiliSponsorBlock-v2.0.0.dylib`。\r\n2. 移除旧版插件注入项，只保留本版本。\r\n3. 沿用原来的注入、重签名和安装方式。\r\n4. 重启 App，在「设置 → 空降助手 → 版本号」确认显示 `2.0.0`。\r\n\r",
+          "minOSVersion": "15.0",
+          "buildVersion": "10-19",
+          "buildNumber": "10-19"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/BiliSponsorBlock/images/preview-1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/BiliSponsorBlock/images/preview-2.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/BiliSponsorBlock/images/preview-3.webp"
       ]
     },
     {
@@ -3344,7 +3527,7 @@
       "developerName": "dddevid",
       "subtitle": "13.7M · 自建音乐库播放器",
       "localizedDescription": "免费的 Navidrome 客户端兼 Subsonic 播放器，界面参考 Apple Music。可串流自己搭在 Navidrome、Subsonic 或 Airsonic 上的音乐库。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/icon.webp",
       "tintColor": "#A630C3",
       "category": "other",
       "versions": [
@@ -3376,9 +3559,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/player.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Musly/images/player.webp"
       ]
     },
     {
@@ -3387,7 +3570,7 @@
       "developerName": "LightNovelShelf",
       "subtitle": "11.4M · 轻书架官方客户端",
       "localizedDescription": "轻书架的官方 Flutter 客户端，面向 iOS、iPadOS 与 Android，支持书架管理、在线阅读、翻页动画、双页阅读与自动更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/icon.webp",
       "tintColor": "#43C133",
       "category": "other",
       "versions": [
@@ -3419,8 +3602,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/home.jpeg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/community.jpeg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/community.webp"
       ]
     },
     {
@@ -3429,7 +3612,7 @@
       "developerName": "Skitty",
       "subtitle": "14.1M · 开源漫画阅读器",
       "localizedDescription": "开源漫画阅读器，通过扩展机制添加在线漫画源，支持书架追踪、离线下载与本地文件阅读。GPL-3.0 开源，可在设置里安装社区扩展源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/icon.webp",
       "tintColor": "#BFCB38",
       "category": "other",
       "versions": [
@@ -3461,9 +3644,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/library.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/source.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/reader.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/source.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Aidoku/images/reader.webp"
       ]
     },
     {
@@ -3514,7 +3697,7 @@
       "developerName": "liuchuancong",
       "subtitle": "63.8M · 多平台直播聚合",
       "localizedDescription": "基于 Flutter 的开源直播聚合播放器，支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、Twitch 等平台，并可自定义 M3U 与 M3U8 直播源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/icon.webp",
       "tintColor": "#BF2B6B",
       "category": "other",
       "versions": [
@@ -3546,9 +3729,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/list.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/area.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/auth.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/area.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/auth.webp"
       ]
     },
     {
@@ -3557,7 +3740,7 @@
       "developerName": "Sle2p",
       "subtitle": "39.3M · 多平台动漫弹幕播放器",
       "localizedDescription": "多平台动漫应用，支持多番剧源切换、实时超分辨率、弹幕过滤、追番管理与离线缓存。安装包来自上游发布，需自行签名。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/icon.webp",
       "tintColor": "#8633C1",
       "category": "other",
       "versions": [
@@ -3589,9 +3772,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/detail.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/play.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AniCh/images/play.webp"
       ]
     },
     {
@@ -3600,7 +3783,7 @@
       "developerName": "Mak5er",
       "subtitle": "4.4M · 钱包卡片与锁屏密码美化",
       "localizedDescription": "Apple Wallet 卡片样式与锁屏密码主题定制工具，可自行设计卡片外观与密码键盘主题。部分功能依赖较新的 iOS 版本，实际可安装版本以安装包元数据为准。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/icon.webp",
       "tintColor": "#B18E2F",
       "category": "other",
       "versions": [
@@ -3632,9 +3815,51 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallet.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/pairing.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallpapers.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallet.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/pairing.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AirCard/images/wallpapers.webp"
+      ]
+    },
+    {
+      "name": "Dusklight",
+      "bundleIdentifier": "dev.twilitrealm.dusk",
+      "developerName": "Twilit Realm",
+      "subtitle": "35.3M · A native port of a classi…",
+      "localizedDescription": "Dusklight brings a classic adventure natively to the iPhone and iPad with modern rendering, flexible controls and quality-of-life options. You must provide a dump of your own copy of the original game to play.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dusklight/icon.webp",
+      "tintColor": "#C32CBB",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.0.3",
+          "date": "2026-09-30T07:06:44Z",
+          "downloadURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.3/Dusklight-v2.0.3-ios-arm64.ipa",
+          "size": 37056541,
+          "localizedDescription": "**What's new:**\r\n\r\n* **Added:** New InterpService: Provides interpolation for custom model rendering. ([#2636](https://github.com/TwilitRealm/dusklight/pull/2636))\r\n* **Added:** GfxService v1.4: Provides backing textures for resolved framebuffers. ([#2643](https://github.com/TwilitRealm/dusklight/pull/2643), [Aurora #260](https://github.com/encounter/aurora/pull/260))\r\n* **Fixed:** Vulkan startup crash on Android devices with Adreno GPUs, including the Galaxy S23 and Odin 2. ([Aurora `bded88e95d`](https://github.com/encounter/aurora/commit/bded88e95d5a1a7c8b2d747843cb8cde17b39838), [#2563](htt",
+          "minOSVersion": "14.0",
+          "buildVersion": "09-30",
+          "buildNumber": "09-30"
+        },
+        {
+          "version": "2.0.2",
+          "date": "2026-09-25T07:21:33Z",
+          "downloadURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.2/Dusklight-v2.0.2-ios-arm64.ipa",
+          "size": 37085037,
+          "localizedDescription": "**What's new:**\r\n\r\n* **Added:** Save Manager can now import saves between different regions, and between GC/Wii. ([#2529](https://github.com/TwilitRealm/dusklight/pull/2529), [`97ca92a056`](https://github.com/TwilitRealm/dusklight/commit/97ca92a056d1499d4183e78f9c9e74f863e1ef2f))\r\n* **Added:** Speedrun Mode now displays enabled mods. ([`7b917f20d1`](https://github.com/TwilitRealm/dusklight/commit/7b917f20d19acaace0f0b9421d5b5115328aa9ba))\r\n* **Fixed:** Mouse buttons not working for Custom Action Bindings, such as First Person. ([`3a1b863dc6`](https://github.com/TwilitRealm/dusklight/commit/3a1",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.0.1",
+          "date": "2026-09-20T00:36:12Z",
+          "downloadURL": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.1/Dusklight-v2.0.1-ios-arm64.ipa",
+          "size": 37057767,
+          "localizedDescription": "Thank you all for the incredible response to our v2 release! 24 hours later, we already have **18 mods** on our [mod site](https://twilitrealm.dev/mods/), and that number is growing steadily. As with every big release, there's some bugs that slip through the cracks, and we've done our best to knock them out quick. Enjoy!\r\n\r\n**What's new:**\r\n\r\n* **Added:** Option to change a save's region when importing `.gci` or `.dusksave` files in Save Manager. ([`422d7bb1b6`](https://github.com/TwilitRealm/dusklight/commit/422d7bb1b6c8d973cccf8b3d0b226a57ac3cc8c7))\r\n* **Fixed:** Restored \"Show Shader Compil",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dusklight/images/screenshot-01.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Dusklight/images/screenshot-02.webp"
       ]
     },
     {
@@ -3643,7 +3868,7 @@
       "developerName": "MakrSas",
       "subtitle": "17.6M · 在 iPhone 上跑 macOS",
       "localizedDescription": "通过 Apple 自家的 AVPBooter、iBoot 与 XNU 链路，在 QEMU 的 apple-vm 机器上启动真正的 arm64 macOS Ventura 客户机，GPU 由 reims-vgpu 经 Metal 绘制。需要 JIT 与特定签名工具。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orchard/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orchard/icon.webp",
       "tintColor": "#CC28AB",
       "category": "other",
       "versions": [
@@ -3667,7 +3892,7 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orchard/images/main.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orchard/images/main.webp"
       ]
     },
     {
@@ -3676,7 +3901,7 @@
       "developerName": "donbytyqi",
       "subtitle": "28.4M · 种子流媒体播放器",
       "localizedDescription": "SwiftUI 编写的种子流媒体客户端，覆盖 iOS、iPadOS、tvOS 与 Mac。视频流来自兼容 Stremio 的插件，由内置 libtorrent 引擎喂给 VLC 播放。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/icon.webp",
       "tintColor": "#2A6BC0",
       "category": "other",
       "versions": [
@@ -3700,9 +3925,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/search.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/profile.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SceneBox/images/profile.webp"
       ]
     },
     {
@@ -3711,7 +3936,7 @@
       "developerName": "NexSideloading",
       "subtitle": "4.4M · 提升应用内存上限",
       "localizedDescription": "iRAM+ 用来给自己的侧载应用开启 Increased Memory Limit 权限，让原本受系统内存限制的应用能用更多内存，适合跑模拟器、虚拟机这类吃内存的工具。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.webp",
       "tintColor": "#39CA3E",
       "category": "other",
       "versions": [
@@ -3754,7 +3979,7 @@
       "developerName": "SideStore Team",
       "subtitle": "26.5M · 无需电脑的替代商店",
       "localizedDescription": "社区维护的替代应用商店，无需越狱也无需电脑：用你自己的 Apple ID 重签并安装 IPA，并在后台自动刷新签名。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/icon.webp",
       "tintColor": "#C9263E",
       "category": "other",
       "versions": [
@@ -3786,8 +4011,8 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.webp"
       ]
     },
     {
@@ -3834,7 +4059,7 @@
       "developerName": "verback2308",
       "subtitle": "6.4M · 轻量 YouTube 客户端",
       "localizedDescription": "轻量 YouTube 客户端，支持 SponsorBlock 跳过赞助片段、恢复踩数显示，最高 1080p 播放。无广告、无追踪、无额外依赖。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/icon.webp",
       "tintColor": "#C53458",
       "category": "other",
       "versions": [
@@ -3866,9 +4091,82 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/home.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/player.jpg",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/channel.jpg"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/channel.webp"
+      ]
+    },
+    {
+      "name": "Beans Music",
+      "bundleIdentifier": "com.beans.app",
+      "developerName": "XIaodou0416",
+      "subtitle": "8.4M · 使用 SwiftUI 开发的多平台音…",
+      "localizedDescription": "面向 iOS 15 及以上的开源 SwiftUI 音乐播放器，内置网易云音乐、QQ 音乐与酷狗音乐，支持本地歌单、离线下载、逐字歌词、多种播放页布局与均衡器等自定义能力。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/icon.webp",
+      "tintColor": "#32BD8F",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.6.6",
+          "date": "2026-09-06T12:41:32Z",
+          "downloadURL": "https://github.com/XIaodou0416/Beans-Music/releases/download/v1.6.6/Beans-unsigned.ipa",
+          "size": 8761833,
+          "localizedDescription": "本次更新：\n\n- 增加网易云音乐和 QQ 音乐歌单广场搜索功能\n- 优化歌曲封面缓存\n- 优化歌词划动后自动回到当前播放歌词的问题\n- 优化整体流畅性，低系统版本请实测反馈\n- 优化网易云私人漫游；如遇问题可尝试心动模式\n- 简化搜索界面，移除均衡器注释\n- 更换酷狗音乐歌单广场接口\n- 修复 QQ 音乐本身有会员但无法播放的问题\n- 修复 iOS 26 以下系统无法返回的问题",
+          "minOSVersion": "15.0",
+          "buildVersion": "09-06",
+          "buildNumber": "09-06"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/lyrics.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/settings.webp"
+      ]
+    },
+    {
+      "name": "Applesauce",
+      "bundleIdentifier": "io.github.johnny901901901.applesauce",
+      "developerName": "Unofficial iOS port contributors",
+      "subtitle": "39.7M · A playful emulator for iOS",
+      "localizedDescription": "Plays supported 32-bit iPhone games on modern devices, carrying both the HyperHLE v1.0.6 and touchHLE 0.2.3 emulator cores so you can pick which one runs each game. An unaffiliated fork, endorsed by neither project. JIT must be enabled for each new app process. No games are included.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/icon.webp",
+      "tintColor": "#3394D5",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.4.2",
+          "date": "2026-08-17T15:53:48Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.2-touch-fix/Applesauce-iOS-0.4.2-touch-fix-trollstore.ipa",
+          "size": 41672251,
+          "localizedDescription": "Follow-up to the landscape-orientation fix (ios-v0.4.2-orientation-fix): that build fixed which direction a landscape-only game launches in, but touch could still land in the wrong place, since the host was still telling SDL/UIKit that either landscape direction was fine even for a game that only supports one. That leaves the OS free to auto-rotate the actual presented surface to whichever way the phone is physically held; the picture still looks right (touchHLE rotates the framebuffer itself), but the OS then delivers raw touch coordinates in that other orientation, so taps land in the wrong ",
+          "minOSVersion": "15.0",
+          "buildVersion": "08-17",
+          "buildNumber": "08-17"
+        },
+        {
+          "version": "0.4.1",
+          "date": "2026-08-15T16:00:56Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.1/Applesauce-iOS-trollstore-permanent-jit.ipa",
+          "size": 41669140,
+          "localizedDescription": "# Applesauce 0.4.1\n\nTwo fixes, both found by playing Peggle until it broke. Nothing about\ninstalling or your library changes — pick the same IPA you used for 0.4.0.\n\n## Games no longer hang at a full loading bar\n\nThe emulator's `wcstol` and `wcstod` only accepted a string that was *all*\nnumber, where the real C functions read the leading number and ignore\nwhatever follows. Peggle reads its stage list exactly that way — the number\nsits on a line with text after it — so the parse failed, Peggle threw away\nevery stage it had loaded, and the loading screen sat at a full bar waiting\nfor data that n",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.4.0",
+          "date": "2026-08-15T04:04:13Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.0-black-screen-fix/Applesauce-iOS-0.4.0-black-screen-fix-trollstore.ipa",
+          "size": 41666925,
+          "localizedDescription": "This TrollStore release fixes black screens in older OpenGL ES games.\n\nThe slow composition path now reads the app's current framebuffer. This preserves unresolved tile data on iPhone GPUs. The UIKit swap path now reattaches only the SDL view that it presents. This prevents a guest context from leaving the host drawable detached without causing alternating frames.",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/library-games.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/about.webp"
       ]
     },
     {
@@ -3877,7 +4175,7 @@
       "developerName": "Ahmed Bafkir",
       "subtitle": "522K · 从 App Store 下载 IPA",
       "localizedDescription": "受 ipatool 启发的 iOS 应用。用你自己的 Apple ID 登录，搜索 App Store、把任意应用下载成 IPA（含旧版本），并直接安装或分享，无需越狱。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/icon.webp",
       "tintColor": "#2AC04D",
       "category": "other",
       "versions": [
@@ -3909,9 +4207,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/search.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/versions.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/downloads.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/versions.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/downloads.webp"
       ]
     },
     {
@@ -3920,7 +4218,7 @@
       "developerName": "XITRIX",
       "subtitle": "23.2M · iOS 种子下载器",
       "localizedDescription": "iOS 上的种子客户端，支持「文件」App、后台下载、实时活动与灵动岛进度条、外接硬盘下载、顺序下载等。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/icon.webp",
       "tintColor": "#315DD7",
       "category": "other",
       "versions": [
@@ -3956,9 +4254,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/home.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/detail.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/player.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/player.webp"
       ]
     },
     {
@@ -4002,7 +4300,7 @@
       "developerName": "Manic EMU Development Team",
       "subtitle": "19.4M · Xbox 模拟器前端",
       "localizedDescription": "面向 iOS 的 xemu 实验性前端，把 xemu 内核嵌进原生 Swift 外壳，通过 MoltenVK 与原生 Metal 呈现 Vulkan 渲染。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/icon.webp",
       "tintColor": "#D42FB3",
       "category": "other",
       "versions": [
@@ -4034,9 +4332,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/library.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/activity.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/game.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/activity.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/game.webp"
       ]
     },
     {
@@ -4045,7 +4343,7 @@
       "developerName": "Mac-XK",
       "subtitle": "3.7M · 歌一刀 · 多源音乐聚合播放器",
       "localizedDescription": "歌一刀（KMusic）是 SwiftUI 开发的多源音乐聚合播放器，支持 iOS 与 macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等音源，支持 LRC 歌词同步、全局搜索、后台播放，还能用 JS 脚本导入自定义音源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/icon.webp",
       "tintColor": "#2B55D3",
       "category": "other",
       "versions": [
@@ -4077,9 +4375,9 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/recommendation.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/playlist.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/play.png"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/recommendation.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/playlist.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/play.webp"
       ]
     }
   ],

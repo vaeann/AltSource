@@ -1,0 +1,102 @@
+{
+  "name": "热门应用源③",
+  "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
+  "description": "精挑细选的 iOS 侧载应用合集，共 102 个，按更新频率分成 3 个源，这里是第 3 个（2 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "identifier": "com.vaeann.source.3",
+  "iconURL": "https://github.com/vaeann.png?size=256",
+  "website": "https://github.com/vaeann",
+  "tintColor": "#8A8984",
+  "featuredApps": [
+    "com.mafty.dukex",
+    "com.macxk.KMusic"
+  ],
+  "apps": [
+    {
+      "name": "DukeX",
+      "bundleIdentifier": "com.mafty.dukex",
+      "developerName": "Manic EMU Development Team",
+      "subtitle": "19.4M · Xbox 模拟器前端",
+      "localizedDescription": "面向 iOS 的 xemu 实验性前端，把 xemu 内核嵌进原生 Swift 外壳，通过 MoltenVK 与原生 Metal 呈现 Vulkan 渲染。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/icon.webp",
+      "tintColor": "#D42FB3",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.2",
+          "date": "2026-06-30T12:21:27Z",
+          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.2/DukeX.v1.0.2.ipa",
+          "size": 20345841,
+          "localizedDescription": "# DukeX v1.0.2 - Expanding the Xbox Experience\n\nDukeX v1.0.2 is our biggest step yet toward preserving the full original Xbox\nexperience, not just the games. This release introduces the first native macOS\nbuild, expands XB.Live integration, and brings richer community features to both\niOS and macOS.\n\n## What's New\n\n- Native macOS release: DukeX is now available as a Mac Catalyst desktop build\n  packaged with a nested Xemu fork, pairing desktop Xemu compatibility with the\n  DukeX interface.\n- XB.Live Rich Presence and playtime tracking: friends can see what you are\n  playing while DukeX tracks ",
+          "minOSVersion": "16.0",
+          "buildVersion": "06-30",
+          "buildNumber": "06-30"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-06-08T03:25:57Z",
+          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.1/DukeX.v1.0.1.ipa",
+          "size": 31683375,
+          "localizedDescription": "DukeX v1.0.1 brings Xbox Live profile groundwork, improved rendering stability, Touch Controls, AirPlay, personalization, cover art scraping, and native URL scheme support.\n\nWhat's New:\n- Partnership with XB.Live introduces profile integration for achievements, friends, messages, community events, and cloud sync support.\n- Core rendering and performance handling have been improved for better stability across more titles.\n- Touch Controls now support .manicskin layouts, .deltaskin and .gammaskin imports, haptic feedback, and the official DukeX Default skin.\n- AirPlay support lets compatible dev",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-05-18T17:04:44Z",
+          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.0/DukeX.v1.0.0.ipa",
+          "size": 14406551,
+          "localizedDescription": "DukeX v1.0.0 is the first release build prepared for wider sideload testing.\r\n\r\n## Highlights\r\n\r\n- Native SwiftUI game library, profile, and settings interface.\r\n- Game-library sorting by Favorites, Title, Live support, and Recent.\r\n- Per-game favorite toggles from the long-press menu.\r\n- Portrait and landscape library column controls.\r\n- Insignia-oriented NAT defaults and live indicators for supported titles.\r\n- User-accessible BIOS, ROMs, Covers, GameConfigs, and ShaderCaches folders.\r\n- Per-game cover art, custom config import, shader-cache clearing, and dashboard launch.\r\n- Built-in FPS/sy",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/activity.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/game.webp"
+      ]
+    },
+    {
+      "name": "KMusic",
+      "bundleIdentifier": "com.macxk.KMusic",
+      "developerName": "Mac-XK",
+      "subtitle": "3.7M · 歌一刀 · 多源音乐聚合播放器",
+      "localizedDescription": "歌一刀（KMusic）是 SwiftUI 开发的多源音乐聚合播放器，支持 iOS 与 macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等音源，支持 LRC 歌词同步、全局搜索、后台播放，还能用 JS 脚本导入自定义音源。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/icon.webp",
+      "tintColor": "#2B55D3",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.3.0",
+          "date": "2026-03-12T08:39:59Z",
+          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.3.0/_2.3.0_22.2.ipa",
+          "size": 3836900,
+          "localizedDescription": "- 优化增加各种问题",
+          "minOSVersion": "14.0",
+          "buildVersion": "03-12",
+          "buildNumber": "03-12"
+        },
+        {
+          "version": "2.2.0",
+          "date": "2026-02-28T12:09:50Z",
+          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.2.0/2.2.0.ipa",
+          "size": 9426894,
+          "localizedDescription": "歌一刀更新：\r\n- 修复自定义时间功能使用异常，无法调时间问题\r\n- 修复上一曲随机问题\r\n- 修复首页排行榜部分歌单里歌曲播放触发无限闪退\r\n- 修复ios26.4beta、beta2搜索输字后点回车必闪退\r\n- 修复歌曲搜索偶尔闪退\r\n- 修复14pmios17.0，出现“收藏歌单及我的歌单”打不开的情况\r\n- 优化歌曲封面+歌词的轮动\r\n- 优化切换源失败时提醒消息遮挡问题\r\n- 增加歌单页定位到正在播放\r\n- 增加删除歌单时，可选择删除歌单内所有歌曲\r\n- 增加歌曲收藏时，可自选收藏到哪个歌单\r\n- 增加收藏的歌单，歌单歌曲查找搜索\r\n- 增加收藏的歌单，可切换成手动模式更新歌单里的内容\r\n- 增加收藏的歌单，里面歌曲可复选收藏\r\n- 增加最高音质支持到hires+master\r\n- 增加本地歌曲可收藏到歌单\r\n- 增加播放界面选择样式\r\n- 增加摇一摇切歌功能",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.1.0",
+          "date": "2026-02-13T06:53:07Z",
+          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.1.0/2.1.0.ipa",
+          "size": 8761082,
+          "localizedDescription": "年前最后一版\r\n### 更新内容：\r\n- 增加一刀搜索，极速体验，无需你懂得\r\n- 增加底部Tab自定义\r\n- 优化CPU\r\n- 优化一些问题",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/recommendation.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/playlist.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/play.webp"
+      ]
+    }
+  ],
+  "news": []
+}
