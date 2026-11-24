@@ -7,13 +7,219 @@
   "website": "https://github.com/vaeann",
   "tintColor": "#3D8B7D",
   "featuredApps": [
-    "com.local.STV",
-    "com.linkpass.kazumi",
-    "com.thebcd69.bcd",
-    "com.hghubx.app",
-    "com.github.cyrilpeng.veneranext"
+    "com.armsx2.ios",
+    "cc.bili",
+    "app.local.iPadn",
+    "dev.ibuilder.app",
+    "io.nekohasekai.screensharing"
   ],
   "apps": [
+    {
+      "name": "ARMSX2",
+      "bundleIdentifier": "com.armsx2.ios",
+      "developerName": "ARMSX2",
+      "subtitle": "39.1M · PS2 模拟器",
+      "localizedDescription": "基于 PCSX2 的开源 PlayStation 2 模拟器，带原生 ARM64 JIT 重编译器，可在手机、PC 与掌机上运行 PS2 游戏。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/icon.png",
+      "tintColor": "#712ED5",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.6.0-nightly.20261123.2028",
+          "date": "2026-11-23T20:48:17Z",
+          "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261123/ARMSX2-nightly-20261123-d8d9a02783-iOS-arm64.ipa",
+          "size": 40949886,
+          "minOSVersion": "17.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/game.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/list.png",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/settings.png"
+      ]
+    },
+    {
+      "name": "cilicili",
+      "bundleIdentifier": "cc.bili",
+      "developerName": "Rone89",
+      "subtitle": "24.3M · 哔哩哔哩第三方客户端",
+      "localizedDescription": "cilicili 是用 SwiftUI 写的 B 站第三方客户端，支持首页推荐、搜索、UP 主空间、动态流、视频详情与弹幕，可评论、点赞、投币、收藏、分享。播放基于 AVPlayer 的 HLS 链路，针对 iOS 26+ 的 HEVC 硬解做了优化；支持弹幕开关与样式设置、关键词过滤、图片大图预览。登录支持扫码和网页两种方式，登录态只存在本机钥匙串。注意：需要 iOS 26.1 及以上。",
+      "iconURL": "https://raw.githubusercontent.com/Rone89/cilicili/main/bili/Assets.xcassets/AppIcon.appiconset/cilicili-icon.png",
+      "tintColor": "#A5BB2A",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.1.8",
+          "date": "2026-11-23T17:50:55Z",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.8/bili-release-unsigned.ipa",
+          "size": 25470044,
+          "localizedDescription": "## v1.1.8 更新内容\n\n### ✨ 新增功能与正式转正\n- **大屏自适应布局正式转正（iPad / iPhone Duo）**：\n  - 宽屏、iPad、iPhone Duo 展开态及分屏窗口全面启用自适应多栏网格、自适应侧边/底部导航、双栏视频详情页与双栏直播间，并移除实验室开关固化为正式默认体验。\n  - 折叠态 iPhone Duo 适配左侧 9:16 主内容区与右侧竖向功能栏，弹窗严格限定在内容区内不遮挡侧边栏。\n- **动态页新增多栏布局与纯文本引用卡排版**：\n  - 支持**列表**、**瀑布流**、**16:9 等高网格**三种布局自由切换，可在动态页顶部菜单或设置页随时调整。\n  - 纯文本短动态按字数自动阶梯放大并居中排布，搭配极淡引号角标与柔和微渐变底纹，消除短句卡片留白空洞感。\n- **播放器长按滑动调速与上滑锁定**：\n  - 长按默认触发 `1.5x` 倍速，左右滑动可丝滑切换档位（`1.25x / 1.5x / 2.0x`），上滑锁定持续倍速播放；点按锁定胶囊即可恢复原速且不唤醒播放控件。\n- **内容过滤新增充电专属屏蔽**：\n  - 支持在过滤设置中按需开启屏蔽首页推荐与动态流中的充电专属及提前看视频（默认关闭）。\n- **搜索与「我的」页交互升级**：\n  - 搜索页支持原生 TabBar 形态切换与宽屏多栏发现/结果网格；「我的」页内",
+          "minOSVersion": "26.1",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        },
+        {
+          "version": "1.1.7",
+          "date": "2026-11-21T02:38:11Z",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.7/bili-release-unsigned.ipa",
+          "size": 25017751,
+          "localizedDescription": "## v1.1.7 更新内容\n\n### ✨ 新增功能\n- **原生专栏阅读页**：动态页与搜索结果中的专栏（支持 `cv` 专栏与 `opus` 图文动态）支持原生打开，不再跳转外部网页。\n  - 动态中的专栏卡片点击整卡直接进入专栏详情页，无需先经由动态详情页中转。\n  - 支持封面、标题、分类/字数/发布时间、富文本排版（标题、粗斜体、删除线、引用、列表、代码块）、正文图片全屏缩放查看。\n  - 右上角提供独立的作者头像液态玻璃按钮（点击跳转 UP 主主页）；底部提供与动态详情页一致的**点赞、评论（「点击发送电波」发评及楼中楼回复）、分享**交互栏。\n- **视频三分手势控制**（可在「我的 → 播放设置 → 播放体验」中开启）：\n  - **左侧 1/3**：上下滑调节屏幕亮度。\n  - **中间 1/3**：横屏视频在竖屏下上滑转至横屏全屏、横屏下下滑退回竖屏；竖屏视频上滑进入竖屏全屏、全屏下下滑退出全屏。\n  - **右侧 1/3**：上下滑调节音量。\n\n### 🐛 修复与优化\n- **应用内画中画（小窗）稳定性与体验优化**：\n  - 修复退出视频页后无法自动进入应用内画中画小窗的问题。\n  - 修复小窗播放期间点击进入新视频时旧小窗卡住无法播放的问题，并优化旧小窗退出与新视频起播的切换速度。\n  - 修复在应用内画中画中点击暂停后仍自动恢复播放的问题。\n  - 修复",
+          "minOSVersion": "26.1"
+        },
+        {
+          "version": "1.1.6",
+          "date": "2026-11-19T21:24:27Z",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.6/bili-release-unsigned.ipa",
+          "size": 24747937,
+          "localizedDescription": "## 更新内容（1.1.5 → 1.1.6）\n\n• **原生播放底层转正与手感优化**：正式采用系统原生 `AVPlayerViewController` 底座配合通透液态玻璃自绘控件，优化横向滑动调进度响应与松手出帧速度，统一手动全屏、重力横屏与系统画中画衔接体验。\n• **弹幕架构收敛与旋转稳定性修复**：点播由原生 `AVSynchronizedLayer` 同步驱动、直播由 `Metal` 渲染并彻底移除第三方 `DanmakuKit` 依赖；解决横竖屏旋转时弹幕闪烁、位置偏移与清晰度切换闪退问题，新增大会员渐变彩色弹幕及「同屏弹幕上限」设置。\n• **杜比视界与 HDR 播放精简**：移除旧版「杜比视界渲染」开关与双层叠加播放器，统一交由系统原生高动态范围输出配合内置防过曝兼容处理，避免额外功耗与画中画/全屏割裂。\n• **底栏动效与评论弹窗细节**：彻底修复二级页面返回一级页面时底部 TabBar 闪现及滚动最小化失效问题；新增「评论弹窗不展开到最大高度」开关，保持更舒适的阅读视野。\n\n--------\n\n安装说明：附件为未签名 IPA（`1.1.6` Build `218`），需自行签名后安装。",
+          "minOSVersion": "26.1"
+        }
+      ]
+    },
+    {
+      "name": "iPadn",
+      "bundleIdentifier": "app.local.iPadn",
+      "developerName": "mengangs",
+      "subtitle": "47.7M · 下载已购应用与旧版本",
+      "localizedDescription": "在 iPhone 与 iPad 上搜索、下载并安装你已拥有的应用，包括历史版本与已下架应用，支持区域价格比较与原生安装，覆盖 iPhone、iPad、Apple TV 与 Mac 应用。",
+      "iconURL": "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/icon.png",
+      "tintColor": "#3394D0",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "2.3.5",
+          "date": "2026-11-23T15:22:43Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.5/iPadn-2.3.5-lite-unsigned.ipa",
+          "size": 49971723,
+          "localizedDescription": "## iPadn 2.3.5\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.5** 稳定性修复与体验升级版：根治 **iOS 16.0–16.2 强链接符号闪退**、**iOS 27.2 beta 2 历史版本加载闪退** 与 **iPadOS 全屏/专业模式导航栏异常**；**TestFlight 现支持切换下载 Apple TV 等多平台测试包**并统一展示单色客户端标识，同时修复大型/多变体游戏误报「产物校验失败，已清理」及详情页顶部虚化异常；在「设置 › 外观与图标」开放**自定义全部 177 个 Apple 商店地区**（支持搜索筛选、勾选、拖拽排序与国旗展示）；并修复 FairPlay 高熵插件误拒、登录 `5020`/2FA 提示、未购免费应用首次获取旧版报错与「应用包」批量导入打断问题。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 iOS 16/27 闪退与 iPadOS 专业模式导航异",
+          "minOSVersion": "16.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "2.3.4",
+          "date": "2026-11-22T05:56:54Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.4/iPadn-2.3.4-lite-unsigned.ipa",
+          "size": 49848919,
+          "localizedDescription": "## iPadn 2.3.4\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.4** 体验与稳定性全面升级版：全面打通 **TestFlight 实时同步下载、后台断点续传、统一自动安装与灵动岛进度同步**；取消下载页与「应用包」冗余分组并在全应用（含「已解密」「Wi‑Fi 传输」「存储空间」）统一极简单色 TestFlight 图标；重构下载与 TestFlight 暂停/继续及全状态切换弹性形变动效；根治多账号切换反复触发验证码、多手机号 2FA 与 0 应用账号卡顿；统一「应用包」5 秒侧滑撤销与全应用原生居中弹窗、优化本机配对引导，并补齐 App Store 账单/条款报错引导及原生安装 iOS 17.4+ 与局域网防护。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **TestFlight 同步下载、后台续传、自动安装与灵动岛同步**\r\n  - TestFlight 任务在元数据就绪并实际开始下载后，实时",
+          "minOSVersion": "16.0",
+          "buildVersion": "40",
+          "buildNumber": "40"
+        },
+        {
+          "version": "2.3.3",
+          "date": "2026-11-21T14:14:24Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.3/iPadn-2.3.3-lite-unsigned.ipa",
+          "size": 49730145,
+          "localizedDescription": "## iPadn 2.3.3\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.3** 全面加固与体验升级版：重点修复下载/领许可时偶发「Apple 暂时无法完成该操作」的协议盲区（补齐 `1008` 会话过期刷新、`-128` 地区自动纠偏、新版条款提示与 HTTP 200 诊断日志）；升级「下载」页多选与统一撤销删除，新增安装包构建 SDK / Xcode 版本速查，修复「应用包」左滑变灰遮罩，并完成一轮覆盖安全脱敏、滚动性能、深浅色对比度与 11 语言本地化的全面审计优化。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 Apple 下载/获取报错「暂时无法完成该操作」与诊断盲区**\r\n  - 补齐 `1008`（设备验证/会话过期）在下载、历史版本票据、领免费许可及 Mac 包路径中的自动刷新与重新登录处理；补充密码已更改（`Your password has changed.`）与账号停用（`Your",
+          "minOSVersion": "16.0",
+          "buildVersion": "39",
+          "buildNumber": "39"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Loads signing resources and serves installation packages over this device's loopback address, and finds this device's installation service."
+        }
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/01-search.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/02-detail.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/03-versions.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/04-prices.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/05-downloads.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/06-purchased.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/07-native-install.jpg"
+      ]
+    },
+    {
+      "name": "iBuilder",
+      "bundleIdentifier": "dev.ibuilder.app",
+      "developerName": "Absenti",
+      "subtitle": "40.5M · Switch games, built on yo…",
+      "localizedDescription": "iBuilder turns a Switch game dump you own into a native iOS build on the iPhone itself: extract, rewrite, translate the shaders, sign and play. Experimental: results differ per game.\n\nNo game, firmware or key is included or downloaded. Use it only with your own games and the prod.keys of your own console. Not affiliated with Nintendo or Apple.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/icon.webp",
+      "tintColor": "#3530C9",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.8",
+          "date": "2026-11-23T14:31:19Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.8/GameApp-rust-20261123-142811-rustcf3c2f55.ipa",
+          "size": 42455597,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n> [!IMPORTANT]\n> **Every game rebuilds its shaders once** after this update: the shader chain moves to `6c53446391cc` (nxnative 033793f0), and a library is named by its chain. iOS's Metal shader cache also starts empty once, so the first play of each game stutters more.\n\n**New**\n- **Shader chain 6c53446391cc**, nxnative's current one: 37 upstream translator and host changes, including the Switch 2 mesh/",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "0.1.7",
+          "date": "2026-11-22T19:54:57Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.7/GameApp-rust-20261122-195251-rust2353f307.ipa",
+          "size": 40973312,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **No rebuild after an app update** that does not change what a built game is made of (a new *framework id*: host, rewriter, assembler, signer, profiles, game tables). The first update to 0.1.7 still rebuilds each game once.\n- **Beach Buggy Racing 2**: shaders read from Vector Unit's `.apf` archives (0 → 496), and the game no longer quits at start (engine: the friends notification queue opens o",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.1.4",
+          "date": "2026-11-22T16:28:12Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.4/GameApp-rust-20261122-162610-rust7d81008a.ipa",
+          "size": 40938569,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New: iPhone 12 and later**\n- **GPUs without BC textures** (A14–A16, e.g. iPhone 12–15 non-Pro, A14–A16 iPads) now take the engine path ported from the community fork [mianmuhammadse/nxnative `no-bc`](https://github.com/mianmuhammadse/nxnative/tree/no-bc) (MIT): BC1–5 decoded on the GPU at upload, BC1/2/3 stored as ASTC 4x4 (a quarter of the memory), CPU only for BC6H/BC7/3D. Automatic. `DM_NO_BC_GPU=0",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/build.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/settings.webp"
+      ]
+    },
+    {
+      "name": "Open Screen Sharing",
+      "bundleIdentifier": "io.nekohasekai.screensharing",
+      "developerName": "nekohasekai",
+      "subtitle": "11.2M · 远程桌面客户端",
+      "localizedDescription": "免费开源的远程桌面客户端，针对 Mac 屏幕共享与公网环境做了优化，同时完整支持标准 VNC 与 RDP 协议。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
+      "tintColor": "#822DD7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.9",
+          "date": "2026-11-23T11:24:00Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.9/OpenScreenSharing.ipa",
+          "size": 11742697,
+          "localizedDescription": "* Add High Definition option for Internet connections\r\n* Add multiple addresses and Tailscale discovery\r\n* Fixes and improvements",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-23",
+          "buildNumber": "11-23"
+        },
+        {
+          "version": "1.0.8",
+          "date": "2026-11-20T13:51:14Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.8/OpenScreenSharing.ipa",
+          "size": 11167454,
+          "localizedDescription": "* Add a tab bar for multiple sessions on iPad\n* Extend full-screen sessions around the MacBook notch\n* Add native touch input for touch displays on macOS\n* Automatically take over busy High Performance sessions from other Open Screen Sharing clients\n* Add RSA-AES and VeNCrypt authentication for VNC servers (RealVNC, TigerVNC, wayvnc)\n* Add option to reverse scroll direction for standard VNC and RDP\n* Fixes and improvements",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.7",
+          "date": "2026-11-17T10:21:29Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.7/OpenScreenSharing.ipa",
+          "size": 11840191,
+          "localizedDescription": "* Add android app\r\n* Fixes and improvements",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
+      ]
+    },
     {
       "name": "i短剧",
       "bundleIdentifier": "com.local.STV",
@@ -26,10 +232,10 @@
       "versions": [
         {
           "version": "1.6",
-          "date": "2026-11-23T06:30:13Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b29-next-drama-cache/STV-1.6b29-unsigned.ipa",
-          "size": 47197741,
-          "localizedDescription": "# i短剧 1.6b29 双端播完连刷推荐、进度条缩略图预览、站源缓存与 iOS 扫码修复\n\n### 双端新特性（合并 PR #25 并对齐 iOS）\n- **播完连刷推荐（iOS + Android）**：\n  - 3 级瀑布流推荐（同系列下一季 → 同分类/同标签热门 Top 8 → 通用热门），自动过滤已看与本次跳过的剧；\n  - 播完大结局弹出 3 秒倒计时推荐卡片，支持「立即播放」「换一部」「取消」，可在「更多」中随时开关；Android 大结局上滑亦可直接滑出下一部推荐。\n- **进度条拖动缩略图预览（Android 合并 PR #25，对齐 iOS）**：\n  - 横竖屏拖动进度条时拇指上方浮出对应画面缩略图 + 实时时间戳与相对偏移，自适应横/竖屏比例，HLS 自动优雅降级。\n\n### 体验修复\n- **Android 站源/插件内存缓存与下拉刷新**：从 CMS 站源、JS 插件或黄果点进详情再返回时直接复用缓存并保持选中分类与滚动位置，不再重复加载；列表顶部支持手动下拉刷新。\n- **iOS 红果短剧扫码后台恢复修复**：后台 `WKWebView` 保持可见不透明层防止切回后定时器被 WebKit 冻结，并在 WebView 内直查 `/api/pc/profile` + 监听 `scenePhase == .active` + 增加手动检查登录按钮，切回 A",
+          "date": "2026-11-23T08:14:21Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b30-player-hotfix/STV-1.6b30-unsigned.ipa",
+          "size": 47198163,
+          "localizedDescription": "# i短剧 1.6b30 播放器热修（Android 黑屏无声修复 + iOS 无感切集优化）\n\n### Android 热修\n- **修复部分机型播放红果黑屏无声**：\n  - 移除双并发 `ExoPlayer`（`standbyPlayer`）与第二个 `TextureView`，改为单 `ExoPlayer` + 后台异步首帧 `Bitmap` 无缝交接，彻底消除双硬解实例抢占解码器/音频焦点的问题；\n  - `EpisodeCache` 首帧抽取改为后台异步执行，不再阻塞起播；\n  - 仅在开启超分锐化或 SDR→HDR 时才挂载 `VideoFrameProcessor` GL 管线，默认播放走原生硬件直出，并恢复 `2s / 2.5s` 安全预缓存间隔。\n\n### iOS 体验优化\n- **切集无闪烁 & 去 Toast**：\n  - 切集时保持当前播控显隐状态不变，不再强制弹出/闪烁底部进度条与播控栏，也不再清空 `tech` / `videoSize`；\n  - 移除切集时的「第 X 集」Toast 弹窗；\n  - 首帧交接增加 `90ms` 渲染缓冲（`revealedIndex`），等 `MPVMetalLayer` 送显第 0 帧后再揭开首帧图，消除切集瞬间黑闪。\n\nIPA 为未签名包，需要自行重签后安装。Android 包使用项目现有分发签名。\n\n---\n包",
           "minOSVersion": "17.0",
           "buildVersion": "11-23",
           "buildNumber": "11-23"
@@ -154,9 +360,7 @@
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
           "size": 3992968,
           "localizedDescription": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免",
-          "minOSVersion": "15.0",
-          "buildVersion": "2.2.7",
-          "buildNumber": "2.2.7"
+          "minOSVersion": "15.0"
         },
         {
           "version": "2.2.6",
@@ -243,49 +447,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.jpg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.jpg"
-      ]
-    },
-    {
-      "name": "iBuilder",
-      "bundleIdentifier": "dev.ibuilder.app",
-      "developerName": "Absenti",
-      "subtitle": "39.1M · Switch games, built on yo…",
-      "localizedDescription": "iBuilder turns a Switch game dump you own into a native iOS build on the iPhone itself: extract, rewrite, translate the shaders, sign and play. Experimental: results differ per game.\n\nNo game, firmware or key is included or downloaded. Use it only with your own games and the prod.keys of your own console. Not affiliated with Nintendo or Apple.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/icon.webp",
-      "tintColor": "#3530C9",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.7",
-          "date": "2026-11-22T19:54:57Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.7/GameApp-rust-20261122-195251-rust2353f307.ipa",
-          "size": 40973312,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **No rebuild after an app update** that does not change what a built game is made of (a new *framework id*: host, rewriter, assembler, signer, profiles, game tables). The first update to 0.1.7 still rebuilds each game once.\n- **Beach Buggy Racing 2**: shaders read from Vector Unit's `.apf` archives (0 → 496), and the game no longer quits at start (engine: the friends notification queue opens o",
-          "minOSVersion": "26.0",
-          "buildVersion": "11-23",
-          "buildNumber": "11-23"
-        },
-        {
-          "version": "0.1.4",
-          "date": "2026-11-22T16:28:12Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.4/GameApp-rust-20261122-162610-rust7d81008a.ipa",
-          "size": 40938569,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New: iPhone 12 and later**\n- **GPUs without BC textures** (A14–A16, e.g. iPhone 12–15 non-Pro, A14–A16 iPads) now take the engine path ported from the community fork [mianmuhammadse/nxnative `no-bc`](https://github.com/mianmuhammadse/nxnative/tree/no-bc) (MIT): BC1–5 decoded on the GPU at upload, BC1/2/3 stored as ASTC 4x4 (a quarter of the memory), CPU only for BC6H/BC7/3D. Automatic. `DM_NO_BC_GPU=0",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.1.3",
-          "date": "2026-11-22T15:19:40Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.3/GameApp-rust-20261122-151758-rust7d81008a.ipa",
-          "size": 40921895,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **Choose which game's shaders are prepared**: the Build tab lists the games waiting for shader preparation with their progress. Per game: *Prepare this one now* (the current one pauses and keeps what it finished), *Pause / Resume*, *Skip / Queue again*. The order persists; a newly built game now goes to the end of the queue.\n\n**Fixes**\n- **Full IPA export rejected by on-device signers** (Flare",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/library.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/build.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/settings.webp"
       ]
     },
     {
@@ -440,90 +601,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.jpeg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.jpeg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.jpeg"
-      ]
-    },
-    {
-      "name": "ARMSX2",
-      "bundleIdentifier": "com.armsx2.ios",
-      "developerName": "ARMSX2",
-      "subtitle": "39.0M · PS2 模拟器",
-      "localizedDescription": "基于 PCSX2 的开源 PlayStation 2 模拟器，带原生 ARM64 JIT 重编译器，可在手机、PC 与掌机上运行 PS2 游戏。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/icon.png",
-      "tintColor": "#712ED5",
-      "category": "other",
-      "versions": [
-        {
-          "version": "2.6.0-nightly.20261122.2300",
-          "date": "2026-11-22T06:28:24Z",
-          "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261122/ARMSX2-nightly-20261122-6370337611-iOS-arm64.ipa",
-          "size": 40930252,
-          "minOSVersion": "17.0",
-          "buildVersion": "11-22",
-          "buildNumber": "11-22"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/game.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/list.png",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/ARMSX2/images/settings.png"
-      ]
-    },
-    {
-      "name": "iPadn",
-      "bundleIdentifier": "app.local.iPadn",
-      "developerName": "mengangs",
-      "subtitle": "47.5M · 下载已购应用与旧版本",
-      "localizedDescription": "在 iPhone 与 iPad 上搜索、下载并安装你已拥有的应用，包括历史版本与已下架应用，支持区域价格比较与原生安装，覆盖 iPhone、iPad、Apple TV 与 Mac 应用。",
-      "iconURL": "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/icon.png",
-      "tintColor": "#3394D0",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "2.3.4",
-          "date": "2026-11-22T05:56:54Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.4/iPadn-2.3.4-lite-unsigned.ipa",
-          "size": 49848919,
-          "localizedDescription": "## iPadn 2.3.4\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.4** 体验与稳定性全面升级版：全面打通 **TestFlight 实时同步下载、后台断点续传、统一自动安装与灵动岛进度同步**；取消下载页与「应用包」冗余分组并在全应用（含「已解密」「Wi‑Fi 传输」「存储空间」）统一极简单色 TestFlight 图标；重构下载与 TestFlight 暂停/继续及全状态切换弹性形变动效；根治多账号切换反复触发验证码、多手机号 2FA 与 0 应用账号卡顿；统一「应用包」5 秒侧滑撤销与全应用原生居中弹窗、优化本机配对引导，并补齐 App Store 账单/条款报错引导及原生安装 iOS 17.4+ 与局域网防护。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **TestFlight 同步下载、后台续传、自动安装与灵动岛同步**\r\n  - TestFlight 任务在元数据就绪并实际开始下载后，实时",
-          "minOSVersion": "16.0",
-          "buildVersion": "11-22",
-          "buildNumber": "11-22"
-        },
-        {
-          "version": "2.3.3",
-          "date": "2026-11-21T14:14:24Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.3/iPadn-2.3.3-lite-unsigned.ipa",
-          "size": 49730145,
-          "localizedDescription": "## iPadn 2.3.3\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.3** 全面加固与体验升级版：重点修复下载/领许可时偶发「Apple 暂时无法完成该操作」的协议盲区（补齐 `1008` 会话过期刷新、`-128` 地区自动纠偏、新版条款提示与 HTTP 200 诊断日志）；升级「下载」页多选与统一撤销删除，新增安装包构建 SDK / Xcode 版本速查，修复「应用包」左滑变灰遮罩，并完成一轮覆盖安全脱敏、滚动性能、深浅色对比度与 11 语言本地化的全面审计优化。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 Apple 下载/获取报错「暂时无法完成该操作」与诊断盲区**\r\n  - 补齐 `1008`（设备验证/会话过期）在下载、历史版本票据、领免费许可及 Mac 包路径中的自动刷新与重新登录处理；补充密码已更改（`Your password has changed.`）与账号停用（`Your",
-          "minOSVersion": "16.0",
-          "buildVersion": "39",
-          "buildNumber": "39"
-        },
-        {
-          "version": "2.3.2",
-          "date": "2026-11-21T07:16:08Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.2/iPadn-2.3.2-lite-unsigned.ipa",
-          "size": 46527099,
-          "localizedDescription": "## iPadn 2.3.2\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.2** 修复与体验优化版：全面补全**「已购项目」历史与已下架应用**并大幅提升同步速度，解决切换账号后已购应用图标卡在灰色占位的问题，修复 **TestFlight** 登录误报「暂不支持多个受信任号码」与设备身份缓存失效，并修正深色模式下设置页「可更新」标签看不清的对比度问题。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **完整同步「已购项目」历史记录与已下架应用**\r\n  - 在原有 DMAP 活跃目录同步的基础上，接入 Apple 完整购买历史接口（`/commerce/account/purchases`，自动处理 pod/cookie 握手、401/403 会话静默刷新与多语言购买日期解析），并与 DMAP 结果智能合并，找回大量历史与已下架应用（含俄区等地区已下架应用）。\r\n  - 首次全量历史同步改用 **6 路并发**",
-          "minOSVersion": "16.0",
-          "buildVersion": "38",
-          "buildNumber": "38"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSLocalNetworkUsageDescription": "Loads signing resources and serves installation packages over this device's loopback address, and finds this device's installation service."
-        }
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/01-search.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/02-detail.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/03-versions.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/04-prices.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/05-downloads.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/06-purchased.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/07-native-install.jpg"
       ]
     },
     {
@@ -793,44 +870,6 @@
       }
     },
     {
-      "name": "cilicili",
-      "bundleIdentifier": "cc.bili",
-      "developerName": "Rone89",
-      "subtitle": "23.9M · 哔哩哔哩第三方客户端",
-      "localizedDescription": "cilicili 是用 SwiftUI 写的 B 站第三方客户端，支持首页推荐、搜索、UP 主空间、动态流、视频详情与弹幕，可评论、点赞、投币、收藏、分享。播放基于 AVPlayer 的 HLS 链路，针对 iOS 26+ 的 HEVC 硬解做了优化；支持弹幕开关与样式设置、关键词过滤、图片大图预览。登录支持扫码和网页两种方式，登录态只存在本机钥匙串。注意：需要 iOS 26.1 及以上。",
-      "iconURL": "https://raw.githubusercontent.com/Rone89/cilicili/main/bili/Assets.xcassets/AppIcon.appiconset/cilicili-icon.png",
-      "tintColor": "#A5BB2A",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.1.7",
-          "date": "2026-11-21T02:38:11Z",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.7/bili-release-unsigned.ipa",
-          "size": 25017751,
-          "localizedDescription": "## v1.1.7 更新内容\n\n### ✨ 新增功能\n- **原生专栏阅读页**：动态页与搜索结果中的专栏（支持 `cv` 专栏与 `opus` 图文动态）支持原生打开，不再跳转外部网页。\n  - 动态中的专栏卡片点击整卡直接进入专栏详情页，无需先经由动态详情页中转。\n  - 支持封面、标题、分类/字数/发布时间、富文本排版（标题、粗斜体、删除线、引用、列表、代码块）、正文图片全屏缩放查看。\n  - 右上角提供独立的作者头像液态玻璃按钮（点击跳转 UP 主主页）；底部提供与动态详情页一致的**点赞、评论（「点击发送电波」发评及楼中楼回复）、分享**交互栏。\n- **视频三分手势控制**（可在「我的 → 播放设置 → 播放体验」中开启）：\n  - **左侧 1/3**：上下滑调节屏幕亮度。\n  - **中间 1/3**：横屏视频在竖屏下上滑转至横屏全屏、横屏下下滑退回竖屏；竖屏视频上滑进入竖屏全屏、全屏下下滑退出全屏。\n  - **右侧 1/3**：上下滑调节音量。\n\n### 🐛 修复与优化\n- **应用内画中画（小窗）稳定性与体验优化**：\n  - 修复退出视频页后无法自动进入应用内画中画小窗的问题。\n  - 修复小窗播放期间点击进入新视频时旧小窗卡住无法播放的问题，并优化旧小窗退出与新视频起播的切换速度。\n  - 修复在应用内画中画中点击暂停后仍自动恢复播放的问题。\n  - 修复",
-          "minOSVersion": "26.1",
-          "buildVersion": "11-21",
-          "buildNumber": "11-21"
-        },
-        {
-          "version": "1.1.6",
-          "date": "2026-11-19T21:24:27Z",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.6/bili-release-unsigned.ipa",
-          "size": 24747937,
-          "localizedDescription": "## 更新内容（1.1.5 → 1.1.6）\n\n• **原生播放底层转正与手感优化**：正式采用系统原生 `AVPlayerViewController` 底座配合通透液态玻璃自绘控件，优化横向滑动调进度响应与松手出帧速度，统一手动全屏、重力横屏与系统画中画衔接体验。\n• **弹幕架构收敛与旋转稳定性修复**：点播由原生 `AVSynchronizedLayer` 同步驱动、直播由 `Metal` 渲染并彻底移除第三方 `DanmakuKit` 依赖；解决横竖屏旋转时弹幕闪烁、位置偏移与清晰度切换闪退问题，新增大会员渐变彩色弹幕及「同屏弹幕上限」设置。\n• **杜比视界与 HDR 播放精简**：移除旧版「杜比视界渲染」开关与双层叠加播放器，统一交由系统原生高动态范围输出配合内置防过曝兼容处理，避免额外功耗与画中画/全屏割裂。\n• **底栏动效与评论弹窗细节**：彻底修复二级页面返回一级页面时底部 TabBar 闪现及滚动最小化失效问题；新增「评论弹窗不展开到最大高度」开关，保持更舒适的阅读视野。\n\n--------\n\n安装说明：附件为未签名 IPA（`1.1.6` Build `218`），需自行签名后安装。",
-          "minOSVersion": "26.1"
-        },
-        {
-          "version": "1.1.5",
-          "date": "2026-11-17T11:42:35Z",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.5/bili-release-unsigned.ipa",
-          "size": 24814110,
-          "localizedDescription": "## 更新内容（1.1.4 → 1.1.5）\n\n- **顶栏交互统一**：搜索页与「我的」页面采用系统原生顶栏搜索与按钮布局；动态页右上角切换箭头尺寸调整得更协调。\n- **视频页状态栏清晰**：浅色模式下进入视频或直播详情页时，顶部状态栏图标恢复清晰可见。\n- **底栏防误触回顶**：底栏最小化成胶囊后，首次点击只展开底栏方便切换页面；在展开状态下再轻点当前 Tab 才返回顶部。\n- **顶部渐变收窄**：保留系统柔和渐进模糊效果，移除多余顶部留白占位，整体视野更干净。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
-          "minOSVersion": "26.1"
-        }
-      ]
-    },
-    {
       "name": "Fladder",
       "bundleIdentifier": "nl.jknaapen.fladder",
       "developerName": "DonutWare",
@@ -912,47 +951,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot1.jpg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot2.jpg",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Mangayomi/images/screenshot3.jpg"
-      ]
-    },
-    {
-      "name": "Open Screen Sharing",
-      "bundleIdentifier": "io.nekohasekai.screensharing",
-      "developerName": "nekohasekai",
-      "subtitle": "10.7M · 远程桌面客户端",
-      "localizedDescription": "免费开源的远程桌面客户端，针对 Mac 屏幕共享与公网环境做了优化，同时完整支持标准 VNC 与 RDP 协议。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
-      "tintColor": "#822DD7",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.0.8",
-          "date": "2026-11-20T13:51:14Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.8/OpenScreenSharing.ipa",
-          "size": 11167454,
-          "localizedDescription": "* Add a tab bar for multiple sessions on iPad\n* Extend full-screen sessions around the MacBook notch\n* Add native touch input for touch displays on macOS\n* Automatically take over busy High Performance sessions from other Open Screen Sharing clients\n* Add RSA-AES and VeNCrypt authentication for VNC servers (RealVNC, TigerVNC, wayvnc)\n* Add option to reverse scroll direction for standard VNC and RDP\n* Fixes and improvements",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-20",
-          "buildNumber": "11-20"
-        },
-        {
-          "version": "1.0.7",
-          "date": "2026-11-17T10:21:29Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.7/OpenScreenSharing.ipa",
-          "size": 11840191,
-          "localizedDescription": "* Add android app\r\n* Fixes and improvements",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.0.6",
-          "date": "2026-11-07T07:10:23Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.6/OpenScreenSharing.ipa",
-          "size": 13714353,
-          "localizedDescription": "* Add native touch support for Mac\r\n* Add Quick Input\r\n* Keep the Mac awake\r\n* Allow signing in with another connection's credentials\r\n* Fixes and improvements",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
       ]
     },
     {
@@ -1184,46 +1182,6 @@
       }
     },
     {
-      "name": "3106",
-      "bundleIdentifier": "com.qingtang.3106",
-      "developerName": "QuinnTang74",
-      "subtitle": "5.7M · 免越狱的 iOS 容器管理工具",
-      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
-      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
-      "tintColor": "#D033AC",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "3.2.8",
-          "date": "2026-11-19T17:56:05Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.8/3106-3.2.8-unsigned.ipa",
-          "size": 5955049,
-          "localizedDescription": "# 3106 3.2.8 正式版\n\n- 版本：**3.2.8**\n- 构建：**33**\n- 日期：2026-11-20\n- 产物：`3106-3.2.8-unsigned.ipa`\n- SHA256：`18d652a41ebacd8569a27a4c1b5b5686df656301188202dd8848ea9edaca7918`\n\n本次版本集中修复“数据明明改了但 3106 不显示/不生效”这一类问题，并把 MobileGestalt 的能力位读取从字典扩展到二进制槽位。\n\n## 重点变化\n\n### 1. 沙箱访问缓存自愈\n\n`worse_query` 依赖 App Group 的 `Library/Caches` 交换。此前如果该目录被上一次中断的交换、旧版本或同组其它程序留下的软链占住，恢复逻辑会一直拒绝，交换无法开始，所有授权返回 `-4`（日志 `tried=[]`）。表现为文件浏览器全部“未识别容器”、清理器只统计到 3106 自身。\n\n现在：\n\n- 恢复失败会先做一次“挪开障碍物”的修复：删除 `Caches` 软链、把非目录/无法恢复的 `.wq-caches-preserved` 改名到 `.wq-caches-reset-<id>`、重建普通 `Caches`；**不删除任何用户数据**。\n- 授权失败码改为 `-5`，Swift 层按 60 秒节流自动修复并",
-          "minOSVersion": "17.0",
-          "buildVersion": "11-20",
-          "buildNumber": "11-20"
-        },
-        {
-          "version": "3.2.7",
-          "date": "2026-11-19T04:39:06Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.7/3106-3.2.7-unsigned.ipa",
-          "size": 5880602,
-          "localizedDescription": "# 3.2.7 正式版 · Stable Release Notes\n\n发布日期：2026-11-19 ｜ build 26\n\n> 新包 SHA256：`ad902d3a581e36f1df375d0789faf048594bb542f5dbf1cafcdf28f3d0ed3e73`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## ⚠️ 支持边界（重要）\n\n**iOS 27.3 beta 2（24C5049d）及之后的所有 27.3 构建不可用**：Apple 在 27.3 beta 2 修补了 worse_query 依赖的路径，此为系统侧变更，应用无法绕过。**27.x 支持上限为 27.3 beta 1（`24C5037i`）**——27.0–27.2 全部可用，27.3 按 build 号精确放行 beta 1、拒绝 beta 2+，不再等待进一步测试。iOS 18.7.2+ 同理不可支持（内核链依赖的两个 CVE 已被 Apple 修补，属设计内不支持，应用内会直接展示原因）。\n\n## 中文\n\n### 新增\n\n- **韩语（第五语言）**：全量 1508 键，与 zh-Hans / English / Tiếng Việt 逐键对齐。\n- **Wi-Fi HTTP 互传**：本机起 LAN 内 HTTP 服务（端口 8080 起，占用顺延），浏览器/",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "3.2.6",
-          "date": "2026-11-17T02:55:19Z",
-          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
-          "size": 5753848,
-          "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
-          "minOSVersion": "17.0",
-          "buildVersion": "25",
-          "buildNumber": "25"
-        }
-      ]
-    },
-    {
       "name": "Erosion-CN",
       "bundleIdentifier": "com.jbdotparty.Erosion",
       "developerName": "Kianuni",
@@ -1270,6 +1228,46 @@
         ],
         "privacy": {}
       }
+    },
+    {
+      "name": "3106",
+      "bundleIdentifier": "com.qingtang.3106",
+      "developerName": "QuinnTang74",
+      "subtitle": "5.6M · 免越狱的 iOS 容器管理工具",
+      "localizedDescription": "3106 是一款免越狱的 iOS 容器管理工具，基于沙盒漏洞实现。可以浏览每个应用的数据容器、替换任意文件（带备份与一键恢复）、编辑 MobileGestalt 参数（31 条预设、支持一键恢复原厂）、清理缓存、把应用存档打包备份并在重装后还原、在两个应用之间迁移文件夹，还能替换通知音、制作 .tendies 锁屏壁纸与拨号键主题、写锁屏文字和调整灵动岛布局。支持 iOS 17.0–18.7.1 与 26.0–27.3 beta 1，界面有简体中文、英文、越南语三种。注意：iOS 26.7 及以上重签名时需要 App Group 权限。",
+      "iconURL": "https://raw.githubusercontent.com/QuinnTang74/3106/main/docs/images/app-icon.png",
+      "tintColor": "#D033AC",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "3.2.7",
+          "date": "2026-11-19T04:39:06Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.7/3106-3.2.7-unsigned.ipa",
+          "size": 5880602,
+          "localizedDescription": "# 3.2.7 正式版 · Stable Release Notes\n\n发布日期：2026-11-19 ｜ build 26\n\n> 新包 SHA256：`ad902d3a581e36f1df375d0789faf048594bb542f5dbf1cafcdf28f3d0ed3e73`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## ⚠️ 支持边界（重要）\n\n**iOS 27.3 beta 2（24C5049d）及之后的所有 27.3 构建不可用**：Apple 在 27.3 beta 2 修补了 worse_query 依赖的路径，此为系统侧变更，应用无法绕过。**27.x 支持上限为 27.3 beta 1（`24C5037i`）**——27.0–27.2 全部可用，27.3 按 build 号精确放行 beta 1、拒绝 beta 2+，不再等待进一步测试。iOS 18.7.2+ 同理不可支持（内核链依赖的两个 CVE 已被 Apple 修补，属设计内不支持，应用内会直接展示原因）。\n\n## 中文\n\n### 新增\n\n- **韩语（第五语言）**：全量 1508 键，与 zh-Hans / English / Tiếng Việt 逐键对齐。\n- **Wi-Fi HTTP 互传**：本机起 LAN 内 HTTP 服务（端口 8080 起，占用顺延），浏览器/",
+          "minOSVersion": "17.0",
+          "buildVersion": "11-19",
+          "buildNumber": "11-19"
+        },
+        {
+          "version": "3.2.6",
+          "date": "2026-11-17T02:55:19Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.6/3106-3.2.6-unsigned.ipa",
+          "size": 5753848,
+          "localizedDescription": "# 3.2.6 正式版 · Stable Release Notes\n\n发布日期：2026-11-17 ｜ build 25\n\n> 本版专项修复 iOS 27 上文件管理的修改 / 复制粘贴 / 替换全部失败、且失败原因被吞掉无法归因的问题。新包 SHA256：`8141949c8e57417be0d3e7a32c50d0cdaa5458b68634dd53726f114fba31178d`（assets 内 SHA256SUMS.txt 同步刷新）。\n\n## 中文\n\n### 修复\n\n- **iOS 27 写入失败专项**：修改文件、复制粘贴、替换文件收敛到同一个授权原语（`worse_query_grant`），任何一处被系统收紧都会全部失败，而且失败码此前被约 20 处调用点静默吞掉，用户只能看到笼统的\"导入失败\"。本版对授权链做了四处单点加固：\n  - **授权前强制 lstat 不再是硬门槛**：收紧的 iOS 27 构建会拒绝 stat 未授权路径，曾让所有授权在查询发出前就死在 `-254`（鸡蛋悖论）。现在记录日志后继续走 swap + 查询，真正不可达的目标由末端验证兜底返回 `-8`。\n  - **container_query flags 扩展为 5 个候选 + 按系统大版本隔离的学习值**：此前只有 2 个硬编码候选，且 26.x 上学到的偏好在 27 上会被",
+          "minOSVersion": "17.0",
+          "buildVersion": "25",
+          "buildNumber": "25"
+        },
+        {
+          "version": "3.2.5",
+          "date": "2026-11-13T13:18:39Z",
+          "downloadURL": "https://github.com/QuinnTang74/3106/releases/download/v3.2.5/3106-3.2.5-unsigned.ipa",
+          "size": 5703636,
+          "localizedDescription": "# 3.2.5 正式版（同版本重发 rebuild） · Stable Release Notes\n\n发布日期：2026-11-13 ｜ **重发：2026-11-14** ｜ build 24 不变\n\n> 同版本号重发。新包 SHA256：`aa76f4e5f904fc0eb90a54d35f33c2df8e9ecb54059f526ff880f8dd0ba0fca8`（assets 内 SHA256SUMS.txt 同步刷新）。本次参考 GestaltX v1.1.1 release notes 的问题清单语义独立实现，未移植其代码。\n\n## 中文\n\n### 新增\n\n- **应用通知音替换**（GestaltX App Audio Library 思路，独立实现）：功能页新增「通知音替换」卡片；按应用维护通知音路径表（手动输入容器相对路径，未列出的应用同样可用）；替换前三段风险说明 + 全屏红色长按确认；替换走任意文件替换管线——原文件自动备份、替换记录持久化、记录左滑一键恢复；文件选择器以 `.data` 兜底，侧载包也能选中 `.caf/.m4a` 等音频；格式白名单 aiff/aif/caf/m4a/wav，单文件 ≤20MB；替换后列表立即刷新。\n\n### 修复\n\n- **字段 plist 导入不再整根覆盖**（GestaltX #138）：导入被当作补丁——以设备当前",
+          "minOSVersion": "17.0"
+        }
+      ]
     },
     {
       "name": "HermesEnabler",
