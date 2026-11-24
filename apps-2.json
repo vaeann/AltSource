@@ -1,19 +1,52 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 2 个（43 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 94 个，按更新频率分成 2 个源，这里是第 2 个（44 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.aigch.OpenParsec",
     "com.ios151.insav",
     "app.ehpanda",
     "com.zhangfuhao.wqtoolkit",
-    "com.henge.app",
-    "com.neogamelab.neostation"
+    "com.henge.app"
   ],
   "apps": [
+    {
+      "name": "OpenParsec",
+      "bundleIdentifier": "com.aigch.OpenParsec",
+      "developerName": "hugeBlack",
+      "subtitle": "4.2M · 开源 Parsec 客户端",
+      "localizedDescription": "面向 iOS 与 iPadOS 的开源 Parsec 客户端，支持鼠标、键盘与触屏操作。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/icon.png",
+      "tintColor": "#872AC9",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-11-13T07:02:53Z",
+          "downloadURL": "https://github.com/NearFrame/OpenParsec/releases/download/2.0.0/OpenParsec.ipa",
+          "size": 4445097,
+          "localizedDescription": "## Welcome to OpenParsec v2.0.0!\r\n\r\nThis is the release promised back in 1.4.0, with everything that's been on the nightly since october.\r\n\r\nWe now have a Metal renderer, streams that hold and reconnect by themselves, new connecting screens,reworked settings, and other control-related improvements.\r\n\r\n---\r\n\r\nBefore you update:\r\n- auto reconnect is now switched on by default, see settings > developer for additional settings\r\n- everyone is now on the new Metal renderer. OpenGL is remains optional as a fallback\\\r\n- this is the last release for ios 14. it runs with some rough edges but remains fun",
+          "minOSVersion": "14.0",
+          "buildVersion": "11-13",
+          "buildNumber": "11-13"
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-10-08T16:07:29Z",
+          "downloadURL": "https://github.com/NearFrame/OpenParsec/releases/download/1.4.0/OpenParsec.ipa",
+          "size": 4358332,
+          "localizedDescription": "Welcome! This is the first versioned release of everything thats been on our nightly since 1.3.0 in may, future releases will be tagged and published this way going forward:\r\n\r\nstreaming\r\n- pauses in the background instead of disconnecting, and reconnects on its own after a drop or a lock (#66, #80, #109)\r\n- pip recovers when its display layer fails, thanks @alantangok (#108)\r\n- audio buffer and race fixes, memcpy clamp from #70 thanks @2extndd (#85, #110)\r\n- connecting no longer kills music thats playing, it mixes instead, plus a status overlay (#86)\r\n\r\ninput\r\n- touchpad style cursor and cris",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
+      ]
+    },
     {
       "name": "INSAV",
       "bundleIdentifier": "com.ios151.insav",

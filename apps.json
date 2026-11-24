@@ -1,19 +1,129 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 93 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 94 个，按更新频率分成 2 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
+    "com.thm.orcaios",
+    "io.nekohasekai.screensharing",
+    "com.hghubx.app",
     "com.armsx2.ios",
-    "cc.bili",
-    "app.local.iPadn",
-    "dev.ibuilder.app",
-    "io.nekohasekai.screensharing"
+    "cc.bili"
   ],
   "apps": [
+    {
+      "name": "Orca",
+      "bundleIdentifier": "com.thm.orcaios",
+      "developerName": "huami1314",
+      "subtitle": "14.2M · iPhone client for Orca, t…",
+      "localizedDescription": "Community-maintained iPhone client for Orca, the agent development environment: pair with Orca on your Mac and chat with agents, follow their tool calls and run commands in an embedded Ghostty terminal, with Live Activities, Picture in Picture and push notifications when the app is closed. Requires iOS 26 and a Mac running Orca.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orca/icon.webp",
+      "tintColor": "#CE6D30",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.2",
+          "date": "2026-11-24T07:00:40Z",
+          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.2/Orca-iOS-v0.1.2-unsigned.ipa",
+          "size": 14888486,
+          "localizedDescription": "**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.1...v0.1.2",
+          "minOSVersion": "26.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-11-24T06:45:53Z",
+          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.1/Orca-iOS-v0.1.1-unsigned.ipa",
+          "size": 14887969,
+          "localizedDescription": "## What's Changed\n* feat(app): surface agent activity and terminal chats by @fobole-openthedoor in https://github.com/huami1314/orca-ios/pull/1\n\n## New Contributors\n* @fobole-openthedoor made their first contribution in https://github.com/huami1314/orca-ios/pull/1\n\n**Full Changelog**: https://github.com/huami1314/orca-ios/compare/v0.1.0...v0.1.1",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-11-23T20:24:59Z",
+          "downloadURL": "https://github.com/huami1314/orca-ios/releases/download/v0.1.0/Orca-iOS-v0.1.0-unsigned.ipa",
+          "size": 14691056,
+          "localizedDescription": "**Full Changelog**: https://github.com/huami1314/orca-ios/commits/v0.1.0",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orca/images/main.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orca/images/work.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Orca/images/notification.webp"
+      ]
+    },
+    {
+      "name": "Open Screen Sharing",
+      "bundleIdentifier": "io.nekohasekai.screensharing",
+      "developerName": "nekohasekai",
+      "subtitle": "11.2M · 远程桌面客户端",
+      "localizedDescription": "免费开源的远程桌面客户端，针对 Mac 屏幕共享与公网环境做了优化，同时完整支持标准 VNC 与 RDP 协议。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
+      "tintColor": "#822DD7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.10",
+          "date": "2026-11-24T04:34:33Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.10/OpenScreenSharing.ipa",
+          "size": 11765704,
+          "localizedDescription": "* Replace floating toolbar handle with assistive ball\n* Fixes and improvements",
+          "minOSVersion": "15.0",
+          "buildVersion": "11-24",
+          "buildNumber": "11-24"
+        },
+        {
+          "version": "1.0.9",
+          "date": "2026-11-23T11:24:00Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.9/OpenScreenSharing.ipa",
+          "size": 11742697,
+          "localizedDescription": "* Add High Definition option for Internet connections\r\n* Add multiple addresses and Tailscale discovery\r\n* Fixes and improvements",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.8",
+          "date": "2026-11-20T13:51:14Z",
+          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.8/OpenScreenSharing.ipa",
+          "size": 11167454,
+          "localizedDescription": "* Add a tab bar for multiple sessions on iPad\n* Extend full-screen sessions around the MacBook notch\n* Add native touch input for touch displays on macOS\n* Automatically take over busy High Performance sessions from other Open Screen Sharing clients\n* Add RSA-AES and VeNCrypt authentication for VNC servers (RealVNC, TigerVNC, wayvnc)\n* Add option to reverse scroll direction for standard VNC and RDP\n* Fixes and improvements",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
+      ]
+    },
+    {
+      "name": "HGhubX",
+      "bundleIdentifier": "com.hghubx.app",
+      "developerName": "zxsos",
+      "subtitle": "3.8M · 沉浸式竖屏播放客户端",
+      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
+      "iconURL": "https://github.com/zxsos.png?size=460",
+      "tintColor": "#B92746",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "2.2.9",
+          "buildVersion": "11-24",
+          "date": "2026-11-24",
+          "localizedDescription": "HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n新增与优化\n1. 「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. 分类频道与标签结果页指标排序（#244）：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 jsonOnly 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n修复\n1. Android 播放页画面闪烁与瓦片异常（#240、#242）：针对 Android WebView（Skia/Viz）在硬件 <video> 上方叠加高半径模糊与持久动画层引发的闪烁问题，在 .plat-",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
+          "size": 4009527,
+          "minOSVersion": "15.0",
+          "buildNumber": "11-24"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
     {
       "name": "ARMSX2",
       "bundleIdentifier": "com.armsx2.ios",
@@ -180,47 +290,6 @@
       ]
     },
     {
-      "name": "Open Screen Sharing",
-      "bundleIdentifier": "io.nekohasekai.screensharing",
-      "developerName": "nekohasekai",
-      "subtitle": "11.2M · 远程桌面客户端",
-      "localizedDescription": "免费开源的远程桌面客户端，针对 Mac 屏幕共享与公网环境做了优化，同时完整支持标准 VNC 与 RDP 协议。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/icon.png",
-      "tintColor": "#822DD7",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.0.9",
-          "date": "2026-11-23T11:24:00Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.9/OpenScreenSharing.ipa",
-          "size": 11742697,
-          "localizedDescription": "* Add High Definition option for Internet connections\r\n* Add multiple addresses and Tailscale discovery\r\n* Fixes and improvements",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-23",
-          "buildNumber": "11-23"
-        },
-        {
-          "version": "1.0.8",
-          "date": "2026-11-20T13:51:14Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.8/OpenScreenSharing.ipa",
-          "size": 11167454,
-          "localizedDescription": "* Add a tab bar for multiple sessions on iPad\n* Extend full-screen sessions around the MacBook notch\n* Add native touch input for touch displays on macOS\n* Automatically take over busy High Performance sessions from other Open Screen Sharing clients\n* Add RSA-AES and VeNCrypt authentication for VNC servers (RealVNC, TigerVNC, wayvnc)\n* Add option to reverse scroll direction for standard VNC and RDP\n* Fixes and improvements",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.0.7",
-          "date": "2026-11-17T10:21:29Z",
-          "downloadURL": "https://github.com/nekohasekai/open-screen-sharing/releases/download/v1.0.7/OpenScreenSharing.ipa",
-          "size": 11840191,
-          "localizedDescription": "* Add android app\r\n* Fixes and improvements",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenScreenSharing/images/session.png"
-      ]
-    },
-    {
       "name": "i短剧",
       "bundleIdentifier": "com.local.STV",
       "developerName": "my-name-is-alan",
@@ -332,48 +401,6 @@
           "NSLocalNetworkUsageDescription": "BCD uses the local network to pair with this device for JIT, without a computer, and, if you turn it on in Settings, to download Steam games from a PC on this network.",
           "NSPhotoLibraryAddUsageDescription": "BCD saves the screenshots you take in a game to your photo library. It never reads your photos."
         }
-      }
-    },
-    {
-      "name": "HGhubX",
-      "bundleIdentifier": "com.hghubx.app",
-      "developerName": "zxsos",
-      "subtitle": "3.8M · 沉浸式竖屏播放客户端",
-      "localizedDescription": "HGhubX 是沉浸式竖屏视频播放客户端，为全屏刷视频场景优化，支持手势切换、自动连播与后台播放。",
-      "iconURL": "https://github.com/zxsos.png?size=460",
-      "tintColor": "#B92746",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "2.2.8",
-          "date": "2026-11-23T03:55:29Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-          "size": 4004198,
-          "localizedDescription": "# HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）**：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 `/newest/` 与 `/recommend/` 服务端渲染页面（失败时按 `/api/videos?sort=new|hot` 回退），支持自动分页与切线重载。\n2. **「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）**：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. **搜索页左右滑动切 Tab 与底栏快捷复位（#230、#23",
-          "minOSVersion": "15.0",
-          "buildVersion": "11-23",
-          "buildNumber": "11-23"
-        },
-        {
-          "version": "2.2.7",
-          "date": "2026-11-22T12:13:11Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-          "size": 3992968,
-          "localizedDescription": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.2.6",
-          "date": "2026-11-21T17:01:54Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.6/HGhubX_2.2.6_ios.ipa",
-          "size": 3990783,
-          "localizedDescription": "# HGhubX v2.2.6\n\n聚焦分类频道与官网排序同步、全站分页上滑自动加载、海报角标、多页左右滑动切栏与 FakeIP 代理连接修复；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类与原创频道与官网排序同步（#202、#211）**：短剧、漫剧频道的「最近更新」「当前热播」「精选推荐」以及「原创」频道的「全部原创」「原创漫剧」「原创短剧」优先解析官网服务端渲染频道页，与网站更新排序、总页数、标签及统计保持一致，解析异常时自动回退原有 JSON 接口。\n2. **海报左上角新增「原创」「热播」「新片」角标（#202、#211）**：瀑布流与横向预览卡片海报左上角按「原创」「热播」「新片」（72 小时窗口）顺序显示高对比度角标，避免与右上角评分重叠；集数状态移至海报底部遮罩左侧与播放量同排展示，「我的」页继续保留「新更 N 集」角标。\n3. **分页列表统一改为上滑自动加载（#202、#211）**：频道页、吃瓜列表、专题详情、标签详情、关注/创作者作品与全局/栏目搜索均在接近底部时自动续载下一页，不再常驻手动「加载更多」按钮；开启标签屏蔽时同样保持自动加载，仅当连续 2 页过滤后均无可见条目时熔断暂停并展示手动兜底按钮。\n4. **多页面支持左右滑动切换标签栏（#208、#209）**：排行榜支持左右滑动切",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
       }
     },
     {
@@ -2115,39 +2142,6 @@
         "entitlements": [],
         "privacy": {}
       }
-    },
-    {
-      "name": "OpenParsec",
-      "bundleIdentifier": "com.aigch.OpenParsec",
-      "developerName": "hugeBlack",
-      "subtitle": "4.2M · 开源 Parsec 客户端",
-      "localizedDescription": "面向 iOS 与 iPadOS 的开源 Parsec 客户端，支持鼠标、键盘与触屏操作。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/icon.png",
-      "tintColor": "#872AC9",
-      "category": "other",
-      "versions": [
-        {
-          "version": "2.0.0",
-          "date": "2026-11-13T07:02:53Z",
-          "downloadURL": "https://github.com/NearFrame/OpenParsec/releases/download/2.0.0/OpenParsec.ipa",
-          "size": 4445097,
-          "localizedDescription": "## Welcome to OpenParsec v2.0.0!\r\n\r\nThis is the release promised back in 1.4.0, with everything that's been on the nightly since october.\r\n\r\nWe now have a Metal renderer, streams that hold and reconnect by themselves, new connecting screens,reworked settings, and other control-related improvements.\r\n\r\n---\r\n\r\nBefore you update:\r\n- auto reconnect is now switched on by default, see settings > developer for additional settings\r\n- everyone is now on the new Metal renderer. OpenGL is remains optional as a fallback\\\r\n- this is the last release for ios 14. it runs with some rough edges but remains fun",
-          "minOSVersion": "14.0",
-          "buildVersion": "11-13",
-          "buildNumber": "11-13"
-        },
-        {
-          "version": "1.4.0",
-          "date": "2026-10-08T16:07:29Z",
-          "downloadURL": "https://github.com/NearFrame/OpenParsec/releases/download/1.4.0/OpenParsec.ipa",
-          "size": 4358332,
-          "localizedDescription": "Welcome! This is the first versioned release of everything thats been on our nightly since 1.3.0 in may, future releases will be tagged and published this way going forward:\r\n\r\nstreaming\r\n- pauses in the background instead of disconnecting, and reconnects on its own after a drop or a lock (#66, #80, #109)\r\n- pip recovers when its display layer fails, thanks @alantangok (#108)\r\n- audio buffer and race fixes, memcpy clamp from #70 thanks @2extndd (#85, #110)\r\n- connecting no longer kills music thats playing, it mixes instead, plus a status overlay (#86)\r\n\r\ninput\r\n- touchpad style cursor and cris",
-          "minOSVersion": "14.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/OpenParsec/images/login.png"
-      ]
     }
   ],
   "news": []
