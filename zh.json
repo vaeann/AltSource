@@ -538,5 +538,9 @@
   "com.suversal.wrappin": {
     "subtitle": "虚拟定位与路线测试",
     "description": "WrapPin 在一张地图上选择、测试并移动 iPhone 向系统报告的位置，适合测试基于位置的 App 与步行导航。iOS 18–26 需要用电脑生成配对文件，iOS 27 以上可以在设备上用六位码配对。"
+  },
+  "io.github.ccch1mneyyy.dshgo": {
+    "subtitle": "DeepSeek Harness 手机版",
+    "description": "dsh-go 把 DeepSeek Harness（DSH）装进手机：既能在本机直接运行，也能远程连接并遥控电脑上的 DSH 会话。支持任务进度查看、会话切换、分享扩展与小组件。Flutter 开发，同时提供 Android、iOS 与鸿蒙版本。注意：iOS 版仍在持续开发中，遇到问题请反馈给作者。"
   }
 }

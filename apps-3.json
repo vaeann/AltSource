@@ -1,19 +1,54 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 115 个，按更新频率分成 3 个源，这里是第 3 个（15 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 116 个，按更新频率分成 3 个源，这里是第 3 个（16 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.twindesk.ios",
     "com.utmapp.UTM",
     "com.utmapp.UTM-SE",
     "com.utsuro.app",
-    "com.github.wgh136.venera.prime",
-    "com.github.cyrilpeng.veneranext"
+    "com.github.wgh136.venera.prime"
   ],
   "apps": [
+    {
+      "name": "TwinDesk",
+      "bundleIdentifier": "com.twindesk.ios",
+      "developerName": "Inuka Asith",
+      "subtitle": "手机与电脑共用键鼠",
+      "localizedDescription": "TwinDesk 让一套鼠标键盘同时控制多台电脑和 iPhone，屏幕、文件、剪贴板、通知、摄像头与短信互通。开源免费，不需要账号也不经过云端。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/icon.webp",
+      "tintColor": "#B1BB2A",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.2.1",
+          "date": "2026-11-15T04:43:39Z",
+          "downloadURL": "https://github.com/InukaAsith/TwinDesk/releases/download/v3.2.1/TwinDesk.ipa",
+          "size": 3706522,
+          "localizedDescription": "## TwinDesk 3.2.1: TwinDesk pop-ups, a richer Messages, and Photos albums\r\n\r\n3.2.1 adds what's under **New in 3.2.1** below; everything after it is what 3.2 brought.\r\n\r\nhttps://twin-desk.vercel.app\r\n\r\n![TwinDesk 3.2](https://raw.githubusercontent.com/InukaAsith/TwinDesk/main/.github/assets/v32-banner.jpg)\r\n\r\nThe first release since 3.0. Your phone becomes a **Deck** of buttons for the computer, with a window space that arranges your windows. **TwinDesk Drive** keeps one folder the same on all your computers, with no cloud. **Multi-device is out of beta**, with every device's monitors on **one ",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "3.0.0",
+          "date": "2026-11-09T18:13:14Z",
+          "downloadURL": "https://github.com/InukaAsith/TwinDesk/releases/download/v3.0.0/TwinDesk.ipa",
+          "size": 2732258,
+          "localizedDescription": "## TwinDesk 3.0: now on iPhone, iPad and any browser\r\n\r\nhttps://twin-desk.vercel.app\r\n\r\n![TwinDesk 3.0](https://raw.githubusercontent.com/InukaAsith/TwinDesk/main/.github/assets/v30-banner.jpg)\r\n\r\nThe biggest TwinDesk release so far, and the first new major version. TwinDesk now has **a native app for iPhone and iPad**, **TwinDesk Web** for any device with a browser (nothing to install), and **phones that pair with each other**: Android to Android, iPhone to iPhone, and Android to iPhone. The computers get a **Glass look**, **AirPlay on Windows and Linux**, **Tailscale**, and **five languages ",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-2.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-3.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-4.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TwinDesk/images/screen-6.webp"
+      ]
+    },
     {
       "name": "UTM",
       "bundleIdentifier": "com.utmapp.UTM",

@@ -1,7 +1,7 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 115 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 116 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -1125,6 +1125,42 @@
       ]
     },
     {
+      "name": "dsh-Go",
+      "bundleIdentifier": "io.github.ccch1mneyyy.dshgo",
+      "developerName": "ccch1mneyyy",
+      "subtitle": "DeepSeek Harness 手机版",
+      "localizedDescription": "dsh-go 把 DeepSeek Harness（DSH）装进手机：既能在本机直接运行，也能远程连接并遥控电脑上的 DSH 会话。支持任务进度查看、会话切换、分享扩展与小组件。Flutter 开发，同时提供 Android、iOS 与鸿蒙版本。注意：iOS 版仍在持续开发中，遇到问题请反馈给作者。",
+      "iconURL": "https://raw.githubusercontent.com/ccch1mneyyy/dsh-Go/main/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#2B96B4",
+      "category": "developer",
+      "versions": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-25T14:53:25Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ios-unsigned.ipa",
+          "size": 129653636,
+          "localizedDescription": "**下载 · Downloads**\n\n- [Android arm64 APK](https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-arm64.apk)\n- [iOS IPA](https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ios-unsigned.ipa) · 未签名 / Unsigned\n- [鸿蒙 HarmonyOS HAP](https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ohos-unsigned.hap) · 未签名旁加载包 / Unsigned sideload build\n\n### 中文\n\n#### 新功能\n\n- **伙伴小屋有了完整模式。** 伙伴可以在自己的 DSH 会话里工作，小屋里能直接看进度、打电话或打开她的主会话。也可以养多个伙伴，或在 Android 上把伙伴设为系统默认助理。\n- **Android 手机操控有了悬浮岛和手机技能。** 操作进度能显示在屏幕顶部或支持的系统灵动岛里。完成任务后，可以把做法保存成手机技能，下次直接调用。\n- **",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-20T20:04:40Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.3.0/dsh-go-1.3.0-ios-unsigned.ipa",
+          "size": 126020561,
+          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **顶栏一键语音通话。** 首页右上角、新对话按钮旁边多了通话按钮，新对话里也能直接打。\n- **长按就能选",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-18T07:32:51Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.2.0/dsh-go-1.2.0-ios-unsigned.ipa",
+          "size": 123474162,
+          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **iOS 版（测试）。** 这一版起提供未签名的 iOS 安装包 `dsh-go-1.2.0-ios-un",
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
       "name": "DukeX",
       "bundleIdentifier": "com.mafty.dukex",
       "developerName": "Manic EMU Development Team",
@@ -2090,47 +2126,6 @@
         "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/05-downloads.jpg",
         "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/06-purchased.jpg",
         "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/07-native-install.jpg"
-      ]
-    },
-    {
-      "name": "iRAM+",
-      "bundleIdentifier": "novadev.iram-plus",
-      "developerName": "NexSideloading",
-      "subtitle": "提升应用内存上限",
-      "localizedDescription": "iRAM+ 用来给自己的侧载应用开启 Increased Memory Limit 权限，让原本受系统内存限制的应用能用更多内存，适合跑模拟器、虚拟机这类吃内存的工具。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/icon.webp",
-      "tintColor": "#39CA3E",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "date": "2026-09-18T23:43:28Z",
-          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.1/iRAM-Plus.ipa",
-          "size": 4562979,
-          "localizedDescription": "Hey everyone,\r\nSorry for not working on or updating this app in a while, but this release fixes the -80045 sign in issue and other bugs!",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-09-13T03:52:20Z",
-          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.3.0/iRAM-Plus.ipa",
-          "size": 4556375,
-          "localizedDescription": "- **Fixed login**: Fix GSA authentication & login\r\n- **Dual Entitlements System**: Now supports both Increased Memory Limit and Extended Virtual Addressing with individual toggles\r\n- **Settings Restructuring**: New \"Entitlements\" and \"Options\" sections with improved organization\r\n- **Apple ID → Apple Account**: Renamed throughout the app with automatic credential migration\r\n- **Debug Mode**: New debug toggle that controls API responses, server response buttons, and debug logs\r\n- **Navigation Fixes**: Fixed login flow to properly navigate to app selection instead of skipping to add entitlements",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-08-01T02:37:39Z",
-          "downloadURL": "https://github.com/NexSideloading/iRAM-Plus/releases/download/v1.2.0/iRAM-Plus.ipa",
-          "size": 2846145,
-          "localizedDescription": "- Add settings page with custom anisette server dropdown, loaded from official SideStore anisette servers list\r\n- Save login to keychain option (Default on) in settings\r\n- Add proper page navigation and back buttons\r\n- Autofill sign in details from keychain if stored\r\n- App logo in 'Choose an app' page\r\n- Bug fixes",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/start.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/app.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iRAM-Plus/images/settings.webp"
       ]
     }
   ],

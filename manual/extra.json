@@ -58,6 +58,24 @@
           "minOSVersion": "26.1"
         }
       ]
+    },
+    {
+      "name": "dsh-Go",
+      "bundleIdentifier": "io.github.ccch1mneyyy.dshgo",
+      "developerName": "ccch1mneyyy",
+      "subtitle": "DeepSeek Harness 手机版",
+      "localizedDescription": "dsh-go 把 DeepSeek Harness（DSH）装进手机：既能在本机直接运行，也能远程连接并遥控电脑上的 DSH 会话。",
+      "iconURL": "https://raw.githubusercontent.com/ccch1mneyyy/dsh-Go/main/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "category": "developer",
+      "versions": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-25T14:53:25Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ios-unsigned.ipa",
+          "size": 129653636,
+          "minOSVersion": "15.0"
+        }
+      ]
     }
   ],
   "news": []
