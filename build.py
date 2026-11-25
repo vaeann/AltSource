@@ -17,6 +17,7 @@ build.py — 把 sources.toml 里的多个上游源合并成一个干净的 AltS
 import argparse
 import colorsys
 import hashlib
+import glob
 import json
 import os
 import re
@@ -305,6 +306,13 @@ def main():
     out = os.path.join(ROOT, "apps.json")
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         json.dump(doc, f, ensure_ascii=False, indent=2)
+
+    # 清掉上一轮切出来的分片：apps.json 现在是完整清单，
+    # 留着旧分片会让 split.py 拼接时把已经下线的应用又带回来
+    for old in glob.glob(os.path.join(ROOT, "apps-*.json")):
+        os.remove(old)
+        print(f"  已清理旧分片 {os.path.basename(old)}")
+
     size = os.path.getsize(out)
     print()
     print(f"✓ 写出 apps.json：{len(apps)} 个应用，{size / 1024:.0f} KB")

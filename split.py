@@ -71,7 +71,8 @@ def main():
     if not apps:
         sys.exit("分片里没有应用数据")
 
-    apps.sort(key=lambda x: str((x.get("versions") or [{}])[0].get("date") or ""), reverse=True)
+    # 按名称排序（原始格式）
+    apps.sort(key=lambda x: (x.get("name") or "").casefold())
     total = len(apps)
     chunks = [apps[i:i + PER_SOURCE] for i in range(0, total, PER_SOURCE)]
 

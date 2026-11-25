@@ -1,383 +1,603 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 109 个，按更新频率分成 3 个源，这里是第 3 个（9 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 115 个，按更新频率分成 3 个源，这里是第 3 个（15 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.aether.ps4ios",
-    "com.verback.YTLite",
-    "com.beans.app",
-    "io.github.johnny901901901.applesauce",
-    "com.ahmedbafkir.dlipa"
+    "com.utmapp.UTM",
+    "com.utmapp.UTM-SE",
+    "com.utsuro.app",
+    "com.github.wgh136.venera.prime",
+    "com.github.cyrilpeng.veneranext"
   ],
   "apps": [
     {
-      "name": "AetherPS4",
-      "bundleIdentifier": "com.aether.ps4ios",
+      "name": "UTM",
+      "bundleIdentifier": "com.utmapp.UTM",
+      "developerName": "osy",
+      "subtitle": "iOS 虚拟机",
+      "localizedDescription": "功能完整的 iOS 虚拟机宿主，可以在 iPhone 与 iPad 上运行 Windows、Android 等系统。这个版本需要 AltJIT 配合；不想折腾 JIT 可以改用 UTM SE。",
+      "iconURL": "https://alt.getutm.app/icon.png",
+      "tintColor": "#D82B42",
+      "category": "other",
+      "versions": [
+        {
+          "version": "5.0.9",
+          "date": "2026-11-18T09:03:04Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM-HV.ipa",
+          "size": 150730267,
+          "buildVersion": "2",
+          "buildNumber": "2",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.0.8",
+          "date": "2026-10-17T02:44:56Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
+          "size": 150556668,
+          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.7.5",
+          "date": "2026-01-03T17:51:54Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-HV.ipa",
+          "size": 130058653,
+          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working",
+          "minOSVersion": "14.0"
+        }
+      ]
+    },
+    {
+      "name": "UTM SE",
+      "bundleIdentifier": "com.utmapp.UTM-SE",
+      "developerName": "osy",
+      "subtitle": "免 JIT 的虚拟机",
+      "localizedDescription": "UTM 的无 JIT 版本，在所有 iOS 设备上都能运行，速度比完整版慢一些，但不需要开启 JIT 也不需要连接电脑。可运行 Windows、Android 等系统。",
+      "iconURL": "https://alt.getutm.app/icon.png",
+      "tintColor": "#2CB34C",
+      "category": "other",
+      "versions": [
+        {
+          "version": "5.0.9",
+          "date": "2026-11-18T09:03:04Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM-HV.ipa",
+          "size": 150730267,
+          "buildVersion": "2",
+          "buildNumber": "2",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Vi",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "5.0.8",
+          "date": "2026-10-17T02:44:56Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
+          "size": 150556668,
+          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "4.7.5",
+          "date": "2026-01-03T17:51:54Z",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-HV.ipa",
+          "size": 130058653,
+          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working",
+          "minOSVersion": "14.0"
+        }
+      ]
+    },
+    {
+      "name": "Utsuro",
+      "bundleIdentifier": "com.utsuro.app",
       "developerName": "Leviidev",
-      "subtitle": "32.6M · PS4 模拟器",
-      "localizedDescription": "面向 iOS 与 iPadOS 的 PlayStation 4 模拟器，包含独立应用与模拟器内核，可直接在设备上启动 PS4 游戏。",
-      "iconURL": "https://raw.githubusercontent.com/Leviidev/AetherPS4/main/AetherPS4-iOS/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#7430D3",
+      "subtitle": "Xbox One 模拟器（早期测试）",
+      "localizedDescription": "在 iOS 与 iPadOS 上运行 Xbox One 游戏。目前处于 alpha 阶段：Minecraft Xbox One 版、火箭联盟与索尼克狂欢已验证可启动，其余游戏兼容性差异较大，需要自备游戏文件。",
+      "iconURL": "https://raw.githubusercontent.com/Leviidev/Utsuro/main/ios/Utsuro/Assets.xcassets/AppIcon.appiconset/icon.png",
+      "tintColor": "#2C9CBE",
       "category": "games",
       "versions": [
         {
-          "version": "1.2",
-          "date": "2026-09-12T02:48:11Z",
-          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.2/AetherPS4-iOS.ipa",
-          "size": 34208394,
-          "localizedDescription": "## What's Changed\r\n* Prevent iOS crash on first launch in a fresh sandbox by @hernan0078 in https://github.com/Leviidev/AetherPS4/pull/5\r\n* Add 'Continue Anyway' button to SetupCheckView by @itsjaylmao in https://github.com/Leviidev/AetherPS4/pull/7\r\n* Improve iOS runtime compatibility and startup feedback by @hernan0078 in https://github.com/Leviidev/AetherPS4/pull/6\r\n* Replace Minecraft with Rocket League in README by @itsjaylmao in https://github.com/Leviidev/AetherPS4/pull/9\r\n\r\n## New Contributors\r\n* @hernan0078 made their first contribution in https://github.com/Leviidev/AetherPS4/pull/5\r",
-          "minOSVersion": "17.4",
-          "buildVersion": "09-12",
-          "buildNumber": "09-12"
-        },
-        {
-          "version": "1.0.1",
-          "date": "2026-08-30T03:12:11Z",
-          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.1_release/AetherPS4-iOS.ipa",
-          "size": 33931355,
-          "localizedDescription": "This release contains many new updates improving the user experience! Here's what we added\r\n\r\n## Minor updates\r\n- New app logo\r\n- Setup Screen (lets you know if jit is attached and if memory entitlement is working\r\n- Search for games\r\n## Major updates\r\n- Improved boot time\r\n- Added support for many games with unimplemented functions\r\n   - This does NOT guarantee your game will load. All this did was add unadded functions to the app, meaning if an app had an unadded function it would crash, now hopefully adding support for more games.\r\n- Stopped using imgui for aetherps4 loading (using swift no",
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "1.0.0",
-          "date": "2026-08-22T01:40:34Z",
-          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.0/AetherPS4-iOS.ipa",
-          "size": 30207728,
-          "localizedDescription": "Hey everyone! I present to you AetherPS4 v1.0.0!\r\n\r\n## Requirements\r\nHere's what you'll need to get the app working\r\n- StikDebug\r\n- Preferred Sideloading tool\r\n- iOS/iPadOS (26+)\r\n## Setup\r\nFirst, meet all requirements. Then, sideload the app onto your preferred device. Open ```StikDebug``` and hold click onto the application, you will see a context menu and you must press ```Assign Script```. When the menu shows up press ```universal.js```, this is required or it will NOT work. Then, open the app. Import your .pkg file of the game (must be .pkg, extracted will not work as of right now). When ",
+          "version": "0.1.0",
+          "date": "2026-11-01T18:28:08Z",
+          "downloadURL": "https://github.com/Leviidev/Utsuro/releases/download/0.1.0/Utsuro.ipa",
+          "size": 5423119,
+          "localizedDescription": "## Running Games:\nMinecraft: Xbox One Edition - 60 FPS\nRocket League - 60 FPS\nSonic Mania - 60 FPS\n\nThese are all confirmed to be running games, everything else is unconfirmed\n\n## Installation\nSideload Utsuro.ipa and open the app. Import your Xbox One Dump, enable JIT and get to playing!\n\n## Issues\nIf any bugs / issues occur, report it to the GitHub or in my Discord Server.\n\nLinks:\nDiscord Server: https://itslevii.dev/discord\nEmail: hello@itslevii.dev",
           "minOSVersion": "17.4"
         }
       ]
     },
     {
-      "name": "Opaline",
-      "bundleIdentifier": "com.verback.YTLite",
-      "developerName": "verback2308",
-      "subtitle": "6.4M · 轻量 YouTube 客户端",
-      "localizedDescription": "轻量 YouTube 客户端，支持 SponsorBlock 跳过赞助片段、恢复踩数显示，最高 1080p 播放。无广告、无追踪、无额外依赖。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/icon.webp",
-      "tintColor": "#C53458",
+      "name": "Venera Prime",
+      "bundleIdentifier": "com.github.wgh136.venera.prime",
+      "developerName": "venera-app",
+      "subtitle": "Venera 次世代重写版",
+      "localizedDescription": "原版 Venera 的重写版本，Flutter 与 Rust 构建。支持本地漫画与网络图源、用 JavaScript 编写自定义漫画源、收藏管理、下载、评论与标签查看，中文标签翻译来自 EhTagTranslation 项目。",
+      "iconURL": "https://raw.githubusercontent.com/venera-app/venera-prime/v2.8.1/assets/app_icon.png",
+      "tintColor": "#84C52F",
+      "category": "books",
+      "versions": [
+        {
+          "version": "2.8.1",
+          "date": "2026-11-10T18:00:24Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
+          "size": 16730617,
+          "buildVersion": "281",
+          "buildNumber": "281",
+          "localizedDescription": "# Venera Prime 2.8.1\n\n## 本次更新\n\n- **网络请求取消时闪退 #55**（@fanhua2006）：修复请求超时或取消后，延迟返回的网络回调触发原生库 abort 的问题；同时处理无效请求方法、缺失上传流、自定义 DNS 异常等相似错误路径。已复现并消除与反馈相同的原生崩溃堆栈，仍请在原设备、不挂 VPN 的启动场景复查。\n- **非默认目录刷新与恢复 #53**（@lzx377z）：补齐 Android 授权目录的属性查询和文本读写。“设置 → 应用 → 刷新本地库”与“导入 → 恢复本地下载”可读取漫画元数据，不再因缺少 stat/readAsString 实现抛出 UnimplementedError；未知修改时间不会覆盖已有漫画的创建时间。\n- **通用 SAF 存储目录 #54**（@GalahadVi）：保留 DocumentsProvider 的完整目录标识，按真实文档 ID 读写、创建和扫描，不再假定所有授权目录都是系统本地存储。兼容旧目录配置；服务暂时离线时保留用户所选目录，写入失败如实报告，兼容仅支持 wt 的 Provider。下载、阅读、导出与目录迁移共用修正后的文件访问链路。\n- **阅读图片刷新与长按 #49**（@sakana155）：刷新时清除实际图片缓存，防止此前的下载晚返回后覆盖刷新结果；长按缩放等待控制器就绪，退出阅",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.8.0",
+          "date": "2026-11-06T17:18:11Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.0/venera-prime-ios-2.8.0%2B280.ipa",
+          "size": 16717141,
+          "buildVersion": "280",
+          "buildNumber": "280",
+          "localizedDescription": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.7.2",
+          "date": "2026-11-04T16:17:55Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
+          "size": 16716650,
+          "buildVersion": "272",
+          "buildNumber": "272",
+          "localizedDescription": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "VeneraNext",
+      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+      "developerName": "CyrilPeng",
+      "subtitle": "Venera 分支，跨平台漫画",
+      "localizedDescription": "Venera 的 fork，Flutter 跨平台漫画阅读器，覆盖 iOS、Android、Windows、Linux 与 macOS。长篇作品可用瀑布流跨章节连续阅读，支持收藏、追更、离线下载与 WebDAV 多设备同步。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/icon.webp",
+      "tintColor": "#257ABF",
       "category": "other",
       "versions": [
         {
-          "version": "1.12.0",
-          "date": "2026-09-10T02:02:27Z",
-          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.12.0/Opaline_1.12.0.ipa",
-          "size": 6685919,
-          "localizedDescription": "**New**\n\n- Hold anywhere on the video to seek ([#116](https://github.com/verback2308/Opaline/issues/116)). Press and hold on the picture, then drag sideways. The seek bar follows your finger and the video jumps where you let go, so you no longer have to hit the thin bar at the bottom. The taps you already know still work: the sides seek, the middle pauses.\n- Search inside a channel ([#117](https://github.com/verback2308/Opaline/issues/117)). Channel pages have a magnifier now, and whatever you type there searches that channel only. YouTube serves no filters for this kind of search, so there ar",
-          "minOSVersion": "12.0",
-          "buildVersion": "09-10",
-          "buildNumber": "09-10"
+          "version": "1.18.5",
+          "date": "2026-11-25T04:24:33Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+          "size": 21685908,
+          "buildVersion": "254",
+          "buildNumber": "254",
+          "localizedDescription": "### 正式发布与鸿蒙下载\n\n- 发布 `1.18.5+254`，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 `distribution: bundled`、`channel: harmonyos` 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 `signed: false`、`runtime_verified: false` 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n\n### 新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS `APP.locale` 同步支持 `de_DE`、`j",
+          "minOSVersion": "14.0"
         },
         {
-          "version": "1.11.0",
-          "date": "2026-08-26T14:49:46Z",
-          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.11.0/Opaline_1.11.0.ipa",
-          "size": 6666724,
-          "localizedDescription": "**New**\n\n- Double tap to pause ([#107](https://github.com/verback2308/Opaline/issues/107)). The player is split into three zones: a quarter on each side seeks, and the half between them pauses. Nothing appears over the video when you use them.\n- Separate default quality for Wi-Fi and mobile data ([#108](https://github.com/verback2308/Opaline/issues/108)). Two rows in Settings; the quality you already picked stays as your Wi-Fi setting.\n- Remove a video from watch history ([#105](https://github.com/verback2308/Opaline/issues/105)) and tell the feed it missed ([#106](https://github.com/verback23",
-          "minOSVersion": "12.0"
+          "version": "1.18.4",
+          "date": "2026-11-23T03:27:29Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+          "size": 21589601,
+          "buildVersion": "253",
+          "buildNumber": "253",
+          "localizedDescription": "### 正式发布与验收\n\n- 发布 `1.18.4+253`，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta",
+          "minOSVersion": "14.0"
         },
         {
-          "version": "1.10.0",
-          "date": "2026-08-20T13:01:23Z",
-          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.10.0/Opaline_1.10.0.ipa",
-          "size": 6650280,
-          "localizedDescription": "The big one in this version is downloads. A video can be saved to the device and watched with no network at all. You can download subtitles, dubbed audio, comments as well. The other half of the release is playlists/mixes/jams, which now open a proper queue that does not stop after the first 20 videos.\r\n\r\n**New**\r\n\r\n- Downloads ([#54](https://github.com/verback2308/Opaline/issues/54)). Save a video to the device and watch it offline. A new Downloads screen in the Library shows what you have, and the download state appears wherever a video appears. You choose what a download brings with it, so ",
-          "minOSVersion": "12.0"
+          "version": "1.18.3",
+          "date": "2026-11-07T18:10:18Z",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+          "size": 21467556,
+          "buildVersion": "249",
+          "buildNumber": "249",
+          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyri",
+          "minOSVersion": "14.0"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/player.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/channel.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/explorer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Venera-Next/images/search.webp"
       ]
     },
     {
-      "name": "Beans Music",
-      "bundleIdentifier": "com.beans.app",
-      "developerName": "XIaodou0416",
-      "subtitle": "8.4M · 使用 SwiftUI 开发的多平台音…",
-      "localizedDescription": "面向 iOS 15 及以上的开源 SwiftUI 音乐播放器，内置网易云音乐、QQ 音乐与酷狗音乐，支持本地歌单、离线下载、逐字歌词、多种播放页布局与均衡器等自定义能力。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/icon.webp",
-      "tintColor": "#32BD8F",
+      "name": "VeneraX",
+      "bundleIdentifier": "io.github.kyosee.venera",
+      "developerName": "Kyosee",
+      "subtitle": "Venera 个人增强分支",
+      "localizedDescription": "原版 Venera 的个人维护增强分支，通过插件接入多种漫画图源，提供本地收藏与阅读进度同步。",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#D55A2E",
+      "category": "books",
+      "versions": [
+        {
+          "version": "3.0.2",
+          "date": "2026-11-24T14:57:44Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-ios-3.0.2%2B266.ipa",
+          "size": 40285175,
+          "buildVersion": "266",
+          "buildNumber": "266",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.2/VeneraX-3.0.2.apk) | [ARM64](https://github.com/Kyosee/VeneraX",
+          "minOSVersion": "15.1"
+        },
+        {
+          "version": "3.0.1",
+          "date": "2026-11-20T10:56:20Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-ios-3.0.1%2B260.ipa",
+          "size": 39632748,
+          "buildVersion": "260",
+          "buildNumber": "260",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee",
+          "minOSVersion": "15.1"
+        },
+        {
+          "version": "3.0.0",
+          "date": "2026-11-15T10:37:41Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
+          "size": 39423677,
+          "buildVersion": "258",
+          "buildNumber": "258",
+          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and s",
+          "minOSVersion": "15.1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "VRCM",
+      "bundleIdentifier": "io.github.vrcmteam.vrcm",
+      "developerName": "vrcm-team",
+      "subtitle": "VRChat 社交助手",
+      "localizedDescription": "跨平台的 VRChat 伴侣应用，围绕社交关系与便利性设计：浏览社交圈、记录一起玩过的时间，从分享链接顺畅跳到世界、互动与线下聚会。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/icon.webp",
+      "tintColor": "#3875CB",
       "category": "other",
       "versions": [
         {
-          "version": "1.6.6",
-          "date": "2026-09-06T12:41:32Z",
-          "downloadURL": "https://github.com/XIaodou0416/Beans-Music/releases/download/v1.6.6/Beans-unsigned.ipa",
-          "size": 8761833,
-          "localizedDescription": "本次更新：\n\n- 增加网易云音乐和 QQ 音乐歌单广场搜索功能\n- 优化歌曲封面缓存\n- 优化歌词划动后自动回到当前播放歌词的问题\n- 优化整体流畅性，低系统版本请实测反馈\n- 优化网易云私人漫游；如遇问题可尝试心动模式\n- 简化搜索界面，移除均衡器注释\n- 更换酷狗音乐歌单广场接口\n- 修复 QQ 音乐本身有会员但无法播放的问题\n- 修复 iOS 26 以下系统无法返回的问题",
-          "minOSVersion": "15.0",
-          "buildVersion": "09-06",
-          "buildNumber": "09-06"
+          "version": "1.1.6",
+          "date": "2026-11-16T13:50:14Z",
+          "downloadURL": "https://github.com/vrcm-team/VRCM/releases/download/1.1.6/VRCM-v1.1.6.ipa",
+          "size": 23232985,
+          "localizedDescription": "## 新增\n\n- Android 和 iOS 支持通过相机或相册扫描 VRChat 链接，图片包含多个二维码时可选择识别结果。\n- 支持扫码审批 VRChat 设备登录，展示请求时间和来源地区；Android 新增扫一扫桌面快捷方式。\n- 新增独立“我的二维码”页面，支持个人主页码、样式切换和分享卡片。\n- 统计数据支持 SQLite 导入导出，可导入 VRCM 或 VRCX 数据库，预览导入内容并去重合并。\n- 设置按账号安全、外观、通知、隐私与数据等分类，集中管理已保存账号的切换和登出。\n- 好友动态新增名字和模型变更记录，并提供独立的模型筛选分类。\n\n## 优化\n\n- 群组房间支持邀请自己，世界详情加载来源房间，展开的房间卡片可打开房主主页。\n- 资料编辑适配 VRChat 新接口，保存简介、社交链接和语言后同步刷新状态。\n\n## 修复\n\n- 后台登录会话失效时自动恢复，避免好友与动态更新长期中断。\n- 修复玩家批量清理在列表刚加载完时点击无响应，以及登录续期后剩余请求中断的问题；避免迟到的续期通知覆盖已成功的语音开关状态。\n- 修复 Android 大型统计快照读取、系统文件选择器导入和导出文件句柄释放问题。\n- 应用内更新遇到包名或签名不匹配的 APK 时停止更新，避免继续换源重试。\n- 修复 Windows 渐进背景模糊导致的卡死、群组代表状态跨资料页不同步，以及模型列",
+          "minOSVersion": "15.3"
+        },
+        {
+          "version": "1.1.4",
+          "date": "2026-09-25T15:37:24Z",
+          "downloadURL": "https://github.com/vrcm-team/VRCM/releases/download/1.1.4/VRCM-v1.1.4.ipa",
+          "size": 24907308,
+          "localizedDescription": "## 新增\n\n- 全新的 Apple HIG 风格界面覆盖主页、好友、收藏、搜索、通知、资料、群组、世界和模型页面，手机与桌面窗口都能使用一致的导航。\n- 好友网络现在包含独立好友目录、好友动态时间线、邀请消息槽和图片邀请，通知中心可以直接处理常见操作。\n- 世界和模型详情页增加了更多管理入口，包括自有世界的封面、预览图、元数据、发布状态、Home World 和实例操作，以及模型 Gallery、标签、样式和 Impostor 管理。\n- 个人资料中加入玩家屏蔽、聊天框与语音静音、举报和 Boop 隐私设置，库存页也提供 VRChat Credits 和奖励码入口。\n- GitHub Android 渠道支持在应用内下载并启动安装器，iOS GitHub 版本支持检查 GitHub Release；本次提供 Android APK、macOS DMG 和 iOS IPA。\n\n## 优化\n\n- 玻璃效果、列表行、底部导航、侧栏和详情页布局统一，宽窗口与窄窗口的内容层级更清晰。\n- 下拉刷新、分页切换、弹层滚动、长文本显示和大字体布局更加稳定，桌面端也支持更自然的键盘与鼠标操作。\n- 账号切换、好友动态、收藏、通知和世界详情的加载结果会按当前账号和页面保留，打开页面时更快看到已有内容。\n- 图片、头像、群组成员和世界平台信息的展示更加完整，空图片地址和资源 URL 异常不会再触发无效",
+          "minOSVersion": "15.3"
+        },
+        {
+          "version": "1.1.3",
+          "date": "2026-09-16T13:33:09Z",
+          "downloadURL": "https://github.com/vrcm-team/VRCM/releases/download/1.1.3/VRCM-v1.1.3.ipa",
+          "size": 21043985,
+          "localizedDescription": "## 新增\n- 兼容 VRChat 最新的用户资料字段，个人资料和好友资料可以继续显示简介、头像、显示名称和代称等信息\n\n## 优化\n- 打开个人资料时，资料信息和头像显示更加完整；已登录账号也会自动补齐资料页中缺少的公开信息\n- 好友列表、好友动态和资料页对不同版本的 VRChat 返回数据兼容性更好，资料字段缺失时仍能尽量保留已有内容\n\n## 修复\n- 修复 VRChat 调整用户资料接口后，部分用户资料字段无法显示或头像为空的问题\n- 修复资料刷新后可能用不完整信息覆盖已有资料的问题\n\n****************\n\n## New Features\n- VRCM now supports VRChat’s latest user-profile fields, so bios, avatars, display names, pronouns, and other profile information can continue to appear in user and friend profiles\n\n## Optimizations\n- Personal profiles now show more complete information and avatars; signed-in accounts also fill in public profile det",
+          "minOSVersion": "15.3"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/player.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/lyrics.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/library.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/search.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/settings.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Friend-Network.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Gallery-Mobile.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/VRCM/images/Feature-Meetup-Card.webp"
       ]
     },
     {
-      "name": "Applesauce",
-      "bundleIdentifier": "io.github.johnny901901901.applesauce",
-      "developerName": "Unofficial iOS port contributors",
-      "subtitle": "39.7M · A playful emulator for iOS",
-      "localizedDescription": "Plays supported 32-bit iPhone games on modern devices, carrying both the HyperHLE v1.0.6 and touchHLE 0.2.3 emulator cores so you can pick which one runs each game. An unaffiliated fork, endorsed by neither project. JIT must be enabled for each new app process. No games are included.",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/icon.webp",
-      "tintColor": "#3394D5",
+      "name": "WQ Files",
+      "bundleIdentifier": "cz.kolbi.wqfiles",
+      "developerName": "kolbicz",
+      "subtitle": "文件浏览器与 App 数据管理器",
+      "localizedDescription": "面向 iOS 26 与 27 的文件浏览器、应用数据管理器与缓存清理工具，基于 worse_query 沙盒技术实现，无需越狱也无需内核漏洞。可浏览每个应用的数据容器、App Group、扩展与守护进程目录。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/icon.webp",
+      "tintColor": "#27D7D7",
       "category": "other",
       "versions": [
         {
-          "version": "0.4.2",
-          "date": "2026-08-17T15:53:48Z",
-          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.2-touch-fix/Applesauce-iOS-0.4.2-touch-fix-trollstore.ipa",
-          "size": 41672251,
-          "localizedDescription": "Follow-up to the landscape-orientation fix (ios-v0.4.2-orientation-fix): that build fixed which direction a landscape-only game launches in, but touch could still land in the wrong place, since the host was still telling SDL/UIKit that either landscape direction was fine even for a game that only supports one. That leaves the OS free to auto-rotate the actual presented surface to whichever way the phone is physically held; the picture still looks right (touchHLE rotates the framebuffer itself), but the OS then delivers raw touch coordinates in that other orientation, so taps land in the wrong ",
-          "minOSVersion": "15.0",
-          "buildVersion": "08-17",
-          "buildNumber": "08-17"
+          "version": "0.9.20",
+          "date": "2026-11-21T21:41:37Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.20/WQFiles.ipa",
+          "size": 2199929,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.20\n\nApps Manager backups, and safer handling of databases that are in use.\n\n## New\n\n- **Import Apps Manager backups** ([#19]",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.9.19",
+          "date": "2026-11-20T01:16:50Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.19/WQFiles.ipa",
+          "size": 2182170,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.19\n\nA small fix release, plus optional App Store icons.\n\n## New\n\n- **Settings → App Store Icons** (off by default): other ap",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.9.18",
+          "date": "2026-11-17T15:21:21Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.18/WQFiles.ipa",
+          "size": 2171189,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.18\n\nYour own inspectors, your own cleaning targets, and Japanese.\n\n## New\n\n- **Custom inspectors** ([#45](https://github.com",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQFiles/images/home.webp"
+      ]
+    },
+    {
+      "name": "WQGuard",
+      "bundleIdentifier": "com.wqguard.app",
+      "developerName": "Kianuni",
+      "subtitle": "沙盒逃逸检测",
+      "localizedDescription": "面向 iOS 26.2 以上与 27.x 的零依赖沙盒逃逸检测引擎，附带 Mach-O 静态二进制审计与固件 CVE 防护。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/icon.webp",
+      "tintColor": "#264ED3",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.3.6",
+          "date": "2026-11-20T07:45:40Z",
+          "downloadURL": "https://github.com/Kianuni/WQGuard/releases/download/v1.3.6/WQGuard_v1.3.6.ipa",
+          "size": 2788591,
+          "localizedDescription": "## WQGuard v1.3.6 (Build 27)\n\n### Highlights / 更新摘要\n\n#### 1. Engine 2 Real-World IPA ZIP Compatibility Fix (Issue #2)\nResolved two real-world IPA scanning failures reported in [Issue #2](https://github.com/Kianuni/WQGuard/issues/2) while keeping strict archive integrity and anti-tampering checks enforced:\n- **Streaming `GPFlag` bit-3 (`0x0008`) without trailing Data Descriptor**: App Store / IPA repackagers frequently keep bit 3 set in Local File Headers even after populating Central Directory sizes and CRCs without emitting a trailing Data Descriptor (`descLen == 0`). `NativeZIPArchiveReader`",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.5",
+          "date": "2026-11-20T03:34:18Z",
+          "downloadURL": "https://github.com/Kianuni/WQGuard/releases/download/v1.3.5/WQGuard_v1.3.5.ipa",
+          "size": 2773064,
+          "localizedDescription": "## WQGuard v1.3.5 (Build 26)\n\n全面推进 **CMS 签名链 / 双槽权限 / Mach-O / ZIP64 / 代理防 Brotli 护盾全链路安全加固**，并针对 **iOS 26 / iOS 27 真机系统注册表特性与内部服务容器组** 完成零误报精细校准；全量 **50 个 XCTest 测试套件（1,019 项测试）**在 Swift 严格并发模式下 100% 通过，且完成 `WQGuard_v1.3.5.ipa` 真机实测验证。\n\n---\n\n### 中文更新说明\n\n* **全栈密码学签名与双槽权限防伪加固（`CSBlobParser` / `ChannelClassifier` / `IPAPackageScanner`）**：\n  * 升级 CMS PKCS#7 证书链时间窗口、叶子扩展（EKU / BasicConstraints）与签名属性绑定校验，强化 `CodeResources` 哈希密封与 Mach-O 全切片一致性核验，封堵双槽 XML/DER 权限遮蔽、离线伪造 TestFlight 与嵌套 `.appex` / `.xpc` / 版本化 `.framework` 越权跳板。\n* **Mach-O / ZIP64 / 容器取证深度防绕过与 DoS 防护（`MachOParser` / `MachOScanner` / `Co",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.4",
+          "date": "2026-11-19T05:42:51Z",
+          "downloadURL": "https://github.com/Kianuni/WQGuard/releases/download/v1.3.4/WQGuard_v1.3.4.ipa",
+          "size": 2376779,
+          "localizedDescription": "## WQGuard v1.3.4 (Build 25)\n\n全面消除 iOS 26 / iOS 27 真机预装系统应用、团队自域钥匙串通配符、TestFlight 测试版应用及 `/private/var` 临时路径解包误报，打通企业签 / 侧载重签后的 `WQGuard` 宿主自白名单闭环，并保留全套密码学签名链验真、Mach-O / ZIP64 全链路防绕过解析、2026 最新漏洞特征库、ARM64 `svc #0x80` 直接系统调用扫描与 13 项固件 CVE 暴露雷达。\n\n---\n\n### 中文更新说明\n\n- **iOS 26 / 27 官方预装与第一方应用零误报加固（`InstalledAppRegistryScanner`）**：\n  - 完整覆盖驻留于 `/private/var/containers/Bundle/Application/<UUID>/` 且在 CoreTrust 静态缓存中省略 `SignerIdentity` 的 120+ 款 Apple 原厂预装可卸载应用与系统 UI 服务（如设置、Siri、信息、健康、App Store、快捷指令、文件、时钟、日历、备忘录、提醒事项、翻译、遥控器、聚焦、库乐队、Swift Playgrounds 等）及官方非 `com.apple.*` 应用（如 App Store 签名的 `Shazam`）。\n  - 完",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/dashboard.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/firmware.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQGuard/images/ipa.webp"
+      ]
+    },
+    {
+      "name": "WQManager",
+      "bundleIdentifier": "mumu.pduola.WQManager",
+      "developerName": "hseons",
+      "subtitle": "App 数据备份与缓存管理",
+      "localizedDescription": "WQManager 是免越狱的应用数据管理工具，可以备份与还原应用的 Documents 与 Preferences、清理缓存、查看容器占用。基于沙盒漏洞实现，不需要越狱也不需要连接电脑。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/icon.webp",
+      "tintColor": "#8FB927",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.5",
+          "date": "2026-11-18T11:48:53Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.5.0/WQManager-0.5-build1-unsigned.ipa",
+          "size": 952702,
+          "localizedDescription": "显示版本 **0.5**，构建 **1**；内部发布修订 **0.5.0**。\n\n这个版本的主题是「找得到、看得懂、拿得走」：\n\n- **全局文件搜索**：跨 App 搜索用户文件，结果边扫边出；支持文件名 / 相对路径 / App 名、类型与最小大小筛选、路径 / 大小 / 最新排序。结果可原地预览或打开所在目录，扫描中可取消。\n- **空间变化**：按「较上次 / 近 7 天 / 近 30 天」比较，按增长排序并显示合计占用与净变化；新增全部 App 合计趋势图，单 App 详情保留当前大小、较上次、近 7 天与扫描历史。\n- **文件审计与导出**：大文件 / 重复文件按 App 分组，重复项经 SHA-256 确认；清理时每个 App 至少保留一份，删除进入空间透镜回收站。导出中心可分享或存储到「文件」，目标写入完成才记成功，取消 / 失败会清理临时目录。\n- **安全与一致性**：跨 App 的相同文件不再被当成可互相替代；重复清理不能选中某个 App 的最后一份；上次中断的导出在重开后显示「已中断」；清理 14 个无用本地化 key，中英文 813 个 key 对齐。\n- **界面**：修复空间变化页底部被悬浮 Tab Bar 遮挡；补充全局搜索、空间趋势、导出选择面板的中英文文案。\n\n验证：23 个本地测试程序、9 条模拟器 UI 流程、Debug 模拟器与 Rele",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.4",
+          "date": "2026-11-16T13:47:46Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.4/WQManager-0.4-build16-unsigned.ipa",
+          "size": 891285,
+          "localizedDescription": "显示版本 **0.4**，构建 **16**；内部发布修订 **0.4.4**。\n\n- 修复记录页状态徽标被压缩成一个字：徽标保留完整宽度，空间不足时先压缩副标题；副标题最多两行。\n- 应用页索引失败改为危险色并追加「下拉可重试」，失败不再看起来像普通说明。\n- 清理页没有可清理对象时收起选择计数与快捷筛选，空卡片可点按重新扫描。\n- 备份行时间改为今天/昨天/日期 + 时间，同一 App 的多份备份更容易区分。\n- 记录页与备份页的日期格式化器按语言缓存，去掉逐行创建开销。\n\n验证：22 个本地测试程序、5 条模拟器 UI 流程、Debug 模拟器与 Release arm64 构建均通过，编译警告 0 条。\n\n备份时间与徽标只影响展示，不改变备份、恢复与清理的判定逻辑。真机签名、容器访问和后台中断矩阵仍待验收。\n\n附件为 **未签名 IPA**，适合按项目说明保留 App Group 权限重新签名安装。",
+          "minOSVersion": "26.0"
         },
         {
           "version": "0.4.1",
-          "date": "2026-08-15T16:00:56Z",
-          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.1/Applesauce-iOS-trollstore-permanent-jit.ipa",
-          "size": 41669140,
-          "localizedDescription": "# Applesauce 0.4.1\n\nTwo fixes, both found by playing Peggle until it broke. Nothing about\ninstalling or your library changes — pick the same IPA you used for 0.4.0.\n\n## Games no longer hang at a full loading bar\n\nThe emulator's `wcstol` and `wcstod` only accepted a string that was *all*\nnumber, where the real C functions read the leading number and ignore\nwhatever follows. Peggle reads its stage list exactly that way — the number\nsits on a line with text after it — so the parse failed, Peggle threw away\nevery stage it had loaded, and the loading screen sat at a full bar waiting\nfor data that n",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.4.0",
-          "date": "2026-08-15T04:04:13Z",
-          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.0-black-screen-fix/Applesauce-iOS-0.4.0-black-screen-fix-trollstore.ipa",
-          "size": 41666925,
-          "localizedDescription": "This TrollStore release fixes black screens in older OpenGL ES games.\n\nThe slow composition path now reads the app's current framebuffer. This preserves unresolved tile data on iPhone GPUs. The UIKit swap path now reattaches only the SDL view that it presents. This prevents a guest context from leaving the host drawable detached without causing alternating frames.",
-          "minOSVersion": "15.0"
+          "date": "2026-11-16T01:33:41Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.1/WQManager-0.4.1-unsigned.ipa",
+          "size": 849326,
+          "localizedDescription": "修复本轮 Xcode 编译警告：\n\n- 补全共享备份辅助函数的空值标注，包括可空返回值和输出指针。\n- 进程服务查询使用带类型函数指针，移除 performSelector 调用。\n- 修正空间透镜的枚举参数和删除菜单类型。\n- 补齐删除文件历史记录的图标。\n- 空间透镜使用新的外观监听 API，移除 mainScreen 调用。\n\n验证：19 组可移植测试通过；Debug 模拟器及 arm64 Release 构建通过，编译日志无警告；plist、格式及空值契约检查通过；iOS 26.0 模拟器空间透镜运行中切换明暗模式正常。\n\n静态分析完成，保留两条已在修改前版本复现的提示：NSNumber 指针隐式转布尔值，以及另一处菜单可能加入空对象。真机容器权限和进程服务可用性仍需验证。\n\n安装包为 0.4.1（构建号 13）未签名 IPA，含分享扩展；安装前需自行签名并保留 App Group。\n\nSHA-256: ab0c53abc37ea73998851e72b8291985ececd50df1291f6eed3b147b645058cb",
+          "minOSVersion": "26.0"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/library-games.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/settings.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/about.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/images/apps.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/images/cleaner.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/images/history.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQManager/images/settings.webp"
       ]
     },
     {
-      "name": "DLiPA",
-      "bundleIdentifier": "com.ahmedbafkir.dlipa",
-      "developerName": "Ahmed Bafkir",
-      "subtitle": "522K · 从 App Store 下载 IPA",
-      "localizedDescription": "受 ipatool 启发的 iOS 应用。用你自己的 Apple ID 登录，搜索 App Store、把任意应用下载成 IPA（含旧版本），并直接安装或分享，无需越狱。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/icon.webp",
-      "tintColor": "#2AC04D",
+      "name": "WQToolkit",
+      "bundleIdentifier": "com.zhangfuhao.wqtoolkit",
+      "developerName": "MchinaMd57764",
+      "subtitle": "App 数据容器工具箱",
+      "localizedDescription": "基于 App Group 容器查询能力构建的工具箱，无需越狱即可浏览、清理与检查自己的应用数据容器。包含文件浏览器、缓存扫描、设备信息与 MobileGestalt 缓存面板。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/icon.webp",
+      "tintColor": "#2F8CCF",
       "category": "other",
       "versions": [
         {
-          "version": "1.4",
-          "date": "2026-08-03T08:46:29Z",
-          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.4/DLiPA_v1.4.ipa",
-          "size": 534245,
-          "localizedDescription": "## What's Changed \r\n\r\n- Fixed authentication issues\r\n- Multi-language support (AI translations):\r\n  - Chinese, Simplified\r\n  - French\r\n  - German\r\n  - Hindi\r\n  - Indonesian\r\n  - Italian\r\n  - Japanese\r\n  - Korean\r\n  - Russian\r\n  - Spanish\r\n  - Turkish\r\n  - Vietnamese\r\n\r\n## Support the app ♡\r\nIf you find this project useful, I would be very grateful for your support in its continuation and development.\r\n\r\n[![Support DLiPA](https://img.shields.io/badge/PayPal-Support_DLiPA-blue?logo=paypal)](https://www.paypal.com/ncp/payment/RLKKWBYSKSPVU)",
-          "minOSVersion": "13.0",
-          "buildVersion": "08-03",
-          "buildNumber": "08-03"
-        },
-        {
-          "version": "1.3",
-          "date": "2026-06-17T01:22:52Z",
-          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.3/DLiPA_v1.3.ipa",
-          "size": 479107,
-          "localizedDescription": "## What's Changed\r\n\r\n### New Feature\r\n- Ability to download a specific version of any app using the Version ID.\r\n- Access your last 15 searches instantly just by tapping the search bar for quick navigation.\r\n\r\n### Fixes\r\n- Resolved the login issue.\r\n- Resolved the \"An unknown error occurred\" issue when downloading certain popular apps, including Google and Microsoft apps and others.\r\n- Fixed an issue that caused the app to crash when searching after setting a search limit.\r\n- Fixed a bug where downloaded data was not automatically deleted when selecting \"Delete account with files\".\r\n\r\n### Impr",
-          "minOSVersion": "13.0"
-        },
-        {
-          "version": "1.2",
-          "date": "2026-02-22T21:04:04Z",
-          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.2/DLiPA_v1.2.ipa",
-          "size": 471971,
-          "localizedDescription": "### What's Changed\r\n\r\n- Fixed login issue.\r\n- Fixed other general issues.",
-          "minOSVersion": "13.0"
+          "version": "1.0",
+          "date": "2026-11-11T22:59:56Z",
+          "downloadURL": "https://github.com/MchinaMd57764/WQToolkit/releases/download/v1.0/WQToolkit-unsigned.ipa",
+          "size": 4819436,
+          "localizedDescription": "iOS 27 only. Unsigned build - it contains no signing material, no profile and no team ID.\n\n**Assets**\n- `WQToolkit-unsigned.ipa` - 4.6 MB. Re-sign it with your own developer identity and an App Group entitlement before installing.\n- `WQToolkit_source.tar.gz` - source snapshot (Xcode project included).\n\nNo jailbreak, no Mac at runtime. The app only reaches its own containers and its own App Groups; cross-app access is out of scope.\n\nTested on iPhone 15 Pro Max, iOS 27.3.",
+          "minOSVersion": "27.0"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/search.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/versions.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/downloads.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/files.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WQToolkit/images/tweaks.webp"
       ]
     },
     {
-      "name": "iTorrent",
-      "bundleIdentifier": "com.xitrix.iTorrent2",
-      "developerName": "XITRIX",
-      "subtitle": "23.2M · iOS 种子下载器",
-      "localizedDescription": "iOS 上的种子客户端，支持「文件」App、后台下载、实时活动与灵动岛进度条、外接硬盘下载、顺序下载等。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/icon.webp",
-      "tintColor": "#315DD7",
+      "name": "WrapPin",
+      "bundleIdentifier": "com.suversal.wrappin",
+      "developerName": "suversal",
+      "subtitle": "虚拟定位与路线测试",
+      "localizedDescription": "WrapPin 在一张地图上选择、测试并移动 iPhone 向系统报告的位置，适合测试基于位置的 App 与步行导航。iOS 18–26 需要用电脑生成配对文件，iOS 27 以上可以在设备上用六位码配对。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/icon.webp",
+      "tintColor": "#2FB0CA",
       "category": "other",
       "versions": [
         {
-          "version": "2.2.0",
-          "date": "2026-07-19T09:59:41Z",
-          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.2.0-1/iTorrent.ipa",
-          "size": 24288935,
-          "buildVersion": "07-19",
-          "buildNumber": "07-19",
-          "localizedDescription": "## What's new:\r\n* Meet the new built-in VLC player. Play compatible video and audio files directly in iTorrent, even while they are still downloading.\r\n* Enjoy Picture in Picture, playback speeds from 0.5x to 2x, audio and subtitle track selection, precise seeking, and system media controls.\r\n* Take playback to a bigger screen with AirPlay or a compatible player discovered on your local network.\r\n* Choose how pieces are downloaded with Sequential and First & Last priority modes, making it easier to start watching sooner.\r\n* Select and share multiple completed files or entire folders in one go.",
-          "minOSVersion": "16.0"
+          "version": "1.0.26",
+          "date": "2026-11-24T07:09:57Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
+          "size": 7161177,
+          "localizedDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Re",
+          "minOSVersion": "18.0"
         },
         {
-          "version": "2.1.1",
-          "date": "2025-12-18T09:43:35Z",
-          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.1.1-1/iTorrent.ipa",
-          "size": 8362011,
-          "buildVersion": "1",
-          "buildNumber": "1",
-          "localizedDescription": "## What’s new\r\n* Import/Export of RSS channels\r\n\r\n## Improvements\r\n* Files thumbnails now looks properly\r\n* Minor UI changes\r\n\r\n## Fixes\r\n* HTTPS trackers now works!\r\n* App crash on launch fixed\r\n* RSS magnet links now works\r\n\r\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.1.0-1...v2.1.1-1",
-          "minOSVersion": "16.0"
+          "version": "1.0.25",
+          "date": "2026-11-18T17:29:45Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.25/WrapPin-Standard-1.0.25-build93-unsigned.ipa",
+          "size": 7117623,
+          "localizedDescription": "优化自定义路线的地点搜索：\n\n- 国内输入和点击“搜索”统一使用联想候选；点击“搜索”收起键盘，保留原来的候选列表，不再换成另一批结果。\n- 点击具体地点直接加入路线并返回，无需再次选择。\n- 联想结果统一显示添加图标，防止重复点击添加。\n\n候选数量由地图服务决定，最多显示六条。坐标输入、海外搜索和首页搜索保留原有方式。\n\n**安装**\n\nStandard 标准版适合 SideStore 与外部设备隧道；Tunnel 隧道版需要匹配的 Packet Tunnel 签名权限。两版均为 iOS/iPadOS 18.0+ 未签名 IPA，沿用原签名身份覆盖安装同一版本类型即可。\n\n路线搜索、候选保留、取消、恢复与定位连续性回归及双版 Release 包体校验通过；真实地图服务返回结果和签名安装仍需手机验收。\n\n[详细说明](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.zh-CN.md) · [English](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.md)\n\nSHA-256：\n\n- Standard：`b86567e92cad582a4cfca54e3d90079",
+          "minOSVersion": "18.0"
         },
         {
-          "version": "2.1.0",
-          "date": "2025-10-25T08:40:14Z",
-          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.1.0-1/iTorrent.ipa",
-          "size": 7092275,
-          "buildVersion": "1",
-          "buildNumber": "1",
-          "localizedDescription": "## What’s new\r\n* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\r\n* LibTorrent updated to version 2.0.11\r\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\r\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\r\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\r\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\r\n* Added Spanish localization  by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\r\n\r\n## Fixes\r\n",
-          "minOSVersion": "16.0"
+          "version": "1.0.24",
+          "date": "2026-11-18T06:20:00Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.24/WrapPin-Standard-1.0.24-build88-unsigned.ipa",
+          "size": 7114190,
+          "localizedDescription": "新增自定义路线，在 Apple 地图不提供步行规划的地区也能模拟移动。\n\n- 搜索地点、输入坐标或地图点选起终点与途经点，支持长按排序、逐点删除和撤销。\n- 支持 GPX 导入及轨迹段选择。\n- 统一速度滑块：0.1–240 公里/小时，步长 0.1；支持暂停、继续、返程和停止恢复真实位置。\n- 优化首页与路线浮框的三档拖动、背景可读性、按钮边界和收起摘要；移除弹簧吸附，增加路线页当前位置按钮。\n\n自定义地点按顺序直线连接，不自动贴合道路。路线计算和 GPX 解析在本机完成，无需 Apple 步行规划；地图显示和地点搜索仍可能需要网络。\n\n**安装包选择**\n\n- **Standard 标准版**：适合 SideStore 等自签，配合外部设备隧道；免费账号请选择标准版。\n- **Tunnel 隧道版**：内置设备隧道，需要匹配的 Packet Tunnel 签名权限。\n\n两版均为 iOS/iPadOS 18.0+ 未签名 IPA。使用原签名身份覆盖升级同一版本类型，正常配对无需移除。\n\n**验证范围**\n\n路线、GPX、速度、选点搜索、恢复记录、定位连续性及双版 Release 归档和包体校验通过。此前测试包已通过 iOS 26 模拟器交互及双版 Debug 编译；本次正式包签名安装、iOS 18 交互和长时间后台运行仍待真机验收。\n\n[详细说明](https://github.",
+          "minOSVersion": "18.0"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/detail.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/player.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/fixed-location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/walking-active.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/WrapPin/images/privacy.webp"
       ]
     },
     {
-      "name": "Feather",
-      "bundleIdentifier": "thewonderofyou.Feather",
-      "developerName": "Samara",
-      "subtitle": "13.6M · 设备内签名安装器",
-      "localizedDescription": "免费的设备内应用管理与安装器。用 Apple 开发者证书在未越狱系统上签名安装 IPA，并内置应用管理功能。",
-      "iconURL": "https://github.com/khcrysalis/Feather/blob/v1.x/iOS/Resources/Icons/Main/Mac@3x.png?raw=true",
-      "tintColor": "#5DD033",
+      "name": "YouProEXTRA",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "alibusut",
+      "subtitle": "YouTube 增强版",
+      "localizedDescription": "YouTube 的 YouPro 修改版，包含去广告、后台播放、下载、iSponsorBlock、画中画，以及大量可自定义的选项。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/icon.webp",
+      "tintColor": "#49CF34",
       "category": "other",
       "versions": [
         {
-          "version": "2.9.0",
-          "date": "2026-07-05T02:11:53Z",
-          "downloadURL": "https://github.com/claration/feather/releases/download/v2.9.0/Feather.ipa",
-          "size": 14241853,
-          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added tweak options in default signing options.\r\n* Added ability to search for identifier's in Library @ismailcarlik in https://github.com/claration/Feather/pull/652\r\n* Fixed issue in the file enumeration logic, by using the path property instead of method.\r\n* Fixed credit links.\r\n* Fixed duplicate repository in recommended reposito",
-          "buildVersion": "07-05",
-          "buildNumber": "07-05"
-        },
-        {
-          "version": "2.8.2",
-          "date": "2026-04-22T09:18:46Z",
-          "downloadURL": "https://github.com/claration/feather/releases/download/v2.8.2/Feather.ipa",
-          "size": 14242031,
-          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for Catalyst targets.\r\n* Added ability to rename existing certificates.\r\n* Added Arabic localizations by @mohammed1d1 in https://github.com/CLARATION/Feather/pull/624\r\n\r\n## New Contributors\r\n* @mohammed1d1 made their first contribution in https://github.com/CLARATION/Feather/pull/624\r\n\r\n**Full Changelog**: https://gith"
-        },
-        {
-          "version": "2.7.0",
-          "date": "2026-04-05T16:01:10Z",
-          "downloadURL": "https://github.com/claration/feather/releases/download/v2.7.0/Feather.ipa",
-          "size": 14154834,
-          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for using remote pairing on 17.4+, for 17.3 and below, use a standard pairing file.\r\n* Added more recommended sources by @CelloSerenity in https://github.com/CLARATION/Feather/pull/585\r\n* Added option to inject into all available extensions within an app by @waruhachi in https://github.com/CLARATION/Feather/pull/592\r\n\r"
-        }
-      ]
-    },
-    {
-      "name": "DukeX",
-      "bundleIdentifier": "com.mafty.dukex",
-      "developerName": "Manic EMU Development Team",
-      "subtitle": "19.4M · Xbox 模拟器前端",
-      "localizedDescription": "面向 iOS 的 xemu 实验性前端，把 xemu 内核嵌进原生 Swift 外壳，通过 MoltenVK 与原生 Metal 呈现 Vulkan 渲染。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/icon.webp",
-      "tintColor": "#D42FB3",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.0.2",
-          "date": "2026-06-30T12:21:27Z",
-          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.2/DukeX.v1.0.2.ipa",
-          "size": 20345841,
-          "localizedDescription": "# DukeX v1.0.2 - Expanding the Xbox Experience\n\nDukeX v1.0.2 is our biggest step yet toward preserving the full original Xbox\nexperience, not just the games. This release introduces the first native macOS\nbuild, expands XB.Live integration, and brings richer community features to both\niOS and macOS.\n\n## What's New\n\n- Native macOS release: DukeX is now available as a Mac Catalyst desktop build\n  packaged with a nested Xemu fork, pairing desktop Xemu compatibility with the\n  DukeX interface.\n- XB.Live Rich Presence and playtime tracking: friends can see what you are\n  playing while DukeX tracks ",
+          "version": "21.33.6",
+          "buildVersion": "21.33.6",
+          "date": "2026-11-23T00:34:29Z",
+          "localizedDescription": "### iOS16+ Release, ENJOY!!\r\n> [!NOTE]\r\n> - 📺Full 4KHDR support.\r\n> - 📦Downloads working partially. depending on hardware codecs. \r\n> - 🆕 `YTLowContrastMode` tweak, enabled by default.\r\n> \r\n> - - -\r\n> #### Extra Tweaks:\r\n> - `YouPip` `YTweaks` `YouSpeed` `YouMute` `YouLoop` `YTABConfig` `YouQuality` `YouChooseQuality`  `YouGetCaption` `YTLowContrastMode` \r\n> -  `Return-YouTube-Dislikes` `DontEatMyContent` `Open in YouTube (Safari Extension)`\r\n\r\n> [!WARNING]\r\n> - 21.34.3+ builds require iOS 17+ now.",
+          "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/youproextra-ipa2/YouProExtra_21.33.6_1.3.4.ipa",
+          "size": 126259311,
           "minOSVersion": "16.0",
-          "buildVersion": "06-30",
-          "buildNumber": "06-30"
-        },
-        {
-          "version": "1.0.1",
-          "date": "2026-06-08T03:25:57Z",
-          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.1/DukeX.v1.0.1.ipa",
-          "size": 31683375,
-          "localizedDescription": "DukeX v1.0.1 brings Xbox Live profile groundwork, improved rendering stability, Touch Controls, AirPlay, personalization, cover art scraping, and native URL scheme support.\n\nWhat's New:\n- Partnership with XB.Live introduces profile integration for achievements, friends, messages, community events, and cloud sync support.\n- Core rendering and performance handling have been improved for better stability across more titles.\n- Touch Controls now support .manicskin layouts, .deltaskin and .gammaskin imports, haptic feedback, and the official DukeX Default skin.\n- AirPlay support lets compatible dev",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.0.0",
-          "date": "2026-05-18T17:04:44Z",
-          "downloadURL": "https://github.com/MaftyManicEMU/DukeX/releases/download/v1.0.0/DukeX.v1.0.0.ipa",
-          "size": 14406551,
-          "localizedDescription": "DukeX v1.0.0 is the first release build prepared for wider sideload testing.\r\n\r\n## Highlights\r\n\r\n- Native SwiftUI game library, profile, and settings interface.\r\n- Game-library sorting by Favorites, Title, Live support, and Recent.\r\n- Per-game favorite toggles from the long-press menu.\r\n- Portrait and landscape library column controls.\r\n- Insignia-oriented NAT defaults and live indicators for supported titles.\r\n- User-accessible BIOS, ROMs, Covers, GameConfigs, and ShaderCaches folders.\r\n- Per-game cover art, custom config import, shader-cache clearing, and dashboard launch.\r\n- Built-in FPS/sy",
-          "minOSVersion": "16.0"
+          "buildNumber": "21.33.6"
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/library.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/activity.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DukeX/images/game.webp"
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/YouProEXTRA/images/play.webp"
       ]
     },
     {
-      "name": "KMusic",
-      "bundleIdentifier": "com.macxk.KMusic",
-      "developerName": "Mac-XK",
-      "subtitle": "3.7M · 歌一刀 · 多源音乐聚合播放器",
-      "localizedDescription": "歌一刀（KMusic）是 SwiftUI 开发的多源音乐聚合播放器，支持 iOS 与 macOS。内置酷我、酷狗、QQ 音乐、网易云、咪咕等音源，支持 LRC 歌词同步、全局搜索、后台播放，还能用 JS 脚本导入自定义音源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/icon.webp",
-      "tintColor": "#2B55D3",
-      "category": "other",
+      "name": "真果鉴",
+      "bundleIdentifier": "com.yingshib.xg",
+      "developerName": "Xanerix",
+      "subtitle": "多平台短剧影视客户端",
+      "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.3-115/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#3350D0",
+      "category": "entertainment",
       "versions": [
         {
-          "version": "2.3.0",
-          "date": "2026-03-12T08:39:59Z",
-          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.3.0/_2.3.0_22.2.ipa",
-          "size": 3836900,
-          "localizedDescription": "- 优化增加各种问题",
-          "minOSVersion": "14.0",
-          "buildVersion": "03-12",
-          "buildNumber": "03-12"
+          "version": "2.0.3",
+          "date": "2026-11-21T18:31:19Z",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.3-115/guoapp-2.0.3%2B115-ios-unsigned.ipa",
+          "size": 34300644,
+          "buildVersion": "115",
+          "buildNumber": "115",
+          "localizedDescription": "更新内容：\n\n- 手机上标题栏和底栏更紧凑；往下翻时收起发现页的标题和底栏，快速往回翻时恢复（#208）。\n- 修复 Windows 触摸屏上左右滑切换分类时内容偏在半路不动。\n- 下拉刷新时往回推可以收起并取消刷新，拉过触发点后不再必定刷新。\n- 外观的预设色板新增「白色」，浅色使用白底，深色使用中性色。\n- 播放失败且已有进度时，可点「从头播放」从当前集开头重试。\n- 手机上点开剧集恢复先进详情页，设置 › 播放 新增「点开剧集直接播放」开关，电视以外可用，默认关闭（#214）。\n- 设置 › 代理 可按站源单独设置连接方式，未单独设置的站源跟随全局。\n- 发现页左右滑切换分类不再等待加载，未加载完的分类显示封面骨架，并提前加载相邻分类（#215）。\n- 发现页分类、下载页标签和详情页选集分组改为跟手翻页，左右两页同时可见，分类栏下划线随手指移动；发现页每个分类各自滚动和下拉刷新（#215）。\n- 分类栏选中文字颜色改为渐变过渡（#215）。\n- 移除打开详情页时封面飞入的过渡动画。\n- Windows 小窗拖到屏幕边缘自动收起，鼠标移到边缘展开，设置 › 摸鱼 可开启（#228）。\n- Windows 新增「贴边自动暂停」，小窗贴边收起时暂停，展开后继续。\n- 设置新增「摸鱼」分类，老板键和小窗贴边设置移入其中。\n- Windows 小窗拖近屏幕边缘时吸附到边缘，不再拖出屏幕",
+          "minOSVersion": "15.1"
         },
         {
-          "version": "2.2.0",
-          "date": "2026-02-28T12:09:50Z",
-          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.2.0/2.2.0.ipa",
-          "size": 9426894,
-          "localizedDescription": "歌一刀更新：\r\n- 修复自定义时间功能使用异常，无法调时间问题\r\n- 修复上一曲随机问题\r\n- 修复首页排行榜部分歌单里歌曲播放触发无限闪退\r\n- 修复ios26.4beta、beta2搜索输字后点回车必闪退\r\n- 修复歌曲搜索偶尔闪退\r\n- 修复14pmios17.0，出现“收藏歌单及我的歌单”打不开的情况\r\n- 优化歌曲封面+歌词的轮动\r\n- 优化切换源失败时提醒消息遮挡问题\r\n- 增加歌单页定位到正在播放\r\n- 增加删除歌单时，可选择删除歌单内所有歌曲\r\n- 增加歌曲收藏时，可自选收藏到哪个歌单\r\n- 增加收藏的歌单，歌单歌曲查找搜索\r\n- 增加收藏的歌单，可切换成手动模式更新歌单里的内容\r\n- 增加收藏的歌单，里面歌曲可复选收藏\r\n- 增加最高音质支持到hires+master\r\n- 增加本地歌曲可收藏到歌单\r\n- 增加播放界面选择样式\r\n- 增加摇一摇切歌功能",
-          "minOSVersion": "14.0"
+          "version": "2.0.2",
+          "date": "2026-11-19T01:03:04Z",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.2-114/guoapp-2.0.2%2B114-ios-unsigned.ipa",
+          "size": 34234019,
+          "buildVersion": "114",
+          "buildNumber": "114",
+          "localizedDescription": "更新内容：\n\n- 修复红果部分剧集提示「未返回兼容的媒体」，改用 H.265 线路。\n- 手机竖屏看横屏视频时可在简介下方切换多季，竖屏播放页的选集菜单也新增选季，切换后从该季上次位置继续。\n- 播放器上拉菜单顶部更紧凑，菜单间切换不再闪动。\n- 手机上点开剧集直接播放，返回直接回到列表，加载失败时仍显示详情页。\n- 已缓存的封面直接显示，不再闪烁。\n- 站源模块可在播放凭证里声明 `omitFetchMetadata`，请求视频时不带 Sec-Fetch 头（开发快照，需用声明该项的站源实测）。\n- Android 新增「硬解（修正偏蓝）」解码方式，用于海思等画面偏蓝的设备（#144，开发快照，需在海思电视上实测）。\n- Windows 升级 libmpv，改为 D3D11 直接渲染，移除 ANGLE 依赖（#164）。\n- 横屏锁定后左右两侧都显示锁图标并可解锁；竖屏的锁按钮移到右上角最右侧。\n- 红果弹幕的方括号表情显示为表情图（#143）。\n- 弹幕设置新增「合并重复」，同一时段的相同弹幕并成一条并标出次数（#143）。\n- 修复 Windows 最大化后进入全屏仍显示任务栏，退出全屏后恢复最大化（#152）。\n- 修复从 1.x 升级后红果分类缺少「听书」「小说」（#169）。\n- 红果听书的封面角标改为「听书 · 共 N 章」，搜索结果可区分短剧和听书（#179）。\n-",
+          "minOSVersion": "15.1"
         },
         {
-          "version": "2.1.0",
-          "date": "2026-02-13T06:53:07Z",
-          "downloadURL": "https://github.com/Mac-XK/KMusic/releases/download/%E6%AD%8C%E4%B8%80%E5%88%802.1.0/2.1.0.ipa",
-          "size": 8761082,
-          "localizedDescription": "年前最后一版\r\n### 更新内容：\r\n- 增加一刀搜索，极速体验，无需你懂得\r\n- 增加底部Tab自定义\r\n- 优化CPU\r\n- 优化一些问题",
-          "minOSVersion": "14.0"
+          "version": "2.0.1",
+          "date": "2026-11-16T16:33:41Z",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
+          "size": 33878287,
+          "buildVersion": "113",
+          "buildNumber": "113",
+          "localizedDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与",
+          "minOSVersion": "15.1"
         }
       ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/recommendation.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/playlist.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/KMusic/images/play.webp"
-      ]
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "知乎--",
+      "bundleIdentifier": "com.huamurui.ZhihuMinusMinus",
+      "developerName": "huamurui",
+      "subtitle": "轻量无广告的第三方知乎客户端",
+      "localizedDescription": "知乎--（zhihu-minus-minus）是一款轻量、简洁的第三方知乎客户端，去掉了广告与推荐干扰，只看问题和回答。用 React Native 开发，支持 iOS 与 Android，源码以 GPL 开源。",
+      "iconURL": "https://raw.githubusercontent.com/huamurui/zhihu-minus-minus/a396c80b36f49ea6de138f273e23cfde2c03835e/src/assets/images/icon.png",
+      "tintColor": "#84D42F",
+      "category": "social",
+      "versions": [
+        {
+          "version": "0.10.1",
+          "date": "2026-11-25T07:00:41Z",
+          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.10.1/zhihu-minus-minus-v0.10.1-unsigned.ipa",
+          "size": 14916202,
+          "localizedDescription": "uiux小调整；安卓低版本登录修复与性能优化；安卓14+预测性返回（可关闭）；ios 换 xcode27 打包。\r\n\r\n### What's Changed\r\n\r\n* Android 单栏预测性返回与设备圆角（v0.10.1） by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/212\r\n* fix(android): 修复回答横滑误返回，让预览从起手侧露出 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/218\r\n* 增加可切换的信息流性能模式，并记录 Android 8.1 实测 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/223\r\n* 修复 Windows 本地 Release 包冷启动时的 Sentry 模块缺失 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/220\r\n* 修复 Android 8 平板冷启动后无法恢复登录的问题 by @huamurui in https://github.com/huamurui/zhihu-min",
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
+        },
+        {
+          "version": "0.10.0",
+          "date": "2026-11-21T03:09:18Z",
+          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.10.0/zhihu-minus-minus-v0.10.0-unsigned.ipa",
+          "size": 14901422,
+          "localizedDescription": "### What's Changed\r\n\r\n* 下拉刷新不清空已加载列表内容 by @duofuwang in https://github.com/huamurui/zhihu-minus-minus/pull/193\r\n* fix: 个人主页分页拼接时按 id 去重 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/198\r\n* 完善划线评论、选区操作与富文本阅读 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/200\r\n* 稳定折叠回答卡片的滚动位置，直接展示同题问题详情 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/201\r\n* fix: 预览列表模式下点回答卡片不发起标题过渡 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/202\r\n* 为「我的」页添加随滚动收起的头像和模糊封面 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/205\r\n* ",
+          "minOSVersion": "16.4"
+        },
+        {
+          "version": "0.9.10",
+          "date": "2026-11-06T14:01:41Z",
+          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa",
+          "size": 14833319,
+          "localizedDescription": "### What's Changed\r\n* 统一首页导航与内容操作栏外观 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/187\r\n* 调整 Android 页面进入和返回转场 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/186\r\n* 优化文章与想法详情首屏和操作栏 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/188\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6296309837490493137-w\" src=\"https://github.com/user-attachments/assets/bbed6e50-bf62-4205-a4ef-65cc71fd9174\" />\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6298716015608665964-w\" src=\"https://github.com/user-attachments/assets/99226fd4-0af5-47",
+          "minOSVersion": "16.4"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Allow app to access your camera",
+          "NSFaceIDUsageDescription": "Allow app to access your Face ID biometric data.",
+          "NSMicrophoneUsageDescription": "Allow app to access your microphone",
+          "NSPhotoLibraryAddUsageDescription": "Allow app to save photos",
+          "NSPhotoLibraryUsageDescription": "允许知乎--访问你的照片，以便在评论和正文中上传图片。"
+        }
+      }
     }
   ],
   "news": []
