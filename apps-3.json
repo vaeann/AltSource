@@ -1,16 +1,298 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 102 个，按更新频率分成 3 个源，这里是第 3 个（2 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 109 个，按更新频率分成 3 个源，这里是第 3 个（9 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.mafty.dukex",
-    "com.macxk.KMusic"
+    "com.aether.ps4ios",
+    "com.verback.YTLite",
+    "com.beans.app",
+    "io.github.johnny901901901.applesauce",
+    "com.ahmedbafkir.dlipa"
   ],
   "apps": [
+    {
+      "name": "AetherPS4",
+      "bundleIdentifier": "com.aether.ps4ios",
+      "developerName": "Leviidev",
+      "subtitle": "32.6M · PS4 模拟器",
+      "localizedDescription": "面向 iOS 与 iPadOS 的 PlayStation 4 模拟器，包含独立应用与模拟器内核，可直接在设备上启动 PS4 游戏。",
+      "iconURL": "https://raw.githubusercontent.com/Leviidev/AetherPS4/main/AetherPS4-iOS/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#7430D3",
+      "category": "games",
+      "versions": [
+        {
+          "version": "1.2",
+          "date": "2026-09-12T02:48:11Z",
+          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.2/AetherPS4-iOS.ipa",
+          "size": 34208394,
+          "localizedDescription": "## What's Changed\r\n* Prevent iOS crash on first launch in a fresh sandbox by @hernan0078 in https://github.com/Leviidev/AetherPS4/pull/5\r\n* Add 'Continue Anyway' button to SetupCheckView by @itsjaylmao in https://github.com/Leviidev/AetherPS4/pull/7\r\n* Improve iOS runtime compatibility and startup feedback by @hernan0078 in https://github.com/Leviidev/AetherPS4/pull/6\r\n* Replace Minecraft with Rocket League in README by @itsjaylmao in https://github.com/Leviidev/AetherPS4/pull/9\r\n\r\n## New Contributors\r\n* @hernan0078 made their first contribution in https://github.com/Leviidev/AetherPS4/pull/5\r",
+          "minOSVersion": "17.4",
+          "buildVersion": "09-12",
+          "buildNumber": "09-12"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-08-30T03:12:11Z",
+          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.1_release/AetherPS4-iOS.ipa",
+          "size": 33931355,
+          "localizedDescription": "This release contains many new updates improving the user experience! Here's what we added\r\n\r\n## Minor updates\r\n- New app logo\r\n- Setup Screen (lets you know if jit is attached and if memory entitlement is working\r\n- Search for games\r\n## Major updates\r\n- Improved boot time\r\n- Added support for many games with unimplemented functions\r\n   - This does NOT guarantee your game will load. All this did was add unadded functions to the app, meaning if an app had an unadded function it would crash, now hopefully adding support for more games.\r\n- Stopped using imgui for aetherps4 loading (using swift no",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-08-22T01:40:34Z",
+          "downloadURL": "https://github.com/Leviidev/AetherPS4/releases/download/v1.0.0/AetherPS4-iOS.ipa",
+          "size": 30207728,
+          "localizedDescription": "Hey everyone! I present to you AetherPS4 v1.0.0!\r\n\r\n## Requirements\r\nHere's what you'll need to get the app working\r\n- StikDebug\r\n- Preferred Sideloading tool\r\n- iOS/iPadOS (26+)\r\n## Setup\r\nFirst, meet all requirements. Then, sideload the app onto your preferred device. Open ```StikDebug``` and hold click onto the application, you will see a context menu and you must press ```Assign Script```. When the menu shows up press ```universal.js```, this is required or it will NOT work. Then, open the app. Import your .pkg file of the game (must be .pkg, extracted will not work as of right now). When ",
+          "minOSVersion": "17.4"
+        }
+      ]
+    },
+    {
+      "name": "Opaline",
+      "bundleIdentifier": "com.verback.YTLite",
+      "developerName": "verback2308",
+      "subtitle": "6.4M · 轻量 YouTube 客户端",
+      "localizedDescription": "轻量 YouTube 客户端，支持 SponsorBlock 跳过赞助片段、恢复踩数显示，最高 1080p 播放。无广告、无追踪、无额外依赖。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/icon.webp",
+      "tintColor": "#C53458",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.12.0",
+          "date": "2026-09-10T02:02:27Z",
+          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.12.0/Opaline_1.12.0.ipa",
+          "size": 6685919,
+          "localizedDescription": "**New**\n\n- Hold anywhere on the video to seek ([#116](https://github.com/verback2308/Opaline/issues/116)). Press and hold on the picture, then drag sideways. The seek bar follows your finger and the video jumps where you let go, so you no longer have to hit the thin bar at the bottom. The taps you already know still work: the sides seek, the middle pauses.\n- Search inside a channel ([#117](https://github.com/verback2308/Opaline/issues/117)). Channel pages have a magnifier now, and whatever you type there searches that channel only. YouTube serves no filters for this kind of search, so there ar",
+          "minOSVersion": "12.0",
+          "buildVersion": "09-10",
+          "buildNumber": "09-10"
+        },
+        {
+          "version": "1.11.0",
+          "date": "2026-08-26T14:49:46Z",
+          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.11.0/Opaline_1.11.0.ipa",
+          "size": 6666724,
+          "localizedDescription": "**New**\n\n- Double tap to pause ([#107](https://github.com/verback2308/Opaline/issues/107)). The player is split into three zones: a quarter on each side seeks, and the half between them pauses. Nothing appears over the video when you use them.\n- Separate default quality for Wi-Fi and mobile data ([#108](https://github.com/verback2308/Opaline/issues/108)). Two rows in Settings; the quality you already picked stays as your Wi-Fi setting.\n- Remove a video from watch history ([#105](https://github.com/verback2308/Opaline/issues/105)) and tell the feed it missed ([#106](https://github.com/verback23",
+          "minOSVersion": "12.0"
+        },
+        {
+          "version": "1.10.0",
+          "date": "2026-08-20T13:01:23Z",
+          "downloadURL": "https://github.com/verback2308/Opaline/releases/download/1.10.0/Opaline_1.10.0.ipa",
+          "size": 6650280,
+          "localizedDescription": "The big one in this version is downloads. A video can be saved to the device and watched with no network at all. You can download subtitles, dubbed audio, comments as well. The other half of the release is playlists/mixes/jams, which now open a proper queue that does not stop after the first 20 videos.\r\n\r\n**New**\r\n\r\n- Downloads ([#54](https://github.com/verback2308/Opaline/issues/54)). Save a video to the device and watch it offline. A new Downloads screen in the Library shows what you have, and the download state appears wherever a video appears. You choose what a download brings with it, so ",
+          "minOSVersion": "12.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Opaline/images/channel.webp"
+      ]
+    },
+    {
+      "name": "Beans Music",
+      "bundleIdentifier": "com.beans.app",
+      "developerName": "XIaodou0416",
+      "subtitle": "8.4M · 使用 SwiftUI 开发的多平台音…",
+      "localizedDescription": "面向 iOS 15 及以上的开源 SwiftUI 音乐播放器，内置网易云音乐、QQ 音乐与酷狗音乐，支持本地歌单、离线下载、逐字歌词、多种播放页布局与均衡器等自定义能力。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/icon.webp",
+      "tintColor": "#32BD8F",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.6.6",
+          "date": "2026-09-06T12:41:32Z",
+          "downloadURL": "https://github.com/XIaodou0416/Beans-Music/releases/download/v1.6.6/Beans-unsigned.ipa",
+          "size": 8761833,
+          "localizedDescription": "本次更新：\n\n- 增加网易云音乐和 QQ 音乐歌单广场搜索功能\n- 优化歌曲封面缓存\n- 优化歌词划动后自动回到当前播放歌词的问题\n- 优化整体流畅性，低系统版本请实测反馈\n- 优化网易云私人漫游；如遇问题可尝试心动模式\n- 简化搜索界面，移除均衡器注释\n- 更换酷狗音乐歌单广场接口\n- 修复 QQ 音乐本身有会员但无法播放的问题\n- 修复 iOS 26 以下系统无法返回的问题",
+          "minOSVersion": "15.0",
+          "buildVersion": "09-06",
+          "buildNumber": "09-06"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/player.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/lyrics.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Beans-Music/images/settings.webp"
+      ]
+    },
+    {
+      "name": "Applesauce",
+      "bundleIdentifier": "io.github.johnny901901901.applesauce",
+      "developerName": "Unofficial iOS port contributors",
+      "subtitle": "39.7M · A playful emulator for iOS",
+      "localizedDescription": "Plays supported 32-bit iPhone games on modern devices, carrying both the HyperHLE v1.0.6 and touchHLE 0.2.3 emulator cores so you can pick which one runs each game. An unaffiliated fork, endorsed by neither project. JIT must be enabled for each new app process. No games are included.",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/icon.webp",
+      "tintColor": "#3394D5",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.4.2",
+          "date": "2026-08-17T15:53:48Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.2-touch-fix/Applesauce-iOS-0.4.2-touch-fix-trollstore.ipa",
+          "size": 41672251,
+          "localizedDescription": "Follow-up to the landscape-orientation fix (ios-v0.4.2-orientation-fix): that build fixed which direction a landscape-only game launches in, but touch could still land in the wrong place, since the host was still telling SDL/UIKit that either landscape direction was fine even for a game that only supports one. That leaves the OS free to auto-rotate the actual presented surface to whichever way the phone is physically held; the picture still looks right (touchHLE rotates the framebuffer itself), but the OS then delivers raw touch coordinates in that other orientation, so taps land in the wrong ",
+          "minOSVersion": "15.0",
+          "buildVersion": "08-17",
+          "buildNumber": "08-17"
+        },
+        {
+          "version": "0.4.1",
+          "date": "2026-08-15T16:00:56Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.1/Applesauce-iOS-trollstore-permanent-jit.ipa",
+          "size": 41669140,
+          "localizedDescription": "# Applesauce 0.4.1\n\nTwo fixes, both found by playing Peggle until it broke. Nothing about\ninstalling or your library changes — pick the same IPA you used for 0.4.0.\n\n## Games no longer hang at a full loading bar\n\nThe emulator's `wcstol` and `wcstod` only accepted a string that was *all*\nnumber, where the real C functions read the leading number and ignore\nwhatever follows. Peggle reads its stage list exactly that way — the number\nsits on a line with text after it — so the parse failed, Peggle threw away\nevery stage it had loaded, and the loading screen sat at a full bar waiting\nfor data that n",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.4.0",
+          "date": "2026-08-15T04:04:13Z",
+          "downloadURL": "https://github.com/0xjohnnydev/Applesauce/releases/download/ios-v0.4.0-black-screen-fix/Applesauce-iOS-0.4.0-black-screen-fix-trollstore.ipa",
+          "size": 41666925,
+          "localizedDescription": "This TrollStore release fixes black screens in older OpenGL ES games.\n\nThe slow composition path now reads the app's current framebuffer. This preserves unresolved tile data on iPhone GPUs. The UIKit swap path now reattaches only the SDL view that it presents. This prevents a guest context from leaving the host drawable detached without causing alternating frames.",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/library-games.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/settings.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Applesauce/images/about.webp"
+      ]
+    },
+    {
+      "name": "DLiPA",
+      "bundleIdentifier": "com.ahmedbafkir.dlipa",
+      "developerName": "Ahmed Bafkir",
+      "subtitle": "522K · 从 App Store 下载 IPA",
+      "localizedDescription": "受 ipatool 启发的 iOS 应用。用你自己的 Apple ID 登录，搜索 App Store、把任意应用下载成 IPA（含旧版本），并直接安装或分享，无需越狱。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/icon.webp",
+      "tintColor": "#2AC04D",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.4",
+          "date": "2026-08-03T08:46:29Z",
+          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.4/DLiPA_v1.4.ipa",
+          "size": 534245,
+          "localizedDescription": "## What's Changed \r\n\r\n- Fixed authentication issues\r\n- Multi-language support (AI translations):\r\n  - Chinese, Simplified\r\n  - French\r\n  - German\r\n  - Hindi\r\n  - Indonesian\r\n  - Italian\r\n  - Japanese\r\n  - Korean\r\n  - Russian\r\n  - Spanish\r\n  - Turkish\r\n  - Vietnamese\r\n\r\n## Support the app ♡\r\nIf you find this project useful, I would be very grateful for your support in its continuation and development.\r\n\r\n[![Support DLiPA](https://img.shields.io/badge/PayPal-Support_DLiPA-blue?logo=paypal)](https://www.paypal.com/ncp/payment/RLKKWBYSKSPVU)",
+          "minOSVersion": "13.0",
+          "buildVersion": "08-03",
+          "buildNumber": "08-03"
+        },
+        {
+          "version": "1.3",
+          "date": "2026-06-17T01:22:52Z",
+          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.3/DLiPA_v1.3.ipa",
+          "size": 479107,
+          "localizedDescription": "## What's Changed\r\n\r\n### New Feature\r\n- Ability to download a specific version of any app using the Version ID.\r\n- Access your last 15 searches instantly just by tapping the search bar for quick navigation.\r\n\r\n### Fixes\r\n- Resolved the login issue.\r\n- Resolved the \"An unknown error occurred\" issue when downloading certain popular apps, including Google and Microsoft apps and others.\r\n- Fixed an issue that caused the app to crash when searching after setting a search limit.\r\n- Fixed a bug where downloaded data was not automatically deleted when selecting \"Delete account with files\".\r\n\r\n### Impr",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.2",
+          "date": "2026-02-22T21:04:04Z",
+          "downloadURL": "https://github.com/AhmedBafkir/DLiPA/releases/download/v1.2/DLiPA_v1.2.ipa",
+          "size": 471971,
+          "localizedDescription": "### What's Changed\r\n\r\n- Fixed login issue.\r\n- Fixed other general issues.",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/versions.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DLiPA/images/downloads.webp"
+      ]
+    },
+    {
+      "name": "iTorrent",
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "developerName": "XITRIX",
+      "subtitle": "23.2M · iOS 种子下载器",
+      "localizedDescription": "iOS 上的种子客户端，支持「文件」App、后台下载、实时活动与灵动岛进度条、外接硬盘下载、顺序下载等。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/icon.webp",
+      "tintColor": "#315DD7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.2.0",
+          "date": "2026-07-19T09:59:41Z",
+          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.2.0-1/iTorrent.ipa",
+          "size": 24288935,
+          "buildVersion": "07-19",
+          "buildNumber": "07-19",
+          "localizedDescription": "## What's new:\r\n* Meet the new built-in VLC player. Play compatible video and audio files directly in iTorrent, even while they are still downloading.\r\n* Enjoy Picture in Picture, playback speeds from 0.5x to 2x, audio and subtitle track selection, precise seeking, and system media controls.\r\n* Take playback to a bigger screen with AirPlay or a compatible player discovered on your local network.\r\n* Choose how pieces are downloaded with Sequential and First & Last priority modes, making it easier to start watching sooner.\r\n* Select and share multiple completed files or entire folders in one go.",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.1.1",
+          "date": "2025-12-18T09:43:35Z",
+          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.1.1-1/iTorrent.ipa",
+          "size": 8362011,
+          "buildVersion": "1",
+          "buildNumber": "1",
+          "localizedDescription": "## What’s new\r\n* Import/Export of RSS channels\r\n\r\n## Improvements\r\n* Files thumbnails now looks properly\r\n* Minor UI changes\r\n\r\n## Fixes\r\n* HTTPS trackers now works!\r\n* App crash on launch fixed\r\n* RSS magnet links now works\r\n\r\n**Full Changelog**: https://github.com/XITRIX/iTorrent/compare/v2.1.0-1...v2.1.1-1",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.1.0",
+          "date": "2025-10-25T08:40:14Z",
+          "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.1.0-1/iTorrent.ipa",
+          "size": 7092275,
+          "buildVersion": "1",
+          "buildNumber": "1",
+          "localizedDescription": "## What’s new\r\n* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\r\n* LibTorrent updated to version 2.0.11\r\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\r\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\r\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\r\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\r\n* Added Spanish localization  by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\r\n\r\n## Fixes\r\n",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/detail.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iTorrent/images/player.webp"
+      ]
+    },
+    {
+      "name": "Feather",
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "developerName": "Samara",
+      "subtitle": "13.6M · 设备内签名安装器",
+      "localizedDescription": "免费的设备内应用管理与安装器。用 Apple 开发者证书在未越狱系统上签名安装 IPA，并内置应用管理功能。",
+      "iconURL": "https://github.com/khcrysalis/Feather/blob/v1.x/iOS/Resources/Icons/Main/Mac@3x.png?raw=true",
+      "tintColor": "#5DD033",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.9.0",
+          "date": "2026-07-05T02:11:53Z",
+          "downloadURL": "https://github.com/claration/feather/releases/download/v2.9.0/Feather.ipa",
+          "size": 14241853,
+          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added tweak options in default signing options.\r\n* Added ability to search for identifier's in Library @ismailcarlik in https://github.com/claration/Feather/pull/652\r\n* Fixed issue in the file enumeration logic, by using the path property instead of method.\r\n* Fixed credit links.\r\n* Fixed duplicate repository in recommended reposito",
+          "buildVersion": "07-05",
+          "buildNumber": "07-05"
+        },
+        {
+          "version": "2.8.2",
+          "date": "2026-04-22T09:18:46Z",
+          "downloadURL": "https://github.com/claration/feather/releases/download/v2.8.2/Feather.ipa",
+          "size": 14242031,
+          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for Catalyst targets.\r\n* Added ability to rename existing certificates.\r\n* Added Arabic localizations by @mohammed1d1 in https://github.com/CLARATION/Feather/pull/624\r\n\r\n## New Contributors\r\n* @mohammed1d1 made their first contribution in https://github.com/CLARATION/Feather/pull/624\r\n\r\n**Full Changelog**: https://gith"
+        },
+        {
+          "version": "2.7.0",
+          "date": "2026-04-05T16:01:10Z",
+          "downloadURL": "https://github.com/claration/feather/releases/download/v2.7.0/Feather.ipa",
+          "size": 14154834,
+          "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for using remote pairing on 17.4+, for 17.3 and below, use a standard pairing file.\r\n* Added more recommended sources by @CelloSerenity in https://github.com/CLARATION/Feather/pull/585\r\n* Added option to inject into all available extensions within an app by @waruhachi in https://github.com/CLARATION/Feather/pull/592\r\n\r"
+        }
+      ]
+    },
     {
       "name": "DukeX",
       "bundleIdentifier": "com.mafty.dukex",
