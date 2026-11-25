@@ -1882,25 +1882,24 @@
       "developerName": "nekohasekai",
       "subtitle": "用 JS 自动化操作设备",
       "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/laincat/AltStore/main/icons/Swipt-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
       "tintColor": "#2ED5B7",
-      "category": "utilities",
+      "category": "other",
       "versions": [
         {
           "version": "0.1.0",
-          "buildVersion": "95",
-          "date": "2026-11-25",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-25）\n\n* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and h",
+          "date": "2026-11-25T14:04:10Z",
+          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
           "size": 48264471,
-          "minOSVersion": "16.4",
-          "buildNumber": "95"
+          "minOSVersion": "16.4"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
+      ]
     },
     {
       "name": "TDrive",

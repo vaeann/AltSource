@@ -447,11 +447,11 @@
       "category": "other",
       "versions": [
         {
-          "version": "2.6.0-nightly.20261124.1937",
-          "date": "2026-11-25T00:49:03Z",
-          "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261124/ARMSX2-nightly-20261124-61a4b2b2f6-iOS-arm64.ipa",
-          "size": 41101991,
+          "version": "2.6.1",
+          "date": "2026-11-25T19:03:43Z",
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/iOSv2.6.1/ARMSX2-iOS-2.6.1.ipa",
+          "size": 41420239,
+          "localizedDescription": "Everything below is compared with 2.6.0.\n\n## New\n\n**Report a Problem.** (@J1coding: #1032) Settings has a new Diagnostics page and the pause menu has a Report a Problem row. They bundle recent logs, settings, crash files, a photo and the paused frame into one report, with sensitive details redacted. After a crash, a freeze or a failed start, the next launch asks once whether you want to send one.\n\n**Automatic Performance Tuning.** (@bmdhacks) A new switch in the emulator settings tries lower resolution, blending accuracy and other options on its own when a game runs slow. It keeps what helps a",
           "minOSVersion": "17.0"
         }
       ],
@@ -3996,25 +3996,24 @@
       "developerName": "nekohasekai",
       "subtitle": "用 JS 自动化操作设备",
       "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/laincat/AltStore/main/icons/Swipt-1024.png",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
       "tintColor": "#2ED5B7",
-      "category": "utilities",
+      "category": "other",
       "versions": [
         {
           "version": "0.1.0",
-          "buildVersion": "95",
-          "date": "2026-11-25",
-          "localizedDescription": "🧪 预发布 nightly（2026-11-25）\n\n* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and h",
+          "date": "2026-11-25T14:04:10Z",
+          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
           "size": 48264471,
-          "minOSVersion": "16.4",
-          "buildNumber": "95"
+          "minOSVersion": "16.4"
         }
       ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
+      ]
     },
     {
       "name": "TDrive",
