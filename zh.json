@@ -542,5 +542,9 @@
   "io.github.ccch1mneyyy.dshgo": {
     "subtitle": "DeepSeek Harness 手机版",
     "description": "dsh-go 把 DeepSeek Harness（DSH）装进手机：既能在本机直接运行，也能远程连接并遥控电脑上的 DSH 会话。支持任务进度查看、会话切换、分享扩展与小组件。Flutter 开发，同时提供 Android、iOS 与鸿蒙版本。注意：iOS 版仍在持续开发中，遇到问题请反馈给作者。"
+  },
+  "com.douban.frodo.dddd": {
+    "subtitle": "去广告版豆瓣客户端",
+    "description": "基于官方豆瓣 App 逆向分析修改的无广告版本，保留广播、小组、书影音标记等全部原有功能，去掉开屏广告与信息流广告。包名带 .dddd 后缀，可以和官方版同时安装。仅修改客户端本地逻辑，不涉及服务器行为。"
   }
 }

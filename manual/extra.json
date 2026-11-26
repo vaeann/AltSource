@@ -76,6 +76,24 @@
           "minOSVersion": "15.0"
         }
       ]
+    },
+    {
+      "name": "豆瓣",
+      "bundleIdentifier": "com.douban.frodo.dddd",
+      "developerName": "TouchFriend",
+      "subtitle": "去广告版豆瓣客户端",
+      "localizedDescription": "基于官方豆瓣 App 逆向分析修改的无广告版本，保留原有功能，去掉开屏与信息流广告，界面更干净。",
+      "iconURL": "https://raw.githubusercontent.com/TouchFriend/DoubanMApp/main/DoubanMApp/icon.png",
+      "category": "social",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "date": "2026-10-24T08:15:45Z",
+          "downloadURL": "https://github.com/TouchFriend/DoubanMApp/releases/download/1.2.0/douban-7.134.0.v1.2.0.ipa",
+          "size": 103252086,
+          "minOSVersion": "15.0"
+        }
+      ]
     }
   ],
   "news": []

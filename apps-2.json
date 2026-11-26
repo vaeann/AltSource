@@ -1,7 +1,7 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 116 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 117 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -1575,6 +1575,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "4.2.0",
+          "date": "2026-11-25T22:41:34Z",
+          "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.2.0/RyukSign.ipa",
+          "size": 22247678,
+          "localizedDescription": "## What's new in 4.2.0\n\n### New\n\n- Added on-device pairing on iOS 27, no computer needed for a pairing file\n- Added certificate reordering with Move to Top, used everywhere you pick a certificate\n- Added certificate search\n- Added Japanese translation by @kinboy56\n\n### Improvements\n\n- Improved installs to show progress while the app is sent to iOS\n\n### Fixes\n\n- Fixed installs failing after the SSL certificate renews\n- Fixed installs staying stuck halfway when iOS hides install progress\n- Fixed untranslated text in the Tweak Manager\n\n\n## Install\n\n- Download **RyukSign.ipa** from the assets belo",
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "4.1.0",
           "date": "2026-11-18T16:37:57Z",
           "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.1.0/RyukSign.ipa",
@@ -1588,14 +1596,6 @@
           "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.0.0/RyukSign.ipa",
           "size": 21967290,
           "localizedDescription": "## What's new in 4.0.0\r\n\r\n### New\r\n\r\n- Added iPhone Duo support with a full screen layout and landscape when unfolded\r\n- Added an Enable iPhone Duo Support signing experiment\r\n- Added update choices: tapping Update lists every source that has the app with its version and description, and you can pin a source to update from it automatically\r\n- Added Update, View in Sources and Reset Update Source to the Library app menu\r\n- Added an Update line under Library apps that have a newer version, can be turned off from the Library filter menu\r\n- Added an Updates filter to the Library\r\n- Added update op",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "3.0.1",
-          "date": "2026-09-10T00:22:04Z",
-          "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v3.0.1/RyukSign.ipa",
-          "size": 18082648,
-          "localizedDescription": "🚀 **Automated Release**\r\n\r\n**Build Date:** 2026-09-10 01:17:55\r\n**Commit:** 844466cee6f212291913ba5216f8f19a9c016dea\r\n\r\n## 📦 Changes\r\n- Improved iPad layout for Add Source and Premium screens\r\n- Fixed dylib detection and tweak injection on more apps\r\n- Fixed app icon resolution on localized apps\r\n- Fixed duplicate dylib and Web Manager upload entries\r\n- Fixed file pickers and navigation reliability\r\n- Fixed Clear Cache After Installing not freeing space\r\n- Fixed Delete After Installing during batch installs\r\n- Fixed Automatic Cleanup not running after app closure\r\n\r\n## 📥 Download\r\nDownload the",
           "minOSVersion": "16.0"
         }
       ],
@@ -1882,24 +1882,25 @@
       "developerName": "nekohasekai",
       "subtitle": "用 JS 自动化操作设备",
       "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
+      "iconURL": "https://raw.githubusercontent.com/laincat/AltStore/main/icons/Swipt-1024.png",
       "tintColor": "#2ED5B7",
-      "category": "other",
+      "category": "utilities",
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-25T14:04:10Z",
-          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
+          "buildVersion": "95",
+          "date": "2026-11-25",
+          "localizedDescription": "🧪 预发布 nightly（2026-11-25）\n\n* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and h",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
           "size": 48264471,
-          "minOSVersion": "16.4"
+          "minOSVersion": "16.4",
+          "buildNumber": "95"
         }
       ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
-      ]
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
     },
     {
       "name": "TDrive",

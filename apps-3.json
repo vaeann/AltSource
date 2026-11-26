@@ -1,7 +1,7 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 116 个，按更新频率分成 3 个源，这里是第 3 个（16 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 117 个，按更新频率分成 3 个源，这里是第 3 个（17 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -633,6 +633,42 @@
           "NSPhotoLibraryUsageDescription": "允许知乎--访问你的照片，以便在评论和正文中上传图片。"
         }
       }
+    },
+    {
+      "name": "豆瓣",
+      "bundleIdentifier": "com.douban.frodo.dddd",
+      "developerName": "TouchFriend",
+      "subtitle": "去广告版豆瓣客户端",
+      "localizedDescription": "基于官方豆瓣 App 逆向分析修改的无广告版本，保留广播、小组、书影音标记等全部原有功能，去掉开屏广告与信息流广告。包名带 .dddd 后缀，可以和官方版同时安装。仅修改客户端本地逻辑，不涉及服务器行为。",
+      "iconURL": "https://raw.githubusercontent.com/TouchFriend/DoubanMApp/main/DoubanMApp/icon.png",
+      "tintColor": "#8DD930",
+      "category": "social",
+      "versions": [
+        {
+          "version": "1.2.0",
+          "date": "2026-10-24T08:15:45Z",
+          "downloadURL": "https://github.com/TouchFriend/DoubanMApp/releases/download/1.2.0/douban-7.134.0.v1.2.0.ipa",
+          "size": 103252086,
+          "localizedDescription": "适配豆瓣 7.134.0",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-05-24T05:45:17Z",
+          "downloadURL": "https://github.com/TouchFriend/DoubanMApp/releases/download/1.1.0/douban-7.109.0.v1.1.0.ipa",
+          "size": 95870836,
+          "localizedDescription": "去除底栏市集",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2025-12-26T07:58:33Z",
+          "downloadURL": "https://github.com/TouchFriend/DoubanMApp/releases/download/1.0.1/douban-7.109.0.v1.0.1.ipa",
+          "size": 95870509,
+          "localizedDescription": "适配iOS26",
+          "minOSVersion": "15.0"
+        }
+      ]
     }
   ],
   "news": []
