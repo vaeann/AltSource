@@ -1,19 +1,59 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 117 个，按更新频率分成 3 个源，这里是第 3 个（17 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 118 个，按更新频率分成 3 个源，这里是第 3 个（18 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.suwayomi.tachideskSorayomi",
     "com.twindesk.ios",
     "com.utmapp.UTM",
     "com.utmapp.UTM-SE",
-    "com.utsuro.app",
-    "com.github.wgh136.venera.prime"
+    "com.utsuro.app"
   ],
   "apps": [
+    {
+      "name": "Tsumiru",
+      "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
+      "developerName": "Suwayomi",
+      "subtitle": "Suwayomi 漫画客户端",
+      "localizedDescription": "Suwayomi-Server 的原生客户端，为长时间刷条漫优化：支持离线下载与本地目录、重做的连续滚动阅读器、隐身模式和 13 种语言。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/icon.webp",
+      "tintColor": "#4EC529",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.6.5",
+          "date": "2026-11-07T23:44:29Z",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.5/tsumiru-v1.6.5-ios.ipa",
+          "size": 17346615,
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added **Per-category settings for sort and filters** to the Library, including changes made offline (@aaronbamblett)\n- Added notifications when a new Tsumiru or server version is out, with **Remind later** and **Ignore** (@aaronbamblett)\n- Added **Offset double spreads** to the paged reader for spreads that start on an odd page (@PainTownblue)\n\n### ⚙️ Changes\n\n- Made long strip taps and keys scroll by **Scroll distance** instead of a whole page (@aaronbamblett)\n- Changed **Keep screen on** to o",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6.4",
+          "date": "2026-11-02T05:46:16Z",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.4/tsumiru-v1.6.4-ios.ipa",
+          "size": 17154795,
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added MangaBaka tracking for servers that support it (@aaronbamblett)\n- Let Linux windows shrink to phone size, switching to the phone layout (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Showed the number of extension updates on the **Extensions** tab (@aaronbamblett)\n- Gave desktop pages one consistent layout, with a single row top bar and content clear of the scrollbar (@aaronbamblett)\n- Gave Linux windows rounded corners and GNOME style window buttons (@aaronbamblett)\n- Showed the full sidebar fr",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.6.3",
+          "date": "2026-10-30T05:42:54Z",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.3/tsumiru-v1.6.3-ios.ipa",
+          "size": 18404468,
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ⚙️ Changes\n\n- Changed the Android signing key, and updates still install without a reinstall (@aaronbamblett)\n- Added a weekly reminder to switch away from Basic Auth, which is deprecated (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Added support for AVIF images on Linux (@aaronbamblett)\n- Made **Custom brightness** in the reader work on desktop and web (@aaronbamblett)\n- Moved the sign-in, **Incognito mode** and **Updating library…** banners beside the sidebar on wide screens, so they no longer push it down (@aaronb",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/list.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Suwayomi-Tsumiru/images/update.webp"
+      ]
+    },
     {
       "name": "TwinDesk",
       "bundleIdentifier": "com.twindesk.ios",
