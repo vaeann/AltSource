@@ -114,10 +114,10 @@
       "versions": [
         {
           "version": "1.6",
-          "date": "2026-11-26T05:52:52Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b37/STV-1.6b37-unsigned.ipa",
-          "size": 54756118,
-          "localizedDescription": "### 更新内容\n\n- **修复 MissAV 播放失效（双端）**：优先使用 `missav.live` 镜像，自动提取脚本中的实际 `*.surrit.com` 视频 CDN（优先 `c.surrit.com`，替代已超时的 `surrit.mrstcdn.store`），并将镜像站的流媒体 `Referer`/`Origin` 归一化为 `https://missav.live` 避免 403；同步更新内置 `missav.idjplugin` 至 `v1.0.1`。\n- **修复 iOS 小说翻页底部缺行**：将 `.ignoresSafeArea()` 移至 `.frame(maxWidth:)` 外层，并在 `NovelPagerController.viewDidLayoutSubviews()` 按实际正文区尺寸校验分页，避免覆盖/仿真/滑动翻页裁掉底部 3～4 行。\n- **修复 iOS 插件订阅无法安装 `.idjplugin`**：`PluginInstaller.prepare(manifestURL:)` 现自动识别 `.idjplugin` 整包（上限 2 MB）与裸 `manifest.json`，并在订阅列表支持一键更新。\n- **优化安卓内置成人插件入口**：将「推荐插件（App 内置）」移至「已安装」正下方，并在「片源管理」开启成人开关后直接展示",
+          "date": "2026-11-26T14:44:55Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b41/STV-1.6b41-unsigned.ipa",
+          "size": 54330260,
+          "localizedDescription": "i短剧 iOS 1.6b41 (v1.6b41)\n\n包内版本为 1.6 build 41。IPA 未签名（最低 iOS 16），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：2fe0b4969274cca1eccd8697af1a6f4fe82ddb4f\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45838169992",
           "minOSVersion": "17.0"
         }
       ]
@@ -1622,7 +1622,7 @@
           "date": "2026-11-25T22:41:34Z",
           "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.2.0/RyukSign.ipa",
           "size": 22247678,
-          "localizedDescription": "## What's new in 4.2.0\n\n### New\n\n- Added on-device pairing on iOS 27, no computer needed for a pairing file\n- Added certificate reordering with Move to Top, used everywhere you pick a certificate\n- Added certificate search\n- Added Japanese translation by @kinboy56\n\n### Improvements\n\n- Improved installs to show progress while the app is sent to iOS\n\n### Fixes\n\n- Fixed installs failing after the SSL certificate renews\n- Fixed installs staying stuck halfway when iOS hides install progress\n- Fixed untranslated text in the Tweak Manager\n\n\n## Install\n\n- Download **RyukSign.ipa** from the assets belo",
+          "localizedDescription": "## What's new in 4.2.0\r\n\r\n### New\r\n\r\n- Added on-device pairing on iOS 27, no computer needed for a pairing file\r\n- Added certificate reordering with Move to Top, used everywhere you pick a certificate\r\n- Added certificate search\r\n- Added Japanese translation by @kinboy56\r\n\r\n### Improvements\r\n\r\n- Improved installs to show progress while the app is sent to iOS\r\n\r\n### Fixes\r\n\r\n- Fixed installs failing after the SSL certificate renews\r\n- Fixed installs staying stuck halfway when iOS hides install progress\r\n- Fixed untranslated text in the Tweak Manager\r\n\r\n\r\n**Full changelog:** https://github.com/f",
           "minOSVersion": "16.0"
         },
         {

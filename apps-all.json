@@ -1869,28 +1869,14 @@
       "category": "entertainment",
       "versions": [
         {
-          "version": "2.2.9",
-          "date": "2026-11-24T00:07:31Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.9/HGhubX_2.2.9_ios.ipa",
-          "size": 4009527,
-          "localizedDescription": "# HGhubX v2.2.9\n\n重点修复 Android WebView 播放页合成器闪烁问题，并升级「我的收藏」单图标追剧状态筛选与频道/标签结果页指标排序；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **「我的收藏 → 短剧」单图标追剧状态筛选与底栏快捷复位（#243）**：收藏短剧右上角合并为单图标筛选胶囊，点击展开「追剧状态」菜单并展示「在追剧」「连载中」「已完结」及各自数量（三类允许重叠，按更新时间倒序稳定排列）；卡片统一只保留单个左上角角标随分类切换（「未看 N 集」/「更新至 N 集」/「全 N 集」）；移动端再次点击底栏激活中的「我的」可一键复位回「我的收藏 / 短剧 / 全部收藏」并回到顶部。\n2. **分类频道与标签结果页指标排序（#244）**：原创、AI 短剧、AI 漫剧频道及标签结果页短剧区块右侧新增排序入口，支持按「点赞数」「收藏数」「播放数」「评分」降序/升序切换（再次点击当前指标反转方向，切 Tab 保留当前指标），通过 `jsonOnly` 抓取完整结果并按 20 条渐进渲染，不影响标签页吃瓜帖。\n\n## 修复\n1. **Android 播放页画面闪烁与瓦片异常（#240、#242）**：针对 Android WebView（Skia/Viz）在硬件 `<video>` 上方叠加高",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.2.8",
-          "date": "2026-11-23T03:55:29Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.8/HGhubX_2.2.8_ios.ipa",
-          "size": 4004198,
-          "localizedDescription": "# HGhubX v2.2.8\n\n围绕分类导航快捷入口、搜索交互、吃瓜列表官网同步、「我的收藏」排序与已完结封面标签以及播放器全屏暂停提示打磨体验；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **分类总览 2×2 快捷入口并接入「最近上新」「热门推荐」（#233、#238）**：移除移动端与搜索页重复的「排行榜」单列入口（保留搜索页右上角与桌面侧栏「排行榜」），在移动端与桌面端统一展示「最近上新」「热门推荐」「专题」「标签」2×2 等宽卡片；「最近上新」「热门推荐」优先解析官网 `/newest/` 与 `/recommend/` 服务端渲染页面（失败时按 `/api/videos?sort=new|hot` 回退），支持自动分页与切线重载。\n2. **「我的 → 收藏 → 短剧」排序与已完结封面标签（#235、#239）**：在「我的收藏 → 短剧」新增「最近添加」「最近更新」「完结进度」（点击可切换「已完结优先 ↕」/「更新中优先 ↕」）排序，切到更新/完结排序时自动分批补齐全部收藏详情；全站剧集卡片在左上角按「原创」「热播」「新片」「完结」显示角标，「我的」页已完结短剧使用绿色封面标签（兼有未看新集时并行显示「新更 N 集」与「完结」角标）。\n3. **搜索页左右滑动切 Tab 与底栏快捷复位（#230、#23",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.2.7",
-          "date": "2026-11-22T12:13:11Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v2.2.7/HGhubX_2.2.7_ios.ipa",
-          "size": 3992968,
-          "localizedDescription": "# HGhubX v2.2.7\n\n围绕搜索与排行榜、标签排序、吃瓜正文站内视频直达及播放器全屏交互稳定性打磨体验，并新增 Android 13+ Material You 动态主题图标适配；覆盖 Windows、macOS、Linux、Android 与 iOS 标准版。\n\n## 新增与优化\n1. **Android 13+ Material You 动态主题图标（#216）**：补充 `108dp × 108dp` 纯单色自适应矢量图层（`ic_launcher_monochrome.xml`）及圆角/默认自适应配置，支持 Android 13+ 启动器按壁纸动态着色，同时保持 Android 8–12 与既有彩色桌面图标外观不变。\n2. **搜索热搜榜官网同步与单行紧凑布局（#221、#225）**：搜索页热搜请求改为直连干净路径 `{base}/search/`（移除防缓存查询串），与官网 CDN 边缘快照条目、名次及播放量保持同源同序；卡片布局调整为「序号 + 单行省略片名 + 右对齐播放量 + 右箭头」的官网紧凑单行样式。\n3. **视频页操作区与全屏交互打磨（#217、#218、#219、#220）**：统一视频页顶部「搜短剧」与清晰度徽标高度及基线对齐；右侧评论入口改为与点赞/收藏一致的空心线条图标；点赞、收藏、关注共用 `playback-hint` 提示单槽位避免",
-          "minOSVersion": "15.0"
+          "version": "3.0.0",
+          "date": "2026-11-26T14:16:54Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
+          "size": 4865415,
+          "localizedDescription": "# HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **视频源插件系统与离线示例试用**：支持扫码、`hghubx://` 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. **「我的收藏」组合筛选与下拉刷新（#278）**：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. **手机与 TV 局域网双向同步配对**：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. **作者目录、标签页与列表加载提速**：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与",
+          "minOSVersion": "15.0",
+          "buildVersion": "3.0.0",
+          "buildNumber": "3.0.0"
         }
       ],
       "appPermissions": {
@@ -2228,10 +2214,10 @@
       "versions": [
         {
           "version": "1.6",
-          "date": "2026-11-26T05:52:52Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b37/STV-1.6b37-unsigned.ipa",
-          "size": 54756118,
-          "localizedDescription": "### 更新内容\n\n- **修复 MissAV 播放失效（双端）**：优先使用 `missav.live` 镜像，自动提取脚本中的实际 `*.surrit.com` 视频 CDN（优先 `c.surrit.com`，替代已超时的 `surrit.mrstcdn.store`），并将镜像站的流媒体 `Referer`/`Origin` 归一化为 `https://missav.live` 避免 403；同步更新内置 `missav.idjplugin` 至 `v1.0.1`。\n- **修复 iOS 小说翻页底部缺行**：将 `.ignoresSafeArea()` 移至 `.frame(maxWidth:)` 外层，并在 `NovelPagerController.viewDidLayoutSubviews()` 按实际正文区尺寸校验分页，避免覆盖/仿真/滑动翻页裁掉底部 3～4 行。\n- **修复 iOS 插件订阅无法安装 `.idjplugin`**：`PluginInstaller.prepare(manifestURL:)` 现自动识别 `.idjplugin` 整包（上限 2 MB）与裸 `manifest.json`，并在订阅列表支持一键更新。\n- **优化安卓内置成人插件入口**：将「推荐插件（App 内置）」移至「已安装」正下方，并在「片源管理」开启成人开关后直接展示",
+          "date": "2026-11-26T14:44:55Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b41/STV-1.6b41-unsigned.ipa",
+          "size": 54330260,
+          "localizedDescription": "i短剧 iOS 1.6b41 (v1.6b41)\n\n包内版本为 1.6 build 41。IPA 未签名（最低 iOS 16），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：2fe0b4969274cca1eccd8697af1a6f4fe82ddb4f\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45838169992",
           "minOSVersion": "17.0"
         }
       ]
@@ -3736,7 +3722,7 @@
           "date": "2026-11-25T22:41:34Z",
           "downloadURL": "https://github.com/faroukbmiled/RyukSign/releases/download/v4.2.0/RyukSign.ipa",
           "size": 22247678,
-          "localizedDescription": "## What's new in 4.2.0\n\n### New\n\n- Added on-device pairing on iOS 27, no computer needed for a pairing file\n- Added certificate reordering with Move to Top, used everywhere you pick a certificate\n- Added certificate search\n- Added Japanese translation by @kinboy56\n\n### Improvements\n\n- Improved installs to show progress while the app is sent to iOS\n\n### Fixes\n\n- Fixed installs failing after the SSL certificate renews\n- Fixed installs staying stuck halfway when iOS hides install progress\n- Fixed untranslated text in the Tweak Manager\n\n\n## Install\n\n- Download **RyukSign.ipa** from the assets belo",
+          "localizedDescription": "## What's new in 4.2.0\r\n\r\n### New\r\n\r\n- Added on-device pairing on iOS 27, no computer needed for a pairing file\r\n- Added certificate reordering with Move to Top, used everywhere you pick a certificate\r\n- Added certificate search\r\n- Added Japanese translation by @kinboy56\r\n\r\n### Improvements\r\n\r\n- Improved installs to show progress while the app is sent to iOS\r\n\r\n### Fixes\r\n\r\n- Fixed installs failing after the SSL certificate renews\r\n- Fixed installs staying stuck halfway when iOS hides install progress\r\n- Fixed untranslated text in the Tweak Manager\r\n\r\n\r\n**Full changelog:** https://github.com/f",
           "minOSVersion": "16.0"
         },
         {
@@ -4504,6 +4490,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.9.30",
+          "date": "2026-11-26T11:23:07Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.30/WQFiles.ipa",
+          "size": 2268148,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.30\n\nShortcuts actions, and a round of fixes after a full review of the code: safer restores and imports, fewer hangs, and fa",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.9.20",
           "date": "2026-11-21T21:41:37Z",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.20/WQFiles.ipa",
@@ -4517,14 +4511,6 @@
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.19/WQFiles.ipa",
           "size": 2182170,
           "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.19\n\nA small fix release, plus optional App Store icons.\n\n## New\n\n- **Settings → App Store Icons** (off by default): other ap",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.9.18",
-          "date": "2026-11-17T15:21:21Z",
-          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.18/WQFiles.ipa",
-          "size": 2171189,
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.18\n\nYour own inspectors, your own cleaning targets, and Japanese.\n\n## New\n\n- **Custom inspectors** ([#45](https://github.com",
           "minOSVersion": "26.0"
         }
       ],
@@ -4651,6 +4637,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.27",
+          "date": "2026-11-26T14:45:47Z",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.27/WrapPin-Standard-1.0.27-build106-unsigned.ipa",
+          "size": 7254821,
+          "localizedDescription": "## WrapPin 1.0.27（Build 106）\n\n### 更新内容\n- **支持保存自定义路线**：可在“收藏与历史”中管理、重命名或删除已保存的自定义路线，一键载入路线途经点、坐标模式与速度。\n- **地图最近搜索记录**：在搜索框下方展示近期搜过的地点，点击即可快速复用。\n- **iOS 26+ Liquid Glass 与交互打磨**：适配 Liquid Glass 视觉风格，优化底部面板拖拽物理手感，以及首页地图、路线编辑和精确选点的浮层细节。\n\n### What's New\n- **Saved Custom Routes**: Save custom routes for reuse, rename or delete them in Saved Places, and reload their waypoints, coordinate mode and speed in one tap.\n- **Recent Map Searches**: Show recent searches below the map search bar for quick reuse without retyping.\n- **iOS 26+ Liquid Glass & Interaction Polish**: Refined Liquid Glass styling, sm",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.26",
           "date": "2026-11-24T07:09:57Z",
           "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
@@ -4664,14 +4658,6 @@
           "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.25/WrapPin-Standard-1.0.25-build93-unsigned.ipa",
           "size": 7117623,
           "localizedDescription": "优化自定义路线的地点搜索：\n\n- 国内输入和点击“搜索”统一使用联想候选；点击“搜索”收起键盘，保留原来的候选列表，不再换成另一批结果。\n- 点击具体地点直接加入路线并返回，无需再次选择。\n- 联想结果统一显示添加图标，防止重复点击添加。\n\n候选数量由地图服务决定，最多显示六条。坐标输入、海外搜索和首页搜索保留原有方式。\n\n**安装**\n\nStandard 标准版适合 SideStore 与外部设备隧道；Tunnel 隧道版需要匹配的 Packet Tunnel 签名权限。两版均为 iOS/iPadOS 18.0+ 未签名 IPA，沿用原签名身份覆盖安装同一版本类型即可。\n\n路线搜索、候选保留、取消、恢复与定位连续性回归及双版 Release 包体校验通过；真实地图服务返回结果和签名安装仍需手机验收。\n\n[详细说明](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.zh-CN.md) · [English](https://github.com/suversal/WrapPin/blob/v1.0.25/Documentation/Release-1.0.25.md)\n\nSHA-256：\n\n- Standard：`b86567e92cad582a4cfca54e3d90079",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.24",
-          "date": "2026-11-18T06:20:00Z",
-          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.24/WrapPin-Standard-1.0.24-build88-unsigned.ipa",
-          "size": 7114190,
-          "localizedDescription": "新增自定义路线，在 Apple 地图不提供步行规划的地区也能模拟移动。\n\n- 搜索地点、输入坐标或地图点选起终点与途经点，支持长按排序、逐点删除和撤销。\n- 支持 GPX 导入及轨迹段选择。\n- 统一速度滑块：0.1–240 公里/小时，步长 0.1；支持暂停、继续、返程和停止恢复真实位置。\n- 优化首页与路线浮框的三档拖动、背景可读性、按钮边界和收起摘要；移除弹簧吸附，增加路线页当前位置按钮。\n\n自定义地点按顺序直线连接，不自动贴合道路。路线计算和 GPX 解析在本机完成，无需 Apple 步行规划；地图显示和地点搜索仍可能需要网络。\n\n**安装包选择**\n\n- **Standard 标准版**：适合 SideStore 等自签，配合外部设备隧道；免费账号请选择标准版。\n- **Tunnel 隧道版**：内置设备隧道，需要匹配的 Packet Tunnel 签名权限。\n\n两版均为 iOS/iPadOS 18.0+ 未签名 IPA。使用原签名身份覆盖升级同一版本类型，正常配对无需移除。\n\n**验证范围**\n\n路线、GPX、速度、选点搜索、恢复记录、定位连续性及双版 Release 归档和包体校验通过。此前测试包已通过 iOS 26 模拟器交互及双版 Debug 编译；本次正式包签名安装、iOS 18 交互和长时间后台运行仍待真机验收。\n\n[详细说明](https://github.",
           "minOSVersion": "18.0"
         }
       ],
