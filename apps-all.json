@@ -1,7 +1,7 @@
 {
   "name": "热门软件合集",
   "subtitle": "热门应用都在这里 · 按更新时间排序",
-  "description": "精挑细选的 iOS 侧载应用合集，118 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
+  "description": "精挑细选的 iOS 侧载应用合集，119 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
   "identifier": "com.vaeann.source.all",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -214,6 +214,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.5.28",
+          "date": "2026-11-27T01:01:29Z",
+          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+          "size": 41232889,
+          "localizedDescription": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+          "minOSVersion": "12.0"
+        },
+        {
           "version": "1.5.27",
           "date": "2026-10-05T03:15:29Z",
           "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
@@ -227,14 +235,6 @@
           "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.26/anich-ios-no_sign-1.5.26.ipa",
           "size": 41219984,
           "localizedDescription": "- 修复应用有时会莫名卡死的问题\r\n- 降低部分组件的刷新频率以优化性能\r\n- 修改观看记录上传逻辑以降低服务器压力\r\n- 修改本地缓存的检测逻辑",
-          "minOSVersion": "12.0"
-        },
-        {
-          "version": "1.5.25",
-          "date": "2026-09-15T22:35:34Z",
-          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.25/anich-ios-no_sign-1.5.25.ipa",
-          "size": 41219710,
-          "localizedDescription": "- 优化保存截图按钮的样式\r\n- 新增弹幕密度设置功能\r\n- 新增手动导入本地外挂字幕的功能\r\n- 新增画廊上划打开详情的功能\r\n- 新增开启公共模式时的二次确认的功能\r\n- 新增线路列表HLS格式视频的大小预估功能\r\n- 修复视频链接存在重定向时会下载失败的问题\r\n- 修复部分HLS格式视频假下载的问题\r\n- 修复部分视频链接可以访问却显示错误状态码的问题\r\n- 修复评分只显示整数的问题\r\n- 修复注册与修改用户名、密码失败时错误提示不够详细的问题",
           "minOSVersion": "12.0"
         }
       ],
@@ -1135,6 +1135,14 @@
       "category": "developer",
       "versions": [
         {
+          "version": "1.4.1",
+          "date": "2026-11-27T04:37:38Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.1/dsh-go-1.4.1-ios-unsigned.ipa",
+          "size": 129673089,
+          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.4.1-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.4.1/dsh-go-1.4.1-arm64.apk)。**\n\n`update.json`、`SHA256SUMS` 和增量包 `*.dshdelta` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.4.1-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.4.1/dsh-go-1.4.1-arm64.apk).**\n\n`update.json`, `SHA256SUMS` and the `*.dshdelta` patches support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n⭐ 喜欢 DSH Go 的话，[给仓库点个 ",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "1.4.0",
           "date": "2026-11-25T14:53:25Z",
           "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ios-unsigned.ipa",
@@ -1148,14 +1156,6 @@
           "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.3.0/dsh-go-1.3.0-ios-unsigned.ipa",
           "size": 126020561,
           "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **顶栏一键语音通话。** 首页右上角、新对话按钮旁边多了通话按钮，新对话里也能直接打。\n- **长按就能选",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-18T07:32:51Z",
-          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.2.0/dsh-go-1.2.0-ios-unsigned.ipa",
-          "size": 123474162,
-          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **iOS 版（测试）。** 这一版起提供未签名的 iOS 安装包 `dsh-go-1.2.0-ios-un",
           "minOSVersion": "15.0"
         }
       ]
@@ -1870,10 +1870,10 @@
       "versions": [
         {
           "version": "3.0.0",
-          "date": "2026-11-26T14:16:54Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
-          "size": 4865415,
-          "localizedDescription": "# HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **视频源插件系统与离线示例试用**：支持扫码、`hghubx://` 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. **「我的收藏」组合筛选与下拉刷新（#278）**：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. **手机与 TV 局域网双向同步配对**：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. **作者目录、标签页与列表加载提速**：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与",
+          "date": "2026-11-26T15:05:45Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
+          "size": 5166406,
+          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）自动合成的全平台预览构建（更新时间：`2026-11-27T08:34:22Z`，测试提交：`9223ee2`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（5）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)（@zxsos，`fbf3cc5`）\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding（@zxsos，`d7c9042`）\n3. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh（@zxsos，`40e5d01`）\n4. #290 feat(feed,storage): expand home random paging and unseen-first shuffling（@zxsos，`8",
           "minOSVersion": "15.0",
           "buildVersion": "3.0.0",
           "buildNumber": "3.0.0"
@@ -2907,12 +2907,12 @@
       "versions": [
         {
           "version": "1.3.3",
-          "date": "2026-11-20T06:01:32Z",
-          "downloadURL": "https://github.com/singleton-altman/MoviePilotLite/releases/download/release-v1.3.3-2026-11-20/ios-v1.3.3-2026-11-20.ipa",
-          "size": 37758534,
-          "buildVersion": "20",
-          "buildNumber": "20",
-          "localizedDescription": "MoviePilot Release\n\n- Version: 1.3.3\n- Build Date: 2026-11-20\n- Android: Signed universal APK\n- Android: Signed arm64-v8a APK\n- iOS: Unsigned IPA\n\niOS 安装说明：\n- IPA 为未签名包\n- 请使用自己的 Apple Developer 账号通过 AltStore、Sideloadly 或 Xcode 进行签名安装\n\n\n## What's Changed\n* fix(push): iOS 设置 JPush Alias 报 6002 超时且提示原始异常串 by @singleton-altman in https://github.com/singleton-altman/MoviePilotLite/pull/166\n* feat: 适配 Vue 插件（PVE 守护神 / 爱快路由 / 豆瓣档案 / 夸克网盘 / 随机图床） by @xijin285 in https://github.com/singleton-altman/MoviePilotLite/pull/167\n* feat(media_detail): 豆瓣评论与详情页 UI 优化 by @singleton-altman in https://github.com/s",
+          "date": "2026-11-27T07:03:46Z",
+          "downloadURL": "https://github.com/singleton-altman/MoviePilotLite/releases/download/release-v1.3.3-2026-11-27/ios-v1.3.3-2026-11-27.ipa",
+          "size": 37758539,
+          "buildVersion": "27",
+          "buildNumber": "27",
+          "localizedDescription": "MoviePilot Release\n\n- Version: 1.3.3\n- Build Date: 2026-11-27\n- Android: Signed universal APK\n- Android: Signed arm64-v8a APK\n- iOS: Unsigned IPA\n\niOS 安装说明：\n- IPA 为未签名包\n- 请使用自己的 Apple Developer 账号通过 AltStore、Sideloadly 或 Xcode 进行签名安装\n\n\n## What's Changed\n* fix(push): iOS 设置 JPush Alias 报 6002 超时且提示原始异常串 by @singleton-altman in https://github.com/singleton-altman/MoviePilotLite/pull/166\n* feat: 适配 Vue 插件（PVE 守护神 / 爱快路由 / 豆瓣档案 / 夸克网盘 / 随机图床） by @xijin285 in https://github.com/singleton-altman/MoviePilotLite/pull/167\n* feat(media_detail): 豆瓣评论与详情页 UI 优化 by @singleton-altman in https://github.com/s",
           "minOSVersion": "15.0"
         },
         {
@@ -3705,6 +3705,31 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Rich4Renew/images/06-lottery.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Rich4Renew/images/07-missile-film.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Rich4Renew/images/08-party-taunt.webp"
+      ]
+    },
+    {
+      "name": "Roam Control",
+      "bundleIdentifier": "com.sean.roamcontrol",
+      "developerName": "seanhowarthdev",
+      "subtitle": "定位固定与路线模拟",
+      "localizedDescription": "在一张地图上设定固定的上报位置、预览并模拟 Apple 地图步行路线、保存收藏与历史。需要 iOS 27 或更新版本，并配合 LocalDevVPN 会话使用。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/icon.webp",
+      "tintColor": "#9D2EC6",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.9.9",
+          "date": "2026-10-20T19:33:03Z",
+          "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+          "size": 4627321,
+          "localizedDescription": "<!-- roam-control-distribution-update -->\n\n> [!IMPORTANT]\n> **Distribution update - 25 November 2026**\n>\n> Roam Control was released on the App Store on 24 November 2026. Following a subsequent re-evaluation by Apple, App Store and TestFlight availability have been disabled.\n>\n> The original [Roam Control 0.9.9 (Build 105)](https://github.com/seanhowarthdev/Roam-Control/releases/tag/v0.9.9) IPA is available again for independent sideloading. This is an existing release, not a new update.\n>\n> Apple has been contacted and clarification is pending.\n>\n> **Do not unnecessarily delete or uninstall y",
+          "minOSVersion": "27.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/welcome.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/fixed-location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/walking-preview.webp"
       ]
     },
     {
@@ -4700,10 +4725,20 @@
       "developerName": "Xanerix",
       "subtitle": "多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.3-115/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.4-116/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "2.0.4",
+          "date": "2026-11-27T01:29:07Z",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+          "size": 34334761,
+          "buildVersion": "116",
+          "buildNumber": "116",
+          "localizedDescription": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116",
+          "minOSVersion": "15.1"
+        },
         {
           "version": "2.0.3",
           "date": "2026-11-21T18:31:19Z",
@@ -4722,16 +4757,6 @@
           "buildVersion": "114",
           "buildNumber": "114",
           "localizedDescription": "更新内容：\n\n- 修复红果部分剧集提示「未返回兼容的媒体」，改用 H.265 线路。\n- 手机竖屏看横屏视频时可在简介下方切换多季，竖屏播放页的选集菜单也新增选季，切换后从该季上次位置继续。\n- 播放器上拉菜单顶部更紧凑，菜单间切换不再闪动。\n- 手机上点开剧集直接播放，返回直接回到列表，加载失败时仍显示详情页。\n- 已缓存的封面直接显示，不再闪烁。\n- 站源模块可在播放凭证里声明 `omitFetchMetadata`，请求视频时不带 Sec-Fetch 头（开发快照，需用声明该项的站源实测）。\n- Android 新增「硬解（修正偏蓝）」解码方式，用于海思等画面偏蓝的设备（#144，开发快照，需在海思电视上实测）。\n- Windows 升级 libmpv，改为 D3D11 直接渲染，移除 ANGLE 依赖（#164）。\n- 横屏锁定后左右两侧都显示锁图标并可解锁；竖屏的锁按钮移到右上角最右侧。\n- 红果弹幕的方括号表情显示为表情图（#143）。\n- 弹幕设置新增「合并重复」，同一时段的相同弹幕并成一条并标出次数（#143）。\n- 修复 Windows 最大化后进入全屏仍显示任务栏，退出全屏后恢复最大化（#152）。\n- 修复从 1.x 升级后红果分类缺少「听书」「小说」（#169）。\n- 红果听书的封面角标改为「听书 · 共 N 章」，搜索结果可区分短剧和听书（#179）。\n-",
-          "minOSVersion": "15.1"
-        },
-        {
-          "version": "2.0.1",
-          "date": "2026-11-16T16:33:41Z",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
-          "size": 33878287,
-          "buildVersion": "113",
-          "buildNumber": "113",
-          "localizedDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与",
           "minOSVersion": "15.1"
         }
       ],

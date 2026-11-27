@@ -1,7 +1,7 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 118 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -214,6 +214,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.5.28",
+          "date": "2026-11-27T01:01:29Z",
+          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.28/anich-ios-no_sign-1.5.28.ipa",
+          "size": 41232889,
+          "localizedDescription": "- 播放信息中新增软硬解码状态显示功能\r\n- 画廊来源地址支持点击复制\r\n- 修复画廊每次打开详情评论都会重新加载的问题\r\n- 修复部分线路花屏或缺少前几秒画面的问题\r\n- 修复处于画中画模式时弹幕开关被隐藏的问题\r\n- 修复打开线路面板导致界面卡死的问题\r\n- 修复线路面板部分视频无法正确探测大小的问题\r\n- 修复线路面板无法正确显示错误码的问题\r\n- 修复触控板无法双指滑动滚动的问题 (#107)\r\n- 升级battery_plus的版本 (#106)",
+          "minOSVersion": "12.0"
+        },
+        {
           "version": "1.5.27",
           "date": "2026-10-05T03:15:29Z",
           "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.27/anich-ios-no_sign-1.5.27.ipa",
@@ -227,14 +235,6 @@
           "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.26/anich-ios-no_sign-1.5.26.ipa",
           "size": 41219984,
           "localizedDescription": "- 修复应用有时会莫名卡死的问题\r\n- 降低部分组件的刷新频率以优化性能\r\n- 修改观看记录上传逻辑以降低服务器压力\r\n- 修改本地缓存的检测逻辑",
-          "minOSVersion": "12.0"
-        },
-        {
-          "version": "1.5.25",
-          "date": "2026-09-15T22:35:34Z",
-          "downloadURL": "https://github.com/Sle2p/AniCh/releases/download/1.5.25/anich-ios-no_sign-1.5.25.ipa",
-          "size": 41219710,
-          "localizedDescription": "- 优化保存截图按钮的样式\r\n- 新增弹幕密度设置功能\r\n- 新增手动导入本地外挂字幕的功能\r\n- 新增画廊上划打开详情的功能\r\n- 新增开启公共模式时的二次确认的功能\r\n- 新增线路列表HLS格式视频的大小预估功能\r\n- 修复视频链接存在重定向时会下载失败的问题\r\n- 修复部分HLS格式视频假下载的问题\r\n- 修复部分视频链接可以访问却显示错误状态码的问题\r\n- 修复评分只显示整数的问题\r\n- 修复注册与修改用户名、密码失败时错误提示不够详细的问题",
           "minOSVersion": "12.0"
         }
       ],
@@ -1135,6 +1135,14 @@
       "category": "developer",
       "versions": [
         {
+          "version": "1.4.1",
+          "date": "2026-11-27T04:37:38Z",
+          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.1/dsh-go-1.4.1-ios-unsigned.ipa",
+          "size": 129673089,
+          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.4.1-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.4.1/dsh-go-1.4.1-arm64.apk)。**\n\n`update.json`、`SHA256SUMS` 和增量包 `*.dshdelta` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.4.1-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.4.1/dsh-go-1.4.1-arm64.apk).**\n\n`update.json`, `SHA256SUMS` and the `*.dshdelta` patches support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n⭐ 喜欢 DSH Go 的话，[给仓库点个 ",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "1.4.0",
           "date": "2026-11-25T14:53:25Z",
           "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.4.0/dsh-go-1.4.0-ios-unsigned.ipa",
@@ -1148,14 +1156,6 @@
           "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.3.0/dsh-go-1.3.0-ios-unsigned.ipa",
           "size": 126020561,
           "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.3.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.3.0/dsh-go-1.3.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **顶栏一键语音通话。** 首页右上角、新对话按钮旁边多了通话按钮，新对话里也能直接打。\n- **长按就能选",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-18T07:32:51Z",
-          "downloadURL": "https://github.com/ccch1mneyyy/dsh-Go/releases/download/v1.2.0/dsh-go-1.2.0-ios-unsigned.ipa",
-          "size": 123474162,
-          "localizedDescription": "**手机安装：只需下载 [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk)。**\n\n`update.json` 和 `SHA256SUMS` 供自动更新与校验使用，无需手动下载。GitHub 自动生成的 Source code 是源码包，不是安装包。\n\n**Install on your phone: download [`dsh-go-1.2.0-arm64.apk`](https://github.com/ccch1mneyyy/dsh-go/releases/download/v1.2.0/dsh-go-1.2.0-arm64.apk).**\n\n`update.json` and `SHA256SUMS` support automatic updates and verification. You do not need to download them manually. GitHub's Source code archives are not installers.\n\n### 中文\n\n- **iOS 版（测试）。** 这一版起提供未签名的 iOS 安装包 `dsh-go-1.2.0-ios-un",
           "minOSVersion": "15.0"
         }
       ]
@@ -1870,10 +1870,10 @@
       "versions": [
         {
           "version": "3.0.0",
-          "date": "2026-11-26T14:16:54Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
-          "size": 4865415,
-          "localizedDescription": "# HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **视频源插件系统与离线示例试用**：支持扫码、`hghubx://` 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. **「我的收藏」组合筛选与下拉刷新（#278）**：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. **手机与 TV 局域网双向同步配对**：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. **作者目录、标签页与列表加载提速**：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与",
+          "date": "2026-11-26T15:05:45Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
+          "size": 5166406,
+          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）自动合成的全平台预览构建（更新时间：`2026-11-27T08:34:22Z`，测试提交：`9223ee2`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（5）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)（@zxsos，`fbf3cc5`）\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding（@zxsos，`d7c9042`）\n3. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh（@zxsos，`40e5d01`）\n4. #290 feat(feed,storage): expand home random paging and unseen-first shuffling（@zxsos，`8",
           "minOSVersion": "15.0",
           "buildVersion": "3.0.0",
           "buildNumber": "3.0.0"

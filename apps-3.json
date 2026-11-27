@@ -1,19 +1,61 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 118 个，按更新频率分成 3 个源，这里是第 3 个（18 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 3 个（19 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.infinityf4p.TiebaPure",
     "com.suwayomi.tachideskSorayomi",
     "com.twindesk.ios",
     "com.utmapp.UTM",
-    "com.utmapp.UTM-SE",
-    "com.utsuro.app"
+    "com.utmapp.UTM-SE"
   ],
   "apps": [
+    {
+      "name": "TiebaPure",
+      "bundleIdentifier": "com.infinityf4p.TiebaPure",
+      "developerName": "infinityf4p",
+      "subtitle": "原生贴吧客户端",
+      "localizedDescription": "原生 SwiftUI 构建的非官方贴吧客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。这里是国内镜像加速版。",
+      "iconURL": "https://cdn.jsdelivr.net/gh/bebound/AltGallery@master/apps/TiebaPure/icon.png",
+      "tintColor": "#5533C6",
+      "category": "social",
+      "versions": [
+        {
+          "version": "1.4.15",
+          "date": "2026-10-10T06:07:37Z",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
+          "size": 9347637,
+          "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f27690434563245",
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
+        },
+        {
+          "version": "1.4.14",
+          "date": "2026-08-24T01:40:29Z",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.14/TiebaPure-v1.4.14-unsigned.ipa",
+          "size": 3787516,
+          "localizedDescription": "## 修改内容\n\n- 新增帖子本地保存：支持完整楼层和楼中楼离线阅读、媒体下载、搜索、回复更新、存储管理及备份导入导出。\n- 新增内置与自定义阅读字体，并完善首页重复点击刷新。\n- 自动检测账号登录失效，提示后清理当前登录态，同时避免旧请求或网络中断误触发退出。\n- 修复 iOS 16 嵌套搜索布局递归卡死、文字选择与导航手势冲突，并将媒体、字体、语音和存储文件 I/O 移出主线程。\n- 加固本地帖子并发写入、媒体事务崩溃恢复、备份校验与字体目录一致性。\n\n## 验证\n\n- GitHub Actions ci-ok 全部通过，包含单元测试、iOS 16 兼容检查、iPhone/iPad UI 测试和 Release 构建。\n- App 与扩展均为 1.4.14 (58)、arm64、最低 iOS 16.4；IPA 压缩结构正常且未签名。\n- 发帖和回帖夹具 UI 测试通过；本次未改动认证写入路径，因此未重复进行真实账号写入测试。",
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
+        },
+        {
+          "version": "1.4.13",
+          "date": "2026-08-20T15:32:45Z",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.13/TiebaPure-v1.4.13-unsigned.ipa",
+          "size": 3509096,
+          "localizedDescription": "## 修改内容\n\n- 修复多图帖子首图放大后停留在低清过渡图的问题，并增加受内存与帧数限制的 GIF 动画显示。\n- 修复回复倒序分页只作用于当前已加载页面的问题，并完善楼中楼进入动画、下拉/右滑退出和阅读位置恢复。\n- 修复 iOS 18 长按选择帖子文字时可能出现的布局卡死。\n- 修复登录账号发帖、回帖时 TBS 刷新失败的问题；恢复签名登录校验，并保留发送结果不明确时不自动重试的保护。\n\n## 验证\n\n- GitHub Actions `ci-ok` 全部通过。\n- 本地发布请求与身份夹具测试 48 项通过。\n- 真实账号发帖和回帖均验证成功。",
+          "minOSVersion": "16.4",
+          "buildVersion": "1",
+          "buildNumber": "1"
+        }
+      ]
+    },
     {
       "name": "Tsumiru",
       "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
@@ -586,10 +628,20 @@
       "developerName": "Xanerix",
       "subtitle": "多平台短剧影视客户端",
       "localizedDescription": "Flutter 编写的短剧与影视客户端，包含全部站源并可在设置里逐个开关。支持追剧、观看记录、多用户、本地下载与备份。站源可用性取决于源站与网络状况。",
-      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.3-115/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Xanerix/guoapp/app-v2.0.4-116/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#3350D0",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "2.0.4",
+          "date": "2026-11-27T01:29:07Z",
+          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.4-116/guoapp-2.0.4%2B116-ios-unsigned.ipa",
+          "size": 34334761,
+          "buildVersion": "116",
+          "buildNumber": "116",
+          "localizedDescription": "更新内容：\n\n- 优化桌面端和平板的有声书详情页与音频播放页布局，支持左右独立滚动、分段选择、常驻选集栏、就近浮层和音量条（#219）。\n- 优化桌面端 Esc 键返回，并新增鼠标后退侧键返回（#196）。\n- 启动时检查已安装站源的新版本，可选择更新、稍后或此版本不再提醒（#230）。\n- 模块仓库新增多组 jsDelivr 与 GitHub 镜像源，提升直连拉取与安装成功率。\n- Android 手机播放页新增「返回主页」按钮，竖屏和横屏均可一键返回，免去逐层后退（#242）。\n- iPhone 和 iPad 支持系统画中画，进入系统小窗后隐藏页内播放器画面，可在播放器手动打开或在设置 › 播放 开启「离开应用时自动小窗」（#238、#243）。\n- iOS 默认启用 VideoToolbox 原始帧硬解直通播放，可在设置 › 播放 切换解码方式（#243）。\n- 修复 iOS 暂停后锁屏一段时间，回到 App 换集或重试失败（#241，开发快照，需在 iOS 上实测）。\n- 修复追剧页和历史页没有内容时，上滑仍会收起底栏。\n- 修复未开启「后台播放」时，Windows 小窗贴边自动暂停和桌面端老板键暂停不生效（#249）。\n- 修复从正常界面点小窗时偶发暂停播放（#249）。\n- 红果站源收回为私有，撤出在线仓库，安装包内置并支持应用内静默云更新。\n\n版本 2.0.4+116",
+          "minOSVersion": "15.1"
+        },
         {
           "version": "2.0.3",
           "date": "2026-11-21T18:31:19Z",
@@ -608,16 +660,6 @@
           "buildVersion": "114",
           "buildNumber": "114",
           "localizedDescription": "更新内容：\n\n- 修复红果部分剧集提示「未返回兼容的媒体」，改用 H.265 线路。\n- 手机竖屏看横屏视频时可在简介下方切换多季，竖屏播放页的选集菜单也新增选季，切换后从该季上次位置继续。\n- 播放器上拉菜单顶部更紧凑，菜单间切换不再闪动。\n- 手机上点开剧集直接播放，返回直接回到列表，加载失败时仍显示详情页。\n- 已缓存的封面直接显示，不再闪烁。\n- 站源模块可在播放凭证里声明 `omitFetchMetadata`，请求视频时不带 Sec-Fetch 头（开发快照，需用声明该项的站源实测）。\n- Android 新增「硬解（修正偏蓝）」解码方式，用于海思等画面偏蓝的设备（#144，开发快照，需在海思电视上实测）。\n- Windows 升级 libmpv，改为 D3D11 直接渲染，移除 ANGLE 依赖（#164）。\n- 横屏锁定后左右两侧都显示锁图标并可解锁；竖屏的锁按钮移到右上角最右侧。\n- 红果弹幕的方括号表情显示为表情图（#143）。\n- 弹幕设置新增「合并重复」，同一时段的相同弹幕并成一条并标出次数（#143）。\n- 修复 Windows 最大化后进入全屏仍显示任务栏，退出全屏后恢复最大化（#152）。\n- 修复从 1.x 升级后红果分类缺少「听书」「小说」（#169）。\n- 红果听书的封面角标改为「听书 · 共 N 章」，搜索结果可区分短剧和听书（#179）。\n-",
-          "minOSVersion": "15.1"
-        },
-        {
-          "version": "2.0.1",
-          "date": "2026-11-16T16:33:41Z",
-          "downloadURL": "https://github.com/Xanerix/guoapp/releases/download/app-v2.0.1-113/guoapp-2.0.1%2B113-ios-unsigned.ipa",
-          "size": 33878287,
-          "buildVersion": "113",
-          "buildNumber": "113",
-          "localizedDescription": "更新内容：\n\n- 修复红果取流失败，适配新的播放器接口与 v5 签名（#165）。\n- 红果站源公开，上架在线仓库，同时继续内置；内置模块在线仓库也有时两处都列出，可从在线仓库安装和更新。\n- 新增播放器锁，手机横屏全屏（锁在左侧中间）和竖屏短剧页可锁定画面手势，锁定期间不转屏（#157）。\n- 平板全屏播放也支持锁定，锁在左侧中间。\n- 拖动进度条后 5 秒未跳到目标位置时自动重新打开当前线路（开发快照，需实机验证）。\n- 在线仓库新增安装全部站源。\n- 备份新增站源开关。\n- 备份新增已安装模块列表，恢复后询问是否安装本机缺少的模块。\n- 修复 macOS 安装包无法打开文件选择器（导入本地站源、恢复备份等报 ENTITLEMENT_NOT_FOUND）：出包重签名时保留文件访问权限（开发快照，需在 macOS 上用新安装包实测）。\n- 底栏移除「模块」，入口移到「我的」页；「我的」页的下载卡片改为与设置相同的入口。\n- 模块页改为已安装、在线仓库、内置、手动四个标签页，每个模块单独一张卡片，站源开关和青空登录移到已安装模块的卡片上，在线仓库和内置只列未安装的模块。\n- 移除设置里的站源分组（站源管理、站源账号、目录请求间隔），站源请求默认不再额外间隔。\n- 修复模块声明的浏览器指纹从未生效，Hanime1、MissAV 等站源在部分网络下开屏即 403。\n- 设置里的「目录与",
           "minOSVersion": "15.1"
         }
       ],

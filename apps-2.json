@@ -1,7 +1,7 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 118 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -807,12 +807,12 @@
       "versions": [
         {
           "version": "1.3.3",
-          "date": "2026-11-20T06:01:32Z",
-          "downloadURL": "https://github.com/singleton-altman/MoviePilotLite/releases/download/release-v1.3.3-2026-11-20/ios-v1.3.3-2026-11-20.ipa",
-          "size": 37758534,
-          "buildVersion": "20",
-          "buildNumber": "20",
-          "localizedDescription": "MoviePilot Release\n\n- Version: 1.3.3\n- Build Date: 2026-11-20\n- Android: Signed universal APK\n- Android: Signed arm64-v8a APK\n- iOS: Unsigned IPA\n\niOS 安装说明：\n- IPA 为未签名包\n- 请使用自己的 Apple Developer 账号通过 AltStore、Sideloadly 或 Xcode 进行签名安装\n\n\n## What's Changed\n* fix(push): iOS 设置 JPush Alias 报 6002 超时且提示原始异常串 by @singleton-altman in https://github.com/singleton-altman/MoviePilotLite/pull/166\n* feat: 适配 Vue 插件（PVE 守护神 / 爱快路由 / 豆瓣档案 / 夸克网盘 / 随机图床） by @xijin285 in https://github.com/singleton-altman/MoviePilotLite/pull/167\n* feat(media_detail): 豆瓣评论与详情页 UI 优化 by @singleton-altman in https://github.com/s",
+          "date": "2026-11-27T07:03:46Z",
+          "downloadURL": "https://github.com/singleton-altman/MoviePilotLite/releases/download/release-v1.3.3-2026-11-27/ios-v1.3.3-2026-11-27.ipa",
+          "size": 37758539,
+          "buildVersion": "27",
+          "buildNumber": "27",
+          "localizedDescription": "MoviePilot Release\n\n- Version: 1.3.3\n- Build Date: 2026-11-27\n- Android: Signed universal APK\n- Android: Signed arm64-v8a APK\n- iOS: Unsigned IPA\n\niOS 安装说明：\n- IPA 为未签名包\n- 请使用自己的 Apple Developer 账号通过 AltStore、Sideloadly 或 Xcode 进行签名安装\n\n\n## What's Changed\n* fix(push): iOS 设置 JPush Alias 报 6002 超时且提示原始异常串 by @singleton-altman in https://github.com/singleton-altman/MoviePilotLite/pull/166\n* feat: 适配 Vue 插件（PVE 守护神 / 爱快路由 / 豆瓣档案 / 夸克网盘 / 随机图床） by @xijin285 in https://github.com/singleton-altman/MoviePilotLite/pull/167\n* feat(media_detail): 豆瓣评论与详情页 UI 优化 by @singleton-altman in https://github.com/s",
           "minOSVersion": "15.0"
         },
         {
@@ -1608,6 +1608,31 @@
       ]
     },
     {
+      "name": "Roam Control",
+      "bundleIdentifier": "com.sean.roamcontrol",
+      "developerName": "seanhowarthdev",
+      "subtitle": "定位固定与路线模拟",
+      "localizedDescription": "在一张地图上设定固定的上报位置、预览并模拟 Apple 地图步行路线、保存收藏与历史。需要 iOS 27 或更新版本，并配合 LocalDevVPN 会话使用。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/icon.webp",
+      "tintColor": "#9D2EC6",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.9.9",
+          "date": "2026-10-20T19:33:03Z",
+          "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+          "size": 4627321,
+          "localizedDescription": "<!-- roam-control-distribution-update -->\n\n> [!IMPORTANT]\n> **Distribution update - 25 November 2026**\n>\n> Roam Control was released on the App Store on 24 November 2026. Following a subsequent re-evaluation by Apple, App Store and TestFlight availability have been disabled.\n>\n> The original [Roam Control 0.9.9 (Build 105)](https://github.com/seanhowarthdev/Roam-Control/releases/tag/v0.9.9) IPA is available again for independent sideloading. This is an existing release, not a new update.\n>\n> Apple has been contacted and clarification is pending.\n>\n> **Do not unnecessarily delete or uninstall y",
+          "minOSVersion": "27.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/welcome.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/fixed-location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Roam-Control/images/walking-preview.webp"
+      ]
+    },
+    {
       "name": "RyukSign",
       "bundleIdentifier": "ryuk2.anoxclan.com",
       "developerName": "faroukbmiled",
@@ -1984,48 +2009,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_02_home_shared_drives.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_03_account_folder.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_04_account_drives.webp"
-      ]
-    },
-    {
-      "name": "TiebaPure",
-      "bundleIdentifier": "com.infinityf4p.TiebaPure",
-      "developerName": "infinityf4p",
-      "subtitle": "原生贴吧客户端",
-      "localizedDescription": "原生 SwiftUI 构建的非官方贴吧客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。这里是国内镜像加速版。",
-      "iconURL": "https://cdn.jsdelivr.net/gh/bebound/AltGallery@master/apps/TiebaPure/icon.png",
-      "tintColor": "#5533C6",
-      "category": "social",
-      "versions": [
-        {
-          "version": "1.4.15",
-          "date": "2026-10-10T06:07:37Z",
-          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
-          "size": 9347637,
-          "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f27690434563245",
-          "minOSVersion": "16.4",
-          "buildVersion": "1",
-          "buildNumber": "1"
-        },
-        {
-          "version": "1.4.14",
-          "date": "2026-08-24T01:40:29Z",
-          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.14/TiebaPure-v1.4.14-unsigned.ipa",
-          "size": 3787516,
-          "localizedDescription": "## 修改内容\n\n- 新增帖子本地保存：支持完整楼层和楼中楼离线阅读、媒体下载、搜索、回复更新、存储管理及备份导入导出。\n- 新增内置与自定义阅读字体，并完善首页重复点击刷新。\n- 自动检测账号登录失效，提示后清理当前登录态，同时避免旧请求或网络中断误触发退出。\n- 修复 iOS 16 嵌套搜索布局递归卡死、文字选择与导航手势冲突，并将媒体、字体、语音和存储文件 I/O 移出主线程。\n- 加固本地帖子并发写入、媒体事务崩溃恢复、备份校验与字体目录一致性。\n\n## 验证\n\n- GitHub Actions ci-ok 全部通过，包含单元测试、iOS 16 兼容检查、iPhone/iPad UI 测试和 Release 构建。\n- App 与扩展均为 1.4.14 (58)、arm64、最低 iOS 16.4；IPA 压缩结构正常且未签名。\n- 发帖和回帖夹具 UI 测试通过；本次未改动认证写入路径，因此未重复进行真实账号写入测试。",
-          "minOSVersion": "16.4",
-          "buildVersion": "1",
-          "buildNumber": "1"
-        },
-        {
-          "version": "1.4.13",
-          "date": "2026-08-20T15:32:45Z",
-          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.13/TiebaPure-v1.4.13-unsigned.ipa",
-          "size": 3509096,
-          "localizedDescription": "## 修改内容\n\n- 修复多图帖子首图放大后停留在低清过渡图的问题，并增加受内存与帧数限制的 GIF 动画显示。\n- 修复回复倒序分页只作用于当前已加载页面的问题，并完善楼中楼进入动画、下拉/右滑退出和阅读位置恢复。\n- 修复 iOS 18 长按选择帖子文字时可能出现的布局卡死。\n- 修复登录账号发帖、回帖时 TBS 刷新失败的问题；恢复签名登录校验，并保留发送结果不明确时不自动重试的保护。\n\n## 验证\n\n- GitHub Actions `ci-ok` 全部通过。\n- 本地发布请求与身份夹具测试 48 项通过。\n- 真实账号发帖和回帖均验证成功。",
-          "minOSVersion": "16.4",
-          "buildVersion": "1",
-          "buildNumber": "1"
-        }
       ]
     }
   ],
