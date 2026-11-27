@@ -1,19 +1,189 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "novadev.iram-plus",
-    "com.xitrix.iTorrent2",
-    "com.local.STV",
-    "com.example.kazumi",
-    "com.linkpass.kazumi"
+    "dev.ibuilder.app",
+    "com.kuschqin.madeira.steamui",
+    "com.ios151.insav",
+    "app.local.iPadn",
+    "novadev.iram-plus"
   ],
   "apps": [
+    {
+      "name": "iBuilder",
+      "bundleIdentifier": "dev.ibuilder.app",
+      "developerName": "Absenti",
+      "subtitle": "手机上构建 Switch 游戏",
+      "localizedDescription": "iBuilder 可以在 iPhone 上构建 Switch 游戏的可执行文件。程序不提供任何游戏、密钥或固件，也不会自动下载，需要你自己准备合法的游戏资源。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/icon.webp",
+      "tintColor": "#3530C9",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.8",
+          "date": "2026-11-23T14:31:19Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.8/GameApp-rust-20261123-142811-rustcf3c2f55.ipa",
+          "size": 42455597,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n> [!IMPORTANT]\n> **Every game rebuilds its shaders once** after this update: the shader chain moves to `6c53446391cc` (nxnative 033793f0), and a library is named by its chain. iOS's Metal shader cache also starts empty once, so the first play of each game stutters more.\n\n**New**\n- **Shader chain 6c53446391cc**, nxnative's current one: 37 upstream translator and host changes, including the Switch 2 mesh/",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.1.7",
+          "date": "2026-11-22T19:54:57Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.7/GameApp-rust-20261122-195251-rust2353f307.ipa",
+          "size": 40973312,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **No rebuild after an app update** that does not change what a built game is made of (a new *framework id*: host, rewriter, assembler, signer, profiles, game tables). The first update to 0.1.7 still rebuilds each game once.\n- **Beach Buggy Racing 2**: shaders read from Vector Unit's `.apf` archives (0 → 496), and the game no longer quits at start (engine: the friends notification queue opens o",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.1.4",
+          "date": "2026-11-22T16:28:12Z",
+          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.4/GameApp-rust-20261122-162610-rust7d81008a.ipa",
+          "size": 40938569,
+          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New: iPhone 12 and later**\n- **GPUs without BC textures** (A14–A16, e.g. iPhone 12–15 non-Pro, A14–A16 iPads) now take the engine path ported from the community fork [mianmuhammadse/nxnative `no-bc`](https://github.com/mianmuhammadse/nxnative/tree/no-bc) (MIT): BC1–5 decoded on the GPU at upload, BC1/2/3 stored as ASTC 4x4 (a quarter of the memory), CPU only for BC6H/BC7/3D. Automatic. `DM_NO_BC_GPU=0",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/library.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/build.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/settings.webp"
+      ]
+    },
+    {
+      "name": "iDeck",
+      "bundleIdentifier": "com.kuschqin.madeira.steamui",
+      "developerName": "kuscholar",
+      "subtitle": "Steam 大屏与 3D 游戏",
+      "localizedDescription": "通过 Madeira、Wine、FEX 与 Metal，在 iPhone 与 iPad 上跑 Valve Steam 客户端大屏模式与兼容的 Windows 游戏。实验性功能，需要 iOS 26 以上、JIT 以及自备 Steam 文件。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/icon.webp",
+      "tintColor": "#D5A733",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.3",
+          "date": "2026-11-06T05:45:57Z",
+          "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.6/iDeck-0.1.3-alpha.6-build145.ipa",
+          "size": 173835258,
+          "localizedDescription": "# Steam64 setup, one step at a time\n\n**Experimental prerelease · Build145 · Known issue: Steam can freeze after the third game exit. This update improves setup; it does not fix that stability issue.**\n\n## What’s new\n\n- **Install Steam64 in the launcher:** downloads the matched Steam/browser packages from Valve over HTTPS, verifies sizes/SHA-256 and installs with rollback. Cancel/retry, Verify/Repair and Return to previous environment are available.\n- **Four clear actions:** Install Steam → Connect LocalDevVPN → Pair this device → Enable JIT. Runtime preparation is automatic, signing/address ch",
+          "minOSVersion": "26.0",
+          "buildVersion": "145",
+          "buildNumber": "145"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/configuration.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/steam-home.webp"
+      ]
+    },
+    {
+      "name": "INSAV",
+      "bundleIdentifier": "com.ios151.insav",
+      "developerName": "ios151",
+      "subtitle": "四站点聚合的原生影视客户端",
+      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
+      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
+      "tintColor": "#91C930",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-13T05:33:07Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
+          "size": 1634598,
+          "buildVersion": "6",
+          "buildNumber": "6",
+          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-10T18:39:00Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
+          "size": 1630941,
+          "buildVersion": "5",
+          "buildNumber": "5",
+          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-09T20:55:27Z",
+          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
+          "size": 1523510,
+          "buildVersion": "4",
+          "buildNumber": "4",
+          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "iPadn",
+      "bundleIdentifier": "app.local.iPadn",
+      "developerName": "mengangs",
+      "subtitle": "下载已购应用与旧版本",
+      "localizedDescription": "在 iPhone 与 iPad 上搜索、下载并安装你已拥有的应用，包括历史版本与已下架应用，支持区域价格比较与原生安装，覆盖 iPhone、iPad、Apple TV 与 Mac 应用。",
+      "iconURL": "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/icon.png",
+      "tintColor": "#3394D0",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "2.3.5",
+          "date": "2026-11-23T15:22:43Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.5/iPadn-2.3.5-lite-unsigned.ipa",
+          "size": 49971723,
+          "localizedDescription": "## iPadn 2.3.5\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.5** 稳定性修复与体验升级版：根治 **iOS 16.0–16.2 强链接符号闪退**、**iOS 27.2 beta 2 历史版本加载闪退** 与 **iPadOS 全屏/专业模式导航栏异常**；**TestFlight 现支持切换下载 Apple TV 等多平台测试包**并统一展示单色客户端标识，同时修复大型/多变体游戏误报「产物校验失败，已清理」及详情页顶部虚化异常；在「设置 › 外观与图标」开放**自定义全部 177 个 Apple 商店地区**（支持搜索筛选、勾选、拖拽排序与国旗展示）；并修复 FairPlay 高熵插件误拒、登录 `5020`/2FA 提示、未购免费应用首次获取旧版报错与「应用包」批量导入打断问题。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 iOS 16/27 闪退与 iPadOS 专业模式导航异",
+          "minOSVersion": "16.0",
+          "buildVersion": "41",
+          "buildNumber": "41"
+        },
+        {
+          "version": "2.3.4",
+          "date": "2026-11-22T05:56:54Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.4/iPadn-2.3.4-lite-unsigned.ipa",
+          "size": 49848919,
+          "localizedDescription": "## iPadn 2.3.4\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.4** 体验与稳定性全面升级版：全面打通 **TestFlight 实时同步下载、后台断点续传、统一自动安装与灵动岛进度同步**；取消下载页与「应用包」冗余分组并在全应用（含「已解密」「Wi‑Fi 传输」「存储空间」）统一极简单色 TestFlight 图标；重构下载与 TestFlight 暂停/继续及全状态切换弹性形变动效；根治多账号切换反复触发验证码、多手机号 2FA 与 0 应用账号卡顿；统一「应用包」5 秒侧滑撤销与全应用原生居中弹窗、优化本机配对引导，并补齐 App Store 账单/条款报错引导及原生安装 iOS 17.4+ 与局域网防护。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **TestFlight 同步下载、后台续传、自动安装与灵动岛同步**\r\n  - TestFlight 任务在元数据就绪并实际开始下载后，实时",
+          "minOSVersion": "16.0",
+          "buildVersion": "40",
+          "buildNumber": "40"
+        },
+        {
+          "version": "2.3.3",
+          "date": "2026-11-21T14:14:24Z",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.3/iPadn-2.3.3-lite-unsigned.ipa",
+          "size": 49730145,
+          "localizedDescription": "## iPadn 2.3.3\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.3** 全面加固与体验升级版：重点修复下载/领许可时偶发「Apple 暂时无法完成该操作」的协议盲区（补齐 `1008` 会话过期刷新、`-128` 地区自动纠偏、新版条款提示与 HTTP 200 诊断日志）；升级「下载」页多选与统一撤销删除，新增安装包构建 SDK / Xcode 版本速查，修复「应用包」左滑变灰遮罩，并完成一轮覆盖安全脱敏、滚动性能、深浅色对比度与 11 语言本地化的全面审计优化。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 Apple 下载/获取报错「暂时无法完成该操作」与诊断盲区**\r\n  - 补齐 `1008`（设备验证/会话过期）在下载、历史版本票据、领免费许可及 Mac 包路径中的自动刷新与重新登录处理；补充密码已更改（`Your password has changed.`）与账号停用（`Your",
+          "minOSVersion": "16.0",
+          "buildVersion": "39",
+          "buildNumber": "39"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Loads signing resources and serves installation packages over this device's loopback address, and finds this device's installation service."
+        }
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/01-search.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/02-detail.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/03-versions.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/04-prices.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/05-downloads.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/06-purchased.jpg",
+        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/07-native-install.jpg"
+      ]
+    },
     {
       "name": "iRAM+",
       "bundleIdentifier": "novadev.iram-plus",
@@ -327,6 +497,48 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/home.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LightNovelShelf/images/community.webp"
+      ]
+    },
+    {
+      "name": "LiLite",
+      "bundleIdentifier": "com.liuliuya.PiliNative",
+      "developerName": "liuliuya2333",
+      "subtitle": "轻盈顺滑的第三方哔哩哔哩客户端",
+      "localizedDescription": "使用 SwiftUI / UIKit 从头编写的原生第三方哔哩哔哩客户端，支持 mpv / AVPlayer 双内核、弹幕、画中画与离线缓存，适配 iOS 26 Liquid Glass。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LiLite/icon.webp",
+      "tintColor": "#A32ED5",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.42",
+          "date": "2026-11-27T18:31:56Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.42/LiLite-1.0.42-unsigned.ipa",
+          "size": 29095363,
+          "localizedDescription": "**播放器和返回动画**\n\n- 应用内小窗缩小、还原时接续同一播放画面。点还原后仍可按住画面反拖，松手后也能重新接手。\n- 调整首页视频卡片返回和详情页分页加载，减少转场期间的布局工作。\n- 调整玻璃进度条，已缓存区间单独显示。普通视频和剧集的「听视频」移至播放器右上角的更多菜单。\n\n**弹幕**\n\n- 直播画面支持整条表情和文字内的多个表情。表情加载沿用当前弹道，竖屏首行避开顶部控件。\n- 切集时清理旧集的弹幕图层与解码任务。密集弹幕优先保留已在画面中的条目，减少途中消失、重新出现的问题。\n\n**视频线路**\n\n- 在「设置 → 网络连接 → 视频线路」输入 HTTPS CDN 域名即可使用自定义线路。支持测速、音频独立选线和原地址回退。\n\n**验证**\n\niPhone 15 Pro Max 使用同一视频，逐轮记录 Instruments 的整段显示延迟。普通小窗缩小和双击还原的累计延迟中位数从 442 ms 降至 358 ms，首页卡片返回从 542 ms 降至 331 ms，还原途中按住反拖从 375 ms 降至 313 ms。真机仍可测到长帧。\n\nGitHub 侧载版，构建 67，本地源码提交 `a987af0`。下载未签名 IPA 后需自行签名安装。",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.41",
+          "date": "2026-11-27T10:11:57Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.41/LiLite-1.0.41-unsigned.ipa",
+          "size": 28856852,
+          "localizedDescription": "**布局与搜索**\n\n- 恢复设置卡片和消息列表的左右留白，修复部分页面紧贴屏幕边缘的问题。\n- iPad 横屏启用侧边栏后，首页、动态和我的入口移到左下角的紧凑图标栏。修复宽屏列表点进视频时缩放过大或转场卡住的问题。\n- Duo 外屏横屏打开搜索时预留状态栏和输入框周围的空间，修复弹出键盘时页面可能卡住的问题。\n- 调整搜索转场中标签栏的收起时机，避免打开搜索、弹出键盘时反复布局。\n\n**播放**\n\n- 从详情页进入竖屏播放，再返回详情时，接续当前进度。保留切换时的播放或暂停状态，并按视频和分 P 交接进度。\n- iPad 横屏播放竖屏流时，首帧和正式画面按原比例完整显示，避免为了填满横屏裁掉画面。宽屏设备旋转进入竖屏流时也显示完整画面。\n- 修复 AVPlayer 播放部分视频时持续转圈或反复缓冲的问题。持续缓冲时可为当前视频切到较低清晰度，保留播放进度和默认清晰度设置。修复 AVPlayer 播放中切到后台或关闭视频时，未完成的加载请求可能导致闪退的问题。\n- 调整视频前台播放时的系统媒体控制，避免普通视频以音频的形式显示在灵动岛；后台播放和「听视频」继续使用各自的播放控制。\n- 「设置 → 详情与播放控制 → 详情页播放器按钮」可以选择显示截图按钮和「听视频」按钮。\n\n**推荐、消息与下载**\n\n- 推荐请求遇到 412 时显示明确提示，可重试或手动切换网页推荐。\n- 修复",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.40",
+          "date": "2026-11-27T08:05:20Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.40/LiLite-1.0.40-unsigned.ipa",
+          "size": 28810053,
+          "localizedDescription": "自 1.0.39（构建号 56）以来的全部改动。GitHub 版的包名仍是 `com.liuliuya.PiliNative`，和以前一样不签名，可以直接覆盖安装，数据保留。\n\n**播放**\n\n- 连续点推荐视频时，画面不再停在前几帧、弹幕来回抽动：新页面开始加载时旧页面立即让出；mpv 释放音频或系统收回音频会话时，正在播放的 mpv 会重新接管并重载音频输出。\n- 起播不再黑屏：等第一帧真正画出来才撤下封面；自动播放的等待期间不再闪出播放按钮；详情页沿用卡片的封面，不再换图。\n- 进入、退出全屏不再黑屏和穿帮：进入时用小窗口画面过渡，旋转落稳后才显示全屏控件；退出时先让小窗口画面画出来，再撤掉全屏层。\n- 全屏锁定、解锁时，锁键和整套控件交叉淡入淡出，「继续看」角标和片段提示随之淡出。\n- 详情页的「继续看 P」角标出现、被点掉或 4 秒后消失时淡入淡出。\n- 打开弹幕输入条、键盘升起期间，视频页保持原尺寸：竖屏视频的播放器不再随键盘缩小，iPad 竖屏不再切换布局。\n- 长按倍速起停时弹幕不再抽搐（mpv 下此前会向前跳最多约半秒，松手又跳回）。倍速变化时弹幕时间轴不再重新对齐，改为放慢或加快在约半秒内追上；只有拖动跳转或偏差超过 1.5 秒才直接对齐。\n- 在竖屏流里长按 2 倍速，划到下一条后不再卡在 2 倍速。\n- 滑动进度条、亮度、音量时，震动和刻度更跟手（放宽轴锁，",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LiLite/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LiLite/images/play.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LiLite/images/profile.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/LiLite/images/stream.webp"
       ]
     },
     {
@@ -1195,27 +1407,27 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.4.1",
+          "date": "2026-11-27T13:11:42Z",
+          "downloadURL": "https://github.com/g8row/PhotosBackup/releases/download/0.4.1/PhotosBackup.ipa",
+          "size": 2973509,
+          "localizedDescription": "### What's new\n\n- **Backup filters & limits (#14, #23, #32):**\n  - **Media Types** (`Settings → Backup`): choose **Photos & Videos**, **Photos Only**, or **Videos Only** across selected albums and picked folders.\n  - **Only Back Up After Date** (`Settings → Backup`): back up only items created on or after a chosen date/time, with a quick **Set to Now** button.\n  - **Only While Charging**, **Minimum Battery**, and **Daily Upload Limit** (500 MB–10 GB/day, counting only bytes actually uploaded — duplicates already in Google Photos don't count — and resuming automatically the next day).\n- **Edite",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.4.0",
+          "date": "2026-11-27T12:06:06Z",
+          "downloadURL": "https://github.com/g8row/PhotosBackup/releases/download/0.4.0/PhotosBackup.ipa",
+          "size": 2883893,
+          "localizedDescription": "## New\n\n- **Add to Matching Albums.** Opt-in toggle under **Settings → Backup** (off by default). Files new uploads into Google Photos albums matching their iOS albums (or parent folder for picked folders), creating each album the first time. ([#35](https://github.com/g8row/PhotosBackup/issues/35), [#36](https://github.com/g8row/PhotosBackup/pull/36), thanks @devenchande)\n- **Folder backup from Files / iCloud Drive.** New **Pick Folder** card on Home scans a chosen folder recursively for photos and videos and queues them through the durable upload pipeline. ([#35](https://github.com/g8row/Phot",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.3.8",
           "date": "2026-11-10T17:28:17Z",
           "downloadURL": "https://github.com/g8row/PhotosBackup/releases/download/0.3.8/PhotosBackup.ipa",
           "size": 2816914,
           "localizedDescription": "## New\n\n- **Keep Running in Background.** On by default, in **Settings → Background**. While a backup has work iOS won't move on its own, the app keeps itself from being suspended the way SideStore does, by playing silence mixed with whatever else is playing. No permission is needed, and the backup keeps going with the app closed or the phone locked. When the queue is done, after 12 hours, or if iOS interrupts it, it stops and the app sleeps again. If calls or music keep stopping it, switch **Method** to **Location**, which asks for location permission and uses coarse updates instead. ([#2](ht",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.3.7",
-          "date": "2026-09-20T16:10:16Z",
-          "downloadURL": "https://github.com/g8row/PhotosBackup/releases/download/0.3.7/PhotosBackup.ipa",
-          "size": 2716224,
-          "localizedDescription": "## New\n\n- **The Google Photos app now counts what this app backs up.** ([#24](https://github.com/g8row/PhotosBackup/pull/24), thanks @saileshbro) Uploads showed as \"not backed up\" in the Google Photos app, and its own **Free up space** never offered them. It now recognises them, and its **Free up space** and **Delete from device** remove the photos from your iPhone. On one library of about 8,500 items, \"Not backed up\" went from 8,145 to 0 and **Free up space** from 2 items to 461.\n\n  The reason was the version being uploaded. The Google Photos app only counts a photo it can match to the one on",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.3.6",
-          "date": "2026-09-10T14:52:06Z",
-          "downloadURL": "https://github.com/g8row/PhotosBackup/releases/download/0.3.6/PhotosBackup.ipa",
-          "size": 2684374,
-          "localizedDescription": "## New\n\n- **Back Up Photos in Shortcuts (iOS 16+).** ([#7](https://github.com/g8row/PhotosBackup/issues/7)) Add it to a personal automation — when the iPhone connects to power, at a time of day, or when it joins your home Wi-Fi — and set it to run immediately. Each run finds new photos in your selected albums and hands them to iOS to upload in the background. It works with **Automatic Backup** off, so a schedule of your own can replace it ([#14](https://github.com/g8row/PhotosBackup/issues/14)), and it still follows **Use Connection** and **Pause**. **Settings → Shortcuts** shows when it last ",
           "minOSVersion": "15.0"
         }
       ],
@@ -1476,6 +1688,46 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/list.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/area.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/PureLive/images/auth.webp"
+      ]
+    },
+    {
+      "name": "Reloc",
+      "bundleIdentifier": "dev.reloc.ios",
+      "developerName": "Reukix",
+      "subtitle": "面向 iPhone 的外设级定位模拟工具",
+      "localizedDescription": "通过本机回环连接系统的 com.apple.carkit.service 服务，以 iAP2 / MFi-v3 / NMEA 外设身份向系统下发实时坐标。需要外部代理提供指向 10.7.0.1 的本机回环，并先导入配对文件；仅支持 iPhone（iOS 17.0+）。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Reloc/icon.webp",
+      "tintColor": "#3CCCB4",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.4",
+          "date": "2026-11-27T11:22:31Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.4/Reloc.ipa",
+          "size": 3475407,
+          "localizedDescription": "## Reloc v1.0.4\n\n### 更新\n- **正式支持 iPad**：移除原有的仅限 iPhone 限制，现已支持 iPad（iPadOS 17.0+）直接使用，真机实测正常。\n\n---\n\n### What's New\n- **iPad Support**: Removed the iPhone-only restriction — Reloc now supports iPad (iPadOS 17.0+) and has been verified on real iPad hardware.",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.3",
+          "date": "2026-11-27T10:53:45Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.3/Reloc.ipa",
+          "size": 3483270,
+          "localizedDescription": "## Reloc v1.0.3\n\n### 更新\n- **全新模式**：重新实现定位方式，现在无需电脑、无需配对文件，也无需代理、VPN 或依赖 Wi-Fi，**蜂窝网络下同样可以直接使用**，安装后打开即用。\n\n### 新增功能\n- **海拔高度支持**：地图选点、地址搜索或输入坐标时会自动匹配对应地点的真实海拔；底部卡片与状态栏直接显示当前海拔，点击即可手动调整；搜索框支持直接输入 `纬度, 经度, 海拔`；开启自然微漂移时也会同步模拟细微海拔变化。\n- **英文与中文双语支持**：新增完整英文版本，默认跟随系统语言，并可在「设置 → 应用语言 / Language」中即时切换，地名解析也会随当前语言自动适配。\n\n### 优化与稳定性提升\n- **界面精简**：移除了设置页中多余的通道状态区域，操作更简洁。\n- **稳定性增强**：大幅优化运行过程中的连接与保活表现，修复异常频繁重连与后台容易中断的问题，支持中途掉线自动恢复；切换音频设备（如断开蓝牙耳机）时不再影响后台运行。\n\n### 致谢\n感谢 [**huami**](https://github.com/huami1314) 提供的思路。\n\n---\n\n### What's New\n- **New Mode**: Rebuilt for direct on-device use — no computer, pairing f",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.2",
+          "date": "2026-11-26T17:31:32Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.2/Reloc.ipa",
+          "size": 4533520,
+          "localizedDescription": "## What's Changed\n\n### 地图搜索与交互优化\n- 新增基于当前地图视野范围的实时搜索联想（`MKLocalSearchCompleter` + 当前可视区域同步 + 自动回退 `MKLocalSearch`），支持 Apple 地图与纯 WGS-84 全球图源\n- 修复点击搜索框、下拉联想卡片与底部卡片边缘时触摸穿透到底层地图误改定位的问题；搜索态下点击地图先收起键盘/下拉列表\n- 合并 #11 搜索栏键盘避让与布局稳定化修复，补充无结果/网络错误提示，修复 iOS 26/27 SDK 下按钮着色与下拉副标题渲染问题\n- 优化地图重绘性能，消除定位监控每秒触发整页刷新，支持手动坐标范围校验与中文逗号坐标解析\n\n### 定位注入与连接稳定性\n- 优化 NMEA 注入锁定速度（5Hz 初始捕获脉冲、DGPS 质量标志、远距离跳点滤波重置）与停止时高 HDOP 优雅退化恢复\n- 增强回环通道健壮性：`RLTLSSocket.nudge()`、自动 RST 软重连、`waitingSubscription` 订阅看门狗、无损 CoreLocation 唤醒与「精确位置」关闭提醒\n- 音频保活设置实时生效，修复后台任务到期回调隔离问题，并保留意外中断会话恢复记录直到重连成功\n\n### 安全与存储\n- 启用 Lockdown TLS 证书固定（Certificate Pin",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Reloc/images/location.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Reloc/images/pair.webp"
       ]
     },
     {
@@ -1768,247 +2020,6 @@
       "screenshots": [
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.webp"
-      ]
-    },
-    {
-      "name": "Simple Live",
-      "bundleIdentifier": "com.xycz.simple-live",
-      "developerName": "June6699",
-      "subtitle": "多平台直播聚合",
-      "localizedDescription": "Simple Live 把多个直播平台的频道聚到一个 App 里，支持弹幕、画质切换、IPTV 源导入与自定义直播源。Flutter 开发，跨 iOS 与 Android。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.webp",
-      "tintColor": "#C62490",
-      "category": "other",
-      "versions": [
-        {
-          "version": "1.13.3",
-          "date": "2026-11-08T13:17:59Z",
-          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.3/ios_no_sign.ipa",
-          "size": 35414735,
-          "localizedDescription": "# Simple Live v1.13.3 更新速览\r\n\r\n发布日期：2026-10-25\r\n\r\n本版主题：发热优化、Windows 退出修复、桌面端快捷键中文输入法适配、B站弹幕缺失修复与虎牙 4K 断流调查结论。2026-11-01 追加全屏四角时钟（#160），2026-11-02 追加音量增强与音量手势修复（#161），2026-11-03 修复抖音部分房间登录墙导致进不去、关注页刷不出，2026-11-08 追加 iOS 系统画中画、取消关注不再触发全量刷新（#163）与 WebDAV 恢复 500 根因修复（#164）。\r\n\r\n经过19次构建，终于解决了，连media_kit都没解决的iOS PIP问题，在一个PR中，获得了思路，经过一些修复，与我们项目实现了兼容。\r\n\r\n在此，感谢各位提供日志的用户：@laobai95 等等多位用户（请在群内提供git用户名）。\r\n## 省电模式（新增，默认关闭）\r\n\r\n- 针对安卓端观看时发热严重的反馈，新增一键「省电模式」（设置 → 直播间设置 → 播放器，置于首位）：视频缩放降档（均衡 → bilinear、画质 → spline36）、弹幕限 60 帧、关闭弹幕描边、放宽安卓播放检测频率、多开上限 4 个且压至最低清晰度。\r\n- 默认关闭，关闭时所有行为与 v1.13.2 完全一致；打开后进入下一个直播间生效。全端开关一致可见",
-          "minOSVersion": "13.0"
-        },
-        {
-          "version": "1.13.2",
-          "date": "2026-10-20T10:21:52Z",
-          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.2/ios_no_sign.ipa",
-          "size": 35118814,
-          "localizedDescription": "# Simple Live v1.13.2\r\n\r\n发布日期：2026-10-01（2026-10-20 重新构建，版本号不变）\r\n\r\n## 2026-10-22 追加改动\r\n\r\n### Windows 安装包 [Discussion #147](https://github.com/June6699/dart_simple_live/discussions/147)，[PR #148](https://github.com/June6699/dart_simple_live/pull/148)，感谢 @821869798 \r\n\r\n- Windows 端新增官方 Inno Setup 安装包 `SimpleLive-Windows-v1.13.2-Setup.exe`，与原有 zip 绿色版同时提供，按需选择。\r\n- 普通用户免管理员权限即可安装到当前用户目录；以管理员身份运行时安装到 Program Files。\r\n- 自动创建开始菜单快捷方式，桌面快捷方式为可选项；注册 App Paths，支持 `Win+R` 输入 `simplelive` 直接启动。\r\n- 在系统「已安装的应用」中可正常卸载，自动清理安装目录与注册表项。\r\n- 安装包采用 LZMA2 压缩（约 59.7 MB）；安装向导界面为英文。\r\n- 构建侧顺带修复两处问题，保证 Windows 包可持续构建：libmp",
-          "minOSVersion": "13.0"
-        },
-        {
-          "version": "1.13.1",
-          "date": "2026-09-25T06:25:02Z",
-          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.1/ios_no_sign.ipa",
-          "size": 35004780,
-          "localizedDescription": "### 紧急修复\r\n\r\n- 局域网设备同步新增\"同步斗鱼账号\"入口：上一版只做了斗鱼 Cookie 的接收端，发送端缺失，导致该功能实际不可用；本版补齐发送方法与页面入口。\r\n- 修复手机作为接收端缺少 `/sync/account/kuaishou` 路由的问题：此前手机之间互传或反向同步时快手 Cookie 无法接收。\r\n- 远程房间同步（SignalR）新增斗鱼、抖音、快手账号的发送与接收，与哔哩哔哩账号同步并列；配套同步服务器已支持对应事件中继。\r\n- 远程同步服务器默认地址切换为 `wss://june6699.top/sync`：原默认服务器 `sync.furry.mo.cn` 因 TLS 证书问题长期不可用，已迁移并退役；\"自定义地址\"与 Cloudflare Worker 备用线路不受影响。\r\n\r\n\r\n### 0.1、前言\r\n\r\n提前发布，祝大家双节快乐，因为一想到可以给很多宅男宅女们，提供假期更好的直播体验（尤其是斗鱼用户），我就充满了干劲，极致抽空完成更新，应该是最快的斗鱼断流修复分支吧？\r\n\r\n但是由于我一直没出现过斗鱼的这个断流问题，所以加了cookie之后是否能规避，仍需你们自己实测，猜测是斗鱼对于匿名用户的最高画质的限制，普遍出现在十分钟左右。\r\n\r\n### 0.2、文件大小优化\r\n\r\n- 全设备平台的安装包大小优化\r\n\r\n### 1、直播播放与账号\r",
-          "minOSVersion": "13.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/category.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/settings.webp"
-      ]
-    },
-    {
-      "name": "Spotube",
-      "bundleIdentifier": "org.spotube.spotube.Spotube",
-      "developerName": "team-spotube",
-      "subtitle": "开源音乐流媒体",
-      "localizedDescription": "Spotube 是跨平台开源音乐播放器，用 Spotify 的元数据配你自己的音源，通过社区插件扩展音源，界面清爽，支持歌词与下载。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/icon.webp",
-      "tintColor": "#C32C54",
-      "category": "other",
-      "versions": [
-        {
-          "version": "6.0.0",
-          "date": "2026-11-10T03:40:12Z",
-          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v6.0.0/Spotube-ios.ipa",
-          "size": 45020424,
-          "localizedDescription": "## Spotube V6 is here 🎉🚀\r\n\r\n### 🔥Highlights\r\n\r\n- Migration from Flutter to Compose Multiplatform, [learn why we did it](https://spotube.cc/blog/compose-multiplatform-migration/)\r\n- UI redesign, introducing [Millennium](https://github.com/team-spotube/millennium/) UI. 2000s look and feel with 2026's modernity\r\n- Jam sessions, play music with friends and family in sync. Runs on a new dedicated room server, with host-only controls and device bans to keep rooms safe\r\n- Full Android Auto integration. Browse, Library, Search all are there now, not just queue\r\n- iOS now plays audio through VLC, so ev",
-          "minOSVersion": "18.2"
-        },
-        {
-          "version": "5.1.2",
-          "date": "2026-06-05T05:10:18Z",
-          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v5.1.2/Spotube-iOS.ipa",
-          "size": 34853093,
-          "localizedDescription": "### Bug Fixes\r\n\r\n- **newpipe**: Fallback to muxed streams if no audio stream is available\r\n- Dismiss search dropdown and keyboard on submission\r\n- Custom image helper null exception\r\n\r\n**Full Changelog**: https://github.com/KRTirtho/spotube/compare/v5.1.1...v5.1.2",
-          "minOSVersion": "18.2"
-        },
-        {
-          "version": "5.1.1",
-          "date": "2026-02-24T13:15:09Z",
-          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v5.1.1/Spotube-iOS.ipa",
-          "size": 34926819,
-          "localizedDescription": "## v5.1.1\r\n\r\n### Bug Fixes\r\n\r\n- Upgrade NewPipeExtractor to latest version fixing playback issue\r\n- Lyrics not working\r\n\r\n\r\n## What's Changed\r\n* chore: replace windows app icon by a higher resolution by @TobseF in https://github.com/KRTirtho/spotube/pull/2838\r\n\r\n## New Contributors\r\n* @TobseF made their first contribution in https://github.com/KRTirtho/spotube/pull/2838\r\n\r\n**Full Changelog**: https://github.com/KRTirtho/spotube/compare/v5.1.0...v5.1.1",
-          "minOSVersion": "18.2"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-1.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-2.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-3.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-4.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-5.webp"
-      ]
-    },
-    {
-      "name": "Stats",
-      "bundleIdentifier": "com.ishtiaqsyed.StatsForIOS",
-      "developerName": "Ishtiaq Ul Haq Syed",
-      "subtitle": "手机上查看 Mac 状态",
-      "localizedDescription": "通过本地加密连接，在 iPhone 上查看 Mac 的 CPU、内存、网络等系统状态。原生本地优先，配一个轻量 Mac 端和一个手机仪表盘。",
-      "iconURL": "https://raw.githubusercontent.com/ishtiaq156/stats/main/Apps/Mobile/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-      "tintColor": "#34CAA0",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "0.3.18",
-          "date": "2026-11-18T02:58:26Z",
-          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.27/Stats-v0.3.18-iOS.ipa",
-          "size": 2881745,
-          "localizedDescription": "Stats for iPhone 0.3.18 adds interactive one-minute CPU and memory charts to the dashboard.\n\n## What's changed\n\n- Drag across either mini chart to see the sample's time and percentage. Light haptics follow the in-app setting.\n- The CPU chart adjusts its percentage scale to make small changes easier to see. The memory chart shows usage, with memory pressure shown separately.\n- The Mac card keeps the last update time and opens About This Mac when tapped. The dashboard refreshes automatically.\n\n## Download\n\n**Stats for iPhone 0.3.18 (build 21)** requires iOS 17 or later. The arm64 IPA is unsigned",
-          "minOSVersion": "17.0",
-          "buildVersion": "21",
-          "buildNumber": "21"
-        },
-        {
-          "version": "0.3.17",
-          "date": "2026-11-18T00:25:30Z",
-          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.26/Stats-v0.3.17-iOS.ipa",
-          "size": 2861581,
-          "localizedDescription": "Stats for iPhone 0.3.17 makes the Mac device card more compact and adds a manual refresh.\n\n## What's changed\n\n- See more live metrics sooner with the shorter Mac card. The card keeps the device render, Mac name, chip, connection status, and alerts.\n- Tap the Mac card to open About This Mac. It is still available in Dashboard Settings.\n- Tap the refresh icon to request a new snapshot, recent history, and updated Mac details.\n\n## Download\n\n**Stats for iPhone 0.3.17 (build 20)** requires iOS 17 or later. The arm64 IPA is unsigned for AltStore, SideStore, and LiveContainer.\n\n**SHA-256** f9b77cb1a4",
-          "minOSVersion": "17.0",
-          "buildVersion": "20",
-          "buildNumber": "20"
-        },
-        {
-          "version": "0.3.16",
-          "date": "2026-11-17T23:55:32Z",
-          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.25/Stats-v0.3.16-iOS.ipa",
-          "size": 2847721,
-          "localizedDescription": "Stats for iPhone 0.3.16 introduces a redesigned dashboard for your paired Mac.\n\n## What's changed\n\n- See your Mac's model, connection status, last update, and low-storage or memory-pressure warnings at a glance.\n- Follow one-minute CPU and memory trends, with temperatures and memory pressure when available.\n- Check remaining disk space, download and upload rates, and measured network latency from the overview.\n- Open any card for its detailed metrics. The dashboard supports light mode, dark mode, and larger text.\n\n## Download\n\n**Stats for iPhone 0.3.16 (build 19)** requires iOS 17 or later. Th",
-          "minOSVersion": "17.0",
-          "buildVersion": "19",
-          "buildNumber": "19"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "Allow nearby device support. Stats currently connects to your Mac over your local network.",
-          "NSLocalNetworkUsageDescription": "Find Stats Companion on your local network and connect to your Mac."
-        }
-      }
-    },
-    {
-      "name": "StikDebug",
-      "bundleIdentifier": "com.stik.stikdebug",
-      "developerName": "StikDebug",
-      "subtitle": "设备内调试器与 JIT 工具",
-      "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.webp",
-      "tintColor": "#58D32B",
-      "category": "other",
-      "versions": [
-        {
-          "version": "3.2.2",
-          "date": "2026-11-08T22:05:57Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
-          "size": 16924687,
-          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "3.2.1",
-          "date": "2026-11-07T05:15:03Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
-          "size": 16924629,
-          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
-          "minOSVersion": "17.4"
-        },
-        {
-          "version": "3.2.0",
-          "date": "2026-10-30T03:02:00Z",
-          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
-          "size": 16818331,
-          "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n*",
-          "minOSVersion": "17.4"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.webp"
-      ]
-    },
-    {
-      "name": "Swipt",
-      "bundleIdentifier": "io.nekohasekai.swipt",
-      "developerName": "nekohasekai",
-      "subtitle": "用 JS 自动化操作设备",
-      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
-      "tintColor": "#2ED5B7",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "date": "2026-11-25T14:04:10Z",
-          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
-          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48264471,
-          "minOSVersion": "16.4"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
-      ]
-    },
-    {
-      "name": "TDrive",
-      "bundleIdentifier": "com.jeetraj.tdrive",
-      "developerName": "ndgthuan",
-      "subtitle": "把 Telegram 变成网盘",
-      "localizedDescription": "TDrive 把 Telegram 的私有存储变成一个可以浏览、搜索、预览、分享与挂载的云盘，不限速也不占本地空间。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/icon.webp",
-      "tintColor": "#52C731",
-      "category": "other",
-      "versions": [
-        {
-          "version": "3.1.9",
-          "date": "2026-11-02T07:08:10Z",
-          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.9/TDrive-v3.1.9-ios-unsigned.ipa",
-          "size": 36249723,
-          "localizedDescription": "# TDrive v3.1.9\n\nThis release changes how Android folder import handles a file that already\nexists on the drive under the same name. Instead of skipping or renaming it\nsilently, TDrive asks what to do. It also creates the folder you picked even\nwhen that folder is empty. Bản phát hành này thay đổi cách nhập thư mục trên\nAndroid khi một tệp đã có trên drive với cùng tên. Thay vì bỏ qua hoặc đổi tên\nâm thầm, TDrive sẽ hỏi bạn muốn làm gì. Thư mục bạn chọn cũng được tạo ngay cả\nkhi thư mục đó trống.\n\n## Highlights\n\n- Same name, different size: before anything is sent, TDrive asks whether to\n  Rep",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "3.1.8",
-          "date": "2026-11-01T07:48:12Z",
-          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.8/TDrive-v3.1.8-ios-unsigned.ipa",
-          "size": 36238785,
-          "localizedDescription": "# TDrive v3.1.8\n\nThis release makes Android folder import safe to repeat. Importing a folder\nagain no longer uploads files that are already on the drive, existing folders\nare reused instead of creating `Folder (1)` copies, and failed files are listed\nin full so you can retry them. v3.1.8 also includes everything planned for 3.1.7 (3.1.7 was never published). Bản phát hành này giúp việc nhập thư mục trên\nAndroid an toàn khi làm lại nhiều lần. Nhập lại một thư mục sẽ không tải lên\nnhững tệp đã có trên drive, các thư mục đã có sẽ được dùng lại thay vì tạo\n`Folder (1)`, và các tệp lỗi được liệt kê",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "3.1.6",
-          "date": "2026-10-31T14:48:52Z",
-          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.6/TDrive-v3.1.6-ios-unsigned.ipa",
-          "size": 36214191,
-          "localizedDescription": "# TDrive v3.1.6\n\nThis release fixes the first-run \"Choose your TDrive\" lookup failing with\n\"dialog paging did not advance\" for accounts that have an empty chat at the\nend of a page of chats. This was a regression in v3.1.5. Bản phát hành này sửa\nlỗi bước \"Chọn TDrive của bạn\" khi chạy lần đầu bị báo \"dialog paging did not\nadvance\" với các tài khoản có một chat trống ở cuối trang danh sách chat. Đây\nlà lỗi hồi quy trong v3.1.5.\n\n## Highlights\n\n- First run: \"Choose your TDrive\" no longer fails with \"dialog paging did not\n  advance\" when the last chat on a page has no messages. This was a regress",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_01_home_drive_switcher.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_02_home_shared_drives.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_03_account_folder.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_04_account_drives.webp"
       ]
     }
   ],

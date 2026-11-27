@@ -1,19 +1,260 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 3 个（19 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 3 个（25 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
-    "com.infinityf4p.TiebaPure",
-    "com.suwayomi.tachideskSorayomi",
-    "com.twindesk.ios",
-    "com.utmapp.UTM",
-    "com.utmapp.UTM-SE"
+    "com.xycz.simple-live",
+    "org.spotube.spotube.Spotube",
+    "com.ishtiaqsyed.StatsForIOS",
+    "com.stik.stikdebug",
+    "io.nekohasekai.swipt"
   ],
   "apps": [
+    {
+      "name": "Simple Live",
+      "bundleIdentifier": "com.xycz.simple-live",
+      "developerName": "June6699",
+      "subtitle": "多平台直播聚合",
+      "localizedDescription": "Simple Live 把多个直播平台的频道聚到一个 App 里，支持弹幕、画质切换、IPTV 源导入与自定义直播源。Flutter 开发，跨 iOS 与 Android。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/icon.webp",
+      "tintColor": "#C62490",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.13.3",
+          "date": "2026-11-08T13:17:59Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.3/ios_no_sign.ipa",
+          "size": 35414735,
+          "localizedDescription": "# Simple Live v1.13.3 更新速览\r\n\r\n发布日期：2026-10-25\r\n\r\n本版主题：发热优化、Windows 退出修复、桌面端快捷键中文输入法适配、B站弹幕缺失修复与虎牙 4K 断流调查结论。2026-11-01 追加全屏四角时钟（#160），2026-11-02 追加音量增强与音量手势修复（#161），2026-11-03 修复抖音部分房间登录墙导致进不去、关注页刷不出，2026-11-08 追加 iOS 系统画中画、取消关注不再触发全量刷新（#163）与 WebDAV 恢复 500 根因修复（#164）。\r\n\r\n经过19次构建，终于解决了，连media_kit都没解决的iOS PIP问题，在一个PR中，获得了思路，经过一些修复，与我们项目实现了兼容。\r\n\r\n在此，感谢各位提供日志的用户：@laobai95 等等多位用户（请在群内提供git用户名）。\r\n## 省电模式（新增，默认关闭）\r\n\r\n- 针对安卓端观看时发热严重的反馈，新增一键「省电模式」（设置 → 直播间设置 → 播放器，置于首位）：视频缩放降档（均衡 → bilinear、画质 → spline36）、弹幕限 60 帧、关闭弹幕描边、放宽安卓播放检测频率、多开上限 4 个且压至最低清晰度。\r\n- 默认关闭，关闭时所有行为与 v1.13.2 完全一致；打开后进入下一个直播间生效。全端开关一致可见",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.13.2",
+          "date": "2026-10-20T10:21:52Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.2/ios_no_sign.ipa",
+          "size": 35118814,
+          "localizedDescription": "# Simple Live v1.13.2\r\n\r\n发布日期：2026-10-01（2026-10-20 重新构建，版本号不变）\r\n\r\n## 2026-10-22 追加改动\r\n\r\n### Windows 安装包 [Discussion #147](https://github.com/June6699/dart_simple_live/discussions/147)，[PR #148](https://github.com/June6699/dart_simple_live/pull/148)，感谢 @821869798 \r\n\r\n- Windows 端新增官方 Inno Setup 安装包 `SimpleLive-Windows-v1.13.2-Setup.exe`，与原有 zip 绿色版同时提供，按需选择。\r\n- 普通用户免管理员权限即可安装到当前用户目录；以管理员身份运行时安装到 Program Files。\r\n- 自动创建开始菜单快捷方式，桌面快捷方式为可选项；注册 App Paths，支持 `Win+R` 输入 `simplelive` 直接启动。\r\n- 在系统「已安装的应用」中可正常卸载，自动清理安装目录与注册表项。\r\n- 安装包采用 LZMA2 压缩（约 59.7 MB）；安装向导界面为英文。\r\n- 构建侧顺带修复两处问题，保证 Windows 包可持续构建：libmp",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.13.1",
+          "date": "2026-09-25T06:25:02Z",
+          "downloadURL": "https://github.com/June6699/dart_simple_live/releases/download/v1.13.1/ios_no_sign.ipa",
+          "size": 35004780,
+          "localizedDescription": "### 紧急修复\r\n\r\n- 局域网设备同步新增\"同步斗鱼账号\"入口：上一版只做了斗鱼 Cookie 的接收端，发送端缺失，导致该功能实际不可用；本版补齐发送方法与页面入口。\r\n- 修复手机作为接收端缺少 `/sync/account/kuaishou` 路由的问题：此前手机之间互传或反向同步时快手 Cookie 无法接收。\r\n- 远程房间同步（SignalR）新增斗鱼、抖音、快手账号的发送与接收，与哔哩哔哩账号同步并列；配套同步服务器已支持对应事件中继。\r\n- 远程同步服务器默认地址切换为 `wss://june6699.top/sync`：原默认服务器 `sync.furry.mo.cn` 因 TLS 证书问题长期不可用，已迁移并退役；\"自定义地址\"与 Cloudflare Worker 备用线路不受影响。\r\n\r\n\r\n### 0.1、前言\r\n\r\n提前发布，祝大家双节快乐，因为一想到可以给很多宅男宅女们，提供假期更好的直播体验（尤其是斗鱼用户），我就充满了干劲，极致抽空完成更新，应该是最快的斗鱼断流修复分支吧？\r\n\r\n但是由于我一直没出现过斗鱼的这个断流问题，所以加了cookie之后是否能规避，仍需你们自己实测，猜测是斗鱼对于匿名用户的最高画质的限制，普遍出现在十分钟左右。\r\n\r\n### 0.2、文件大小优化\r\n\r\n- 全设备平台的安装包大小优化\r\n\r\n### 1、直播播放与账号\r",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/category.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SimpleLive/images/settings.webp"
+      ]
+    },
+    {
+      "name": "Spotube",
+      "bundleIdentifier": "org.spotube.spotube.Spotube",
+      "developerName": "team-spotube",
+      "subtitle": "开源音乐流媒体",
+      "localizedDescription": "Spotube 是跨平台开源音乐播放器，用 Spotify 的元数据配你自己的音源，通过社区插件扩展音源，界面清爽，支持歌词与下载。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/icon.webp",
+      "tintColor": "#C32C54",
+      "category": "other",
+      "versions": [
+        {
+          "version": "6.0.0",
+          "date": "2026-11-10T03:40:12Z",
+          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v6.0.0/Spotube-ios.ipa",
+          "size": 45020424,
+          "localizedDescription": "## Spotube V6 is here 🎉🚀\r\n\r\n### 🔥Highlights\r\n\r\n- Migration from Flutter to Compose Multiplatform, [learn why we did it](https://spotube.cc/blog/compose-multiplatform-migration/)\r\n- UI redesign, introducing [Millennium](https://github.com/team-spotube/millennium/) UI. 2000s look and feel with 2026's modernity\r\n- Jam sessions, play music with friends and family in sync. Runs on a new dedicated room server, with host-only controls and device bans to keep rooms safe\r\n- Full Android Auto integration. Browse, Library, Search all are there now, not just queue\r\n- iOS now plays audio through VLC, so ev",
+          "minOSVersion": "18.2"
+        },
+        {
+          "version": "5.1.2",
+          "date": "2026-06-05T05:10:18Z",
+          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v5.1.2/Spotube-iOS.ipa",
+          "size": 34853093,
+          "localizedDescription": "### Bug Fixes\r\n\r\n- **newpipe**: Fallback to muxed streams if no audio stream is available\r\n- Dismiss search dropdown and keyboard on submission\r\n- Custom image helper null exception\r\n\r\n**Full Changelog**: https://github.com/KRTirtho/spotube/compare/v5.1.1...v5.1.2",
+          "minOSVersion": "18.2"
+        },
+        {
+          "version": "5.1.1",
+          "date": "2026-02-24T13:15:09Z",
+          "downloadURL": "https://github.com/team-spotube/spotube/releases/download/v5.1.1/Spotube-iOS.ipa",
+          "size": 34926819,
+          "localizedDescription": "## v5.1.1\r\n\r\n### Bug Fixes\r\n\r\n- Upgrade NewPipeExtractor to latest version fixing playback issue\r\n- Lyrics not working\r\n\r\n\r\n## What's Changed\r\n* chore: replace windows app icon by a higher resolution by @TobseF in https://github.com/KRTirtho/spotube/pull/2838\r\n\r\n## New Contributors\r\n* @TobseF made their first contribution in https://github.com/KRTirtho/spotube/pull/2838\r\n\r\n**Full Changelog**: https://github.com/KRTirtho/spotube/compare/v5.1.0...v5.1.1",
+          "minOSVersion": "18.2"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-1.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-2.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-3.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-4.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Spotube/images/phone-5.webp"
+      ]
+    },
+    {
+      "name": "Stats",
+      "bundleIdentifier": "com.ishtiaqsyed.StatsForIOS",
+      "developerName": "Ishtiaq Ul Haq Syed",
+      "subtitle": "手机上查看 Mac 状态",
+      "localizedDescription": "通过本地加密连接，在 iPhone 上查看 Mac 的 CPU、内存、网络等系统状态。原生本地优先，配一个轻量 Mac 端和一个手机仪表盘。",
+      "iconURL": "https://raw.githubusercontent.com/ishtiaq156/stats/main/Apps/Mobile/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "tintColor": "#34CAA0",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.3.18",
+          "date": "2026-11-18T02:58:26Z",
+          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.27/Stats-v0.3.18-iOS.ipa",
+          "size": 2881745,
+          "localizedDescription": "Stats for iPhone 0.3.18 adds interactive one-minute CPU and memory charts to the dashboard.\n\n## What's changed\n\n- Drag across either mini chart to see the sample's time and percentage. Light haptics follow the in-app setting.\n- The CPU chart adjusts its percentage scale to make small changes easier to see. The memory chart shows usage, with memory pressure shown separately.\n- The Mac card keeps the last update time and opens About This Mac when tapped. The dashboard refreshes automatically.\n\n## Download\n\n**Stats for iPhone 0.3.18 (build 21)** requires iOS 17 or later. The arm64 IPA is unsigned",
+          "minOSVersion": "17.0",
+          "buildVersion": "21",
+          "buildNumber": "21"
+        },
+        {
+          "version": "0.3.17",
+          "date": "2026-11-18T00:25:30Z",
+          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.26/Stats-v0.3.17-iOS.ipa",
+          "size": 2861581,
+          "localizedDescription": "Stats for iPhone 0.3.17 makes the Mac device card more compact and adds a manual refresh.\n\n## What's changed\n\n- See more live metrics sooner with the shorter Mac card. The card keeps the device render, Mac name, chip, connection status, and alerts.\n- Tap the Mac card to open About This Mac. It is still available in Dashboard Settings.\n- Tap the refresh icon to request a new snapshot, recent history, and updated Mac details.\n\n## Download\n\n**Stats for iPhone 0.3.17 (build 20)** requires iOS 17 or later. The arm64 IPA is unsigned for AltStore, SideStore, and LiveContainer.\n\n**SHA-256** f9b77cb1a4",
+          "minOSVersion": "17.0",
+          "buildVersion": "20",
+          "buildNumber": "20"
+        },
+        {
+          "version": "0.3.16",
+          "date": "2026-11-17T23:55:32Z",
+          "downloadURL": "https://github.com/ishtiaq156/stats/releases/download/v0.3.25/Stats-v0.3.16-iOS.ipa",
+          "size": 2847721,
+          "localizedDescription": "Stats for iPhone 0.3.16 introduces a redesigned dashboard for your paired Mac.\n\n## What's changed\n\n- See your Mac's model, connection status, last update, and low-storage or memory-pressure warnings at a glance.\n- Follow one-minute CPU and memory trends, with temperatures and memory pressure when available.\n- Check remaining disk space, download and upload rates, and measured network latency from the overview.\n- Open any card for its detailed metrics. The dashboard supports light mode, dark mode, and larger text.\n\n## Download\n\n**Stats for iPhone 0.3.16 (build 19)** requires iOS 17 or later. Th",
+          "minOSVersion": "17.0",
+          "buildVersion": "19",
+          "buildNumber": "19"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Allow nearby device support. Stats currently connects to your Mac over your local network.",
+          "NSLocalNetworkUsageDescription": "Find Stats Companion on your local network and connect to your Mac."
+        }
+      }
+    },
+    {
+      "name": "StikDebug",
+      "bundleIdentifier": "com.stik.stikdebug",
+      "developerName": "StikDebug",
+      "subtitle": "设备内调试器与 JIT 工具",
+      "localizedDescription": "基于 idevice 的设备内调试器与开发者工具箱，适用于 iOS 17.4 以上。注意需要 LocalDevVPN，且不能在 LiveContainer 内部给同一个 LiveContainer 开 JIT。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/icon.webp",
+      "tintColor": "#58D32B",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.2.2",
+          "date": "2026-11-08T22:05:57Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
+          "size": 16924687,
+          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "3.2.1",
+          "date": "2026-11-07T05:15:03Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
+          "size": 16924629,
+          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "3.2.0",
+          "date": "2026-10-30T03:02:00Z",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
+          "size": 16818331,
+          "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n*",
+          "minOSVersion": "17.4"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/scripts.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/StikDebug/images/settings.webp"
+      ]
+    },
+    {
+      "name": "Swipt",
+      "bundleIdentifier": "io.nekohasekai.swipt",
+      "developerName": "nekohasekai",
+      "subtitle": "用 JS 自动化操作设备",
+      "localizedDescription": "用 JavaScript 编写的 swiplet 脚本，自动化操作 iPhone 或 iPad。上游只提供 nightly 预发布构建，版本每日更新。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/icon.webp",
+      "tintColor": "#2ED5B7",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-25T14:04:10Z",
+          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
+          "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
+          "size": 48264471,
+          "minOSVersion": "16.4"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/swiplets.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/developer.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Swipt/images/pair.webp"
+      ]
+    },
+    {
+      "name": "TDrive",
+      "bundleIdentifier": "com.jeetraj.tdrive",
+      "developerName": "ndgthuan",
+      "subtitle": "把 Telegram 变成网盘",
+      "localizedDescription": "TDrive 把 Telegram 的私有存储变成一个可以浏览、搜索、预览、分享与挂载的云盘，不限速也不占本地空间。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/icon.webp",
+      "tintColor": "#52C731",
+      "category": "other",
+      "versions": [
+        {
+          "version": "3.1.9",
+          "date": "2026-11-02T07:08:10Z",
+          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.9/TDrive-v3.1.9-ios-unsigned.ipa",
+          "size": 36249723,
+          "localizedDescription": "# TDrive v3.1.9\n\nThis release changes how Android folder import handles a file that already\nexists on the drive under the same name. Instead of skipping or renaming it\nsilently, TDrive asks what to do. It also creates the folder you picked even\nwhen that folder is empty. Bản phát hành này thay đổi cách nhập thư mục trên\nAndroid khi một tệp đã có trên drive với cùng tên. Thay vì bỏ qua hoặc đổi tên\nâm thầm, TDrive sẽ hỏi bạn muốn làm gì. Thư mục bạn chọn cũng được tạo ngay cả\nkhi thư mục đó trống.\n\n## Highlights\n\n- Same name, different size: before anything is sent, TDrive asks whether to\n  Rep",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "3.1.8",
+          "date": "2026-11-01T07:48:12Z",
+          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.8/TDrive-v3.1.8-ios-unsigned.ipa",
+          "size": 36238785,
+          "localizedDescription": "# TDrive v3.1.8\n\nThis release makes Android folder import safe to repeat. Importing a folder\nagain no longer uploads files that are already on the drive, existing folders\nare reused instead of creating `Folder (1)` copies, and failed files are listed\nin full so you can retry them. v3.1.8 also includes everything planned for 3.1.7 (3.1.7 was never published). Bản phát hành này giúp việc nhập thư mục trên\nAndroid an toàn khi làm lại nhiều lần. Nhập lại một thư mục sẽ không tải lên\nnhững tệp đã có trên drive, các thư mục đã có sẽ được dùng lại thay vì tạo\n`Folder (1)`, và các tệp lỗi được liệt kê",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "3.1.6",
+          "date": "2026-10-31T14:48:52Z",
+          "downloadURL": "https://github.com/ndgthuan/tdrive/releases/download/v3.1.6/TDrive-v3.1.6-ios-unsigned.ipa",
+          "size": 36214191,
+          "localizedDescription": "# TDrive v3.1.6\n\nThis release fixes the first-run \"Choose your TDrive\" lookup failing with\n\"dialog paging did not advance\" for accounts that have an empty chat at the\nend of a page of chats. This was a regression in v3.1.5. Bản phát hành này sửa\nlỗi bước \"Chọn TDrive của bạn\" khi chạy lần đầu bị báo \"dialog paging did not\nadvance\" với các tài khoản có một chat trống ở cuối trang danh sách chat. Đây\nlà lỗi hồi quy trong v3.1.5.\n\n## Highlights\n\n- First run: \"Choose your TDrive\" no longer fails with \"dialog paging did not\n  advance\" when the last chat on a page has no messages. This was a regress",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_01_home_drive_switcher.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_02_home_shared_drives.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_03_account_folder.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/TDrive/images/shared_04_account_drives.webp"
+      ]
+    },
     {
       "name": "TiebaPure",
       "bundleIdentifier": "com.infinityf4p.TiebaPure",

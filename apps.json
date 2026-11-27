@@ -1,17 +1,17 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 119 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#6B4EFF",
   "featuredApps": [
     "com.qingtang.3106",
+    "dev.huichen.atlas",
     "com.aether.ps4ios",
     "app.aidoku.Aidoku",
-    "com.mak5er.aircard",
-    "ani.baka"
+    "com.mak5er.aircard"
   ],
   "apps": [
     {
@@ -34,6 +34,45 @@
           "minOSVersion": "17.0",
           "buildNumber": "25"
         }
+      ]
+    },
+    {
+      "name": "Account Atlas",
+      "bundleIdentifier": "dev.huichen.atlas",
+      "developerName": "Ckxkx",
+      "subtitle": "记录邮箱和手机号绑定的各类账号",
+      "localizedDescription": "记录每个邮箱、手机号注册或绑定了哪些网站和 App。支持卡包视图、关系图、隐私打码与可选的端到端加密同步，数据默认仅保存在本地。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AccountAtlas/icon.webp",
+      "tintColor": "#672CB8",
+      "category": "other",
+      "versions": [
+        {
+          "version": "2.5",
+          "date": "2026-11-27T07:11:04Z",
+          "downloadURL": "https://github.com/Ckxkx/account-atlas/releases/download/v2.5/Atlas.ipa",
+          "size": 4468980,
+          "localizedDescription": "## 更新内容\n\n- version.json：2.5 更新说明\n- 编辑 App：更换图标菜单加入「从 App Store 搜索」（iOS / 安卓 / 网页）。打开即用当前名称搜索，改名后防抖再搜；点结果立刻显示图标，并按添加流程下载、缩成 128px 保存；取消不改动；没有结果显示「没有找到」，断网显示「网络不可用」；图标下载中暂不能保存，下载失败保留原图标\n- 安卓：弹出页上滑时不画阴影（整屏圆角层的 20dp 阴影每帧重算），停稳后随玻璃一起淡入\n- iOS：切回「全部 App」时分类标签仍会闪成灰白块（录屏确认是页面已显示后玻璃重新生成），未选中标签改用平面玻璃底色、不再用实时 glassEffect；同时恢复 fad995e（关系图页切换主题用定格位图，之前误以为是它导致闪烁而撤回）\n- 安卓：弹出页上滑一直有点卡（液态玻璃之前就有）。加入 profileinstaller，安装时就装好 Compose / Material3 自带的 baseline profile；蓝奏云侧载的 APK 拿不到 Play 的云端配置，之前 Compose 长期以解释 / JIT 运行\n- 安卓：弹出页上滑卡顿（滑动时每帧都对整屏背景重新模糊 + 透镜着色器）。弹出页移动 / 拖动时先用不透明底色，停稳后 0.22 秒淡入液态玻璃；标签栏不变\n- 撤回 fad995e：drawHie",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "2.4",
+          "date": "2026-11-26T04:38:00Z",
+          "downloadURL": "https://github.com/Ckxkx/account-atlas/releases/download/v2.4/Atlas.ipa",
+          "size": 4351784,
+          "localizedDescription": "## 更新内容\n\n- 安卓：QQ 图标改用和网页同一个企鹅轮廓（之前画出来像一条鱼）\n- 软件更新页（iOS / 安卓）：打开即检查，显示当前版本、更新日志和去下载，自动检查更新开关移入；检查失败不计入每日一次；关系图删除后立即一致（不再残留焦点 / 节点状态）\n- 检查更新：iOS / 安卓发现新版本时弹窗（version.json 随网页发布、发版时自动更新）；「更多」里加入源代码 / GitHub 仓库\n- 2.6 iOS：设置页拆成几部分，修复编译器类型检查超时\n- 2.6 安全：应用锁（iOS / Android）、导出前验证、备份密码加密（三端通用）\n- 2.5：成人 App 过滤、复制账号、自动绑定、示例数据不覆盖、操作演示、QQ 多绑定、两级隐藏、分享星图\n- 2.4 登录重构：登录是 App 和身份之间的连线；Apple ID 改为邮箱/手机号上的标记；先选 App 再选身份；关系图每个号一个节点；重复身份一次性确认合并\n\n## 下载\n\n- **Atlas.apk**：安卓（Android 8.0+），直接安装；覆盖安装，数据保留。\n- **Atlas.ipa**：iPhone（iOS 17+），未签名，用 SideStore / 爱思助手 / Sideloadly / 全能签自签后安装。\n- 网页版：https://huichen.dev/account-atl",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "2.3.3",
+          "date": "2026-11-24T08:28:24Z",
+          "downloadURL": "https://github.com/Ckxkx/account-atlas/releases/download/v2.3.3/Atlas.ipa",
+          "size": 4070418,
+          "localizedDescription": "## 更新内容\n\n- 小提示只显示一句文字，不带任何邮箱/手机号/名称，也不带按钮 (#8)\n\n## 下载\n\n- **Atlas.apk**：安卓（Android 8.0+），直接安装；覆盖安装，数据保留。\n- **Atlas.ipa**：iPhone（iOS 17+），未签名，用 SideStore / 爱思助手 / Sideloadly / 全能签自签后安装。\n- 网页版：https://huichen.dev/account-atlas/\n\n完整改动：https://github.com/Ckxkx/account-atlas/compare/v2.3.2...v2.3.3",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/AccountAtlas/images/wallet.webp"
       ]
     },
     {
@@ -814,13 +853,13 @@
     },
     {
       "name": "cilicili",
-      "bundleIdentifier": "cc.bili",
+      "bundleIdentifier": "com.rayc.cilicili",
       "developerName": "Rone89",
-      "subtitle": "哔哩哔哩第三方客户端",
-      "localizedDescription": "cilicili 是用 SwiftUI 写的 B 站第三方客户端，支持首页推荐、搜索、UP 主空间、动态流、视频详情与弹幕，可评论、点赞、投币、收藏、分享。播放基于 AVPlayer 的 HLS 链路，针对 iOS 26+ 的 HEVC 硬解做了优化；支持弹幕开关与样式设置、关键词过滤、图片大图预览。登录支持扫码和网页两种方式，登录态只存在本机钥匙串。注意：需要 iOS 26.1 及以上。",
-      "iconURL": "https://raw.githubusercontent.com/Rone89/cilicili/main/bili/Assets.xcassets/AppIcon.appiconset/cilicili-icon.png",
-      "tintColor": "#A5BB2A",
-      "category": "entertainment",
+      "subtitle": "使用 SwiftUI 开发的哔哩哔哩第三方客户端",
+      "localizedDescription": "使用 SwiftUI 开发的第三方 iOS 客户端实验项目，重点探索更轻量的 B 站浏览、动态、视频播放和弹幕体验。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/cilicili/icon.webp",
+      "tintColor": "#6BB828",
+      "category": "other",
       "versions": [
         {
           "version": "1.1.8",
@@ -846,6 +885,10 @@
           "localizedDescription": "## 更新内容（1.1.5 → 1.1.6）\n\n• **原生播放底层转正与手感优化**：正式采用系统原生 `AVPlayerViewController` 底座配合通透液态玻璃自绘控件，优化横向滑动调进度响应与松手出帧速度，统一手动全屏、重力横屏与系统画中画衔接体验。\n• **弹幕架构收敛与旋转稳定性修复**：点播由原生 `AVSynchronizedLayer` 同步驱动、直播由 `Metal` 渲染并彻底移除第三方 `DanmakuKit` 依赖；解决横竖屏旋转时弹幕闪烁、位置偏移与清晰度切换闪退问题，新增大会员渐变彩色弹幕及「同屏弹幕上限」设置。\n• **杜比视界与 HDR 播放精简**：移除旧版「杜比视界渲染」开关与双层叠加播放器，统一交由系统原生高动态范围输出配合内置防过曝兼容处理，避免额外功耗与画中画/全屏割裂。\n• **底栏动效与评论弹窗细节**：彻底修复二级页面返回一级页面时底部 TabBar 闪现及滚动最小化失效问题；新增「评论弹窗不展开到最大高度」开关，保持更舒适的阅读视野。\n\n--------\n\n安装说明：附件为未签名 IPA（`1.1.6` Build `218`），需自行签名后安装。",
           "minOSVersion": "26.1"
         }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/cilicili/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/cilicili/images/play.webp"
       ]
     },
     {
@@ -887,6 +930,47 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/analysis.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/download.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/my.webp"
+      ]
+    },
+    {
+      "name": "CoolapkDesktop",
+      "bundleIdentifier": "com.coolapk.desktop",
+      "developerName": "coolapk-desktop",
+      "subtitle": "非官方酷安第三方客户端",
+      "localizedDescription": "基于 Tauri 2、Vue 3 和 Rust 的非官方酷安第三方客户端，支持浏览动态、搜索、收藏、私信等功能。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/CoolapkDesktop/icon.webp",
+      "tintColor": "#2A4CBB",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.48.0",
+          "date": "2026-11-24T03:05:28Z",
+          "downloadURL": "https://github.com/coolapk-desktop/coolapk-desktop/releases/download/v1.48.0/coolapk-v1.48.0-ios-arm64-unsigned.ipa",
+          "size": 8935653,
+          "localizedDescription": "# v1.48.0 更新日志\r\n\r\n比较范围 `v1.47.0 → v1.48.0`\r\n\r\n## 新增\r\n\r\n- 首页支持用 `H` 和 `L` 向前、向后循环切换栏目。\r\n- 外观设置新增三个选项，可居中对齐头条快捷入口和关注分组、隐藏头条快捷入口，以及隐藏页面滚动条。\r\n\r\n## 优化\r\n\r\n- 精简桌面侧栏和窄屏快捷菜单，版本信息、检查更新和反馈可在「关于酷安」查看。\r\n- 开启自动数盟设备 ID 后，启动时会为缺少设备 ID 的当前账号自动获取并保存。\r\n\r\n## 修复\r\n\r\n- 修复快速拖动窗口时首页栏目横向抖动、侧栏反复切换以及窗口边缘闪黑的问题。\r\n- 修复窗口较矮时设置菜单底部条目被裁切的问题，并自动将当前栏目滚动到可见位置。\r\n- 修复移动端打开动态图片时画面跳动的问题。\r\n- 修复部分 H.264 实况照片能在悬停预览播放、打开大图却误报「不支持」的问题。",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.47.0",
+          "date": "2026-11-19T12:46:12Z",
+          "downloadURL": "https://github.com/coolapk-desktop/coolapk-desktop/releases/download/v1.47.0/coolapk-v1.47.0-ios-arm64-unsigned.ipa",
+          "size": 8935577,
+          "localizedDescription": "# v1.47.0\r\n比较范围：v1.46.1 → v1.47.0\r\n\r\n## 新增\r\n- 新增“流体容器”和“官方原生”页面动效选项，支持卡片展开收起、页面切换和图片查看过渡。\r\n- 移动端新增屏幕边缘滑动返回手势。\r\n- 支持按 1 小时、8 小时、1 天或 3 天忽略点赞通知提醒。\r\n- 评论支持通过右键或长按菜单点赞。\r\n\r\n## 优化\r\n- 调整移动端栏目布局、滚动收起效果和评论排序栏的窄屏排列。\r\n- 增强动态详情吸顶区域的透明度梯度，去掉底部渐隐遮罩，并在操作栏收起后回收额外留白。\r\n- 调整页面切换、瀑布流排版、图片查看和更新下载弹窗的显示效果。\r\n- 移动端楼中楼点赞操作统一收进长按菜单。\r\n\r\n## 修复\r\n- 修复右侧评论栏表情面板显示空白的问题。\r\n- 修复通知回复正文包含小于号时被截断的问题。\r\n- 修复从动态详情、用户资料页返回首页时的滚动位置跳动。\r\n- 修复打开图片时画面跳动，以及窄屏下图片查看尺寸变化和等待状态清理问题。\r\n- 修复 Android 圆角屏、沉浸式详情和图片查看的布局问题。\r\n- 修复动态举报的会话校验与客户端指纹不匹配问题。\r\n- 修复通知菜单被右侧边界遮挡的问题。",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.46.1",
+          "date": "2026-11-16T02:30:19Z",
+          "downloadURL": "https://github.com/coolapk-desktop/coolapk-desktop/releases/download/v1.46.1/coolapk-v1.46.1-ios-arm64-unsigned.ipa",
+          "size": 8903405,
+          "localizedDescription": "## v1.46.1 更新日志\r\n\r\n比较范围：v1.46.0 → v1.46.1\r\n\r\n### 新增\r\n\r\n- 关注和粉丝列表支持按昵称、UID 或简介搜索，并自动加载后续页面查找匹配用户。\r\n\r\n### 优化\r\n\r\n- 关闭桌面通知时，更新包下载完成后会在安装弹窗中提示，并提供通知设置入口。\r\n- 调整桌面网页版侧栏的头像和资料入口，为搜索按钮补充文字，并简化日间与夜间模式的切换文案。\r\n\r\n### 修复\r\n\r\n- 修复点击评论或楼中楼回复时，鼠标轻微移动产生的文字选区导致无法选中回复对象的问题。",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/CoolapkDesktop/images/comment.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/CoolapkDesktop/images/doscovery.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/CoolapkDesktop/images/home.webp"
       ]
     },
     {
@@ -1122,6 +1206,45 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/home.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/detail.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Doer/images/me.webp"
+      ]
+    },
+    {
+      "name": "DouDuo",
+      "bundleIdentifier": "me.rrmm.douduo",
+      "developerName": "81199000",
+      "subtitle": "原生 SwiftUI 第三方抖音客户端，适配折叠屏与 iPad",
+      "localizedDescription": "DouDuo：开源免费的第三方抖音客户端（非官方），原生 SwiftUI，适配 iPhone Duo 折叠屏、iPad 与普通 iPhone。安装包为未签名 IPA，需要用自己的证书签名。仅供个人学习交流。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DouDuo/icon.webp",
+      "tintColor": "#B4472B",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.7.5",
+          "date": "2026-11-26T20:01:46Z",
+          "downloadURL": "https://github.com/81199000/DouDuo/releases/download/v1.7.5/DouDuo-1.7.5-unsigned.ipa",
+          "size": 23627752,
+          "localizedDescription": "# DouDuo 1.7.5 · 长视频开头、快进不卡 · 好友消息加载得出来\n\n包为**未签名 IPA**，需要自行签名安装。\n\n## 长视频：开头不卡、快进不卡\n- **刚划到长视频不再卡在开头**：以前有时缓冲已经有好几秒，画面还停在第一帧不动，要等十几二十秒。现在内容够了就直接开播。\n- **快进拖完马上接着播**：以前拖到远处，画面会停住不动，要再拖一下才走。现在松手 2 秒内就开始播。\n\n## 信息：好友消息加载得出来了\n- 粉丝私信多的账号，好友的会话以前被挤在后面，一直显示「加载更多会话」却加载不出来。现在点一下会一直往下翻，直到翻出好友会话；翻到底会显示「没有更多会话了」。好友会话太少时，进信息页会自动翻一次。\n- 顶部朋友头像排有时是空的，现在先用最近联系人补上。\n\n## 修复\n- 推荐里刷到直播时偶尔闪退（工单 B48）。\n\n## 关注不走失\n项目在 GitHub [81199000/DouDuo](https://github.com/81199000/DouDuo)，点个 Star、关注 @81199000，避免走失。官网 [oneduo.app](https://oneduo.app) 是长期固定入口。\n\n## 验证与仍需确认的边界\n- 长视频开头卡、快进卡：根据作者 iPhone Duo 真机日志修的；快进在模拟器上限速复现过，修前修后对比过，作者真机",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.7.4",
+          "date": "2026-11-26T08:38:34Z",
+          "downloadURL": "https://github.com/81199000/DouDuo/releases/download/v1.7.4/DouDuo-1.7.4-unsigned.ipa",
+          "size": 23598616,
+          "localizedDescription": "# DouDuo 1.7.4 · 长视频不卡了，直播也有环境光\n\n包为**未签名 IPA**，需要自行签名安装。\n\n## 长视频：退出回来、快进，都不卡了\n- **退出 App 再回来接着播**：以前长视频切到后台再回来，常常卡十几秒、有画面没声音，等一会儿又从头开始。现在回来就从原来的位置接着播，声音也一起回来。\n- **快进拖远了不再卡死**：拖进度条到很远的地方，画面不会停住不动，松手就开始播；拖动时预览小图也不再抢松手后要播的那段。\n- **不再动不动停下来缓冲**：已经缓存够了还在「等一下防卡顿」的情况去掉了，内容够了就接着播。\n- **拖动后退出再回来**：不会先卡一段、黑屏、没声音。\n\n## 倍速戴耳机声音不变小\n- 戴耳机开 2 倍速，以前声音会明显变小，现在会自动补回音量，听起来跟 1 倍速一样大，也不会破音。\n\n## 刷到直播也有环境光\n- 推荐里刷到直播间，画面两边和视频一样铺上环境光，跟设置里的环境光档位一致；铺满屏幕、手机发热或不在当前这条时不做，省电。\n\n## 修复\n- 大屏横屏打开再关掉评论，视频不再往回跳几秒（工单 B13）。\n\n## 关注不走失\n项目在 GitHub [81199000/DouDuo](https://github.com/81199000/DouDuo)，点个 Star、关注 @81199000，避免走失。官网 [oneduo.a",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.7.3",
+          "date": "2026-11-24T06:51:33Z",
+          "downloadURL": "https://github.com/81199000/DouDuo/releases/download/v1.7.3/DouDuo-1.7.3-unsigned.ipa",
+          "size": 23555736,
+          "localizedDescription": "# DouDuo 1.7.3 · 丝滑到底：划到即播，比官方更顺\n\n包为**未签名 IPA**，需要自行签名安装。\n\n## 纵向丝滑，一划到底\n这一版只做一件事：**让每一次上划都丝般顺滑**。\n\n- **划到就播，零等待**：以前划到长视频，偶尔会停在第一帧两三秒才动——播放器明明已经备好了十几秒的内容，还在「担心会卡」不肯开播。现在内容够了就立刻开播，告别停顿。\n- **连刷十条都不卡**：「预缓存数量」设几条，就真的提前备好几条（最多 10 条）。手指刷多快，视频就跟多快。\n- **长视频一样秒开**：几十分钟的长视频，划到就开播，不用再等。\n- **流量你说了算**：设置里分成「Wi-Fi 省流量」和「蜂窝数据省流量」两个开关。Wi-Fi 下默认把预缓存的几条整条备好，划到即播；打开省流量就只下开头几秒，不播不继续下。用流量时默认只下开头、不浪费流量；关掉省流量就高清并整条备好 2 条。\n\n一句话：**刷起来比官方 App 还丝滑。** 不信连划二十条试试。\n\n## 折叠屏半折：下半屏变触控板\n- iPhone Duo 竖着半折叠时，下半屏直接是一块触控板：黑底上投着上方画面的倒影，弹幕挪到触控板上飘，画面干干净净。\n- 单击出评论，评论 4 秒没碰又回到触控板；上下滑切视频，左右拖快进快退，长按 2 倍速。\n- 触控板右侧是液态玻璃按钮栏，点赞、评论、收藏随手可点。\n- ",
+          "minOSVersion": "26.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/DouDuo/images/home.webp"
       ]
     },
     {
@@ -1722,6 +1845,47 @@
       ]
     },
     {
+      "name": "GuoDuo",
+      "bundleIdentifier": "me.rrmm.hongguo",
+      "developerName": "81199000",
+      "subtitle": "原生 SwiftUI 红果短剧客户端，适配折叠屏与 iPad",
+      "localizedDescription": "GuoDuo：开源免费的红果短剧客户端（非官方），原生 SwiftUI，适配 iPhone Duo 折叠屏、iPad 与普通 iPhone。安装包为未签名 IPA，需要用自己的证书签名。仅供个人学习交流。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GuoDuo/icon.webp",
+      "tintColor": "#B6452F",
+      "category": "other",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-26T16:49:45Z",
+          "downloadURL": "https://github.com/81199000/GuoDuo/releases/download/v1.0.1/GuoDuo-1.0.1-unsigned.ipa",
+          "size": 5439351,
+          "localizedDescription": "# GuoDuo 1.0.1\n\n## 修复\n- 修复每部剧只显示前 3 集的问题：红果官网收紧了分集列表，现在改从红果 App 接口取完整分集，所有集数都能看到、都能播。\n\n## 播放\n- 边下边播：点开一集，文件头一到就开始播，不用等整集下完；往后拖到还没下到的地方也能接着播。\n- 上滑下一集更顺：下一集提前准备好，滑过去直接接上，不再闪黑、不再先铺满再缩回。\n- 滑动切集时不再闪出暂停键和标题（极简模式同样）。\n- 折叠屏外屏：横竖屏切换不再从头播放，竖屏转横屏不再黑一下。",
+          "minOSVersion": "18.4"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-26T06:35:28Z",
+          "downloadURL": "https://github.com/81199000/GuoDuo/releases/download/v1.0.0/GuoDuo-1.0.0-unsigned.ipa",
+          "size": 5340141,
+          "localizedDescription": "# GuoDuo 1.0.0\n\n## 全新首页\n- 奈飞主题首页（默认）：大海报，整页底色跟着封面主色变；继续观看、我的追剧、今日热播 Top 10、各榜单一行一行横着滑。\n- 顶部分区：全部 / 真人剧 / 漫剧 / AI 剧 / 系列剧 / 西饭 / 河马，按屏幕宽度自动排，放不下的收进「类别」。\n- 往下滑分区栏收起，往上滑弹回。也可以在「设置 → 首页主题」切回红果主题（两列大卡）。\n\n## 搜索\n- 没输入时有「热门搜索」和「为你推荐」，推荐的剧点播放键直接开播。\n- 打字联想带封面和热度；搜索结果都有封面；粘贴红果分享链接直接打开。\n\n## 电视联动（GuoDuo TV）\n- 「我的 → 设置 → 安装到电视」：手机自动找到家里的安卓电视，把 GuoDuo TV 装上。\n- 「连接遥控器」：扫码或局域网自动发现电视，手机当遥控器用。\n- 手机扫电视登录页上的二维码，用手机的红果账号确认，电视直接登录。\n- 手机看到一半点「更多 → 投到电视」，电视从同一秒接着播；遥控器里点「接到手机继续看」再接回手机。\n- 「我的」右上角加了扫一扫；长按 App 图标也能直接扫一扫、连接遥控器。\n\n## 播放\n- 黑边环境光：画面两侧透出画面颜色的光，设置里可调强弱或关掉。\n- 「更多」面板改成液态玻璃；「铺满全屏」挪进「更多」里。\n- 推荐页右侧按钮栏和首页菜单一样宽，进出推荐时有过",
+          "minOSVersion": "18.4"
+        },
+        {
+          "version": "0.7.0",
+          "date": "2026-11-23T18:43:13Z",
+          "downloadURL": "https://github.com/81199000/GuoDuo/releases/download/v0.7.0/GuoDuo-0.7.0-unsigned.ipa",
+          "size": 4131672,
+          "localizedDescription": "# GuoDuo 0.7.0\n\n## 优化\n- 滑到下一集 / 推荐里滑到下一部，起播从 1.7 秒左右缩到 0.5 秒左右，戴蓝牙耳机也不再先暂停一下才开始放。\n- 修复切集后画面先顿住、再快进掉开头一段的问题。\n- 后台预下改为后面 2 集，连续往后滑不用等下载；滑动途中直接显示下一集的第一帧画面。",
+          "minOSVersion": "18.4"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GuoDuo/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GuoDuo/images/play.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/GuoDuo/images/search.webp"
+      ]
+    },
+    {
       "name": "Henge",
       "bundleIdentifier": "com.henge.app",
       "developerName": "Leviidev",
@@ -1869,14 +2033,30 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.1.2",
+          "date": "2026-11-27T19:01:14Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.2/HGhubX_3.1.2_ios.ipa",
+          "size": 5216729,
+          "localizedDescription": "# HGhubX v3.1.2\n\nHGhubX 3.1.2 正式版：正式纳入 HarmonyOS 鸿蒙未签名安装包（自签可用），新增视频加载 DNS 并发竞速与 Rust 媒体代理层 HLS 后台并发预取，统一全端网络、视频源与播放器错误代号层，并修复安卓端返回退出后重新打开闪退与切后台继续拉流问题；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\n\n## 新增与优化\n1. **正式纳入 HarmonyOS 鸿蒙自签版（#283）**：同步标准版全部功能与界面，随本版同步提供 `HGhubX_3.1.2_ohos_arm64_unsigned.hap` 未签名安装包；前端自动识别 HarmonyOS 平台，内置更新检查支持优先匹配 `.hap` 产物。\n2. **视频加载与首播提速**：\n   - 底层客户端构建与域名解析引入同主机 single-flight 合并与 900ms 系统 DNS / 阿里 DoH 并发竞速（保留严格模式既有 IP 与重定向安全校验），降低冷启动并发排队与弱网 DNS 阻塞。\n   - Rust 媒体代理层新增 HLS 后台并发预取：解析播放列表后即并发预热加密 Key、初始化片段与前 2 个分片，播放期间按当前分片自动预取后续 `N+1` / `N+2` 分片（全局并发限流 3，切线、切集或清缓存即时取消",
+          "minOSVersion": "15.0",
+          "buildVersion": "3.1.2",
+          "buildNumber": "3.1.2"
+        },
+        {
+          "version": "3.1.1",
+          "date": "2026-11-27T14:18:54Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.1/HGhubX_3.1.1_ios.ipa",
+          "size": 5196736,
+          "localizedDescription": "# HGhubX v3.1.1\r\n\r\nHGhubX 3.1.1 正式版：全量流畅度与视频加载性能优化、片尾下一集预热、AI 画质增强、桌面深链与底栏跟随手势切换，并进一步修复评论显示/计数异常与切页闪烁问题；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **全量流畅度与视频加载优化（#303）**：底层网络启用 HTTP/2 连接复用、延长客户端连接池生命周期并缓存系统代理探测，合并并发 HLS 清单请求且将封面解密移至后台线程池；前端收紧移动端播放缓冲策略、启用首片预取与按尺寸自适应码率，离页 20 秒自动挂起闲置解码器，并降低毛玻璃重绘与微光采样开销。\r\n2. **片尾预热下一集与推荐流预加载（#299）**：播放临近片尾时自动并发预热下一集 HLS 清单与首片，首页推荐流在当前视频稳定播放 3 秒后同步预热下一条推荐视频，切集与切流接近秒开。\r\n3. **AI 画质增强与 WebGL 渲染优化（#279、#281）**：新增「画质增强」播放设置，支持细节增强与自然胶片颗粒；通过 FBO 缓存、`texSubImage2D` 逐帧上传与 `ResizeObserver` 尺寸监听消除逐帧同步 GPU 检查带来的卡顿。\r\n4. **移动端底栏跟随手势滑动（#292）**：在底部导航胶囊上左右滑动时实时带动主页面跟随切换",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "3.0.0",
           "date": "2026-11-26T15:05:45Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
-          "size": 5166406,
-          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`57ad208`）自动合成的全平台预览构建（更新时间：`2026-11-27T08:34:22Z`，测试提交：`9223ee2`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（5）\n1. #281 feat(playback,settings): add AI picture enhancement with stabilized detail grain (#279)（@zxsos，`fbf3cc5`）\n2. #282 feat(desktop,source): register hghubx deep-link scheme and single-instance forwarding（@zxsos，`d7c9042`）\n3. #289 feat(account,ui): remove duplicate favorite refresh button and scope pull-to-refresh（@zxsos，`40e5d01`）\n4. #290 feat(feed,storage): expand home random paging and unseen-first shuffling（@zxsos，`8",
-          "minOSVersion": "15.0",
-          "buildVersion": "3.0.0",
-          "buildNumber": "3.0.0"
+          "size": 5399982,
+          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`d5ed1a2`）自动合成的全平台预览构建（更新时间：`2026-11-27T12:37:05Z`，测试提交：`3ab254c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #300 fix(ui): prevent segmented capsule and nav indicators from overshooting bounds（@zxsos，`dc1c0d1`）\n\n## 自动跳过的 PR（2）\n- #295 分类页频道标题行只保留「全部」可点击，避免整行误触（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过\n- #298 修复移动端触觉误触：仅在完成点击时震动（搜索奖杯、我的收藏/历史等）（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过",
+          "minOSVersion": "15.0"
         }
       ],
       "appPermissions": {
@@ -1942,176 +2122,6 @@
         "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/library.png",
         "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/minecraft-dungeons.jpeg",
         "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/settings.png"
-      ]
-    },
-    {
-      "name": "iBuilder",
-      "bundleIdentifier": "dev.ibuilder.app",
-      "developerName": "Absenti",
-      "subtitle": "手机上构建 Switch 游戏",
-      "localizedDescription": "iBuilder 可以在 iPhone 上构建 Switch 游戏的可执行文件。程序不提供任何游戏、密钥或固件，也不会自动下载，需要你自己准备合法的游戏资源。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/icon.webp",
-      "tintColor": "#3530C9",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.8",
-          "date": "2026-11-23T14:31:19Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.8/GameApp-rust-20261123-142811-rustcf3c2f55.ipa",
-          "size": 42455597,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n> [!IMPORTANT]\n> **Every game rebuilds its shaders once** after this update: the shader chain moves to `6c53446391cc` (nxnative 033793f0), and a library is named by its chain. iOS's Metal shader cache also starts empty once, so the first play of each game stutters more.\n\n**New**\n- **Shader chain 6c53446391cc**, nxnative's current one: 37 upstream translator and host changes, including the Switch 2 mesh/",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.1.7",
-          "date": "2026-11-22T19:54:57Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.7/GameApp-rust-20261122-195251-rust2353f307.ipa",
-          "size": 40973312,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New**\n- **No rebuild after an app update** that does not change what a built game is made of (a new *framework id*: host, rewriter, assembler, signer, profiles, game tables). The first update to 0.1.7 still rebuilds each game once.\n- **Beach Buggy Racing 2**: shaders read from Vector Unit's `.apf` archives (0 → 496), and the game no longer quits at start (engine: the friends notification queue opens o",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.1.4",
-          "date": "2026-11-22T16:28:12Z",
-          "downloadURL": "https://github.com/Absenti/iBuilder/releases/download/v0.1.4/GameApp-rust-20261122-162610-rust7d81008a.ipa",
-          "size": 40938569,
-          "localizedDescription": "> [!WARNING]\n> No game, firmware or key is included or downloaded. Use iBuilder only with games you own and the `prod.keys` dumped from your own console. Not affiliated with Nintendo or Apple.\n\n**New: iPhone 12 and later**\n- **GPUs without BC textures** (A14–A16, e.g. iPhone 12–15 non-Pro, A14–A16 iPads) now take the engine path ported from the community fork [mianmuhammadse/nxnative `no-bc`](https://github.com/mianmuhammadse/nxnative/tree/no-bc) (MIT): BC1–5 decoded on the GPU at upload, BC1/2/3 stored as ASTC 4x4 (a quarter of the memory), CPU only for BC6H/BC7/3D. Automatic. `DM_NO_BC_GPU=0",
-          "minOSVersion": "26.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/library.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/build.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iBuilder/images/settings.webp"
-      ]
-    },
-    {
-      "name": "iDeck",
-      "bundleIdentifier": "com.kuschqin.madeira.steamui",
-      "developerName": "kuscholar",
-      "subtitle": "Steam 大屏与 3D 游戏",
-      "localizedDescription": "通过 Madeira、Wine、FEX 与 Metal，在 iPhone 与 iPad 上跑 Valve Steam 客户端大屏模式与兼容的 Windows 游戏。实验性功能，需要 iOS 26 以上、JIT 以及自备 Steam 文件。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/icon.webp",
-      "tintColor": "#D5A733",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.1.3",
-          "date": "2026-11-06T05:45:57Z",
-          "downloadURL": "https://github.com/kuscholar/iDeck/releases/download/v0.1.3-alpha.6/iDeck-0.1.3-alpha.6-build145.ipa",
-          "size": 173835258,
-          "localizedDescription": "# Steam64 setup, one step at a time\n\n**Experimental prerelease · Build145 · Known issue: Steam can freeze after the third game exit. This update improves setup; it does not fix that stability issue.**\n\n## What’s new\n\n- **Install Steam64 in the launcher:** downloads the matched Steam/browser packages from Valve over HTTPS, verifies sizes/SHA-256 and installs with rollback. Cancel/retry, Verify/Repair and Return to previous environment are available.\n- **Four clear actions:** Install Steam → Connect LocalDevVPN → Pair this device → Enable JIT. Runtime preparation is automatic, signing/address ch",
-          "minOSVersion": "26.0",
-          "buildVersion": "145",
-          "buildNumber": "145"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/configuration.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/iDeck/images/steam-home.webp"
-      ]
-    },
-    {
-      "name": "INSAV",
-      "bundleIdentifier": "com.ios151.insav",
-      "developerName": "ios151",
-      "subtitle": "四站点聚合的原生影视客户端",
-      "localizedDescription": "INSAV 的第三方原生客户端，SwiftUI 编写，iPhone / iPad 通用。适配主站、无码站、动漫站与 4K 站，支持浏览搜索、系统原生播放器（画中画 / AirPlay）、调用外部播放器、整部下载离线观看，以及登录、收藏与订阅。",
-      "iconURL": "https://raw.githubusercontent.com/ios151/Insav-releases/main/icon.png",
-      "tintColor": "#91C930",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "date": "2026-11-13T05:33:07Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.1-6/Insav-unsigned.ipa",
-          "size": 1634598,
-          "buildVersion": "6",
-          "buildNumber": "6",
-          "localizedDescription": "## 1.3.1 (build 6)\n\n- 修复无码站打不开：无码站的域名会不定期更换，原来的自动发现方式已经失效，导致一直连不上；现在改成每次从官方的跳转页现取最新域名，换域名也能自动跟上，发现不了时提示里会说清楚卡在哪一步\n- 其余功能同 1.3.0 (5)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-11-10T18:39:00Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.3.0-5/Insav-unsigned.ipa",
-          "size": 1630941,
-          "buildVersion": "5",
-          "buildNumber": "5",
-          "localizedDescription": "## 1.3.0 (build 5)\n\n- 新增外部字幕：详情页的圆按钮行里多了「字幕」按钮（主站和无码站的片才有，4K 站和动漫站没有番号，没有这个按钮）。点开按番号去外部字幕库搜，选一份马上显示在画面上，可以调同步（提前 / 延后 0.5 秒、5 秒）；选过的字幕下次打开同一部片自动用，不用再搜\n- 下载时会把选好的字幕一起存：离线播放也有字幕；存到「文件」App 的下载，成品旁边还会放一份同名 .srt，Infuse、VLC 这类播放器会自动识别\n- 用 SenPlayer、Lumenic、Infuse 播放时，自动带上选好的字幕（它们读的是原字幕文件，不带这里调的同步）\n- 搜字幕只会把番号发给外部字幕库，别的信息不发；只在打开字幕面板时才搜\n- 其余功能同 1.2.0 (4)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-09T20:55:27Z",
-          "downloadURL": "https://github.com/ios151/Insav-releases/releases/download/v1.2.0-4/Insav-unsigned.ipa",
-          "size": 1523510,
-          "buildVersion": "4",
-          "buildNumber": "4",
-          "localizedDescription": "## 1.2.0 (build 4)\n\n- 新增 4 个外部片源（选站页「更多片源」里）：各有栏目首页、搜索、详情和多线路播放，收藏和播放进度存在本机；暂时不支持下载和字幕\n- 新增聚合搜索：同一个关键词同时搜所有站点和片源，按来源分组显示\n- 外部播放器新增 Lumenic；Lumenic 和 SenPlayer 播放需要请求头的线路时会自动带上\n- 选站页重新排版；「我的」页改成短列表，设置点进去再看，「刷新令牌」放在最上面\n- 修复 VIP 令牌源在跨日 / 跨月后一直提示「正在续期」的问题（旧版本从 11 月 10 日起会遇到，升级后自动恢复）；去掉已经不再维护的第二个令牌源\n- 界面上的说明文字更简短\n- 其余功能同 1.0.0 (3)\n\n安装包是未签名的，推荐用 LCSign（https://www.sign.lc）签名安装，也可以用自己的证书 / SideStore 等自签。",
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      }
-    },
-    {
-      "name": "iPadn",
-      "bundleIdentifier": "app.local.iPadn",
-      "developerName": "mengangs",
-      "subtitle": "下载已购应用与旧版本",
-      "localizedDescription": "在 iPhone 与 iPad 上搜索、下载并安装你已拥有的应用，包括历史版本与已下架应用，支持区域价格比较与原生安装，覆盖 iPhone、iPad、Apple TV 与 Mac 应用。",
-      "iconURL": "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/icon.png",
-      "tintColor": "#3394D0",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "2.3.5",
-          "date": "2026-11-23T15:22:43Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.5/iPadn-2.3.5-lite-unsigned.ipa",
-          "size": 49971723,
-          "localizedDescription": "## iPadn 2.3.5\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.5** 稳定性修复与体验升级版：根治 **iOS 16.0–16.2 强链接符号闪退**、**iOS 27.2 beta 2 历史版本加载闪退** 与 **iPadOS 全屏/专业模式导航栏异常**；**TestFlight 现支持切换下载 Apple TV 等多平台测试包**并统一展示单色客户端标识，同时修复大型/多变体游戏误报「产物校验失败，已清理」及详情页顶部虚化异常；在「设置 › 外观与图标」开放**自定义全部 177 个 Apple 商店地区**（支持搜索筛选、勾选、拖拽排序与国旗展示）；并修复 FairPlay 高熵插件误拒、登录 `5020`/2FA 提示、未购免费应用首次获取旧版报错与「应用包」批量导入打断问题。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 iOS 16/27 闪退与 iPadOS 专业模式导航异",
-          "minOSVersion": "16.0",
-          "buildVersion": "41",
-          "buildNumber": "41"
-        },
-        {
-          "version": "2.3.4",
-          "date": "2026-11-22T05:56:54Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.4/iPadn-2.3.4-lite-unsigned.ipa",
-          "size": 49848919,
-          "localizedDescription": "## iPadn 2.3.4\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.4** 体验与稳定性全面升级版：全面打通 **TestFlight 实时同步下载、后台断点续传、统一自动安装与灵动岛进度同步**；取消下载页与「应用包」冗余分组并在全应用（含「已解密」「Wi‑Fi 传输」「存储空间」）统一极简单色 TestFlight 图标；重构下载与 TestFlight 暂停/继续及全状态切换弹性形变动效；根治多账号切换反复触发验证码、多手机号 2FA 与 0 应用账号卡顿；统一「应用包」5 秒侧滑撤销与全应用原生居中弹窗、优化本机配对引导，并补齐 App Store 账单/条款报错引导及原生安装 iOS 17.4+ 与局域网防护。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **TestFlight 同步下载、后台续传、自动安装与灵动岛同步**\r\n  - TestFlight 任务在元数据就绪并实际开始下载后，实时",
-          "minOSVersion": "16.0",
-          "buildVersion": "40",
-          "buildNumber": "40"
-        },
-        {
-          "version": "2.3.3",
-          "date": "2026-11-21T14:14:24Z",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.3/iPadn-2.3.3-lite-unsigned.ipa",
-          "size": 49730145,
-          "localizedDescription": "## iPadn 2.3.3\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.3** 全面加固与体验升级版：重点修复下载/领许可时偶发「Apple 暂时无法完成该操作」的协议盲区（补齐 `1008` 会话过期刷新、`-128` 地区自动纠偏、新版条款提示与 HTTP 200 诊断日志）；升级「下载」页多选与统一撤销删除，新增安装包构建 SDK / Xcode 版本速查，修复「应用包」左滑变灰遮罩，并完成一轮覆盖安全脱敏、滚动性能、深浅色对比度与 11 语言本地化的全面审计优化。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **修复 Apple 下载/获取报错「暂时无法完成该操作」与诊断盲区**\r\n  - 补齐 `1008`（设备验证/会话过期）在下载、历史版本票据、领免费许可及 Mac 包路径中的自动刷新与重新登录处理；补充密码已更改（`Your password has changed.`）与账号停用（`Your",
-          "minOSVersion": "16.0",
-          "buildVersion": "39",
-          "buildNumber": "39"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSLocalNetworkUsageDescription": "Loads signing resources and serves installation packages over this device's loopback address, and finds this device's installation service."
-        }
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/01-search.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/02-detail.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/03-versions.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/04-prices.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/05-downloads.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/06-purchased.jpg",
-        "https://raw.githubusercontent.com/mengangs/ipadn/main/docs/images/en/07-native-install.jpg"
       ]
     }
   ],
