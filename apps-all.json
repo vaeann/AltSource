@@ -1,7 +1,7 @@
 {
   "name": "热门软件合集",
   "subtitle": "热门应用都在这里 · 按更新时间排序",
-  "description": "精挑细选的 iOS 侧载应用合集，125 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
+  "description": "精挑细选的 iOS 侧载应用合集，126 个应用全在这一条源里，按更新时间倒序排列。\n\n注意：LiveContainer 的列表最多只显示 50 个，超出部分要搜索才能看到。如果只想看最近更新的，用「热门应用源①」；想看全部就用这个。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取。",
   "identifier": "com.vaeann.source.all",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -486,11 +486,11 @@
       "category": "other",
       "versions": [
         {
-          "version": "2.6.1-nightly.20261125.2101",
-          "date": "2026-11-25T21:31:21Z",
+          "version": "2.6.1-nightly.20261128.1811",
+          "date": "2026-11-28T18:40:59Z",
           "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261125/ARMSX2-nightly-20261125-d4fe08faeb-iOS-arm64.ipa",
-          "size": 41389234,
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261128/ARMSX2-nightly-20261128-c727c2d13c-iOS-arm64.ipa",
+          "size": 41401943,
           "minOSVersion": "17.0"
         }
       ],
@@ -930,6 +930,49 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/analysis.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/download.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/my.webp"
+      ]
+    },
+    {
+      "name": "Coda",
+      "bundleIdentifier": "wow.caicai.coda",
+      "developerName": "Wow-CaiCai",
+      "subtitle": "多平台原生音乐客户端",
+      "localizedDescription": "面向 Mac、iPhone 与 iPad 的原生 SwiftUI 音乐客户端，在同一界面搜索、收藏、播放网易云音乐、QQ 音乐、酷狗音乐、汽水音乐与波点音乐。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/icon.webp",
+      "tintColor": "#6B26BA",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.3",
+          "date": "2026-11-27T06:37:17Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.3/Coda-iOS-0.1.3.ipa",
+          "size": 8828035,
+          "localizedDescription": "### 新增\n\n- 新增波点音乐：支持波点音乐 App 扫码登录与会员状态；首页按波点发现页展示个性化歌单、偶遇心动单曲、宝藏歌单库、心动收藏相似推荐、你的主题歌单与波波排行榜，「每日推荐」对应潮趣日推，并提供私人漫游按钮；搜索歌曲、歌手、专辑与歌单，并提供搜索建议与热搜；歌单广场分类、歌单、专辑与歌手页、私人漫游、歌曲评论、逐字歌词；我的歌单的新建、删除、重命名与增删歌曲，收藏歌单与专辑、关注歌手、红心收藏；「最近播放」读取波点账号的播放历史，在 Coda 里起播的歌也会同步到波点手机端的最近播放。\n- 歌词自动优选与手动切换来源新增波点音乐，其他平台的歌曲也可匹配波点的逐字歌词。\n- 新增「设置 → 自定义音源」：可从文件或链接导入Lx自定义音源。\n\n### 修复\n\n- 修复 Mac 主窗口在内容区按住拖动（含触控板单指拖动）时整个窗口跟着移动的问题，现在只有顶部标题栏可以拖动窗口。\n\n### 改进\n\n- iPhone 与竖屏播放详情页的歌词、评论、待播清单与加入歌单改为互相独立的页面：从封面直接切到对应面板，关闭后直接回到封面，不再途经歌词页。\n- Mac 与 iPad 宽屏播放详情页左侧按屏幕高度自适应：封面、歌曲信息、进度条与播放控件随可用高度同步缩放，多余空间均分到上下两侧，不再在 4:3 iPad、4:3 与 5:4 外接显示器或竖放显示器上留下大块空白。\n- 改善 ",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.2",
+          "date": "2026-11-25T19:37:23Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.2/Coda-iOS-0.1.2.ipa",
+          "size": 8400541,
+          "localizedDescription": "### 修复\r\n\r\n- 修复汽水音乐新账号扫码后需要安全验证时，中文系统下汽水安全验证组件因编码识别错误无法加载导致验证窗口显示 404、提示「汽水安全验证组件暂时不可用」而无法登录的问题，验证组件所需的 React 改为随应用内置，不再依赖外部 CDN。\r\n- 修复 QQ 音乐登录数天后过期需要重新扫码的问题：QQ 扫码登录的凭证此前无法续期，现在 QQ、微信、QQ 音乐 App 扫码登录都会在凭证到期前约 6 小时自动续期，应用运行期间也会持续续期，续期失败 5 分钟后重试。\r\n- 修复 iPadOS 16 上手指点不动搜索候选词与热搜词（只有 Apple Pencil 能点）的问题；横向滚动的歌单、专辑货架及设置中账号卡片的移除按钮也一并修复了靠近上下边缘时手指点击无效的问题。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-11-24T23:14:55Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.1/Coda-iOS-0.1.1.ipa",
+          "size": 8325923,
+          "localizedDescription": "### 新增\r\n\r\n- 新增「探索」页：搜索与精选合并，顶部为搜索框，下方按分类显示两行歌单，点分类标题可查看该分类全部歌单。\r\n- Mac 与 iPad 侧边栏加入交互动画（iOS 16–27 通用）：选中高亮滑动、按压回弹、悬停高亮、图标弹跳、设置齿轮旋转、账号切换过渡、状态点渐变、歌单增删动画。\r\n- 主内容区加入动画：加载骨架淡入为内容，我的收藏、搜索、听歌排行的分段切换淡入淡出。\r\n- Mac 播放详情页改为从底部播放栏放大展开，关闭时缩回播放栏。\r\n\r\n### 修复\r\n\r\n- 修复 iPadOS 16 切换应用后回到播放详情页，当前行歌词高亮不显示的问题。\r\n- 修复 iOS 16–17 旋转播放详情页时出现白边或黑块、内容消失和被裁切的问题。\r\n- 拖动进度、调整歌词偏移或切换歌词来源、切换音质后，歌词会重新对齐实际播放进度。\r\n- 修复 Toast 被播放详情页遮挡的问题，并移除 iPad 上重复的 Toast 层。\r\n- 修复 iPad 点击热搜候选词时搜索整行展示文字而不是实际关键词的问题。\r\n- 修复 iOS 16 底栏搜索按钮只有图标可点、圆形区域其他位置点击无效的问题。\r\n- 修复侧边栏账号状态圆点在校验被取消后一直闪烁「验证中」的问题。\r\n\r\n### 改进\r\n\r\n- iOS 16–17 播放详情页改为从迷你播放条放大打开，接近 iOS 18+ 原生 zo",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/album-12.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/artist-3.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/player-7.webp"
       ]
     },
     {
@@ -2033,22 +2076,20 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.2.0",
+          "date": "2026-11-28T14:12:09Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.2.0/HGhubX_3.2.0_ios.ipa",
+          "size": 5320793,
+          "localizedDescription": "# HGhubX v3.2.0\r\n\r\nHGhubX 3.2.0 正式版：新增 MacCMS v10 订阅源导入与端到端可用性探测、自定义跳过片头与 5 秒可取消跳过片尾倒计时、缓冲实时网速、全量诊断日志原生分享、源自定义排序标签、评论触底自动加载与按源分桶片库，同时修复切源后线路与个人页错乱、限区/超时源长时间无提示转圈、重复刷新叠提示卡片及全端交互细节；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\r\n\r\n## 新增与优化\r\n1. **MacCMS v10 订阅清单导入与端到端测活（#309）**：在「设置 → 视频源管理」与首启「导入视频源」支持导入 Base58 / Base64 / JSON（`{ api_site }`）及 TVBox `type: 1` 订阅清单，自动探测叶分类并隐藏空专题；新增「测试可用性」「停止测试」「一键选可用」「仅看可用」，端到端实测接口与直链片源连通性并实时反馈延迟与本地化失败原因；统一扫码与深链对订阅清单的识别，并对 TV / 局域网单源入口误传订阅清单提供明确引导；批量移除源新增内联二次确认并保持搜索筛选栏可见。\r\n2. **自定义跳过片头与 5 秒可取消跳过片尾（#309）**：在「设置 → 播放设置」新增「跳过片头 / 跳过片尾」（`0–600s`、默认 `0`，支持快捷挡位与自定义秒数）",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "3.1.1",
           "date": "2026-11-27T14:18:54Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.1/HGhubX_3.1.1_ios.ipa",
           "size": 5196736,
           "localizedDescription": "# HGhubX v3.1.1\r\n\r\nHGhubX 3.1.1 正式版：全量流畅度与视频加载性能优化、片尾下一集预热、AI 画质增强、桌面深链与底栏跟随手势切换，并进一步修复评论显示/计数异常与切页闪烁问题；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **全量流畅度与视频加载优化（#303）**：底层网络启用 HTTP/2 连接复用、延长客户端连接池生命周期并缓存系统代理探测，合并并发 HLS 清单请求且将封面解密移至后台线程池；前端收紧移动端播放缓冲策略、启用首片预取与按尺寸自适应码率，离页 20 秒自动挂起闲置解码器，并降低毛玻璃重绘与微光采样开销。\r\n2. **片尾预热下一集与推荐流预加载（#299）**：播放临近片尾时自动并发预热下一集 HLS 清单与首片，首页推荐流在当前视频稳定播放 3 秒后同步预热下一条推荐视频，切集与切流接近秒开。\r\n3. **AI 画质增强与 WebGL 渲染优化（#279、#281）**：新增「画质增强」播放设置，支持细节增强与自然胶片颗粒；通过 FBO 缓存、`texSubImage2D` 逐帧上传与 `ResizeObserver` 尺寸监听消除逐帧同步 GPU 检查带来的卡顿。\r\n4. **移动端底栏跟随手势滑动（#292）**：在底部导航胶囊上左右滑动时实时带动主页面跟随切换",
           "minOSVersion": "15.0"
-        },
-        {
-          "version": "3.1.2",
-          "date": "2026-11-26T15:05:45Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.1.2_ios.ipa",
-          "size": 5498910,
-          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`3e0142c`）自动合成的全平台预览构建（更新时间：`2026-11-28T07:09:23Z`，测试提交：`bc7cd8c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #309 feat(source,playback,tv,ui): MacCMS 订阅导入、片头片尾跳过、按源分桶、TV 交互与平板/鸿蒙返回优化（@zxsos，`b133dfa`）",
-          "minOSVersion": "15.0",
-          "buildVersion": "3.1.2",
-          "buildNumber": "3.1.2"
         },
         {
           "version": "3.0.0",
@@ -2394,10 +2435,10 @@
       "versions": [
         {
           "version": "1.6",
-          "date": "2026-11-26T14:44:55Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b41/STV-1.6b41-unsigned.ipa",
-          "size": 54330260,
-          "localizedDescription": "i短剧 iOS 1.6b41 (v1.6b41)\n\n包内版本为 1.6 build 41。IPA 未签名（最低 iOS 16），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：2fe0b4969274cca1eccd8697af1a6f4fe82ddb4f\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45838169992",
+          "date": "2026-11-28T17:17:08Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b47/STV-1.6b47-unsigned.ipa",
+          "size": 57771555,
+          "localizedDescription": "### 更新内容\n\n- **全新「听歌 / 音乐」模块（双端 100% 直连上游，零代理服务器）**：\n  - 支持网易云音乐、QQ 音乐、酷狗音乐、汽水音乐四源聚合搜索、榜单、无损/高品音质切换、歌词同步（含逐字 KRC 解析与 HTML 实体解码）、私人 FM、每日推荐与个性化推荐歌单。\n  - 支持四平台账号登录（含修复汽水音乐扫码 404 问题，改为直连 `scan_login` 码并多跳采集登录 Cookie）与云端歌单自动同步。\n  - 顶部主推升级为 5 张可左右滑动轮播卡片，并严格按「音源开关」过滤首页推荐、私人 FM、榜单与搜索。\n  - 全面优化播放页封面/歌词切换流畅度与瞬时定位，隔离 60fps 旋转动画避免高频重绘卡顿。\n- **修复小说目录直接跳转指定章节白屏卡死（双端）**：\n  - iOS 上下滚动及图文章节改用滑动章节窗口（$O(1)$ 瞬时切章，避免全书 `LazyVStack` 遍历排版与并发书源线程风暴）；翻页模式（仿真/滑动/覆盖/无动画）复用 `UIPageViewController` 并包裹无动画事务，修复动画冲突与覆盖拖拽状态残留；优化大章节网络书缓存迁移至 $O(1)$。\n  - Android 切章立即取消前序慢加载，防止空正文卸载阅读器，并修复滚动模式跳转后 `scrollTarget` 卡死与失败重试问题。\n- **Lega",
           "minOSVersion": "17.0"
         }
       ]
@@ -2620,27 +2661,27 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.47",
+          "date": "2026-11-28T13:28:53Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.47/LiLite-1.0.47-unsigned.ipa",
+          "size": 28875149,
+          "localizedDescription": "**弹窗与动画**\n\n- 评论输入框和发弹幕输入栏改用系统键盘机制：输入框跟着键盘一起升起和收回，不再跳动、错位或留白；表情、更多、弹幕样式面板直接换到键盘的位置，切换时工具栏不动，点文字即可切回键盘。\n- 评论详情、对话列表、选集、更多内容、展开的播放列表改为系统面板：停在播放器下方，视频保持可见，可下拉关闭，进入下一级也有系统动画。\n- 直播间竖屏的高能用户、醒目留言、弹幕屏蔽等面板，以及动态页的 UP 主面板，改为系统面板。\n- 下拉刷新改为系统样式。\n- 图片查看器改用系统分页滑动；观看历史和云收藏的搜索改为系统搜索框；多选和保存操作栏改为系统底部工具栏。\n- 全屏发弹幕面板打开时，键盘与面板同时弹出。\n\n**更新提醒**\n\n- 修复 GitHub 版不再提醒新版本的问题：回到前台时也会检查（至多每 6 小时一次），提醒不再被其他弹层挡住，GitHub 接口访问失败时改从发布附件读取版本信息。\n\n**搜索**\n\n- 搜索结果各分类页加上左右留白，专栏、直播间、用户和视频结果不再贴边，各页风格统一。\n- 修复切换搜索分类和结果加载时的掉帧。\n\n**播放**\n\n- 修复视频暂停后接续播放时，横版封面一直盖在画面上的问题；竖屏视频不再用横版封面占位。\n\n**iPhone Duo 与大屏**\n\n- 动态页分类栏、视频详情左右分栏的标签栏、搜索结果分类栏、动态详情操作栏改为悬浮液态玻",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.46",
+          "date": "2026-11-28T08:09:25Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.46/LiLite-1.0.46-unsigned.ipa",
+          "size": 28933293,
+          "localizedDescription": "**设置**\n\n- 设置重新分类，iPhone 和 iPad 使用同一套目录和搜索；iPad 系统设置式的分栏与表单宽度在横竖屏下保持一致。\n- 精简设置：移除一批偏技术、意义不大的选项，统一使用默认行为（如连接重试、缓冲容量、音画同步、解码顺序、滚动回弹参数、弹幕时长与行高等）。旧的设置备份仍可正常恢复。\n- 删除「页面过渡效果」，页面切换固定使用系统动画；「卡片一镜到底」移到「界面与手势」的实验性功能。\n- 修复关闭设置搜索后列表上移、第一项被搜索框遮住的问题。\n\n**触感**\n\n- 触感反馈默认开启，开关移到「外观与布局 → 界面与手势」。\n- 全应用按操作含义统一震感：切换选择轻点、确认提交稍重、发送和关注等操作按服务器结果给出成功或失败反馈、删除清空给出提醒；打开页面不再震动。滑动调节音量和亮度保持每 5% 一格。\n\n**界面缩放**\n\n- 修复界面缩放不为 100% 时页面顶部和底部的白边、弹层底部被截断、弹出键盘时列表底部多出空白，以及视频详情页顶部伸进状态栏或多出黑边的问题。\n\n**首页与搜索**\n\n- 首页搜索支持从屏幕左边缘右滑返回。\n- iPad 横屏的图标栏悬浮在首页左下角，不再占用一整列。\n\n**播放**\n\n- 双击快进快退时，顶部的进度提示不再闪跳；连点第三下起继续累加，不再弹出控件或弹幕操作。\n- 视频详情页封面点任意位置即可开始播放。\n- iPad ",
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.45",
           "date": "2026-11-28T02:50:14Z",
           "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.45/LiLite-1.0.45-unsigned.ipa",
           "size": 29104183,
           "localizedDescription": "- 修复 iPhone 在 100% 界面缩放下，「我的」「导航布局」「页面动画与回弹」等分组列表左右贴边的问题，恢复系统列表留白。\n- 首页视频卡片的「一镜到底」实验选项延续上一版设置，默认关闭。\n\nGitHub 侧载版，构建 70，本地源码提交 `1419243`。未签名 IPA 需自行签名安装。",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.44",
-          "date": "2026-11-28T02:34:03Z",
-          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.44/LiLite-1.0.44-unsigned.ipa",
-          "size": 29105791,
-          "localizedDescription": "- 首页视频卡片默认使用普通页面转场。新安装或从旧版升级后，「卡片一镜到底」默认关闭，包括之前选过「自定义」的用户。\n- 如需启用，到「设置 → 导航布局 → 页面动画与回弹 → 实验性功能」打开「卡片一镜到底」。可在设置中搜索「一镜到底」直接找到开关。\n\nGitHub 侧载版，构建 69，本地源码提交 `f16ee5c`。未签名 IPA 需自行签名安装。",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.43",
-          "date": "2026-11-28T02:13:14Z",
-          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.43/LiLite-1.0.43-unsigned.ipa",
-          "size": 29102833,
-          "localizedDescription": "- 修复从视频页点返回时，首页底栏先亮一下、消失、随后又出现的问题。手拖取消时底栏保持隐藏，确定回到首页后只淡入一次。\n- 优化首页视频卡片的一镜到底返回。手拖过程中，视频页和首页一起缩放时减少了重复布局，半途反向和松手后立即再拖都能接续当前画面。\n\nGitHub 侧载版，构建 68，本地源码提交 `be777e8`。未签名 IPA 需自行签名安装。",
           "minOSVersion": "17.0"
         }
       ],
@@ -2956,6 +2997,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.5.0",
+          "date": "2026-11-28T15:34:29Z",
+          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.5.0/MeloX-iOS-unsigned.ipa",
+          "size": 31272636,
+          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.5.0`\n- Commit: `4934cc9e7d1fff4961278070e6ac4eb3b6b91e55`\n- Build: `178`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "1.4.1",
           "date": "2026-10-30T13:43:14Z",
           "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.4.1/MeloX-iOS-unsigned.ipa",
@@ -2969,14 +3018,6 @@
           "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.4.0/MeloX-iOS-unsigned.ipa",
           "size": 30363506,
           "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.4.0`\n- Commit: `9c2f87b57b54ddbab76a4a53736f4840719a0947`\n- Build: `138`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-10-16T14:03:47Z",
-          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.3.0/MeloX-iOS-unsigned.ipa",
-          "size": 27881976,
-          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.3.0`\n- Commit: `a41ea0e1e1fa69fb543d827b853fe3aff5420951`\n- Build: `124`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
           "minOSVersion": "26.0"
         }
       ],
@@ -3215,6 +3256,14 @@
       "tintColor": "#30B582",
       "category": "other",
       "versions": [
+        {
+          "version": "0.3",
+          "date": "2026-11-28T11:43:42Z",
+          "downloadURL": "https://github.com/optimalabsistem/NusaNX/releases/download/NusaNX-0.3/NusaNX.0.3.ipa",
+          "size": 11544337,
+          "localizedDescription": "## Fixes\r\n\r\n    - Fixed shader translation and runtime recompile\r\n    crashes on heavy open-world and legacy SDK0 titles.\r\n    - Fixed shader array-pool syntax rewriting and\r\n    added `early_fragment_tests` injection for\r\n    rendering accuracy.\r\n    - Separated packaged texture data from sparse\r\n    allocations to prevent corruption and memory\r\n    stalls.\r\n    - Fixed Base + Update + DLC bundling and merged\r\n    `.xci` + DLC extraction, including package metadata\r\n    classification and mismatch alerts.\r\n    - Improved the direct multi-select file picker so\r\n    base games, updates, and DLC",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.1",
           "date": "2026-11-18T15:08:38Z",
@@ -3811,6 +3860,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.6",
+          "date": "2026-11-28T17:54:27Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.6/Reloc.ipa",
+          "size": 4452977,
+          "localizedDescription": "## Reloc v1.0.6\n\n### 更新\n- 新增**手绘轨迹**模式：支持单指在地图上自由描画路径（靠近起点松手自动平滑闭合绕圈，双指可随时平移与缩放地图），适合操场跑步、公园环线等非道路场景。\n- 新增**虚拟摇杆**模式：独立 360° 悬浮摇杆自由漫游，支持实时推杆转向、4 档快捷速度与无级调速，并支持**锁定航向后台巡航**。\n- 新增 **GPX 导入 / 导出**与 **JSON 整库备份**：支持标准 GPX 1.0 / 1.1 轨迹、路线与航点导入导出，以及收藏与路线的 JSON 一键备份导出和去重合并导入。\n- 增强**轨迹模拟**能力：新增目标里程 / 目标圈数自动停止、步行与跑步 `min/km` 配速显示、模拟红绿灯 / 短暂停顿、中段起跑（0%–95%）以及贴路模式长按拖动途经点微调。\n- 全面升级**收藏与路线**管理：新增跨标签关键词搜索、彩色分组标签与数量筛选、备注及经纬度完整编辑、路线矢量缩略图预览与最近记录一键收藏。\n- 增强**远距离（>15 km）定位与防回弹**：选点前自动测距并预警、支持自定义刷新浮窗倒计时（自动 7s / 18s、7s、15s、30s），内置 Surge / Shadowrocket / Loon / Clash 安全防回弹代理规则（仅屏蔽 `gs-loc`，不影响 Apple 地图与搜索），并优化远距离及飞行模",
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.5",
           "date": "2026-11-28T04:36:14Z",
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.5/Reloc.ipa",
@@ -3824,14 +3881,6 @@
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.4/Reloc.ipa",
           "size": 3475407,
           "localizedDescription": "## Reloc v1.0.4\n\n### 更新\n- **正式支持 iPad**：移除原有的仅限 iPhone 限制，现已支持 iPad（iPadOS 17.0+）直接使用，真机实测正常。\n\n---\n\n### What's New\n- **iPad Support**: Removed the iPhone-only restriction — Reloc now supports iPad (iPadOS 17.0+) and has been verified on real iPad hardware.",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.3",
-          "date": "2026-11-27T10:53:45Z",
-          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.3/Reloc.ipa",
-          "size": 3483270,
-          "localizedDescription": "## Reloc v1.0.3\n\n### 更新\n- **全新模式**：重新实现定位方式，现在无需电脑、无需配对文件，也无需代理、VPN 或依赖 Wi-Fi，**蜂窝网络下同样可以直接使用**，安装后打开即用。\n\n### 新增功能\n- **海拔高度支持**：地图选点、地址搜索或输入坐标时会自动匹配对应地点的真实海拔；底部卡片与状态栏直接显示当前海拔，点击即可手动调整；搜索框支持直接输入 `纬度, 经度, 海拔`；开启自然微漂移时也会同步模拟细微海拔变化。\n- **英文与中文双语支持**：新增完整英文版本，默认跟随系统语言，并可在「设置 → 应用语言 / Language」中即时切换，地名解析也会随当前语言自动适配。\n\n### 优化与稳定性提升\n- **界面精简**：移除了设置页中多余的通道状态区域，操作更简洁。\n- **稳定性增强**：大幅优化运行过程中的连接与保活表现，修复异常频繁重连与后台容易中断的问题，支持中途掉线自动恢复；切换音频设备（如断开蓝牙耳机）时不再影响后台运行。\n\n### 致谢\n感谢 [**huami**](https://github.com/huami1314) 提供的思路。\n\n---\n\n### What's New\n- **New Mode**: Rebuilt for direct on-device use — no computer, pairing f",
           "minOSVersion": "17.0"
         }
       ],
@@ -4318,10 +4367,10 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-28T01:41:18Z",
-          "localizedDescription": "* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availabi",
+          "date": "2026-11-28T11:10:52Z",
+          "localizedDescription": "* Compress native libraries in the Android APK\n* Keep protobuf-lite message fields in Android release builds\n* Raise iOS JIT page prepare batch size to 1024\n* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* ",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48265190,
+          "size": 48265258,
           "minOSVersion": "16.4"
         }
       ],
@@ -4597,6 +4646,16 @@
       "category": "books",
       "versions": [
         {
+          "version": "2.8.2",
+          "date": "2026-11-28T14:42:39Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.2/venera-prime-ios-2.8.2%2B282.ipa",
+          "size": 16738680,
+          "buildVersion": "282",
+          "buildNumber": "282",
+          "localizedDescription": "# Venera Prime 2.8.2\n\n## 本次更新\n\n- **取消下载后清理残留 #60**（@JieZhiF）：取消时会等正在写入的文件结束，清理本次任务创建的内容，保留原有页面。刷新本地库时会跳过带有未完成下载标记的目录。此前留下的目录可在「设置 → 应用 → 清理已放弃的下载」中选择并确认清理。\n- **Android 授权目录续传 #59**（@JieZhiF）：使用系统文件选择器授权的目录时，恢复下载会在后台按章节批量读取文件名和大小，减少逐页查询造成的界面停顿。空文件和标记为失败的页面会重新下载。\n- **阅读页边距实时预览 #57**（@suppermanzero）：拖动页边距滑块即可看到当前页面宽度变化，瀑布流也会应用新边距。高度较小的横屏下，页边距与进度控件并排显示。\n\n## 请更新后验证并反馈\n\n请以上问题的提出者安装 2.8.2，按原步骤复查。已解决请在原 issue 留言确认并关闭；仍可复现请附版本、系统与设备、漫画源、步骤和必要的日志或录屏。已关闭的问题也可继续留言或重新打开。请遮盖账号、密码、令牌和 WebDAV 私有地址。关联 issue 将保持开放，等待原设备、漫画源及服务端的实际反馈。\n\n## 历史待确认问题\n\n以下为此前版本已有改动的复查项。\n\n| 相关 issue | 提出者 | 请复查的行为 |\n| --- | --- | --- |",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "2.8.1",
           "date": "2026-11-10T18:00:24Z",
           "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
@@ -4614,16 +4673,6 @@
           "buildVersion": "280",
           "buildNumber": "280",
           "localizedDescription": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "2.7.2",
-          "date": "2026-11-04T16:17:55Z",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-          "size": 16716650,
-          "buildVersion": "272",
-          "buildNumber": "272",
-          "localizedDescription": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系",
           "minOSVersion": "14.0"
         }
       ],
@@ -4777,6 +4826,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.9.31",
+          "date": "2026-11-28T15:25:42Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.31/WQFiles.ipa",
+          "size": 2291693,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.31\n\nChange permissions in Get Info, Import as Backup works on iOS 27.2.1, and a clearer \"Backup was edited\" warning.\n\n## New",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.9.30",
           "date": "2026-11-26T11:23:07Z",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.30/WQFiles.ipa",
@@ -4790,14 +4847,6 @@
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.20/WQFiles.ipa",
           "size": 2199929,
           "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.20\n\nApps Manager backups, and safer handling of databases that are in use.\n\n## New\n\n- **Import Apps Manager backups** ([#19]",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.9.19",
-          "date": "2026-11-20T01:16:50Z",
-          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.19/WQFiles.ipa",
-          "size": 2182170,
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.19\n\nA small fix release, plus optional App Store icons.\n\n## New\n\n- **Settings → App Store Icons** (off by default): other ap",
           "minOSVersion": "26.0"
         }
       ],
@@ -4857,27 +4906,27 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.6.0",
+          "date": "2026-11-28T13:39:34Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.6.0/WQManager-0.6.0-build6-unsigned.ipa",
+          "size": 1022757,
+          "localizedDescription": "## 这次多了什么\n\n- **共享容器可以清理了**（issue #4 的后半）：应用工具 →「共享容器」，只有本构建拥有 App Group 的那个容器标「可清理」。选中文件或文件夹 →「移到回收站」→ 确认。项目进入 WQManager 自己的回收站（设置 → 回收站），随时还原；每次移动都记进「记录」。\n- **无法证明归属的容器仍然只读**：其他 App 的 Group 只给浏览和导出，不提供删除。这是刻意的——拆掉别人正在用的数据是找不回来的。\n- **空间变化折线更好读**：涨红、跌绿，右上直接给本次增量，左上给最新大小；长历史自动抽稀，容器变化处才断开。\n\n## 顺手修掉\n\n- 扫描历史里一条日期越界会让整份历史读不出来（无符号乘法回绕写坏了 plist）。现在记录时拒绝越界日期，加载时跳过坏行。\n\n## 安装\n\n未签名包，需要用自己的描述文件重签，**保留 App Group `group.mumu.wqmanager`**（App 与分享扩展都要）。构建号 6，比 5 大，覆盖安装是升级。\n\n## 验证\n\n- 26 个单元测试程序全过；20 个 UI 用例全过（新增清理全流程：可清理标记 → 选择 → 销毁按钮 → 确认 → 文件离开容器 → 空态）。\n- Release 构建主 App 与扩展均为 0.6.0 / 6。\n\n`WQManager-0.6.0-bui",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.5.1",
+          "date": "2026-11-28T12:15:02Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.5.1/WQManager-0.5.1-build5-unsigned.ipa",
+          "size": 1013154,
+          "localizedDescription": "0.5.1（构建 5）：共享容器总览、目录快照、扫描连续性。\n\n**新增**\n- 共享容器只读总览（应用工具 →「共享容器」）：按容器身份去重，按证据分四段（已验证 / 名称推断 / 归属未知 / 扩展），只读浏览 + 选择性导出，不写入任何共享容器。\n- 目录快照（存储详情 →「文件夹」）：记一份仅元数据的快照，对比最近两次定位目录增长，可跳空间透镜。\n- 首页索引扫描切页后继续，进度胶囊不跟到其他页面、不挡那边的备份/导出。\n\n**修复**\n- 结构化文件按文件头识别格式；取消工作副本真的会停；翻过末页提示最后一页。\n- 存储详情显示最新测量值，趋势在覆盖变化处断开，不再当成增长。\n\n**安装**：未签名，需自行重签；重签必须保留 App Group `group.mumu.wqmanager`。\n\n**验证**：单测 26 个程序、XCUITest 19 例全通过，Release 构建成功。\n\n产物：`WQManager-0.5.1-build5-unsigned.ipa`（1,013,154 字节，sha256 `63db60b9…a06dde`）、`WQManager-0.5.1-build5-dSYM.zip`。",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.5",
           "date": "2026-11-18T11:48:53Z",
           "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.5.0/WQManager-0.5-build1-unsigned.ipa",
           "size": 952702,
           "localizedDescription": "显示版本 **0.5**，构建 **1**；内部发布修订 **0.5.0**。\n\n这个版本的主题是「找得到、看得懂、拿得走」：\n\n- **全局文件搜索**：跨 App 搜索用户文件，结果边扫边出；支持文件名 / 相对路径 / App 名、类型与最小大小筛选、路径 / 大小 / 最新排序。结果可原地预览或打开所在目录，扫描中可取消。\n- **空间变化**：按「较上次 / 近 7 天 / 近 30 天」比较，按增长排序并显示合计占用与净变化；新增全部 App 合计趋势图，单 App 详情保留当前大小、较上次、近 7 天与扫描历史。\n- **文件审计与导出**：大文件 / 重复文件按 App 分组，重复项经 SHA-256 确认；清理时每个 App 至少保留一份，删除进入空间透镜回收站。导出中心可分享或存储到「文件」，目标写入完成才记成功，取消 / 失败会清理临时目录。\n- **安全与一致性**：跨 App 的相同文件不再被当成可互相替代；重复清理不能选中某个 App 的最后一份；上次中断的导出在重开后显示「已中断」；清理 14 个无用本地化 key，中英文 813 个 key 对齐。\n- **界面**：修复空间变化页底部被悬浮 Tab Bar 遮挡；补充全局搜索、空间趋势、导出选择面板的中英文文案。\n\n验证：23 个本地测试程序、9 条模拟器 UI 流程、Debug 模拟器与 Rele",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.4",
-          "date": "2026-11-16T13:47:46Z",
-          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.4/WQManager-0.4-build16-unsigned.ipa",
-          "size": 891285,
-          "localizedDescription": "显示版本 **0.4**，构建 **16**；内部发布修订 **0.4.4**。\n\n- 修复记录页状态徽标被压缩成一个字：徽标保留完整宽度，空间不足时先压缩副标题；副标题最多两行。\n- 应用页索引失败改为危险色并追加「下拉可重试」，失败不再看起来像普通说明。\n- 清理页没有可清理对象时收起选择计数与快捷筛选，空卡片可点按重新扫描。\n- 备份行时间改为今天/昨天/日期 + 时间，同一 App 的多份备份更容易区分。\n- 记录页与备份页的日期格式化器按语言缓存，去掉逐行创建开销。\n\n验证：22 个本地测试程序、5 条模拟器 UI 流程、Debug 模拟器与 Release arm64 构建均通过，编译警告 0 条。\n\n备份时间与徽标只影响展示，不改变备份、恢复与清理的判定逻辑。真机签名、容器访问和后台中断矩阵仍待验收。\n\n附件为 **未签名 IPA**，适合按项目说明保留 App Group 权限重新签名安装。",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.4.1",
-          "date": "2026-11-16T01:33:41Z",
-          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.1/WQManager-0.4.1-unsigned.ipa",
-          "size": 849326,
-          "localizedDescription": "修复本轮 Xcode 编译警告：\n\n- 补全共享备份辅助函数的空值标注，包括可空返回值和输出指针。\n- 进程服务查询使用带类型函数指针，移除 performSelector 调用。\n- 修正空间透镜的枚举参数和删除菜单类型。\n- 补齐删除文件历史记录的图标。\n- 空间透镜使用新的外观监听 API，移除 mainScreen 调用。\n\n验证：19 组可移植测试通过；Debug 模拟器及 arm64 Release 构建通过，编译日志无警告；plist、格式及空值契约检查通过；iOS 26.0 模拟器空间透镜运行中切换明暗模式正常。\n\n静态分析完成，保留两条已在修改前版本复现的提示：NSNumber 指针隐式转布尔值，以及另一处菜单可能加入空对象。真机容器权限和进程服务可用性仍需验证。\n\n安装包为 0.4.1（构建号 13）未签名 IPA，含分享扩展；安装前需自行签名并保留 App Group。\n\nSHA-256: ab0c53abc37ea73998851e72b8291985ececd50df1291f6eed3b147b645058cb",
           "minOSVersion": "26.0"
         }
       ],

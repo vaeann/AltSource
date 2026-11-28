@@ -1,19 +1,79 @@
 {
   "name": "热门应用源②",
   "subtitle": "第 2 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 126 个，按更新频率分成 3 个源，这里是第 2 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.2",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.husk.app",
     "dev.ibuilder.app",
     "com.kuschqin.madeira.steamui",
     "com.ios151.insav",
-    "app.local.iPadn",
-    "novadev.iram-plus"
+    "app.local.iPadn"
   ],
   "apps": [
+    {
+      "name": "Husk",
+      "bundleIdentifier": "com.husk.app",
+      "developerName": "Leviidev",
+      "subtitle": "在 iOS 上跑安卓应用",
+      "localizedDescription": "把 APK 拖进来点一下，就能在 QEMU 虚拟机上全屏运行安卓应用，显示与音频均有硬件加速。运行需要 JIT 并在运行时挂上调试器。",
+      "iconURL": "https://raw.githubusercontent.com/Leviidev/Husk/main/src/app/Husk/Assets.xcassets/AppIcon.appiconset/Icon-Default.png",
+      "tintColor": "#5ECC3C",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "3.4",
+          "date": "2026-11-05T03:33:53Z",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.4/Husk.ipa",
+          "size": 142303569,
+          "localizedDescription": "## What's new?\n\n3.4 is a compatibility release. About 97% of the 472 F-Droid apps we test now run, up from 85%. On the 169 Play Store apps we test, about 90% run, not counting apps with anti-tamper or fraud protection, which Husk doesn't try to bypass. All of these numbers are from testing on a Mac.\n\n### More Android apps\n- Microsoft Word opens (Excel and PowerPoint share its libraries)\n- Slack, Gmail, Teams, Deezer, Flipboard and Picsart get past the crashes that stopped them\n- More engines and frameworks start: React Native's new architecture, Qt 6 / QML, and apps using JavaScriptCore\n- libG",
+          "minOSVersion": "15.5",
+          "buildVersion": "149",
+          "buildNumber": "149"
+        },
+        {
+          "version": "3.3",
+          "date": "2026-11-01T01:43:51Z",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.3/Husk.ipa",
+          "size": 142239082,
+          "localizedDescription": "## Play without JIT\nMore games convert and sign their libraries on the device. One library that cannot convert no longer stops the rest. Certificates from SideStore, AltStore, or a `.p12` import more reliably, and converted libraries are signed again after this update.\n\n## More Android apps\nJava apps pick up missing platform classes from AOSP when `framework.jar` is bundled. Jobs and boot receivers actually start, and Wi-Fi, location, and settings answer as a running phone would.\n\n## Importing files\nThe in-app file picker for Android apps can be used more than once in a session.\n\n## 32-bit ARM",
+          "minOSVersion": "15.5",
+          "buildVersion": "148",
+          "buildNumber": "148"
+        },
+        {
+          "version": "3.2.1",
+          "date": "2026-10-31T02:58:46Z",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.2.1/Husk.ipa",
+          "size": 140697147,
+          "localizedDescription": "Fixed certificate importing bug for 3.2 JIT-less",
+          "minOSVersion": "15.5"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "get-task-allow",
+          "dynamic-codesigning",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.developer.kernel.extended-virtual-addressing"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Husk uses the local network to pair with this iPhone for JIT, without a computer."
+        }
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/beach-buggy-racing-2.jpeg",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/game-settings.png",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/geometry-dash.jpeg",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/gta-san-andreas.jpeg",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/library.png",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/minecraft-dungeons.jpeg",
+        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/settings.png"
+      ]
+    },
     {
       "name": "iBuilder",
       "bundleIdentifier": "dev.ibuilder.app",
@@ -284,10 +344,10 @@
       "versions": [
         {
           "version": "1.6",
-          "date": "2026-11-26T14:44:55Z",
-          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b41/STV-1.6b41-unsigned.ipa",
-          "size": 54330260,
-          "localizedDescription": "i短剧 iOS 1.6b41 (v1.6b41)\n\n包内版本为 1.6 build 41。IPA 未签名（最低 iOS 16），请自行重签侧载。\n\n请选择 Assets 中的 APK / IPA，不要下载 Source code。SHA-256 见附件。\n构建源码：2fe0b4969274cca1eccd8697af1a6f4fe82ddb4f\n自动构建：https://github.com/my-name-is-alan/iDuanJu/actions/runs/45838169992",
+          "date": "2026-11-28T17:17:08Z",
+          "downloadURL": "https://github.com/my-name-is-alan/iDuanJu/releases/download/v1.6b47/STV-1.6b47-unsigned.ipa",
+          "size": 57771555,
+          "localizedDescription": "### 更新内容\n\n- **全新「听歌 / 音乐」模块（双端 100% 直连上游，零代理服务器）**：\n  - 支持网易云音乐、QQ 音乐、酷狗音乐、汽水音乐四源聚合搜索、榜单、无损/高品音质切换、歌词同步（含逐字 KRC 解析与 HTML 实体解码）、私人 FM、每日推荐与个性化推荐歌单。\n  - 支持四平台账号登录（含修复汽水音乐扫码 404 问题，改为直连 `scan_login` 码并多跳采集登录 Cookie）与云端歌单自动同步。\n  - 顶部主推升级为 5 张可左右滑动轮播卡片，并严格按「音源开关」过滤首页推荐、私人 FM、榜单与搜索。\n  - 全面优化播放页封面/歌词切换流畅度与瞬时定位，隔离 60fps 旋转动画避免高频重绘卡顿。\n- **修复小说目录直接跳转指定章节白屏卡死（双端）**：\n  - iOS 上下滚动及图文章节改用滑动章节窗口（$O(1)$ 瞬时切章，避免全书 `LazyVStack` 遍历排版与并发书源线程风暴）；翻页模式（仿真/滑动/覆盖/无动画）复用 `UIPageViewController` 并包裹无动画事务，修复动画冲突与覆盖拖拽状态残留；优化大章节网络书缓存迁移至 $O(1)$。\n  - Android 切章立即取消前序慢加载，防止空正文卸载阅读器，并修复滚动模式跳转后 `scrollTarget` 卡死与失败重试问题。\n- **Lega",
           "minOSVersion": "17.0"
         }
       ]
@@ -510,27 +570,27 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.47",
+          "date": "2026-11-28T13:28:53Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.47/LiLite-1.0.47-unsigned.ipa",
+          "size": 28875149,
+          "localizedDescription": "**弹窗与动画**\n\n- 评论输入框和发弹幕输入栏改用系统键盘机制：输入框跟着键盘一起升起和收回，不再跳动、错位或留白；表情、更多、弹幕样式面板直接换到键盘的位置，切换时工具栏不动，点文字即可切回键盘。\n- 评论详情、对话列表、选集、更多内容、展开的播放列表改为系统面板：停在播放器下方，视频保持可见，可下拉关闭，进入下一级也有系统动画。\n- 直播间竖屏的高能用户、醒目留言、弹幕屏蔽等面板，以及动态页的 UP 主面板，改为系统面板。\n- 下拉刷新改为系统样式。\n- 图片查看器改用系统分页滑动；观看历史和云收藏的搜索改为系统搜索框；多选和保存操作栏改为系统底部工具栏。\n- 全屏发弹幕面板打开时，键盘与面板同时弹出。\n\n**更新提醒**\n\n- 修复 GitHub 版不再提醒新版本的问题：回到前台时也会检查（至多每 6 小时一次），提醒不再被其他弹层挡住，GitHub 接口访问失败时改从发布附件读取版本信息。\n\n**搜索**\n\n- 搜索结果各分类页加上左右留白，专栏、直播间、用户和视频结果不再贴边，各页风格统一。\n- 修复切换搜索分类和结果加载时的掉帧。\n\n**播放**\n\n- 修复视频暂停后接续播放时，横版封面一直盖在画面上的问题；竖屏视频不再用横版封面占位。\n\n**iPhone Duo 与大屏**\n\n- 动态页分类栏、视频详情左右分栏的标签栏、搜索结果分类栏、动态详情操作栏改为悬浮液态玻",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.46",
+          "date": "2026-11-28T08:09:25Z",
+          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.46/LiLite-1.0.46-unsigned.ipa",
+          "size": 28933293,
+          "localizedDescription": "**设置**\n\n- 设置重新分类，iPhone 和 iPad 使用同一套目录和搜索；iPad 系统设置式的分栏与表单宽度在横竖屏下保持一致。\n- 精简设置：移除一批偏技术、意义不大的选项，统一使用默认行为（如连接重试、缓冲容量、音画同步、解码顺序、滚动回弹参数、弹幕时长与行高等）。旧的设置备份仍可正常恢复。\n- 删除「页面过渡效果」，页面切换固定使用系统动画；「卡片一镜到底」移到「界面与手势」的实验性功能。\n- 修复关闭设置搜索后列表上移、第一项被搜索框遮住的问题。\n\n**触感**\n\n- 触感反馈默认开启，开关移到「外观与布局 → 界面与手势」。\n- 全应用按操作含义统一震感：切换选择轻点、确认提交稍重、发送和关注等操作按服务器结果给出成功或失败反馈、删除清空给出提醒；打开页面不再震动。滑动调节音量和亮度保持每 5% 一格。\n\n**界面缩放**\n\n- 修复界面缩放不为 100% 时页面顶部和底部的白边、弹层底部被截断、弹出键盘时列表底部多出空白，以及视频详情页顶部伸进状态栏或多出黑边的问题。\n\n**首页与搜索**\n\n- 首页搜索支持从屏幕左边缘右滑返回。\n- iPad 横屏的图标栏悬浮在首页左下角，不再占用一整列。\n\n**播放**\n\n- 双击快进快退时，顶部的进度提示不再闪跳；连点第三下起继续累加，不再弹出控件或弹幕操作。\n- 视频详情页封面点任意位置即可开始播放。\n- iPad ",
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.45",
           "date": "2026-11-28T02:50:14Z",
           "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.45/LiLite-1.0.45-unsigned.ipa",
           "size": 29104183,
           "localizedDescription": "- 修复 iPhone 在 100% 界面缩放下，「我的」「导航布局」「页面动画与回弹」等分组列表左右贴边的问题，恢复系统列表留白。\n- 首页视频卡片的「一镜到底」实验选项延续上一版设置，默认关闭。\n\nGitHub 侧载版，构建 70，本地源码提交 `1419243`。未签名 IPA 需自行签名安装。",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.44",
-          "date": "2026-11-28T02:34:03Z",
-          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.44/LiLite-1.0.44-unsigned.ipa",
-          "size": 29105791,
-          "localizedDescription": "- 首页视频卡片默认使用普通页面转场。新安装或从旧版升级后，「卡片一镜到底」默认关闭，包括之前选过「自定义」的用户。\n- 如需启用，到「设置 → 导航布局 → 页面动画与回弹 → 实验性功能」打开「卡片一镜到底」。可在设置中搜索「一镜到底」直接找到开关。\n\nGitHub 侧载版，构建 69，本地源码提交 `f16ee5c`。未签名 IPA 需自行签名安装。",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.43",
-          "date": "2026-11-28T02:13:14Z",
-          "downloadURL": "https://github.com/liuliuya2333/LiLite/releases/download/v1.0.43/LiLite-1.0.43-unsigned.ipa",
-          "size": 29102833,
-          "localizedDescription": "- 修复从视频页点返回时，首页底栏先亮一下、消失、随后又出现的问题。手拖取消时底栏保持隐藏，确定回到首页后只淡入一次。\n- 优化首页视频卡片的一镜到底返回。手拖过程中，视频页和首页一起缩放时减少了重复布局，半途反向和松手后立即再拖都能接续当前画面。\n\nGitHub 侧载版，构建 68，本地源码提交 `be777e8`。未签名 IPA 需自行签名安装。",
           "minOSVersion": "17.0"
         }
       ],
@@ -846,6 +906,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.5.0",
+          "date": "2026-11-28T15:34:29Z",
+          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.5.0/MeloX-iOS-unsigned.ipa",
+          "size": 31272636,
+          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.5.0`\n- Commit: `4934cc9e7d1fff4961278070e6ac4eb3b6b91e55`\n- Build: `178`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "1.4.1",
           "date": "2026-10-30T13:43:14Z",
           "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.4.1/MeloX-iOS-unsigned.ipa",
@@ -859,14 +927,6 @@
           "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.4.0/MeloX-iOS-unsigned.ipa",
           "size": 30363506,
           "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.4.0`\n- Commit: `9c2f87b57b54ddbab76a4a53736f4840719a0947`\n- Build: `138`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-10-16T14:03:47Z",
-          "downloadURL": "https://github.com/youshen2/MeloX/releases/download/v1.3.0/MeloX-iOS-unsigned.ipa",
-          "size": 27881976,
-          "localizedDescription": "## English\n\nThis MeloX iOS + Apple Watch release was built automatically by GitHub Actions.\n\n### MeloX Website\n\nVisit the [MeloX website](https://melox.luoxe.cn/) for project information and the latest news.\n\n### Download\n\n- `MeloX-iOS-unsigned.ipa`: unsigned iOS package containing the Apple Watch app\n\n### Installation\n\nThe IPA is unsigned and must be signed before installation.\n\n### Build Information\n\n- Version: `v1.3.0`\n- Commit: `a41ea0e1e1fa69fb543d827b853fe3aff5420951`\n- Build: `124`\n\n## 简体中文\n\n这是由 GitHub Actions 自动构建的 MeloX iOS + Apple Watch 发行版本。\n\n### MeloX 官网\n\n访问 [MeloX 官网](https://melo",
           "minOSVersion": "26.0"
         }
       ],
@@ -1105,6 +1165,14 @@
       "tintColor": "#30B582",
       "category": "other",
       "versions": [
+        {
+          "version": "0.3",
+          "date": "2026-11-28T11:43:42Z",
+          "downloadURL": "https://github.com/optimalabsistem/NusaNX/releases/download/NusaNX-0.3/NusaNX.0.3.ipa",
+          "size": 11544337,
+          "localizedDescription": "## Fixes\r\n\r\n    - Fixed shader translation and runtime recompile\r\n    crashes on heavy open-world and legacy SDK0 titles.\r\n    - Fixed shader array-pool syntax rewriting and\r\n    added `early_fragment_tests` injection for\r\n    rendering accuracy.\r\n    - Separated packaged texture data from sparse\r\n    allocations to prevent corruption and memory\r\n    stalls.\r\n    - Fixed Base + Update + DLC bundling and merged\r\n    `.xci` + DLC extraction, including package metadata\r\n    classification and mismatch alerts.\r\n    - Improved the direct multi-select file picker so\r\n    base games, updates, and DLC",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.1",
           "date": "2026-11-18T15:08:38Z",
@@ -1701,6 +1769,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.6",
+          "date": "2026-11-28T17:54:27Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.6/Reloc.ipa",
+          "size": 4452977,
+          "localizedDescription": "## Reloc v1.0.6\n\n### 更新\n- 新增**手绘轨迹**模式：支持单指在地图上自由描画路径（靠近起点松手自动平滑闭合绕圈，双指可随时平移与缩放地图），适合操场跑步、公园环线等非道路场景。\n- 新增**虚拟摇杆**模式：独立 360° 悬浮摇杆自由漫游，支持实时推杆转向、4 档快捷速度与无级调速，并支持**锁定航向后台巡航**。\n- 新增 **GPX 导入 / 导出**与 **JSON 整库备份**：支持标准 GPX 1.0 / 1.1 轨迹、路线与航点导入导出，以及收藏与路线的 JSON 一键备份导出和去重合并导入。\n- 增强**轨迹模拟**能力：新增目标里程 / 目标圈数自动停止、步行与跑步 `min/km` 配速显示、模拟红绿灯 / 短暂停顿、中段起跑（0%–95%）以及贴路模式长按拖动途经点微调。\n- 全面升级**收藏与路线**管理：新增跨标签关键词搜索、彩色分组标签与数量筛选、备注及经纬度完整编辑、路线矢量缩略图预览与最近记录一键收藏。\n- 增强**远距离（>15 km）定位与防回弹**：选点前自动测距并预警、支持自定义刷新浮窗倒计时（自动 7s / 18s、7s、15s、30s），内置 Surge / Shadowrocket / Loon / Clash 安全防回弹代理规则（仅屏蔽 `gs-loc`，不影响 Apple 地图与搜索），并优化远距离及飞行模",
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.5",
           "date": "2026-11-28T04:36:14Z",
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.5/Reloc.ipa",
@@ -1714,14 +1790,6 @@
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.4/Reloc.ipa",
           "size": 3475407,
           "localizedDescription": "## Reloc v1.0.4\n\n### 更新\n- **正式支持 iPad**：移除原有的仅限 iPhone 限制，现已支持 iPad（iPadOS 17.0+）直接使用，真机实测正常。\n\n---\n\n### What's New\n- **iPad Support**: Removed the iPhone-only restriction — Reloc now supports iPad (iPadOS 17.0+) and has been verified on real iPad hardware.",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.3",
-          "date": "2026-11-27T10:53:45Z",
-          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.3/Reloc.ipa",
-          "size": 3483270,
-          "localizedDescription": "## Reloc v1.0.3\n\n### 更新\n- **全新模式**：重新实现定位方式，现在无需电脑、无需配对文件，也无需代理、VPN 或依赖 Wi-Fi，**蜂窝网络下同样可以直接使用**，安装后打开即用。\n\n### 新增功能\n- **海拔高度支持**：地图选点、地址搜索或输入坐标时会自动匹配对应地点的真实海拔；底部卡片与状态栏直接显示当前海拔，点击即可手动调整；搜索框支持直接输入 `纬度, 经度, 海拔`；开启自然微漂移时也会同步模拟细微海拔变化。\n- **英文与中文双语支持**：新增完整英文版本，默认跟随系统语言，并可在「设置 → 应用语言 / Language」中即时切换，地名解析也会随当前语言自动适配。\n\n### 优化与稳定性提升\n- **界面精简**：移除了设置页中多余的通道状态区域，操作更简洁。\n- **稳定性增强**：大幅优化运行过程中的连接与保活表现，修复异常频繁重连与后台容易中断的问题，支持中途掉线自动恢复；切换音频设备（如断开蓝牙耳机）时不再影响后台运行。\n\n### 致谢\n感谢 [**huami**](https://github.com/huami1314) 提供的思路。\n\n---\n\n### What's New\n- **New Mode**: Rebuilt for direct on-device use — no computer, pairing f",
           "minOSVersion": "17.0"
         }
       ],
@@ -1980,46 +2048,6 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Shirox/images/home.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Shirox/images/library.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Shirox/images/player.webp"
-      ]
-    },
-    {
-      "name": "SideStore",
-      "bundleIdentifier": "com.SideStore.SideStore",
-      "developerName": "SideStore Team",
-      "subtitle": "无需电脑的替代商店",
-      "localizedDescription": "社区维护的替代应用商店，无需越狱也无需电脑：用你自己的 Apple ID 重签并安装 IPA，并在后台自动刷新签名。",
-      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/icon.webp",
-      "tintColor": "#C9263E",
-      "category": "other",
-      "versions": [
-        {
-          "version": "0.7.0",
-          "date": "2026-09-15T11:12:49Z",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa",
-          "size": 27770821,
-          "localizedDescription": "## Build Info\r\n\r\nBuilt at (UTC): `Fri Sep 11 21:25:58 2026`\r\nBuilt at (UTC date): `2026-09-11`\r\nCommit SHA: `6032424a0e56c1c319762e786099bdd9186a238b`\r\nVersion: `0.7.0-20260911.328+6032424a`\r\n\r\n#### What's Changed:\r\n- **fixes for 503 during sign-in**: There were some changes from apple server side which broke 0.6.4 and prior versions and prevent them from signing into sidestore. This temporary version addresses the sign-in issue with 503 status code\r\n\r\n#### Full Changelog: [0.6.4...0.7.0-alpha](https://github.com/SideStore/SideStore/compare/0.6.4...0.7.0-alpha)",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.6.4",
-          "date": "2026-09-09T17:59:48Z",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.4/SideStore.ipa",
-          "size": 27609918,
-          "localizedDescription": "# :x: DO NOT USE SIGN-IN IS BROKEN ON 0.6.4 AND BEFORE\r\n\r\n\r\n## Build Info\r\n\r\nBuilt at (UTC): `Wed Sep 09 17:59:46 2026`\r\nBuilt at (UTC date): `2026-09-09`\r\nCommit SHA: `f93a95c079057090bea355453ef24f6e8668dfa9`\r\nVersion: `0.6.4`\r\n\r\n#### What's Changed:\r\n- **Developer Portal in Settings**: Manage your Apple Developer App IDs, Provisioning Profiles, Certificates, Devices, and App Groups directly inside the app for both paid and free team types.\r\n- **Manual Profile Creation**: Paid developer accounts can now create manual profiles on app without having to reach developer portal.\r\n- **Certificate ",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.6.3",
-          "date": "2026-05-05T03:59:02Z",
-          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.3/SideStore.ipa",
-          "size": 28632252,
-          "localizedDescription": "# ⚠️**Please Reinstall With [iloader](https://iloader.app/)**⚠️\r\nIf you have updated to iOS 26.4+ and are receiving VPN errors.\r\n## What's Changed\r\n* Small fixes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1020\r\n* Fix expired Discord link in README.md by @Or3nges in https://github.com/SideStore/SideStore/pull/1101\r\n* Update error codes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1078\r\n* LocalDevVPN by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1126\r\n* Sources: Update/Remove Sources from Trusted Sources by @CelloSerenity in https://gi",
-          "minOSVersion": "15.0"
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.webp",
-        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.webp"
       ]
     }
   ],

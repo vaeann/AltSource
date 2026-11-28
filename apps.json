@@ -1,7 +1,7 @@
 {
   "name": "热门应用源①",
   "subtitle": "第 1 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 126 个，按更新频率分成 3 个源，这里是第 1 个（50 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
@@ -486,11 +486,11 @@
       "category": "other",
       "versions": [
         {
-          "version": "2.6.1-nightly.20261125.2101",
-          "date": "2026-11-25T21:31:21Z",
+          "version": "2.6.1-nightly.20261128.1811",
+          "date": "2026-11-28T18:40:59Z",
           "localizedDescription": "Automated nightly build for community testing (unsigned).\n\nEvery download is named `ARMSX2-nightly-DATE-COMMIT-PLATFORM`, so builds\nfrom different nights stay distinguishable after you have downloaded them.\n\n- macOS arm64: macOS-arm64.tar.xz\n- Linux arm64: Linux-arm64.AppImage, for 4K, 16K and 64K page kernels alike\n- Windows arm64: Windows-arm64.zip\n- RetroArch on Linux arm64: Linux-arm64-libretro-core.tar.zst\n- Bare-display kmsdrm handhelds: Linux-arm64-SDL-handheld.tar.zst (Rocknix and Batocera run compositors, so use the Qt AppImage there instead)\n- Android: Android-arm64.apk (installs as ",
-          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261125/ARMSX2-nightly-20261125-d4fe08faeb-iOS-arm64.ipa",
-          "size": 41389234,
+          "downloadURL": "https://github.com/ARMSX2/ARMSX2/releases/download/nightly-20261128/ARMSX2-nightly-20261128-c727c2d13c-iOS-arm64.ipa",
+          "size": 41401943,
           "minOSVersion": "17.0"
         }
       ],
@@ -930,6 +930,49 @@
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/analysis.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/download.webp",
         "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Cloudn/images/my.webp"
+      ]
+    },
+    {
+      "name": "Coda",
+      "bundleIdentifier": "wow.caicai.coda",
+      "developerName": "Wow-CaiCai",
+      "subtitle": "多平台原生音乐客户端",
+      "localizedDescription": "面向 Mac、iPhone 与 iPad 的原生 SwiftUI 音乐客户端，在同一界面搜索、收藏、播放网易云音乐、QQ 音乐、酷狗音乐、汽水音乐与波点音乐。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/icon.webp",
+      "tintColor": "#6B26BA",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.1.3",
+          "date": "2026-11-27T06:37:17Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.3/Coda-iOS-0.1.3.ipa",
+          "size": 8828035,
+          "localizedDescription": "### 新增\n\n- 新增波点音乐：支持波点音乐 App 扫码登录与会员状态；首页按波点发现页展示个性化歌单、偶遇心动单曲、宝藏歌单库、心动收藏相似推荐、你的主题歌单与波波排行榜，「每日推荐」对应潮趣日推，并提供私人漫游按钮；搜索歌曲、歌手、专辑与歌单，并提供搜索建议与热搜；歌单广场分类、歌单、专辑与歌手页、私人漫游、歌曲评论、逐字歌词；我的歌单的新建、删除、重命名与增删歌曲，收藏歌单与专辑、关注歌手、红心收藏；「最近播放」读取波点账号的播放历史，在 Coda 里起播的歌也会同步到波点手机端的最近播放。\n- 歌词自动优选与手动切换来源新增波点音乐，其他平台的歌曲也可匹配波点的逐字歌词。\n- 新增「设置 → 自定义音源」：可从文件或链接导入Lx自定义音源。\n\n### 修复\n\n- 修复 Mac 主窗口在内容区按住拖动（含触控板单指拖动）时整个窗口跟着移动的问题，现在只有顶部标题栏可以拖动窗口。\n\n### 改进\n\n- iPhone 与竖屏播放详情页的歌词、评论、待播清单与加入歌单改为互相独立的页面：从封面直接切到对应面板，关闭后直接回到封面，不再途经歌词页。\n- Mac 与 iPad 宽屏播放详情页左侧按屏幕高度自适应：封面、歌曲信息、进度条与播放控件随可用高度同步缩放，多余空间均分到上下两侧，不再在 4:3 iPad、4:3 与 5:4 外接显示器或竖放显示器上留下大块空白。\n- 改善 ",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.2",
+          "date": "2026-11-25T19:37:23Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.2/Coda-iOS-0.1.2.ipa",
+          "size": 8400541,
+          "localizedDescription": "### 修复\r\n\r\n- 修复汽水音乐新账号扫码后需要安全验证时，中文系统下汽水安全验证组件因编码识别错误无法加载导致验证窗口显示 404、提示「汽水安全验证组件暂时不可用」而无法登录的问题，验证组件所需的 React 改为随应用内置，不再依赖外部 CDN。\r\n- 修复 QQ 音乐登录数天后过期需要重新扫码的问题：QQ 扫码登录的凭证此前无法续期，现在 QQ、微信、QQ 音乐 App 扫码登录都会在凭证到期前约 6 小时自动续期，应用运行期间也会持续续期，续期失败 5 分钟后重试。\r\n- 修复 iPadOS 16 上手指点不动搜索候选词与热搜词（只有 Apple Pencil 能点）的问题；横向滚动的歌单、专辑货架及设置中账号卡片的移除按钮也一并修复了靠近上下边缘时手指点击无效的问题。",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.1",
+          "date": "2026-11-24T23:14:55Z",
+          "downloadURL": "https://github.com/Wow-CaiCai/Coda/releases/download/v0.1.1/Coda-iOS-0.1.1.ipa",
+          "size": 8325923,
+          "localizedDescription": "### 新增\r\n\r\n- 新增「探索」页：搜索与精选合并，顶部为搜索框，下方按分类显示两行歌单，点分类标题可查看该分类全部歌单。\r\n- Mac 与 iPad 侧边栏加入交互动画（iOS 16–27 通用）：选中高亮滑动、按压回弹、悬停高亮、图标弹跳、设置齿轮旋转、账号切换过渡、状态点渐变、歌单增删动画。\r\n- 主内容区加入动画：加载骨架淡入为内容，我的收藏、搜索、听歌排行的分段切换淡入淡出。\r\n- Mac 播放详情页改为从底部播放栏放大展开，关闭时缩回播放栏。\r\n\r\n### 修复\r\n\r\n- 修复 iPadOS 16 切换应用后回到播放详情页，当前行歌词高亮不显示的问题。\r\n- 修复 iOS 16–17 旋转播放详情页时出现白边或黑块、内容消失和被裁切的问题。\r\n- 拖动进度、调整歌词偏移或切换歌词来源、切换音质后，歌词会重新对齐实际播放进度。\r\n- 修复 Toast 被播放详情页遮挡的问题，并移除 iPad 上重复的 Toast 层。\r\n- 修复 iPad 点击热搜候选词时搜索整行展示文字而不是实际关键词的问题。\r\n- 修复 iOS 16 底栏搜索按钮只有图标可点、圆形区域其他位置点击无效的问题。\r\n- 修复侧边栏账号状态圆点在校验被取消后一直闪烁「验证中」的问题。\r\n\r\n### 改进\r\n\r\n- iOS 16–17 播放详情页改为从迷你播放条放大打开，接近 iOS 18+ 原生 zo",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/home.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/search.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/album-12.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/artist-3.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/Coda/images/player-7.webp"
       ]
     },
     {
@@ -2033,22 +2076,20 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "3.2.0",
+          "date": "2026-11-28T14:12:09Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.2.0/HGhubX_3.2.0_ios.ipa",
+          "size": 5320793,
+          "localizedDescription": "# HGhubX v3.2.0\r\n\r\nHGhubX 3.2.0 正式版：新增 MacCMS v10 订阅源导入与端到端可用性探测、自定义跳过片头与 5 秒可取消跳过片尾倒计时、缓冲实时网速、全量诊断日志原生分享、源自定义排序标签、评论触底自动加载与按源分桶片库，同时修复切源后线路与个人页错乱、限区/超时源长时间无提示转圈、重复刷新叠提示卡片及全端交互细节；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\r\n\r\n## 新增与优化\r\n1. **MacCMS v10 订阅清单导入与端到端测活（#309）**：在「设置 → 视频源管理」与首启「导入视频源」支持导入 Base58 / Base64 / JSON（`{ api_site }`）及 TVBox `type: 1` 订阅清单，自动探测叶分类并隐藏空专题；新增「测试可用性」「停止测试」「一键选可用」「仅看可用」，端到端实测接口与直链片源连通性并实时反馈延迟与本地化失败原因；统一扫码与深链对订阅清单的识别，并对 TV / 局域网单源入口误传订阅清单提供明确引导；批量移除源新增内联二次确认并保持搜索筛选栏可见。\r\n2. **自定义跳过片头与 5 秒可取消跳过片尾（#309）**：在「设置 → 播放设置」新增「跳过片头 / 跳过片尾」（`0–600s`、默认 `0`，支持快捷挡位与自定义秒数）",
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "3.1.1",
           "date": "2026-11-27T14:18:54Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.1/HGhubX_3.1.1_ios.ipa",
           "size": 5196736,
           "localizedDescription": "# HGhubX v3.1.1\r\n\r\nHGhubX 3.1.1 正式版：全量流畅度与视频加载性能优化、片尾下一集预热、AI 画质增强、桌面深链与底栏跟随手势切换，并进一步修复评论显示/计数异常与切页闪烁问题；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **全量流畅度与视频加载优化（#303）**：底层网络启用 HTTP/2 连接复用、延长客户端连接池生命周期并缓存系统代理探测，合并并发 HLS 清单请求且将封面解密移至后台线程池；前端收紧移动端播放缓冲策略、启用首片预取与按尺寸自适应码率，离页 20 秒自动挂起闲置解码器，并降低毛玻璃重绘与微光采样开销。\r\n2. **片尾预热下一集与推荐流预加载（#299）**：播放临近片尾时自动并发预热下一集 HLS 清单与首片，首页推荐流在当前视频稳定播放 3 秒后同步预热下一条推荐视频，切集与切流接近秒开。\r\n3. **AI 画质增强与 WebGL 渲染优化（#279、#281）**：新增「画质增强」播放设置，支持细节增强与自然胶片颗粒；通过 FBO 缓存、`texSubImage2D` 逐帧上传与 `ResizeObserver` 尺寸监听消除逐帧同步 GPU 检查带来的卡顿。\r\n4. **移动端底栏跟随手势滑动（#292）**：在底部导航胶囊上左右滑动时实时带动主页面跟随切换",
           "minOSVersion": "15.0"
-        },
-        {
-          "version": "3.1.2",
-          "date": "2026-11-26T15:05:45Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.1.2_ios.ipa",
-          "size": 5498910,
-          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`3e0142c`）自动合成的全平台预览构建（更新时间：`2026-11-28T07:09:23Z`，测试提交：`bc7cd8c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #309 feat(source,playback,tv,ui): MacCMS 订阅导入、片头片尾跳过、按源分桶、TV 交互与平板/鸿蒙返回优化（@zxsos，`b133dfa`）",
-          "minOSVersion": "15.0",
-          "buildVersion": "3.1.2",
-          "buildNumber": "3.1.2"
         },
         {
           "version": "3.0.0",
@@ -2063,66 +2104,6 @@
         "entitlements": [],
         "privacy": {}
       }
-    },
-    {
-      "name": "Husk",
-      "bundleIdentifier": "com.husk.app",
-      "developerName": "Leviidev",
-      "subtitle": "在 iOS 上跑安卓应用",
-      "localizedDescription": "把 APK 拖进来点一下，就能在 QEMU 虚拟机上全屏运行安卓应用，显示与音频均有硬件加速。运行需要 JIT 并在运行时挂上调试器。",
-      "iconURL": "https://raw.githubusercontent.com/Leviidev/Husk/main/src/app/Husk/Assets.xcassets/AppIcon.appiconset/Icon-Default.png",
-      "tintColor": "#5ECC3C",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "3.4",
-          "date": "2026-11-05T03:33:53Z",
-          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.4/Husk.ipa",
-          "size": 142303569,
-          "localizedDescription": "## What's new?\n\n3.4 is a compatibility release. About 97% of the 472 F-Droid apps we test now run, up from 85%. On the 169 Play Store apps we test, about 90% run, not counting apps with anti-tamper or fraud protection, which Husk doesn't try to bypass. All of these numbers are from testing on a Mac.\n\n### More Android apps\n- Microsoft Word opens (Excel and PowerPoint share its libraries)\n- Slack, Gmail, Teams, Deezer, Flipboard and Picsart get past the crashes that stopped them\n- More engines and frameworks start: React Native's new architecture, Qt 6 / QML, and apps using JavaScriptCore\n- libG",
-          "minOSVersion": "15.5",
-          "buildVersion": "149",
-          "buildNumber": "149"
-        },
-        {
-          "version": "3.3",
-          "date": "2026-11-01T01:43:51Z",
-          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.3/Husk.ipa",
-          "size": 142239082,
-          "localizedDescription": "## Play without JIT\nMore games convert and sign their libraries on the device. One library that cannot convert no longer stops the rest. Certificates from SideStore, AltStore, or a `.p12` import more reliably, and converted libraries are signed again after this update.\n\n## More Android apps\nJava apps pick up missing platform classes from AOSP when `framework.jar` is bundled. Jobs and boot receivers actually start, and Wi-Fi, location, and settings answer as a running phone would.\n\n## Importing files\nThe in-app file picker for Android apps can be used more than once in a session.\n\n## 32-bit ARM",
-          "minOSVersion": "15.5",
-          "buildVersion": "148",
-          "buildNumber": "148"
-        },
-        {
-          "version": "3.2.1",
-          "date": "2026-10-31T02:58:46Z",
-          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.2.1/Husk.ipa",
-          "size": 140697147,
-          "localizedDescription": "Fixed certificate importing bug for 3.2 JIT-less",
-          "minOSVersion": "15.5"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "get-task-allow",
-          "dynamic-codesigning",
-          "com.apple.developer.kernel.increased-memory-limit",
-          "com.apple.developer.kernel.extended-virtual-addressing"
-        ],
-        "privacy": {
-          "NSLocalNetworkUsageDescription": "Husk uses the local network to pair with this iPhone for JIT, without a computer."
-        }
-      },
-      "screenshots": [
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/beach-buggy-racing-2.jpeg",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/game-settings.png",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/geometry-dash.jpeg",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/gta-san-andreas.jpeg",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/library.png",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/minecraft-dungeons.jpeg",
-        "https://raw.githubusercontent.com/Leviidev/Husk/main/Screenshots/settings.png"
-      ]
     }
   ],
   "news": []

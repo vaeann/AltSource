@@ -1,19 +1,59 @@
 {
   "name": "热门应用源③",
   "subtitle": "第 3 批 · 按更新时间排序 · 自动同步上游",
-  "description": "精挑细选的 iOS 侧载应用合集，共 125 个，按更新频率分成 3 个源，这里是第 3 个（25 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
+  "description": "精挑细选的 iOS 侧载应用合集，共 126 个，按更新频率分成 3 个源，这里是第 3 个（26 个）。\n\n版本数据直接从各项目的官方 GitHub 仓库拉取，副标题开头的日期是最近一次发版时间（北京时间）。",
   "identifier": "com.vaeann.source.3",
   "iconURL": "https://github.com/vaeann.png?size=256",
   "website": "https://github.com/vaeann",
   "tintColor": "#8A8984",
   "featuredApps": [
+    "com.SideStore.SideStore",
     "com.xycz.simple-live",
     "org.spotube.spotube.Spotube",
     "com.ishtiaqsyed.StatsForIOS",
-    "com.stik.stikdebug",
-    "io.nekohasekai.swipt"
+    "com.stik.stikdebug"
   ],
   "apps": [
+    {
+      "name": "SideStore",
+      "bundleIdentifier": "com.SideStore.SideStore",
+      "developerName": "SideStore Team",
+      "subtitle": "无需电脑的替代商店",
+      "localizedDescription": "社区维护的替代应用商店，无需越狱也无需电脑：用你自己的 Apple ID 重签并安装 IPA，并在后台自动刷新签名。",
+      "iconURL": "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/icon.webp",
+      "tintColor": "#C9263E",
+      "category": "other",
+      "versions": [
+        {
+          "version": "0.7.0",
+          "date": "2026-09-15T11:12:49Z",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa",
+          "size": 27770821,
+          "localizedDescription": "## Build Info\r\n\r\nBuilt at (UTC): `Fri Sep 11 21:25:58 2026`\r\nBuilt at (UTC date): `2026-09-11`\r\nCommit SHA: `6032424a0e56c1c319762e786099bdd9186a238b`\r\nVersion: `0.7.0-20260911.328+6032424a`\r\n\r\n#### What's Changed:\r\n- **fixes for 503 during sign-in**: There were some changes from apple server side which broke 0.6.4 and prior versions and prevent them from signing into sidestore. This temporary version addresses the sign-in issue with 503 status code\r\n\r\n#### Full Changelog: [0.6.4...0.7.0-alpha](https://github.com/SideStore/SideStore/compare/0.6.4...0.7.0-alpha)",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.6.4",
+          "date": "2026-09-09T17:59:48Z",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.4/SideStore.ipa",
+          "size": 27609918,
+          "localizedDescription": "# :x: DO NOT USE SIGN-IN IS BROKEN ON 0.6.4 AND BEFORE\r\n\r\n\r\n## Build Info\r\n\r\nBuilt at (UTC): `Wed Sep 09 17:59:46 2026`\r\nBuilt at (UTC date): `2026-09-09`\r\nCommit SHA: `f93a95c079057090bea355453ef24f6e8668dfa9`\r\nVersion: `0.6.4`\r\n\r\n#### What's Changed:\r\n- **Developer Portal in Settings**: Manage your Apple Developer App IDs, Provisioning Profiles, Certificates, Devices, and App Groups directly inside the app for both paid and free team types.\r\n- **Manual Profile Creation**: Paid developer accounts can now create manual profiles on app without having to reach developer portal.\r\n- **Certificate ",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.6.3",
+          "date": "2026-05-05T03:59:02Z",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.3/SideStore.ipa",
+          "size": 28632252,
+          "localizedDescription": "# ⚠️**Please Reinstall With [iloader](https://iloader.app/)**⚠️\r\nIf you have updated to iOS 26.4+ and are receiving VPN errors.\r\n## What's Changed\r\n* Small fixes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1020\r\n* Fix expired Discord link in README.md by @Or3nges in https://github.com/SideStore/SideStore/pull/1101\r\n* Update error codes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1078\r\n* LocalDevVPN by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1126\r\n* Sources: Update/Remove Sources from Trusted Sources by @CelloSerenity in https://gi",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/apps.webp",
+        "https://raw.githubusercontent.com/bebound/AltGallery/refs/heads/master/apps/SideStore/images/browse.webp"
+      ]
+    },
     {
       "name": "Simple Live",
       "bundleIdentifier": "com.xycz.simple-live",
@@ -200,10 +240,10 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-28T01:41:18Z",
-          "localizedDescription": "* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availabi",
+          "date": "2026-11-28T11:10:52Z",
+          "localizedDescription": "* Compress native libraries in the Android APK\n* Keep protobuf-lite message fields in Android release builds\n* Raise iOS JIT page prepare batch size to 1024\n* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* ",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48265190,
+          "size": 48265258,
           "minOSVersion": "16.4"
         }
       ],
@@ -479,6 +519,16 @@
       "category": "books",
       "versions": [
         {
+          "version": "2.8.2",
+          "date": "2026-11-28T14:42:39Z",
+          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.2/venera-prime-ios-2.8.2%2B282.ipa",
+          "size": 16738680,
+          "buildVersion": "282",
+          "buildNumber": "282",
+          "localizedDescription": "# Venera Prime 2.8.2\n\n## 本次更新\n\n- **取消下载后清理残留 #60**（@JieZhiF）：取消时会等正在写入的文件结束，清理本次任务创建的内容，保留原有页面。刷新本地库时会跳过带有未完成下载标记的目录。此前留下的目录可在「设置 → 应用 → 清理已放弃的下载」中选择并确认清理。\n- **Android 授权目录续传 #59**（@JieZhiF）：使用系统文件选择器授权的目录时，恢复下载会在后台按章节批量读取文件名和大小，减少逐页查询造成的界面停顿。空文件和标记为失败的页面会重新下载。\n- **阅读页边距实时预览 #57**（@suppermanzero）：拖动页边距滑块即可看到当前页面宽度变化，瀑布流也会应用新边距。高度较小的横屏下，页边距与进度控件并排显示。\n\n## 请更新后验证并反馈\n\n请以上问题的提出者安装 2.8.2，按原步骤复查。已解决请在原 issue 留言确认并关闭；仍可复现请附版本、系统与设备、漫画源、步骤和必要的日志或录屏。已关闭的问题也可继续留言或重新打开。请遮盖账号、密码、令牌和 WebDAV 私有地址。关联 issue 将保持开放，等待原设备、漫画源及服务端的实际反馈。\n\n## 历史待确认问题\n\n以下为此前版本已有改动的复查项。\n\n| 相关 issue | 提出者 | 请复查的行为 |\n| --- | --- | --- |",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "2.8.1",
           "date": "2026-11-10T18:00:24Z",
           "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.8.1/venera-prime-ios-2.8.1%2B281.ipa",
@@ -496,16 +546,6 @@
           "buildVersion": "280",
           "buildNumber": "280",
           "localizedDescription": "# Venera Prime 2.8.0\n\n## 本次更新\n\n- **搜索记录新旧切换 #51**（@suppermanzero）：搜索页“清空”左侧新增切换按钮。旧版仅显示去重关键词，点击后按当前选择的漫画源及筛选条件重新搜索；新版保留来源、筛选和页码恢复。切换选择在重启后保留，两种记录同时保存，多个来源／筛选组合不再挤掉关键词模式中的其他历史词。默认仍为新版。\n- **自定义本地目录的 EPUB 与大小统计 #43**（@lzx377z）：修正 Android 授权目录扫描返回的文件句柄，导出 EPUB 时在工作线程内重新打开文件，修复已有漫画重新加载后导出失败及大小显示为 0 B 的问题。请在原存储目录中重启应用后复查已有漫画，并检查导出图片完整性。\n- **目录扫描与线程生命周期 #43**（@lzx377z）：扫描句柄数组改为显式复制和释放，修正压力测试中 384 个文件仅返回 64 个的遗漏；补齐 JNI 线程附着／解除的作用域管理。**用户报告的启动一段时间后闪退仍未复现，尚未确认根因，不能视为已修复。**\n- **连续音量键翻页**：翻页动画尚未结束时，下一次按键从待到达页继续计算，避免快速按两三次只翻一页，并修正快速反向操作。\n\n## 请更新后验证并反馈\n\n请关联 issue 的提出者安装 **2.8.0**，按原复现步骤检查。已解决时，请在原 issue 确认，",
-          "minOSVersion": "14.0"
-        },
-        {
-          "version": "2.7.2",
-          "date": "2026-11-04T16:17:55Z",
-          "downloadURL": "https://github.com/venera-app/venera-prime/releases/download/v2.7.2/venera-prime-ios-2.7.2%2B272.ipa",
-          "size": 16716650,
-          "buildVersion": "272",
-          "buildNumber": "272",
-          "localizedDescription": "# Venera Prime 2.7.2\n\n## 本次更新\n\n- **WebDAV 自动同步触发**：补齐稍后阅读、阅读历史删除、阅读统计删除与图片收藏增删后的自动上传通知。关闭自动同步时仍不会自动上传，恢复备份不会再次触发上传；阅读进度继续在退出阅读器时保存同步。\n- **WebDAV 最新备份选择**：优先按数据修订号选择和保留备份，避免两端日期不一致或设备时钟回退时把较新的数据当作旧备份。恢复不含详细搜索记录字段的旧版备份时保留本地记录，明确为空的记录仍可清空。\n- **同步卡住与网络超时**：为 WebDAV 设置连接、发送与接收超时，并补齐网络适配器对请求取消、上传停滞、等待响应和接收停滞的处理；单次请求超时后仍可继续发起请求。慢速但持续传输的上传不会被响应等待计时提前中断。\n- **首页收藏卡片界面**：添加收藏夹改用应用统一的弹出面板、文件夹图标和列表样式，首页自定义页与设置弹窗沿用公共组件，并修正窄屏长标题溢出。\n- **首页收藏夹返回**：从首页卡片进入收藏夹后显示返回按钮，正常浏览时点击返回或使用系统返回可直接回到首页，不再先返回收藏夹主页。搜索和多选模式仍先退出当前模式。\n\n## 请更新后验证并反馈\n\n请相关 issue 的提出者更新至 **2.7.2**，按原复现步骤复查。已解决时，请在原 issue 确认并及时关闭尚未关闭的问题；仍存在时，请提供版本号、系",
           "minOSVersion": "14.0"
         }
       ],
@@ -659,6 +699,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.9.31",
+          "date": "2026-11-28T15:25:42Z",
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.31/WQFiles.ipa",
+          "size": 2291693,
+          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.31\n\nChange permissions in Get Info, Import as Backup works on iOS 27.2.1, and a clearer \"Backup was edited\" warning.\n\n## New",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.9.30",
           "date": "2026-11-26T11:23:07Z",
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.30/WQFiles.ipa",
@@ -672,14 +720,6 @@
           "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.20/WQFiles.ipa",
           "size": 2199929,
           "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.20\n\nApps Manager backups, and safer handling of databases that are in use.\n\n## New\n\n- **Import Apps Manager backups** ([#19]",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.9.19",
-          "date": "2026-11-20T01:16:50Z",
-          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.19/WQFiles.ipa",
-          "size": 2182170,
-          "localizedDescription": "> **Requires:** iOS 26.0 – 26.7.2, or iOS 27.0 up to 27.3 beta 1. **Not supported:** iOS 27.3 beta 2 and later, where Apple patched worse_query. Tested on iOS 27.0.1, 27.2.1, 27.3 beta 1 (confirmed by a user) and 26.7.1; see [Tested devices](https://github.com/kolbicz/WQFiles#tested-devices).\n> **Needs:** a sideloading tool that keeps the App Group entitlement; see [Signing](https://github.com/kolbicz/WQFiles#signing-the-app-group) in the README.\n\n# Worse Query Files 0.9.19\n\nA small fix release, plus optional App Store icons.\n\n## New\n\n- **Settings → App Store Icons** (off by default): other ap",
           "minOSVersion": "26.0"
         }
       ],
@@ -739,27 +779,27 @@
       "category": "other",
       "versions": [
         {
+          "version": "0.6.0",
+          "date": "2026-11-28T13:39:34Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.6.0/WQManager-0.6.0-build6-unsigned.ipa",
+          "size": 1022757,
+          "localizedDescription": "## 这次多了什么\n\n- **共享容器可以清理了**（issue #4 的后半）：应用工具 →「共享容器」，只有本构建拥有 App Group 的那个容器标「可清理」。选中文件或文件夹 →「移到回收站」→ 确认。项目进入 WQManager 自己的回收站（设置 → 回收站），随时还原；每次移动都记进「记录」。\n- **无法证明归属的容器仍然只读**：其他 App 的 Group 只给浏览和导出，不提供删除。这是刻意的——拆掉别人正在用的数据是找不回来的。\n- **空间变化折线更好读**：涨红、跌绿，右上直接给本次增量，左上给最新大小；长历史自动抽稀，容器变化处才断开。\n\n## 顺手修掉\n\n- 扫描历史里一条日期越界会让整份历史读不出来（无符号乘法回绕写坏了 plist）。现在记录时拒绝越界日期，加载时跳过坏行。\n\n## 安装\n\n未签名包，需要用自己的描述文件重签，**保留 App Group `group.mumu.wqmanager`**（App 与分享扩展都要）。构建号 6，比 5 大，覆盖安装是升级。\n\n## 验证\n\n- 26 个单元测试程序全过；20 个 UI 用例全过（新增清理全流程：可清理标记 → 选择 → 销毁按钮 → 确认 → 文件离开容器 → 空态）。\n- Release 构建主 App 与扩展均为 0.6.0 / 6。\n\n`WQManager-0.6.0-bui",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.5.1",
+          "date": "2026-11-28T12:15:02Z",
+          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.5.1/WQManager-0.5.1-build5-unsigned.ipa",
+          "size": 1013154,
+          "localizedDescription": "0.5.1（构建 5）：共享容器总览、目录快照、扫描连续性。\n\n**新增**\n- 共享容器只读总览（应用工具 →「共享容器」）：按容器身份去重，按证据分四段（已验证 / 名称推断 / 归属未知 / 扩展），只读浏览 + 选择性导出，不写入任何共享容器。\n- 目录快照（存储详情 →「文件夹」）：记一份仅元数据的快照，对比最近两次定位目录增长，可跳空间透镜。\n- 首页索引扫描切页后继续，进度胶囊不跟到其他页面、不挡那边的备份/导出。\n\n**修复**\n- 结构化文件按文件头识别格式；取消工作副本真的会停；翻过末页提示最后一页。\n- 存储详情显示最新测量值，趋势在覆盖变化处断开，不再当成增长。\n\n**安装**：未签名，需自行重签；重签必须保留 App Group `group.mumu.wqmanager`。\n\n**验证**：单测 26 个程序、XCUITest 19 例全通过，Release 构建成功。\n\n产物：`WQManager-0.5.1-build5-unsigned.ipa`（1,013,154 字节，sha256 `63db60b9…a06dde`）、`WQManager-0.5.1-build5-dSYM.zip`。",
+          "minOSVersion": "26.0"
+        },
+        {
           "version": "0.5",
           "date": "2026-11-18T11:48:53Z",
           "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.5.0/WQManager-0.5-build1-unsigned.ipa",
           "size": 952702,
           "localizedDescription": "显示版本 **0.5**，构建 **1**；内部发布修订 **0.5.0**。\n\n这个版本的主题是「找得到、看得懂、拿得走」：\n\n- **全局文件搜索**：跨 App 搜索用户文件，结果边扫边出；支持文件名 / 相对路径 / App 名、类型与最小大小筛选、路径 / 大小 / 最新排序。结果可原地预览或打开所在目录，扫描中可取消。\n- **空间变化**：按「较上次 / 近 7 天 / 近 30 天」比较，按增长排序并显示合计占用与净变化；新增全部 App 合计趋势图，单 App 详情保留当前大小、较上次、近 7 天与扫描历史。\n- **文件审计与导出**：大文件 / 重复文件按 App 分组，重复项经 SHA-256 确认；清理时每个 App 至少保留一份，删除进入空间透镜回收站。导出中心可分享或存储到「文件」，目标写入完成才记成功，取消 / 失败会清理临时目录。\n- **安全与一致性**：跨 App 的相同文件不再被当成可互相替代；重复清理不能选中某个 App 的最后一份；上次中断的导出在重开后显示「已中断」；清理 14 个无用本地化 key，中英文 813 个 key 对齐。\n- **界面**：修复空间变化页底部被悬浮 Tab Bar 遮挡；补充全局搜索、空间趋势、导出选择面板的中英文文案。\n\n验证：23 个本地测试程序、9 条模拟器 UI 流程、Debug 模拟器与 Rele",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.4",
-          "date": "2026-11-16T13:47:46Z",
-          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.4/WQManager-0.4-build16-unsigned.ipa",
-          "size": 891285,
-          "localizedDescription": "显示版本 **0.4**，构建 **16**；内部发布修订 **0.4.4**。\n\n- 修复记录页状态徽标被压缩成一个字：徽标保留完整宽度，空间不足时先压缩副标题；副标题最多两行。\n- 应用页索引失败改为危险色并追加「下拉可重试」，失败不再看起来像普通说明。\n- 清理页没有可清理对象时收起选择计数与快捷筛选，空卡片可点按重新扫描。\n- 备份行时间改为今天/昨天/日期 + 时间，同一 App 的多份备份更容易区分。\n- 记录页与备份页的日期格式化器按语言缓存，去掉逐行创建开销。\n\n验证：22 个本地测试程序、5 条模拟器 UI 流程、Debug 模拟器与 Release arm64 构建均通过，编译警告 0 条。\n\n备份时间与徽标只影响展示，不改变备份、恢复与清理的判定逻辑。真机签名、容器访问和后台中断矩阵仍待验收。\n\n附件为 **未签名 IPA**，适合按项目说明保留 App Group 权限重新签名安装。",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "0.4.1",
-          "date": "2026-11-16T01:33:41Z",
-          "downloadURL": "https://github.com/hseons/WQManager/releases/download/v0.4.1/WQManager-0.4.1-unsigned.ipa",
-          "size": 849326,
-          "localizedDescription": "修复本轮 Xcode 编译警告：\n\n- 补全共享备份辅助函数的空值标注，包括可空返回值和输出指针。\n- 进程服务查询使用带类型函数指针，移除 performSelector 调用。\n- 修正空间透镜的枚举参数和删除菜单类型。\n- 补齐删除文件历史记录的图标。\n- 空间透镜使用新的外观监听 API，移除 mainScreen 调用。\n\n验证：19 组可移植测试通过；Debug 模拟器及 arm64 Release 构建通过，编译日志无警告；plist、格式及空值契约检查通过；iOS 26.0 模拟器空间透镜运行中切换明暗模式正常。\n\n静态分析完成，保留两条已在修改前版本复现的提示：NSNumber 指针隐式转布尔值，以及另一处菜单可能加入空对象。真机容器权限和进程服务可用性仍需验证。\n\n安装包为 0.4.1（构建号 13）未签名 IPA，含分享扩展；安装前需自行签名并保留 App Group。\n\nSHA-256: ab0c53abc37ea73998851e72b8291985ececd50df1291f6eed3b147b645058cb",
           "minOSVersion": "26.0"
         }
       ],
