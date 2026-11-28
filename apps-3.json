@@ -200,10 +200,10 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-25T14:04:10Z",
-          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
+          "date": "2026-11-28T01:41:18Z",
+          "localizedDescription": "* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availabi",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48264471,
+          "size": 48265190,
           "minOSVersion": "16.4"
         }
       ],
@@ -567,10 +567,20 @@
       "developerName": "Kyosee",
       "subtitle": "Venera 个人增强分支",
       "localizedDescription": "原版 Venera 的个人维护增强分支，通过插件接入多种漫画图源，提供本地收藏与阅读进度同步。",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#D55A2E",
       "category": "books",
       "versions": [
+        {
+          "version": "3.0.3",
+          "date": "2026-11-28T03:46:39Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.3/VeneraX-ios-3.0.3%2B267.ipa",
+          "size": 40925901,
+          "buildVersion": "267",
+          "buildNumber": "267",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.3/VeneraX-3.0.3.apk) | [ARM64](https://github.com/Kyosee/VeneraX",
+          "minOSVersion": "15.1"
+        },
         {
           "version": "3.0.2",
           "date": "2026-11-24T14:57:44Z",
@@ -589,16 +599,6 @@
           "buildVersion": "260",
           "buildNumber": "260",
           "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee",
-          "minOSVersion": "15.1"
-        },
-        {
-          "version": "3.0.0",
-          "date": "2026-11-15T10:37:41Z",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-          "size": 39423677,
-          "buildVersion": "258",
-          "buildNumber": "258",
-          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and s",
           "minOSVersion": "15.1"
         }
       ],

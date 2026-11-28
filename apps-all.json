@@ -1954,7 +1954,7 @@
         {
           "version": "0.15.4",
           "date": "2026-11-20T02:09:37Z",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.4/HentaiPark-0.15.4-85-ios-arm64-unsigned.ipa",
+          "downloadURL": "https://github.com/twobirdsfly/Hentai-Park/releases/download/v0.15.4/HentaiPark-0.15.4-85-ios-arm64-unsigned.ipa",
           "size": 18027346,
           "localizedDescription": "## 中文\n\n### 改进\n- 酒馆会话进入主页“继续看”，可直接恢复对应对话，删除会话时同步移除历史条目。\n- 酒馆域页按创作与导入、管理分组显示操作入口。\n- Windows 安装程序和便携包随移动端版本同步发布。\n\n### 修复\n- 修复吃瓜域在线与离线图库中放大图片后横拖提前翻页、双指缩放受阻的问题。\n- 修复文章列表遗漏原站封面模糊效果，以及离线图片解码失败后重试反复读取坏缓存的问题。\n- 改善附件较多的离线文章的打开和续传性能。\n\n## English\n\n### Improvements\n- Resume individual Tavern conversations from Continue on the home page. Deleting a conversation also removes its history entry.\n- Tavern actions are grouped into creation and import tools and management tools.\n- Windows installers and portable packages now ship alongside mobile releases.\n\n### Fixes\n- Fixed premature page turns and interrupted p",
           "minOSVersion": "15.0",
@@ -1964,7 +1964,7 @@
         {
           "version": "0.15.3",
           "date": "2026-11-19T10:19:57Z",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
+          "downloadURL": "https://github.com/twobirdsfly/Hentai-Park/releases/download/v0.15.3/HentaiPark-0.15.3-84-ios-arm64-unsigned.ipa",
           "size": 18035069,
           "localizedDescription": "## 中文\n\n### 新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n\n### 改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n- 酒馆域页提供 AI 创作、导入和新建角色卡或世界书的独立入口；资源库页专注保存资源与会话。\n- AI 创作支持自然语言或结构化字段输入，生成预览可顺畅上下滚动，角色卡编辑器统一字段间距。\n- 酒馆会话会出现在主页的会话记录中；对话与资源生成提示词要求直接输出内容，减少额外建议和警告文本。\n\n### 插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\n\n## English\n\n### New\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and a",
           "minOSVersion": "15.0"
@@ -1972,7 +1972,7 @@
         {
           "version": "0.15.2",
           "date": "2026-11-19T04:42:15Z",
-          "downloadURL": "https://github.com/drdon1234/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa",
+          "downloadURL": "https://github.com/twobirdsfly/Hentai-Park/releases/download/v0.15.2/HentaiPark-0.15.2-83-ios-arm64-unsigned.ipa",
           "size": 18025060,
           "localizedDescription": "## 中文\n\n### 新功能\n- 酒馆支持自建和编辑角色卡、PNG 头像与世界书，可用 AI 分轮创作、生成世界书大纲，并逐个采纳字段或词条。\n- 酒馆编辑器可恢复本机草稿、回看文本版本，并用示例消息查看世界书词条命中或跳过的原因。\n- 酒馆会话可切换发言角色，保存标签、笔记与记忆，生成摘要并查看本轮提示词。\n\n### 改进\n- 酒馆资源可按名称和标签搜索、置顶、另存副本，也可从其他世界书导入词条。\n- 站内搜索的数值筛选支持直接输入；启动时优先展示应用更新，再处理插件更新。\n\n### 插件更新\n- RisuRealm 0.0.4：增加成人内容显示开关，改进世界书筛选。\n\n## English\n\n### New\n- Create and edit Tavern character cards, PNG portraits and world books. Work with AI over multiple rounds, generate a world book outline and accept individual fields or entries.\n- Resume local editor drafts, review text revisions and test a sample message to see why world book entries mat",
           "minOSVersion": "15.0"
@@ -2033,16 +2033,6 @@
       "category": "entertainment",
       "versions": [
         {
-          "version": "3.1.2",
-          "date": "2026-11-27T19:01:14Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.2/HGhubX_3.1.2_ios.ipa",
-          "size": 5216729,
-          "localizedDescription": "# HGhubX v3.1.2\n\nHGhubX 3.1.2 正式版：正式纳入 HarmonyOS 鸿蒙未签名安装包（自签可用），新增视频加载 DNS 并发竞速与 Rust 媒体代理层 HLS 后台并发预取，统一全端网络、视频源与播放器错误代号层，并修复安卓端返回退出后重新打开闪退与切后台继续拉流问题；覆盖 Windows、macOS、Linux、Android、iOS 与 HarmonyOS。\n\n## 新增与优化\n1. **正式纳入 HarmonyOS 鸿蒙自签版（#283）**：同步标准版全部功能与界面，随本版同步提供 `HGhubX_3.1.2_ohos_arm64_unsigned.hap` 未签名安装包；前端自动识别 HarmonyOS 平台，内置更新检查支持优先匹配 `.hap` 产物。\n2. **视频加载与首播提速**：\n   - 底层客户端构建与域名解析引入同主机 single-flight 合并与 900ms 系统 DNS / 阿里 DoH 并发竞速（保留严格模式既有 IP 与重定向安全校验），降低冷启动并发排队与弱网 DNS 阻塞。\n   - Rust 媒体代理层新增 HLS 后台并发预取：解析播放列表后即并发预热加密 Key、初始化片段与前 2 个分片，播放期间按当前分片自动预取后续 `N+1` / `N+2` 分片（全局并发限流 3，切线、切集或清缓存即时取消",
-          "minOSVersion": "15.0",
-          "buildVersion": "3.1.2",
-          "buildNumber": "3.1.2"
-        },
-        {
           "version": "3.1.1",
           "date": "2026-11-27T14:18:54Z",
           "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.1.1/HGhubX_3.1.1_ios.ipa",
@@ -2051,11 +2041,21 @@
           "minOSVersion": "15.0"
         },
         {
-          "version": "3.0.0",
+          "version": "3.1.2",
           "date": "2026-11-26T15:05:45Z",
-          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.0.0_ios.ipa",
-          "size": 5399982,
-          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`d5ed1a2`）自动合成的全平台预览构建（更新时间：`2026-11-27T12:37:05Z`，测试提交：`3ab254c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #300 fix(ui): prevent segmented capsule and nav indicators from overshooting bounds（@zxsos，`dc1c0d1`）\n\n## 自动跳过的 PR（2）\n- #295 分类页频道标题行只保留「全部」可点击，避免整行误触（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过\n- #298 修复移动端触觉误触：仅在完成点击时震动（搜索奖杯、我的收藏/历史等）（@makisekurisu-jp）：与当前测试基线存在代码冲突，已跳过",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/test-pre/HGhubX_3.1.2_ios.ipa",
+          "size": 5498910,
+          "localizedDescription": "# HGhubX Test Preview\n\n基于 `main`（`3e0142c`）自动合成的全平台预览构建（更新时间：`2026-11-28T07:09:23Z`，测试提交：`bc7cd8c`）。\n> 此预发布仅供功能尝鲜与真机回归验证，不抢占正式版 Latest，也不会触发正式版客户端自动更新提示。\n\n## 本次已合入的测试 PR（1）\n1. #309 feat(source,playback,tv,ui): MacCMS 订阅导入、片头片尾跳过、按源分桶、TV 交互与平板/鸿蒙返回优化（@zxsos，`b133dfa`）",
+          "minOSVersion": "15.0",
+          "buildVersion": "3.1.2",
+          "buildNumber": "3.1.2"
+        },
+        {
+          "version": "3.0.0",
+          "date": "2026-11-26T14:16:54Z",
+          "downloadURL": "https://github.com/zxsos/HGhubX/releases/download/v3.0.0/HGhubX_3.0.0_ios.ipa",
+          "size": 4865415,
+          "localizedDescription": "# HGhubX v3.0.0\r\n\r\nHGhubX 3.0 正式版：视频内容改由可导入的视频源提供，支持多来源切换与手机、TV 局域网同步，并完成收藏筛选、缓存清理、扫码等多项体验升级；覆盖 Windows、macOS、Linux、Android 与 iOS。\r\n\r\n## 新增与优化\r\n1. **视频源插件系统与离线示例试用**：支持扫码、`hghubx://` 深链、剪贴板口令、HTTPS 链接及本地文件导入，提供切换、回滚、连通性测试及每次进入静默检查更新（60 秒冷却）；无源引导页提供「试用离线示例源」与顶部一键「移除示例源」，可零网络预览界面，随时一键移除。\r\n2. **「我的收藏」组合筛选与下拉刷新（#278）**：将收藏筛选拆分为「观看状态（不限 / 未看完 / 已看完）」与「连载状态（不限 / 连载中 / 已完结）」两轴正交交集，实时联动计数并统一三道杠筛选图标；新增顶部下拉刷新手势与「刷新收藏」按钮，同步检查更新部数与新增集数。\r\n3. **手机与 TV 局域网双向同步配对**：支持手机「扫一扫」识别 TV 二维码或 4 位配对码直连电视端，同步视频源配置、本机收藏/观看记录、内容偏好与常用播放设置；桌面端不再显示 TV 连接与扫码同步入口。\r\n4. **作者目录、标签页与列表加载提速**：作者目录首屏第 1 页即刻渲染并在后台 4 并发补齐分页；「标签」「专题」与",
           "minOSVersion": "15.0"
         }
       ],
@@ -3811,6 +3811,14 @@
       "category": "other",
       "versions": [
         {
+          "version": "1.0.5",
+          "date": "2026-11-28T04:36:14Z",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.5/Reloc.ipa",
+          "size": 3777311,
+          "localizedDescription": "## Reloc v1.0.5\n\n### 更新\n- 新增**轨迹模拟**模式：支持地图选点/搜索沿真实道路规划轨迹（多途经点、步行/跑步/骑行/驾车预设、实时调速、拟真波动、往返/循环及收藏路线）。\n- 新增 **Apple 快捷指令**支持：提供「开始虚拟定位」（选收藏点 → 启动定位 → 跳转系统定位页清缓存）与「关闭虚拟定位」（停止并跳转系统定位页恢复真实 GPS）两项快捷动作。\n- 移除常驻静默音频保活，改用纯原生定位后台模式，降低功耗并避免音频冲突。\n- 优化轨迹锁定与防冻结检测，脱锁时自动原地暂停等待重新锁定。\n- 最低系统支持降至 **iOS / iPadOS 16.0**（真机实测正常），并修复 iOS 16.0 日志页闪退问题。\n- 提示：超过 15 km 的跨城 / 跨国轨迹模拟建议开启飞行模式；远距离定格刷新若未生效，请再次关闭系统「定位服务」并延长等待时间后再重新开启。\n\n---\n\n### What's New\n- **Trajectory Simulation**: Plan road-snapped routes with multiple waypoints, Walk/Run/Cycle/Drive presets, live speed control, natural motion, round-trip/loop modes, and save",
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.4",
           "date": "2026-11-27T11:22:31Z",
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.4/Reloc.ipa",
@@ -3824,14 +3832,6 @@
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.3/Reloc.ipa",
           "size": 3483270,
           "localizedDescription": "## Reloc v1.0.3\n\n### 更新\n- **全新模式**：重新实现定位方式，现在无需电脑、无需配对文件，也无需代理、VPN 或依赖 Wi-Fi，**蜂窝网络下同样可以直接使用**，安装后打开即用。\n\n### 新增功能\n- **海拔高度支持**：地图选点、地址搜索或输入坐标时会自动匹配对应地点的真实海拔；底部卡片与状态栏直接显示当前海拔，点击即可手动调整；搜索框支持直接输入 `纬度, 经度, 海拔`；开启自然微漂移时也会同步模拟细微海拔变化。\n- **英文与中文双语支持**：新增完整英文版本，默认跟随系统语言，并可在「设置 → 应用语言 / Language」中即时切换，地名解析也会随当前语言自动适配。\n\n### 优化与稳定性提升\n- **界面精简**：移除了设置页中多余的通道状态区域，操作更简洁。\n- **稳定性增强**：大幅优化运行过程中的连接与保活表现，修复异常频繁重连与后台容易中断的问题，支持中途掉线自动恢复；切换音频设备（如断开蓝牙耳机）时不再影响后台运行。\n\n### 致谢\n感谢 [**huami**](https://github.com/huami1314) 提供的思路。\n\n---\n\n### What's New\n- **New Mode**: Rebuilt for direct on-device use — no computer, pairing f",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-11-26T17:31:32Z",
-          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.2/Reloc.ipa",
-          "size": 4533520,
-          "localizedDescription": "## What's Changed\n\n### 地图搜索与交互优化\n- 新增基于当前地图视野范围的实时搜索联想（`MKLocalSearchCompleter` + 当前可视区域同步 + 自动回退 `MKLocalSearch`），支持 Apple 地图与纯 WGS-84 全球图源\n- 修复点击搜索框、下拉联想卡片与底部卡片边缘时触摸穿透到底层地图误改定位的问题；搜索态下点击地图先收起键盘/下拉列表\n- 合并 #11 搜索栏键盘避让与布局稳定化修复，补充无结果/网络错误提示，修复 iOS 26/27 SDK 下按钮着色与下拉副标题渲染问题\n- 优化地图重绘性能，消除定位监控每秒触发整页刷新，支持手动坐标范围校验与中文逗号坐标解析\n\n### 定位注入与连接稳定性\n- 优化 NMEA 注入锁定速度（5Hz 初始捕获脉冲、DGPS 质量标志、远距离跳点滤波重置）与停止时高 HDOP 优雅退化恢复\n- 增强回环通道健壮性：`RLTLSSocket.nudge()`、自动 RST 软重连、`waitingSubscription` 订阅看门狗、无损 CoreLocation 唤醒与「精确位置」关闭提醒\n- 音频保活设置实时生效，修复后台任务到期回调隔离问题，并保留意外中断会话恢复记录直到重连成功\n\n### 安全与存储\n- 启用 Lockdown TLS 证书固定（Certificate Pin",
           "minOSVersion": "17.0"
         }
       ],
@@ -4318,10 +4318,10 @@
       "versions": [
         {
           "version": "0.1.0",
-          "date": "2026-11-25T14:04:10Z",
-          "localizedDescription": "* Stop forwarding SIGSTOP to the iOS JIT process\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availability checks in CLI\n* Split automation runtime and host by target OS with API l",
+          "date": "2026-11-28T01:41:18Z",
+          "localizedDescription": "* Discover Swipt over host DNS in guests and lazy-load CLI commands\n* Bound debugserver exchanges and serialize iOS JIT attach\n* Remove 1-minute timeout from iOS JIT debugserver session\n* Add iOS JIT support to device, gRPC, JS API, and CLI\n* Discover wireless Android devices over mDNS\n* Fix secrets context in release_android job condition\n* Add Android release build and CI workflow\n* Support Android in sideload, setup, and dev commands\n* Add Android app and build tooling\n* Add Android core, device layer, graphics backend, and local app RPCs\n* Support multi-platform swiplet builds and availabi",
           "downloadURL": "https://github.com/swipt-automation/swipt/releases/download/nightly/Swipt.ipa",
-          "size": 48264471,
+          "size": 48265190,
           "minOSVersion": "16.4"
         }
       ],
@@ -4685,10 +4685,20 @@
       "developerName": "Kyosee",
       "subtitle": "Venera 个人增强分支",
       "localizedDescription": "原版 Venera 的个人维护增强分支，通过插件接入多种漫画图源，提供本地收藏与阅读进度同步。",
-      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/Kyosee/VeneraX/v3.0.3/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
       "tintColor": "#D55A2E",
       "category": "books",
       "versions": [
+        {
+          "version": "3.0.3",
+          "date": "2026-11-28T03:46:39Z",
+          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.3/VeneraX-ios-3.0.3%2B267.ipa",
+          "size": 40925901,
+          "buildVersion": "267",
+          "buildNumber": "267",
+          "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> `.patch` 和 `update-manifest.json` 仅供应用自动更新使用，无法直接安装，无需手动下载。\n> `.patch` files and `update-manifest.json` are for in-app updates only. They cannot be installed manually.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.3/VeneraX-3.0.3.apk) | [ARM64](https://github.com/Kyosee/VeneraX",
+          "minOSVersion": "15.1"
+        },
         {
           "version": "3.0.2",
           "date": "2026-11-24T14:57:44Z",
@@ -4707,16 +4717,6 @@
           "buildVersion": "260",
           "buildNumber": "260",
           "localizedDescription": "## 下载安装 / Downloads\n\n**手动安装或更新请从下表选择完整安装包。** 不确定 Android 架构时请选择通用 APK。\n**For manual installs or updates, choose a full package below.** Use the universal APK if unsure of your Android architecture.\n\n> 本次更新请下载完整安装包。安装 3.0.1 后，后续版本可在有匹配补丁时使用增量更新。\n> Use a full package for this release. After installing 3.0.1, future updates can use matching incremental packages when available.\n\n| 平台 / Platform | 安装包 / Package | 其他版本 / Alternatives |\n| --- | --- | --- |\n| Android | [通用 APK / Universal](https://github.com/Kyosee/VeneraX/releases/download/v3.0.1/VeneraX-3.0.1.apk) | [ARM64](https://github.com/Kyosee",
-          "minOSVersion": "15.1"
-        },
-        {
-          "version": "3.0.0",
-          "date": "2026-11-15T10:37:41Z",
-          "downloadURL": "https://github.com/Kyosee/VeneraX/releases/download/v3.0.0/VeneraX-ios-3.0.0%2B258.ipa",
-          "size": 39423677,
-          "buildVersion": "258",
-          "buildNumber": "258",
-          "localizedDescription": "> **Language / 语言**: [English](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.en.md) · [简体中文](https://github.com/Kyosee/VeneraX/blob/v3.0.0/release-notes/v3.0.0.zh-CN.md)\n\n## What's Changed\n\n### Added\n- Added a HarmonyOS version with two packages: ARM64 for phones and x64 for the emulator. The packages are unsigned, so you need to sign them yourself before installing (#296).\n- Added Recent reading, Following, New updates and Local comics widgets for Android, HarmonyOS (service cards), iOS and macOS; whether they work on Apple platforms depends on how the app is signed and s",
           "minOSVersion": "15.1"
         }
       ],
